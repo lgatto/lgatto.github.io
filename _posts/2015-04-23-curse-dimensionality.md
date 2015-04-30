@@ -12,7 +12,7 @@ Based on Peter Norvigs's MSRI talk
 [What to demand from a Scientific Computing Language](http://www.msri.org/summer_schools/556/schedules/4197)
 (22:50): 'if you have high dimensional data, then almost all the data
 are outliers'. He showed a very elegant piece of python code to
-illustrate it; below is the R implementation.
+illustrate it; below is an R implementation.
 
 <!--more-->
 
