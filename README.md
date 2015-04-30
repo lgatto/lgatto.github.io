@@ -1,5 +1,3 @@
-# My site
-
 - Powered by [jekyll](http://jekyllrb.com/) static site generator and
   [Minimal Mistakes](http://mmistakes.github.io/minimal-mistakes)
   theme.
