@@ -1,0 +1,10 @@
+# Site navigation links
+
+- title: About
+  url: /about/
+
+- title: Posts
+  url: /posts/
+
+- title: CPU
+  url: http://cpu.sysbiol.cam.ac.uk

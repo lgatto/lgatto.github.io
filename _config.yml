@@ -1,0 +1,63 @@
+# Site wide configuration
+
+title:            /home
+locale:           en_GB
+url:              
+
+# Jekyll configuration
+
+excerpt_separator: <!--more-->  
+permalink:   /:categories/:title/
+markdown:    kramdown
+highlighter: pygments
+sass:
+  sass_dir: _sass
+  style: compressed
+gems:
+  - jekyll-sitemap
+
+kramdown:
+  auto_ids: true
+  footnote_nr: 1
+  entity_output: as_char
+  toc_levels: 1..6
+  use_coderay: false
+
+# Site owner
+owner:
+  name: Laurent Gatto
+  avatar: lgatto2.jpg
+  bio: "Computational biology and bioinformatics. University of Cambridge, UK."
+  email: laurent.gatto@gmail.com
+  disqus-shortname: laurentgatto
+  twitter: lgatt0
+  impactstory: LaurentGatto
+  facebook: #username
+  google:
+    plus: #username
+    analytics: 
+    verify: 
+    ad-client: 
+    ad-slot: 
+  bing-verify: 
+  github: lgatto
+  stackoverflow: #http://stackoverflow.com/users/123456/username
+  orcid: 0000-0002-1520-2268
+  scholar: k5DrB74AAAAJ
+  linkedin: lgatto
+  xing: #username
+  instagram: #username
+  lastfm: #username
+  tumblr: #username
+  pinterest: #username
+  foursquare: #username
+  steam: #username
+  dribbble: #username
+  youtube: #username
+  soundcloud: #username
+  weibo: #username
+  flickr: #username
+
+include: [".htaccess"]
+exclude: ["lib", "config.rb", "Capfile", "config", "log", "Rakefile", "Rakefile.rb", "tmp", "less", "*.sublime-project", "*.sublime-workspace", "test", "spec", "Gruntfile.js", "package.json", "node_modules", "Gemfile", "Gemfile.lock", "LICENSE", "README.md"]
+
