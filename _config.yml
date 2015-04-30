@@ -1,8 +1,8 @@
 # Site wide configuration
 
-title:            /home
+title:            ## /home
 locale:           en_GB
-url:              
+url:              http://lgatto.github.io
 
 # Jekyll configuration
 
