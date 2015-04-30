@@ -10,6 +10,8 @@ image:
 
 {% include _toc.html %}
 
+(Under construction...)
+
 ## Short bio
 
 Laurent moved to Cambridge, UK, in January 2010 to work in the
