@@ -135,8 +135,9 @@ Please do get in touch if you are interested in running workshops.
 Gatto L, Breckels LM, Naake T and Gibb S *Visualisation of proteomics
 data using R and Bioconductor*. Proteomics. 2015
 Feb 18. doi:10.1002/pmic.201400392
-([PubMed](http://www.ncbi.nlm.nih.gov/pubmed/25690415),[Publisher](http://onlinelibrary.wiley.com/doi/10.1002/pmic.201400392/abstract)).
-     
+([PubMed](http://www.ncbi.nlm.nih.gov/pubmed/25690415),[Publisher](http://onlinelibrary.wiley.com/doi/10.1002/pmic.201400392/abstract) and software: <a
+[Bioconductor](http://bioconductor.org/packages/devel/data/experiment/html/RforProteomics.html),[github](https://github.com/lgatto/RforProteomics)).
+
 Huber W et al. *Orchestrating high-throughput genomic analysis with
 Bioconductor*. Nat Methods. 2015 Jan 29;12(2):115-21
 ([PubMed](http://www.ncbi.nlm.nih.gov/pubmed/25633503),[Publisher](http://www.nature.com/doifinder/10.1038/nmeth.3252)).
@@ -213,10 +214,9 @@ Genomics 2013, 14:822</a>.
 
 Gatto L. and Christoforou A. *Using R and Bioconductor for proteomics
 data analysis*, Biochim Biophys Acta - Proteins and Proteomics, 2013.
-(<a href="http://www.ncbi.nlm.nih.gov/pubmed/23692960">PubMed</a>, <a
-href="http://arxiv.org/abs/1305.6559">pre-print</a>, software: <a
-href="http://bioconductor.org/packages/devel/data/experiment/html/RforProteomics.html">Bioconductor</a>
-- <a href="https://github.com/lgatto/RforProteomics">github</a>) 
+([PubMed](http://www.ncbi.nlm.nih.gov/pubmed/23692960),[pre-print](http://arxiv.org/abs/1305.6559")
+and software: <a
+[Bioconductor](http://bioconductor.org/packages/devel/data/experiment/html/RforProteomics.html),[github](https://github.com/lgatto/RforProteomics)).
 
 Bond N.J., Shliaha P.V, Lilley K.S., and Gatto L. *Improving
 qualitative and quantitative performance for MS<sup>E</sup>-based
