@@ -2,7 +2,7 @@
 layout: page
 title: About
 tags: [about]
-modified: 2015-04-24
+modified: 2015-05-01
 comments: false
 image:
   feature: slide-code.png
@@ -53,9 +53,9 @@ effective **data-driven science**.
 
 The **collaborative** and **interdisciplinarity** nature of much of
 the research in biology calls for a open approaches, influenced by the
-open source and free software movements, from communication between
-stake holders, **open research** and development to open dissemination
-of all research outputs.
+**open source** and **free** software movements, from communication
+between stake holders, **open research** and development to open
+dissemination of all research outputs.
 
 #### Proteomics
 
