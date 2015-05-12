@@ -89,3 +89,11 @@ an effort to educate students in open scholarship. When will there be
 open scholarship course in our Universities' curricula?
 
 
+**Edit**:
+
+* 2015-05-12 Tue: I would like to crowd-source material and
+  references to set up a core curriculum for open scholarship: what is
+  open access, why do we want open science, what are the benefits or
+  free open source software, ... Want to contribute of follow the
+  progress? See this [google doc](https://goo.gl/wifsTE) or the
+  [github repository](https://github.com/lgatto/open-scholarship-curriculum/).
