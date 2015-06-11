@@ -136,7 +136,7 @@ Mulvey CM, Schröter C, Gatto L, Dikicioglu D, Baris Fidaner I,
 Christoforou A, Deery MJ, Cho LT, Niakan KK, Martinez-Arias A, Lilley
 KS. Dynamic proteomic profiling of extra-embryonic endoderm
 differentiation in mouse embryonic stem cells. Stem Cells. 2015
-Jun 8. doi: 10.1002/stem.2067 (<a href="http://www.ncbi.nlm.nih.gov/pubmed/26059426">[PubMed]</a>).
+Jun 8. doi: 10.1002/stem.2067 ([PubMed](http://www.ncbi.nlm.nih.gov/pubmed/26059426)).
 
 Gatto L, Breckels LM, Naake T and Gibb S *Visualisation of proteomics
 data using R and Bioconductor*. Proteomics. 2015
