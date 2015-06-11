@@ -132,6 +132,12 @@ Please do get in touch if you are interested in running workshops.
 
 ## Publications
 
+Mulvey CM, Schröter C, Gatto L, Dikicioglu D, Baris Fidaner I,
+Christoforou A, Deery MJ, Cho LT, Niakan KK, Martinez-Arias A, Lilley
+KS. Dynamic proteomic profiling of extra-embryonic endoderm
+differentiation in mouse embryonic stem cells. Stem Cells. 2015
+Jun 8. doi: 10.1002/stem.2067 (<a href="http://www.ncbi.nlm.nih.gov/pubmed/26059426">[PubMed]</a>).
+
 Gatto L, Breckels LM, Naake T and Gibb S *Visualisation of proteomics
 data using R and Bioconductor*. Proteomics. 2015
 Feb 18. doi:10.1002/pmic.201400392
@@ -263,8 +269,14 @@ href="http://bioinformatics.oxfordjournals.org/content/28/2/288.full.pdf">pdf</a
 href="http://www.bioconductor.org/packages/release/bioc/html/MSnbase.html">software</a>).
 
 
-Capuano F., Bond N.J., Gatto L., Beaudoin F., Napier J., Benvenuto E., Lilley K.S, and Baschieri S. *LC-MS/MS methods for absolute quantification and identification of proteins associated to chimeric plant oil bodies*, <a href="http://pubs.acs.org/journal/ancham">Analytical Chemistry</a>, Dec 15;83(24):9267-72, 2011 (<a href="http://www.ncbi.nlm.nih.gov/pubmed/22017570">PubMed</a> - <a href="http://www.ebi.ac.uk/pride/simpleSearch.do?simpleSearchValue=19642">data</a>).
-
+Capuano F., Bond N.J., Gatto L., Beaudoin F., Napier J., Benvenuto E.,
+Lilley K.S, and Baschieri S. *LC-MS/MS methods for absolute
+quantification and identification of proteins associated to chimeric
+plant oil bodies*, <a
+href="http://pubs.acs.org/journal/ancham">Analytical Chemistry</a>,
+Dec 15;83(24):9267-72, 2011 (<a
+href="http://www.ncbi.nlm.nih.gov/pubmed/22017570">PubMed</a> - <a
+href="http://www.ebi.ac.uk/pride/simpleSearch.do?simpleSearchValue=19642">data</a>).
 
 Foster J.M., Degroeve S., Gatto L., Visser, M., Wang, R., Griss J.,
 Apweiler R. and Martens L. *A posteriori quality control for the
