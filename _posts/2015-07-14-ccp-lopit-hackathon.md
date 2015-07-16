@@ -38,16 +38,16 @@ since 2010, and have described the current state of the art
 ## Material and methods
 
 The hackathon brought together a dozen members of the
-[Cambridge Centre for Proteomics](http://proteomics.bio.cam.ac.uk/),
-that got together to mine a recent mouse embryonic stem cell data
-(currently unpublished). Most people were biologists that had know the
-LOPIT technique and these kind of data quite well. I generated 300+
+[Cambridge Centre for Proteomics](http://proteomics.bio.cam.ac.uk/) to
+mine a recent mouse embryonic stem cell data (currently
+unpublished). Most people were biologists that knew the LOPIT
+technique and these kind of data quite well. I generated 300+
 precompiled protein sets of interest (all KEGG pathways, and user
 contributed protein sets) and mapped them to the data, generated
 template reports and figures highlighting the major sub-cellular
 niches and the protein sets of interest, and set up a simple
 [GUI](http://www.bioconductor.org/packages/release/bioc/html/pRolocGUI.html)
-to help the participant navigate the data and search for other
+to help the participants navigate the data and search for other
 proteins of interest. All these were centralised in a github
 repository.
 
@@ -56,7 +56,7 @@ repository.
 The figure below illustrates some observed proteins involved in
 *protein export*
 ([KEGG pathway `mmu03060`](http://www.genome.jp/dbget-bin/www_bget?pathway+mmu03060))
-on the LOPIT PCA plot, where coloured cluster represent well-known
+on the LOPIT PCA plot, where coloured clusters represent well-known
 sub-cellular niches.
 
 > The protein export is the active transport of proteins from the
@@ -91,7 +91,7 @@ focused work!
 
 ## Conclusions and perspectives
 
-The result has been great. We gathered 20+ annotated protein set, some
+The result has been great. We gathered 20+ annotated protein sets, some
 in great details by people that have
 [substantial expertise](http://msb.embopress.org/content/11/1/771). There
 are great opportunities for such events, with biologists,
@@ -103,8 +103,8 @@ for reporting. I generated templates and figures for each protein set
 of interest, but even with the gihub editor, this is not
 enough. Github issues enable to easily upload or drag and drop
 figures, but this is not available for regular markdown files. I did
-not have time to generate an issue per protein set, containing all the
-default descriptions and links, but this
+not have time to generate a github issue per protein set, containing
+all the default descriptions and links, but this
 [should be possible](https://developer.github.com/v3/).
 
 
