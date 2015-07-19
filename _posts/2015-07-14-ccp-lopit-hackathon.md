@@ -81,7 +81,7 @@ with a
 > binding.
 
 This is compatible with its localisation on the PCA plots, between the
-cytosol (yellow) and the ER (blue). `SRP54` and `SRP68` show similar,
+cytosol (blue) and the ER (green). `SRP54` and `SRP68` show similar,
 compatible patterns.
 
 Now imagine what 10+ competent biologists, that know the assays and
