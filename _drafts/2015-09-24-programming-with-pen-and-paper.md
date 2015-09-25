@@ -48,7 +48,7 @@ navigate for someone who gets the bigger picture, I think it is still
 overwhelming for a newcomer. When trying to learn Scratch programming
 using this [book](https://www.nostarch.com/scratch), my son was focusing
 on the final product, a computer game he could play with (and
-imagining one as sophisticated as the ones plays with on the DS of tablet),
+imagining one as sophisticated as the ones plays with on the DS or tablet),
 rather than the process of creating it. In other words, the computer
 was more of a distraction rather than a tool to create, or think about
 how to create something.
