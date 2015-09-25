@@ -41,10 +41,10 @@ create programmes that control a cat on the screen.
 
 From my personal experience with my older son (now 9), even getting
 him interested in Scratch is a bit challenging. While the why and how
-of all these visual elements where clear to me because I could see a
+of all these visual elements were clear to me because I could see a
 wider context, I find it difficult to introduce them in an interesting
 way. While the interface is without any doubt great and easy to
-navigate for someone that got the bigger picture, I think it is still
+navigate for someone who gets the bigger picture, I think it is still
 overwhelming for a newcomer. When trying to learn Scratch programming
 using this [book](https://www.nostarch.com/scratch), he was focusing
 on the final product, a computer game he could play with (and that he
