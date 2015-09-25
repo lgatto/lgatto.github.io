@@ -46,9 +46,9 @@ wider context, I find it difficult to introduce them in an interesting
 way. While the interface is without any doubt great and easy to
 navigate for someone who gets the bigger picture, I think it is still
 overwhelming for a newcomer. When trying to learn Scratch programming
-using this [book](https://www.nostarch.com/scratch), he was focusing
-on the final product, a computer game he could play with (and that he
-imagined as sophisticated than was he plays with on the DS of tablet),
+using this [book](https://www.nostarch.com/scratch), my son was focusing
+on the final product, a computer game he could play with (and
+imagining one as sophisticated as the ones plays with on the DS of tablet),
 rather than the process of creating it. In other words, the computer
 was more of a distraction rather than a tool to create, or think about
 how to create something.
@@ -87,7 +87,7 @@ programme in number of operations or in the total number of steps?
 I also prepared other instructions, such as `Repeat _ times`, `Pen up`
 and `Pen down`. For the latter, the other adult in the team created an
 algorithm that wrote her name. We saw that, despite a relatively short
-name, we ended up with a long set of instructions. This lead then to a
+name, we ended up with a long set of instructions. This led then to a
 short discussion on using mini programmes that could write single
 letters inside other programmes, that would write names. I had never
 planned to mention such elaborated, abstract concepts, but they came
