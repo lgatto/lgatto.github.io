@@ -15,7 +15,7 @@ image:
 I moved to Cambridge, UK, in January 2010 to work in the
 [Cambridge Centre for Proteomics](http://proteomics.bio.cam.ac.uk/) on
 various aspects of quantitative and spatial proteomics, developing
-methodological advances and implementing computational tools with a
+new methods and implementing computational tools with a
 strong emphasis on rigorous and reproducible data analysis. I am also
 a visiting scientist in the [PRIDE](http://www.ebi.ac.uk/pride/) team
 at the
@@ -27,7 +27,7 @@ affiliated [member](http://bioconductor.org/about/core-team/) of the
 [Software Carpentry instructor](http://software-carpentry.org/pages/team.html)
 and an affiliate teaching staff at the
 [Cambridge Computational Biology Institute](http://www.ccbi.cam.ac.uk/members.php). I
-currently leads the
+currently lead the
 [Computational Proteomics Unit](http://cpu.sysbiol.cam.ac.uk/).
 
 ## Research
