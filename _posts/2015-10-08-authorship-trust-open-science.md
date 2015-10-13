@@ -6,8 +6,8 @@ comments: true
 ---
 
 The publish or perish crisis has led to a situation where, quite
-understandably, being named on a paper is more important that the
-actual constribution. As a result, authorship on scientific papers is
+understandably, being named on a paper is more important than the
+actual contribution. As a result, authorship on scientific papers is
 arguably one of the most pathetic lows in academia, from squabbles to
 open conflict, pressure, politics and nepotism. But what does
 authorship represent; who deserves to be an author?
