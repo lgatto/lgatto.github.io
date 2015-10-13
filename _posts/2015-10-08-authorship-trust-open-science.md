@@ -5,10 +5,12 @@ tags: ["science", "open access", "open science", "open data", "academia"]
 comments: true
 ---
 
-Authorship on scientific papers is arguably one of the most pathetic
-lows in academia, from squabbles to open conflict, pressure, politics
-and nepotism. What does authorship represent; who deserves to be an
-author?
+The publish or perish crisis has led to a situation where, quite
+understandably, being named on a paper is more important that the
+actual constribution. As a result, authorship on scientific papers is
+arguably one of the most pathetic lows in academia, from squabbles to
+open conflict, pressure, politics and nepotism. But what does
+authorship represent; who deserves to be an author?
 
 ## Authorship
 
