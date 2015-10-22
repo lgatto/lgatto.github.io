@@ -132,6 +132,16 @@ Please do get in touch if you are interested in running workshops.
 
 ## Publications
 
+Christoforou A, Mulvey CM, Breckels LM, Geladaki A, Hurrell T, Hayward
+P, Naake T, Gatto L, Viner R, Martinez Arias A, and Lilley KS. *A
+draft map of the mouse pluripotent stem cell spatial proteome*, Nature
+Communications, in press.
+
+Breckels LM, Holden S, Wonjar D, Mulvey CM, Christoforou A, Groen AJ,
+Kohlbacher O, Lilley KS, Gatto L. *Learning from heterogeneous data
+sources: an application in spatial
+proteomics*. [bioRxiv](http://dx.doi.org/10.1101/022152).
+
 Mulvey CM, Schröter C, Gatto L, Dikicioglu D, Baris Fidaner I,
 Christoforou A, Deery MJ, Cho LT, Niakan KK, Martinez-Arias A, Lilley
 KS. *Dynamic proteomic profiling of extra-embryonic endoderm
