@@ -1,0 +1,173 @@
+---
+layout: post
+title: The Fibonacci Sequence
+tags: ["R", "programming", "python"]
+comments: true
+---
+
+Here's another
+[post inspired by some python code](http://lgatto.github.io/curse-dimensionality/),
+this time about
+[the Fibonacci sequence by Stuart Mumford](http://www.stuartmumford.uk/blog/the-fibonacci-sequence.html).
+
+I won't be replicating the Python code here, as the first version,
+that dynamically grows the sequence would be horribly slow in R, and
+others don't apply directly. 
+
+Here's a plain implementation that first initialises the results
+variable `res` before applying the Fibonacci formula `F[i] = F[i-1] + F[i-2]`.
+
+```{r fib}
+fib <- function(n) {
+    res <- c(1, 1, numeric(n-2))
+    for (i in 3:length(res))
+        res[i] <- res[i-1] + res[i-2]
+    return(res)
+}
+```
+Let's now benchmark the function for `n = 1000` numbers.
+
+```{r benchfib}
+n <- 1000
+library(microbenchmark)
+(tm1 <- microbenchmark(fib(n)))
+```
+
+About `r round(median(tm1$time)/1e6, 3)` milliseconds. Not great, but
+reasonable. We'll compare these timings with python later.
+
+## Byte compiling
+
+The first optimisation we can do is to byte compile the `fib` function
+using the `cmpfun` function from the `compiler` package.
+
+```{r cmpfib}
+library(compiler)
+cmpfib <- cmpfun(fib)
+(tm2 <- microbenchmark(cmpfib(n)))
+```
+
+We improve the median timing by `r round(median(tm1$time)/median(tm2$time), 0)`
+fold and reach `r round(median(tm2$time)/1e3, 2)` microseconds.
+That's a neat improvement for very little extra effort (but note
+that, in my experience, byte compiling will not always give such
+benefits, is any).
+
+## Using Rcpp
+
+The famous [`Rcpp`](http://rcpp.org/) package is of course the way to
+go when efficiency is key. The package is nowadays so mature, well
+documented and has such a clean R/C++ interface and elegant
+[syntactic sugar](https://cran.r-project.org/web/packages/Rcpp/vignettes/Rcpp-sugar.pdf),
+that the overhead of calling C/C++ has become substantially smaller
+and certainly worth the extra effort.
+
+
+```{r fibc}
+library("Rcpp")
+cppFunction('NumericVector fibc(int n) {
+  NumericVector res(n);
+  res[0] = 1;
+  res[1] = 1;
+  for(int i = 2; i < n; ++i) {
+    res[i] = res[i-1] + res[i-2];
+  }
+  return res;
+}')
+```
+
+```{r benchfibc}
+(tm3 <- microbenchmark(fibc(n)))
+```
+
+A median `r round(median(tm3$time)/1e3, 3)` microseconds, that's
+certainly competitive.
+
+### Summary
+
+Let's summarise our timings and benchmark the plain R implementation
+`fib`, the byte compiled version `cmpfib`, and the C++ version `fibc`.
+
+```{r benchall}
+microbenchmark(fib(n), cmpfib(n), fibc(n))
+```
+
+Of course, all this only makes sense if the results are actually
+identical.
+
+```{r identical}
+identical(fib(n), fibc(n))
+identical(fib(n), cmpfib(n))
+```
+## Recursion is beautiful
+
+but slow, particularly in R.
+
+(code from the [Rcpp gallery](http://gallery.rcpp.org/articles/fibonacci-sequence/))
+
+Here, I'm only running the code for the 10th Fibonacci number.
+
+```{r fibrec}
+fibrec <- function(n) {
+if ((n == 0) | (n == 1)) return(1)
+    else return(fibrec(n-1) + fibrec(n-2))
+}
+```
+
+```{r fibrecc}
+cppFunction('int fibrecc(int n) {
+  if ((n == 0) | (n == 1)) return 1;
+  else return fibrecc(n-1) + fibrecc(n-2);
+}')
+```
+
+```{r benchrec}
+microbenchmark(fibrec(10), fibrecc(10))
+```
+
+## Comparing with python
+
+The
+[python examples](http://www.stuartmumford.uk/blog/the-fibonacci-sequence.html)
+used `n = 10000` to run the benchmarks. Let's run our code with the
+same input and compare.
+
+```{r bigbench}
+n <- 10000
+microbenchmark(fib(n), cmpfib(n), fibc(n))
+```
+
+The first python implementation was
+
+{% gist lgatto/865cc3203b6f239286ad fib.py %}
+
+which times, on my computer, at
+
+{% gist lgatto/865cc3203b6f239286ad timeit.ipy %}
+
+The implementation using `numba`, a just in time compilation library
+for Python, which I failed to install locally, made a huge
+improvement - 45 microseconds, along the lines of our `Rcpp`
+implementation. (Stuart claimed that this was *"probably too much of a
+difference, something fishy is probably going on here"* - not sure
+why.)
+
+Anyway, the byte compiled R implementation comes pretty close to the
+standard (and other non-jit) Python implementations. The real
+difference, however, is in the output. In R, we reach the limit of
+2^`r .Machine$double.max.exp` at `fib(1447)`
+
+```{r}
+res <- fibc(10000)
+table(is.infinite(res))
+2^(.Machine$double.max.exp-1)
+2^.Machine$double.max.exp
+res[1476:1477]
+```
+
+whereas in Python
+
+{% gist lgatto/865cc3203b6f239286ad res.ipy %}
+
+I don't know of a way, if any, to bypass this limitation in R.
+
