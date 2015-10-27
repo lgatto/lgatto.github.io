@@ -177,15 +177,32 @@ whereas in Python
 [Tim Yates](https://twitter.com/tim_yates), that gives arbitrary
 precision integers, to break the 1447 barrier.
 
-```{r, message=FALSE}
+```{r gmp, message=FALSE}
 library("gmp")
-fib <- function(n) {
+fibz <- function(n) {
   res <- c(as.bigz(1), as.bigz(1), numeric(n-2))
   for (i in 3:length(res))
     res[i] <- res[i-1] + res[i-2]
   return(res)
 }
 
-res <- fib(1477)
+res <- fibz(1477)
 tail(res)
+```
+
+Unfortunately, this comes at a substantial cost in terms of execution
+time (thanks to [Willem Ligtenberg](https://twitter.com/wligtenberg)
+[suggesting](https://twitter.com/wligtenberg/status/659089707171762176)
+to check this) and, to a lesser extend, size.
+
+```{r benchz}
+n <- 1000
+microbenchmark(f1 <- fib(n),
+               fz <- fibz(n),
+               times = 10L)
+```
+
+```{r sz}
+print(object.size(f1), units="Kb")
+print(object.size(fz), units="Kb")
 ```
