@@ -261,7 +261,7 @@ href="http://www.ncbi.nlm.nih.gov/pubmed/23523639">PubMed</a>,
 Chambers M. <i>et al.</i> *A Cross-platform Toolkit for Mass
 Spectrometry and Proteomics*, <a
 href="http://www.nature.com/nbt/index.html">Nature Biotechnology</a>
-30, 918–920, 2012 (<a href="http://www.ncbi.nlm.nih.gov/pubmed/23051804">PubMed </a>,
+30, 918–920, 2012 (<a href="http://www.ncbi.nlm.nih.gov/pubmed/23051804">PubMed</a>,
 <a href="http://www.ncbi.nlm.nih.gov/pmc/articles/PMC3471674/pdf/nihms-374482.pdf">pdf</a>, 
 software [<a href="http://proteowizard.sourceforge.net/">1</a>|<a href="http://www.bioconductor.org/packages/release/bioc/html/mzR.html">2</a>]).
 
