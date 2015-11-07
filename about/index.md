@@ -289,30 +289,31 @@ Apweiler R. and Martens L. *A posteriori quality control for the
 curation and reuse of public proteomics data*,
 [Proteomics](http://www3.interscience.wiley.com/journal/76510741/home)
 11(11):2182-94, 2011
-([PubMed](http://www.ncbi.nlm.nih.gov/pubmed/21538885),[pdf](http://onlinelibrary.wiley.com/doi/10.1002/pmic.201000602/pdf)).
+([PubMed](http://www.ncbi.nlm.nih.gov/pubmed/21538885),
+[pdf](http://onlinelibrary.wiley.com/doi/10.1002/pmic.201000602/pdf)).
 
 Lilley K.S., Deery M.J. and Gatto L. *Challenges for Proteomics Core
 Facilities*,
 [Proteomics](http://www3.interscience.wiley.com/journal/76510741/home)
 11: 1017–1025, 2011
-([PubMed](http://www.ncbi.nlm.nih.gov/pubmed/21360676),[pdf](http://onlinelibrary.wiley.com/doi/10.1002/pmic.201000693/pdf)).
+([PubMed](http://www.ncbi.nlm.nih.gov/pubmed/21360676),
+[pdf](http://onlinelibrary.wiley.com/doi/10.1002/pmic.201000693/pdf)).
 
 Gatto L., Vizcaíno J.A., Hermjakob H., Huber W. and Lilley
-K.S. *Organelle proteomics experimental designs and analysis* <a
-href="http://www3.interscience.wiley.com/journal/76510741/home">Proteomics</a>,
-10:22, 3957-3969, 2010 (<a
-href="http://www.ncbi.nlm.nih.gov/pubmed/21080489">PubMed</a>,<a
-href="http://onlinelibrary.wiley.com/doi/10.1002/pmic.201000244/pdf">pdf</a>).
+K.S. *Organelle proteomics experimental designs and analysis*
+<a href="http://www3.interscience.wiley.com/journal/76510741/home">Proteomics</a>,
+10:22, 3957-3969, 2010
+(<a href="http://www.ncbi.nlm.nih.gov/pubmed/21080489">PubMed</a>,
+<a href="http://onlinelibrary.wiley.com/doi/10.1002/pmic.201000244/pdf">pdf</a>).
 
-<a
-href="http://www.nature.com/nbt/journal/v28/n8/abs/nbt.1665.html#/group-1">MAQC
+<a href="http://www.nature.com/nbt/journal/v28/n8/abs/nbt.1665.html#/group-1">MAQC
 Consortium</a> *The MicroArray Quality Control (MAQC)-II study of
 common practices for the development and validation of
 microarray-based predictive models* <a
 href="http://www.nature.com/nbt/index.html">Nature Biotechnology</a>
-28, 827–838 2010 (<a
-href="http://www.ncbi.nlm.nih.gov/pubmed/20676074">PubMed</a>,<a
-href="http://www.nature.com/nbt/journal/v28/n8/pdf/nbt.1665.pdf">pdf</a>).
+28, 827–838 2010
+(<a href="http://www.ncbi.nlm.nih.gov/pubmed/20676074">PubMed</a>,
+<a href="http://www.nature.com/nbt/journal/v28/n8/pdf/nbt.1665.pdf">pdf</a>).
 
 
 Gatto L., Mardulyn P. and Pasteels J.M. *Morphological and
@@ -320,26 +321,26 @@ mitochondrial DNA analysis suggest the presence of a hybrid zone
 between two species of the leaf beetle Gonioctena variabilis species
 complex in southern Spain*, <a
 href="http://www.wiley.com/bw/journal.asp?ref=0024-4066&amp;site=1">Biological
-Journal of the Linnean Society</a>, 2008, 94(1), 105-114 (<a
-href="http://onlinelibrary.wiley.com/doi/10.1111/j.1095-8312.2008.00972.x/abstract">abstract</a>,<a
-href="http://onlinelibrary.wiley.com/doi/10.1111/j.1095-8312.2008.00972.x/pdf">pdf</a>).
+Journal of the Linnean Society</a>, 2008, 94(1), 105-114
+(<a href="http://onlinelibrary.wiley.com/doi/10.1111/j.1095-8312.2008.00972.x/abstract">abstract</a>,
+<a href="http://onlinelibrary.wiley.com/doi/10.1111/j.1095-8312.2008.00972.x/pdf">pdf</a>).
 
 Danis B., George T.C., Goriely S., Dutta B., Renneson J., Gatto L.,
 Fitzgerald-Bocarsly P., Marchant A., Goldman M., Willems F. and De Wit
 D. *Interferon regulatory factor 7-mediated responses are defective in
 cord blood plasmacytoid dendritic cells.* <a
 href="http://onlinelibrary.wiley.com/journal/10.1002/(ISSN)1521-4141">Eur
-J Immunol.</a> 2008 Feb;38(2):507-17. (<a
-href="http://www.ncbi.nlm.nih.gov/pubmed/18200500">PubMed</a>,<a
-href="http://onlinelibrary.wiley.com/doi/10.1002/eji.200737760/pdf">pdf</a>).
+J Immunol.</a> 2008 Feb;38(2):507-17.
+(<a href="http://www.ncbi.nlm.nih.gov/pubmed/18200500">PubMed</a>,
+<a href="http://onlinelibrary.wiley.com/doi/10.1002/eji.200737760/pdf">pdf</a>).
 
 Gatto L., Catanzaro D. and Milinkovitch M.C. *Assessing the
 Applicability of the GTR Nucleotide Substitution Model Through
 Simulations* <a
 href="http://www.la-press.com/evolutionary-bioinformatics-journal-j17">Evolutionary
 Bioinformatics</a> 2006:2 (<a
-href="http://www.ncbi.nlm.nih.gov/pubmed/19455208">PubMed</a>,<a
-href="http://www.la-press.com/redirect_file.php?fileId=648&amp;filename=EBO-2-Milinkovitch-et-al-(2)&amp;fileType=pdf">pdf</a>).
+href="http://www.ncbi.nlm.nih.gov/pubmed/19455208">PubMed</a>,
+<a href="http://www.la-press.com/redirect_file.php?fileId=648&amp;filename=EBO-2-Milinkovitch-et-al-(2)&amp;fileType=pdf">pdf</a>).
 
 
 #### Book chapters
