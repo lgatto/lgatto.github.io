@@ -247,35 +247,32 @@ href="http://www.bioconductor.org/packages/release/bioc/html/synapter.html">soft
 
 Shliaha P.V, Bond N.J., Gatto L. and Lilley K.S. *The Effects of
 Travelling Wave Ion Mobility Separation on Data Independent
-Acquisition in Proteomics Studies*, J. Proteome Res., 2013 (<a
-href="http://www.ncbi.nlm.nih.gov/pubmed/23514362">PubMed</a>, <a
-href="http://pubs.acs.org/doi/abs/10.1021/pr300775k">publisher</a>, <a
-href="http://www.bioconductor.org/packages/release/bioc/html/synapter.html">software</a>).
+Acquisition in Proteomics Studies*, J. Proteome Res., 2013
+(<a href="http://www.ncbi.nlm.nih.gov/pubmed/23514362">PubMed</a>,
+<a href="http://pubs.acs.org/doi/abs/10.1021/pr300775k">publisher</a>,
+<a href="http://www.bioconductor.org/packages/release/bioc/html/synapter.html">software</a>).
 
 Breckels L.M., Gatto L., Christoforou A., Groen A.J., Lilley K.S. and
 Trotter M.W.B.  *The Effect of Organelle Discovery upon Sub-Cellular
 Protein Localisation*, Journal of Proteomics, 2013 (<a
-href="http://www.ncbi.nlm.nih.gov/pubmed/23523639">PubMed</a>,<a
-href="http://www.bioconductor.org/packages/release/bioc/html/pRoloc.html">software</a>).
+href="http://www.ncbi.nlm.nih.gov/pubmed/23523639">PubMed</a>, 
+<a href="http://www.bioconductor.org/packages/release/bioc/html/pRoloc.html">software</a>).
 
 Chambers M. <i>et al.</i> *A Cross-platform Toolkit for Mass
 Spectrometry and Proteomics*, <a
 href="http://www.nature.com/nbt/index.html">Nature Biotechnology</a>
-30, 918–920, 2012 (<a
-href="http://www.ncbi.nlm.nih.gov/pubmed/23051804">PubMed</a>,<a
-href="http://www.ncbi.nlm.nih.gov/pmc/articles/PMC3471674/pdf/nihms-374482.pdf">pdf</a>,
-software
-[<a href="http://proteowizard.sourceforge.net/">1</a>|<a href="http://www.bioconductor.org/packages/release/bioc/html/mzR.html">2</a>]).
+30, 918–920, 2012 (<a href="http://www.ncbi.nlm.nih.gov/pubmed/23051804">PubMed</
+a>, <a href="http://www.ncbi.nlm.nih.gov/pmc/articles/PMC3471674/pdf/nihms-374482.pdf">pdf</a>, 
+software [<a href="http://proteowizard.sourceforge.net/">1</a>|<a href="http://www.bioconductor.org/packages/release/bioc/html/mzR.html">2</a>]).
 
 
 Gatto L. and Lilley K.S. *MSnbase - an R/Bioconductor package for
 isobaric tagged mass spectrometry data visualisation, processing and
 quantitation*, <a
-href="http://bioinformatics.oxfordjournals.org/">Bioinformatics</a>,
-28(2), 288-289, 2012 (<a
-href="http://www.ncbi.nlm.nih.gov/pubmed/22113085">PubMed</a>,<a
-href="http://bioinformatics.oxfordjournals.org/content/28/2/288.full.pdf">pdf</a>,<a
-href="http://www.bioconductor.org/packages/release/bioc/html/MSnbase.html">software</a>).
+href="http://bioinformatics.oxfordjournals.org/">Bioinformatics</a>, 
+28(2), 288-289, 2012 (<a href="http://www.ncbi.nlm.nih.gov/pubmed/22113085">PubMed</a>,
+<a href="http://bioinformatics.oxfordjournals.org/content/28/2/288.full.pdf">pdf</a>,
+<a href="http://www.bioconductor.org/packages/release/bioc/html/MSnbase.html">software</a>).
 
 
 Capuano F., Bond N.J., Gatto L., Beaudoin F., Napier J., Benvenuto E.,
