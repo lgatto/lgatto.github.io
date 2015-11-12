@@ -135,7 +135,8 @@ Please do get in touch if you are interested in running workshops.
 Gatto L, Hansen KD, Hoopmann MR, Hermjakob H, Kohlbacher O and Beyer,
 A *Testing and validation of computational methods for mass
 spectrometry*. J Proteome
-Res. 2015. [doi: 10.1002/stem.2067](http://pubs.acs.org/doi/abs/10.1021/acs.jproteome.5b00852).
+Res. 2015. [doi: 10.1002/stem.2067](http://pubs.acs.org/doi/abs/10.1021/acs.jproteome.5b00852)
+([PubMed](http://www.ncbi.nlm.nih.gov/pubmed/26549429)).
 
 
 Christoforou A, Mulvey CM, Breckels LM, Geladaki A, Hurrell T, Hayward
