@@ -77,9 +77,9 @@ reproducibility and re-use.
 
 ### References
 
-Carole
-Goble. *[Results may vary. Reproducibility, Science, Software](http://www.software.ac.uk/news/2014-05-06-cw14-professor-carole-gobles-keynote-talk)*
-Collaborations Workshop, Oxford, 26 March 2014.
+Carole Goble. *Results may vary. Reproducibility, Science, Software*
+Collaborations Workshop, Oxford, 26 March 2014,
+[slides](http://www.software.ac.uk/news/2014-05-06-cw14-professor-carole-gobles-keynote-talk).
 
 Drummond C. *Replicability is not Reproducibility: Nor is it Good
 Science*, [online](http://cogprints.org/7691/7/ICMLws09.pdf)
