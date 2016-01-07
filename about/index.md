@@ -24,7 +24,7 @@ affiliated [member](http://bioconductor.org/about/core-team/) of the
 [Bioconductor](http://bioconductor.org) project, a
 [fellow](http://software.ac.uk/fellows/laurent-gatto) of the
 [Software Sustainability Institute](http://software.ac.uk/), a
-[Software Carpentry instructor](http://software-carpentry.org/pages/team.html)
+[Software Carpentry instructor](http://software-carpentry.org/team/)
 and an affiliate teaching staff at the
 [Cambridge Computational Biology Institute](http://www.ccbi.cam.ac.uk/members.php). I
 currently lead the
@@ -123,8 +123,8 @@ ranging from beginners and advanced R courses,
 [integrative omics](http://www.ebi.ac.uk/training/course/introduction-integrative-omics),
 scientific computing as part of the
 [MPhil in Computational Biology](http://www.ccbi.cam.ac.uk/Education/MPhil/)
-and several Software Carpentry bootcamps. All my teaching material is
-available in the
+in Cambridge, as well as several Software and Data Carpentry
+bootcamps. All my teaching material is available in the
 [**TeachingMaterial**](http://lgatto.github.io/TeachingMaterial/)
 repository.
 
