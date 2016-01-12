@@ -18,12 +18,12 @@ reproducibility/replication we could consider.
 
 ### Nomenclature
 
-EDIT:The terms *replicate/replication* and *reproduce/reproducibility*
+**EDIT:** The terms *replicate/replication* and *reproduce/reproducibility*
 have been confused and used to mean opposite things (read
 [this post](http://languagelog.ldc.upenn.edu/nll/?p=21956) for a
 detailed review). I have edited the post below to follow the
 nomenclature recommended by Mark Liberman based on J. Claerbout,
-V. Stodden and R. Peng. 
+V. Stodden and R. Peng.
 
 The following nomenclature is based on a talk by
 [Carol Gobble](https://sites.google.com/site/carolegoble/) at the
