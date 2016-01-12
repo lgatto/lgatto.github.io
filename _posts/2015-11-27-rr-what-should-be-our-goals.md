@@ -68,10 +68,10 @@ scientific truths that hold beyond the comfort of one's setup. One
 could even provocatively argue that the former are not very
 interesting - what is the benefit of repeating something that is
 potentially wrong. Ever if replicate <s>reproducibility</s> and re-use
-are the ultimate goal of Science, repeatability and reproducibility
-<s>replication</s> are still essential. How much trust can we have in
-the Science if the results vary from day to day, if even the
-technological challenges are a genuine hurdle.
+are the ultimate goal of Science, repeatability and
+reproducibility <s>replication</s> are still essential. How much trust
+can we have in the Science if the results vary from day to day, if
+even the technological challenges are a genuine hurdle.
 
 We all know that even reproducibility <s>repeatability</s> for medium
 size computational projects is difficult, even for trained
