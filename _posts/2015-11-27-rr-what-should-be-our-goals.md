@@ -76,14 +76,14 @@ even the technological challenges are a genuine hurdle.
 We all know that even reproducibility <s>repeatability</s> for medium
 size computational projects is difficult, even for trained
 computational scientists, armed with an arsenal of tools such as git,
-GitHub, knitr, docker, ... assuring repeatability and reproducibility
-<s>replication</s> requires substantial investment.
+GitHub, knitr, docker, ... assuring repeatability and
+reproducibility <s>replication</s> requires substantial investment.
 
 To conclude, I would argue that we, as individuals, should definitely
-assure repeatability, certainly aim for reproducibility
-<s>replication</s> but not forget that what we, as a scientific
-community, should really aim for, is replication
-<s>reproducibility</s> and re-use.
+assure repeatability, certainly aim for
+reproducibility <s>replication</s> but not forget that what we, as a scientific
+community, should really aim for, is
+replication <s>reproducibility</s> and re-use.
 
 ### References
 
