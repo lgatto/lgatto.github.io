@@ -56,8 +56,8 @@ of things that researchers should consider being able to do
   scratch.
 
 An important distinction between these different aspects is that,
-paraphrasing C. Drummond (ref below) *replicability
-<s>reproducibility</s> and re-use require changes, while repeatability
+paraphrasing C. Drummond (ref below)
+*replicability <s>reproducibility</s> and re-use require changes, while repeatability
 and reproducibility <s>replicability</s> avoid them*.
 
 Repeat and reproduce <s>replicate</s> are *technical challenges*, that
