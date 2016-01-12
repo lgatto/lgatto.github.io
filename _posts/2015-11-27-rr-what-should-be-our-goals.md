@@ -18,6 +18,13 @@ reproducibility/replication we could consider.
 
 ### Nomenclature
 
+EDIT:The terms *replicate/replication* and *reproduce/reproducibility*
+have been confused and used to mean opposite things (read
+[this post](http://languagelog.ldc.upenn.edu/nll/?p=21956) for a
+detailed review). I have edited the post below to follow the
+nomenclature recommended by Mark Liberman based on J. Claerbout,
+V. Stodden and R. Peng. 
+
 The following nomenclature is based on a talk by
 [Carol Gobble](https://sites.google.com/site/carolegoble/) at the
 Software Sustainability Collaborative Workshop in 2014. Here is a list
@@ -26,54 +33,57 @@ of things that researchers should consider being able to do
 * **Repeat** my experiment, i.e. obtain the same tables/graphs/results
   using the same setup (data, software, ...) in the same lab or on the
   same computer. That's basically re-running one of my analysis some
-  time after I original developed it.
+  time after I original ndeveloped it.
 
-* **Replicate** an experiment (not mine), i.e. obtain the same
-  tables/graphs/results in a different lab or on a different computer,
-  using the same setup (the data would be downloaded from a public
-  repository and the same software, but possibly different version,
-  different OS, is used). I suppose, we should differentiate
-  replication using a fresh install and a virtual machine or docker
-  image that replicates the original setup.
+* **Reproduce** <s>Replicate</s> an experiment (not mine),
+  i.e. obtain the same tables/graphs/results in a different lab or on
+  a different computer, using the same setup (the data would be
+  downloaded from a public repository and the same software, but
+  possibly different version, different OS, is used). I suppose, we
+  should differentiate replication using a fresh install and a virtual
+  machine or docker image that replicates the original setup.
 
-* **Reproduce** an experiment, i.e. obtain the same (similar enough)
-  tables/graphs/results in a different set up. The data could still be
-  downloaded from the public repository, or possibly
-  re-generate/re-simulate it, and the analysis would be re-implemented
-  based on the original description. This requires openness, and one
-  would clearly not be allowed the use a black box approach (VM,
-  docker image) or just re-running a script.
+* **Replicate** <s>Reproduce</s> an experiment, i.e. obtain the same
+  (similar enough) tables/graphs/results in a different set up. The
+  data could still be downloaded from the public repository, or
+  possibly re-generate/re-simulate it, and the analysis would be
+  re-implemented based on the original description. This requires
+  openness, and one would clearly not be allowed the use a black box
+  approach (VM, docker image) or just re-running a script.
   
 * Finally, **re-use** the information/knowledge from one experiment to
   run a different experiment with the aim to confirm results from
   scratch.
 
 An important distinction between these different aspects is that,
-paraphrasing C. Drummond (ref below) *reproducibility and re-use
-require changes, while repeatability and replicability avoid them*.
+paraphrasing C. Drummond (ref below) *replicability
+<s>reproducibility</s> and re-use require changes, while repeatability
+and reproducibility <s>replicability</s> avoid them*.
 
-Repeat and replicate are *technical challenges*, that are arguably
-easy, or rather easier to reach. On the contrary, reproduce and reuse
-are *scientific challenges*. Ideally, we would want to aim for the
-latter to identify scientific truths that hold beyond the comfort of
-one's setup. One could even provocatively argue that the former are
-not very interesting - what is the benefit of repeating something that
-is potentially wrong. Ever if reproducibility and re-use are the
-ultimate goal of Science, repeatability and replication are still
-essential. How much trust can we have in the Science if the results
-vary from day to day, if even the technological challenges are a
-genuine hurdle.
+Repeat and reproduce <s>replicate</s> are *technical challenges*, that
+are arguably easy, or rather easier to reach. On the contrary,
+replicate <s>reproduce</s> and reuse are *scientific
+challenges*. Ideally, we would want to aim for the latter to identify
+scientific truths that hold beyond the comfort of one's setup. One
+could even provocatively argue that the former are not very
+interesting - what is the benefit of repeating something that is
+potentially wrong. Ever if replicate <s>reproducibility</s> and re-use
+are the ultimate goal of Science, repeatability and reproducibility
+<s>replication</s> are still essential. How much trust can we have in
+the Science if the results vary from day to day, if even the
+technological challenges are a genuine hurdle.
 
-We all know that even repeatability for medium size computational
-projects is difficult, even for trained computational scientists,
-armed with an arsenal of tools such as git, GitHub, knitr, docker,
-... assuring repeatability and replication requires substantial
-investment.
+We all know that even reproducibility <s>repeatability</s> for medium
+size computational projects is difficult, even for trained
+computational scientists, armed with an arsenal of tools such as git,
+GitHub, knitr, docker, ... assuring repeatability and reproducibility
+<s>replication</s> requires substantial investment.
 
 To conclude, I would argue that we, as individuals, should definitely
-assure repeatability, certainly aim for replication but not forget
-that what we, as a scientific community, should really aim for, is
-reproducibility and re-use.
+assure repeatability, certainly aim for reproducibility
+<s>replication</s> but not forget that what we, as a scientific
+community, should really aim for, is replication
+<s>reproducibility</s> and re-use.
 
 ### References
 
