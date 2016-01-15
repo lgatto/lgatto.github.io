@@ -132,17 +132,21 @@ Please do get in touch if you are interested in running workshops.
 
 ## Publications
 
+Christoforou A, Mulvey CM, Breckels LM, Geladaki A, Hurrell T, Hayward
+PC, Naake T, Gatto L, Viner R, Arias AM, Lilley KS. A draft map of the
+mouse pluripotent stem cell spatial proteome. Nat Commun. 2016 Jan
+12;7:9992. [doi:10.1038/ncomms9992](http://www.nature.com/ncomms/2016/160112/ncomms9992/abs/ncomms9992.html)
+([PMID:26754106](http://www.ncbi.nlm.nih.gov/pubmed/26754106),
+[data](http://www.bioconductor.org/packages/release/data/experiment/html/pRolocdata.html), 
+[PRIDE](http://www.ebi.ac.uk/pride/archive/projects/PXD001279), 
+[resource](https://lgatto.shinyapps.io/christoforou2015/))
+
 Gatto L, Hansen KD, Hoopmann MR, Hermjakob H, Kohlbacher O and Beyer,
 A *Testing and validation of computational methods for mass
 spectrometry*. J Proteome
 Res. 2015. [doi: 10.1002/stem.2067](http://pubs.acs.org/doi/abs/10.1021/acs.jproteome.5b00852)
 ([PubMed](http://www.ncbi.nlm.nih.gov/pubmed/26549429)).
 
-
-Christoforou A, Mulvey CM, Breckels LM, Geladaki A, Hurrell T, Hayward
-P, Naake T, Gatto L, Viner R, Martinez Arias A, and Lilley KS. *A
-draft map of the mouse pluripotent stem cell spatial proteome*, Nature
-Communications, in press.
 
 Breckels LM, Holden S, Wonjar D, Mulvey CM, Christoforou A, Groen AJ,
 Kohlbacher O, Lilley KS, Gatto L. *Learning from heterogeneous data
