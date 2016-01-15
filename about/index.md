@@ -135,10 +135,11 @@ Please do get in touch if you are interested in running workshops.
 Christoforou A, Mulvey CM, Breckels LM, Geladaki A, Hurrell T, Hayward
 PC, Naake T, Gatto L, Viner R, Arias AM, Lilley KS. A draft map of the
 mouse pluripotent stem cell spatial proteome. Nat Commun. 2016 Jan
-12;7:9992. [doi:10.1038/ncomms9992](http://www.nature.com/ncomms/2016/160112/ncomms9992/abs/ncomms9992.html)
+12;7:9992
+[doi:10.1038/ncomms9992](http://www.nature.com/ncomms/2016/160112/ncomms9992/abs/ncomms9992.html)
 ([PMID:26754106](http://www.ncbi.nlm.nih.gov/pubmed/26754106),
-[data](http://www.bioconductor.org/packages/release/data/experiment/html/pRolocdata.html), 
-[PRIDE](http://www.ebi.ac.uk/pride/archive/projects/PXD001279), 
+[data](http://www.bioconductor.org/packages/release/data/experiment/html/pRolocdata.html),
+[PRIDE](http://www.ebi.ac.uk/pride/archive/projects/PXD001279),
 [resource](https://lgatto.shinyapps.io/christoforou2015/))
 
 Gatto L, Hansen KD, Hoopmann MR, Hermjakob H, Kohlbacher O and Beyer,
