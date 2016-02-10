@@ -281,7 +281,7 @@ These high-throughput spatial proteomics experiments record the
 steady-state distributions of transitory proteins, revealing
 information about the state in the entire assessed cell
 population. One example from
-[Christoforou et al. (2016)](http://www.nature.com/ncomms/2016/160112/ncomms9992/full/ncomms9992.html))
+[Christoforou et al. (2016)](http://www.nature.com/ncomms/2016/160112/ncomms9992/full/ncomms9992.html)
 is the Tfe3 transcription factor (Q64092-4), a modulator of the exit
 of ES cells from pluripotency.  As show on the figure below, we infer
 a mixed localisation between the cytoplasm and nucleus from its
