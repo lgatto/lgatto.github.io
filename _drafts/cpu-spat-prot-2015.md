@@ -294,7 +294,7 @@ differentiation, it is excluded from the nucleus
 
 ![Tfe3 and hyperLOPIT data](../images/hyperlopit-tfe3.png)
 
-The PCA plot with Tfe3 can very easily be reproduced with the 8 lines
+The PCA plot with Tfe3 can very easily be reproduced with the 9 lines
 of codes transcribed below.
 
 {% gist lgatto/dbdcdb5b76e83d202ed7 hyperlopit-tfe.R %}
