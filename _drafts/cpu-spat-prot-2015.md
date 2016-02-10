@@ -34,12 +34,12 @@ gradient. Fractions towards the end of the gradient will be enriched
 in dense sub-cellular compartments that migrated further down the
 gradient, while fractions from the top of the gradient will be
 enriched in lighter, less dense compartments. The proteins contained
-in the discrete fractions and then extracted, identified and
+in the discrete fractions are then extracted, identified and
 quantified using mass spectrometry. The relative protein intensities
-along the gradient (see plots on the top and right on the figure
+along the gradient (see top and right on the figure
 below) can then be used to recreate the original organelle-specific
 profiles. By matching protein profiles (grey profiles below) to those
-from marker proteins, i.e. genuine and well-known residents of
+of marker proteins, i.e. genuine and well-known residents of
 specific compartments (coloured profiles), it is possible to assign
 un-labelled proteins to their sub-cellular localisation. Rather than
 visualising data along multiple line plots, we prefer to summaries all
@@ -63,10 +63,10 @@ learning, i.e. classification.
 
 Before summarising our contributions on that front, it is worth noting
 that, despite this being, in many respects, the *main* analysis that
-will address the main question of such experiments, this is not the
+will address the key questions of such experiments, this is not the
 part of the analysis that will be most time consuming. On the
-contrary, this is pretty much a solved issue (there are other more
-important issues to tackle or improve) that can be settled over
+contrary (there are other more important issues to tackle or improve), 
+and this is pretty much a solved issue, that can be settled over
 coffee. 
 
 Below, I reproduce (with re-formatted references and links) an excerpt
@@ -108,7 +108,7 @@ very little or no attempt to offer access to code and the ability to
 reproduce the analyses. Second, the crucial parameter optimisation
 step is hardly addressed (see the
 [pRoloc software](http://bioconductor.org/packages/release/bioc/html/pRoloc.html)
-and our reference above for details). Finally, possibility in an
+and our reference above for details). Finally, possibly in an
 attempt to emphasise novelty in using other algorithms for the first
 time in such a context, it generally doesn't matter what algorithms is
 used, as long as it is used adequately (see second point). Below is a
@@ -157,8 +157,8 @@ and lines in the feature table) to cite a few.
 
 ## New algorithms
 
-We have also developed novel algorithms to reveal new feature and shed
-new lights on these spatial proteomics data sets. All these new
+We have also developed novel algorithms to reveal new features and shed
+new light on these spatial proteomics data sets. All these new
 algorithms are readily available and documented in the
 [pRoloc](http://bioconductor.org/packages/release/bioc/html/pRoloc.html)
 software.
@@ -209,14 +209,14 @@ showed that combining these heterogeneous data sources substantially
 improves the classification accuracy. One particularly useful feature
 of the transfer learning was the improvement of the discrimination of
 true and false positives. Indeed, running a classification algorithm
-will classify every un-labelled protein that one of the labelled
+will classify every un-labelled protein to one of the labelled
 classes (sub-cellular niches). One can however never guarantee that
-all sub-cellular niches are present, or that proteins reside in
-multiple locations (we actually know that both of these happen). As
+all sub-cellular niches are present and it is widely known that
+proteins reside in multiple locations. As
 such, it is crucial to carefully set classification score thresholds
 to minimise false positive assignments. In the figure below, we
-compared the classification scores for the one data classifiers (knn
-and svm) to the two data transfer learning versions (knn-tl and
+compared the classification scores for one data classifier (knn
+or svm) to the data transfer learning version (knn-tl or
 svm-tl) using data for which true localisation was known, and compared
 correct and incorrect outcomes. We see that the separation between
 these correct an incorrect outcomes scores is greater for the transfer
@@ -231,13 +231,13 @@ correct predictions.
 An important achievement, that is not immediately obvious from
 research papers, is the data management and analysis infrastructure
 that we can rely on. In a matter of minutes, using our software, one
-can generate a annotated R object (an
+can generate an annotated R object (an
 [`MSnSet`](http://www.rdocumentation.org/packages/MSnbase/functions/MSnSet-class))
 from an arbitrary
 [spreadsheet](http://www.rdocumentation.org/packages/MSnbase/functions/readMSnSet),
-if is one for which we have already existing data,
+if there already is one for the existing data, and 
 [add markers](http://www.rdocumentation.org/packages/pRoloc/functions/addMarkers)
-if they are not readily available, visualise, explore and assess the
+if they are not readily available, to visualise, explore and assess the
 quality of the data. If appropriate, we can then readily run various
 analyses such as
 [classification](http://www.rdocumentation.org/packages/pRoloc/functions/svmClassification),
@@ -283,7 +283,7 @@ information about the state in the entire assessed cell
 population. One example from
 [Christoforou et al. (2016)](http://www.nature.com/ncomms/2016/160112/ncomms9992/full/ncomms9992.html)
 is the Tfe3 transcription factor (Q64092-4), a modulator of the exit
-of ES cells from pluripotency.  As show on the figure below, we infer
+of ES cells from pluripotency.  As shown on the figure below, we infer
 a mixed localisation between the cytoplasm and nucleus from its
 position on the PCA plot. This mixed localisation is consistent with
 immunocytochemistry data in ES cells. In the pluripotent state, Tfe3
