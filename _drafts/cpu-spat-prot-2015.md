@@ -23,7 +23,10 @@ and later, in 2013, when the CPU was set up.
 ## Spatial proteomics
 
 Spatial proteomics is the systematic study of protein sub-cellular
-localisation. Here, we will focus on high throughput approaches, based
+localisation. Building such sub-cellular maps was coined a
+[method to watch](http://www.nature.com/nmeth/journal/v13/n1/full/nmeth.3708.html),
+giving us *an unprecedented picture of the [cellular]
+territory*. Here, we will focus on high throughput approaches, based
 on sub-cellular fractionation and quantitative mass spectrometry. In a
 nutshell, the plasma membrane of cells is firstly disrupted so as to
 release their intact content, including organelles, vesicles and
