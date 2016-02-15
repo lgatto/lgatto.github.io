@@ -31,23 +31,23 @@ on sub-cellular fractionation and quantitative mass spectrometry. In a
 nutshell, the plasma membrane of cells is firstly disrupted so as to
 release their intact content, including organelles, vesicles and
 macro-molecular complexes. This sub-cellular content is then separated
-using, for example, a continuous density gradients and a set of
-discrete fraction are collected along the continuous
+using, for example, a continuous density gradient and a set of
+discrete fractions are collected along the continuous separation
 gradient. Fractions towards the end of the gradient will be enriched
 in dense sub-cellular compartments that migrated further down the
 gradient, while fractions from the top of the gradient will be
 enriched in lighter, less dense compartments. The proteins contained
 in the discrete fractions are then extracted, identified and
 quantified using mass spectrometry. The relative protein intensities
-along the gradient (see top and right on the figure
-below) can then be used to recreate the original organelle-specific
-profiles. By matching protein profiles (grey profiles below) to those
-of marker proteins, i.e. genuine and well-known residents of
-specific compartments (coloured profiles), it is possible to assign
-un-labelled proteins to their sub-cellular localisation. Rather than
-visualising data along multiple line plots, we prefer to summaries all
-the data on a principal component analysis (PCA) plot (or other
-dimensionality reduction methods).
+along the gradient (see top and right on the figure below) can then be
+used to recreate the original organelle-specific profiles. By matching
+protein profiles (grey profiles below) to those of marker proteins,
+i.e. genuine and well-known residents of specific compartments
+(coloured profiles), it is possible to assign un-labelled proteins to
+their sub-cellular localisation. Rather than visualising data along
+multiple line plots, we prefer to summaries all the data on a
+principal component analysis (PCA) plot (or other dimensionality
+reduction methods).
 
 ![Protein profiles and PCA plot](../images/profiles-pca.png)
 
