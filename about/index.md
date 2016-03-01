@@ -132,6 +132,14 @@ Please do get in touch if you are interested in running workshops.
 
 ## Publications
 
+Lazar C, Gatto L, Ferro M, Bruley C and Burger T. *Accounting for the
+multiple natures of missing values in label-free quantitative
+proteomics datasets to compare imputation strategies*, Accepted in
+Journal of Proteome Research. (Software:
+[CRAN](https://cran.r-project.org/web/packages/imputeLCMD/index.html)
+and
+[Bioconductor](http://bioconductor.org/packages/release/bioc/html/MSnbase.html))
+
 Christoforou A, Mulvey CM, Breckels LM, Geladaki A, Hurrell T, Hayward
 PC, Naake T, Gatto L, Viner R, Arias AM, Lilley KS. A draft map of the
 mouse pluripotent stem cell spatial proteome. Nat Commun. 2016 Jan
