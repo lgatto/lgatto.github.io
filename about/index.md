@@ -135,7 +135,9 @@ Please do get in touch if you are interested in running workshops.
 Lazar C, Gatto L, Ferro M, Bruley C and Burger T. *Accounting for the
 multiple natures of missing values in label-free quantitative
 proteomics datasets to compare imputation strategies*, Accepted in
-Journal of Proteome Research. (Software:
+Journal of Proteome
+Research. ([Publisher](http://pubs.acs.org/doi/abs/10.1021/acs.jproteome.5b00981),
+Software:
 [CRAN](https://cran.r-project.org/web/packages/imputeLCMD/index.html)
 and
 [Bioconductor](http://bioconductor.org/packages/release/bioc/html/MSnbase.html))
