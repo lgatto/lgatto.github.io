@@ -255,7 +255,7 @@ Genomics 2013, 14:822</a>.
 Gatto L. and Christoforou A. *Using R and Bioconductor for proteomics
 data analysis*, Biochim Biophys Acta - Proteins and Proteomics, 2013.
 ([PubMed](http://www.ncbi.nlm.nih.gov/pubmed/23692960),
-[pre-print](http://arxiv.org/abs/1305.6559") and software:
+[pre-print](http://arxiv.org/abs/1305.6559) and software:
 [Bioconductor](http://bioconductor.org/packages/devel/data/experiment/html/RforProteomics.html), 
 [github](https://github.com/lgatto/RforProteomics)).
 
