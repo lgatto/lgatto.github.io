@@ -132,6 +132,25 @@ Please do get in touch if you are interested in running workshops.
 
 ## Publications
 
+Perez-Riverol Y, Gatto L, Wang R, Sachsenberg T, Uszkoreit J, da Veiga
+Leprevost F, Fufezan C, Ternent T, Eglen SJ, Katz DS, Pollard TJ,
+Konovalov A, Flight RM, Kai Blin, Vizcaino JA. *Ten Simple Rules for
+Taking Advantage of git and GitHub*
+[bioRViv](http://dx.doi.org/10.1101/048744), 2016.
+
+Breckels LM, Holden S, Wonjar D, Mulvey CM, Christoforou A, Groen AJ,
+Kohlbacher O, Lilley KS, Gatto L. *Learning from heterogeneous data
+sources: an application in spatial
+proteomics*. [bioRxiv](http://dx.doi.org/10.1101/022152), 2016
+(accepted in PLoS Computational Biology).
+
+Fabre B, Korona D, Groen A, Vowinckel J, Gatto L, Deery MJ, Ralser M,
+Russell S, Lilley KS. *Analysis of the Drosophila melanogaster
+proteome dynamics during the embryo early development by a combination
+of label-free proteomics approaches*,
+Proteomics, 2016 ([PMID:27029218](http://www.ncbi.nlm.nih.gov/pubmed/27029218),
+[Publisher](http://dx.doi.org/10.1002/pmic.201500482))
+
 Lazar C, Gatto L, Ferro M, Bruley C and Burger T. *Accounting for the
 multiple natures of missing values in label-free quantitative
 proteomics datasets to compare imputation strategies*, Accepted in
@@ -157,12 +176,6 @@ A *Testing and validation of computational methods for mass
 spectrometry*. J Proteome
 Res. 2015. [doi: 10.1002/stem.2067](http://pubs.acs.org/doi/abs/10.1021/acs.jproteome.5b00852)
 ([PubMed](http://www.ncbi.nlm.nih.gov/pubmed/26549429)).
-
-
-Breckels LM, Holden S, Wonjar D, Mulvey CM, Christoforou A, Groen AJ,
-Kohlbacher O, Lilley KS, Gatto L. *Learning from heterogeneous data
-sources: an application in spatial
-proteomics*. [bioRxiv](http://dx.doi.org/10.1101/022152).
 
 Mulvey CM, Schröter C, Gatto L, Dikicioglu D, Baris Fidaner I,
 Christoforou A, Deery MJ, Cho LT, Niakan KK, Martinez-Arias A, Lilley
