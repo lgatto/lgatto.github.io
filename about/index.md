@@ -406,15 +406,17 @@ versions).
 
 ## Software
 
-I have developed or have contributed to many open source
+I have developed and have contributed to many open source
 R/[Bioconductor](http://www.bioconductor.org) packages, in particular
 [proteomics](http://bioconductor.org/packages/release/BiocViews.html#___Proteomics)
 software and data packages, all of which are available on my
 [own](http://www.github.com/lgatto) and my
-[group's](http://www.github.com/ComputationalProteomicsUnit) github
+[group's](http://www.github.com/ComputationalProteomicsUnit) GitHub
 pages. See
-[Gatto and Christoforou, 2014](http://www.ncbi.nlm.nih.gov/pubmed/23692960)
-and [Gatto et al., 2014](http://www.ncbi.nlm.nih.gov/pubmed/25690415)
+[Gatto and Christoforou, 2014](http://www.ncbi.nlm.nih.gov/pubmed/23692960),
+[Gatto et al., 2014](http://www.ncbi.nlm.nih.gov/pubmed/25690415) and
+the
+[`RforProteomics` vignettes](http://www.bioconductor.org/packages/release/data/experiment/html/RforProteomics.html)
 for an overview of the R/Bioconductor infrastructure for mass
 spectrometry and proteomics.
 
