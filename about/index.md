@@ -136,14 +136,13 @@ Perez-Riverol Y, Gatto L, Wang R, Sachsenberg T, Uszkoreit J, da Veiga
 Leprevost F, Fufezan C, Ternent T, Eglen SJ, Katz DS, Pollard TJ,
 Konovalov A, Flight RM, Kai Blin, Vizcaino JA. *Ten Simple Rules for
 Taking Advantage of git and GitHub*
-[bioRXiv](http://dx.doi.org/10.1101/048744), 2016.
+[bioRXiv](http://dx.doi.org/10.1101/048744), 2016 (Accepted in PLoS Computational Biology).
 
 Breckels LM, Holden S, Wonjar D, Mulvey CM, Christoforou A, Groen AJ,
 Kohlbacher O, Lilley KS, Gatto L. *Learning from heterogeneous data
 sources: an application in spatial proteomics*. PLoS Comput Biol. 2016
 May 13;12(5):e1004920
 [doi:10.1371/journal.pcbi.1004920](http://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1004920).
-
 
 
 Fabre B, Korona D, Groen A, Vowinckel J, Gatto L, Deery MJ, Ralser M,
