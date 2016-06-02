@@ -152,11 +152,12 @@ of label-free proteomics approaches*,
 Proteomics, 2016 ([PMID:27029218](http://www.ncbi.nlm.nih.gov/pubmed/27029218),
 [Publisher](http://dx.doi.org/10.1002/pmic.201500482))
 
-Lazar C, Gatto L, Ferro M, Bruley C and Burger T. *Accounting for the
-multiple natures of missing values in label-free quantitative
-proteomics datasets to compare imputation strategies*, Accepted in
-Journal of Proteome
-Research. ([Publisher](http://pubs.acs.org/doi/abs/10.1021/acs.jproteome.5b00981),
+Lazar C, Gatto L, Ferro M, Bruley C, Burger T. *Accounting for the
+Multiple Natures of Missing Values in Label-Free Quantitative
+Proteomics Data Sets to Compare Imputation Strategies*. J Proteome
+Res. 2016 Apr
+1;15(4):1116-25. ([Publisher](http://pubsdc3.acs.org/doi/abs/10.1021/acs.jproteome.5b00981),
+[PMID:26906401](http://www.ncbi.nlm.nih.gov/pubmed/26906401),
 Software:
 [CRAN](https://cran.r-project.org/web/packages/imputeLCMD/index.html)
 and
