@@ -58,7 +58,7 @@ owner:
   soundcloud: #username
   weibo: #username
   flickr: #username
-  dissem.in: 6231/laurent-gatto
+  dissemin: 6231/laurent-gatto
 
 include: [".htaccess"]
 exclude: ["lib", "config.rb", "Capfile", "config", "log", "Rakefile", "Rakefile.rb", "tmp", "less", "*.sublime-project", "*.sublime-workspace", "test", "spec", "Gruntfile.js", "package.json", "node_modules", "Gemfile", "Gemfile.lock", "LICENSE", "README.md", "src"]
