@@ -132,11 +132,19 @@ Please do get in touch if you are interested in running workshops.
 
 ## Publications
 
-Perez-Riverol Y, Gatto L, Wang R, Sachsenberg T, Uszkoreit J, da Veiga
-Leprevost F, Fufezan C, Ternent T, Eglen SJ, Katz DS, Pollard TJ,
-Konovalov A, Flight RM, Kai Blin, Vizcaino JA. *Ten Simple Rules for
-Taking Advantage of git and GitHub*
-[bioRXiv](http://dx.doi.org/10.1101/048744), 2016 (Accepted in PLoS Computational Biology).
+Wieczorek S, Combes F, Lazar C, Giai Gianetto Q, Gatto L, Dorffer A,
+Hesse A, Coute Y, Ferro M, Bruley C, and Burger T. *DAPAR & ProStaR:
+software to perform statistical analyses in quantitative discovery
+proteomics* Bioinformatics 2016,
+[btw580v1-btw580](http://bioinformatics.oxfordjournals.org/content/early/2016/09/06/bioinformatics.btw580.abstract}).
+
+Perez-Riverol Y, Gatto L, Wang R, Sachsenberg T, Uszkoreit J,
+Leprevost Fda V, Fufezan C, Ternent T, Eglen SJ, Katz DS, Pollard TJ,
+Konovalov A, Flight RM, Blin K, Vizcaino JA. *Ten Simple Rules for
+Taking Advantage of Git and GitHub*. PLoS Comput Biol. 2016 Jul
+14;12(7):e1004947. [doi:10.1371/journal.pcbi.1004947](http://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1004947)
+[PMID:27415786](http://www.ncbi.nlm.nih.gov/pubmed/27415786).
+
 
 Breckels LM, Holden S, Wonjar D, Mulvey CM, Christoforou A, Groen AJ,
 Kohlbacher O, Lilley KS, Gatto L. *Learning from heterogeneous data
