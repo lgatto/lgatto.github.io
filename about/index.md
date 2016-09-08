@@ -136,7 +136,7 @@ Wieczorek S, Combes F, Lazar C, Giai Gianetto Q, Gatto L, Dorffer A,
 Hesse A, Coute Y, Ferro M, Bruley C, and Burger T. *DAPAR & ProStaR:
 software to perform statistical analyses in quantitative discovery
 proteomics* Bioinformatics 2016,
-[btw580v1-btw580](http://bioinformatics.oxfordjournals.org/content/early/2016/09/06/bioinformatics.btw580.abstract}).
+[btw580v1-btw580](http://bioinformatics.oxfordjournals.org/content/early/2016/09/06/bioinformatics.btw580.abstract).
 
 Perez-Riverol Y, Gatto L, Wang R, Sachsenberg T, Uszkoreit J,
 Leprevost Fda V, Fufezan C, Ternent T, Eglen SJ, Katz DS, Pollard TJ,
