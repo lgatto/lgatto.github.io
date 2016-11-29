@@ -5,7 +5,7 @@ tags: ["R", "MSnbase", "Bioconductor"]
 comments: true
 ---
 
-[MSnbase](http://bioconductor.org/packages/release/bioc/html/MSnbase.html)
+n[MSnbase](http://bioconductor.org/packages/release/bioc/html/MSnbase.html)
 (or [here](https://github.com/lgatto/MSnbase/) on GitHub)
 ([Gatto and Lilley, 2010](https://www.ncbi.nlm.nih.gov/pubmed/22113085))
 is on of my main software projects that I started when I moved to
@@ -23,7 +23,7 @@ want to give a few more details about and credit to the contributors.
 
 The figure below summarises the contributors over time. 
 
-![MSnbase contributors](../images/msnbase-contributors-2.png)
+![MSnbase contributors](/images/msnbase-contributors-2.png)
 
 The first data point on the plot is Mon Oct 4 23:35:23 2010, and
 corresponds to the very first git commit (with typo) in the
@@ -46,7 +46,7 @@ Date:   Mon Oct 4 23:35:23 2010 +0100
 
 Since then, the commits have been quite regular, except for 2012.
 
-![GitHub commits](images/msnbase-contributors-github-2016-11-27.png)
+![GitHub commits](/images/msnbase-contributors-github-2016-11-27.png)
 
 ### Guangchuang Yu 
 
@@ -59,7 +59,7 @@ and plotted as a histogram. Assuming good peptide fragmentation and
 absence of contamination, the histogram should feature peaks
 corresponding to amino acids.
 
-![plotMzDelta output](images/msnbase-plotMzDelta.png)
+![plotMzDelta output](/images/msnbase-plotMzDelta.png)
 
 He is also the author of the first implementation of the `readMgfData`
 that, as the name implies, reads `mgf` data (thanks for the
@@ -83,7 +83,7 @@ The `ggplot2`-based implementation of `image`, that produces a simple
 heatmap of the quantitative data also come from him, and is based on
 his own `vp.misc::image_msnset` implementation. 
 
-![Facetted image](images/msnbase-image-facetBy.png)
+![Facetted image](/images/msnbase-image-facetBy.png)
 
 ### Thomas Naake 
 
@@ -111,7 +111,7 @@ highlightOnPlot(tan2009r1, x)
 highlightOnPlot(tan2009r1, x, labels = TRUE, pos = 3)
 {% endhighlight %}
 
-![Highlight features of interest](images/fois-highlightOnPlot.png)
+![Highlight features of interest](/images/fois-highlightOnPlot.png)
 
 ### Sebastian Gibb
 
@@ -129,7 +129,7 @@ package and support for label-free MS2 quantitation. He also worked on
 spectra comparison, annotation and visualisation, as illustrated
 below.
 
-![Spectum annotation and comparison](images/msnbase-spectrum-plots.png)
+![Spectum annotation and comparison](/images/msnbase-spectrum-plots.png)
 
 ### Richie Cotton 
 
