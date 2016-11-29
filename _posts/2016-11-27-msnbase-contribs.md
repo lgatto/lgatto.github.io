@@ -61,6 +61,10 @@ corresponding to amino acids.
 
 ![plotMzDelta output](images/msnbase-plotMzDelta.png)
 
+He is also the author of the first implementation of the `readMgfData`
+that, as the name implies, reads `mgf` data (thanks for the
+[reminder](https://twitter.com/guangchuangyu/status/803414524657221632?s=09)).
+
 ### Samuel Wieczorek and Cosmin Lazar
 
 The contributions of Sam and Cosmin in February 2014 stem from our
