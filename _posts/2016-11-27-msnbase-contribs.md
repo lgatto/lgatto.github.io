@@ -6,12 +6,11 @@ comments: true
 ---
 
 [MSnbase](http://bioconductor.org/packages/release/bioc/html/MSnbase.html)
-(or [here](https://github.com/lgatto/MSnbase/) on GitHub)
-([Gatto and Lilley, 2010](https://www.ncbi.nlm.nih.gov/pubmed/22113085))
-is on of my main software projects that I started when I moved to
-Cambridge in
-2010. It offers a way to import, manipulate and process raw mass
-spectrometry and quantitative proteomics data in R.
+(or [here](https://github.com/lgatto/MSnbase/) on GitHub) ([Gatto and
+Lilley, 2010](https://www.ncbi.nlm.nih.gov/pubmed/22113085)) is one of
+my main software projects. I started working on the package when I
+moved to Cambridge in 2010. It offers a way to import, manipulate and
+process raw mass spectrometry and quantitative proteomics data in R.
 
 Since then, I benefited from quite a few contributions (which I
 already briefly highlighted
