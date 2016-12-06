@@ -5,7 +5,7 @@ tags: ["R", "MSnbase", "Bioconductor"]
 comments: true
 ---
 
-n[MSnbase](http://bioconductor.org/packages/release/bioc/html/MSnbase.html)
+[MSnbase](http://bioconductor.org/packages/release/bioc/html/MSnbase.html)
 (or [here](https://github.com/lgatto/MSnbase/) on GitHub)
 ([Gatto and Lilley, 2010](https://www.ncbi.nlm.nih.gov/pubmed/22113085))
 is on of my main software projects that I started when I moved to
