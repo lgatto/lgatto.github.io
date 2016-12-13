@@ -251,7 +251,7 @@ href="http://www.ncbi.nlm.nih.gov/pubmed/24760958">PubMed</a>).
 Vizcaíno J.A. <i>et al.</i> *ProteomeXchange: globally co-ordinated
 proteomics data submission and dissemination*, Nature Biotechnology
 2014, 32, 223–226.  (<a
-href="http://www.ncbi.nlm.nih.gov/pubmed/24727771">PubMed</a>,
+href="http://www.ncbi.nlm.nih.gov/pubmed/24727771">PubMed</a>)
 
 
 Gatto L., Breckels L.M, Burger T, Wieczorek S. and Lilley
@@ -395,6 +395,10 @@ KS. [*Spatial Proteomics: Practical Considerations for Data Acquisition and Anal
 in *Quantitative Proteomics*, 185-210, The Royal Society of Chemistry,
 2014.
 
+Breckels LM, Gibb S, Petyuk V and Gatto L
+[*R for Proteomics*](http://pubs.rsc.org/en/content/chapter/bk9781782624288-00321/978-1-78262-428-8#!divabstract}
+in *Proteome Informatics*, The Royal Society of Chemistry, November
+2016.
       
 #### Technical Notes
 
