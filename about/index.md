@@ -396,7 +396,7 @@ in *Quantitative Proteomics*, 185-210, The Royal Society of Chemistry,
 2014.
 
 Breckels LM, Gibb S, Petyuk V and Gatto L
-[*R for Proteomics*](http://pubs.rsc.org/en/content/chapter/bk9781782624288-00321/978-1-78262-428-8#!divabstract}
+[*R for Proteomics*](http://pubs.rsc.org/en/content/chapter/bk9781782624288-00321/978-1-78262-428-8#!divabstract)
 in *Proteome Informatics*, The Royal Society of Chemistry, November
 2016.
       
