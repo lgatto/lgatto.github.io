@@ -135,8 +135,7 @@ Please do get in touch if you are interested in running workshops.
 Wieczorek S, Combes F, Lazar C, Giai Gianetto Q, Gatto L, Dorffer A,
 Hesse A, Coute Y, Ferro M, Bruley C, and Burger T. *DAPAR & ProStaR:
 software to perform statistical analyses in quantitative discovery
-proteomics* Bioinformatics 2016,
-[btw580v1-btw580](http://bioinformatics.oxfordjournals.org/content/early/2016/09/06/bioinformatics.btw580.abstract).
+proteomics* Bioinformatics 2016, [doi:10.1093/bioinformatics/btw580](http://bioinformatics.oxfordjournals.org/content/early/2016/09/23/bioinformatics.btw580).
 
 Perez-Riverol Y, Gatto L, Wang R, Sachsenberg T, Uszkoreit J,
 Leprevost Fda V, Fufezan C, Ternent T, Eglen SJ, Katz DS, Pollard TJ,
@@ -205,7 +204,8 @@ and software:
 
 Huber W et al. *Orchestrating high-throughput genomic analysis with
 Bioconductor*. Nat Methods. 2015 Jan 29;12(2):115-21
-([PubMed](http://www.ncbi.nlm.nih.gov/pubmed/25633503),[Publisher](http://www.nature.com/doifinder/10.1038/nmeth.3252)).
+([PubMed](http://www.ncbi.nlm.nih.gov/pubmed/25633503),
+[Publisher](http://www.nature.com/doifinder/10.1038/nmeth.3252)).
      
 
 Hiemstra TF et al. *Human urinary exosomes as innate immune
