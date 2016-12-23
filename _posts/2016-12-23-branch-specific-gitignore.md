@@ -30,7 +30,7 @@ It is straightforward to exclude the site's `docs` directory in the
 package tarball/zipfile by amending the `.Rbuildignore` file - adding
 `docs` will do the trick.
 
-## Excluding from `hedgehog`
+## Excluding from svn
 
 It is not straightforward, however, to ignore the `docs` directory on
 the Bioconductor `hedgehog` subversion server if you use `git-svn` to
@@ -82,13 +82,9 @@ simple. I will always create a new `.gitignore` file from
 ```
 $ cat .git/hooks/post-checkout
 #!/bin/bash
-
 # Copy in .git/hooks/post-checkout and make it executable
-
 branch=$(git rev-parse --abbrev-ref HEAD)
-
 cat .gitignores/all > .gitignore
-
 if [[ -f .gitignores/$branch ]]; then
     cat .gitignores/$branch >> .gitignore;
 fi
@@ -152,7 +148,6 @@ docs/articles/Figures/itraqchem.pdf
 docs/articles/Figures/msnset.png
 docs/articles/Figures/plot2d-figure.png
 docs/articles/Figures/plotDensity-figure.png
-
 ```
 
 ## Other possibilities
