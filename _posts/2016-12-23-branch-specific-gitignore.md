@@ -155,7 +155,7 @@ docs/articles/Figures/plotDensity-figure.png
 
 ```
 
-## Other possibilites
+## Other possibilities
 
 ### Orphan branches
 
@@ -165,7 +165,7 @@ to use the good old original orphaned `gh-pages` branch solution.
 
 ### svn ignore property
 
-If one doens't use `git-svn` and manages `git` and `svn`
+If one doesn't use `git-svn` and manages `git` and `svn`
 independently, then setting the svn ignore property with
 
 ```
