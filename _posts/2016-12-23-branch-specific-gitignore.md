@@ -80,7 +80,7 @@ simple. I will always create a new `.gitignore` file from
 `.gitignores/all` and will append the content of a file in
 `.gitignores/` that matches the branch name.
 
-```
+{% highlight bash %}
 $ cat .git/hooks/post-checkout
 #!/bin/bash
 # Copy in .git/hooks/post-checkout and make it executable
@@ -89,13 +89,14 @@ cat .gitignores/all > .gitignore
 if [[ -f .gitignores/$branch ]]; then
     cat .gitignores/$branch >> .gitignore;
 fi
-```
+{% endhighlight %}
+
 
 ### In action
 
 And ...
 
-```
+{% highlight bash %}
 $ git branch 
   devel
 * master
@@ -116,7 +117,8 @@ $ cat .gitignore
 Makefile
 .gitignore
 docs
-```
+{% endhighlight %}
+
 
 I seems to work as expected.
 
@@ -130,7 +132,7 @@ There is one drawback with this solution, however. When comparing the
 `devel` and `master` branches with `git diff`, the ignored files are
 still shown.
 
-```
+{% highlight bash %}
 $ git branch
 * devel
   master
@@ -149,7 +151,8 @@ docs/articles/Figures/itraqchem.pdf
 docs/articles/Figures/msnset.png
 docs/articles/Figures/plot2d-figure.png
 docs/articles/Figures/plotDensity-figure.png
-```
+{% endhighlight %}
+
 
 ## Other possibilities
 
@@ -164,8 +167,8 @@ to use the good old original orphaned `gh-pages` branch solution.
 If one doesn't use `git-svn` and manages `git` and `svn`
 independently, then setting the svn ignore property with
 
-```
+{% highlight bash %}
 % svn propset svn:ignore docs .
-```
+{% endhighlight %}
 
 should work. It doesn't when managing both together.
