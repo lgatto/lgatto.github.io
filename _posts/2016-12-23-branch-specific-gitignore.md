@@ -51,7 +51,7 @@ ignore. They all come in a new `gitignores` directory. I choose to
 name the general file `all` and the branch-specific ones using the
 branch name (`devel` below).
 
-```
+```sh
 $ tree .gitignores
 .gitignores
 ├── all
@@ -60,7 +60,7 @@ $ tree .gitignores
 
 Each file contains exactly what a `.gitignore` file would contain.
 
-```
+```sh
 $ cat .gitignores/all 
 Makefile
 .gitignore
