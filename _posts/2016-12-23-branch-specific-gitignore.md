@@ -51,22 +51,23 @@ ignore. They all come in a new `gitignores` directory. I choose to
 name the general file `all` and the branch-specific ones using the
 branch name (`devel` below).
 
-```sh
+
+{% highlight bash %}
 $ tree .gitignores
 .gitignores
 ├── all
 └── devel
-```
+{% endhighlight %}
 
 Each file contains exactly what a `.gitignore` file would contain.
 
-```sh
+{% highlight bash %}
 $ cat .gitignores/all 
 Makefile
 .gitignore
 $ cat .gitignores/devel 
 docs
-```
+{% endhighlight %}
 
 ### Dynamic generation of `.gitignore`
 
