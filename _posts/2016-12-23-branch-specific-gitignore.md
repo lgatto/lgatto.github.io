@@ -112,7 +112,6 @@ Switched to branch 'devel'
 Your branch and 'bioc/master' have diverged,
 and have 1754 and 12 different commits each, respectively.
   (use "git pull" to merge the remote branch into yours)
-lg390@elyacin [10:10:02] [~/dev/00_github/MSnbase] [devel]
 $ cat .gitignore
 Makefile
 .gitignore
