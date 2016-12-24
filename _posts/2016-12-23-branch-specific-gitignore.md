@@ -171,3 +171,17 @@ independently, then setting the svn ignore property with
 {% endhighlight %}
 
 should work. It doesn't when managing both together.
+
+#### Edit
+
+I suggest to add a header to `.gitignores` indicating that `gitignore`
+is generated automatically and any updates will be overwritten.
+
+
+{% highlight bash %}
+% cat .gitignores/all
+# This is an automatically generated file. Ammend in .gitignores/ and
+# read  http://lgatto.github.io/branch-specific-gitignore/ for details
+Makefile
+.gitignore
+{% endhighlight %}
