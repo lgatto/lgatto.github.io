@@ -132,6 +132,15 @@ Please do get in touch if you are interested in running workshops.
 
 ## Publications
 
+Breckels LM, Mulvey CM, Lilley KS and Gatto L. *A Bioconductor
+workflow for processing and analysing spatial proteomics data*
+[version 1; referees: awaiting peer review]. F1000Research 2016,
+5:2926
+([doi:10.12688/f1000research.10411.1](https://f1000research.com/articles/5-2926/)).
+[Software: [MSnbase](http://bioconductor.org/packages/MSnbase),
+[pRoloc](http://bioconductor.org/packages/pRoloc),
+[pRolocGUI](http://bioconductor.org/packages/pRolocGUI)]
+
 Wieczorek S, Combes F, Lazar C, Giai Gianetto Q, Gatto L, Dorffer A,
 Hesse A, Coute Y, Ferro M, Bruley C, and Burger T. *DAPAR & ProStaR:
 software to perform statistical analyses in quantitative discovery
@@ -144,13 +153,12 @@ Taking Advantage of Git and GitHub*. PLoS Comput Biol. 2016 Jul
 14;12(7):e1004947. [doi:10.1371/journal.pcbi.1004947](http://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1004947)
 [PMID:27415786](http://www.ncbi.nlm.nih.gov/pubmed/27415786).
 
-
 Breckels LM, Holden S, Wonjar D, Mulvey CM, Christoforou A, Groen AJ,
 Kohlbacher O, Lilley KS, Gatto L. *Learning from heterogeneous data
 sources: an application in spatial proteomics*. PLoS Comput Biol. 2016
 May 13;12(5):e1004920
-[doi:10.1371/journal.pcbi.1004920](http://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1004920).
-
+[doi:10.1371/journal.pcbi.1004920](http://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1004920), 
+[Software](http://bioconductor.org/packages/release/bioc/html/pRoloc.html))
 
 Fabre B, Korona D, Groen A, Vowinckel J, Gatto L, Deery MJ, Ralser M,
 Russell S, Lilley KS. *Analysis of the Drosophila melanogaster
