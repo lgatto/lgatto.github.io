@@ -185,3 +185,21 @@ is generated automatically and any updates will be overwritten.
 Makefile
 .gitignore
 {% endhighlight %}
+
+#### Edit 2
+
+And to ignore the `.gitignores` directory completely, suffices to add
+it to the general `excludes` file. I prefer to keep it in `git` (but
+not svn, and ignore it when building the package bundle) to keep track
+from what I ignore.
+
+{% highlight bash %}
+$ cat .git/info/exclude
+# git ls-files --others --exclude-from=.git/info/exclude
+# Lines that start with '#' are comments.
+# For a project mostly in C, the following would be a good set of
+# exclude patterns (uncomment them if you want to use them):
+# *.[oa]
+# *~
+.gitignores
+{% endhighlight %}
