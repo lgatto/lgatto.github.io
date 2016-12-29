@@ -46,20 +46,6 @@ sidebar:
   is a contributor to the [`MSnbase`](http://lgatto.github.io/MSnbase)
   and [`Pbase`](http://bioconductor.org/packages/Pbase) packages.
 
-## Alumni 
-
-- **Thomas Naake**, visited the group in Spring 2014 as an ERASMUS
-  student affiliated to the University of Freiburg. He developed the
-  first version of
-  [`pRolocGUI`](https://bioconductor.org/packages/release/bioc/html/pRolocGUI.html),
-  an interactive visualisation tools for organelle proteomics
-  data. Thomas is now a PhD student at Max Planck Institute of
-  Molecular Plant Physiology.
-
-- **Vicky Butt**, Part III student in Systems Biology, applying
-  graph-based methods to study protein sub-cellular
-  localisation. Vicky is now pursuing a PhD at UCL.
-
 ## Collaborators 
 
 - [**Kathyn S. Lilley**](http://www.bioc.cam.ac.uk/people/uto/lilley),
@@ -89,3 +75,17 @@ sidebar:
   [Wieczorek *et al.* 2016](https://www.ncbi.nlm.nih.gov/pubmed/27605098)). Thomas
   contributed the *perTurbo* algorithms to
   [*pRoloc*](https://bioconductor.org/packages/pRoloc).
+
+## Alumni 
+
+- **Thomas Naake**, visited the group in Spring 2014 as an ERASMUS
+  student affiliated to the University of Freiburg. He developed the
+  first version of
+  [`pRolocGUI`](https://bioconductor.org/packages/release/bioc/html/pRolocGUI.html),
+  an interactive visualisation tools for organelle proteomics
+  data. Thomas is now a PhD student at Max Planck Institute of
+  Molecular Plant Physiology.
+
+- **Vicky Butt**, Part III student in Systems Biology, applying
+  graph-based methods to study protein sub-cellular
+  localisation. Vicky is now pursuing a PhD at UCL.
