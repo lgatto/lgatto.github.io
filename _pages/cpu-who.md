@@ -7,6 +7,8 @@ sidebar:
   nav: "cpu"
 ---
 
+{% include toc %}
+
 ## CPU core
 
 - [**Laurent Gatto**](http://lgatto.github.io/about/), head of the

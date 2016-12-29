@@ -7,6 +7,8 @@ sidebar:
   nav: "cpu"
 ---
 
+{% include toc %}
+
 ### Journal articles 
 
 Breckels LM, Mulvey CM, Lilley KS and Gatto L. *A Bioconductor
