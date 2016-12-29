@@ -1,6 +1,6 @@
 ---
 permalink: /cpu-pubs/
-title: "Publicastion"
+title: "Publications"
 modified: 2016-12-29
 author_profile: false
 sidebar:
