@@ -4,7 +4,6 @@ title: "The lab"
 modified: 2016-12-29
 ---
 
-# The lab
 
 The **Computational Proteomics Unit** was set up in August 2013 and is
 part of the
