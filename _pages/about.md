@@ -58,7 +58,7 @@ the research in biology calls for a open approaches, influenced by the
 between stake holders, **open research** and development to open
 dissemination of all research outputs.
 
-#### Proteomics
+### Proteomics
 
 My work on the design and implementation of reproducible mass
 spectrometry-based proteomics data analysis pipeline has materialised
@@ -75,7 +75,7 @@ the associated publications
 addresses MS<sup>E</sup> label-free quantitation, optionally including
 ion mobility separation.
 
-#### Spatial proteomics
+### Spatial proteomics
 
 In biology, localisation is function: knowledge of the localisation of
 proteins is of paramount importance to assess and study their
@@ -97,7 +97,7 @@ and transfer learning, harvesting GO annotations of microscopy-based
 methods to improve the spatial resolution of experimental spatial
 proteomics data.
 
-#### Past research 
+### Past research 
 
 My MSc and
 [PhD work](http://theses.ulb.ac.be/ETD-db/collection/available/ULBetd-07112006-210348/),
@@ -133,7 +133,9 @@ Please do get in touch if you are interested in running workshops.
 
 ## Publications
 
-#### Journal articles
+See also my [Google scholar profile[https://scholar.google.co.uk/citations?user=k5DrB74AAAAJ&hl=en).
+
+### Journal articles
 
 Breckels LM, Mulvey CM, Lilley KS and Gatto L. *A Bioconductor
 workflow for processing and analysing spatial proteomics data*
@@ -400,7 +402,7 @@ href="http://www.ncbi.nlm.nih.gov/pubmed/19455208">PubMed</a>,
 <a href="http://www.la-press.com/redirect_file.php?fileId=648&amp;filename=EBO-2-Milinkovitch-et-al-(2)&amp;fileType=pdf">pdf</a>).
 
 
-#### Book chapters
+### Book chapters
 
 Christoforou A., Mulvey C., Breckels LM., Gatto L. and Lilley
 KS. [*Spatial Proteomics: Practical Considerations for Data Acquisition and Analysis in Protein Subcellular Localisation Studies*](http://pubs.rsc.org/en/content/chapter/bk9781849738088-00185/978-1-84973-808-8#!divabstract)
@@ -412,7 +414,7 @@ Breckels LM, Gibb S, Petyuk V and Gatto L
 in *Proteome Informatics*, The Royal Society of Chemistry, November
 2016.
       
-#### Technical Notes
+### Technical Notes
 
 Gatto, L. and Schretter, C. *Designing Primer Pairs and Oligos with
 OligoFaktorySE*. [EMBnet.news](http://journal.embnet.org/index.php/embnetnews/article/view/38)
@@ -425,7 +427,6 @@ December, 2005
 and slighly
 [longer](http://proteome.sysbiol.cam.ac.uk/lgatto/files/OligoFaktory_queuing_system.pdf)
 versions).
-
 
 
 ## Software
@@ -444,13 +445,5 @@ the
 for an overview of the R/Bioconductor infrastructure for mass
 spectrometry and proteomics.
 
-## Contact
-
-[Computational Proteomics Unit](http://cpu.sysbiol.cam.ac.uk) <br />
-[Cambridge Centre for Proteomics](http://proteomics.bio.cam.ac.uk/) <br />
-Cambridge Systems Biology Centre <br />
-University of Cambridge <br />
-Tennis Court Road <br />
-Cambridge, [CB2 1GA](https://maps.google.com/maps?q=CB2+1GA&hl=en&sll=37.0625,-95.677068&sspn=51.355924,106.962891&hnear=CB2+1GA,+United+Kingdom&t=m&z=16&iwloc=A), UK <br />
 
 
