@@ -1,5 +1,5 @@
 ---
-layout: home
+layout: single
 permalink: /about/
 title: "About"
 excerpt: "About Laurent Gatto."
