@@ -1,5 +1,4 @@
 ---
-layout: post
 title: The curse of dimensionality
 tags: ["R", "python", "machine learning", "programming"]
 comments: true
