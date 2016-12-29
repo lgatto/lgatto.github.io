@@ -7,6 +7,7 @@ sidebar:
   nav: "cpu"
 ---
 
+{% include toc %}
 
 The **Computational Proteomics Unit** was set up in August 2013 and is
 part of the
