@@ -7,10 +7,10 @@
 
 # Site Settings
 locale                   : "en-GB"
-title                    : "/home/laurent"
+title                    : "~/"
 title_separator          : " | "
 name                     : "Laurent Gatto"
-description              : "/home/"
+description              : "Laurent Gatto's online home"
 url                      : https://lgatto.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
