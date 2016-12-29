@@ -2,6 +2,7 @@
 permalink: /cpu-who/
 title: "The members"
 modified: 2016-12-29
+author_profile: false
 ---
 
 ## CPU core

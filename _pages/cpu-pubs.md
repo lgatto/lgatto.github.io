@@ -2,6 +2,7 @@
 permalink: /cpu-pubs/
 title: "Publicastion"
 modified: 2016-12-29
+author_profile: false
 ---
 
 ### Journal articles 
