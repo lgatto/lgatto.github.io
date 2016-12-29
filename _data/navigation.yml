@@ -12,7 +12,7 @@ main:
   #   url: /collection-archive/
   # - title: "Sitemap"
   #   url: /sitemap/
-  - title: CPU
+  - title: Computational Proteomics Unit
     url: /cpu-lab/
 
 # cpu-pages navigation sidebar    
