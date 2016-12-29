@@ -25,7 +25,7 @@ affiliated [member](http://bioconductor.org/about/core-team/) of the
 [Bioconductor](http://bioconductor.org) project, a
 [fellow](http://software.ac.uk/fellows/laurent-gatto) of the
 [Software Sustainability Institute](http://software.ac.uk/), a
-[Software Carpentry instructor](http://software-carpentry.org/team/)
+[Software and Data Carpentry instructor](http://software-carpentry.org/team/)
 and an affiliate teaching staff at the
 [Cambridge Computational Biology Institute](http://www.ccbi.cam.ac.uk/members.php). I
 currently lead the
