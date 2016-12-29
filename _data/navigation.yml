@@ -15,3 +15,10 @@ main:
   - title: CPU (external)
     url: http://cpu.sysbiol.cam.ac.uk
   
+cpu:
+  - title: The lab
+    url: /cpu-lab/
+  - title: Who
+    url: /cpu-who/
+  - title: Publications
+    url: /cpu-pubs/

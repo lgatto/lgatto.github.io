@@ -1,139 +1,12 @@
 ---
-permalink: /about/
-title: "About"
-excerpt: "About Laurent Gatto."
-modified: 2015-05-01
-comments: false
-author_profile: true
-header:
-   image: /assets/images/slide-code.png
+permalink: /cpu-pubs/
+title: "Publicastion"
+modified: 2016-12-29
 ---
 
-{% include toc %}
+# Publications 
 
-## Short bio
-
-I moved to Cambridge, UK, in January 2010 to work in the
-[Cambridge Centre for Proteomics](http://proteomics.bio.cam.ac.uk/) on
-various aspects of quantitative and spatial proteomics, developing
-new methods and implementing computational tools with a
-strong emphasis on rigorous and reproducible data analysis. I am also
-a visiting scientist in the [PRIDE](http://www.ebi.ac.uk/pride/) team
-at the
-[European Bioinformatics Institute](http://www.ebi.ac.uk/pride/),
-affiliated [member](http://bioconductor.org/about/core-team/) of the
-[Bioconductor](http://bioconductor.org) project, a
-[fellow](http://software.ac.uk/fellows/laurent-gatto) of the
-[Software Sustainability Institute](http://software.ac.uk/), a
-[Software Carpentry instructor](http://software-carpentry.org/team/)
-and an affiliate teaching staff at the
-[Cambridge Computational Biology Institute](http://www.ccbi.cam.ac.uk/members.php). I
-currently lead the
-[Computational Proteomics Unit](http://cpu.sysbiol.cam.ac.uk/).
-
-## Research
-
-As pointed out by D. Donoho, *An article about computational science
-in a scientific publication is not the scholarship itself, it is
-merely advertising of the scholarship. The actual scholarship is the
-complete software development environment and the complete set of
-instructions which generated the figures*. This directly applies to
-high throughput biology data analysis and I strongly believe that
-being able to reproduce the complete set of results, replicate an
-analysis with new data and track the evolution of the work that lead
-to the scientific novelty are essential aspects of the process of doing
-research. Hence, I regard the development of **scientific software**
-as well as agile and robust analysis methodologies that facilitate
-reproducible research, an important aspect of my scientific activity.
-
-Clarity and traceability of the data and the analysis methodology
-enable us to better understand what we do, how and why we do it and
-consequently exploit the data and comprehend the biology. While not
-sufficient, these are nevertheless necessary requirements for
-effective **data-driven science**.
-
-The **collaborative** and **interdisciplinarity** nature of much of
-the research in biology calls for a open approaches, influenced by the
-**open source** and **free/libre** software movements, from communication
-between stake holders, **open research** and development to open
-dissemination of all research outputs.
-
-#### Proteomics
-
-My work on the design and implementation of reproducible mass
-spectrometry-based proteomics data analysis pipeline has materialised
-in the development of the
-[`MSnbase`](http://bioconductor.org/packages/MSnbase) 
-([Gatto et al., 2012](http://www.ncbi.nlm.nih.gov/pubmed/22113085))
-package to manipulate, process and analyse quantitative proteomics
-data. The `MSnbase` infrastructure also supports the work on the
-statistical learning applied to spatial proteomics (see below). The
-[`synapter`](http://bioconductor.org/packages/synapter) package and
-the associated publications
-([Bond et al., 2013](http://www.ncbi.nlm.nih.gov/pubmed/23510225) and
-[Shliaha et al., 2013](http://www.ncbi.nlm.nih.gov/pubmed/23514362))
-addresses MS<sup>E</sup> label-free quantitation, optionally including
-ion mobility separation.
-
-#### Spatial proteomics
-
-In biology, localisation is function: knowledge of the localisation of
-proteins is of paramount importance to assess and study their
-function, and spatial proteomics is the systematic study of the
-sub-cellular localisation of proteins and changes thereof
-([Gatto et al., 2010](http://www.ncbi.nlm.nih.gov/pubmed/21080489)). Since
-2010, I have developed novel software and machine learning approaches
-enabling more reliable and systematic inference of protein
-localisations using quantitative proteomics. This work has
-materialised in the
-[`pRoloc`](http://bioconductor.org/packages/pRoloc) package
-([Gatto et al., 2014](http://www.ncbi.nlm.nih.gov/pubmed/24413670))
-that implements various established classification algorithms,
-effective visualisation techniques
-([Gatto el al., 2015](http://www.ncbi.nlm.nih.gov/pubmed/25690415)) as
-well as novelty detection
-([Breckels et al., 2013](http://www.ncbi.nlm.nih.gov/pubmed/23523639))
-and transfer learning, harvesting GO annotations of microscopy-based
-methods to improve the spatial resolution of experimental spatial
-proteomics data.
-
-#### Past research 
-
-My MSc and
-[PhD work](http://theses.ulb.ac.be/ETD-db/collection/available/ULBetd-07112006-210348/),
-I studied micro-evolutionary genetic patterns of the Broom leaf beetle
-[*Gonioctena*](http://www.biol.uni.wroc.pl/cassidae/European%20Chrysomelidae/gonioctena%20variabilis.htm)
-[*variabilis*](http://davesgarden.com/guides/bf/go/6185/) in Southern
-Europe
-([Gatto el al., 2008](http://onlinelibrary.wiley.com/doi/10.1111/j.1095-8312.2008.00972.x/abstract)),
-the application of short interspersed mobile elements (SINEs) to study
-the evolution of cetaceans applicability of the General Time
-Reversible nucleotide substitution model in the light of differential
-lineage sorting
-([Gatto el al., 2006](http://www.ncbi.nlm.nih.gov/pubmed/19455208)). I
-also spend 3 years in industry working on genomic and transcriptomics
-data, in particular the microarray quality control
-([Shi et al., 2010](http://www.ncbi.nlm.nih.gov/pubmed/20676074)).
-
-## Teaching
-
-Over the years I have been involved in many teaching activities,
-ranging from beginners and advanced R courses,
-[genome biology](http://www.huber.embl.de/csama/),
-[proteomics bioinformatics](http://www.wellcome.ac.uk/Education-resources/Courses-and-conferences/Advanced-Courses-and-Scientific-Conferences/Workshops/WTX054153.htm),
-[integrative omics](http://www.ebi.ac.uk/training/course/introduction-integrative-omics),
-scientific computing as part of the
-[MPhil in Computational Biology](http://www.ccbi.cam.ac.uk/Education/MPhil/)
-in Cambridge, as well as several Software and Data Carpentry
-bootcamps. All my teaching material is available in the
-[**TeachingMaterial**](http://lgatto.github.io/TeachingMaterial/)
-repository.
-
-Please do get in touch if you are interested in running workshops.
-
-## Publications
-
-#### Journal articles
+### Journal articles 
 
 Breckels LM, Mulvey CM, Lilley KS and Gatto L. *A Bioconductor
 workflow for processing and analysing spatial proteomics data*
@@ -231,19 +104,16 @@ abundance*, Plant Physiol. pp.114.245589; First Published on August
 href="http://www.plantphysiol.org/content/early/2014/08/13/pp.114.245589.short">Publisher</a>,
 <a href="http://www.ncbi.nlm.nih.gov/pubmed/25122472">PubMed</a>)
 
-
 Griss J, <i>et al.</i> *The mzTab Data Exchange Format: communicating
 MS-based proteomics and metabolomics experimental results to a wider
 audience*, Mol Cell Proteomics. 2014 June 30. (<a
 href="http://www.mcponline.org./content/early/2014/06/30/mcp.O113.036681.abstract">Publisher</a>)
-
 
 Tomizioli M, <i>et al.</i> *Deciphering thylakoid sub-compartments
 using a mass spectrometry-based approach*, Mol Cell Proteomics. 2014
 May 28. (<a
 href="http://mcponline.org/content/early/2014/05/28/mcp.M114.040923.abstract">Publisher</a>,
 <a href="http://www.ncbi.nlm.nih.gov/pubmed/24872594">PubMed</a>)
-
 
 Gatto L, <i>et al.</i> *A foundation for reliable spatial proteomics
 data analysis*, Mol Cell Proteomics. 2014 Aug;13(8):1937-52. (<a
@@ -259,12 +129,10 @@ metrics from mass spectrometry experiments*, Mol Cell Proteomics. 2014
 Apr 23. (<a
 href="http://www.ncbi.nlm.nih.gov/pubmed/24760958">PubMed</a>).
 
-
 Vizcaíno J.A. <i>et al.</i> *ProteomeXchange: globally co-ordinated
 proteomics data submission and dissemination*, Nature Biotechnology
 2014, 32, 223–226.  (<a
 href="http://www.ncbi.nlm.nih.gov/pubmed/24727771">PubMed</a>)
-
 
 Gatto L., Breckels L.M, Burger T, Wieczorek S. and Lilley
 K.S. *Mass-spectrometry based spatial proteomics data analysis using
@@ -363,44 +231,7 @@ K.S. *Organelle proteomics experimental designs and analysis*
 (<a href="http://www.ncbi.nlm.nih.gov/pubmed/21080489">PubMed</a>,
 <a href="http://onlinelibrary.wiley.com/doi/10.1002/pmic.201000244/pdf">pdf</a>).
 
-<a href="http://www.nature.com/nbt/journal/v28/n8/abs/nbt.1665.html#/group-1">MAQC
-Consortium</a> *The MicroArray Quality Control (MAQC)-II study of
-common practices for the development and validation of
-microarray-based predictive models* <a
-href="http://www.nature.com/nbt/index.html">Nature Biotechnology</a>
-28, 827–838 2010
-(<a href="http://www.ncbi.nlm.nih.gov/pubmed/20676074">PubMed</a>,
-<a href="http://www.nature.com/nbt/journal/v28/n8/pdf/nbt.1665.pdf">pdf</a>).
-
-
-Gatto L., Mardulyn P. and Pasteels J.M. *Morphological and
-mitochondrial DNA analysis suggest the presence of a hybrid zone
-between two species of the leaf beetle Gonioctena variabilis species
-complex in southern Spain*, <a
-href="http://www.wiley.com/bw/journal.asp?ref=0024-4066&amp;site=1">Biological
-Journal of the Linnean Society</a>, 2008, 94(1), 105-114
-(<a href="http://onlinelibrary.wiley.com/doi/10.1111/j.1095-8312.2008.00972.x/abstract">abstract</a>,
-<a href="http://onlinelibrary.wiley.com/doi/10.1111/j.1095-8312.2008.00972.x/pdf">pdf</a>).
-
-Danis B., George T.C., Goriely S., Dutta B., Renneson J., Gatto L.,
-Fitzgerald-Bocarsly P., Marchant A., Goldman M., Willems F. and De Wit
-D. *Interferon regulatory factor 7-mediated responses are defective in
-cord blood plasmacytoid dendritic cells.* <a
-href="http://onlinelibrary.wiley.com/journal/10.1002/(ISSN)1521-4141">Eur
-J Immunol.</a> 2008 Feb;38(2):507-17.
-(<a href="http://www.ncbi.nlm.nih.gov/pubmed/18200500">PubMed</a>,
-<a href="http://onlinelibrary.wiley.com/doi/10.1002/eji.200737760/pdf">pdf</a>).
-
-Gatto L., Catanzaro D. and Milinkovitch M.C. *Assessing the
-Applicability of the GTR Nucleotide Substitution Model Through
-Simulations* <a
-href="http://www.la-press.com/evolutionary-bioinformatics-journal-j17">Evolutionary
-Bioinformatics</a> 2006:2 (<a
-href="http://www.ncbi.nlm.nih.gov/pubmed/19455208">PubMed</a>,
-<a href="http://www.la-press.com/redirect_file.php?fileId=648&amp;filename=EBO-2-Milinkovitch-et-al-(2)&amp;fileType=pdf">pdf</a>).
-
-
-#### Book chapters
+### Book chapters 
 
 Christoforou A., Mulvey C., Breckels LM., Gatto L. and Lilley
 KS. [*Spatial Proteomics: Practical Considerations for Data Acquisition and Analysis in Protein Subcellular Localisation Studies*](http://pubs.rsc.org/en/content/chapter/bk9781849738088-00185/978-1-84973-808-8#!divabstract)
@@ -412,45 +243,22 @@ Breckels LM, Gibb S, Petyuk V and Gatto L
 in *Proteome Informatics*, The Royal Society of Chemistry, November
 2016.
       
-#### Technical Notes
 
-Gatto, L. and Schretter, C. *Designing Primer Pairs and Oligos with
-OligoFaktorySE*. [EMBnet.news](http://journal.embnet.org/index.php/embnetnews/article/view/38)
-North America, 15, oct. 2009
-([pdf](http://journal.embnet.org/index.php/embnetnews/article/download/38/58),[software](http://www.bioinformatics.org/oligofaktory/)).
-
-Schretter, C. and Gatto, L. *A Tiny Queuing System for Blast Servers*
-December, 2005
-([short](http://proteome.sysbiol.cam.ac.uk/lgatto/files/tiny_queuing_system.pdf)
-and slighly
-[longer](http://proteome.sysbiol.cam.ac.uk/lgatto/files/OligoFaktory_queuing_system.pdf)
-versions).
+See also [Laurent's Google scholar profile](https://scholar.google.co.uk/citations?user=k5DrB74AAAAJ&hl=en)
 
 
+### Selected posters 
 
-## Software
+Laurent Gatto, Lisa M. Breckels, Thomas Naake, Samuel Wieczorek,
+Thomas Burger and Kathryn S. Lilley
+[A state-of-the-art machine learning pipeline for the analysis of spatial proteomics data](http://figshare.com/articles/A_state_of_the_art_machine_learning_pipeline_for_the_analysis_of_spatial_proteomics_data/1190587)
+5 - 8 October 2014, Madrid, HUPO meeting.
 
-I have developed and have contributed to many open source
-R/[Bioconductor](http://www.bioconductor.org) packages, in particular
-[proteomics](http://bioconductor.org/packages/release/BiocViews.html#___Proteomics)
-software and data packages, all of which are available on my
-[own](http://www.github.com/lgatto) and my
-[group's](http://www.github.com/ComputationalProteomicsUnit) GitHub
-pages. See
-[Gatto and Christoforou, 2014](http://www.ncbi.nlm.nih.gov/pubmed/23692960),
-[Gatto et al., 2014](http://www.ncbi.nlm.nih.gov/pubmed/25690415) and
-the
-[`RforProteomics` vignettes](http://www.bioconductor.org/packages/release/data/experiment/html/RforProteomics.html)
-for an overview of the R/Bioconductor infrastructure for mass
-spectrometry and proteomics.
+Sebastian Gibb, Lisa M Breckels, Thomas Lin Pedersen, Vladislav A
+Petyuk, Kathryn S Lilley and Laurent Gatto
+[A current perspective on using R and Bioconductor for proteomics data analysis](http://figshare.com/articles/A_current_perspective_on_using_R_and_Bioconductor_for_proteomics_data_analysis/1190601)
+5 - 8 October 2014, Madrid, HUPO meeting.
 
-## Contact
-
-[Computational Proteomics Unit](http://cpu.sysbiol.cam.ac.uk) <br />
-[Cambridge Centre for Proteomics](http://proteomics.bio.cam.ac.uk/) <br />
-Cambridge Systems Biology Centre <br />
-University of Cambridge <br />
-Tennis Court Road <br />
-Cambridge, [CB2 1GA](https://maps.google.com/maps?q=CB2+1GA&hl=en&sll=37.0625,-95.677068&sspn=51.355924,106.962891&hnear=CB2+1GA,+United+Kingdom&t=m&z=16&iwloc=A), UK <br />
-
-
+Lisa Breckels, Sean Holden, Kathryn Lilley, Laurent
+Gatto[A transfer learning framework for organelle proteomics data](http://f1000.com/posters/browse/summary/1096873)
+European Conference on Computational Biology 2014, 7 - 10 Sep 2014.
