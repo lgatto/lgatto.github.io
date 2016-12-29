@@ -1,0 +1,73 @@
+==================================================================
+https://keybase.io/lgatto
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of http://cpu.sysbiol.cam.ac.uk
+  * I am lgatto (https://keybase.io/lgatto) on keybase.
+  * I have a public key with fingerprint 2068 E7FF 6881 FE54 9552  3DA0 D9DC DECC 8076 7E07
+
+To do so, I am signing this object:
+
+{
+    "body": {
+        "client": {
+            "name": "keybase.io node.js client",
+            "version": "0.8.23"
+        },
+        "key": {
+            "eldest_kid": "0101e70a7d6ea2583bbce4a6a2d44a428734a979f4fc986b68c09eaacc005f9beb370a",
+            "fingerprint": "2068e7ff6881fe5495523da0d9dcdecc80767e07",
+            "host": "keybase.io",
+            "key_id": "d9dcdecc80767e07",
+            "kid": "0101e70a7d6ea2583bbce4a6a2d44a428734a979f4fc986b68c09eaacc005f9beb370a",
+            "uid": "4c68bfa68ae7701be29820ab26831e19",
+            "username": "lgatto"
+        },
+        "service": {
+            "hostname": "cpu.sysbiol.cam.ac.uk",
+            "protocol": "http:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "ctime": 1447277326,
+    "expire_in": 157680000,
+    "prev": "0acde7afa0697881fca0bb8c947a0ba0eaddc9e95ca988bde5e07e03a6ef239d",
+    "seqno": 17,
+    "tag": "signature"
+}
+
+which yields the signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: GnuPG v1
+
+owGtUk1MFVcUfg+p2saiRjcao3Rc+Ecnd37e3DuQNFotiYnizwJRUp/33jkDI483
+rzPz+JFgSFkItW1cmJjgzzMQJIiSCEZtTFH8QSOvVhcaJRE3LsBGgwk1Low6l9BE
+E5e9q5N7vvOd73znHPp6RiQn+nzy+A9znu76JTo8ziKl6/vzGiTmWvVSYYPEEw4k
+AxElaTVIhVIV1DPqg+y4+UnXAnmvnz+NKZBqwPMdNxmikExkVZMaCwReVEPCAj+I
+VzmWyCpIAYwotgygaoxojHHQqUFVS9eprhKs6dTEpq3b3CQGMwhHJlDKOUIx22TA
+tLA6bGg7yQrwUp4jJEoqMghg2zYIUWyI6WYspmoWRZZpcQs4JwgbGBAOCytdP/hk
+GGlKaXxK3mfw/7Pu9BSdzg3CbGoQChgjhYFqEhVRphpEU0AxBdAHb9r4RAUNAldY
+Gv7VOByErWKO6TxPpWW/3meOm5A5rZYpl9NVIUXKcwOXu4kQUhkEqULBENSnREkt
+sPg0WZw5SSt0M/PxGpUQygNH0Cu6jlWMNdUokKAu5XgQdwQihg2Cwif6QI3wiIbe
+YWpTZJhYLIJTxBjhpo7DgCKglsVNMGOcmoQwC2Khw4A0aoCtaqYlifl+SrohNw6F
+0oqQ03cqkjRIeyA1tkaX5EaiOZGZX+SIQ4189eW8/653cems9+XXX20vqfvrzuTg
+2SsJfun21tW91Zcrs8WLzvQsdbpXlY6e+D37c8nwwYfFF3tntpbfH1/Tf6sh2tQ+
+7D1O78lmJhbUvLj3bWayuu/VmPsH28D2dTWW97c7+HVznt+0fxb7886Pf3c13vZK
+c0t+nWgaUcaOXsx0LLwp7/zme7ljw+wd8paWI7X0UcPGvuXzi+p2D/S9HLo8cmbN
+20zebyvLsrOfPbQP5578t/Zp06rouXVXjYFOPKreezbU0vbGjwwdsbSJZb2ZsaB4
+/G6nUdR549ZK5d2idadaD5TdzTLM/lne3N59raVjYc+mzW1l352eP772yYWD56PK
+sb2DK/QHc6Pbcj4A
+=e2lP
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/lgatto
+
+==================================================================
+
