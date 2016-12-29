@@ -14,7 +14,8 @@ main:
   #   url: /sitemap/
   - title: CPU
     url: /cpu-lab/
-  
+
+# cpu-pages navigation sidebar    
 cpu:
   - title: The lab
     url: /cpu-lab/
