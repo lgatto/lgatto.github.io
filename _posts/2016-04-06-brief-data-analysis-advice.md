@@ -20,7 +20,7 @@ or plans to collect and want to analyse them.
 
 <!--more-->
 
-{% include _toc.html %}
+{% include toc %}
 
 ![open all the things](/images/biochem-qproda-2016-04-04.jpeg)
 

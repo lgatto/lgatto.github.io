@@ -8,7 +8,7 @@ header:
   image: /assets/images/slide-code.png
 ---
 
-{% include _toc.html %}
+{% include toc %}
 
 ## Short bio
 

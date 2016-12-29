@@ -30,7 +30,7 @@ since 2010, and have described the current state of the art
 
 <!--more-->
 
-{% include _toc.html %}
+{% include toc %}
 
 ![CCP LOPIT hackathon](/images/2015-07-14-ccp-lopit-hackathon.jpg)
 

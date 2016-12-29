@@ -8,7 +8,7 @@ comments: true
 
 <!--more-->
 
-{% include _toc.html %}
+{% include toc %}
 
 ## Introduction
 

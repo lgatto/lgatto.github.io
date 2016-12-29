@@ -15,8 +15,6 @@ illustrate it; below is an R implementation.
 
 <!--more-->
 
-<!-- {% include _toc.html %} -->
-
 ## Implementation
 
 {% gist lgatto/6479628cfbce942b5def curse-of-dimensionality.py %}

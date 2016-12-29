@@ -9,7 +9,7 @@ in life sciences. Stop using it.
 
 <!--more-->
 
-{% include _toc.html %}
+{% include toc %}
 
 ## Introduction
 
