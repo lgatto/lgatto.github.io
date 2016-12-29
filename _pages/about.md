@@ -134,6 +134,8 @@ Please do get in touch if you are interested in running workshops.
 
 ## Publications
 
+#### Journal articles
+
 Breckels LM, Mulvey CM, Lilley KS and Gatto L. *A Bioconductor
 workflow for processing and analysing spatial proteomics data*
 [version 1; referees: awaiting peer review]. F1000Research 2016,
@@ -146,7 +148,8 @@ workflow for processing and analysing spatial proteomics data*
 Wieczorek S, Combes F, Lazar C, Giai Gianetto Q, Gatto L, Dorffer A,
 Hesse A, Coute Y, Ferro M, Bruley C, and Burger T. *DAPAR & ProStaR:
 software to perform statistical analyses in quantitative discovery
-proteomics* Bioinformatics 2016, [doi:10.1093/bioinformatics/btw580](http://bioinformatics.oxfordjournals.org/content/early/2016/09/23/bioinformatics.btw580).
+proteomics* Bioinformatics 2016,
+[doi:10.1093/bioinformatics/btw580](http://bioinformatics.oxfordjournals.org/content/33/1/135).
 
 Perez-Riverol Y, Gatto L, Wang R, Sachsenberg T, Uszkoreit J,
 Leprevost Fda V, Fufezan C, Ternent T, Eglen SJ, Katz DS, Pollard TJ,
