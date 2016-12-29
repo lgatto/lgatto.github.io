@@ -2,6 +2,9 @@
 permalink: /cpu-lab/
 title: "The lab"
 modified: 2016-12-29
+author_profile: false
+sidebar:
+	nav: "cpu"	
 ---
 
 
