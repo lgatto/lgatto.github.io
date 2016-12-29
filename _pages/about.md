@@ -1,4 +1,5 @@
 ---
+layout: home
 permalink: /about/
 title: "About"
 excerpt: "About Laurent Gatto."
