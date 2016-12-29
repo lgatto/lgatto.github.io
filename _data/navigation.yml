@@ -12,8 +12,8 @@ main:
   #   url: /collection-archive/
   # - title: "Sitemap"
   #   url: /sitemap/
-  - title: CPU (external)
-    url: http://cpu.sysbiol.cam.ac.uk
+  - title: CPU
+    url: /cpu-lab/
   
 cpu:
   - title: The lab
@@ -22,3 +22,4 @@ cpu:
     url: /cpu-who/
   - title: Publications
     url: /cpu-pubs/
+
