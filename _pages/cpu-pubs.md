@@ -4,8 +4,6 @@ title: "Publicastion"
 modified: 2016-12-29
 ---
 
-# Publications 
-
 ### Journal articles 
 
 Breckels LM, Mulvey CM, Lilley KS and Gatto L. *A Bioconductor
