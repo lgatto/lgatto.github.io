@@ -133,7 +133,7 @@ Please do get in touch if you are interested in running workshops.
 
 ## Publications
 
-See also my [Google scholar profile[https://scholar.google.co.uk/citations?user=k5DrB74AAAAJ&hl=en).
+See also my [Google scholar profile](https://scholar.google.co.uk/citations?user=k5DrB74AAAAJ&hl=en).
 
 ### Journal articles
 
