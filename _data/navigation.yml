@@ -5,15 +5,13 @@ main:
   - title: "About"
     url: /about/
   - title: "Posts"
-    url: /posts/
-  # - title: "Sample Posts"
-  #   url: /year-archive/
+    url: /year-archive/
+  - title: "Tags"
+    url: /tags/    
   # - title: "Sample Collections"
   #   url: /collection-archive/
   # - title: "Sitemap"
   #   url: /sitemap/
-  - title: CPU
+  - title: CPU (external)
     url: http://cpu.sysbiol.cam.ac.uk
-  - title: "Tags"
-    url: /tags/
   
