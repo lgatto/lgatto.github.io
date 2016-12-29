@@ -1,11 +1,13 @@
 ---
+layout: page
 permalink: /about/
 title: "About"
 excerpt: "About Laurent Gatto."
 modified: 2015-05-01
 comments: false
+author_profile: true
 header:
-  image: /assets/images/slide-code.png
+   image: /assets/images/slide-code.png
 ---
 
 {% include toc %}
