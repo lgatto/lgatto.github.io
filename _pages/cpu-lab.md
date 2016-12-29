@@ -1,6 +1,7 @@
 ---
 permalink: /cpu-lab/
 title: "The lab"
+excerpt: "General information about the Computational Proteomics Unit"
 modified: 2016-12-29
 author_profile: false
 sidebar:

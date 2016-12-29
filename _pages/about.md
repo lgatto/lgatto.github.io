@@ -1,7 +1,7 @@
 ---
 permalink: /about/
-title: "About"
-excerpt: "About Laurent Gatto."
+title: "About the author"
+excerpt: "More information about Laurent Gatto"
 modified: 2015-05-01
 comments: false
 author_profile: true

@@ -1,6 +1,7 @@
 ---
 permalink: /cpu-pubs/
 title: "Publications"
+excerpt: "Computational Proteomics Unit's publications"
 modified: 2016-12-29
 author_profile: false
 sidebar:
