@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Open data info session
 tags: ["Cambridge", "open data"]
 image:

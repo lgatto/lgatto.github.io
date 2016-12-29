@@ -1,5 +1,4 @@
 ---
-layout: post
 title: The steep learning curve
 tags: ["science", "programming", "education"]
 ---

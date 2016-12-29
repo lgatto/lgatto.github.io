@@ -1,5 +1,4 @@
 ---
-layout: post
 title: CCP LOPIT hackathon
 tags: ["R", "pRoloc", "spatial", "proteomics"]
 comments: true

@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Reproducible research - What should our goals be?
 tags: ["reproducible research", "Cambridge"]
 ---

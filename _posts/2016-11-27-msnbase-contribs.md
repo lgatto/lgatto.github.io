@@ -1,5 +1,4 @@
 ---
-layout: post
 title: MSnbase contributors 2010 - 2016
 tags: ["R", "MSnbase", "Bioconductor"]
 comments: true

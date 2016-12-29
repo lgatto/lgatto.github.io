@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Branch specific gitignores for Bioconductor package documentation
 tags: ["programming", "git", "svn"]
 comments: true

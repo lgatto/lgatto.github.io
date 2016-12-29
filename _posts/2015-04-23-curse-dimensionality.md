@@ -15,7 +15,7 @@ illustrate it; below is an R implementation.
 
 <!--more-->
 
-{% include _toc.html %}
+<!-- {% include _toc.html %} -->
 
 ## Implementation
 

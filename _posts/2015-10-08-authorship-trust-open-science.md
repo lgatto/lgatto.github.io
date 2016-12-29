@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Authorship, trust and open science
 tags: ["science", "open access", "open science", "open data", "academia"]
 comments: true

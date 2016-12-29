@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Some brief advice on data analysis
 tags: ["data", "proteomics", "analysis", "teaching"]
 comments: true

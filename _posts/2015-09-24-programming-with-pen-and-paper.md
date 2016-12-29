@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Programming with pen and paper
 tags: ["education", "teaching", "programming", "children"]
 comments: true
