@@ -6,7 +6,7 @@ modified: 2015-05-01
 comments: false
 author_profile: true
 header:
-   image: /images/slide-code.png
+   image: /images/slide-code2.png
 ---
 
 {% include toc %}
