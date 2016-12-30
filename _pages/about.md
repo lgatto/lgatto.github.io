@@ -7,7 +7,7 @@ comments: false
 author_profile: true
 header:
    overlay_image: /images/slide-code2.png
-   caption: I love emacs
+   overlay_filter: 0.5
 ---
 
 {% include toc %}
