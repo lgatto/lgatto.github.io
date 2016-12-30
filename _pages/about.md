@@ -7,7 +7,7 @@ comments: false
 author_profile: true
 header:
    overlay_image: /images/slide-code2.png
-   overlay_filter: 0.5
+   overlay_filter: 0.3
 ---
 
 {% include toc %}
