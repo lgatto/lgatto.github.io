@@ -17,9 +17,9 @@ workflow for processing and analysing spatial proteomics data*
 [version 1; referees: awaiting peer review]. F1000Research 2016,
 5:2926
 ([doi:10.12688/f1000research.10411.1](https://f1000research.com/articles/5-2926/)).
-[Software: [MSnbase](http://bioconductor.org/packages/MSnbase),
+Software: [MSnbase](http://bioconductor.org/packages/MSnbase),
 [pRoloc](http://bioconductor.org/packages/pRoloc),
-[pRolocGUI](http://bioconductor.org/packages/pRolocGUI)]
+[pRolocGUI](http://bioconductor.org/packages/pRolocGUI)
 
 Wieczorek S, Combes F, Lazar C, Giai Gianetto Q, Gatto L, Dorffer A,
 Hesse A, Coute Y, Ferro M, Bruley C, and Burger T. *DAPAR & ProStaR:
@@ -264,5 +264,5 @@ Petyuk, Kathryn S Lilley and Laurent Gatto
 5 - 8 October 2014, Madrid, HUPO meeting.
 
 Lisa Breckels, Sean Holden, Kathryn Lilley, Laurent
-Gatto[A transfer learning framework for organelle proteomics data](http://f1000.com/posters/browse/summary/1096873)
+Gatto [A transfer learning framework for organelle proteomics data](http://f1000.com/posters/browse/summary/1096873)
 European Conference on Computational Biology 2014, 7 - 10 Sep 2014.
