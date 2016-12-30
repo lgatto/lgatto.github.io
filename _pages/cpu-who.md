@@ -34,10 +34,11 @@ sidebar:
 
 ## Remote members 
 
-- **Sebastian Gibb**, Department of Anesthesiology and Intensive Care,
-  University Medicine Greifswald, Germany. Sebastian visited the group
-  2014 and is since then contributing to various projects, in
-  particular [`MSnbase`](http://lgatto.github.io/MSnbase),
+- [**Sebastian Gibb**](http://sebastiangibb.de/), Department of
+  Anesthesiology and Intensive Care, University Medicine Greifswald,
+  Germany. Sebastian visited the group 2014 and is since then
+  contributing to various projects, in particular
+  [`MSnbase`](http://lgatto.github.io/MSnbase),
   [`Pbase`](http://bioconductor.org/packages/Pbase) and
   [`synapter`](http://bioconductor.org/packages/synapter), which he is
   currently leading the development of.
