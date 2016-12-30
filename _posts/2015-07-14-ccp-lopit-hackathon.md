@@ -1,6 +1,6 @@
 ---
 title: CCP LOPIT hackathon
-tags: ["R", "pRoloc", "spatial", "proteomics"]
+tags: ["R", "pRoloc", "spatial", "proteomics", "CPU"]
 comments: true
 ---
 
