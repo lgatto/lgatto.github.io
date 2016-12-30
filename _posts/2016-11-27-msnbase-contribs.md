@@ -1,6 +1,6 @@
 ---
 title: MSnbase contributors 2010 - 2016
-tags: ["R", "MSnbase", "Bioconductor"]
+tags: ["R", "MSnbase", "Bioconductor", "CPU"]
 comments: true
 ---
 

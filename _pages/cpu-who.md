@@ -2,6 +2,7 @@
 permalink: /cpu-who/
 title: "Lab members"
 excerpt: "Computational Proteomics Unit's team"
+tags: ["CPU"]
 modified: 2016-12-29
 author_profile: false
 sidebar:
