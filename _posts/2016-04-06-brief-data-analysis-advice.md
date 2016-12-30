@@ -78,7 +78,7 @@ overall goal/question is. It is surprisingly easy to get sidetracked
 in tiny optimisations that only have a very minor influence on the
 final results and end up being overwhelmed by accidental (as opposed
 to essential/genuine) complexity (as described
-[here](http://shaffner.us/cs/papers/tarpit.pdf]]) for development of
+[here](http://shaffner.us/cs/papers/tarpit.pdf) for development of
 large-scale software system, but also applied to large data
 analysis). Make sure you understand what matters most (in terms of
 results and analyses decisions). 
