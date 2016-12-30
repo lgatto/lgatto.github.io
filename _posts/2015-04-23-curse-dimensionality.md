@@ -30,4 +30,4 @@ dimensions, almost 90% of the points are outliers.
 
 ## Result
 
-![Curse of dimensionality](/assests/images/curse-of-dimensionality.png)
+![Curse of dimensionality](/assets/images/curse-of-dimensionality.png)
