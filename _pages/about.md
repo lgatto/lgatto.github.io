@@ -6,7 +6,8 @@ modified: 2015-05-01
 comments: false
 author_profile: true
 header:
-   image: /images/slide-code2.png
+   overlay_image: /images/slide-code2.png
+   caption: I love emacs
 ---
 
 {% include toc %}
