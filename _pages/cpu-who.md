@@ -43,9 +43,10 @@ sidebar:
   [`synapter`](http://bioconductor.org/packages/synapter), which he is
   currently leading the development of.
 
-- **Johannes Rainer**, Center for Biomedicine, EURAC, Bolzano, Italy
-  is a contributor to the [`MSnbase`](http://lgatto.github.io/MSnbase)
-  and [`Pbase`](http://bioconductor.org/packages/Pbase) packages.
+- [**Johannes Rainer**](http://www.eurac.edu/en/research/health/biomed/staff/Pages/staffdetails.aspx?persId=34084),
+  Center for Biomedicine, EURAC, Bolzano, Italy is a contributor to
+  the [`MSnbase`](http://lgatto.github.io/MSnbase) and
+  [`Pbase`](http://bioconductor.org/packages/Pbase) packages.
 
 ## Collaborators 
 
