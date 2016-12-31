@@ -47,8 +47,8 @@ Software engineering and programming are an important aspect of our
 work. We hence try to adopt common good practice and coding style.
 
 See the
-[wiki](https://github.com/ComputationalProteomicsUnit/www/wiki) for
-some useful links.
+[wiki](https://github.com/ComputationalProteomicsUnit/cputools/wiki)
+for some useful links.
 
 # Code of Conduct
 
