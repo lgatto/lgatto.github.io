@@ -27,17 +27,20 @@ sidebar:
 
 - [**Lisa Breckels**](https://lmsimp.github.io/), Post-Doctoral
   Research Associate. Lisa joined the Cambridge Centre for Proteomics
-  in November 2010 to work on the application of machipne learning
-  techniques to the sub-cellular localisation of proteins using
-  quantitative experimental organelle proteomics. She joined the CPU
-  in August 2013.
-
+  in November 2010 and CPU in August 2013. Her work focuses on the application 
+  and development of machine learning and pattern recognition methods
+  to enable robust analysis of high-throughput quantitative proteomics data.
+  All her methods and algorithms form part of the
+  [`pRoloc`](http://bioconductor.org/packages/pRoloc) framework for protein
+  localisation prediction.
+  
+  
 ## Remote members 
 
 - [**Sebastian Gibb**](http://sebastiangibb.de/), Department of
   Anesthesiology and Intensive Care, University Medicine Greifswald,
-  Germany. Sebastian visited the group 2014 and is since then
-  contributing to various projects, in particular
+  Germany. Sebastian visited the group 2014 and since then
+  contributes to various projects, in particular
   [`MSnbase`](http://lgatto.github.io/MSnbase),
   [`Pbase`](http://bioconductor.org/packages/Pbase) and
   [`synapter`](http://bioconductor.org/packages/synapter), which he is
@@ -56,9 +59,9 @@ sidebar:
   state-of-the art LOPIT
   ([Dunkley *et al.* 2006](https://www.ncbi.nlm.nih.gov/pubmed/16618929))
   and hyperLOPIT
-  ([Christoforou *et al.* 2016](https://www.ncbi.nlm.nih.gov/pubmed/26754106)). Her
-  lab is at the origin of some of the very best spatial proteomics
-  datasets, which we help analyse and interpret by applying our
+  ([Christoforou *et al.* 2016](https://www.ncbi.nlm.nih.gov/pubmed/26754106)) 
+  technologies. Her lab is at the origin of some of the very best spatial proteomics
+  datasets in the world, which we help to analyse and interpret by applying our
   dedicated software (see for example
   [Breckels *et al.* 2016 in F1000Research](https://f1000research.com/articles/5-2926/)).
 
