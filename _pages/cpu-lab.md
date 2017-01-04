@@ -63,9 +63,7 @@ sexual orientation, disability, physical appearance, body size, race,
 or religion (or lack thereof). We do not tolerate harassment of lab
 members in any form. Sexual language and imagery is generally not
 appropriate for any lab venue, including lab meetings, presentations,
-or discussions. (However, do note that we work on biological matters
-so work-related discussions of e.g. animal reproduction are
-appropriate.)
+or discussions. 
 
 Harassment includes offensive verbal comments related to gender,
 gender identity and expression, age, sexual orientation, disability,
