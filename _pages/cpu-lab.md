@@ -88,7 +88,7 @@ For official concerns, please see the Universities
 [Public Equality Duties](http://www.equality.admin.cam.ac.uk/training/equalities-law/public-equality-duties)
 page.
 
-(This code of conduct is inspired from the Titus Brown's
+(This code of conduct is inspired from Titus Brown's
 [Data Intensive Biology at UC Davis Code of Conduct](http://ivory.idyll.org/lab/coc.html).)
 
 # Funding 
