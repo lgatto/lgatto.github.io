@@ -8,8 +8,6 @@ sidebar:
   nav: "cpu"
 ---
 
-# Code of Conduct
-
 All members of the lab, along with visitors, are expected to agree
 with the following code of conduct. We will enforce this code as
 needed. We expect cooperation from all members to help ensuring a safe
