@@ -31,15 +31,15 @@ research, proteomics.
 # Open Science and Reproducible Research 
 
 We are committed to the open, transparent and rigorous practice of
-scientific enquiry. In particular, we make every possible efforts to
+scientific enquiry. In particular, we make every possible effort to
 make our [research repeatable, reproducible and
 replicable](http://lgatto.github.io/rr-what-should-be-our-goals/), in
 the hope that it can be re-used and improved upon by as many as
-possible. Concomitantly, we will release all our software and data
+possible. Concomitantly, we release all our software and data
 under open permissible licences. Finally, we will also ensure that our
 research (such as, but not limited to journals articles,
 presentations, and book chapters) is published under open access
-licences to allow everybody to freely read, re-used and mine it.
+licences to allow everybody to freely read, re-use and mine it.
 
 # Good practice 
 
