@@ -21,6 +21,8 @@ cpu:
     url: /cpu-lab/
   - title: Who
     url: /cpu-who/
+  - title: Code of conduct
+    url: /cpu-coc/
   - title: Publications
     url: /cpu-pubs/
 
