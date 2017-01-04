@@ -5,7 +5,7 @@ excerpt: "Computational Proteomics Unit code of conduct"
 modified: 2017-01-04
 author_profile: false
 sidebar:
-  nav: "coc"
+  nav: "cpu"
 ---
 
 # Code of Conduct
