@@ -2,7 +2,7 @@
 permalink: /cpu-who/
 title: "Lab members"
 excerpt: "Computational Proteomics Unit's team"
-modified: 2016-12-29
+modified: 2017-01-04
 author_profile: false
 sidebar:
   nav: "cpu"
@@ -51,7 +51,7 @@ sidebar:
   the [`MSnbase`](http://lgatto.github.io/MSnbase) and
   [`Pbase`](http://bioconductor.org/packages/Pbase) packages.
 
-## Collaborators 
+## Key collaborators 
 
 - [**Kathyn S. Lilley**](http://www.bioc.cam.ac.uk/people/uto/lilley),
   Cambridge Centre for Proteomics, Department of Biochemistry,
