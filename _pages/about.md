@@ -138,9 +138,8 @@ See also my [Google scholar profile](https://scholar.google.co.uk/citations?user
 ### Journal articles
 
 Breckels LM, Mulvey CM, Lilley KS and Gatto L. *A Bioconductor
-workflow for processing and analysing spatial proteomics data*
-[version 1; referees: awaiting peer review]. F1000Research 2016,
-5:2926
+workflow for processing and analysing spatial proteomics
+data* F1000Research 2016, 5:2926
 ([doi:10.12688/f1000research.10411.1](https://f1000research.com/articles/5-2926/)).
 [Software: [MSnbase](http://bioconductor.org/packages/MSnbase),
 [pRoloc](http://bioconductor.org/packages/pRoloc),
