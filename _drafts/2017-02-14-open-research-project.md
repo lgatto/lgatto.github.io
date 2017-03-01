@@ -130,6 +130,15 @@ after acceptance should include data management plan, the pathway to
 impact, possibly more, and these could then be used to assess to what
 extend the project delivered as promised.
 
+This serves at least two purposes. First, it is a way to promote
+transparency and accountability towards the funder, scientific
+community and public. Also, it is a great resource for early career
+researchers. Unless there is specific support in place, writing a
+first grant is not an easy job, especially given the multitude
+documents to prepare in addition to the scientific case for
+support. And even for more experienced researchers, it can't harm to
+explore different approaches to grant writing.
+
 Another concrete output is the requirement for a dedicated *software
 management plan* for each grant that involves any software
 development. I certainly consider my software to be equivalent to data
