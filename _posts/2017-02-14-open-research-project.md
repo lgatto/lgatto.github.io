@@ -107,7 +107,7 @@ rigorous research?
 Ideally, I would like that the Wellcome Trust's famous *Research
 investigator awards* to be de facto ***Open research** investigator
 awards*. There's currently a split (opposition?) between *doing
-research* and *supporting open science we doing research*. In every
+research* and *supporting open science when doing research*. In every
 grant I have written, I had to demonstrate that the team had a track
 record, or was in a good position to successfully pursue to proposed
 project. Well, how about demonstrating a track record in being good in
