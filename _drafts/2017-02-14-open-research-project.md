@@ -5,7 +5,7 @@ comments: true
 ---
 
 I am proud to be one of the participants in the
-[Wellcome Trust Open Research Project](https://unlockingresearch.blog.lib.cam.ac.uk/?p=1286)
+[Wellcome Trust Open Research Project](https://unlockingresearch.blog.lib.cam.ac.uk/?p=1296)
 (and
 [here](https://blog.wellcomeopenresearch.org/2017/02/10/piloting-more-openness-at-the-university-of-cambridge/)). The
 call was initially opened in December 2016 and was pitched like this
@@ -73,13 +73,20 @@ unique kind. Hence, we will have to define its overall goals as we
 go. The continued involvement of the participants over time will play
 a major role in the project's success.
 
-What are attainable goals? 
+
+#### What are attainable goals? 
 
 It is important to note that there is no funding for the
 participants. We are driven by a desire to be open, benefit from being
 open and the visibility that we can gain through the project, and the
 prospect that the Wellcome Trust will learn from our experience and,
-implement any lessons learnt.
+implement any lessons learnt. We get to interact with each other and
+with research support librarians, who will help us throughout the
+duration of the project. We also commit to *sharing of research
+outputs beyond traditional publications and to engage with the
+Project, by participating in Project meetings and contributing to
+Project publications*.
+
 
 A lot of our initial discussions centred around rewards for open
 research or, actually, lack thereof and percepted associated
@@ -97,18 +104,19 @@ rigorous research?
 
 ### Some desired outputs
 
-Ideally, I would like that all *Research investigator awards* to be de
-facto ***Open research** investigator awards*. There's currently a
-split (opposition?) between *doing research* and *supporting open
-science we doing research*. In every grant I have written, I had to
-demonstrate that the team had a track record, or was in a good
-position to successfully pursue to proposed project. Well, how about
-demonstrating a track record in being good in opening and sharing
-science outputs? Every researcher submitting a grant should
-convincingly demonstrate that they are, have been and/or will be
-proactive open researcher and openly disseminate all the outputs. By
-leading by example in the frame of this Open Research Project, this is
-something that the Wellcome Trust could take away from.
+Ideally, I would like that the Wellcome Trust's famous *Research
+investigator awards* to be de facto ***Open research** investigator
+awards*. There's currently a split (opposition?) between *doing
+research* and *supporting open science we doing research*. In every
+grant I have written, I had to demonstrate that the team had a track
+record, or was in a good position to successfully pursue to proposed
+project. Well, how about demonstrating a track record in being good in
+opening and sharing science outputs? Every researcher submitting a
+grant should convincingly demonstrate that they are, have been and/or
+will be proactive open researcher and openly disseminate all the
+outputs. By leading by example in the frame of this Open Research
+Project, this is something that the Wellcome Trust could take away
+from.
 
 Unfortunately, it is a fact that open science is not on the agenda of
 many (most?) more senior researchers and that they are neither in a
