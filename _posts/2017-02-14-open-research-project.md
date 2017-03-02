@@ -1,6 +1,6 @@
 ---
-title: Open Research Projects, first thoughts
-tags: ["open research", "open data", "Wellcome Trust"]
+title: Open Research Project, first thoughts
+tags: ["open research", "open science", "Wellcome Trust", "Open Research Project"]
 comments: true
 ---
 
@@ -44,7 +44,7 @@ such as [OpenConCam](http://openconcam.org/) and
 
 #### What is your research about and what kind of data does your research generate?
 	
-My area of research is computational ciology, with special focus on
+My area of research is computational biology, with special focus on
 high-throughput proteomics and integration of different data and
 annotations. I use raw data produced by third parties, in particular
 the
@@ -57,7 +57,7 @@ data and a lot of [software](https://github.com/lgatto/) (and also
 
 Improve openness/transparency (and hence reproducibility/rigour) in my
 research and communication, and participate in improving openness (and
-hence reproducibility/rigour) more widerly.
+hence reproducibility/rigour) more widely.
 
 #### What kind of outputs are you planning to share? Do you foresee any difficulties in sharing?
 	
@@ -89,7 +89,7 @@ Project publications*.
 
 
 A lot of our initial discussions centred around rewards for open
-research or, actually, lack thereof and percepted associated
+research or, actually, lack thereof and perceived associated
 risks. Indeed, the traditional academic rewarding system and the
 competitiveness in research leaves little room for reproducibility and
 openness. It is, I believe, all participants hope that this project
@@ -120,7 +120,7 @@ from.
 
 Unfortunately, it is a fact that open science is not on the agenda of
 many (most?) more senior researchers and that they are neither in a
-position to be open nor that open scienc is a priority at all. I find
+position to be open nor that open science is a priority at all. I find
 it particularly disheartening that many senior academics (i.e. those
 that will sit on the panel deciding if I'm worth my next job) consider
 investing time in open science and the promotion of open science as
