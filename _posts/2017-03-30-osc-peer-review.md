@@ -122,3 +122,12 @@ To hear more about the event, have a look at the
 [#oscpeereview](https://twitter.com/hashtag/oscpeerreview) hashtag on
 twitter. The event was live streamed and will be made available on
 YouTube in the coming day - I will add a link later.
+
+All in all, I think it was a great event. Kudos to the Office of
+Scholarly Communication for their efforts and continuous
+dedication. As emphasised by many participants, events like this
+constitute a unique and important channel highlighting important
+innovations in digital and open science that are redesigning
+scholarship. They are also a unique venue where open researcher can
+express and discuss challenges and opportunities with the wider
+academic community.
