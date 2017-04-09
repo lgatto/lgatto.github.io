@@ -33,8 +33,20 @@ sidebar:
   All her methods and algorithms form part of the
   [`pRoloc`](http://bioconductor.org/packages/pRoloc) framework for protein
   localisation prediction.
-  
-  
+
+## Students
+
+- **Oliver Crook** is a Wellcome Trust PhD student doing his
+  rotation. He is developing on new Bayesian interpretation of spatial
+  proteomics, formalising the theoretical foundations and implementing
+  the algorithms that will be included in
+  [`pRoloc`](https://lgatto.github.io/pRoloc/).
+
+- **Robin Kohze** comes from Radboud University Nijmegen, the
+  Netherlands, and is visiting the group in the frame of his Master's
+  internship. He is developing new infrastructure to facilitate the
+  dissemination of spatial proteomics data.
+
 ## Remote members 
 
 - [**Sebastian Gibb**](http://sebastiangibb.de/), Department of
