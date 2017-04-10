@@ -42,7 +42,7 @@ sidebar:
   foundations and implementing the algorithms that will be included in
   [`pRoloc`](https://lgatto.github.io/pRoloc/).
 
-- [**Robin kohze**](https://github.com/Kohze) comes from the Radboud
+- [**Robin Kohze**](https://github.com/Kohze) comes from the Radboud
   University Nijmegen and visits the group in the frame of his
   master's internship. He is developing a new infrastructure to
   facilitate the dissemination of spatial proteomics data.
