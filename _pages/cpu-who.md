@@ -36,16 +36,16 @@ sidebar:
 
 ## Students
 
-- **Oliver Crook** is a Wellcome Trust PhD student doing his
-  rotation. He is developing on new Bayesian interpretation of spatial
-  proteomics, formalising the theoretical foundations and implementing
-  the algorithms that will be included in
+- [**Oliver Crook**](https://olivercrook.co.uk/) is a Wellcome Trust
+  PhD student doing his rotation. He is developing on new Bayesian
+  interpretation of spatial proteomics, formalising the theoretical
+  foundations and implementing the algorithms that will be included in
   [`pRoloc`](https://lgatto.github.io/pRoloc/).
 
-- [**Robin kohze**](https://github.com/Kohze) comes from the Radboud University Nijmegen 
-  and visits the group in the frame of his master's
-  internship. He is developing a new infrastructure to facilitate the
-  dissemination of spatial proteomics data.
+- [**Robin kohze**](https://github.com/Kohze) comes from the Radboud
+  University Nijmegen and visits the group in the frame of his
+  master's internship. He is developing a new infrastructure to
+  facilitate the dissemination of spatial proteomics data.
 
 ## Remote members 
 
