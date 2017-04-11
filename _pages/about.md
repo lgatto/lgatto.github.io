@@ -137,6 +137,22 @@ See also my [Google scholar profile](https://scholar.google.co.uk/citations?user
 
 ### Journal articles
 
+<!-- Peter J. Thul et al. *A subcellular map of the human -->
+<!-- proteome*. Science. 2017, in press. -->
+
+<!-- Mulvey CM, Breckels LM, Geladaki A, Kocevar Britovsek N, Nightingale -->
+<!-- DJH, Christoforou A , Elzek M, Deery MJ, Gatto L, Lilley KS. *Using -->
+<!-- HyperLOPIT to perform high-resolution mapping of the spatial -->
+<!-- proteome*. Nature Protocols, *in press*. (See the -->
+<!-- [F1000Research workflow](https://f1000research.com/articles/5-2926/) -->
+<!-- for details on the computational side of the protocol.) -->
+
+Leprevost FD, et al. *[BioContainers](http://biocontainers.pro/): An
+open-source and community-driven framework for software
+standardization.* Bioinformatics. 2017
+Mar 30. [doi:10.1093/bioinformatics/btx192](https://academic.oup.com/bioinformatics/article/doi/10.1093/bioinformatics/btx192/3096437/BioContainers-An-open-source-and-community-driven). [Epub ahead of print]
+[PubMed PMID:28379341](https://www.ncbi.nlm.nih.gov/pubmed/28379341).
+
 Breckels LM, Mulvey CM, Lilley KS and Gatto L. *A Bioconductor
 workflow for processing and analysing spatial proteomics
 data* F1000Research 2016, 5:2926
