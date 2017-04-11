@@ -74,6 +74,5 @@ Dr Laurent Gatto
     University of Cambridge
     Tennis Court Road
     Cambridge, CB2 1GA, UK
-
-Phone: +44 (0) 1223 760253
-Email: lg390 AT cam.ac.uk
+    Phone: +44 (0) 1223 760253
+    Email: lg390 AT cam.ac.uk
