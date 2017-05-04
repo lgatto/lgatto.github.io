@@ -140,12 +140,14 @@ See also my [Google scholar profile](https://scholar.google.co.uk/citations?user
 <!-- Peter J. Thul et al. *A subcellular map of the human -->
 <!-- proteome*. Science. 2017, in press. -->
 
-<!-- Mulvey CM, Breckels LM, Geladaki A, Kocevar Britovsek N, Nightingale -->
-<!-- DJH, Christoforou A , Elzek M, Deery MJ, Gatto L, Lilley KS. *Using -->
-<!-- HyperLOPIT to perform high-resolution mapping of the spatial -->
-<!-- proteome*. Nature Protocols, *in press*. (See the -->
-<!-- [F1000Research workflow](https://f1000research.com/articles/5-2926/) -->
-<!-- for details on the computational side of the protocol.) -->
+Mulvey CM, Breckels LM, Geladaki A, Kocevar Britovsek N, Nightingale
+DJH, Christoforou A , Elzek M, Deery MJ, Gatto L, Lilley KS. *Using
+HyperLOPIT to perform high-resolution mapping of the spatial
+proteome*. Nature Protocols, 12, 1110–1135 (2017)
+[doi:10.1038/nprot.2017.026](https://www.nature.com/nprot/journal/v12/n6/full/nprot.2017.026.html)
+(See the
+[F1000Research workflow](https://f1000research.com/articles/5-2926/)
+for details on the computational side of the protocol.)
 
 Leprevost FD, et al. *[BioContainers](http://biocontainers.pro/): An
 open-source and community-driven framework for software
