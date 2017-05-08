@@ -433,6 +433,12 @@ in *Proteome Informatics*, The Royal Society of Chemistry, November
       
 ### Technical Notes
 
+Gatto L. *Data Management Plan for a Biotechnology and Biological
+Sciences Research Council (BBSRC) Tools and ResourcesDevelopment Fund
+(TRDF) Grant*, Research Ideas and Outcomes (2017),
+[doi:10.3897/rio.3.e11624](http://riojournal.com/articles.php?id=11624).
+
+
 Gatto, L. and Schretter, C. *Designing Primer Pairs and Oligos with
 OligoFaktorySE*. [EMBnet.news](http://journal.embnet.org/index.php/embnetnews/article/view/38)
 North America, 15, oct. 2009
