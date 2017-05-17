@@ -137,8 +137,10 @@ See also my [Google scholar profile](https://scholar.google.co.uk/citations?user
 
 ### Journal articles
 
-<!-- Peter J. Thul et al. *A subcellular map of the human -->
-<!-- proteome*. Science. 2017, in press. -->
+Thul PJ, *et al.* *A subcellular map of the human
+proteome*. Science. 2017 May 11. pii:
+eaal3321. [doi:10.1126/science.aal3321](http://science.sciencemag.org/content/early/2017/05/10/science.aal3321). [Epub ahead of print]
+PubMed [PMID:28495876](https://www.ncbi.nlm.nih.gov/pubmed/28495876).
 
 Mulvey CM, Breckels LM, Geladaki A, Kocevar Britovsek N, Nightingale
 DJH, Christoforou A , Elzek M, Deery MJ, Gatto L, Lilley KS. *Using
