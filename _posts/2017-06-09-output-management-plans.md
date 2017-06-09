@@ -1,5 +1,5 @@
 ---
-title: "Research output management plans"
+title: "Research outputs management plans"
 tags: ["open research", "open data", "data", "software"]
 comments: true
 ---
