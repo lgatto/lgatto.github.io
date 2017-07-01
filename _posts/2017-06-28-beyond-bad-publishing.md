@@ -86,3 +86,8 @@ trustworthy research
 by
 [signing the letter](https://cambridge.eu.qualtrics.com/jfe/form/SV_6S9OXAydlFZz8cR) and
 supporting this initiative.
+
+**Update**: Here's an
+article,
+[Academics strike back against bad science](https://www.thetimes.co.uk/article/academics-strike-back-against-bad-science-t5mzcdxv8),
+published in *The Times* about our campaign.
