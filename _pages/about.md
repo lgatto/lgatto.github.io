@@ -13,23 +13,49 @@ header:
 
 ## Short bio
 
-I moved to Cambridge, UK, in January 2010 to work in the
+I am a Senior Research Associate in the Department of Biochemistry at
+the University of Cambridge. I am an avid open research advocate and
+make very possible effort to make my research reproducible. I am
+a
+[Software Sustainability Institute fellow](https://www.software.ac.uk/fellowship-programme) and
+a [Data](http://www.datacarpentry.org/)
+and [Software Carpentry](https://software-carpentry.org/team/)
+instructor,
+affiliated [member](http://bioconductor.org/about/core-team/) of
+the [Bioconductor](http://bioconductor.org) project and a founding
+member of [OpenConCam](http://www.openconcam.org/), our local OpenCon
+group. My current open researcher activities focus on
+the
+[Wellcome Trust Open Research Project](https://lgatto.github.io/tags/#open-research-project),
+where we explore the barriers to open research, and
+the [Bullied Into Bad Science](http://bulliedintobadscience.org/)
+campaign, an initiative by and for early career researchers who aim
+for a fairer, more open and ethical research and publication
+environment. Since 2017, I am also part of the
+eLife
+[Early-career advisory group](https://elifesciences.org/about/people/early-career).
+
+
+I moved to Cambridge, UK, in January 2010 to work in
+the
 [Cambridge Centre for Proteomics](http://proteomics.bio.cam.ac.uk/) on
-various aspects of quantitative and spatial proteomics, developing
-new methods and implementing computational tools with a
-strong emphasis on rigorous and reproducible data analysis. I am also
-a visiting scientist in the [PRIDE](http://www.ebi.ac.uk/pride/) team
-at the
-[European Bioinformatics Institute](http://www.ebi.ac.uk/pride/),
-affiliated [member](http://bioconductor.org/about/core-team/) of the
-[Bioconductor](http://bioconductor.org) project, a
-[fellow](http://software.ac.uk/fellows/laurent-gatto) of the
-[Software Sustainability Institute](http://software.ac.uk/), a
-[Software and Data Carpentry instructor](http://software-carpentry.org/team/)
-and an affiliate teaching staff at the
-[Cambridge Computational Biology Institute](http://www.ccbi.cam.ac.uk/members.php). I
-currently lead the
-[Computational Proteomics Unit](http://cpu.sysbiol.cam.ac.uk/).
+various aspects of quantitative and spatial proteomics, developing new
+methods and implementing computational tools with a strong emphasis on
+rigorous and reproducible data analysis. I am also a visiting
+scientist in the [PRIDE](http://www.ebi.ac.uk/pride/) team at
+the [European Bioinformatics Institute](http://www.ebi.ac.uk/pride/),
+and an affiliate teaching staff at
+the
+[Cambridge Computational Biology Institute](http://www.ccbi.cam.ac.uk). I
+am currently
+a
+[PI in the Cambridge Systems Biology Centre](http://www.sysbiol.cam.ac.uk/Investigators/laurent-gatto) where
+I lead
+the
+[Computational Proteomics Unit](https://lgatto.github.io/cpu-lab/).
+
+
+
 
 ## Research
 
@@ -85,8 +111,8 @@ sub-cellular localisation of proteins and changes thereof
 2010, I have developed novel software and machine learning approaches
 enabling more reliable and systematic inference of protein
 localisations using quantitative proteomics. This work has
-materialised in the
-[`pRoloc`](http://bioconductor.org/packages/pRoloc) package
+materialised in
+the [`pRoloc`](http://bioconductor.org/packages/pRoloc) package
 ([Gatto et al., 2014](http://www.ncbi.nlm.nih.gov/pubmed/24413670))
 that implements various established classification algorithms,
 effective visualisation techniques
@@ -95,7 +121,8 @@ well as novelty detection
 ([Breckels et al., 2013](http://www.ncbi.nlm.nih.gov/pubmed/23523639))
 and transfer learning, harvesting GO annotations of microscopy-based
 methods to improve the spatial resolution of experimental spatial
-proteomics data.
+proteomics data
+([Breckels et al., 2016](http://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1004920)).
 
 ### Past research 
 
