@@ -15,7 +15,7 @@ header:
 
 I am a Senior Research Associate in the Department of Biochemistry at
 the University of Cambridge. I am an avid open research advocate and
-make very possible effort to make my research reproducible. I am
+make every possible effort to make my research reproducible. I am
 a
 [Software Sustainability Institute fellow](https://www.software.ac.uk/fellowship-programme) and
 a [Data](http://www.datacarpentry.org/)
