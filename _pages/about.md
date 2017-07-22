@@ -503,15 +503,15 @@ spectrometry and proteomics.
 
 Forthcoming presentations: [Open Science in Practice](https://osip2017.epfl.ch/),
 25 September 2017, Lausanne. *An early career researcher's view on
-modern and open scholarship*
+modern and open scholarship*.
 
 [Proteomics Method Forum](https://www.proteomicsmethodsforum.org.uk/),
 Oxford, 22-23
-June 2017. [The Bioconductor project - analysis and comprehension of high-throughput proteomics data](https://bit.ly/20170623pmf)
+June 2017. [The Bioconductor project - analysis and comprehension of high-throughput proteomics data](https://bit.ly/20170623pmf).
 
 [Research Data Management Forum](http://www.dcc.ac.uk/events/research-data-management-forum-rdmf/rdmf17 ),
 London, 9th
-June 2017. [An early career researcher's view on modern and open scholarship ... and careers](https://bit.ly/20170609rdmf)
+June 2017. [An early career researcher's view on modern and open scholarship ... and careers](https://bit.ly/20170609rdmf).
 
 
 Office of Scholarly Communication
@@ -524,4 +524,4 @@ Meeting](http://scicore.ch/events/eurobioc2016/), Zurich, 6 - 7
 December 2016. [`MSnbase2` - disk access is the limit`](https://github.com/lgatto/EuroBioc2016-Basel-MSnbase2).
 
 Cambridge Computational Biology Institute, 16
-November 2016. [Mapping the sub-cellular proteome: Computational analyses of high-throughput mass spectrometry-based spatial proteomics data](http://goo.gl/SZRMjg)
+November 2016. [Mapping the sub-cellular proteome: Computational analyses of high-throughput mass spectrometry-based spatial proteomics data](http://goo.gl/SZRMjg).
