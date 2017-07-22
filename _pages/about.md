@@ -519,8 +519,7 @@ Training -
 [How to Get the Most Out of Modern Peer Review](https://www.training.cam.ac.uk/osc/event/2080517),
 Cambridge, 30 Mar 2017. [The role of peer-reviewers in promoting open science](http://bit.ly/20170329peerrev).
 
-European Bioconductor Developer
-Meeting](http://scicore.ch/events/eurobioc2016/), Zurich, 6 - 7
+[European Bioconductor Developer Meeting](http://scicore.ch/events/eurobioc2016/), Zurich, 6 - 7
 December 2016. [`MSnbase2` - disk access is the limit`](https://github.com/lgatto/EuroBioc2016-Basel-MSnbase2).
 
 Cambridge Computational Biology Institute, 16
