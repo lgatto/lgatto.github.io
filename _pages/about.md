@@ -501,10 +501,15 @@ spectrometry and proteomics.
 
 ## Talks
 
-Forthcoming
-presentations: [Open Science in Practice](https://osip2017.epfl.ch/),
-25 September 2017, Lausanne, Switzerland. *An early career
-researcher's view on modern and open scholarship*.
+Forthcoming talks: 
+
+* [Open Science in Practice](https://osip2017.epfl.ch/), 25 September
+  2017, Lausanne, Switzerland. *An early career researcher's view on
+  modern and open scholarship*.
+  
+* [EuBIC 2018 developer's meeting](http://uahost.uantwerpen.be/eubic18/),
+  9 - 12 January 2018, Ghent, Belgium. I'll be giving a keynote talk
+  and run a hackathon project. More details soon.
 
 [Proteomics Method Forum](https://www.proteomicsmethodsforum.org.uk/),
 Oxford, UK, 22-23
