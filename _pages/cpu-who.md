@@ -44,7 +44,7 @@ sidebar:
   will be included in [`pRoloc`](https://lgatto.github.io/pRoloc/).
 
 
-## Students
+## Undergraduates
 
 - [**Robin Kohze**](https://github.com/Kohze) comes from the Radboud
   University Nijmegen and visits the group in the frame of his
