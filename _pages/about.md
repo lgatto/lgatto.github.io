@@ -510,8 +510,8 @@ Forthcoming talks:
 * Talk at the Leibniz Institut for Aging, on the 8 November 2017,
   invited by
   [Alessandro Ori](http://www.leibniz-fli.de/research/research-groups/ori/). I
-  will be talking about spatial proteomics, its applications and
-  finding, and the open and collaborative R/Bioconductor software
+  will be presenting my work in spatial proteomics, its applications
+  and finding, and the open and collaborative R/Bioconductor software
   ecosystem.
 
 * [EuBIC 2018 developer's meeting](http://uahost.uantwerpen.be/eubic18/),
