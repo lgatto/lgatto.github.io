@@ -34,13 +34,17 @@ sidebar:
   [`pRoloc`](http://bioconductor.org/packages/pRoloc) framework for protein
   localisation prediction.
 
-## Students
-
 - [**Oliver Crook**](https://olivercrook.co.uk/) is a Wellcome Trust
-  PhD student doing his rotation. He is developing on new Bayesian
-  interpretation of spatial proteomics, formalising the theoretical
-  foundations and implementing the algorithms that will be included in
-  [`pRoloc`](https://lgatto.github.io/pRoloc/).
+  PhD student, jointly supervised with
+  [Paul Kirk](http://www.mrc-bsu.cam.ac.uk/people/in-alphabetical-order/h-to-m/paul-kirk/) from
+  MRC Biostatistics Unit and
+  [Kathryn Lilley]((http://www.bioc.cam.ac.uk/people/uto/lilley)). Olly,
+  works on new Bayesian methods for spatial proteomics, formalising
+  the theoretical foundations and implementing the algorithms that
+  will be included in [`pRoloc`](https://lgatto.github.io/pRoloc/).
+
+
+## Students
 
 - [**Robin Kohze**](https://github.com/Kohze) comes from the Radboud
   University Nijmegen and visits the group in the frame of his
