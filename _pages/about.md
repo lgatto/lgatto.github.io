@@ -535,7 +535,7 @@ Mar 2017. [The role of peer-reviewers in promoting open science](http://bit.ly/2
 
 [European Bioconductor Developer Meeting](http://scicore.ch/events/eurobioc2016/),
 Zurich, Switzerland, 6 - 7
-December 2016. [`MSnbase2` - disk access is the limit`](https://github.com/lgatto/EuroBioc2016-Basel-MSnbase2).
+December 2016. [`MSnbase2` - disk access is the limit](https://github.com/lgatto/EuroBioc2016-Basel-MSnbase2).
 
 Cambridge Computational Biology Institute, UK, 16
 November 2016. [Mapping the sub-cellular proteome: Computational analyses of high-throughput mass spectrometry-based spatial proteomics data](http://goo.gl/SZRMjg).
