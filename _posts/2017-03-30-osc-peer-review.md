@@ -89,6 +89,19 @@ job at presenting it as a means to *Getting formal recognition for
 your peer review work*. I will definitely give it a go in the near
 future.
 
+**Update 2017-09-13**: Since I wrote this post, I created a Publons
+account, used it actively, and closed my account and requested my data
+back and asked for it to be deleted from the Publons servers. The
+reason is that Publons has been [acquired by Clarivate
+Analytics](https://publons.com/blog/publons-joins-clarivate-analytics/),
+the company behind the impact factor. While I don't doubt Publons'
+good intentions, I refuse to contribute my review data to a company
+whose sole interest is to maximise profits. I would make use of
+Publons' services, or a similar initiative, if I had reasonable
+guarantees that my data where used for the benefit of research and
+researchers. Due to the new circumstances, I believe that these are
+not relevant anymore.
+
 ## Show me the data
 
 I went to Dr Varsha Khodiyar's
