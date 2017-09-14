@@ -181,7 +181,7 @@ open and trustworthy research. 'Open' here refers to open to your
 future self, open the your group/institute, or open to the research
 community and to the public.
 
-But I think we also need to reflect on the incentives we have to do
-this, and the costs that these efforts have. Not because I believe we
-shouldn't make these efforts, but because we deserve to be recognised
-and valued for our efforts. 
+But I think we also need to reflect on the incentives in place to do
+what we do, and the costs that these efforts have. Not because I
+believe we shouldn't make these efforts, but because we deserve to be
+recognised and valued for our efforts.
