@@ -60,7 +60,7 @@ the pilot project looks at:
   research.
 
 Four research groups have been selected to participate. So far, the
-projects proceeds through meetings with all participants (every 6
+project proceeds through meetings with all participants (every 6
 months), discussions between the research groups and their recognised
 OSC collaborator, blog posts and occasional emails on a dedicate
 (private) mailing list.
