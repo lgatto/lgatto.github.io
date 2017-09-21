@@ -1,6 +1,6 @@
 ---
 title: 'September data champions meeting '
-tags: ["peer review", "open science", "data champions"]
+tags: ["peer review", "open science", "data champions", "talk"]
 comments: true
 ---
 
