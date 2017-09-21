@@ -92,7 +92,7 @@ moved to Cambridge), and, when I feel strongly about a topic such as
 Open Science, I am not afraid of getting into an argument.
 
 The reason I believe it is useful to make the above distinction in
-openness is that the the two approaches can sometimes conflict. I have
+openness is that the two approaches can sometimes conflict. I have
 mentioned some reasons above (open peer review and choosing
 publication venues), but Open Science, or the supposed
 expectations/requirements of Open Science can be particularly
