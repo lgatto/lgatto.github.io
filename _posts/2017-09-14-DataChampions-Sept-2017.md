@@ -4,14 +4,15 @@ tags: ["peer review", "open science", "data champions", "talk"]
 comments: true
 ---
 
-The
-[Data Champions Initiative](http://www.data.cam.ac.uk/datachampions)
+The [Data Champions Initiative](http://www.data.cam.ac.uk/datachampions)
 was set up as a way to promote best practice in terms of data
 management within the University departments and institutes, and to
 give those that promote them, explicit visibility for their
 efforts. This is a reflection on my role and contributions as data
 champion and a summary of related activities that I will present at
 the meeting.
+
+{% include toc %}
 
 <!--more-->
 
