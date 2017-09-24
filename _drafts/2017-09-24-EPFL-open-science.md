@@ -38,8 +38,8 @@ all. While I will focus specifically on early career researchers [^1]
 that open research is not only a concern for ECRs - that's only the
 main theme of my talk - is concerns us all. In particular, we, ECRs,
 need *more* support from senior/established academics, librarians,
-finder's, ... We need to drive change for a better, more open research
-environment.
+funders, ... Together, each of us in own quality, we need to drive
+change for a better, more open research environment.
 
 [^1]: ECR can broadly be define as a post-graduate student, a researcher in academia or industry or at a non-governmental organisation who is unemployed or on a temporary contract, or within 10 years of obtaining a permanent post. It doesn't primarily relate to the age of the person.
 
@@ -79,7 +79,7 @@ I am a **open scholar** and make a point of being vocal about it.
 
 Any research output should be
 
-- Free to read/access
+- Free to read/access: no barriers to access knowledge
 - Free to re-use (data, software, text and data mining, ...)
 
 But also
@@ -93,14 +93,14 @@ But also
 
 Open research/science should also be
 
-- inclusive 
+- Inclusive 
 
 More on this below.
 
 ## Open vs. closed?
 
 Let's first reflect on the nature of science, and whether there really
-should be anything like open or closed science. 
+should be anything like *explicitly* open science.
 
 In 1942, Robert Merton introduced his four
 [Mertonian norms of Science](https://en.wikipedia.org/wiki/Mertonian_norms) (pdf:
@@ -140,7 +140,7 @@ I claim that **open is a gateway to more trustworthy research**.
 
 - Open research is research that enables reproducible and repeatable
   research.
-- Open research is transparent and honest research .
+- Open research is transparent and honest research.
 - Open research is research that we can build upon.
 
 Open is better, and we should always aim for the better, not the
@@ -148,7 +148,12 @@ worse.
 
 But then,
 
-> Why wouldn't anyone want to do open research?
+> Why would anyone not want to do open research?
+
+Note that nobody ever claimed (as far as I know, anyway) to do *closed
+science*. And there's no black-and-white situation between open and
+non-open/closed. There is always a degree of how far one wants, or
+can, promote the most open possible research.
 
 ## Why isn't it open?
 
@@ -275,7 +280,7 @@ factor of the lack of reproducibility is the lack of openness
 
 (More about reproducible research below)
 
-But, institutions should worry about research being reproducible and
+Institutions should worry about research being reproducible and
 trustworthy, and some argue for it.
 
 [![Faculty promotion must assess reproducibility](/images/2017-09-22-promotion-rr.png)](https://www.nature.com/news/faculty-promotion-must-assess-reproducibility-1.22596)
@@ -287,7 +292,7 @@ to brush over many of these requirements. In addition, the incentives
 are still inconsequential compared to the (perceived) risks. Maybe we
 need more threads when not being open.
 
-## What can we do as ECR?
+## What can we do?
 
 ### Build openness at the core your research
 
@@ -309,7 +314,7 @@ University of Cambridge and the
 [Wellcome Trust Open research team](https://wellcome.ac.uk/what-we-do/our-work/open-research). From
 the official page, the pilot project looks at:
 
-- the support research groups need in order to make all aspects of
+- the support research groups' need in order to make all aspects of
   their research open,
 - why they want to do this,
 - how it benefits them,
@@ -327,10 +332,11 @@ some early thoughts about the project itself.)
 
 Here are the reasons why the *SpatialMap* project is an open project:
 
-1. The *SpatialMap* project in itself is about opening up and sharing
-   data by facilitating data sharing and providing tools to further
-   readers comprehension of the data. One aim would be to allow users
-   to use it to upload and share their data privately in a first
+1. The *SpatialMap* project in itself is about opening up spatial
+   proteomics data by facilitating data sharing and providing tools to
+   further readers comprehension of the data. One aim is to allow
+   users to use the *SpatialMap* web portal to upload, share, explore
+   and discuss their data privately with collaborators in a first
    instance (few researchers share their data before publication),
    then make the data available to reviewer, and finally, once
    reviewed, make it public at the push of a button. The incentive for
