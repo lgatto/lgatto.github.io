@@ -677,8 +677,8 @@ advising the current establishment (slower, but as important).
 
 It is not easy to predict where Open Research/Science will get in the
 future. Open access has had both positive (widening access) and
-negative effects, when being re-purposed for commercial benefits (see
-a recent interview with Leslie Chan,
+negative effects (when being re-purposed for commercial benefits, see
+also a recent interview with Leslie Chan,
 [Confessions of an Open Access Advocat](https://ocsdnet.org/confessions-of-an-open-access-advocate-leslie-chan/)).
 As ECRs, we are the future of research and the future of research
 dissemination. We mustn't be afraid of experimenting, debating, and
