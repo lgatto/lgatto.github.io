@@ -450,9 +450,9 @@ As a quick note, my *ideal* review system would be one where
    positive results bias).
 
 When talking about open research and peer review, one logical
-extension is **open peer review**. I personally value open peer review and
-practice it when possible, it can be a difficult issue for ECRs,
-exposing them unnecessarily when reviewing work from prominent
+extension is **open peer review**. While I personally value open peer
+review and practice it when possible, it can be a difficult issue for
+ECRs, exposing them unnecessarily when reviewing work from prominent
 peers. It also can reinforce an already unwelcoming environment for
 underrepresented minorities. See more about this in the *Inclusivity:
 open science and open science* section below.
@@ -470,14 +470,24 @@ Biology 2015 16:274 https://doi.org/10.1186/s13059-015-0850-7
 1. **Reproducibility helps to avoid disaster**: a project is more than
    a beautiful result. You need to record in detail how you got
    there. Starting to work reproducibly early on will save you time
-   later.
+   later. I had cases where a collaborator told me they preferred the
+   results on the very first plots they received, that I couldn't
+   recover a couple of month later. But because my work was
+   reproducible and I had tracked it over time (using git and GitHub),
+   I was able, after a little bit of data analysis forensics, to
+   identify why these first, preliminary plots weren't consistent with
+   later results (and it as a simple, but very relevant bug in the
+   code). Imagine if my collaborators had just used these first plots
+   for publication, or to decide to perform further experiments.
+   
 2. **Reproducibility makes it easier to write papers**: Transparency
-   in your analysis makes writing papers much easier. In a dynamic
+   in your analysis makes writing papers much easier. In dynamic
    documents (using
    [rmarkdown](http://rmarkdown.rstudio.com/),
-   [juypter notebook](https://jupyter.org/) and other similar tools)
-   all results automatically update when the data are changed. You can
-   be confident your numbers, figures and tables are up-to-date.
+   [juypter notebook](https://jupyter.org/) and other similar tools),
+   all results are automatically update when the data are changed. You
+   can be confident your numbers, figures and tables are up-to-date.
+   
 3. **Reproducibility helps reviewers see it your way**: a reproducible
    document will tick many of the boxes enumerated above. You will
    make me very happy reviewer if I can review a paper that is
@@ -506,10 +516,10 @@ might also give you and on-line presence that can be helpful in
 raising you profile as a researcher.
 
 Open science practice is also a valuable and transferable skill. Good
-data management and reproducible research might not always be skilled
+data management and reproducible research might not always be skilles
 that are appreciated in academia, but in many other fields (for
 example anything related to data science), they are absolutely
-essential. Science policy is also a very interesting career choice for
+essential. Science policy is also a very desirable career choice for
 many STEM graduates, and with the growing importance of open science,
 these skills would be an important addition to your CV.
 
@@ -523,7 +533,7 @@ open and ethical research and publication environment.
 
 One of the most depressing observations when promoting open research
 is the lack of support by senior academics, whether they have vested
-interests, are mis-informed on open science, and just have no
+interests, are *only* mis-informed about open science, or just have no
 incentive to drive any change. Fortunately, it's also important to
 highlight that there are established academics who support open
 research, but they are a minority.
@@ -532,11 +542,11 @@ Here are eight actions that researchers and institutions should follow
 to improve open research and open ECR:
 
 1. Sign the Declaration on Research Assessment
-   ([DORA](http://www.ascb.org/dora/)), that will make hiring and
-   promotion criteria explicit and highlight that the content and
-   quality of research outputs are more important than the venue they
-   are published in.
-2. Positively value the commitment of open research and publishing
+   ([DORA](http://www.ascb.org/dora/)), make hiring and promotion
+   criteria explicit and highlight that the content and quality of
+   research outputs are more important than the venue they are
+   published in.
+2. Positively value the commitment to open research and publishing
    practices when considering candidates for positions and promotions.
 3. Endorse immediate open publishing, favouring publications in
    journals that are 100% open access.
@@ -576,6 +586,14 @@ promote open researcher in general, and open ECR in particular.
 
 ## Inclusivity: open science and open science
 
+There is 
+
+> Open Science as in widely disseminated and openly accessible
+
+and
+
+> Open Science as in inclusive and welcoming
+
 On being inclusive -
 [Twitter thread](https://twitter.com/CameronNeylon/status/895546085468495873) by
 [Cameron Neylon](https://twitter.com/CameronNeylon):
@@ -589,14 +607,6 @@ href="https://twitter.com/CameronNeylon/status/895546764861853696">August
 10, 2017</a></blockquote> <script async
 src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-
-There is 
-
-> Open Science as in widely disseminated and openly accessible
-
-and
-
-> Open Science as in inclusive and welcoming
 
 <blockquote class="twitter-tweet" data-conversation="none"
 data-lang="en"><p lang="en" dir="ltr">It was a damned hard community
@@ -623,10 +633,9 @@ discriminated against by greater exposure or, can't always afford to
 be vocal.
 
 - Not everybody has the privilege to be open.
-- There are different levels in how open one wanted to be, or how open
-  one could afford to be.
+- There are different levels in how open one wants, or how open one
+  could afford to be.
 - Every voice and support is welcome.
-
 
 ## Conclusions
 
@@ -634,7 +643,7 @@ be vocal.
 
 Make sure you are ready to be open (for yourself now, your future
 self, open the your group/institute, or open to the research community
-and to the public)
+or to the public)
 
 - manage and annotate you data
 - backup everything up
