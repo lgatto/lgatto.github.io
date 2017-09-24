@@ -16,7 +16,7 @@ promoted* (a quote by
 [David Barron, Professor of Computer Science](https://en.wikipedia.org/wiki/David_W._Barron),
 Prof. Leslie Carr, personal communication), then shouldn't we, early
 career researchers (ECRs), focus on promotion and being docile
-academic citizens rather than aiming for the more nobel cause of
+academic citizens rather than aiming for the more noble cause of
 pursuing research to understand the world that surrounds us, and
 disseminate our findings using modern channels?
 Indeed,
@@ -25,7 +25,7 @@ a critical point that is failing us, is the academic promotion of open
 research and open researcher, as a way to promote a more rigorous and
 sound research process and tackle the reproducibility crisis. In this
 talk, I will present the case for open scholarship from an early
-carrer researcher's perspective, pointing out that being an open
+career researcher's perspective, pointing out that being an open
 researcher is not only the *right* thing to do, but is also the *best*
 thing to do.
 
@@ -38,7 +38,7 @@ all. While I will focus specifically on early career researchers [^1]
 that open research is not only a concern for ECRs - that's only the
 main theme of my talk - is concerns us all. In particular, we, ECRs,
 need *more* support from senior/established academics, librarians,
-funders, ... We need to drive change for a better, more open research
+finder's, ... We need to drive change for a better, more open research
 environment.
 
 [^1]: ECR can broadly be define as a post-graduate student, a researcher in academia or industry or at a non-governmental organisation who is unemployed or on a temporary contract, or within 10 years of obtaining a permanent post. It doesn't primarily relate to the age of the person.
@@ -48,14 +48,14 @@ It is also important to highlight that **open is not a replacement of
 good research**. I have heard too often that open access is synonym of
 lesser publication. This is clearly nonsense, and the result of
 ignorance or the sole desire to harm those that publish on open access
-venues. We need to work hard to do the best reserach, and share it
+venues. We need to work hard to do the best research, and share it
 openly. As I will argue later, I would even claim that **open is a
 gateway to better research**. So let's not give anyone an opportunity
 to be confused.
 
 I also tend to refer to *open research* rather than *open science* as
 to not explicitly exclude non-STEM field. And while my views will
-however resonate with scientists primiarily, I believe many of the
+however resonate with scientists primarily, I believe many of the
 discussions below should also apply to other communities.
 
 ### Who?
@@ -69,7 +69,7 @@ Research Associate (**non-established research staff**) in the
 department of Biochemistry and a
 [principal investigator in the Cambridge Systems Biology Centre](https://www.sysbiol.cam.ac.uk/Investigators/laurent-gatto).
 
-My research focuses on the **reproducible** analysis and intepretation
+My research focuses on the **reproducible** analysis and interpretation
 of high-throughput biological **data** and the development of
 statistical machine learning methods and **research software**.
 
@@ -77,14 +77,14 @@ I am a **open scholar** and make a point of being vocal about it.
 
 ## What is Open Research/Science
 
-Any research ouput should be
+Any research output should be
 
 - Free to read/access
 - Free to re-use (data, software, text and data mining, ...)
 
 But also
 
-- Free to publish (or how the golden OA movement excludes thr global
+- Free to publish (or how the golden OA movement excludes the global
   south and benefits commercial/hybrid predatory publishers[^2]. See
   also the
   [pay-to-publish model](http://rsnr.royalsocietypublishing.org/content/70/4/403)).
@@ -115,19 +115,19 @@ ethos of modern science.
 - **disinterestedness**: scientific institutions act for the benefit of
   a common scientific enterprise, rather than for the personal gain of
   individuals within them
-- **organized scepticism**: scientific claims should be exposed to
+- **organised scepticism**: scientific claims should be exposed to
   critical scrutiny before being accepted: both in methodology and
   institutional codes of conduct.
 
 Are these imperatives in line with current practice? Status of
 researchers and their institutions has major influence on their
-incomes and outputs, and ownership, IP and screcy are part of research
+incomes and outputs, and ownership, IP and secrecy are part of research
 business at the highest level. Personal gain is not unheard of in
 science (see
 [Danny Kingsley's recent key note talks at COASP9](https://www.repository.cam.ac.uk/handle/1810/267263) for
 examples of financial rewards for publishing in certain
 venues). Finally, scepticism is organised and controlled by an elite
-and validated by commerical publishers. On the other hand, the
+and validated by commercial publishers. On the other hand, the
 imperatives are line with principles promoted by open science.
 
 More recently, in 2015, Mick Watson asked the question more
@@ -160,14 +160,14 @@ below). On the contrary...
 > [David Barron, Professor of Computer Science](https://en.wikipedia.org/wiki/David_W._Barron),
 > Prof. Leslie Carr, personal communication), then shouldn't we, early
 > career researchers (ECRs), focus on promotion and being docile
-> academic citizens rather than aiming for the more nobel cause of
+> academic citizens rather than aiming for the more noble cause of
 > pursuing research to understand the world that surrounds us, and
 > disseminate our findings using modern channels?
 
 In my opinion, barriers are not technological, but rather
 socio-cultural and political.
 
-- Sytemic control and inertia
+- Systemic control and inertia
 - Vested interests by people in charge 
 - Abuse of power dynamics
 - Fear of being scooped
@@ -175,7 +175,7 @@ socio-cultural and political.
 - Fear of errors and public humiliation, risk for reputation
 - Fear of information overload
 - ...
-- Fear of becoming less competitive in a overcompetitive market!
+- Fear of becoming less competitive in a over-competitive market!
 
 While it is important to identify why open can look dangerous to some,
 I don't want to spent too much time discussing these points. See Jon
@@ -184,12 +184,12 @@ Tennant's recent presentation about
 figshare for more details.
 
 The important message at this point is that, many if not all of these
-fears are only *perceived* risks. Let's move on to why ERCs should
+fears are only *perceived* risks. Let's move on to why ECRs should
 seriously consider being open researchers.
 
 ## Go OPEN! 
 
-Open science/research is particularly important for ERCs. Open
+Open science/research is particularly important for ECRs. Open
 research practices are here, and won't go away. It is clear that they
 will increase in the near future. If *you*, as an ECR, want to be a
 competitive researcher in the coming years (and you'll need to be),
@@ -275,7 +275,7 @@ factor of the lack of reproducibility is the lack of openness
 
 (More about reproducible research below)
 
-But, institutions should worry about resarch being reproducible and
+But, institutions should worry about research being reproducible and
 trustworthy, and some argue for it.
 
 [![Faculty promotion must assess reproducibility](/images/2017-09-22-promotion-rr.png)](https://www.nature.com/news/faculty-promotion-must-assess-reproducibility-1.22596)
@@ -367,7 +367,7 @@ example Marta Teperek's 2017
 but also to express this ethic in our academic capacity, such as peer
 review. My responsibility as a reviewer is to
 
-* Accept sound/valid research and provide constuctive comments
+* Accept sound/valid research and provide constructive comments
 
 and hence
 
@@ -384,15 +384,15 @@ to verify the availability and validity and of the data
 
 1. **Availability**: Are the data/software/methods accessible and
    understandable in a way that would allow an informed researcher in
-   the same of close enought field to reproduce and/or verify the
-   results underlying the claims? Note that this doesn't mean that as
-   a reviewer, I will necessarily try to repeat the whole analysis
-   (that would be too time consuming indeed). But, conversely, a
-   submission without data/software will be reviewed (and rejected, or
-   more appropriately send back for completion) in matters of
-   minutes. Are the data available in a public repository that
-   guarantees that it will remain accessible, such as a
-   subject-specific or, non is available a generic repo (such
+   the same or close field to reproduce and/or verify the results
+   underlying the claims? Note that this doesn't mean that as a
+   reviewer, I will necessarily try to repeat the whole analysis (that
+   would be too time consuming indeed). But, conversely, a submission
+   without data/software will be reviewed (and rejected, or more
+   appropriately send back for completion) in matters of minutes. Are
+   the data available in a public repository that guarantees that it
+   will remain accessible, such as a subject-specific or, if none is
+   available a generic repository (such
    as [zenodo](https://zenodo.org/)
    or [figshare](https://figshare.com/), ...), an institutional
    repository (we have [Apollo](https://www.repository.cam.ac.uk/) at
@@ -473,7 +473,7 @@ Biology 2015 16:274 https://doi.org/10.1186/s13059-015-0850-7
    [juypter notebook](https://jupyter.org/) and other similar tools)
    all results automatically update when the data are changed. You can
    be confident your numbers, figures and tables are up-to-date.
-3. **Reproducibility helps reviewers see it your way**: a reproducbile
+3. **Reproducibility helps reviewers see it your way**: a reproducible
    document will tick many of the boxes enumerated above. You will
    make me very happy reviewer if I can review a paper that is
    reproducible.
@@ -535,7 +535,7 @@ to improve open research and open ECR:
    practices when considering candidates for positions and promotions.
 3. Endorse immediate open publishing, favouring publications in
    journals that are 100% open access.
-4. Endorse posting of preprints in recognised preprint servers to
+4. Endorse posting of pre-prints in recognised pre-print servers to
    avoid publishing delays that are detrimental to career progress for
    ECRs.
 5. Endorse, support and promote the open publication of data and other
@@ -571,7 +571,7 @@ promote open researcher in general, and open ECR in particular.
 
 ## Inclusivity: open science and open science
 
-On being inclusing -
+On being inclusive -
 [Twitter thread](https://twitter.com/CameronNeylon/status/895546085468495873) by
 [Cameron Neylon](https://twitter.com/CameronNeylon):
 
@@ -633,7 +633,7 @@ and to the public)
 
 - manage and annotate you data
 - backup everything up
-- open source developmenet 
+- open source development 
 - online presence
 - ...
 
@@ -657,8 +657,8 @@ to be exhausted and completely demoralised.
 > If you want to go fast, go alone. If you want to go far, go
 > together. - African Proverb
 
-There's room for inovation and exploration, as well as influencing and
-advising the current establishement (slower, but as important).
+There's room for innovation and exploration, as well as influencing and
+advising the current establishment (slower, but as important).
 
 
 It is not easy to predict where Open Research/Science will go in the
@@ -668,7 +668,7 @@ a recent interview with Leslie Chan,
 [Confessions of an Open Access Advocat](https://ocsdnet.org/confessions-of-an-open-access-advocate-leslie-chan/)).
 As ECRs, we are the future of research and the future of research
 dissemination. We mustn't be afraid of experimenting, debating, and
-challenging the establishement.
+challenging the establishment.
 
 **Acknowledgements:** I have been influenced by many throughout my
 ongoing journey towards better (open) research. I would like to thank
@@ -690,7 +690,7 @@ the
 [Tim Gowers](https://gowers.wordpress.com/),
 the [Bioconductor project](https://bioconductor.org/),
 the
-[Software Suistainability Institute](https://www.software.ac.uk/),
+[Software Sustainability Institute](https://www.software.ac.uk/),
 [Greg Wilson](https://twitter.com/gvwilson) and
 the [Software/Data Carpentry](https://software-carpentry.org/). And
 probably many more.
