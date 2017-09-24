@@ -334,19 +334,19 @@ Here are the reasons why the *SpatialMap* project is an open project:
 
 1. The *SpatialMap* project in itself is about opening up spatial
    proteomics data by facilitating data sharing and providing tools to
-   further readers comprehension of the data. One aim is to allow
-   users to use the *SpatialMap* web portal to upload, share, explore
-   and discuss their data privately with collaborators in a first
-   instance (few researchers share their data before publication),
-   then make the data available to reviewer, and finally, once
-   reviewed, make it public at the push of a button. The incentive for
-   early utilisation of the platform is to provide interactive data
-   visualisation and integration with other tools and sharing of the
-   data with close collaborators.
+   further the comprehension of the data. One aim is to allow users to
+   use the *SpatialMap* web portal to upload, share, explore and
+   discuss their data privately with collaborators in a first instance
+   (few researchers share their data before publication), then make
+   the data available to reviewer, and finally, once reviewed, make it
+   public at the push of a button. The incentive for early utilisation
+   of the platform is to provide interactive data visualisation and
+   integration with other tools and sharing of the data with close
+   collaborators.
 
 2. The project is developed completely openly in a public
    [GitHub repository](https://github.com/SpatialMap/SpatialMapDev)[^3]. Absolutely
-   all code and contributions are public available. Anyone can
+   all code and contributions are publicly available. Anyone can
    collaborate, or even *fork* the project and build their own.
 
 3. I publicly announced the *SpatialMap* project in
@@ -359,16 +359,16 @@ Here are the reasons why the *SpatialMap* project is an open project:
 Note that I do not have any dedicated funding for this project. The
 progress so far was the result of a masters student visiting my
 group. Given that the project is not trivial, I am considering
-applying for dedicated funding for the project.
+applying for dedicated funding to support the project.
 
 ### Promoting open research through peer review
 
 This section is based on my
 [The role of peer-reviewers in ~~checking supporting information~~ promoting open science](https://rawgit.com/lgatto/2017-03-30-OSC-peerreview/master/slides.html) talk.
 
-As an open research, I think it is important to apply and promote the
-importance of data and data management on a day-to-day basis (see for
-example Marta Teperek's 2017
+As an open researcher, I think it is important to apply and promote
+the importance of data and good data management on a day-to-day basis
+(see for example Marta Teperek's 2017
 [Data Management: Why would I bother?](http://doi.org/10.5281/zenodo.897785) slides),
 but also to express this ethic in our academic capacity, such as peer
 review. My responsibility as a reviewer is to
@@ -398,14 +398,12 @@ to verify the availability and validity and of the data
    appropriately send back for completion) in matters of minutes. Are
    the data available in a public repository that guarantees that it
    will remain accessible, such as a subject-specific or, if none is
-   available a generic repository (such
+   available, a generic repository (such
    as [zenodo](https://zenodo.org/)
    or [figshare](https://figshare.com/), ...), an institutional
    repository (we have [Apollo](https://www.repository.cam.ac.uk/) at
    the University of Cambridge), or, but less desirable, supplementary
    information or a personal webpage[^4].
-
-[^4]: There is often no perfect solution, and a combination of the above might be desirable.
 
 2. **Meta-data**: It's of course not enough to provide a wild dump of
    the data/software/..., but these need to be appropriately
@@ -424,12 +422,13 @@ to verify the availability and validity and of the data
   
 4. **What data, what format**: Is the data readable with standard and
    open/free software? Are the raw and processed available, and have
-   the authors described how to get from one to the other? Do they
-   only provide summary data or tables?
+   the authors described how to get from one to the other? 
 
 5. **License**: Is the data shared in a way that allows users to
    re-use it. Under what conditions? Is the research output shared
    under a valid license?
+
+[^4]: There is often no perfect solution, and a combination of the above might be desirable.
 
 Make sure that the data adhere to the
 **[FAIR](http://www.nature.com/articles/sdata201618) principles**:
@@ -448,7 +447,7 @@ As a quick note, my *ideal* review system would be one where
 
 2. Submit your research with a link to the peer reviewed data. First
    review the intro and methods, then only the results (to avoid
-   positive results bibs).
+   positive results bias).
 
 When talking about open research and peer review, one logical
 extension is **open peer review**. I personally value open peer review and
