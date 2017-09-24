@@ -516,7 +516,7 @@ might also give you an online presence that can be helpful in
 raising you profile as a researcher.
 
 Open science practice is also a valuable and transferable skill. Good
-data management and reproducible research might not always be skilles
+data management and reproducible research might not always be skills
 that are appreciated in academia, but in many other fields (for
 example anything related to data science), they are absolutely
 essential. Science policy is also a very desirable career choice for
