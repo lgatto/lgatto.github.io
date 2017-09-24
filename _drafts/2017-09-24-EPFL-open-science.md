@@ -4,10 +4,10 @@ tags: ["open science", "talks"]
 comments: true
 ---
 
-This post constitutes the talk at
+This post constitutes my talk at
 the [OPEN SCIENCE IN PRACTICE 2017](https://osip2017.epfl.ch/) summer
 school in Lausanne, on the 25 September 2017. The slides used during
-the presentation are available [here](http://bit.ly/20170925OSEPFL).
+the presentation are available [here](http://bit.ly/20170925OpenScienceEPFL).
 
 {% include toc %}
 
@@ -694,4 +694,3 @@ the
 [Greg Wilson](https://twitter.com/gvwilson) and
 the [Software/Data Carpentry](https://software-carpentry.org/). And
 probably many more.
-
