@@ -655,9 +655,9 @@ and be as open and promote openness as much as you can.
 
 > There's more than one open.
 
-Better research also means more diverse and inclusive research and
-research environment. Also, there are many useful ways to be open :
-open to the public, open within a group, open to your future self).
+Better research also means more diverse and inclusive research and a
+inclusive research environment. And, there are many useful ways and
+levels to be open.
 
 
 > You want to do more. Yes please!
@@ -675,7 +675,7 @@ There's room for innovation and exploration, as well as influencing and
 advising the current establishment (slower, but as important).
 
 
-It is not easy to predict where Open Research/Science will go in the
+It is not easy to predict where Open Research/Science will get in the
 future. Open access has had both positive (widening access) and
 negative effects, when being re-purposed for commercial benefits (see
 a recent interview with Leslie Chan,
