@@ -512,7 +512,7 @@ and does not support good scientific practice.
 [![No researcher is too junior to fix science](/images/2017-09-21-fix-science.png)](https://www.nature.com/news/no-researcher-is-too-junior-to-fix-science-1.21928)
 
 Promoting open science, especially when done in an constructive way,
-might also give you and on-line presence that can be helpful in
+might also give you an online presence that can be helpful in
 raising you profile as a researcher.
 
 Open science practice is also a valuable and transferable skill. Good
