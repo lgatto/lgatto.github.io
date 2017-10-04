@@ -11,6 +11,10 @@ the presentation are available [here](http://bit.ly/20170925OpenScienceEPFL).
 
 {% include toc %}
 
+Here's a [video](https://www.youtube.com/watch?v=AUoKV38HtcU) of a
+shorter version of this talk, presented in the evening at the EPFL
+library.
+
 **Abstract:** If *research is the by-product of researchers getting
 promoted* (a quote by
 [David Barron, Professor of Computer Science](https://en.wikipedia.org/wiki/David_W._Barron),
