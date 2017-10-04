@@ -11,7 +11,8 @@ the presentation are available [here](http://bit.ly/20170925OpenScienceEPFL).
 
 {% include toc %}
 
-Here's a [video](https://www.youtube.com/watch?v=AUoKV38HtcU) of a
+Here's a
+[video](https://www.youtube.com/watch?v=AUoKV38HtcU) of a
 shorter version of this talk, presented in the evening at the EPFL
 library.
 
