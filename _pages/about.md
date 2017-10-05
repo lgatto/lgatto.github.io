@@ -541,7 +541,7 @@ Cambridge Computational Biology Institute, UK, 16
 November 2016. [Mapping the sub-cellular proteome: Computational analyses of high-throughput mass spectrometry-based spatial proteomics data](http://goo.gl/SZRMjg).
 
 Dialogue on methods for ecology, Cambridge, UK, 15 November 2016,
-Learning from heterogeneous data in spatial.
+Learning from heterogeneous data in spatial proteomics.
 
 [Quantitative Proteomics and Data Analysis](https://www.biochemistry.org/Events/tabid/379/View/Programme/MeetingNo/TD007/Default.aspx),
 Chester, UK, 4 - 5 April 2016. Inspection, visualisation and analysis
