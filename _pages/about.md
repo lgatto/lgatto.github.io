@@ -510,8 +510,8 @@ Forthcoming talks:
   and finding, and the open and collaborative R/Bioconductor software
   ecosystem.
 
-* Paricipation in the [OpenCon](http://www.opencon2017.org/) panel
-  discussion *Next-generation initiatives advancing open*. 11 - 13
+* Participation in the [OpenCon](http://www.opencon2017.org/) panel
+  discussion *Next-generation initiatives advancing open*, 11 - 13
   November 2017, Berlin.
 
 * I will be talking about *The [Bullied Into Bad Science] campaign* at
