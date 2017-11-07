@@ -514,8 +514,9 @@ Forthcoming talks:
   discussion *Next-generation initiatives advancing open*, 11 - 13
   November 2017, Berlin.
 
-* I will be talking about *The [Bullied Into Bad Science] campaign* at
-  the
+* I will be talking about
+  *The [Bullied Into Bad Science](http://bulliedintobadscience.org/)
+  campaign* at the
   [OpenConCam](http://www.opencon2017.org/lgatt0/opencon_2017_cambridge) 2017
   conference on the 16 November 2017.
 
