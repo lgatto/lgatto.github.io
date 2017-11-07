@@ -510,9 +510,22 @@ Forthcoming talks:
   and finding, and the open and collaborative R/Bioconductor software
   ecosystem.
 
+* Paricipation in the [OpenCon](http://www.opencon2017.org/) panel
+  discussion *Next-generation initiatives advancing open*. 11 - 13
+  November 2017, Berlin.
+
+* I will be talking about *The [Bullied Into Bad Science] campaign* at
+  the
+  [OpenConCam](http://www.opencon2017.org/lgatt0/opencon_2017_cambridge) 2017
+  conference on the 16 November 2017.
+
 * [EuBIC 2018 developer's meeting](http://uahost.uantwerpen.be/eubic18/),
   9 - 12 January 2018, Ghent, Belgium. I'll be giving a keynote talk
   and run a hackathon project. More details soon.
+
+* Current plans are to be at the Howard Hughes Medical Institute in
+  Chevy Chase, MD in February 2018 and at the Northeastern University
+  in Boston, MA in May 2018.
 
 [Open Science in Practice](https://osip2017.epfl.ch/), 25 September
 2017, Lausanne,
