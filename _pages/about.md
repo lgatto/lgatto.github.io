@@ -34,7 +34,8 @@ campaign, an initiative by and for early career researchers who aim
 for a fairer, more open and ethical research and publication
 environment. Since 2017, I am also part of the
 eLife
-[Early-career advisory group](https://elifesciences.org/about/people/early-career).
+[Early-career advisory group](https://elifesciences.org/about/people/early-career) and
+a [#ASAPbio](http://asapbio.org/) ambassador.
 
 
 I moved to Cambridge, UK, in January 2010 to work in
