@@ -503,17 +503,6 @@ spectrometry and proteomics.
 
 Forthcoming talks: 
 
-* Talk at the Leibniz Institut for Aging, on the 8 November 2017,
-  invited by
-  [Alessandro Ori](http://www.leibniz-fli.de/research/research-groups/ori/). I
-  will be presenting my work in spatial proteomics, its applications
-  and finding, and the open and collaborative R/Bioconductor software
-  ecosystem.
-
-* Participation in the [OpenCon](http://www.opencon2017.org/) panel
-  discussion *Next-generation initiatives advancing open*, 11 - 13
-  November 2017, Berlin.
-
 * I will be talking about
   *The [Bullied Into Bad Science](http://bulliedintobadscience.org/)
   campaign* at the
@@ -527,6 +516,15 @@ Forthcoming talks:
 * Current plans are to be at the Howard Hughes Medical Institute in
   Chevy Chase, MD in February 2018 and at the Northeastern University
   in Boston, MA in May 2018.
+
+
+Short [I won't be #BulliedIntoBadScience!](http://bit.ly/20171112OpenCon) as
+part of the panel discussion *Next-generation initiatives advancing
+open*, at [OpenCon](http://www.opencon2017.org/) 11 - 13 November
+2017, Berlin.
+
+[Mapping the sub-cellular proteome](http://bit.ly/20171108FLI), 8
+November 2017, Leibniz Institut for Aging, Jena, Germany.
 
 [Open Science in Practice](https://osip2017.epfl.ch/), 25 September
 2017, Lausanne,
