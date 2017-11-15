@@ -17,31 +17,33 @@ November 2017. The slides are available
 ## Together on a journey
 
 I am going to tell you about a long, still on-going a journey. I'll
-talk about my journey, but it applies to many, I know. And when you
-are on a long journey, you meet many people, and they help you
-along. Before telling more about this journey, I would like to thank
-some that are close to my heart when it comes to open science and open
-research. These are the people
-who [helped organising this event](http://www.openconcam.org/), and
+talk about my journey, but it applies to other, I know that. And when
+you are on a long journey, you meet many people, and some help and
+support on your journey. Before telling more about this journey, I
+would like to thank some people that are close to my heart when it
+comes to open science and open research. These are the people
+who [helped organising this meeting](http://www.openconcam.org/), and
 its predecessors; these are people that share the values I will be
 talking about; and there's in particular the ever
 inspiring [Corina Logan](http://corinalogan.com/), who is the person
-who initiated and who leads the
-[#BulliedIntoBadScience](http://bulliedintobadscience.org/) campaign.
+who initiated
+the [#BulliedIntoBadScience](http://bulliedintobadscience.org/)
+campaign.
 
 ## Yes, it's personal!
 
-I don't know about you, but I care a lot about my work. I am a
-scientist doing research in the area of computational biology, more
-specifically in
+I do care a lot about my work as a researcher, very much indeed. I am
+a scientist doing research in the area of computational biology, more
+specifically
+in
 [spatial proteomics](https://lgatto.github.io/cpu-spat-prot-2015/). At
-the end of my degree (in biology), I wasn't able to imagine anything
-else I could do other than research. I never intended to do the kind
-of research I am doing now, but I wanted to understand the world
-around me. What has fascinated me since the beginning in my work is
-the method of scientific investigation, a method to observe, define
-hypotheses, test them and, eventually understand any aspect of our
-world we want to learn about.
+the end of my degree (that was in biology), I was unable to imagine
+anything else I could do other than research. I never intended to do
+the kind of research I am doing now, but I wanted to understand the
+world around me by doing research. What has fascinated me since that
+time is the method of scientific investigation, a method to observe,
+define hypotheses, test them, and validate or invalidate them.  That's
+how we can understand the world that surrounds us.
 
 What are some of the features that make this scientific investigation
 such a universally powerful paradigm? The science that I am passionate
@@ -54,11 +56,11 @@ about is characterised by:
 
 I didn't realise this as a young PhD student, when initiating my
 journey. Nobody actually ever taught me that these concepts are among
-the very foundations that make science what it is, that we can stand
-on the shoulders of the giants that preceded us, and that, maybe,
-others will be able to stand on our shoulders, one day. This is the
-kind of science that I am passionate about, that I feel I can do until
-the very end.
+the very foundations that make science what it is, i.e. that we can
+stand on the shoulders of the giants that preceded us, and that,
+maybe, others will be able to stand on my shoulders, one day. This is
+the kind of science that I am passionate about, that I feel I can
+continue doing until the very end.
 
 ## So what is this talk about?
 
@@ -67,7 +69,7 @@ the science that we can trust.
 
 But that is not always the science that is practised. 
 
-This is a quote shared with us by one of the signatories of the
+This is a quote shared with us by one of the ECR signatories of the
 **#BulliedIntoBadScience** campaign.
 
 > I have been constantly harassed by superiors to modify data in order
@@ -75,14 +77,14 @@ This is a quote shared with us by one of the signatories of the
 > to make the paper look better for publishing in prestigious
 > journals.
 
-We all have constraints in our work, in our everyday lives. We don't
-live and work in an ivory tower. Times are hard. Things are certainly
-harder for many than there are for me. We have to live with these
-constraints, and we have to do our research with these in mind. 
+We all have constraints in our work, in our lives. We don't live and
+work in an ivory tower. Things can be hard at time. Things are
+certainly harder for many than there are for me. We have to live with
+these constraints, and we have to do our research with these in mind.
 
-But there are some compromises that we won't want to make. We want to
-pursue our research following our values, following the principles
-that prompted us and guided us along the way.
+But there are some compromises that we won't make. We want to pursue
+our research following our values, following the principles that
+prompted us and guided us along the way.
 
 ## The campaign
 
@@ -100,9 +102,8 @@ want a good researcher and a successful academic to realign.
 ## Some background
 
 The **#BulliedIntoBadScience** campaign didn't come out of the blue,
-but is the result of efforts of many people that didn't lead to
-successful outcomes. Efforts that often lead to disappointment and
-frustrations.
+but is the result of efforts that didn't lead to satisfactory
+outcomes. Efforts that often lead to disappointment and frustrations.
 
 We have already written about the background behind the campaign, such
 as for example in this PLoS ECR
@@ -113,7 +114,7 @@ campaign exists.
 ## Success?
 
 It is difficult to say whether the campaign has been successful so
-far. Success is relative anyway But here are a couple of points that
+far. Success is relative anyway. But here are a couple of points that
 we could consider indicators of success, or lack thereof.
 
 
@@ -172,17 +173,17 @@ we could consider indicators of success, or lack thereof.
 ## It's not only personal
 
 I started this presentation by sharing my experience, and highlighting
-how the current unethical research environment affected me, as an
-individual. But it's not about me, of course. It would be too easy to
-those, who don't have ethical research high on their agenda, to
-dismiss everything in a blink of an eye.
+how the current unethical research environment affected me. But it's
+not about me, of course. It would be too easy for those, who don't
+have ethical research high on their agenda, to dismiss everything in a
+blink of an eye.
 
 There is of course a community of ECR - PhD students, postdocs,
 tenure-tracked researchers, ... - on whose shoulders I stand at this
-very moment. These are the researchers that do the research, the all
-too often silent working force that drive research every single
-day. These are the researchers who have signed or publicly support
-this campaign. And there are many more that haven't yet.
+very moment. These are those who do the research, the all too often
+silent working force that drive research every single day. These are
+the researchers who have signed or support this campaign. And there
+are many more that haven't yet.
 
 ## Final word
 
