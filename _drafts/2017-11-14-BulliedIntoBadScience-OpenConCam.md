@@ -25,19 +25,21 @@ its predecessors; these are people that share the values I will be
 talking about; and there's in particular the ever
 inspiring [Corina Logan](http://corinalogan.com/), who is the person
 who initiated and who leads the
-#BulliedIntoBadScience campaign.
+[#BulliedIntoBadScience](http://bulliedintobadscience.org/) campaign.
 
 ## Yes, it's personal!
 
 I don't know about you, but I care a lot about my work. I am a
-scientist doing research in the area of computational biology,
-especially spatial proteomics. At the end of my degree (in
-biology), I wasn't able to imagine anything else I could do other than
-research. I never intended to do the kind of research I am doing now,
-but I wanted to understand the world around me. What has fascinated me
-since the beginning in my work is the method of scientific
-investigation, a method to observe, define hypotheses, test them and,
-eventually understand any aspect of our world we want to learn about.
+scientist doing research in the area of computational biology, more
+specifically in
+[spatial proteomics](https://lgatto.github.io/cpu-spat-prot-2015/). At
+the end of my degree (in biology), I wasn't able to imagine anything
+else I could do other than research. I never intended to do the kind
+of research I am doing now, but I wanted to understand the world
+around me. What has fascinated me since the beginning in my work is
+the method of scientific investigation, a method to observe, define
+hypotheses, test them and, eventually understand any aspect of our
+world we want to learn about.
 
 What are some of the features that make this scientific investigation
 such a universally powerful paradigm? The science that I am passionate
@@ -46,15 +48,15 @@ about is characterised by:
 - **Trust** - I need to trust to stand on your shoulders.
 - **Reproducible** - it's not only your shoulders I will stand on.
 - **Open** - I need to know what I am going to stand on. And I want
-  everybody to be able to know.
+  **everybody** to be able to know.
 
 I didn't realise this as a young PhD student, when initiating my
 journey. Nobody actually ever taught me that these concepts are among
-the very foundations that make science what it is, that we can stand on
-the shoulders of the giants that preceded us and that, maybe, others
-will be able to stand on our shoulders, one day. This is the kind of
-science that I am passionate about, that I feel I can do until the
-very end.
+the very foundations that make science what it is, that we can stand
+on the shoulders of the giants that preceded us, and that, maybe,
+others will be able to stand on our shoulders, one day. This is the
+kind of science that I am passionate about, that I feel I can do until
+the very end.
 
 ## So what is this talk about?
 
