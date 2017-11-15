@@ -120,16 +120,20 @@ we could consider indicators of success, or lack thereof.
 - [Corina](http://corinalogan.com/) just won a Shuttleworth Foundation
   Flash Grant for **#BulliedIntoBadScience**! **WIN**
 
-- Numbers: **140 ECRs have signed it** - **73 non-ECRs support it** -
-  unsure what they really mean.
+- Numbers: There are at this moment **140 ECRs** that have signed the
+  campaign and **73 non-ECRs** (senior academics, people outside
+  academia) that officially support it - unsure what they really
+  mean.
 
-- Feedback - **WIN** (all good, no bad)
+- Feedback: we only got postive and supportive feedback so far -
+  **WIN**
 
-- In Cambridge - **FAIL**. (But that doesn't matter, as long as others
+- In Cambridge, there hasn't been any change as a result of the
+  campaign - **FAIL**. (But that doesn't matter, as long as others
   benefit. It never was meant to be a Cambridge thing anyway) ...
   
-- ... Declaration on Research Assessment (DORA) in Cambridge: "No way
-  on God’s earth" - **FAIL**
+- ... as for Cambridge signing the Declaration on Research Assessment
+  (DORA): "No way on God’s earth" - **FAIL**
 
 ## Continuing the fight
 
@@ -137,26 +141,30 @@ we could consider indicators of success, or lack thereof.
   those in charge also care, so that ECRs don't feel intimidated to
   raise their voice. 
 
-- Evidence to the UK Parliament Science and Technology Committee
-  inquiry on [Research
-  Integrity](https://www.parliament.uk/business/committees/committees-a-z/commons-select/science-and-technology-committee/inquiries/parliament-2017/research-integrity-17-19/).
+- We have submitted evidence to the UK Parliament Science and
+  Technology Committee inquiry on
+  [Research Integrity](https://www.parliament.uk/business/committees/committees-a-z/commons-select/science-and-technology-committee/inquiries/parliament-2017/research-integrity-17-19/) in the name of the campaign.
   
-- Update our web page, add translations translations, regular blog
-  posts, ....
+- An update to our web page is immindent, including translations (we
+  are looking for more translators!), and we want to write regular
+  blog posts.
 
-- Bring the discussion about DORA to the Regent House (University of
-  Cambridge)?
+- We want to discuss the signature of DORA at the
+  [Regent House](https://www.governance.cam.ac.uk/governance/key-bodies/RH-Senate/Pages/default.aspx) at
+  the University of Cambridge?
 
 ## Everyday struggle
 
-- And my **day job**? Why do *ECRs* need to fight for **better**,
-  **open** and more **trustworthy** research?
+- And what about my **day job**? Why do *ECRs* need to fight for
+  **better**, **open** and more **trustworthy** research?
   
-- What's the impact on being an open activist on my **career**?
-  **Good, IMHO**!
+- What's the impact of being an open activist on my academic
+  **career**?  **Good, IMHO!**
+  (see [here](https://lgatto.github.io/EPFL-open-science/) for more
+  details)
   
-- So much work, so little time. There are too many fights to pick -
-  **pick the battles that matter most to you**.
+- There is so much work, and so little time. There are too many fights
+  to pick - **pick the battles that matter most to you**.
 
 - There are multiple ways to fight any battle, and often several are
   needed in parallel: **official** procedure and **community** efforts.
