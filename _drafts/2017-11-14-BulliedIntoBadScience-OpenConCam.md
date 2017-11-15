@@ -7,7 +7,9 @@ comments: true
 This is the content of my talk at
 [OpenConCam](http://www.opencon2017.org/lgatt0/opencon_2017_cambridge),
 the OpenCon satellite meeting in Cambridge, presented on the 16
-November 2017.
+November 2017. The slides are available
+[here](https://rawgit.com/lgatto/2017_11_16_OpenConCam/master/slides.html).
+
 
 <!--more-->
 
