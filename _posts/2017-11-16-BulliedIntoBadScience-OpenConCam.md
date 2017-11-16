@@ -16,7 +16,7 @@ November 2017. The slides are available
 
 ## Together on a journey
 
-I am going to tell you about a long, still on-going a journey. I'll
+I am going to tell you about a long, still on-going journey. I'll
 talk about my journey, but it applies to other, I know that. And when
 you are on a long journey, you meet many people, and some help and
 support on your journey. Before telling more about this journey, I
