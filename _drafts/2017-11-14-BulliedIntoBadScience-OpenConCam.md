@@ -23,7 +23,7 @@ support on your journey. Before telling more about this journey, I
 would like to thank some people that are close to my heart when it
 comes to open science and open research. These are the people
 who [helped organising this meeting](http://www.openconcam.org/), and
-its predecessors; these are people that share the values I will be
+its predecessors; these are people who share the values I will be
 talking about; and there's in particular the ever
 inspiring [Corina Logan](http://corinalogan.com/), who is the person
 who initiated
@@ -49,9 +49,9 @@ What are some of the features that make this scientific investigation
 such a universally powerful paradigm? The science that I am passionate
 about is characterised by:
 
-- **Trust** - I need to trust to stand on your shoulders.
-- **Reproducible** - it's not only your shoulders I will stand on.
-- **Open** - I need to know what I am going to stand on. And I want
+- **Trust** - I need to trust you to stand on your shoulders.
+- **Reproducibility** - it's not only your shoulders I will stand on.
+- **Openness** - I need to know what I am going to stand on. And I want
   **everybody** to be able to know.
 
 I didn't realise this as a young PhD student, when initiating my
