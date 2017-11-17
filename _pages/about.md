@@ -504,12 +504,6 @@ spectrometry and proteomics.
 
 Forthcoming talks: 
 
-* I will be talking about
-  *The [Bullied Into Bad Science](http://bulliedintobadscience.org/)
-  campaign* at the
-  [OpenConCam](http://www.opencon2017.org/lgatt0/opencon_2017_cambridge) 2017
-  conference on the 16 November 2017.
-
 * [EuBIC 2018 developer's meeting](http://uahost.uantwerpen.be/eubic18/),
   9 - 12 January 2018, Ghent, Belgium. I'll be giving a keynote talk
   and run a hackathon project. More details soon.
@@ -518,6 +512,13 @@ Forthcoming talks:
   Chevy Chase, MD in February 2018 and at the Northeastern University
   in Boston, MA in May 2018.
 
+
+A longer talk about *the [Bullied Into Bad
+Science](http://bulliedintobadscience.org/) campaign* at the
+[OpenConCam](http://www.opencon2017.org/lgatt0/opencon_2017_cambridge)
+2017 conference on the 16 November 2017. The content and slides are
+available
+[here](https://lgatto.github.io/BulliedIntoBadScience-OpenConCam/).
 
 Short [I won't be #BulliedIntoBadScience!](http://bit.ly/20171112OpenCon) as
 part of the panel discussion *Next-generation initiatives advancing
