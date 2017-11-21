@@ -56,14 +56,14 @@ themselves).
 
 One comment and suggestion that I found particularly noteworthy was
 from [Rupert Gatti](http://www.econ.cam.ac.uk/people/cto/jrjg1)
-([@rupertgatti](https://twitter.com/rupertgatti) on Twitter), who
+([@rupertgatti](https://twitter.com/rupertgatti) on Twitter),
 co-founder
 [Open Book Publishers](https://www.openbookpublishers.com/). The
 publication of a hard-copy book at Open Book Publishers ranges between
 £3500 and $4500 (which is very low compared to the average costs of
 other mainstream publishers, peaking around 30K for small publisher
 and increasing for major players). Rupert made an important point in
-denouncing APCs, in that they explicitly separates research and its
+denouncing APCs, in that they explicitly separate research and its
 publication. This is certainly an major issue in the current climate:
 researchers *don't pay* for APCs; the money comes straight from
 funders via their university library), and assume everything works
