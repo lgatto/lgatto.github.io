@@ -64,11 +64,11 @@ publication of a hard-copy book at Open Book Publishers ranges between
 other mainstream publishers, peaking around 30K for small publisher
 and increasing for major players). Rupert made an important point in
 denouncing APCs, in that they explicitly separate research and its
-publication. This is certainly an major issue in the current climate:
+publication. This is certainly a major issue in the current climate:
 researchers *don't pay* for APCs; the money comes straight from
 funders via their university library), and assume everything works
 behind the scenes, including licensing (and loosing the rights to
-their outputs). He suggested that if we embedding publishing into
+their outputs). He suggested that if we embedded publishing into
 research, the cost would become essentially zero (in line with costs
 of pre-prints). While one could argue that publishing by third-party
 professionals has some benefits, if we consider that researchers do
