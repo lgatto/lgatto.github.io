@@ -1,5 +1,5 @@
 ---
-title: MSnbase contributors 2010 - 2016 (and 2017)
+title: MSnbase contributors 2010 - ~~2016~~ 2017
 tags: ["R", "MSnbase", "Bioconductor", "CPU"]
 comments: true
 ---
