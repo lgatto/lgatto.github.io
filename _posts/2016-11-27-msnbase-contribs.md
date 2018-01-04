@@ -1,5 +1,5 @@
 ---
-title: MSnbase contributors 2010 - 2016
+title: MSnbase contributors 2010 - 2016 (and 2017)
 tags: ["R", "MSnbase", "Bioconductor", "CPU"]
 comments: true
 ---
@@ -21,7 +21,7 @@ want to give a few more details about and credit to the contributors.
 
 The figure below summarises the contributors over time. 
 
-![MSnbase contributors](/images/msnbase-contributors-2.png)
+![MSnbase contributors](/images/msnbase-contributors-2018-01-04.png)
 
 The first data point on the plot is Mon Oct 4 23:35:23 2010, and
 corresponds to the very first git commit (with typo) in the
@@ -168,6 +168,21 @@ This joint work with Johannes aims at providing a common and efficient
 infrastructure for mass spectrometry data that can be used by the
 proteomics and metabolomics developers.
 
+### Arne Smits
+
+Arne developes the
+[`DEP`](https://bioconductor.org/packages/release/bioc/html/DEP.html)
+package for differential enrichment analysis of proteomics data and
+has [contributed](https://github.com/lgatto/MSnbase/pull/284) `MSnSet`
+to/from `SummarizedExperiment` methods, to facilitate the
+inter-operability between his package and `MSnbase`.
+
+
+
 Seeing that `MSnbase` is used and attracts attention from other
 developers is a great reward for me. Thank you all for your valuable
 contributions!
+
+
+**Updates** Since its first publication (2016-11-27), this post has
+been ammended to add Arne Smits' contribution (2018-01-04).
