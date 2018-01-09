@@ -504,14 +504,14 @@ spectrometry and proteomics.
 
 Forthcoming talks: 
 
-* [EuBIC 2018 developer's meeting](http://uahost.uantwerpen.be/eubic18/),
-  9 - 12 January 2018, Ghent, Belgium. I'll be giving a keynote talk
-  and run a hackathon project. More details soon.
-
 * Current plans are to be at the Howard Hughes Medical Institute in
   Chevy Chase, MD in February 2018 and at the Northeastern University
   in Boston, MA in May 2018.
 
+[Open source and open development proteomics software](http://bit.ly/20180109eubic) at
+the
+[EuBIC 2018 developer's meeting](http://uahost.uantwerpen.be/eubic18/),
+9 - 12 January 2018, Ghent, Belgium.
 
 A longer talk about *the [Bullied Into Bad
 Science](http://bulliedintobadscience.org/) campaign* at the
