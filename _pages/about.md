@@ -508,6 +508,9 @@ Forthcoming talks:
   Chevy Chase, MD in February 2018 and at the Northeastern University
   in Boston, MA in May 2018.
 
+* A talk presenting R/Bioconductor for proteomics and applications at
+  the Sainsbury Laboratory in Norwich on the 15 January 2018.
+
 [Open source and open development proteomics software](http://bit.ly/20180109eubic) at
 the
 [EuBIC 2018 developer's meeting](http://uahost.uantwerpen.be/eubic18/),
