@@ -180,7 +180,10 @@ socio-cultural and political.
 - Systemic control and inertia
 - Vested interests by people in charge 
 - Abuse of power dynamics
-- Fear of being scooped
+- Fear of being scooped (**update** - an editorial in PLoS Biology on
+  *The importance of being second* and, and how they prefer to focus
+  on *complementary research*, recognising its important role in
+  reproducibility of science.)
 - Fear of not being credited
 - Fear of errors and public humiliation, risk for reputation
 - Fear of information overload
