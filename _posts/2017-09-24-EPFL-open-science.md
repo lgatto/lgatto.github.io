@@ -181,9 +181,9 @@ socio-cultural and political.
 - Vested interests by people in charge 
 - Abuse of power dynamics
 - Fear of being scooped (**update** - an editorial in PLoS Biology on
-  *The importance of being second* and, and how they prefer to focus
-  on *complementary research*, recognising its important role in
-  reproducibility of science.)
+  [*The importance of being second*](http://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.2005203) and,
+  and how they prefer to focus on *complementary research*,
+  recognising its important role in reproducibility of science.)
 - Fear of not being credited
 - Fear of errors and public humiliation, risk for reputation
 - Fear of information overload
