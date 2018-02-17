@@ -24,7 +24,7 @@ detailed review). I have edited the post below to follow the
 nomenclature recommended by Mark Liberman based on J. Claerbout,
 V. Stodden and R. Peng.
 
-Update (2018-02-17)L [Here](https://arxiv.org/abs/1802.03311v1)'s a
+**Update** (2018-02-17): [Here](https://arxiv.org/abs/1802.03311v1)'s a
 review of *Terminologies for Reproducible Research* by Lorena
 A. Barba.
 
