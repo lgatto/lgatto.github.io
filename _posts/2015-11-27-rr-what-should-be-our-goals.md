@@ -24,6 +24,10 @@ detailed review). I have edited the post below to follow the
 nomenclature recommended by Mark Liberman based on J. Claerbout,
 V. Stodden and R. Peng.
 
+Update (2018-02-17)L [Here](https://arxiv.org/abs/1802.03311v1)'s a
+review of *Terminologies for Reproducible Research* by Lorena
+A. Barba.
+
 The following nomenclature is based on a talk by
 [Carol Gobble](https://sites.google.com/site/carolegoble/) at the
 Software Sustainability Collaborative Workshop in 2014. Here is a list
@@ -49,7 +53,7 @@ of things that researchers should consider being able to do
   re-implemented based on the original description. This requires
   openness, and one would clearly not be allowed the use a black box
   approach (VM, docker image) or just re-running a script.
-  
+
 * Finally, **re-use** the information/knowledge from one experiment to
   run a different experiment with the aim to confirm results from
   scratch.
@@ -99,7 +103,5 @@ science*. Science. 2011 Dec 2;334(6060):1226-7. doi:
 [PMCID:PMC3383002](http://www.ncbi.nlm.nih.gov/pmc/articles/PMC3383002/).
 
 **Edit** Another great references contributed by
-[Ben Marwick](@benmarwick): 
+[Ben Marwick](@benmarwick):
 [Replicability vs. reproducibility - or is it the other way around?](http://languagelog.ldc.upenn.edu/nll/?p=21956)
-
-
