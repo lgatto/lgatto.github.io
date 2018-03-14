@@ -91,7 +91,7 @@ dissemination of all research outputs.
 My work on the design and implementation of reproducible mass
 spectrometry-based proteomics data analysis pipeline has materialised
 in the development of the
-[`MSnbase`](http://bioconductor.org/packages/MSnbase) 
+[`MSnbase`](http://bioconductor.org/packages/MSnbase)
 ([Gatto et al., 2012](http://www.ncbi.nlm.nih.gov/pubmed/22113085))
 package to manipulate, process and analyse quantitative proteomics
 data. The `MSnbase` infrastructure also supports the work on the
@@ -126,7 +126,7 @@ methods to improve the spatial resolution of experimental spatial
 proteomics data
 ([Breckels et al., 2016](http://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1004920)).
 
-### Past research 
+### Past research
 
 My MSc and
 [PhD work](http://theses.ulb.ac.be/ETD-db/collection/available/ULBetd-07112006-210348/),
@@ -165,6 +165,10 @@ Please do get in touch if you are interested in running workshops.
 See also my [Google scholar profile](https://scholar.google.co.uk/citations?user=k5DrB74AAAAJ&hl=en).
 
 ### Journal articles
+
+Crook OM, Mulvey CM, Kirk PDW, Lilley KS, Gatto L. *A Bayesian Mixture
+Modelling Approach For Spatial Proteomics* bioRxiv;
+doi:https://doi.org/10.1101/282269.
 
 Thul PJ, *et al.* *A subcellular map of the human
 proteome*. Science. 2017 May 11. pii:
@@ -211,7 +215,7 @@ Breckels LM, Holden S, Wonjar D, Mulvey CM, Christoforou A, Groen AJ,
 Kohlbacher O, Lilley KS, Gatto L. *Learning from heterogeneous data
 sources: an application in spatial proteomics*. PLoS Comput Biol. 2016
 May 13;12(5):e1004920
-[doi:10.1371/journal.pcbi.1004920](http://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1004920), 
+[doi:10.1371/journal.pcbi.1004920](http://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1004920),
 [Software](http://bioconductor.org/packages/release/bioc/html/pRoloc.html))
 
 Fabre B, Korona D, Groen A, Vowinckel J, Gatto L, Deery MJ, Ralser M,
@@ -268,7 +272,7 @@ Huber W et al. *Orchestrating high-throughput genomic analysis with
 Bioconductor*. Nat Methods. 2015 Jan 29;12(2):115-21
 ([PubMed](http://www.ncbi.nlm.nih.gov/pubmed/25633503),
 [Publisher](http://www.nature.com/doifinder/10.1038/nmeth.3252)).
-     
+
 
 Hiemstra TF et al. *Human urinary exosomes as innate immune
 effectors*, J Am Soc Nephrol. 2014
@@ -341,7 +345,7 @@ Gatto L. and Christoforou A. *Using R and Bioconductor for proteomics
 data analysis*, Biochim Biophys Acta - Proteins and Proteomics, 2013.
 ([PubMed](http://www.ncbi.nlm.nih.gov/pubmed/23692960),
 [pre-print](http://arxiv.org/abs/1305.6559) and software:
-[Bioconductor](http://bioconductor.org/packages/devel/data/experiment/html/RforProteomics.html), 
+[Bioconductor](http://bioconductor.org/packages/devel/data/experiment/html/RforProteomics.html),
 [github](https://github.com/lgatto/RforProteomics)).
 
 Bond N.J., Shliaha P.V, Lilley K.S., and Gatto L. *Improving
@@ -362,21 +366,21 @@ Acquisition in Proteomics Studies*, J. Proteome Res., 2013
 Breckels L.M., Gatto L., Christoforou A., Groen A.J., Lilley K.S. and
 Trotter M.W.B.  *The Effect of Organelle Discovery upon Sub-Cellular
 Protein Localisation*, Journal of Proteomics, 2013 (<a
-href="http://www.ncbi.nlm.nih.gov/pubmed/23523639">PubMed</a>, 
+href="http://www.ncbi.nlm.nih.gov/pubmed/23523639">PubMed</a>,
 <a href="http://www.bioconductor.org/packages/release/bioc/html/pRoloc.html">software</a>).
 
 Chambers M. <i>et al.</i> *A Cross-platform Toolkit for Mass
 Spectrometry and Proteomics*, <a
 href="http://www.nature.com/nbt/index.html">Nature Biotechnology</a>
 30, 918–920, 2012 (<a href="http://www.ncbi.nlm.nih.gov/pubmed/23051804">PubMed</a>,
-<a href="http://www.ncbi.nlm.nih.gov/pmc/articles/PMC3471674/pdf/nihms-374482.pdf">pdf</a>, 
+<a href="http://www.ncbi.nlm.nih.gov/pmc/articles/PMC3471674/pdf/nihms-374482.pdf">pdf</a>,
 software [<a href="http://proteowizard.sourceforge.net/">1</a>|<a href="http://www.bioconductor.org/packages/release/bioc/html/mzR.html">2</a>]).
 
 
 Gatto L. and Lilley K.S. *MSnbase - an R/Bioconductor package for
 isobaric tagged mass spectrometry data visualisation, processing and
 quantitation*, <a
-href="http://bioinformatics.oxfordjournals.org/">Bioinformatics</a>, 
+href="http://bioinformatics.oxfordjournals.org/">Bioinformatics</a>,
 28(2), 288-289, 2012 (<a href="http://www.ncbi.nlm.nih.gov/pubmed/22113085">PubMed</a>,
 <a href="http://bioinformatics.oxfordjournals.org/content/28/2/288.full.pdf">pdf</a>,
 <a href="http://www.bioconductor.org/packages/release/bioc/html/MSnbase.html">software</a>).
@@ -461,7 +465,7 @@ Breckels LM, Gibb S, Petyuk V and Gatto L
 [*R for Proteomics*](http://pubs.rsc.org/en/content/chapter/bk9781782624288-00321/978-1-78262-428-8#!divabstract)
 in *Proteome Informatics*, The Royal Society of Chemistry, November
 2016.
-      
+
 ### Technical Notes
 
 Gatto L. *Data Management Plan for a Biotechnology and Biological
@@ -502,7 +506,7 @@ spectrometry and proteomics.
 
 ## Talks
 
-Forthcoming talks: 
+Forthcoming talks:
 
 * Current plans are to be at the Howard Hughes Medical Institute in
   Chevy Chase, MD in February 2018 and at the Northeastern University
