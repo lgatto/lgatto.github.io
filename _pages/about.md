@@ -167,8 +167,8 @@ See also my [Google scholar profile](https://scholar.google.co.uk/citations?user
 ### Journal articles
 
 Crook OM, Mulvey CM, Kirk PDW, Lilley KS, Gatto L. *A Bayesian Mixture
-Modelling Approach For Spatial Proteomics* bioRxiv;
-doi:https://doi.org/10.1101/282269.
+Modelling Approach For Spatial Proteomics* bioRxiv; doi:
+[https://doi.org/10.1101/282269](https://doi.org/10.1101/282269).
 
 Thul PJ, *et al.* *A subcellular map of the human
 proteome*. Science. 2017 May 11. pii:
