@@ -102,6 +102,6 @@ science*. Science. 2011 Dec 2;334(6060):1226-7. doi:
 10.1126/science.1213847. PMID:22144613;
 [PMCID:PMC3383002](http://www.ncbi.nlm.nih.gov/pmc/articles/PMC3383002/).
 
-**Edit** Another great references contributed by
+**Edit** Another great reference contributed by
 [Ben Marwick](@benmarwick):
 [Replicability vs. reproducibility - or is it the other way around?](http://languagelog.ldc.upenn.edu/nll/?p=21956)
