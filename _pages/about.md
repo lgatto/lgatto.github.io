@@ -166,6 +166,11 @@ See also my [Google scholar profile](https://scholar.google.co.uk/citations?user
 
 ### Journal articles
 
+Nett I, Mulas C, Gatto L, Lilley KS, Smith A. *Negative feedback via
+RSK modulates Erk‐dependent progression from naïve pluripotency* EMBO
+reports (2018) e45642
+doi:[10.15252/embr.201745642](http://dx.doi.org/10.15252/embr.201745642).
+
 Crook OM, Mulvey CM, Kirk PDW, Lilley KS, Gatto L. *A Bayesian Mixture
 Modelling Approach For Spatial Proteomics* bioRxiv; doi:
 [https://doi.org/10.1101/282269](https://doi.org/10.1101/282269).
