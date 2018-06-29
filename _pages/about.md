@@ -166,6 +166,14 @@ See also my [Google scholar profile](https://scholar.google.co.uk/citations?user
 
 ### Journal articles
 
+Segeritz CP, Rashid ST, Cardoso de Brito M, Paola MS, Ordonez A,
+Morell CM, Kaserman JE, Madrigal P, Hannan N, Gatto L, Tan L, Wilson
+AA, Lilley K, Marciniak SJ, Gooptu B, Lomas DA, Vallier L. *hiPSC
+hepatocyte model demonstrates the role of unfolded protein response
+and inflammatory networks in α(1)-antitrypsin deficiency.* J
+Hepatol. 2018 Jun 4. pii: S0168-8278(18)32113-5. doi:
+[10.1016/j.jhep.2018.05.028](https://dx.doi.org/10.1016/j.jhep.2018.05.028).
+
 Nett I, Mulas C, Gatto L, Lilley KS, Smith A. *Negative feedback via
 RSK modulates Erk‐dependent progression from naïve pluripotency* EMBO
 reports (2018) e45642
