@@ -17,14 +17,19 @@ by researchers on twitter. I haven't seen any positive feedback, but
 that's most likely due to those that I follow.
 
 Interestingly, Tom Sheldon send an email enquiring about that very
-same issue.
+same issue on the 12 July.
 
 <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">I haven&#39;t read it yet, but the author got in touch with me, <a href="https://twitter.com/StephenEglen?ref_src=twsrc%5Etfw">@StephenEglen</a>, Adrian Currie and <a href="https://twitter.com/LoganCorina?ref_src=twsrc%5Etfw">@LoganCorina</a> about this very same topic; none of us researchers, thought that there were any reasonable risks that pre-prints would promote lesser research than peer reviewed papers. <a href="https://t.co/M0aIds14JQ">https://t.co/M0aIds14JQ</a></p>&mdash; Laurent Gⓐtt⓪ (@lgatt0) <a href="https://twitter.com/lgatt0/status/1021864068880236544?ref_src=twsrc%5Etfw">July 24, 2018</a></blockquote>
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 All researchers that were asked agreed that peer review wasn't a
 guarantee to quality or truth and that pre-prints were a positive
-contribution. Here's my answer to his enquiry.
+contribution.
+
+<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">I think we all made the argument to Tom that journalists cant rely on peer review to say the work was correct.</p>&mdash; Stephen Eglen (@StephenEglen) <a href="https://twitter.com/StephenEglen/status/1022029714662273025?ref_src=twsrc%5Etfw">July 25, 2018</a></blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+Here's my answer to his enquiry.
 
 > Dear Tom,
 >
