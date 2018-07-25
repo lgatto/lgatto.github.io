@@ -26,7 +26,7 @@ All researchers that were asked agreed that peer review wasn't a
 guarantee to quality or truth and that pre-prints were a positive
 contribution.
 
-<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">I think we all made the argument to Tom that journalists cant rely on peer review to say the work was correct.</p>&mdash; Stephen Eglen (@StephenEglen) <a href="https://twitter.com/StephenEglen/status/1022029714662273025?ref_src=twsrc%5Etfw">July 25, 2018</a></blockquote>
+<blockquote class="twitter-tweet" data-conversation="none" data-lang="en"><p lang="en" dir="ltr">yep, try for &quot;Correspondence&quot;  to the editor (I&#39;ve had one in before) - although it takes a few weeks to come out.</p>&mdash; Stephen Eglen (@StephenEglen) <a href="https://twitter.com/StephenEglen/status/1022028581088710657?ref_src=twsrc%5Etfw">July 25, 2018</a></blockquote>
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 Here's my answer to his enquiry.
