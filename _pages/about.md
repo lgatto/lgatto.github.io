@@ -166,6 +166,18 @@ See also my [Google scholar profile](https://scholar.google.co.uk/citations?user
 
 ### Journal articles
 
+
+Aikaterini Geladaki, Nina Kocevar Britovsek, Lisa M. Breckels, Tom
+S. Smith, Claire M. Mulvey, Oliver M. Crook, Laurent Gatto, Kathryn
+S. Lilley *LOPIT-DC: A simpler approach to high-resolution spatial
+proteomics* bioRxiv 378364; doi:
+[10.1101/378364](https://doi.org/10.1101/378364).
+
+Laurent Gatto, Lisa M Breckels, Kathryn S Lilley *Assessing
+sub-cellular resolution in spatial proteomics experiments* bioRxiv
+377630; doi:
+[10.1101/377630](https://doi.org/10.1101/377630).
+
 Segeritz CP, Rashid ST, Cardoso de Brito M, Paola MS, Ordonez A,
 Morell CM, Kaserman JE, Madrigal P, Hannan N, Gatto L, Tan L, Wilson
 AA, Lilley K, Marciniak SJ, Gooptu B, Lomas DA, Vallier L. *hiPSC
