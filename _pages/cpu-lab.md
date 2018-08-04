@@ -10,12 +10,17 @@ sidebar:
 
 {% include toc %}
 
-The **Computational Proteomics Unit** was set up in August 2013 and is
-part of the
-[Cambridge Centre for Proteomics](http://proteomics.bio.cam.ac.uk/). Its
-main activities centre around the sound analysis of proteomics data
-and integration of different sources of heterogeneous data. We work in
-close collaboration with biologists to tackle biologically challenging
+**Note** This page needs an update. I am now a professor of
+Bioinformatics at the UCLouvain, where I run a research group in
+bioinformatics and computational biology and teach at the faculty of
+pharmacy and biomedical sciences (FASB).
+
+The Computational Proteomics Unit was set up in August 2013 and is
+part of the [Cambridge Centre for
+Proteomics](http://proteomics.bio.cam.ac.uk/). Its main activities
+centre around the sound analysis of proteomics data and integration of
+different sources of heterogeneous data. We work in close
+collaboration with biologists to tackle biologically challenging
 questions using statistics and machine learning to understand the data
 and uncover biologically relevant patterns. The development and
 publication of scientific software
@@ -28,7 +33,7 @@ reflected by our contributions to the
 programming, R, scientific software, machine learning, reproducible
 research, proteomics.
 
-# Open Science and Reproducible Research 
+# Open Science and Reproducible Research
 
 We are committed to the open, transparent and rigorous practice of
 scientific enquiry. In particular, we make every possible effort to
@@ -41,7 +46,7 @@ research (such as, but not limited to journals articles,
 presentations, and book chapters) is published under open access
 licences to allow everybody to freely read, re-use and mine it.
 
-# Good practice 
+# Good practice
 
 Software engineering and programming are an important aspect of our
 work. We hence try to adopt common good practice and coding style.
@@ -57,22 +62,13 @@ experience for everyone, and we expect cooperation from all members to
 help ensuring a safe environment for everybody. See the [Code of
 conduct](https://lgatto.github.io/cpu-coc/) page for a longer version.
 
-# Funding 
+<!-- # Funding -->
 
-Since 2010, we have benefited from the financial support from the
-**BBSRC**, the **7th Framework Programme of the European Union**
-(Contract no. 262067 [PRIME-XS](http://www.primexs.eu/)) and the
-**Wellcome Trust**.
+<!-- Since 2010, we have benefited from the financial support from the -->
+<!-- **BBSRC**, the **7th Framework Programme of the European Union** -->
+<!-- (Contract no. 262067 [PRIME-XS](http://www.primexs.eu/)) and the -->
+<!-- **Wellcome Trust**. -->
 
-# Contact 
+# Contact
 
-Dr Laurent Gatto
-
-    Computational Proteomics Unit
-    Cambridge Centre for Proteomics
-    Cambridge Systems Biology Centre
-    University of Cambridge
-    Tennis Court Road
-    Cambridge, CB2 1GA, UK
-    Phone: +44 (0) 1223 760253
-    Email: lg390 AT cam.ac.uk
+By email or on [twitter](https://twitter.com/lgatt0).

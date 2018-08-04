@@ -80,7 +80,6 @@ author:
   name             : "Laurent Gatto"
   avatar           : /images/lgatto2.jpg # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "Open science, reproducible research, data champion, computational biology, proteomics, more omics, emacs, a lot of R, quite a bit of running, and parenting. <script type='text/javascript' src='https://ko-fi.com/widgets/widget_2.js'></script><script type='text/javascript'>kofiwidget2.init('Buy Me a Coffee', '#46b798', 'I3I39BB0');kofiwidget2.draw();</script>"
-  location         : "Cambridge, UK"
   email            :
   uri              :
   bitbucket        :
@@ -177,13 +176,6 @@ timezone: # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
 
 # Plugins
-gems:
-  - jekyll-paginate
-  - jekyll-sitemap
-  - jekyll-gist
-  - jekyll-feed
-  - jemoji
-  - jekyll-gist
 
 # mimic GitHub Pages with --safe
 whitelist:

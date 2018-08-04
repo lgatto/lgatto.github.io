@@ -7,15 +7,15 @@ main:
   - title: "Posts"
     url: /year-archive/
   - title: "Tags"
-    url: /tags/    
+    url: /tags/
   # - title: "Sample Collections"
   #   url: /collection-archive/
   # - title: "Sitemap"
   #   url: /sitemap/
-  - title: Computational Proteomics Unit
+  - title: Lab
     url: /cpu-lab/
 
-# cpu-pages navigation sidebar    
+# cpu-pages navigation sidebar
 cpu:
   - title: The lab
     url: /cpu-lab/
@@ -23,6 +23,3 @@ cpu:
     url: /cpu-who/
   - title: Code of conduct
     url: /cpu-coc/
-  - title: Publications
-    url: /cpu-pubs/
-
