@@ -318,7 +318,7 @@ href="http://mcponline.org/content/early/2014/05/28/mcp.M114.040923.abstract">Pu
 
 Gatto L, <i>et al.</i> *A foundation for reliable spatial proteomics
 data analysis*, Mol Cell Proteomics. 2014 Aug;13(8):1937-52. (<a
-href="http://www.mcponline.org./content/early/2014/05/20/mcp.M113.036350.abstract">Publisher</a>,
+href="http://www.mcponline.org/content/13/8/1937.long">Publisher</a>,
 <a href="http://www.ncbi.nlm.nih.gov/pubmed/24846987">PubMed</a>, <a
 href="http://www.bioconductor.org/packages/devel/bioc/html/pRoloc.html">software</a>,
 <a
