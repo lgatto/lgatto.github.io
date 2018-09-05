@@ -11,6 +11,62 @@ header:
 
 {% include toc %}
 
+## Short bio
+
+Since September 2018, I am a Professor of Bioinformatics at the
+[UCLouvain](https://uclouvain.be/en/index.html), in Belgium. I am
+located in the [de Duve Institute](http://www.deduveinstitute.be/), on
+the medical campus in Brussels, where I run a research group in
+bioinformatics and computational biology and teach at the faculty of
+pharmacy and biomedical sciences (FASB).
+
+I am an avid open research advocate and make every possible effort to
+make my research reproducible and openly available. I am a [Software
+Sustainability Institute
+fellow](https://www.software.ac.uk/fellowship-programme), a
+[Data](http://www.datacarpentry.org/) and [Software
+Carpentry](https://software-carpentry.org/team/) instructor, and an
+affiliated [member](http://bioconductor.org/about/core-team/) of the
+[Bioconductor](http://bioconductor.org) project.
+
+I am also involved in the [Bullied Into Bad
+Science](http://bulliedintobadscience.org/) campaign, an initiative by
+and for early career researchers who aim for a fairer, more open and
+ethical research and publication environment. In 2017-2018, I was also
+part of the eLife [Early-career advisory
+group](https://elifesciences.org/about/people/early-career) and, since
+2017, am a [#ASAPbio](http://asapbio.org/) ambassador.
+
+
+Before that, I was a Senior Research Associate in the Department of
+Biochemistry at the University of Cambridge. It's at the [Cambridge
+Centre for Proteomics](http://proteomics.bio.cam.ac.uk/) and the
+Computational Proteomics Unit (my former research group in Cambridge)
+that I started working on various aspects of quantitative and spatial
+proteomics, developing new methods and implementing computational
+tools with a strong emphasis on rigorous and reproducible data
+analysis. I am also a visiting scientist in the
+[PRIDE](http://www.ebi.ac.uk/pride/) team at the [European
+Bioinformatics Institute](http://www.ebi.ac.uk/pride/), and the
+[Cambridge Computational Biology
+Institute](http://www.ccbi.cam.ac.uk).
+
+And even before that, during my MSc and [PhD
+work](http://difusion.ulb.ac.be/vufind/Record/ULB-DIPOT:oai:dipot.ulb.ac.be:2013/210855/Holdings),
+I studied micro-evolutionary genetic patterns of the Broom leaf beetle
+[*Gonioctena*](http://www.biol.uni.wroc.pl/cassidae/European%20Chrysomelidae/gonioctena%20variabilis.htm)
+[*variabilis*](http://davesgarden.com/guides/bf/go/6185/) in Southern
+Europe ([Gatto el al.,
+2008](http://onlinelibrary.wiley.com/doi/10.1111/j.1095-8312.2008.00972.x/abstract)),
+the application of short interspersed mobile elements (SINEs) to study
+the evolution of cetaceans, and the applicability of the General Time
+Reversible nucleotide substitution model in the light of differential
+lineage sorting ([Gatto el al.,
+2006](http://www.ncbi.nlm.nih.gov/pubmed/19455208)). I also spend 3
+years in industry working on genomic and transcriptomics data, in
+particular the microarray quality control ([Shi et al.,
+2010](http://www.ncbi.nlm.nih.gov/pubmed/20676074)).
+
 
 ## Research
 
@@ -95,63 +151,6 @@ bootcamps. All my teaching material is available in the
 repository.
 
 Please do get in touch if you are interested in running workshops.
-
-
-## Short bio
-
-Since 2018, I am a Professor of Bioinformatics at the
-[UCLouvain](https://uclouvain.be/en/index.html), in Belgium. I am
-located in the [de Duve Institute](http://www.deduveinstitute.be/), on
-the medical campus in Brussels, where I run a research group in
-bioinformatics and computational biology and teach at the faculty of
-pharmacy and biomedical sciences (FASB).
-
-I am an avid open research advocate and make every possible effort to
-make my research reproducible and openly available. I am a [Software
-Sustainability Institute
-fellow](https://www.software.ac.uk/fellowship-programme), a
-[Data](http://www.datacarpentry.org/) and [Software
-Carpentry](https://software-carpentry.org/team/) instructor, and an
-affiliated [member](http://bioconductor.org/about/core-team/) of the
-[Bioconductor](http://bioconductor.org) project.
-
-I am also involved in the [Bullied Into Bad
-Science](http://bulliedintobadscience.org/) campaign, an initiative by
-and for early career researchers who aim for a fairer, more open and
-ethical research and publication environment. In 2017-2018, I was also
-part of the eLife [Early-career advisory
-group](https://elifesciences.org/about/people/early-career) and, since
-2017, am a [#ASAPbio](http://asapbio.org/) ambassador.
-
-
-Before that, I was a Senior Research Associate in the Department of
-Biochemistry at the University of Cambridge. It's at the [Cambridge
-Centre for Proteomics](http://proteomics.bio.cam.ac.uk/) and the
-Computational Proteomics Unit (my former research group in Cambridge)
-that I started working on various aspects of quantitative and spatial
-proteomics, developing new methods and implementing computational
-tools with a strong emphasis on rigorous and reproducible data
-analysis. I am also a visiting scientist in the
-[PRIDE](http://www.ebi.ac.uk/pride/) team at the [European
-Bioinformatics Institute](http://www.ebi.ac.uk/pride/), and the
-[Cambridge Computational Biology
-Institute](http://www.ccbi.cam.ac.uk).
-
-And even before that, during my MSc and [PhD
-work](http://theses.ulb.ac.be/ETD-db/collection/available/ULBetd-07112006-210348/),
-I studied micro-evolutionary genetic patterns of the Broom leaf beetle
-[*Gonioctena*](http://www.biol.uni.wroc.pl/cassidae/European%20Chrysomelidae/gonioctena%20variabilis.htm)
-[*variabilis*](http://davesgarden.com/guides/bf/go/6185/) in Southern
-Europe ([Gatto el al.,
-2008](http://onlinelibrary.wiley.com/doi/10.1111/j.1095-8312.2008.00972.x/abstract)),
-the application of short interspersed mobile elements (SINEs) to study
-the evolution of cetaceans, and the applicability of the General Time
-Reversible nucleotide substitution model in the light of differential
-lineage sorting ([Gatto el al.,
-2006](http://www.ncbi.nlm.nih.gov/pubmed/19455208)). I also spend 3
-years in industry working on genomic and transcriptomics data, in
-particular the microarray quality control ([Shi et al.,
-2010](http://www.ncbi.nlm.nih.gov/pubmed/20676074)).
 
 ## Publications
 
