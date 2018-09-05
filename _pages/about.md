@@ -507,9 +507,9 @@ versions).
 
 *News in Proteomics Research* blog posts about [R for
 proteomics](https://proteomicsnews.blogspot.co.uk/2013/07/r-for-proteomics.html),
-[R and Bioconductor]
-https://proteomicsnews.blogspot.co.uk/2015/02/bioconductor-for-proteomics.html,
-[Spatial
+[R and
+Bioconductor](https://proteomicsnews.blogspot.co.uk/2015/02/bioconductor-for-proteomics.html),
+[spatial
 proteomics](https://proteomicsnews.blogspot.co.uk/2016/12/bioconductor-workflow-for-spatial.html
 and
 https://proteomicsnews.blogspot.co.uk/2017/05/hyperlopit-high-resolution-spatial.html)
