@@ -503,6 +503,31 @@ and slighly
 versions).
 
 
+## Web/press coverage
+
+*News in Proteomics Research* blog posts about [R for
+proteomics](https://proteomicsnews.blogspot.co.uk/2013/07/r-for-proteomics.html),
+[R and Bioconductor]
+https://proteomicsnews.blogspot.co.uk/2015/02/bioconductor-for-proteomics.html,
+[Spatial
+proteomics](https://proteomicsnews.blogspot.co.uk/2016/12/bioconductor-workflow-for-spatial.html
+and
+https://proteomicsnews.blogspot.co.uk/2017/05/hyperlopit-high-resolution-spatial.html)
+and [handling of missing
+values](https://proteomicsnews.blogspot.co.uk/2016/02/imputation-strategies-in-label-free.html).
+
+*Genome web* [Statistical Design Remains Sticking Point for Proteomics
+Experiments](https://www.genomeweb.com/proteomics-protein-research/statistical-design-remains-sticking-point-proteomics-experiments)
+Jul 27, 2017.
+
+[Publishers put the squeeze on
+ResearchGate](http://www.researchresearch.com/news/article/?articleId=1370722),
+11 Oct 2017.
+
+*Nature News & Comment* Correspondance [Preprints help journalism, not
+hinder it](https://www.nature.com/articles/d41586-018-06055-3), , 29
+Aug 2018.
+
 ## Software
 
 I have developed and have contributed to many open source
