@@ -1,11 +1,11 @@
 ---
-permalink: /cpu-lab/
+permalink: /cbio-lab/
 title: "The lab"
-excerpt: "General information about the Computational Proteomics Unit"
+excerpt: "General information about the CBIO group"
 modified: 2017-01-04
 author_profile: false
 sidebar:
-  nav: "cpu"
+  nav: "cbio"
 ---
 
 {% include toc %}
@@ -60,7 +60,7 @@ for some useful links.
 The lab is dedicated to providing a welcoming and harassment-free
 experience for everyone, and we expect cooperation from all members to
 help ensuring a safe environment for everybody. See the [Code of
-conduct](https://lgatto.github.io/cpu-coc/) page for a longer version.
+conduct](https://lgatto.github.io/cbio-coc/) page for a longer version.
 
 <!-- # Funding -->
 

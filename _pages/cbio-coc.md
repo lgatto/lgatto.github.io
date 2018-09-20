@@ -1,11 +1,11 @@
 ---
-permalink: /cpu-coc/
+permalink: /cbio-coc/
 title: "Code of conduct"
-excerpt: "Computational Proteomics Unit code of conduct"
+excerpt: "CBIO code of conduct"
 modified: 2017-01-04
 author_profile: false
 sidebar:
-  nav: "cpu"
+  nav: "cbio"
 ---
 
 All members of the lab, along with visitors, are expected to agree

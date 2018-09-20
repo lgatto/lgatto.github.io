@@ -13,13 +13,13 @@ main:
   # - title: "Sitemap"
   #   url: /sitemap/
   - title: Lab
-    url: /cpu-lab/
+    url: /cbio-lab/
 
-# cpu-pages navigation sidebar
-cpu:
+# cbio-pages navigation sidebar
+cbio:
   - title: The lab
-    url: /cpu-lab/
+    url: /cbio-lab/
   - title: Who
-    url: /cpu-who/
+    url: /cbio-who/
   - title: Code of conduct
-    url: /cpu-coc/
+    url: /cbio-coc/

@@ -1,11 +1,11 @@
 ---
-permalink: /cpu-who/
+permalink: /cbio-who/
 title: "Lab members"
-excerpt: "Computational Proteomics Unit's team"
+excerpt: "The team"
 modified: 2017-01-04
 author_profile: false
 sidebar:
-  nav: "cpu"
+  nav: "cbio"
 ---
 
 {% include toc %}
