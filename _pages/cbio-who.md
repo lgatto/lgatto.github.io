@@ -10,6 +10,11 @@ sidebar:
 
 {% include toc %}
 
+**Note** This page needs an update. I am now a professor of
+Bioinformatics at the UCLouvain, where I run a research group in
+bioinformatics and computational biology and teach at the faculty of
+pharmacy and biomedical sciences (FASB).
+
 ## CPU core
 
 - [**Laurent Gatto**](http://lgatto.github.io/about/), head of the
@@ -27,7 +32,7 @@ sidebar:
 
 - [**Lisa Breckels**](https://lmsimp.github.io/), Post-Doctoral
   Research Associate. Lisa joined the Cambridge Centre for Proteomics
-  in November 2010 and CPU in August 2013. Her work focuses on the application 
+  in November 2010 and CPU in August 2013. Her work focuses on the application
   and development of machine learning and pattern recognition methods
   to enable robust analysis of high-throughput quantitative proteomics data.
   All her methods and algorithms form part of the
@@ -51,7 +56,7 @@ sidebar:
   master's internship. He is developing a new infrastructure to
   facilitate the dissemination of spatial proteomics data.
 
-## Remote members 
+## Remote members
 
 - [**Sebastian Gibb**](http://sebastiangibb.de/), Department of
   Anesthesiology and Intensive Care, University Medicine Greifswald,
@@ -67,7 +72,7 @@ sidebar:
   the [`MSnbase`](http://lgatto.github.io/MSnbase) and
   [`Pbase`](http://bioconductor.org/packages/Pbase) packages.
 
-## Key collaborators 
+## Key collaborators
 
 - [**Kathyn S. Lilley**](http://www.bioc.cam.ac.uk/people/uto/lilley),
   Cambridge Centre for Proteomics, Department of Biochemistry,
@@ -75,7 +80,7 @@ sidebar:
   state-of-the art LOPIT
   ([Dunkley *et al.* 2006](https://www.ncbi.nlm.nih.gov/pubmed/16618929))
   and hyperLOPIT
-  ([Christoforou *et al.* 2016](https://www.ncbi.nlm.nih.gov/pubmed/26754106)) 
+  ([Christoforou *et al.* 2016](https://www.ncbi.nlm.nih.gov/pubmed/26754106))
   technologies. Her lab is at the origin of some of the very best spatial proteomics
   datasets in the world, which we help to analyse and interpret by applying our
   dedicated software (see for example
@@ -97,7 +102,7 @@ sidebar:
   contributed the *perTurbo* algorithms to
   [*pRoloc*](https://bioconductor.org/packages/pRoloc).
 
-## Alumni 
+## Alumni
 
 - **Thomas Naake**, visited the group in Spring 2014 as an ERASMUS
   student affiliated to the University of Freiburg. He developed the
