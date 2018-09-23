@@ -13,8 +13,8 @@ header:
 
 ## Short bio
 
-Since September 2018, I am a Professor of Bioinformatics at the
-[UCLouvain](https://uclouvain.be/en/index.html), in Belgium. I am
+Since September 2018, I am an Associate Professor of Bioinformatics at
+the [UCLouvain](https://uclouvain.be/en/index.html), in Belgium. I am
 located in the [de Duve Institute](http://www.deduveinstitute.be/), on
 the medical campus in Brussels, where I run a research group in
 bioinformatics and computational biology and teach at the faculty of
