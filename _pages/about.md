@@ -14,10 +14,11 @@ header:
 ## Short bio
 
 Since September 2018, I am an Associate Professor of Bioinformatics at
-the [UCLouvain](https://uclouvain.be/en/index.html), in Belgium. I am
-located in the [de Duve Institute](http://www.deduveinstitute.be/), on
-the medical campus in Brussels, where I run a research group in
-bioinformatics and computational biology and teach at the faculty of
+the [UCLouvain](https://uclouvain.be/en/index.html), in Belgium, and
+director of the Computational Biology and Bioinformatics (CBIO)
+group. I am located in the [de Duve
+Institute](http://www.deduveinstitute.be/), on the medical campus in
+Brussels, where I run a research group and teach at the faculty of
 pharmacy and biomedical sciences (FASB).
 
 I am an avid open research advocate and make every possible effort to
