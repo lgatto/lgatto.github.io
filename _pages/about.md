@@ -157,7 +157,12 @@ Please do get in touch if you are interested in running workshops.
 
 See also my [Google scholar profile](https://scholar.google.co.uk/citations?user=k5DrB74AAAAJ&hl=en).
 
-### Journal articles
+### Research articles
+
+Oliver M. Crook, Laurent Gatto, Paul D. W. Kirk *Fast approximate
+inference for variable selection in Dirichlet process mixtures, with
+an application to pan-cancer proteomics*
+[arXiv:1810.05450](https://arxiv.org/abs/1810.05450) 2018.
 
 Aikaterini Geladaki, Nina Kocevar Britovsek, Lisa M. Breckels, Tom
 S. Smith, Claire M. Mulvey, Oliver M. Crook, Laurent Gatto, Kathryn
