@@ -159,6 +159,11 @@ See also my [Google scholar profile](https://scholar.google.co.uk/citations?user
 
 ### Research articles
 
+Eglen, S., Mounce, R., Gatto, L., Currie, A., & Nobis, Y. (2018,
+November 1). Recent developments in scholarly publishing: a view from
+the life sciences. OSF Preprints
+[doi:10.31219/osf.io/57hcs](https://doi.org/10.31219/osf.io/57hcs).
+
 Oliver M. Crook, Laurent Gatto, Paul D. W. Kirk *Fast approximate
 inference for variable selection in Dirichlet process mixtures, with
 an application to pan-cancer proteomics*
