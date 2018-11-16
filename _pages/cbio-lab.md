@@ -10,7 +10,7 @@ sidebar:
 
 {% include toc %}
 
-**Note** This page needs an update. I am now a professor of
+**Note** This page needs an update. I am now an associate professor of
 Bioinformatics at the UCLouvain, where I run a research group in
 bioinformatics and computational biology and teach at the faculty of
 pharmacy and biomedical sciences (FASB).
