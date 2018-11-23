@@ -155,7 +155,10 @@ Please do get in touch if you are interested in running workshops.
 
 ## Publications
 
-See also my [Google scholar profile](https://scholar.google.co.uk/citations?user=k5DrB74AAAAJ&hl=en).
+> See also my [Google scholar
+> profile](https://scholar.google.co.uk/citations?user=k5DrB74AAAAJ&hl=en)
+> and publications in
+> [PubMed](https://www.ncbi.nlm.nih.gov/pubmed/?term=gatto+laurent).
 
 ### Research articles
 
