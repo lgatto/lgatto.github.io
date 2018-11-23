@@ -170,7 +170,8 @@ the life sciences. OSF Preprints
 Oliver M. Crook, Laurent Gatto, Paul D. W. Kirk *Fast approximate
 inference for variable selection in Dirichlet process mixtures, with
 an application to pan-cancer proteomics*
-[arXiv:1810.05450](https://arxiv.org/abs/1810.05450) 2018.
+[arXiv:1810.05450](https://arxiv.org/abs/1810.05450) 2018. To be
+published in PLoS Computational Biology.
 
 Aikaterini Geladaki, Nina Kocevar Britovsek, Lisa M. Breckels, Tom
 S. Smith, Claire M. Mulvey, Oliver M. Crook, Laurent Gatto, Kathryn
@@ -180,8 +181,8 @@ proteomics* bioRxiv 378364; doi:
 
 Laurent Gatto, Lisa M Breckels, Kathryn S Lilley *Assessing
 sub-cellular resolution in spatial proteomics experiments* bioRxiv
-377630; doi:
-[10.1101/377630](https://doi.org/10.1101/377630).
+377630; doi: [10.1101/377630](https://doi.org/10.1101/377630). To be
+published in Current Opinion in Chemical Biology.
 
 Segeritz CP, Rashid ST, Cardoso de Brito M, Paola MS, Ordonez A,
 Morell CM, Kaserman JE, Madrigal P, Hannan N, Gatto L, Tan L, Wilson
