@@ -1,5 +1,5 @@
 ---
-title: Using Lego as a metaphor to explain what I do.
+title: Using Lego as a metaphor to explain what I do
 tags: ["science", "UCLouvain", "teaching"]
 comments: true
 ---
