@@ -6,14 +6,14 @@ comments: true
 
 Below is a description of my research (and computational
 biology/bioinformatics in general) for non-scientists. It is a first
-attempt to the *For beginners* intro for my group page at the [dc Duve
+attempt to the *For beginners* intro for my group page at the [de Duve
 Institute](https://www.deduveinstitute.be/) website.
 
 
 For the last ten years, biology and biomedical sciences have seen an
 impressive increase in the size of the data that are collected as part
 of routine research projects. The increase in amount and complexity of
-such data lead to some calling it a [data
+such data lead some calling it a [data
 deluge](https://www.nature.com/articles/ncb2558). Indeed, we have
 reached a situation where the sheer volume of data that is produced is
 overwhelming the capacity of individual researcher and research groups
@@ -27,16 +27,16 @@ post-translational modifications, interactions and localisation. But
 the question remains: what to do with all that data?
 
 To illustrate how large amounts of data can be difficult to deal with,
-let's use the Lego bricks as analogy. In a classic biological
+let's use the Lego bricks as an analogy. In a classic biological
 experimental setup, a researcher would focus on a particular gene or
 small set of genes of interest. They would design an experimental
-setup to address their specific question, run the experiment and,
+setup to address their specific question, run the experiments and,
 after collecting the data, (mostly) manually analyse them. They would
 draw conclusions that would either support or deny their working model
 and follow-up by designing the next set of experiments
 accordingly. From a Lego point of view, this would correspond to
-acquiring a Lego box as we know it, i.e. containing a all the blocks
-needed to build the toy (and only those blocks) and a precise and
+acquiring a Lego box as we know it, i.e. containing all the blocks
+needed to build the model (and only those blocks) and a precise and
 accurate building plan. There is no need for any special tool to find
 the blocks and figure out how to assemble them; even for relatively
 large sets, given enough time, it's easy enough to follow the
@@ -45,31 +45,32 @@ instructions and produce the final product.
 Now imagine that either the blocks, of the building map are messed up.
 
 Imagine that your box contains many more blocks than you actually
-need, that some of the blocks needed for your final production are
-missing, (and that you don't know if they are, or which ones are
+need, that some of the blocks needed for your final product are
+missing (and that you don't know if they are, or which ones are
 missing), and that the blocks aren't sorted in little sachets, but
-provided in a huge bag, with potentially several orders of magnitude
-more blocks. Now imagine that the instructions are missing steps or
-pages at random, or that the instructions are missing completely, but
-that you have some idea of what needs to be build. In such situations,
-you'll need algorithms and tools that will automatically sort the
-blocks, and arrange them by size, colour, shape, ... and algorithms
-that will inform you what pieces are most likely relevant for the toy
-you want to build, but are missing the map for.
+provided in a single huge bag, with potentially several orders of
+magnitude more blocks. Now imagine that the instructions are missing
+steps or pages at random, or that the instructions are missing
+completely, but that you have some idea of what needs to be build. In
+such situations, you'll need algorithms and tools that will
+automatically sort the blocks, and arrange them by size, colour,
+shape, ... and algorithms that will inform you what pieces are most
+likely relevant for the model you want to build.
+
 
 This sounds like a hopeless situation, but it's not. There are
 countless opportunities in acquiring a lot of data, even when the
 actual building instructions are missing. Indeed, the extra blocks
 aren't random, they are part of of something bigger. Imagine you
-originally wanted to build the millennium falcon from the the star wars
-movies, and that the reason you want to build that ship is that you
-are interested in the technology of the rebel alliance, or even in the
-whole star wars universe. Even if the extra blocks aren't directly
-relevant to build the millenniums falcon, they might provide precious
-information about the technology that was available when the ship was
-designed and built. With the right algorithms, you might be able to
-build your ship, and collect additional information about the star
-wars universe. Or, even you don't manage to build the whole ship, and
+originally wanted to build the millennium falcon from the the star
+wars movies, and that the reason you want to build that ship is that
+you are interested in the technology of the rebel alliance, or even in
+the whole star wars universe. Even if the extra blocks aren't directly
+relevant to building the millenniums falcon, they might provide
+precious information about the technology that was available when the
+ship was built. With the right algorithms, you might be able to build
+your ship, and collect additional information about the star wars
+universe. Or, even you don't manage to build the whole ship, and
 achieve only a partial, incomplete product, the additional information
 might actually reveal much more about the Lego star wars universe than
 solely focusing on the one ship.
@@ -88,12 +89,11 @@ type we have, and visually represent this diversity.
 
 In bioinformatics, the blocks would typically be replaced by
 quantitative measurements of the abundance of biological entity, such
-as the amount of transcripts or proteins have been assayed in
-different biological samples. The annotation for the supervised
-analysis would describe whether these samples are wild-type cells
-lines, or healthy donors or, on the contrary, cells submitted to a
-particular drug of interest or with a missing gene, or patients
-suffering of a specific disease.
+as transcripts or proteins. The annotation for the supervised analysis
+would describe whether these samples are wild-type cells lines, or
+healthy donors or, on the contrary, cells submitted to a particular
+drug of interest or with a missing gene, or patients suffering of a
+specific disease.
 
 Another important feature of the data and the nature of modern, high
 throughput biology, is that the questions that are now asked have
@@ -111,4 +111,4 @@ body, but at the cost of a complexity in what we measure, and the need
 to bespoken methods to sort and manage the data we acquire and to
 analyse and understand it. That is the role of bioinformatics and
 computational biology, i.e. to devise ways to understand complex
-biological data to understand complex biological processes.
+biological data to comprehend complex biological processes.
