@@ -127,6 +127,6 @@ Bioinformatics*](http://www.asmscience.org/content/journal/jmbe/10.1128/jmbe.v18
 I was reminded also that [Jenny Bryan](https://jennybryan.org/about/)
 [used Legos to
 illustrate](https://speakerdeck.com/jennybc/data-rectangling) some R
-data types and the `purrr::map` function.
+data types and the [`purrr::map`](https://purrr.tidyverse.org/reference/map.html) function.
 
 ![dataframe with lego](https://raw.githubusercontent.com/jennybc/lego-rstats/master/lego-rstats_013-smaller.jpg)
