@@ -112,3 +112,21 @@ to bespoken methods to sort and manage the data we acquire and to
 analyse and understand it. That is the role of bioinformatics and
 computational biology, i.e. to devise ways to understand complex
 biological data to comprehend complex biological processes.
+
+**Update** (30 Nov 2018) Since publishing this post, I (re-)discovered
+some applications of Lego in teaching:
+
+[Guerrino Macori](https://twitter.com/guerrinomacori)
+[tweeted](https://twitter.com/guerrinomacori/status/1068433465035685888)
+about [*Build the Read: A Hands-On Activity for Introducing
+Microbiology Students to Next-Generation DNA Sequencing and
+Bioinformatics*](http://www.asmscience.org/content/journal/jmbe/10.1128/jmbe.v18i3.1363)
+
+![sequencing with Lego](https://pbs.twimg.com/media/DtPWkJSWkAAweb2.jpg)
+
+I was reminded also that [Jenny Bryan](https://jennybryan.org/about/)
+[used Legos to
+illustrate](https://speakerdeck.com/jennybc/data-rectangling) some R
+data types and the `purrr::map` function.
+
+![dataframe with lego](https://raw.githubusercontent.com/jennybc/lego-rstats/master/lego-rstats_013.jpg)
