@@ -129,4 +129,4 @@ I was reminded also that [Jenny Bryan](https://jennybryan.org/about/)
 illustrate](https://speakerdeck.com/jennybc/data-rectangling) some R
 data types and the `purrr::map` function.
 
-![dataframe with lego](https://raw.githubusercontent.com/jennybc/lego-rstats/master/lego-rstats_013.jpg)
+![dataframe with lego](https://raw.githubusercontent.com/jennybc/lego-rstats/master/lego-rstats_013-smaller.jpg)
