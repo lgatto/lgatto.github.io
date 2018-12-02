@@ -162,16 +162,21 @@ Please do get in touch if you are interested in running workshops.
 
 ### Research articles
 
+Crook OM, Mulvey CM, Kirk PDW, Lilley KS, Gatto L (2018) A Bayesian
+mixture modelling approach for spatial proteomics. PLoS Comput Biol
+14(11):
+e1006516. [https://doi.org/10.1371/journal.pcbi.1006516](https://doi.org/10.1371/journal.pcbi.1006516).
+
 Eglen, S., Mounce, R., Gatto, L., Currie, A., & Nobis, Y. (2018,
 November 1). Recent developments in scholarly publishing: a view from
 the life sciences. OSF Preprints
-[doi:10.31219/osf.io/57hcs](https://doi.org/10.31219/osf.io/57hcs).
+[doi:10.31219/osf.io/57hcs](https://doi.org/10.31219/osf.io/57hcs). To
+be published in Emerging Topics in Life Sciences.
 
 Oliver M. Crook, Laurent Gatto, Paul D. W. Kirk *Fast approximate
 inference for variable selection in Dirichlet process mixtures, with
 an application to pan-cancer proteomics*
-[arXiv:1810.05450](https://arxiv.org/abs/1810.05450) 2018. To be
-published in PLoS Computational Biology.
+[arXiv:1810.05450](https://arxiv.org/abs/1810.05450) 2018.
 
 Aikaterini Geladaki, Nina Kocevar Britovsek, Lisa M. Breckels, Tom
 S. Smith, Claire M. Mulvey, Oliver M. Crook, Laurent Gatto, Kathryn
@@ -196,10 +201,6 @@ Nett I, Mulas C, Gatto L, Lilley KS, Smith A. *Negative feedback via
 RSK modulates Erk‐dependent progression from naïve pluripotency* EMBO
 reports (2018) e45642
 doi:[10.15252/embr.201745642](http://dx.doi.org/10.15252/embr.201745642).
-
-Crook OM, Mulvey CM, Kirk PDW, Lilley KS, Gatto L. *A Bayesian Mixture
-Modelling Approach For Spatial Proteomics* bioRxiv; doi:
-[https://doi.org/10.1101/282269](https://doi.org/10.1101/282269).
 
 Thul PJ, *et al.* *A subcellular map of the human
 proteome*. Science. 2017 May 11. pii:
