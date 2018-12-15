@@ -165,7 +165,7 @@ Please do get in touch if you are interested in running workshops.
 Laurent Gatto, Lisa M Breckels, Kathryn S Lilley *Assessing
 sub-cellular resolution in spatial proteomics experiments* Current
 Opinion in Chemical Biology, 48 123-149
-(2019). DOI:[10.1016/j.cbpa.2018.11.015](https://doi.org/10.1016/j.cbpa.2018.11.015).
+(2019) DOI:[10.1016/j.cbpa.2018.11.015](https://doi.org/10.1016/j.cbpa.2018.11.015).
 
 Crook OM, Mulvey CM, Kirk PDW, Lilley KS, Gatto L (2018) A Bayesian
 mixture modelling approach for spatial proteomics. PLoS Comput Biol
