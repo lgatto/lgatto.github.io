@@ -162,6 +162,11 @@ Please do get in touch if you are interested in running workshops.
 
 ### Research articles
 
+Johannes Rainer, Laurent Gatto, Christian X. Weichenberger;
+*`ensembldb`: an R package to create and use Ensembl-based annotation
+resources*, Bioinformatics, btz031,
+[https://doi.org/10.1093/bioinformatics/btz031](https://doi.org/10.1093/bioinformatics/btz031).
+
 Laurent Gatto, Lisa M Breckels, Kathryn S Lilley *Assessing
 sub-cellular resolution in spatial proteomics experiments* Current
 Opinion in Chemical Biology, 48 123-149
