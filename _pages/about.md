@@ -172,16 +172,18 @@ sub-cellular resolution in spatial proteomics experiments* Current
 Opinion in Chemical Biology, 48 123-149
 (2019) DOI:[10.1016/j.cbpa.2018.11.015](https://doi.org/10.1016/j.cbpa.2018.11.015).
 
-Crook OM, Mulvey CM, Kirk PDW, Lilley KS, Gatto L (2018) A Bayesian
-mixture modelling approach for spatial proteomics. PLoS Comput Biol
+Crook OM, Mulvey CM, Kirk PDW, Lilley KS, Gatto L (2018) *A Bayesian
+mixture modelling approach for spatial proteomics*. PLoS Comput Biol
 14(11):
 e1006516. [https://doi.org/10.1371/journal.pcbi.1006516](https://doi.org/10.1371/journal.pcbi.1006516).
 
-Eglen, S., Mounce, R., Gatto, L., Currie, A., & Nobis, Y. (2018,
-November 1). Recent developments in scholarly publishing: a view from
-the life sciences. OSF Preprints
-[doi:10.31219/osf.io/57hcs](https://doi.org/10.31219/osf.io/57hcs). To
-be published in Emerging Topics in Life Sciences.
+Eglen, S., Mounce, R., Gatto, L., Currie, A., & Nobis, Y. *Recent
+developments in scholarly publishing: a view from the life
+sciences*. Emerging Topics in Life Sciences, Dec 21, 2018, 2 (6)
+775-778; doi:
+[10.1042/ETLS20180172](http://www.emergtoplifesci.org/content/2/6/775)
+(pre-print
+[doi:10.31219/osf.io/57hcs](https://doi.org/10.31219/osf.io/57hcs)).
 
 Oliver M. Crook, Laurent Gatto, Paul D. W. Kirk *Fast approximate
 inference for variable selection in Dirichlet process mixtures, with
@@ -190,9 +192,12 @@ an application to pan-cancer proteomics*
 
 Aikaterini Geladaki, Nina Kocevar Britovsek, Lisa M. Breckels, Tom
 S. Smith, Claire M. Mulvey, Oliver M. Crook, Laurent Gatto, Kathryn
-S. Lilley *LOPIT-DC: A simpler approach to high-resolution spatial
-proteomics* bioRxiv 378364; doi:
-[10.1101/378364](https://doi.org/10.1101/378364).
+S. Lilley [*Combining LOPIT with differential ultracentrifugation for
+high-resolution spatial
+proteomics*](https://www.nature.com/articles/s41467-018-08191-w)
+Nature Communicationsvolume 10, Article number:331 (2019).
+
+(pre-print [10.1101/378364](https://doi.org/10.1101/378364)).
 
 Segeritz CP, Rashid ST, Cardoso de Brito M, Paola MS, Ordonez A,
 Morell CM, Kaserman JE, Madrigal P, Hannan N, Gatto L, Tan L, Wilson
