@@ -195,9 +195,8 @@ S. Smith, Claire M. Mulvey, Oliver M. Crook, Laurent Gatto, Kathryn
 S. Lilley [*Combining LOPIT with differential ultracentrifugation for
 high-resolution spatial
 proteomics*](https://www.nature.com/articles/s41467-018-08191-w)
-Nature Communicationsvolume 10, Article number:331 (2019).
-
-(pre-print [10.1101/378364](https://doi.org/10.1101/378364)).
+Nature Communicationsvolume 10, Article number:331 (2019) (pre-print
+[10.1101/378364](https://doi.org/10.1101/378364)).
 
 Segeritz CP, Rashid ST, Cardoso de Brito M, Paola MS, Ordonez A,
 Morell CM, Kaserman JE, Madrigal P, Hannan N, Gatto L, Tan L, Wilson
