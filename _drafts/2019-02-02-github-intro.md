@@ -46,21 +46,53 @@ will be using two accounts here, namely my main account
 [lgatto](https://github.com/lgatto/), and
 [LaurentGatto](https://github.com/LaurentGatto).
 
-### Creating a new repository
+### A new repository
 
+![GitHub help](/images/01-github-intro-new-repo.png)
+![GitHub help](/images/02-github-intro-create-repo.png)
+![GitHub help](/images/03-github-intro-repo-state-1.png)
 
 ### Adding a file
 
+![GitHub help](/images/04-github-intro-pancakes-src.png)
+![GitHub help](/images/05-github-intro-pancakes-commit.png)
+![GitHub help](/images/06-github-intro-repo-state-2.png)
+![GitHub help](/images/07-github-intro-commits.png)
+
 ### Using issues
+
+![GitHub help](/images/08-github-intro-issue-tab.png)
+![GitHub help](/images/09-github-intro-new-issue.png)
+![GitHub help](/images/10-github-intro-write-issue.png)
+![GitHub help](/images/11-github-intro-comment-on-issue.png)
+![GitHub help](/images/12-github-intro-view-issue.png)
+![GitHub help](/images/13-github-intro-view-comment.png)
 
 ### External contributions
 
-
+![GitHub help](/images/14-github-intro-fork.png)
+![GitHub help](/images/15-github-intro-forking.png)
+![GitHub help](/images/16-github-intro-forked.png)
+![GitHub help](/images/17-github-intro-edit-file.png)
+![GitHub help](/images/18-github-intro-commit-edit.png)
+![GitHub help](/images/19-github-intro-view-edit.png)
+![GitHub help](/images/20-github-intro-commits-2.png)
+![GitHub help](/images/21-github-intro-pr-tab.png)
+![GitHub help](/images/22-github-intro-new-pr.png)
+![GitHub help](/images/23-github-intro-create-pr-1.png)
+![GitHub help](/images/24-github-intro-create-pr-2.png)
+![GitHub help](/images/25-github-intro-pr-received.png)
+![GitHub help](/images/26-github-intro-merge-pr.png)
+![GitHub help](/images/27-github-intro-confirm-pr.png)
+![GitHub help](/images/28-github-intro-merged-pr.png)
+![GitHub help](/images/29-github-intro-commits-3.png)
 
 
 ### Cloning locally
-
-
+![GitHub help](/images/30-github-intro-clone-url.png)
+![GitHub help](/images/31-github-intro-clone.png)
+![GitHub help](/images/32-github-intro-commits-4.png)
+![GitHub help](/images/33-github-intro-log.png)
 
 ## Conclusions
 
