@@ -287,7 +287,18 @@ Closed issues aren't deleted and still visible on the repository.
 
 ## Navigating versions
 
-TODO
+If we look back at the commit history, we see towards the unique
+commit tags and, on their right, buttons that allow to browse a past
+state of the repository. Below, the commit corresponding to the
+addition of the pancake recipe is selected (commit message
+`3898b2c2cab04761b64b78dbe3725e84b585ca2c`).
+
+![Choose a commit to browse](/images/37-github-intro-nav-commits.png)
+
+We are now in the exact state of that commit.
+
+![Previous state of the repository](/images/38-github-intro-nav-commit.png)
+
 
 ## Cloning locally
 
