@@ -4,7 +4,6 @@ tags: ["teaching", "git"]
 comments: true
 ---
 
-{% include toc %}
 
 [Git](https://git-scm.com/) is a command line-based **distributed
 version control system**. Version control system means that its goal
@@ -15,6 +14,8 @@ occurred, and to recover and return to any previous state of the
 tracked files.
 
 <!--more-->
+
+{% include toc %}
 
 Distributed means that these tracked files can be stored on many
 different computer systems, such as a local computer, remote servers,
