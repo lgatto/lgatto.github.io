@@ -148,31 +148,109 @@ emoji, and could also easily add figures and links to other issues.
 
 ![GitHub help](/images/10-github-intro-write-issue.png)
 
+Once submitted, the issue displays as formatted for anyone to see and
+comment.
+
+![GitHub help](/images/11-github-intro-view-issue.png)
 
 
-![GitHub help](/images/11-github-intro-comment-on-issue.png)
+I now swith to the `LaurentGatto` account and post a comment on this
+issue which, as a reminder, is an issue in the `pancakes` repository
+that belongs to user `lgatto`.
 
-![GitHub help](/images/12-github-intro-view-issue.png)
+![GitHub help](/images/12-github-intro-comment-on-issue.png)
+
+The comment is publicly visible and others could further comment and
+discuss.
 
 ![GitHub help](/images/13-github-intro-view-comment.png)
 
 ## External contributions
 
+The following feature is probably the one where GitHub particularly
+shines. It is an extremely powerful mechanism to collaborate and track
+external contribution to a repository.
+
+As use `LaurentGatto`, I can choose to **folk** `lgatto`'s `pancakes`
+repository (or any publicly available repository for the matter) by
+clicking on the `Fork` button in the top right corner. Forking is
+going to create an exact copy of the repo, including all the commit
+history (but not the issues) into my own account, while keeping a
+public record of where it comes from.
+
 ![GitHub help](/images/14-github-intro-fork.png)
+
+The following screenshot shows the forking transition screen.
+
 ![GitHub help](/images/15-github-intro-forking.png)
+
+Below, we see the `LaurentGatto/pancakes` repository that, just under
+the repository title/name, is clearly labelled as a fork of
+`lgatto/pancakes`. We can also see from the little icon in the *latest
+commit* icon that the last commit was by `lgatto` - the whole
+repository history is preserved.
+
 ![GitHub help](/images/16-github-intro-forked.png)
+
+User `LaurentGatto` can now clock the little pen on the right to edit
+the `pancakes.md` files.
+
 ![GitHub help](/images/17-github-intro-edit-file.png)
+
+Below, user `LaurentGatto` add a *Tips* section and a new bullet point
+suggesting to enjoy the pancakes with chocolate spread and cold
+milk. The udpate to the file needs a message before the actual commit.
+
 ![GitHub help](/images/18-github-intro-commit-edit.png)
+
+Below, we see the updated `pancakes.md` file with `LaurentGatto`'s
+tip.
+
 ![GitHub help](/images/19-github-intro-view-edit.png)
+
+Checking the commit history of the repository, we see that there's now
+a third commit *Added nutella tip*, by `LaurentGatto`, in addition to
+the previous ones by `lgatto`. Note in the title above that these
+changes have been recorded in `LaurentGatto/pancakes`, a fork of
+`lgatto/pancakes`, and do not exist in `lgatto/pancakes`.
+
 ![GitHub help](/images/20-github-intro-commits-2.png)
+
+User `LaurentGatto`, is they wish so, can now contribute their changes
+back to the original repository by sending a **Pull request** from the
+identically named tab.
+
 ![GitHub help](/images/21-github-intro-pr-tab.png)
+
+In the *Pull requests* tab, I can see that there's currently no
+existing pull request (often shorted as PR) and a new one can be
+started by clicking the green `New pull request` button.
+
+
 ![GitHub help](/images/22-github-intro-new-pr.png)
+
+`LaurentGatto` can now see the differences between the original and
+forked repositories (i.e. a single commit by user `LaurentGatto` - the
+actual difference between the file(s) could be seen scrolling down)
+and can initiate the pull request by clicking the green `New pull
+request` button.
+
+
 ![GitHub help](/images/23-github-intro-create-pr-1.png)
+
 ![GitHub help](/images/24-github-intro-create-pr-2.png)
+
 ![GitHub help](/images/25-github-intro-pr-received.png)
+
+This mechanism also allows to explicitly review pull requests and ask
+for specific or additional before merging.
+
 ![GitHub help](/images/26-github-intro-merge-pr.png)
+
 ![GitHub help](/images/27-github-intro-confirm-pr.png)
+
 ![GitHub help](/images/28-github-intro-merged-pr.png)
+
 ![GitHub help](/images/29-github-intro-commits-3.png)
 
 ## Navigating versions
@@ -211,6 +289,12 @@ discuss specific points, and very often, I ask my collaborators to
 create a Github account to join in, and ask project-related questions
 directly on Github rather than in scattered emails. This allows to
 track all discussion about a project in the same place.
+
+Finally, while it isn't a replacement for a proper backup solution
+(the size of file on GitHub is limited), it can be used as such. In
+addition, even for a single user, it allows to easily work on
+different computers while keeping track of changes, irrespective of
+where they were done.
 
 ## Further reading
 
