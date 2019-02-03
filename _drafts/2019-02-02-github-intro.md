@@ -42,7 +42,6 @@ something many more people are familiar with. We are going to use
 GitHub to manage a [pancakes
 recipe](https://www.bbc.com/food/recipes/basicpancakeswithsuga_66226).
 
-
 Note that to use GitHub, one needs to create a free account, so that
 all operations can be tracked and attributed to a person. Here, I will
 be using two accounts here, namely my main account
@@ -94,8 +93,8 @@ repository and pushed it remotely.
 
 It is simple to create or upload new files to the remote repository by
 clicking the respective grey buttons (see the grey button on the
-previous screen-shot). If we click `Create new file`, we get a
-interface where we can give the file a name (here we use
+previous screen-shot). I can click `Create new file` to open a
+interface where I can give the file a name (here we use
 `pancakes.md`, specifying the markdown file extension), and copy/paste
 and adapt the recipe from the recipe [BBC
 recipe](https://www.bbc.com/food/recipes/basicpancakeswithsuga_66226)
@@ -103,7 +102,7 @@ site.
 
 ![Adding a new file](/images/04-github-intro-pancakes-src.png)
 
-At the bottom of the page, we provide a **commit** message, which is a
+At the bottom of the page, I provide a **commit** message, which is a
 message that is recorded as part of the history of the
 repository. Using good commit messages is important as it helps
 understand the changes and the evolution of a repository without the
@@ -111,53 +110,55 @@ need to look at the actual individual changes.
 
 ![Committing our new file](/images/05-github-intro-pancakes-commit.png)
 
-After clicking `Commit new file`, we see the new state of our
+After clicking `Commit new file`, I see the new state of my
 repository, that now contains two files, namely `README.md` and
 `pancakes.md`.
 
 ![Update repository](/images/06-github-intro-repo-state-2.png)
 
-We can inspect the history of that repository by clicking on the
-**commits** link under the repository name. At this stage we have two
-commits, the initial commit that created the repository with the
-README file, and the one that added the recipe itself.
+I can inspect the history of that repository by clicking on the
+**commits** link under the repository name. At this stage I have two
+commits:
+
+1. the initial commit that created the repository with the README
+   file, and
+2. the one that added the recipe itself.
 
 ![Commits so far](/images/07-github-intro-commits.png)
 
-On the right, we can read the first couple of characters of the unique
-commit tags, that uniquely identify each commit and, as a consequence,
-each state of the repository.
+On the right, I can read the first couple of characters of the commit
+tags. It uniquely identifies each commit and, as a consequence, each
+state of the repository.
 
 ## Using issues
 
 A very attractive feature of GitHub, which is specific to the web
 interface and is missing from the git software, is the availability of
-repository-specific issues. Our current repository hasn't any (open)
+repository-specific issues. The current repository hasn't any (open)
 issue yet, as shown by the `Issues (0)` tab.
 
 ![Github issues tab](/images/08-github-intro-issue-tab.png)
 
-To open a new issue, we can select that tab and then choose the green
-`New issue` button, that open an issue edition window.
+To open a new issue, I select that tab and then press the green `New
+issue` button, that opens an issue edition window.
 
 ![Create a new issue](/images/09-github-intro-new-issue.png)
 
-We can write our new issue using the markdown format. Here, we use an
+I can now write a new issue using the markdown format. Here, I use an
 emoji, and could also easily add figures and links to other issues.
 
-![GitHub help](/images/10-github-intro-write-issue.png)
+![Write a GitHub issue](/images/10-github-intro-write-issue.png)
 
-Once submitted, the issue displays as formatted for anyone to see and
+Once submitted, the issue nicely displays for anyone to see and
 comment.
 
 ![GitHub help](/images/11-github-intro-view-issue.png)
-
 
 I now switch to the `LaurentGatto` account and post a comment on this
 issue which, as a reminder, is an issue in the `pancakes` repository
 that belongs to user `lgatto`.
 
-![GitHub help](/images/12-github-intro-comment-on-issue.png)
+![Commenting on an issue](/images/12-github-intro-comment-on-issue.png)
 
 The comment is publicly visible and others could further comment and
 discuss.
@@ -170,12 +171,12 @@ The following feature is probably the one where GitHub particularly
 shines. It is an extremely powerful mechanism to collaborate and track
 external contribution to a repository.
 
-As use `LaurentGatto`, I can choose to **folk** `lgatto`'s `pancakes`
+As user `LaurentGatto`, I can choose to **fork** `lgatto`'s `pancakes`
 repository (or any publicly available repository for the matter) by
 clicking on the `Fork` button in the top right corner. Forking is
-going to create an exact copy of the repository, including all the commit
-history (but not the issues) into my own account, while keeping a
-public record of where it comes from.
+going to create an exact copy of the repository, including all the
+commit history (but not the issues) into the new account, while
+keeping a public record of where it comes from.
 
 ![GitHub help](/images/14-github-intro-fork.png)
 
@@ -185,9 +186,9 @@ The following screen-shot shows the forking transition screen.
 
 Below, we see the `LaurentGatto/pancakes` repository that, just under
 the repository title/name, is clearly labelled as a fork of
-`lgatto/pancakes`. We can also see from the little icon in the *latest
-commit* icon that the last commit was by `lgatto` - the whole
-repository history is preserved.
+`lgatto/pancakes`. The little avatar, on the left of the *latest
+commit* line, indicates that the last commit was by `lgatto` - the
+whole repository history is preserved.
 
 ![GitHub help](/images/16-github-intro-forked.png)
 
@@ -196,10 +197,10 @@ the little pen on the right to edit the `pancakes.md` files.
 
 ![GitHub help](/images/17-github-intro-edit-file.png)
 
-Below, user `LaurentGatto` adds a *Tips* section and a new bullet
-point suggesting to enjoy the pancakes with chocolate spread and cold
-milk. The file update needs a message (and an optional extended
-description, that we leave black here) before the actual commit.
+`LaurentGatto` adds a *Tips* section and a new bullet point suggesting
+to enjoy the pancakes with chocolate spread and cold milk. The file
+update needs a message (and an optional extended description, that is
+left black here) before the actual commit.
 
 ![GitHub help](/images/18-github-intro-commit-edit.png)
 
@@ -212,54 +213,56 @@ Checking the commit history of the repository, we see that there's now
 a third commit *Added nutella tip*, by `LaurentGatto`, in addition to
 the previous ones by `lgatto`. Note in the title above that these
 changes have been recorded in `LaurentGatto/pancakes`, a fork of
-`lgatto/pancakes`, and do not exist in `lgatto/pancakes`.
+`lgatto/pancakes`, and do not exist in `lgatto/pancakes` at this time.
 
 ![GitHub help](/images/20-github-intro-commits-2.png)
 
-User `LaurentGatto`, is they wish so, can now contribute their changes
+User `LaurentGatto`, is he wishes so, can now contribute his changes
 back to the original repository by sending a **Pull request** from the
 identically named tab.
 
 ![GitHub help](/images/21-github-intro-pr-tab.png)
 
-In the *Pull requests* tab, I can see that there's currently no
-existing pull request (often shorted as PR) and a new one can be
-started by clicking the green `New pull request` button.
 
+There's currently no existing pull request (often shorted as PR) under
+the *Pull requests* tab, and a new one can be started by clicking the
+green `New pull request` button.
 
 ![GitHub help](/images/22-github-intro-new-pr.png)
 
 `LaurentGatto` can now see the differences between the original and
-forked repositories (i.e. a single commit by user `LaurentGatto` - the
-actual difference between the file(s) could be seen scrolling down)
-and can initiate the pull request by clicking the green `New pull
-request` button.
+the forked repositories (i.e. a single commit by user `LaurentGatto` -
+the actual difference between the file(s) could be seen scrolling
+down) and can initiate the pull request by clicking the green `Create
+pull request` button.
 
 ![GitHub help](/images/23-github-intro-create-pr-1.png)
 
 It can be useful to provide addition comments, or a general
 description for a PR, before actually sending it back to the original
-repository.
+repository. Once the `Create pull request` button is pressed and the
+PR is sent, the page udpates to the destination repository,
+i.e. `lgatto/pancakes` in this example.
 
 ![GitHub help](/images/24-github-intro-create-pr-2.png)
 
 
-We see that there's no conflict between the current state of
-`lgatto/pancakes` and the PR from `LaurentGatto`. There could be a
-conflict if multiple changes affected the same line.
+Back in the initial `lgatto/pancakes` repository, we see that there's
+no conflict between the current state of `lgatto/pancakes` and the PR
+from `LaurentGatto`. There could be a conflict if multiple changes
+affected the same line.
 
 ![GitHub help](/images/25-github-intro-pr-received.png)
 
-The next screen-shot shows the `lgatto/pancake` repository, where the
-PR from `LaurentGatto` has now appeared.
-
+The next screen-shot shows the `lgatto/pancake` repository as seen by
+`lgatto`, where the PR from `LaurentGatto` has now appeared and can be
+merged.
 
 ![GitHub help](/images/26-github-intro-merge-pr.png)
 
-
 Below, the merge is confirmed with a small message. This mechanism
 however also allows to explicitly review pull requests and ask for
-specific or additional before merging.
+specific changes before accepting to merge.
 
 ![GitHub help](/images/27-github-intro-confirm-pr.png)
 
@@ -268,7 +271,7 @@ The following screen-shot show the merged PR.
 ![GitHub help](/images/28-github-intro-merged-pr.png)
 
 Here we look at the commit history of `lgatto/pancake`, and we can see
-that `LaurentGatto` did a modification and that `lgatto` committed it
+that `LaurentGatto` did a modification and that `lgatto` merged it
 into `lgatto/pancakes`.
 
 ![GitHub help](/images/29-github-intro-commits-3.png)
@@ -314,7 +317,7 @@ URL under the `Clone or download` button[^download].
 
 ![GitHub help](/images/30-github-intro-clone-url.png)
 
-From the command line[^cli], the command
+From the command line[^cli], the command[^clone]
 
 ```
 git clone git@github.com:lgatto/pancakes.git
@@ -325,6 +328,10 @@ local directory. In this case, we see that we have the two files.
 
 [^cli]: There also exists graphical user interfaces to manage local
     repositories.
+
+[^clone]: Using `git@github.com` requires to have write access to the
+    repository. If that's not the case, the `https` protocol should be
+    used.
 
 ![GitHub help](/images/31-github-intro-clone.png)
 
