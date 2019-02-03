@@ -10,9 +10,8 @@ comments: true
 version control system**. Version control system means that its goal
 is to track and record every change in a set of text files (typically
 source code, but not exclusively), collectively called a repository,
-so that it is possible to check what and when changes occured, and to
+so that it is possible to check what and when changes occurred, and to
 recover any return to any previous state of the tracked files.
-
 
 <!--more-->
 
@@ -23,12 +22,12 @@ equivalent, and users can synchronise (pull and push) code from one to
 another.
 
 Git is without any doubt a powerful but relatively difficult piece of
-software to use. It was developed by Linus Torvald, the main developer
+software to use. It was developed by Linus Torvalds, the main developer
 of the Linux Kernel, for the development of the Linux
-kernel. [Github](https://github.com/), is a web interface to git. It
+kernel. [GitHub](https://github.com/), is a web interface to git. It
 allows to perform all the most important functions of git through a
-friendly and easy to use graphical interface, adding some handly
-project management and sharing feautres. We are going to focus on the
+friendly and easy to use graphical interface, adding some handy
+project management and sharing features. We are going to focus on the
 latter, an illustrate
 
 - the creation of a repository
@@ -38,13 +37,13 @@ latter, an illustrate
 - open, comment and close issues
 
 While the main context in which my colleagues come to know git and
-Github is bioinformatics-related, I'm going to demonstrate it with
+GitHub is bioinformatics-related, I'm going to demonstrate it with
 something many more people are familiar with. We are going to use
-Github to manage a [pancakes
+GitHub to manage a [pancakes
 recipe](https://www.bbc.com/food/recipes/basicpancakeswithsuga_66226).
 
 
-Note that do use github, one needs to create a free account, so that
+Note that do use GitHub, one needs to create a free account, so that
 all operations can be tracked and attributed to the person. Here, I
 will be using two accounts here, namely my main account
 [lgatto](https://github.com/lgatto/), and
@@ -72,7 +71,7 @@ markdown format).
     additional documentation, ...
 
 We won't use any of the suggested licences here, as those are
-targetted towards software generally. It we wanted to set one, we
+targeted towards software generally. It we wanted to set one, we
 would probably use
 [CC-BY](https://creativecommons.org/licenses/by/4.0/) and mention this
 in the README file.
@@ -110,7 +109,7 @@ repository. Using good commit messages is important as it help
 understanding changes and the evolution of a repository without the
 need to look at the actual changes.
 
-![Commiting our new file](/images/05-github-intro-pancakes-commit.png)
+![Committing our new file](/images/05-github-intro-pancakes-commit.png)
 
 After clicking `Commit new file`, we see the new state of our
 repository, that now contains two files, namely `README.md` and
@@ -132,7 +131,7 @@ each state of the repository.
 ## Using issues
 
 A very attractive feature of GitHub, which is specific to the web
-interface and is missing from the git software, is the avaiablility of
+interface and is missing from the git software, is the availability of
 repository-specific issues. Our current repository hasn't any (open)
 issue yet, as shown by the `Issues (0)` tab.
 
@@ -154,7 +153,7 @@ comment.
 ![GitHub help](/images/11-github-intro-view-issue.png)
 
 
-I now swith to the `LaurentGatto` account and post a comment on this
+I now switch to the `LaurentGatto` account and post a comment on this
 issue which, as a reminder, is an issue in the `pancakes` repository
 that belongs to user `lgatto`.
 
@@ -174,13 +173,13 @@ external contribution to a repository.
 As use `LaurentGatto`, I can choose to **folk** `lgatto`'s `pancakes`
 repository (or any publicly available repository for the matter) by
 clicking on the `Fork` button in the top right corner. Forking is
-going to create an exact copy of the repo, including all the commit
+going to create an exact copy of the repository, including all the commit
 history (but not the issues) into my own account, while keeping a
 public record of where it comes from.
 
 ![GitHub help](/images/14-github-intro-fork.png)
 
-The following screenshot shows the forking transition screen.
+The following screen-shot shows the forking transition screen.
 
 ![GitHub help](/images/15-github-intro-forking.png)
 
@@ -199,7 +198,7 @@ the little pen on the right to edit the `pancakes.md` files.
 
 Below, user `LaurentGatto` adds a *Tips* section and a new bullet
 point suggesting to enjoy the pancakes with chocolate spread and cold
-milk. The file udpate needs a message (and an optional extended
+milk. The file update needs a message (and an optional extended
 description, that we leave black here) before the actual commit.
 
 ![GitHub help](/images/18-github-intro-commit-edit.png)
@@ -251,7 +250,7 @@ conflict if multiple changes affected the same line.
 
 ![GitHub help](/images/25-github-intro-pr-received.png)
 
-The next screenshot shows the `lgatto/pancake` repository, where the
+The next screen-shot shows the `lgatto/pancake` repository, where the
 PR from `LaurentGatto` has now appeared.
 
 
@@ -264,7 +263,7 @@ specific or additional before merging.
 
 ![GitHub help](/images/27-github-intro-confirm-pr.png)
 
-The following screenshot show the merged PR.
+The following screen-shot show the merged PR.
 
 ![GitHub help](/images/28-github-intro-merged-pr.png)
 
@@ -318,7 +317,7 @@ local directory. In this case, we see that we have the two files.
 
 ![GitHub help](/images/31-github-intro-clone.png)
 
-The `git log` command recapitualtes the full commit history.
+The `git log` command recapitulates the full commit history.
 
 ![GitHub help](/images/32-github-intro-commits-4.png)
 
@@ -329,7 +328,7 @@ repository. Below, we create a new (empty) file with `touch
 waffles.md` to store a recipe for waffles. We then in turn `add` the
 file to the local repository, `commit` the addition (with a little
 commit message), and actually `push` it to the remote repository. The
-screenshot below also illustrates the `status` command to show the
+screen-shot below also illustrates the `status` command to show the
 current status of the repository - here, one new added (A) file.
 
 ![GitHub help](/images/34-github-intro-add-local.png)
@@ -370,7 +369,7 @@ What do I use Github for? Many things, including
 
 
 In particular, when analysing data for collaborators, we always create
-a github repository in which all the code goes. Issues are used to
+a GitHub repository in which all the code goes. Issues are used to
 discuss specific points, and very often, I ask my collaborators to
 create a Github account to join in, and ask project-related questions
 directly on Github rather than in scattered emails. This allows to
