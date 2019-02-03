@@ -346,11 +346,28 @@ history are updated in the remote repository.
 
 ## Conclusions
 
-What do I use Github for? Many things, from software development,
-project management, issue tracking and discussions, (collaboratively)
-writing papers, course development ...
+What do I use Github for? Many things, including
 
-Give some examples:
+- **software development** (here's the
+  [`MSnbase`](https://github.com/lgatto/MSnbase/) R/Bioconductor
+  package repository, that has been going on since Oct 4 2010,
+  according to the git log)
+
+- **project management** (here's a current [`MSnbase` development
+  project](https://github.com/lgatto/MSnbase/projects/2)) and **issue
+  tracking** and discussions (the latest [`MSnbase`
+  issue](https://github.com/lgatto/MSnbase/issues) is #425)
+
+- collaborative **writing papers** (here's the repository of the *Ten
+  Simple Rules for Taking Advantage of git and GitHub* paper, that was
+  written and managed collaboratively using GitHub)
+
+- **course development** (here's the repository for my [Introduction
+  to bioinformatics course
+  (WSBIM1207)](https://github.com/uclouvain-cbio/WSBIM1207) course)
+
+- ...
+
 
 In particular, when analysing data for collaborators, we always create
 a github repository in which all the code goes. Issues are used to
@@ -365,7 +382,7 @@ addition, even for a single user, it allows to easily work on
 different computers while keeping track of changes, irrespective of
 where they were done.
 
-## Further reading
+## Further reading and references
 
 - [GitHub *Hello world* tutorial](https://guides.github.com/activities/hello-world/)
 
