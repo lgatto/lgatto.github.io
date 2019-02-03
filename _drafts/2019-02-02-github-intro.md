@@ -46,20 +46,83 @@ will be using two accounts here, namely my main account
 [lgatto](https://github.com/lgatto/), and
 [LaurentGatto](https://github.com/LaurentGatto).
 
-### A new repository
+## A new repository
+
+Below, I start by creating a repository under user `lgatto` by
+clicking on the `+` in the top right corner, and choosing *New
+repository*.
 
 ![GitHub help](/images/01-github-intro-new-repo.png)
+
+The next step is to name the repository (here is call is `pancakes`),
+provide a short description, choose whether to make it public or
+private (we choose the former). I also choose to initialise the
+repository with a README[^readme] file (by default, it will be `README.md`, in
+markdown format).
+
+[^readme]: README files are among [the three most important
+    files](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1004947#pcbi.1004947.box003)
+    in a repository, and typically provide a short description of the
+    project, how to cite it, a quick start guide or tutorial,
+    information on how to contribute, a TODO list, and links to
+    additional documentation, ...
+
+We won't use any of the suggested licences here, as those are
+targetted towards software generally. It we wanted to set one, we
+would probably use
+[CC-BY](https://creativecommons.org/licenses/by/4.0/) and mention this
+in the README file.
+
 ![GitHub help](/images/02-github-intro-create-repo.png)
+
+We can now click the `Create repository` button to actually create
+it. We get the repository `lgatto/pancakes` populated with the
+`README.md` file.
+
 ![GitHub help](/images/03-github-intro-repo-state-1.png)
 
-### Adding a file
+This is a **remote** repository, as it lives remotely (on one of the
+GitHub servers). Later, we'll see how to **clone** it locally. Note
+that the remote repository isn't special in any way, and doesn't
+necessarily define the main one. In this case, it happens to be the
+first one that was created, but we could also have created a local
+repository and pushed it remotely.
+
+## Adding a file
+
+It is simple to create or upload new files to the remote repository by
+clicking the respective grey buttons. If we click `Create new file`,
+we get a interface where we can give the file a name (here we use
+`pancakes.md`, specifying the markdown file extension), and copy/paste
+the recipe from the recipe [BBC
+recipe](https://www.bbc.com/food/recipes/basicpancakeswithsuga_66226)
+site.
 
 ![GitHub help](/images/04-github-intro-pancakes-src.png)
+
+At the bottom of the page, we provide a **commit** message, which is a
+message that is recorded as part of the history of the repository. Using good
+
 ![GitHub help](/images/05-github-intro-pancakes-commit.png)
+
+After clicking `Commit new file`, we see the new state of our
+repository, that now contains two files, namely `README.md` and
+`pancakes.md`.
+
 ![GitHub help](/images/06-github-intro-repo-state-2.png)
+
+We can inspect the history of that repository by clicking on the
+**commits** link under the repository name. At this stage we have two
+commits, the initial commit that created the repository with the
+README file, and the one that added the recipe itself.
+
 ![GitHub help](/images/07-github-intro-commits.png)
 
-### Using issues
+On the right, we can read the first couple of characters of the unique
+commit tags, that uniquely identify each commit and, as a consequence,
+each state of the repository.
+
+## Using issues
 
 ![GitHub help](/images/08-github-intro-issue-tab.png)
 ![GitHub help](/images/09-github-intro-new-issue.png)
@@ -68,7 +131,7 @@ will be using two accounts here, namely my main account
 ![GitHub help](/images/12-github-intro-view-issue.png)
 ![GitHub help](/images/13-github-intro-view-comment.png)
 
-### External contributions
+## External contributions
 
 ![GitHub help](/images/14-github-intro-fork.png)
 ![GitHub help](/images/15-github-intro-forking.png)
@@ -87,11 +150,19 @@ will be using two accounts here, namely my main account
 ![GitHub help](/images/28-github-intro-merged-pr.png)
 ![GitHub help](/images/29-github-intro-commits-3.png)
 
+## Navigating versions
 
-### Cloning locally
+TODO
+
+## Cloning locally
+
+
 ![GitHub help](/images/30-github-intro-clone-url.png)
+
 ![GitHub help](/images/31-github-intro-clone.png)
+
 ![GitHub help](/images/32-github-intro-commits-4.png)
+
 ![GitHub help](/images/33-github-intro-log.png)
 
 ## Conclusions
@@ -112,3 +183,10 @@ track all discussion about a project in the same place.
 ## Further reading
 
 - [GitHub *Hello world* tutorial](https://guides.github.com/activities/hello-world/)
+
+- Perez-Riverol Y, Gatto L, Wang R, Sachsenberg T, Uszkoreit J,
+  Leprevost Fda V, Fufezan C, Ternent T, Eglen SJ, Katz DS, Pollard
+  TJ, Konovalov A, Flight RM, Blin K, Vizcaino JA. *Ten Simple Rules
+  for Taking Advantage of Git and GitHub*. PLoS Comput Biol. 2016 Jul
+  14;12(7):e1004947. doi:[10.1371/journal.pcbi.1004947](http://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1004947)
+  [PMID:27415786](http://www.ncbi.nlm.nih.gov/pubmed/27415786).
