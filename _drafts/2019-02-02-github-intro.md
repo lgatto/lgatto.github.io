@@ -192,19 +192,20 @@ repository history is preserved.
 
 ![GitHub help](/images/16-github-intro-forked.png)
 
-User `LaurentGatto` can now clock the little pen on the right to edit
-the `pancakes.md` files.
+User `LaurentGatto` can now edit or upload new files. Below, he clicks
+the little pen on the right to edit the `pancakes.md` files.
 
 ![GitHub help](/images/17-github-intro-edit-file.png)
 
-Below, user `LaurentGatto` add a *Tips* section and a new bullet point
-suggesting to enjoy the pancakes with chocolate spread and cold
-milk. The udpate to the file needs a message before the actual commit.
+Below, user `LaurentGatto` adds a *Tips* section and a new bullet
+point suggesting to enjoy the pancakes with chocolate spread and cold
+milk. The file udpate needs a message (and an optional extended
+description, that we leave black here) before the actual commit.
 
 ![GitHub help](/images/18-github-intro-commit-edit.png)
 
 Below, we see the updated `pancakes.md` file with `LaurentGatto`'s
-tip.
+repository.
 
 ![GitHub help](/images/19-github-intro-view-edit.png)
 
@@ -235,23 +236,55 @@ actual difference between the file(s) could be seen scrolling down)
 and can initiate the pull request by clicking the green `New pull
 request` button.
 
-
 ![GitHub help](/images/23-github-intro-create-pr-1.png)
+
+It can be useful to provide addition comments, or a general
+description for a PR, before actually sending it back to the original
+repository.
 
 ![GitHub help](/images/24-github-intro-create-pr-2.png)
 
+
+We see that there's no conflict between the current state of
+`lgatto/pancakes` and the PR from `LaurentGatto`. There could be a
+conflict if multiple changes affected the same line.
+
 ![GitHub help](/images/25-github-intro-pr-received.png)
 
-This mechanism also allows to explicitly review pull requests and ask
-for specific or additional before merging.
+The next screenshot shows the `lgatto/pancake` repository, where the
+PR from `LaurentGatto` has now appeared.
+
 
 ![GitHub help](/images/26-github-intro-merge-pr.png)
 
+
+Below, the merge is confirmed with a small message. This mechanism
+however also allows to explicitly review pull requests and ask for
+specific or additional before merging.
+
 ![GitHub help](/images/27-github-intro-confirm-pr.png)
+
+The following screenshot show the merged PR.
 
 ![GitHub help](/images/28-github-intro-merged-pr.png)
 
+Here we look at the commit history of `lgatto/pancake`, and we can see
+that `LaurentGatto` did a modification and that `lgatto` committed it
+into `lgatto/pancakes`.
+
 ![GitHub help](/images/29-github-intro-commits-3.png)
+
+Below, we show the previously opened *Pancake tips* issue (issue #1),
+how `lgatto` posts a last comment and closes the issue with the `Close
+and comment` green button.
+
+![GitHub intro](/images/13-1-github-intro-close-issue.png)
+
+![GitHub intro](/images/13-2-github-intro-closed-issue.png)
+
+Closed issues aren't deleted and still visible on the repository.
+
+![GitHub intro](/images/13-3-github-intro-closed-issues.png)
 
 ## Navigating versions
 
@@ -259,19 +292,55 @@ TODO
 
 ## Cloning locally
 
+So far, we have exclusively used GitHub. But for more substantial
+projects, where source code or analysis reports are written and
+executed, repositories are managed and updated locally. The creation
+of a new (local) copy is called **cloning**, and can be done using the
+URL under the `Clone or download` button[^download].
+
+[^download]: It is also possible to download a repository, it the goal
+    is only to get download the files and not keep working with git to
+    commit new changes.
 
 ![GitHub help](/images/30-github-intro-clone-url.png)
 
+From the command line[^cli], the command
+
+```
+git clone git@github.com:lgatto/pancakes.git
+```
+
+will produce a full copy (i.e. all files with complete history) in a
+local directory. In this case, we see that we have the two files.
+
+[^cli]: There also exists graphical user interfaces to manage local
+    repositories.
+
 ![GitHub help](/images/31-github-intro-clone.png)
+
+The `git log` command recapitualtes the full commit history.
 
 ![GitHub help](/images/32-github-intro-commits-4.png)
 
-![GitHub help](/images/33-github-intro-log.png)
+<!-- ![GitHub help](/images/33-github-intro-log.png) -->
 
+It is of course also possible to add new files from a local
+repository. Below, we create a new (empty) file with `touch
+waffles.md` to store a recipe for waffles. We then in turn `add` the
+file to the local repository, `commit` the addition (with a little
+commit message), and actually `push` it to the remote repository. The
+screenshot below also illustrates the `status` command to show the
+current status of the repository - here, one new added (A) file.
 
 ![GitHub help](/images/34-github-intro-add-local.png)
 
+Below, we see the update repository `git log` output, with the latest
+commit.
+
 ![GitHub help](/images/35-github-intro-commits-4.png)
+
+When pushing a commit from a local repository, the files and the
+history are updated in the remote repository.
 
 ![GitHub help](/images/36-github-intro-commits-5.png)
 
