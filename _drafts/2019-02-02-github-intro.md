@@ -4,6 +4,7 @@ tags: ["teaching", "git"]
 comments: true
 ---
 
+{% include toc %}
 
 [Git](https://git-scm.com/) is a command line source **distributed
 version control system**. Version control system means that its goal
@@ -11,6 +12,9 @@ is to track and record every change in a set of text files (typically
 source code, but not exclusively), collectively called a repository,
 so that it is possible to check what and when changes occured, and to
 recover any return to any previous state of the tracked files.
+
+
+<!--more-->
 
 Distributed means that these tracked files can be stored on many
 different computer systems, on a local computer, on a remote server,
@@ -52,7 +56,7 @@ Below, I start by creating a repository under user `lgatto` by
 clicking on the `+` in the top right corner, and choosing *New
 repository*.
 
-![GitHub help](/images/01-github-intro-new-repo.png)
+![A new GitHub repository*](/images/01-github-intro-new-repo.png)
 
 The next step is to name the repository (here is call is `pancakes`),
 provide a short description, choose whether to make it public or
@@ -73,13 +77,13 @@ would probably use
 [CC-BY](https://creativecommons.org/licenses/by/4.0/) and mention this
 in the README file.
 
-![GitHub help](/images/02-github-intro-create-repo.png)
+![Create a new repository](/images/02-github-intro-create-repo.png)
 
 We can now click the `Create repository` button to actually create
 it. We get the repository `lgatto/pancakes` populated with the
 `README.md` file.
 
-![GitHub help](/images/03-github-intro-repo-state-1.png)
+![Initial state of our new repository](/images/03-github-intro-repo-state-1.png)
 
 This is a **remote** repository, as it lives remotely (on one of the
 GitHub servers). Later, we'll see how to **clone** it locally. Note
@@ -98,25 +102,28 @@ the recipe from the recipe [BBC
 recipe](https://www.bbc.com/food/recipes/basicpancakeswithsuga_66226)
 site.
 
-![GitHub help](/images/04-github-intro-pancakes-src.png)
+![Adding a new file](/images/04-github-intro-pancakes-src.png)
 
 At the bottom of the page, we provide a **commit** message, which is a
-message that is recorded as part of the history of the repository. Using good
+message that is recorded as part of the history of the
+repository. Using good commit messages is important as it help
+understanding changes and the evolution of a repository without the
+need to look at the actual changes.
 
-![GitHub help](/images/05-github-intro-pancakes-commit.png)
+![Commiting our new file](/images/05-github-intro-pancakes-commit.png)
 
 After clicking `Commit new file`, we see the new state of our
 repository, that now contains two files, namely `README.md` and
 `pancakes.md`.
 
-![GitHub help](/images/06-github-intro-repo-state-2.png)
+![Update repository](/images/06-github-intro-repo-state-2.png)
 
 We can inspect the history of that repository by clicking on the
 **commits** link under the repository name. At this stage we have two
 commits, the initial commit that created the repository with the
 README file, and the one that added the recipe itself.
 
-![GitHub help](/images/07-github-intro-commits.png)
+![Commits so far](/images/07-github-intro-commits.png)
 
 On the right, we can read the first couple of characters of the unique
 commit tags, that uniquely identify each commit and, as a consequence,
@@ -124,11 +131,29 @@ each state of the repository.
 
 ## Using issues
 
-![GitHub help](/images/08-github-intro-issue-tab.png)
-![GitHub help](/images/09-github-intro-new-issue.png)
+A very attractive feature of GitHub, which is specific to the web
+interface and is missing from the git software, is the avaiablility of
+repository-specific issues. Our current repository hasn't any (open)
+issue yet, as shown by the `Issues (0)` tab.
+
+![Github issues tab](/images/08-github-intro-issue-tab.png)
+
+To open a new issue, we can select that tab and then choose the green
+`New issue` button, that open an issue edition window.
+
+![Create a new issue](/images/09-github-intro-new-issue.png)
+
+We can write our new issue using the markdown format. Here, we use an
+emoji, and could also easily add figures and links to other issues.
+
 ![GitHub help](/images/10-github-intro-write-issue.png)
+
+
+
 ![GitHub help](/images/11-github-intro-comment-on-issue.png)
+
 ![GitHub help](/images/12-github-intro-view-issue.png)
+
 ![GitHub help](/images/13-github-intro-view-comment.png)
 
 ## External contributions
@@ -164,6 +189,13 @@ TODO
 ![GitHub help](/images/32-github-intro-commits-4.png)
 
 ![GitHub help](/images/33-github-intro-log.png)
+
+
+![GitHub help](/images/34-github-intro-add-local.png)
+
+![GitHub help](/images/35-github-intro-commits-4.png)
+
+![GitHub help](/images/36-github-intro-commits-5.png)
 
 ## Conclusions
 
