@@ -6,34 +6,34 @@ comments: true
 
 {% include toc %}
 
-[Git](https://git-scm.com/) is a command line source **distributed
+[Git](https://git-scm.com/) is a command line-based **distributed
 version control system**. Version control system means that its goal
 is to track and record every change in a set of text files (typically
-source code, but not exclusively), collectively called a repository,
-so that it is possible to check what and when changes occurred, and to
-recover any return to any previous state of the tracked files.
+source code, but not exclusively), collectively called a repository.
+It then possible to check what every changes contained and when it
+occurred, and to recover and return to any previous state of the
+tracked files.
 
 <!--more-->
 
 Distributed means that these tracked files can be stored on many
-different computer systems, on a local computer, on a remote server,
+different computer systems, such as a local computer, remote servers,
 or in the cloud. None plays the role of main copy, they are all
 equivalent, and users can synchronise (pull and push) code from one to
 another.
 
 Git is without any doubt a powerful but relatively difficult piece of
-software to use. It was developed by Linus Torvalds, the main developer
-of the Linux Kernel, for the development of the Linux
+software to use. It was developed by Linus Torvalds, the main
+developer of the Linux Kernel, for the development of the Linux
 kernel. [GitHub](https://github.com/), is a web interface to git. It
-allows to perform all the most important functions of git through a
+allows to perform the most important functions of git through a
 friendly and easy to use graphical interface, adding some handy
-project management and sharing features. We are going to focus on the
-latter, an illustrate
+project management and sharing features. We are going to focus on
+GitHub, an illustrate
 
 - the creation of a repository
 - adding and modifying files
-- fork and modify
-- send and merge a pull request
+- external contributions using forks and pull requests
 - open, comment and close issues
 
 While the main context in which my colleagues come to know git and
@@ -43,9 +43,9 @@ GitHub to manage a [pancakes
 recipe](https://www.bbc.com/food/recipes/basicpancakeswithsuga_66226).
 
 
-Note that do use GitHub, one needs to create a free account, so that
-all operations can be tracked and attributed to the person. Here, I
-will be using two accounts here, namely my main account
+Note that to use GitHub, one needs to create a free account, so that
+all operations can be tracked and attributed to a person. Here, I will
+be using two accounts here, namely my main account
 [lgatto](https://github.com/lgatto/), and
 [LaurentGatto](https://github.com/LaurentGatto).
 
@@ -57,11 +57,11 @@ repository*.
 
 ![A new GitHub repository*](/images/01-github-intro-new-repo.png)
 
-The next step is to name the repository (here is call is `pancakes`),
+The next step is to name the repository (I call it `pancakes`),
 provide a short description, choose whether to make it public or
 private (we choose the former). I also choose to initialise the
-repository with a README[^readme] file (by default, it will be `README.md`, in
-markdown format).
+repository with a README[^readme] file (by default, it will be
+`README.md`, in markdown format).
 
 [^readme]: README files are among [the three most important
     files](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1004947#pcbi.1004947.box003)
@@ -70,16 +70,15 @@ markdown format).
     information on how to contribute, a TODO list, and links to
     additional documentation, ...
 
-We won't use any of the suggested licences here, as those are
-targeted towards software generally. It we wanted to set one, we
-would probably use
-[CC-BY](https://creativecommons.org/licenses/by/4.0/) and mention this
-in the README file.
+We won't use any of the suggested licences here, as those are targeted
+towards software generally. It we wanted to set one, we would probably
+use [CC-BY](https://creativecommons.org/licenses/by/4.0/) and mention
+it in the README file.
 
 ![Create a new repository](/images/02-github-intro-create-repo.png)
 
 We can now click the `Create repository` button to actually create
-it. We get the repository `lgatto/pancakes` populated with the
+it. We obtain the repository `lgatto/pancakes` populated with the
 `README.md` file.
 
 ![Initial state of our new repository](/images/03-github-intro-repo-state-1.png)
@@ -94,10 +93,11 @@ repository and pushed it remotely.
 ## Adding a file
 
 It is simple to create or upload new files to the remote repository by
-clicking the respective grey buttons. If we click `Create new file`,
-we get a interface where we can give the file a name (here we use
+clicking the respective grey buttons (see the grey button on the
+previous screen-shot). If we click `Create new file`, we get a
+interface where we can give the file a name (here we use
 `pancakes.md`, specifying the markdown file extension), and copy/paste
-the recipe from the recipe [BBC
+and adapt the recipe from the recipe [BBC
 recipe](https://www.bbc.com/food/recipes/basicpancakeswithsuga_66226)
 site.
 
@@ -105,9 +105,9 @@ site.
 
 At the bottom of the page, we provide a **commit** message, which is a
 message that is recorded as part of the history of the
-repository. Using good commit messages is important as it help
-understanding changes and the evolution of a repository without the
-need to look at the actual changes.
+repository. Using good commit messages is important as it helps
+understand the changes and the evolution of a repository without the
+need to look at the actual individual changes.
 
 ![Committing our new file](/images/05-github-intro-pancakes-commit.png)
 
