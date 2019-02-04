@@ -64,11 +64,11 @@ repository with a README[^readme] file (by default, it will be
 `README.md`, in markdown format).
 
 [^readme]: README files are among [the three most important
-    files](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1004947#pcbi.1004947.box003)
-    in a repository, and typically provide a short description of the
-    project, how to cite it, a quick start guide or tutorial,
-    information on how to contribute, a TODO list, and links to
-    additional documentation, ...
+	files](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1004947#pcbi.1004947.box003)
+	in a repository, and typically provide a short description of the
+	project, how to cite it, a quick start guide or tutorial,
+	information on how to contribute, a TODO list, and links to
+	additional documentation, ...
 
 We won't use any of the suggested licences here, as those are targeted
 towards software generally. It we wanted to set one, we would probably
@@ -289,7 +289,7 @@ Closed issues aren't deleted and still visible on the repository.
 
 ![GitHub intro](/images/13-3-github-intro-closed-issues.png)
 
-## Navigating versions
+## Navigating commits
 
 If we look back at the commit history, we see towards the unique
 commit tags and, on their right, buttons that allow to browse a past
@@ -313,8 +313,8 @@ of a new (local) copy is called **cloning**, and can be done using the
 URL under the `Clone or download` button[^download].
 
 [^download]: It is also possible to download a repository, it the goal
-    is only to get download the files and not keep working with git to
-    commit new changes.
+	is only to get download the files and not keep working with git to
+	commit new changes.
 
 ![GitHub help](/images/30-github-intro-clone-url.png)
 
@@ -328,11 +328,11 @@ will produce a full copy (i.e. all files with complete history) in a
 local directory. In this case, we see that we have the two files.
 
 [^cli]: There also exists graphical user interfaces to manage local
-    repositories.
+	repositories.
 
 [^clone]: Using `git@github.com` requires to have write access to the
-    repository. If that's not the case, the `https` protocol should be
-    used.
+	repository. If that's not the case, the `https` protocol should be
+	used.
 
 ![GitHub help](/images/31-github-intro-clone.png)
 
