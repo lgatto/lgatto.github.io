@@ -141,6 +141,13 @@ proteomics data
 
 ## Teaching
 
+Mu current course at the UCLouvain are
+
+- [Introduction to bioinformatics](http://bit.ly/WSBIM1207) (since 2018)
+- [Eléments de statistiques médicales](https://uclouvain.be/cours-2018-wmds1114.html) (since 2018)
+- Bioinformatics (starting 2019)
+- Omics data analysis (starting 2019)
+
 Over the years I have been involved in many teaching activities,
 ranging from beginners and advanced R courses,
 [genome biology](http://www.huber.embl.de/csama/),
