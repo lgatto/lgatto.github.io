@@ -10,11 +10,6 @@ sidebar:
 
 {% include toc %}
 
-**Note** This page needs an update. I am now a professor of
-Bioinformatics at the UCLouvain, where I run a research group in
-bioinformatics and computational biology and teach at the faculty of
-pharmacy and biomedical sciences (FASB).
-
 ## CBIO core
 
 - [**Laurent Gatto**](http://lgatto.github.io/about/), head of the
@@ -55,14 +50,15 @@ pharmacy and biomedical sciences (FASB).
   since then contributes to various projects, in particular
   [`MSnbase`](http://lgatto.github.io/MSnbase),
   [`Pbase`](http://bioconductor.org/packages/Pbase) and
-  [`synapter`](http://bioconductor.org/packages/synapter), which he is
-  currently leading the development of.
+  [`synapter`](http://bioconductor.org/packages/synapter). Sebastian
+  is part of the `MSnbase` core developer group.
 
 - [**Johannes
   Rainer**](http://www.eurac.edu/en/research/health/biomed/staff/Pages/staffdetails.aspx?persId=34084),
   Center for Biomedicine, EURAC, Bolzano, Italy is a contributor to
   the [`MSnbase`](http://lgatto.github.io/MSnbase) and
-  [`Pbase`](http://bioconductor.org/packages/Pbase) packages.
+  [`Pbase`](http://bioconductor.org/packages/Pbase) packages. Johannes
+  is part of the `MSnbase` core developer group.
 
 ## Key collaborators
 
