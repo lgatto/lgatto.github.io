@@ -46,11 +46,13 @@ Computational Proteomics Unit (my former research group in Cambridge)
 that I started working on various aspects of quantitative and spatial
 proteomics, developing new methods and implementing computational
 tools with a strong emphasis on rigorous and reproducible data
-analysis. I am also a visiting scientist in the
-[PRIDE](http://www.ebi.ac.uk/pride/) team at the [European
-Bioinformatics Institute](http://www.ebi.ac.uk/pride/), and the
-[Cambridge Computational Biology
-Institute](http://www.ccbi.cam.ac.uk).
+analysis. During my time in Cambridge, I have also a been a visiting
+scientist in the [PRIDE](http://www.ebi.ac.uk/pride/) team at the
+[European Bioinformatics Institute](http://www.ebi.ac.uk/pride/). I
+currently still hold a visitor position in the [Department of Applied
+Mathematics and Theoretical Physics
+(DAMTP)](http://www.damtp.cam.ac.uk/user/lg390/) at the University of
+Cambridge.
 
 And even before that, during my MSc and [PhD
 work](http://difusion.ulb.ac.be/vufind/Record/ULB-DIPOT:oai:dipot.ulb.ac.be:2013/210855/Holdings),
