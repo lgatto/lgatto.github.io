@@ -10,22 +10,17 @@ sidebar:
 
 {% include toc %}
 
-**Note** This page needs an update. I am now an associate professor of
-Bioinformatics at the UCLouvain, where I run a research group in
-bioinformatics and computational biology and teach at the faculty of
-pharmacy and biomedical sciences (FASB).
-
-The Computational Proteomics Unit was set up in August 2013 and is
-part of the [Cambridge Centre for
-Proteomics](http://proteomics.bio.cam.ac.uk/). Its main activities
-centre around the sound analysis of proteomics data and integration of
-different sources of heterogeneous data. We work in close
-collaboration with biologists to tackle biologically challenging
-questions using statistics and machine learning to understand the data
-and uncover biologically relevant patterns. The development and
-publication of scientific software
-([1](https://github.com/ComputationalProteomicsUnit),
-[2](https://github.com/lgatto)) is an integral part of our work and is
+The CBIO group performs research and development in computational
+biology at the faculty of pharmacy and biomedical sciences (FASB) at
+the [UCLouvain](https://uclouvain.be/), in Brussels (Belgium). We are
+located at the [de Duve Institute](https://www.deduveinstitute.be/)
+and collaborate with groups of the various [research institutes on the
+campus](https://uclouvain.be/fr/chercher/instituts-de-recherche.html%20#sss)
+to tackle biomedically challenging questions using statistics and
+machine learning. The development and publication of scientific
+software ([1](https://github.com/ComputationalProteomicsUnit),
+[2](https://github.com/UCLouvain-CBIO),
+[3](https://github.com/lgatto)) is an integral part of our work and is
 reflected by our contributions to the
 [Bioconductor](http://www.bioconductor.org/) project.
 
