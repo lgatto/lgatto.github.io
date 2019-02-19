@@ -44,9 +44,10 @@ pharmacy and biomedical sciences (FASB).
   Kirk](http://www.mrc-bsu.cam.ac.uk/people/in-alphabetical-order/h-to-m/paul-kirk/)
   from MRC Biostatistics Unit and [Kathryn
   Lilley](http://www.bioc.cam.ac.uk/people/uto/lilley). Olly works on
-  new Bayesian methods for spatial proteomics, formalising the
-  theoretical foundations and implementing the algorithms that will be
-  included in [`pRoloc`](https://lgatto.github.io/pRoloc/).
+  new Bayesian methods for spatial proteomics ([Crook *et al.*
+  2018](https://doi.org/10.1371/journal.pcbi.1006516)), formalising
+  the theoretical foundations and implementing the algorithms that
+  will be included in [`pRoloc`](https://lgatto.github.io/pRoloc/).
 
 - [**Sebastian Gibb**](http://sebastiangibb.de/), Department of
   Anesthesiology and Intensive Care, University Medicine Greifswald,
