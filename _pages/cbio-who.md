@@ -51,21 +51,21 @@ sidebar:
   the theoretical foundations and implementing the algorithms that
   will be included in [`pRoloc`](https://lgatto.github.io/pRoloc/).
 
+## `MSnbase` developers
+
 - [**Sebastian Gibb**](http://sebastiangibb.de/), Department of
   Anesthesiology and Intensive Care, University Medicine Greifswald,
   Germany. Sebastian visited Laurent's group in Cambridge 2014 and
   since then contributes to various projects, in particular
   [`MSnbase`](http://lgatto.github.io/MSnbase),
   [`Pbase`](http://bioconductor.org/packages/Pbase) and
-  [`synapter`](http://bioconductor.org/packages/synapter). Sebastian
-  is part of the `MSnbase` core developer group.
+  [`synapter`](http://bioconductor.org/packages/synapter).
 
 - [**Johannes
   Rainer**](http://www.eurac.edu/en/research/health/biomed/staff/Pages/staffdetails.aspx?persId=34084),
   Center for Biomedicine, EURAC, Bolzano, Italy is a contributor to
   the [`MSnbase`](http://lgatto.github.io/MSnbase) and
-  [`Pbase`](http://bioconductor.org/packages/Pbase) packages. Johannes
-  is part of the `MSnbase` core developer group.
+  [`Pbase`](http://bioconductor.org/packages/Pbase) packages.
 
 ## Key collaborators
 
