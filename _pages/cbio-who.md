@@ -16,11 +16,18 @@ sidebar:
   unit. He runs the CBIO group and teaches bioinformatics in the
   Facutly of Pharmacy and Biomedical Sciences (FASB).
 
-- **Axelle Lorit** is a senior researcher at the de Duve Institute.
+- **Axelle Loriot** is a senior researcher at the de Duve
+  Institute. Since 2001, she was part of the group of epigenetics led
+  by Charles De Smet. She recently shifted to bioinformatics, focusing
+  on transcriptomics and epigenetics. She developed algorithms to
+  identify aberrant transcripts induced by DNA hypomethylation in
+  tumor cells, and DNA hypermethylation events linked to overlapping
+  expression.
 
-- **Theo Killian** has joined the group in February 2019 as a
-  bioinformatician and data analyst.
-
+- **Theo Killian** is a bioinformatician and research programmer at
+  the de Duve Institute. Theo transitioned from biochemistry to
+  bioinformatics and has developed computational protein design
+  protocols at the KUL Biomolecular Modeling Lab.
 
 ## Remote members
 
