@@ -67,4 +67,4 @@ conduct](https://lgatto.github.io/cbio-coc/) page for a longer version.
 # Contact
 
 On [twitter](https://twitter.com/lgatt0) or by email
-<img src="contact-email.png" alt="contact email", height=25>
+<img src="contact-email.png" alt="contact email" height=25>
