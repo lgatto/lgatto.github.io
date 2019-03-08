@@ -171,7 +171,7 @@ Please do get in touch if you are interested in running workshops.
 
 ### Research articles
 
-Crook OM, Lilley KS, Gatto L, & Kirk PDW (2019). *Semi-Supervised
+Crook OM, Lilley KS, Gatto L, Kirk PDW (2019). *Semi-Supervised
 Non-Parametric Bayesian Modelling of Spatial Proteomics.* arXiv
 [stat.AP]. [http://arxiv.org/abs/1903.02909](http://arxiv.org/abs/1903.02909).
 
