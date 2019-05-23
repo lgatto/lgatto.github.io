@@ -591,6 +591,11 @@ spectrometry and proteomics.
 
 ## Talks
 
+[Becoming a better scientist with open and reproducible
+research](https://lgatto.github.io/rr-publ/), *Are you ready for
+publishing reproducible research?* meeting, 16 May 2019, TU Delft,
+Netherlands.
+
 [Open source and open development proteomics software](http://bit.ly/20180109eubic) at
 the
 [EuBIC 2018 developer's meeting](http://uahost.uantwerpen.be/eubic18/),
