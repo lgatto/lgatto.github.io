@@ -171,6 +171,11 @@ Please do get in touch if you are interested in running workshops.
 
 ### Research articles
 
+Petyuk VA, Gatto L and Payne SH *Reproducibility and Transparency by
+Design*, Molecular & Cellular Proteomics July 4, 2019,
+mcp.IP119.001567;
+[https://doi.org/10.1074/mcp.IP119.001567](https://doi.org/10.1074/mcp.IP119.001567).
+
 Crook OM, Breckels LM, Lilley KS, Kirk PDW and Gatto L (2019) *A
 Bioconductor workflow for the Bayesian analysis of spatial proteomics*
 [version 1; peer review: awaiting peer review]. F1000Research 2019,
