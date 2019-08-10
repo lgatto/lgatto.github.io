@@ -141,7 +141,7 @@ proteomics data
 
 ## Teaching
 
-Mu current course at the UCLouvain are
+My current course at the UCLouvain are
 
 - [Introduction to bioinformatics](http://bit.ly/WSBIM1207) (since 2018)
 - [Eléments de statistiques médicales](https://uclouvain.be/cours-2018-wmds1114.html) (since 2018)
@@ -170,6 +170,11 @@ Please do get in touch if you are interested in running workshops.
 > [PubMed](https://www.ncbi.nlm.nih.gov/pubmed/?term=gatto+laurent).
 
 ### Research articles
+
+Petyuk VA, Gatto L and Payne SH *Reproducibility and Transparency by
+Design*, Molecular & Cellular Proteomics July 4, 2019,
+mcp.IP119.001567;
+[https://doi.org/10.1074/mcp.IP119.001567](https://doi.org/10.1074/mcp.IP119.001567).
 
 Crook OM, Breckels LM, Lilley KS, Kirk PDW and Gatto L (2019) *A
 Bioconductor workflow for the Bayesian analysis of spatial proteomics*
@@ -590,6 +595,11 @@ spectrometry and proteomics.
 
 
 ## Talks
+
+[Becoming a better scientist with open and reproducible
+research](https://lgatto.github.io/rr-publ/), *Are you ready for
+publishing reproducible research?* meeting, 16 May 2019, TU Delft,
+Netherlands.
 
 [Open source and open development proteomics software](http://bit.ly/20180109eubic) at
 the
