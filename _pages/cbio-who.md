@@ -90,18 +90,18 @@ sidebar:
   ([Crook *et al.*
   2018](https://doi.org/10.1371/journal.pcbi.1006516)).
 
-- [**Kathyn S. Lilley**](http://www.bioc.cam.ac.uk/people/uto/lilley),
-  Cambridge Centre for Proteomics, Department of Biochemistry,
-  University of Cambridge, UK. Kathryn's lab developed the LOPIT
-  ([Dunkley *et al.*
-  2006](https://www.ncbi.nlm.nih.gov/pubmed/16618929)) and hyperLOPIT
-  ([Christoforou *et al.*
-  2016](https://www.ncbi.nlm.nih.gov/pubmed/26754106))
-  technologies. Her lab is at the origin of some of the very best
-  spatial proteomics datasets in the world, which we help to analyse
-  and interpret by applying our dedicated software (see for example
-  [Breckels *et al.* 2016 in
-  F1000Research](https://f1000research.com/articles/5-2926/)).
+<!-- - [**Kathyn S. Lilley**](http://www.bioc.cam.ac.uk/people/uto/lilley), -->
+<!--   Cambridge Centre for Proteomics, Department of Biochemistry, -->
+<!--   University of Cambridge, UK. Kathryn's lab developed the LOPIT -->
+<!--   ([Dunkley *et al.* -->
+<!--   2006](https://www.ncbi.nlm.nih.gov/pubmed/16618929)) and hyperLOPIT -->
+<!--   ([Christoforou *et al.* -->
+<!--   2016](https://www.ncbi.nlm.nih.gov/pubmed/26754106)) -->
+<!--   technologies. Her lab is at the origin of some of the very best -->
+<!--   spatial proteomics datasets in the world, which we help to analyse -->
+<!--   and interpret by applying our dedicated software (see for example -->
+<!--   [Breckels *et al.* 2016 in -->
+<!--   F1000Research](https://f1000research.com/articles/5-2926/)). -->
 
 <!-- - [**Sean Holden**](http://www.cl.cam.ac.uk/~sbh11/), Computer -->
 <!--   Laboratory. We collaborate with Sean on the development and -->
