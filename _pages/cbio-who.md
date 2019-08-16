@@ -109,15 +109,20 @@ sidebar:
 <!--   spatial proteomics. A recent example is transfer learning -->
 <!--   ([Breckels *et al.* 2016](http://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1004920)). -->
 
-- [**Thomas Burger**](https://sites.google.com/site/thomasburgerswebpage/),
-  BIG-BGE (Université Grenoble Alpes, CNRS, CEA, INSERM), 38000
-  Grenoble, France. We collaborate with Thomas and his group on
-  various proteomics data analysis (for example missing data in
-  [Lazar *et al* 2016](https://www.ncbi.nlm.nih.gov/pubmed/26906401))
-  and software (see
-  [Wieczorek *et al.* 2016](https://www.ncbi.nlm.nih.gov/pubmed/27605098)). Thomas
+- [**Thomas
+  Burger**](https://sites.google.com/site/thomasburgerswebpage/),
+  BIG-BGE (Université Grenoble Alpes, CNRS, CEA, INSERM), France. We
+  collaborate with Thomas and his group on various proteomics data
+  analysis (for example missing data in [Lazar *et al*
+  2016](https://www.ncbi.nlm.nih.gov/pubmed/26906401)) and software
+  (see [Wieczorek *et al.*
+  2016](https://www.ncbi.nlm.nih.gov/pubmed/27605098)). Thomas
   contributed the *perTurbo* algorithms to
   [*pRoloc*](https://bioconductor.org/packages/pRoloc).
+
+- [**Lieven Clement**](https://statomics.github.io/), statOmics group,
+  UGent). We collaborate on statistical analyses of quantitative
+  proteomics data.
 
 ## Alumni
 
