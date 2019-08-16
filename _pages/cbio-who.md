@@ -124,8 +124,8 @@ sidebar:
   [*pRoloc*](https://bioconductor.org/packages/pRoloc).
 
 - [**Lieven Clement**](https://statomics.github.io/), statOmics group,
-  UGent). We collaborate on statistical analyses of quantitative
-  proteomics data.
+  UGent, Belgium. We collaborate on statistical analyses of
+  quantitative proteomics data.
 
 ## Alumni
 
@@ -146,4 +146,4 @@ sidebar:
 
 - **Vicky Butt**, Part III student in Systems Biology, applying
   graph-based methods to study protein sub-cellular
-  localisation. Vicky is now pursuing a PhD at UCL.
+  localisation. Vicky is now pursuing a PhD at King's College London.
