@@ -12,22 +12,25 @@ sidebar:
 
 ## CBIO core
 
-- [**Laurent Gatto**](http://lgatto.github.io/about/), head of the
-  unit. He runs the CBIO group and teaches bioinformatics in the
-  Facutly of Pharmacy and Biomedical Sciences (FASB).
+- [**Laurent Gatto**](http://lgatto.github.io/about/) (Github:
+  [lgatto](https://github.com/lgatto/), Twitter
+  [@lgatt0](https://twitter.com/lgatt0)), head of the unit. He runs
+  the CBIO group and teaches bioinformatics in the Facutly of Pharmacy
+  and Biomedical Sciences (FASB).
 
-- **Axelle Loriot** is a senior researcher at the de Duve
-  Institute. Since 2001, she has been part of the epigenetics group
-  led by Charles De Smet. She joined the CBIO group in 2018, focusing
-  on transcriptomics and epigenetics. She developed algorithms to
-  identify aberrant transcripts induced by DNA hypomethylation in
-  tumor cells, and DNA hypermethylation events linked to overlapping
-  expression.
+- **Axelle Loriot** (Github: [aloriot](https://github.com/aloriot)) is
+  a senior researcher at the de Duve Institute. Since 2001, she has
+  been part of the epigenetics group led by Charles De Smet. She
+  joined the CBIO group in 2018, focusing on transcriptomics and
+  epigenetics. She developed algorithms to identify aberrant
+  transcripts induced by DNA hypomethylation in tumor cells, and DNA
+  hypermethylation events linked to overlapping expression.
 
-- **Theo Killian** is a bioinformatician and research programmer at
-  the de Duve Institute. Theo transitioned from biochemistry to
-  bioinformatics and has developed computational protein design
-  protocols at the KUL Biomolecular Modeling Lab.
+- **Theo Killian** (Github: [tfkillian](https://github.com/tfkillian))
+  is a bioinformatician and research programmer at the de Duve
+  Institute. Theo transitioned from biochemistry to bioinformatics and
+  has developed computational protein design protocols at the KUL
+  Biomolecular Modeling Lab.
 
 - **Christophe Vanderaa** is a PhD student working on single assay
   bioninformatics. He did a masters in biomedical sciences at the
