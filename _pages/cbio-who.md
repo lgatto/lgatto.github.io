@@ -17,8 +17,8 @@ sidebar:
   Facutly of Pharmacy and Biomedical Sciences (FASB).
 
 - **Axelle Loriot** is a senior researcher at the de Duve
-  Institute. Since 2001, she was part of the group of epigenetics led
-  by Charles De Smet. She recently shifted to bioinformatics, focusing
+  Institute. Since 2001, she has been part of the epigenetics group
+  led by Charles De Smet. She joined the CBIO group in 2018, focusing
   on transcriptomics and epigenetics. She developed algorithms to
   identify aberrant transcripts induced by DNA hypomethylation in
   tumor cells, and DNA hypermethylation events linked to overlapping
