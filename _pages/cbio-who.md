@@ -29,6 +29,19 @@ sidebar:
   bioinformatics and has developed computational protein design
   protocols at the KUL Biomolecular Modeling Lab.
 
+- **Christophe Vanderaa** is a PhD student working on single assay
+  bioninformatics. He did a masters in biomedical sciences at the
+  UCLouvain and followed up with a masters in bioinformatics at the
+  KULeuven. He is funded by the FNRS fellowship.
+
+- **Chong Tang** is a Phd student working on mass spectrometry-based
+  proteomics software development. He has a bachelor degree in
+  biotechnology from the Central South University of Forestry and
+  Technology in China and a masters in bioinformatics from
+  KULeuven. He is funded by the a China Scholarship Council - FNRS
+  scholarship.
+
+
 ## Remote members
 
 - [**Lisa Breckels**](https://lmsimp.github.io/), Post-Doctoral
