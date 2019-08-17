@@ -2,7 +2,7 @@
 permalink: /cbio-who/
 title: "Lab members"
 excerpt: "The team"
-modified: 2017-01-04
+modified: 2019-08-16
 author_profile: false
 sidebar:
   nav: "cbio"
@@ -32,12 +32,13 @@ sidebar:
   has developed computational protein design protocols at the KUL
   Biomolecular Modeling Lab.
 
-- **Christophe Vanderaa** is a PhD student working on single assay
-  bioninformatics. He did a masters in biomedical sciences at the
-  UCLouvain and followed up with a masters in bioinformatics at the
-  KULeuven. He is funded by the FNRS fellowship.
+- **Christophe Vanderaa** (Github:
+  [cvanderaa](https://github.com/cvanderaa) is a PhD student working
+  on single cell assay bioninformatics. He did a masters in biomedical
+  sciences at the UCLouvain and followed up with a masters in
+  bioinformatics at the KULeuven. He is funded by the FNRS fellowship.
 
-- **Chong Tang** is a Phd student working on mass spectrometry-based
+- **Chong Tang** is a PhD student working on mass spectrometry-based
   proteomics software development. He has a bachelor degree in
   biotechnology from the Central South University of Forestry and
   Technology in China and a masters in bioinformatics from
