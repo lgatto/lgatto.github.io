@@ -145,6 +145,7 @@ sidebar:
   data. Thomas is now a PhD student at Max Planck Institute of
   Molecular Plant Physiology.
 
-- **Vicky Butt**, Part III student in Systems Biology, applying
+- **Victoria Carr**, Part III student in Systems Biology, applying
   graph-based methods to study protein sub-cellular
-  localisation. Vicky is now pursuing a PhD at King's College London.
+  localisation. Victoria is now pursuing a PhD at King's College
+  London.
