@@ -41,12 +41,13 @@ sidebar:
   in bioinformatics at the KULeuven. He is funded by the FNRS
   fellowship.
 
-- **Chong Tang** is a PhD student working on mass spectrometry-based
-  proteomics software development. He has a bachelor degree in
-  biotechnology from the Central South University of Forestry and
-  Technology in China and a masters in bioinformatics from
-  KULeuven. He is funded by the a China Scholarship Council - FNRS
-  scholarship.
+- **Chong Tang** (ORCID:
+  [0000-0002-0482-8361](https://orcid.org/0000-0002-0482-8361) is a
+  PhD student working on mass spectrometry-based proteomics software
+  development. He has a bachelor degree in biotechnology from the
+  Central South University of Forestry and Technology in China and a
+  masters in bioinformatics from KULeuven. He is funded by the a China
+  Scholarship Council - FNRS scholarship.
 
 
 ## Remote members
