@@ -36,7 +36,7 @@ sidebar:
 - **Christophe Vanderaa** (ORCID:
   [0000-0001-7443-5427](https://orcid.org/0000-0001-7443-5427),
   Github: [cvanderaa](https://github.com/cvanderaa)) is a PhD student
-  working on single cell assay bioninformatics. He did a masters in
+  working on single cell assay bioinformatics. He did a masters in
   biomedical sciences at the UCLouvain and followed up with a masters
   in bioinformatics at the KULeuven. He is funded by the FNRS
   fellowship.
