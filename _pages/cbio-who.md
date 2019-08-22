@@ -12,8 +12,9 @@ sidebar:
 
 ## CBIO core
 
-- [**Laurent Gatto**](http://lgatto.github.io/about/) (Github:
-  [lgatto](https://github.com/lgatto/), Twitter
+- [**Laurent Gatto**](http://lgatto.github.io/about/) (ORCID:
+  [0000-0002-1520-2268](https://orcid.org/0000-0002-1520-2268),
+  Github: [lgatto](https://github.com/lgatto/), Twitter
   [@lgatt0](https://twitter.com/lgatt0)), head of the unit. He runs
   the CBIO group and teaches bioinformatics in the Facutly of Pharmacy
   and Biomedical Sciences (FASB).
@@ -32,11 +33,13 @@ sidebar:
   has developed computational protein design protocols at the KUL
   Biomolecular Modeling Lab.
 
-- **Christophe Vanderaa** (Github:
-  [cvanderaa](https://github.com/cvanderaa)) is a PhD student working
-  on single cell assay bioninformatics. He did a masters in biomedical
-  sciences at the UCLouvain and followed up with a masters in
-  bioinformatics at the KULeuven. He is funded by the FNRS fellowship.
+- **Christophe Vanderaa** (ORCID:
+  [0000-0001-7443-5427](https://orcid.org/0000-0001-7443-5427),
+  Github: [cvanderaa](https://github.com/cvanderaa)) is a PhD student
+  working on single cell assay bioninformatics. He did a masters in
+  biomedical sciences at the UCLouvain and followed up with a masters
+  in bioinformatics at the KULeuven. He is funded by the FNRS
+  fellowship.
 
 - **Chong Tang** is a PhD student working on mass spectrometry-based
   proteomics software development. He has a bachelor degree in
