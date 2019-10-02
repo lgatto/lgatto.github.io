@@ -48,6 +48,12 @@ sidebar:
   Central South University of Forestry and Technology in China and a
   masters in bioinformatics from KULeuven. He is funded by the a China
   Scholarship Council - FNRS scholarship.
+  
+- **Philippe Hauchamps** (Github: [phauchamps](https://github.com/phauchamps))
+  is a Master student in Biostatistics. He joined the CBIO lab in October 2019 
+  as an intern. He has a Master degree in Computer Science Engineering, has been
+  previously working in the banking sector and is currently transitioning to 
+  Bioinformatics/Biostatistics. 
 
 
 ## Remote members
