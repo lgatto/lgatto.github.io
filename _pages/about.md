@@ -175,7 +175,7 @@ Please do get in touch if you are interested in running workshops.
 Baers LL, Breckels LM, Mills LA, Gatto L, Deery M, Stevens TJ, Howe
 CH, Lilley KS, Lea-Smith DJ *Proteome mapping of a cyanobacterium
 reveals distinct compartment organisation and cell-dispersed
-metabolism*, Plant Phyliology 2019
+metabolism*, Plant Physiology 2019
 [https://doi.org/10.1104/pp.19.00897](https://doi.org/10.1104/pp.19.00897)
 
 Petyuk VA, Gatto L and Payne SH *Reproducibility and Transparency by
