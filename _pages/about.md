@@ -171,6 +171,13 @@ Please do get in touch if you are interested in running workshops.
 
 ### Research articles
 
+Oliver M. Crook, Laurent Gatto, Paul D. W. Kirk *Fast approximate
+inference for variable selection in Dirichlet process mixtures, with
+an application to pan-cancer proteomics* Statistical Applications in
+Genetics and Molecular Biology, Volume 18, Issue 6, 1544-6115 DOI:
+[10.1515/sagmb-2018-0065](https://doi.org/10.1515/sagmb-2018-0065)
+2019 (priginal pre-print:
+[arXiv:1810.05450](https://arxiv.org/abs/1810.05450)).
 
 Baers LL, Breckels LM, Mills LA, Gatto L, Deery M, Stevens TJ, Howe
 CH, Lilley KS, Lea-Smith DJ *Proteome mapping of a cyanobacterium
@@ -215,11 +222,6 @@ sciences*. Emerging Topics in Life Sciences, Dec 21, 2018, 2 (6)
 [10.1042/ETLS20180172](http://www.emergtoplifesci.org/content/2/6/775)
 (pre-print
 [doi:10.31219/osf.io/57hcs](https://doi.org/10.31219/osf.io/57hcs)).
-
-Oliver M. Crook, Laurent Gatto, Paul D. W. Kirk *Fast approximate
-inference for variable selection in Dirichlet process mixtures, with
-an application to pan-cancer proteomics*
-[arXiv:1810.05450](https://arxiv.org/abs/1810.05450) 2018.
 
 Aikaterini Geladaki, Nina Kocevar Britovsek, Lisa M. Breckels, Tom
 S. Smith, Claire M. Mulvey, Oliver M. Crook, Laurent Gatto, Kathryn
