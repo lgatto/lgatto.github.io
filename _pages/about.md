@@ -176,7 +176,7 @@ inference for variable selection in Dirichlet process mixtures, with
 an application to pan-cancer proteomics* Statistical Applications in
 Genetics and Molecular Biology, Volume 18, Issue 6, 1544-6115 DOI:
 [10.1515/sagmb-2018-0065](https://doi.org/10.1515/sagmb-2018-0065)
-2019 (priginal pre-print:
+2019 (pre-print:
 [arXiv:1810.05450](https://arxiv.org/abs/1810.05450)).
 
 Baers LL, Breckels LM, Mills LA, Gatto L, Deery M, Stevens TJ, Howe
