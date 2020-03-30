@@ -8,15 +8,15 @@ comments: true
 
 Teams is the institutional platform for online teaching. While it does
 need some polishing, it seems to do the job well (I have no experience
-with anything else to compare it against). It provides stable (poor
-wifi at home) and scaleable (up to 65 participants) participants.
+with anything else to compare it against). It provides stable (despite
+poor wifi at home) and scaleable (up to 65 participants) participants.
 
 The issues I have been experiencing are relatively minor: 
 
 - it doesn't seem to synchronise between apps (between Windows and
   Linux laptops in my case);
 - the chat slows down after 3 hours of usage with 60+ participants to
-  a point where it becomes difficult or even impossible to use - as a
+  a point where it becomes difficult or even impossible to use. As a
   work around, I am using a Google doc for students to type their
   questions and keep the chat for instant feedback (see below).
 
