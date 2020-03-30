@@ -4,6 +4,10 @@ tags: ["teaching", "reproducible research"]
 comments: true
 ---
 
+My notes about remote teaching
+
+<!--more-->
+
 ## Microsoft Teams
 
 Teams is the institutional platform for online teaching. While it does
