@@ -4,7 +4,7 @@ tags: ["teaching", "reproducible research"]
 comments: true
 ---
 
-My notes about remote teaching
+My (first) notes about remote teaching.
 
 <!--more-->
 
