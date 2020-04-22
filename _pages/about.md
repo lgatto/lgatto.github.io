@@ -196,8 +196,8 @@ mcp.IP119.001567;
 
 Crook OM, Breckels LM, Lilley KS, Kirk PDW and Gatto L (2019) *A
 Bioconductor workflow for the Bayesian analysis of spatial proteomics*
-[version 1; peer review: awaiting peer review]. F1000Research 2019,
-8:446
+[version 1; peer review: 1 approved, 2 approved with reservations]
+F1000Research 2019, 8:446
 [https://doi.org/10.12688/f1000research.18636.1](https://doi.org/10.12688/f1000research.18636.1).
 
 Crook OM, Lilley KS, Gatto L, Kirk PDW (2019). *Semi-Supervised
