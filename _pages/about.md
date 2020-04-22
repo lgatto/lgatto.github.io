@@ -171,6 +171,10 @@ Please do get in touch if you are interested in running workshops.
 
 ### Research articles
 
+Silverman EK *et al.*, *[Molecular networks in Network Medicine:
+Development and applications](https://dx.doi.org/10.1002/wsbm.1489),
+WIREs Systems Biology and Medecine, 2020.
+
 Oliver M. Crook, Laurent Gatto, Paul D. W. Kirk *Fast approximate
 inference for variable selection in Dirichlet process mixtures, with
 an application to pan-cancer proteomics* Statistical Applications in
