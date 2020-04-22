@@ -171,9 +171,9 @@ Please do get in touch if you are interested in running workshops.
 
 ### Research articles
 
-Silverman EK *et al.*, *[Molecular networks in Network Medicine:
-Development and applications](https://dx.doi.org/10.1002/wsbm.1489),
-WIREs Systems Biology and Medecine, 2020.
+Silverman EK *et al.*, *Molecular networks in Network Medicine:
+Development and applications*, WIREs Systems Biology and Medecine,
+2020 [10.1002/wsbm.1489](https://dx.doi.org/10.1002/wsbm.1489).
 
 Oliver M. Crook, Laurent Gatto, Paul D. W. Kirk *Fast approximate
 inference for variable selection in Dirichlet process mixtures, with
@@ -187,7 +187,7 @@ Baers LL, Breckels LM, Mills LA, Gatto L, Deery M, Stevens TJ, Howe
 CH, Lilley KS, Lea-Smith DJ *Proteome mapping of a cyanobacterium
 reveals distinct compartment organisation and cell-dispersed
 metabolism*, Plant Physiology 2019
-[https://doi.org/10.1104/pp.19.00897](https://doi.org/10.1104/pp.19.00897)
+[https://doi.org/10.1104/pp.19.00897](https://doi.org/10.1104/pp.19.00897).
 
 Petyuk VA, Gatto L and Payne SH *Reproducibility and Transparency by
 Design*, Molecular & Cellular Proteomics July 4, 2019,
