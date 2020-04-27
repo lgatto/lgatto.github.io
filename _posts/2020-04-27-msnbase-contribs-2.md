@@ -16,13 +16,13 @@ The figure below summarises the (updated) contributors over time.
 
 ![MSnbase contributors](/images/msnbase-contributors-2020.png)
 
-Since my first public commit on Mon 4 October 2010 at 23:35:23, the
-package benefited from contributions from Guangchuang Yu, Samuel
-Wieczorek, Cosmin Lazar, Vlad Petyuk, Thomas Naake, Sebastian Gibb
-(who have since become core developer/maintainer) Richie Cotton,
-Martina Fischer, Johannes Rainer (also a core developer/maintainer)
-and Arne Smits. Since earlier this year, there's now also Steffen
-Neuman.
+Since my first public commit on Mon 4 October 2010 at 23:35:23 (that's
+over 9.5 years), the package benefited from contributions from
+Guangchuang Yu, Samuel Wieczorek, Cosmin Lazar, Vlad Petyuk, Thomas
+Naake, Sebastian Gibb (who has since become core
+developer/maintainer), Richie Cotton, Martina Fischer, Johannes Rainer
+(also a core developer/maintainer) and Arne Smits. Since earlier this
+year, there's now also Steffen Neuman.
 
 ### Steffen Neumann
 
