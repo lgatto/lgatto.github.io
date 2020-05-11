@@ -171,11 +171,20 @@ Please do get in touch if you are interested in running workshops.
 
 ### Research articles
 
+Gatto L, Gibb S, Rainer J *MSnbase, efficient and elegant R-based
+processing and visualisation of raw mass spectrometry data* bioRxiv
+2020.04.29.067868; doi: https://doi.org/10.1101/2020.04.29.067868
+
+Crook OM, Geladaki A, Nightingale DJH, Vennard O, Lilley KS, Gatto L,
+Kirk PDW *A semi-supervised Bayesian approach for simultaneous protein
+sub-cellular localisation assignment and novelty detection* bioRxiv
+2020.05.05.078345; doi: https://doi.org/10.1101/2020.05.05.078345
+
 Silverman EK *et al.*, *Molecular networks in Network Medicine:
 Development and applications*, WIREs Systems Biology and Medecine,
 2020 [10.1002/wsbm.1489](https://dx.doi.org/10.1002/wsbm.1489).
 
-Oliver M. Crook, Laurent Gatto, Paul D. W. Kirk *Fast approximate
+Crook PM, Gatto L, Kirk PDW *Fast approximate
 inference for variable selection in Dirichlet process mixtures, with
 an application to pan-cancer proteomics* Statistical Applications in
 Genetics and Molecular Biology, Volume 18, Issue 6, 1544-6115 DOI:
