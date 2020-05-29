@@ -79,6 +79,16 @@ sidebar:
   the theoretical foundations and implementing the algorithms that
   will be included in [`pRoloc`](https://lgatto.github.io/pRoloc/).
 
+- **Aayush Grover** (ORCID:
+  [0000-0002-3716-2850](https://orcid.org/0000-0002-3716-2850),
+  Github: [AayushGrover](https://github.com/AayushGrover)) is a
+  research intern at the CBIO lab. He has a bachelor's degree in
+  Computer Science Engineering and is currently pursuing his Master's
+  degree in Data Science from the International Institute of
+  Information Technology Bangalore (India). He is currently working on
+  predicting protein subcellular location using deep learning
+  techniques.
+
 ## [R for Mass Spectrometry](https://www.rformassspectrometry.org/) core team
 
 - [**Sebastian Gibb**](http://sebastiangibb.de/), Department of
