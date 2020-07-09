@@ -622,6 +622,10 @@ spectrometry and proteomics.
 
 This is an incomplete list of talks I have given in the past.
 
+[Probabilistic mapping of the sub-cellular
+proteome](http://bit.ly/ABLS2020), VIB Applied Bioinformatics in Life
+Sciences (3rd edition), 13-14 February 2020, Leuven Belgium.
+
 Talk at the Belgian Biophysical Society Symposium [Protein folding and
 stability](https://www.sciences.uliege.be/cms/c_4944765/en/protein-folding-and-stability),
 30 August 2019, Liège.
