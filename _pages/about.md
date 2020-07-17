@@ -622,20 +622,31 @@ spectrometry and proteomics.
 
 This is an incomplete list of talks I have given in the past.
 
+[MSnbase, efficient and elegant R-based processing and visualisation
+of raw mass spectrometry
+data](https://lgatto.github.io/2020_07_15_ISMB/), ISCB ISMB 2020
+virtual conference, 15 July 2020.
+
+[MSnbase design principles and code
+walk](https://lgatto.github.io/2020_05_07_MayInstitute/), Online May
+Institute for Computation and statistics for mass spectrometry and
+proteomics, 7 May 2020.
+
 [Probabilistic mapping of the sub-cellular
 proteome](http://bit.ly/ABLS2020), VIB Applied Bioinformatics in Life
 Sciences (3rd edition), 13-14 February 2020, Leuven Belgium.
 
-Talk at the Belgian Biophysical Society Symposium [Protein folding and
+Invited talk at the Belgian Biophysical Society Symposium [Protein
+folding and
 stability](https://www.sciences.uliege.be/cms/c_4944765/en/protein-folding-and-stability),
 30 August 2019, Liège.
 
-Talk at the *The Alan Turing Institute Workshop on Statistical Data
-Science for Proteomics and Metabolomics*, 13th June 2019.
+Invited talk at the *The Alan Turing Institute Workshop on Statistical
+Data Science for Proteomics and Metabolomics*, 13th June 2019.
 
-Talk at the [International Society for Clinical Biostatistics BePA
-mini-symposium](https://kuleuvencongres.be/iscb40) at the KULeuven, 18
-July 2019.
+Invited talk at the [International Society for Clinical Biostatistics
+BePA mini-symposium](https://kuleuvencongres.be/iscb40) at the
+KULeuven, 18 July 2019.
 
 [Becoming a better scientist with open and reproducible
 research](https://lgatto.github.io/rr-publ/), *Are you ready for
