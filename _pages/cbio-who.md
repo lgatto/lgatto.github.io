@@ -27,12 +27,6 @@ sidebar:
   transcripts induced by DNA hypomethylation in tumor cells, and DNA
   hypermethylation events linked to overlapping expression.
 
-- **Theo Killian** (Github: [tfkillian](https://github.com/tfkillian))
-  is a bioinformatician and research programmer at the de Duve
-  Institute. Theo transitioned from biochemistry to bioinformatics and
-  has developed computational protein design protocols at the KUL
-  Biomolecular Modeling Lab.
-
 - **Christophe Vanderaa** (ORCID:
   [0000-0001-7443-5427](https://orcid.org/0000-0001-7443-5427),
   Github: [cvanderaa](https://github.com/cvanderaa)) is a PhD student
@@ -49,12 +43,12 @@ sidebar:
   Central South University of Forestry and Technology in China and a
   masters in bioinformatics from KULeuven. He is funded by a China
   Scholarship Council - FNRS scholarship.
-  
+
 - **Philippe Hauchamps** (Github: [phauchamps](https://github.com/phauchamps))
-  is a Master student in Biostatistics. He joined the CBIO lab in October 2019 
+  is a Master student in Biostatistics. He joined the CBIO lab in October 2019
   as an intern. He has a Master degree in Computer Science Engineering, has been
-  previously working in the banking sector and is currently transitioning to 
-  Bioinformatics/Biostatistics. 
+  previously working in the banking sector and is currently transitioning to
+  Bioinformatics/Biostatistics.
 
 
 ## Remote members
@@ -150,6 +144,12 @@ sidebar:
   quantitative proteomics data.
 
 ## Alumni
+
+- [**Theo Killian**](https://github.com/tfkillian) was a
+  bioinformatician and research programmer in the group. Theo
+  developes and maintains the
+  [depmap](http://bioconductor.org/packages/release/data/experiment/html/depmap.html)
+  package.
 
 - [**Robin Kohze**](https://github.com/Kohze) comes from the Radboud
   University Nijmegen and visits the group in the frame of his
