@@ -176,14 +176,25 @@ Properties Impair Erythrocyte Morphology and Functionality in
 Elliptocytosis](https://www.mdpi.com/2218-273X/10/8/1120),
 Biomolecules 2020, 10(8), 1120; doi:10.3390/biom10081120.
 
-Silverman EK *et al.*, *[Molecular networks in Network Medicine:
-Development and applications](https://dx.doi.org/10.1002/wsbm.1489),
-WIREs Systems Biology and Medecine, 2020.
+Gatto L, Gibb S, Rainer J *MSnbase, efficient and elegant R-based
+processing and visualisation of raw mass spectrometry data* bioRxiv
+2020.04.29.067868; doi:
+[https://doi.org/10.1101/2020.04.29.067868](https://doi.org/10.1101/2020.04.29.067868).
 
-Oliver M. Crook, Laurent Gatto, Paul D. W. Kirk *Fast approximate
-inference for variable selection in Dirichlet process mixtures, with
-an application to pan-cancer proteomics* Statistical Applications in
-Genetics and Molecular Biology, Volume 18, Issue 6, 1544-6115 DOI:
+Crook OM, Geladaki A, Nightingale DJH, Vennard O, Lilley KS, Gatto L,
+Kirk PDW *A semi-supervised Bayesian approach for simultaneous protein
+sub-cellular localisation assignment and novelty detection* bioRxiv
+2020.05.05.078345; doi:
+[https://doi.org/10.1101/2020.05.05.078345](https://doi.org/10.1101/2020.05.05.078345).
+
+Silverman EK *et al.*, *Molecular networks in Network Medicine:
+Development and applications*, WIREs Systems Biology and Medecine,
+2020 [10.1002/wsbm.1489](https://dx.doi.org/10.1002/wsbm.1489).
+
+Crook PM, Gatto L, Kirk PDW *Fast approximate inference for variable
+selection in Dirichlet process mixtures, with an application to
+pan-cancer proteomics* Statistical Applications in Genetics and
+Molecular Biology, Volume 18, Issue 6, 1544-6115 DOI:
 [10.1515/sagmb-2018-0065](https://doi.org/10.1515/sagmb-2018-0065)
 2019 (pre-print:
 [arXiv:1810.05450](https://arxiv.org/abs/1810.05450)).
@@ -192,7 +203,7 @@ Baers LL, Breckels LM, Mills LA, Gatto L, Deery M, Stevens TJ, Howe
 CH, Lilley KS, Lea-Smith DJ *Proteome mapping of a cyanobacterium
 reveals distinct compartment organisation and cell-dispersed
 metabolism*, Plant Physiology 2019
-[https://doi.org/10.1104/pp.19.00897](https://doi.org/10.1104/pp.19.00897)
+[https://doi.org/10.1104/pp.19.00897](https://doi.org/10.1104/pp.19.00897).
 
 Petyuk VA, Gatto L and Payne SH *Reproducibility and Transparency by
 Design*, Molecular & Cellular Proteomics July 4, 2019,
@@ -201,8 +212,8 @@ mcp.IP119.001567;
 
 Crook OM, Breckels LM, Lilley KS, Kirk PDW and Gatto L (2019) *A
 Bioconductor workflow for the Bayesian analysis of spatial proteomics*
-[version 1; peer review: awaiting peer review]. F1000Research 2019,
-8:446
+[version 1; peer review: 1 approved, 2 approved with reservations]
+F1000Research 2019, 8:446
 [https://doi.org/10.12688/f1000research.18636.1](https://doi.org/10.12688/f1000research.18636.1).
 
 Crook OM, Lilley KS, Gatto L, Kirk PDW (2019). *Semi-Supervised
@@ -616,16 +627,31 @@ spectrometry and proteomics.
 
 This is an incomplete list of talks I have given in the past.
 
-Talk at the Belgian Biophysical Society Symposium [Protein folding and
+[MSnbase, efficient and elegant R-based processing and visualisation
+of raw mass spectrometry
+data](https://lgatto.github.io/2020_07_15_ISMB/), ISCB ISMB 2020
+virtual conference, 15 July 2020.
+
+[MSnbase design principles and code
+walk](https://lgatto.github.io/2020_05_07_MayInstitute/), Online May
+Institute for Computation and statistics for mass spectrometry and
+proteomics, 7 May 2020.
+
+[Probabilistic mapping of the sub-cellular
+proteome](http://bit.ly/ABLS2020), VIB Applied Bioinformatics in Life
+Sciences (3rd edition), 13-14 February 2020, Leuven Belgium.
+
+Invited talk at the Belgian Biophysical Society Symposium [Protein
+folding and
 stability](https://www.sciences.uliege.be/cms/c_4944765/en/protein-folding-and-stability),
 30 August 2019, Liège.
 
-Talk at the *The Alan Turing Institute Workshop on Statistical Data
-Science for Proteomics and Metabolomics*, 13th June 2019.
+Invited talk at the *The Alan Turing Institute Workshop on Statistical
+Data Science for Proteomics and Metabolomics*, 13th June 2019.
 
-Talk at the [International Society for Clinical Biostatistics BePA
-mini-symposium](https://kuleuvencongres.be/iscb40) at the KULeuven, 18
-July 2019.
+Invited talk at the [International Society for Clinical Biostatistics
+BePA mini-symposium](https://kuleuvencongres.be/iscb40) at the
+KULeuven, 18 July 2019.
 
 [Becoming a better scientist with open and reproducible
 research](https://lgatto.github.io/rr-publ/), *Are you ready for

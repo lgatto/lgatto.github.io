@@ -38,15 +38,16 @@ sidebar:
   Github: [cvanderaa](https://github.com/cvanderaa)) is a PhD student
   working on single cell assay bioinformatics. He did a masters in
   biomedical sciences at the UCLouvain and followed up with a masters
-  in bioinformatics at the KULeuven. He is funded by the FNRS
+  in bioinformatics at the KULeuven. He is funded by a FNRS
   fellowship.
 
 - **Chong Tang** (ORCID:
-  [0000-0002-0482-8361](https://orcid.org/0000-0002-0482-8361) is a
-  PhD student working on mass spectrometry-based proteomics software
+  [0000-0002-0482-8361](https://orcid.org/0000-0002-0482-8361),
+  Github: [plantton](https://github.com/plantton)) is a PhD student
+  working on mass spectrometry-based proteomics software
   development. He has a bachelor degree in biotechnology from the
   Central South University of Forestry and Technology in China and a
-  masters in bioinformatics from KULeuven. He is funded by the a China
+  masters in bioinformatics from KULeuven. He is funded by a China
   Scholarship Council - FNRS scholarship.
   
 - **Philippe Hauchamps** (Github: [phauchamps](https://github.com/phauchamps))
@@ -78,7 +79,17 @@ sidebar:
   the theoretical foundations and implementing the algorithms that
   will be included in [`pRoloc`](https://lgatto.github.io/pRoloc/).
 
-## `MSnbase` developers
+- **Aayush Grover** (ORCID:
+  [0000-0002-3716-2850](https://orcid.org/0000-0002-3716-2850),
+  Github: [AayushGrover](https://github.com/AayushGrover)) is a
+  research intern at the CBIO lab. He has a bachelor's degree in
+  Computer Science Engineering and is currently pursuing his Master's
+  degree in Data Science from the International Institute of
+  Information Technology Bangalore (India). He is currently working on
+  predicting protein subcellular location using deep learning
+  techniques.
+
+## [R for Mass Spectrometry](https://www.rformassspectrometry.org/) core team
 
 - [**Sebastian Gibb**](http://sebastiangibb.de/), Department of
   Anesthesiology and Intensive Care, University Medicine Greifswald,
