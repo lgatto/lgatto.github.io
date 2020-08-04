@@ -146,8 +146,8 @@ sidebar:
 ## Alumni
 
 - [**Theo Killian**](https://github.com/tfkillian) was a
-  bioinformatician and research programmer in the group. Theo
-  developes and maintains the
+  bioinformatician and research programmer in the CBIO group at the de
+  Duve Institute. Theo developes and maintains the
   [depmap](http://bioconductor.org/packages/release/data/experiment/html/depmap.html)
   package.
 
