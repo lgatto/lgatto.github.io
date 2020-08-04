@@ -171,6 +171,11 @@ Please do get in touch if you are interested in running workshops.
 
 ### Research articles
 
+Pollet H *et al.*, [Aberrant Membrane Composition and Biophysical
+Properties Impair Erythrocyte Morphology and Functionality in
+Elliptocytosis](https://www.mdpi.com/2218-273X/10/8/1120),
+Biomolecules 2020, 10(8), 1120; doi:10.3390/biom10081120.
+
 Silverman EK *et al.*, *[Molecular networks in Network Medicine:
 Development and applications](https://dx.doi.org/10.1002/wsbm.1489),
 WIREs Systems Biology and Medecine, 2020.
