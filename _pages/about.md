@@ -171,10 +171,10 @@ Please do get in touch if you are interested in running workshops.
 
 ### Research articles
 
-Pollet H *et al.*, [Aberrant Membrane Composition and Biophysical
+Pollet H *et al.*, Aberrant Membrane Composition and Biophysical
 Properties Impair Erythrocyte Morphology and Functionality in
-Elliptocytosis](https://www.mdpi.com/2218-273X/10/8/1120),
-Biomolecules 2020, 10(8), 1120; doi:10.3390/biom10081120.
+Elliptocytosis, Biomolecules 2020, 10(8), 1120;
+[https://doi.org/10.3390/biom10081120](https://www.mdpi.com/2218-273X/10/8/1120).
 
 Gatto L, Gibb S, Rainer J *MSnbase, efficient and elegant R-based
 processing and visualisation of raw mass spectrometry data* bioRxiv
