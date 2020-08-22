@@ -627,6 +627,11 @@ spectrometry and proteomics.
 
 This is an incomplete list of talks I have given in the past.
 
+[Standardised and reproducible analysis of mass spectrometry-based
+single-cell proteomics data](http://bit.ly/2020SCP), [Single Cell
+Proteomics meeting](http://single-cell.net/proteomics/scp2020), 18
+August 2020.
+
 [MSnbase, efficient and elegant R-based processing and visualisation
 of raw mass spectrometry
 data](https://lgatto.github.io/2020_07_15_ISMB/), ISCB ISMB 2020
