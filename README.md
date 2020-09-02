@@ -1,6 +1,6 @@
 My [homepage](https://lgatto.github.io/about) and
 [blog](https://lgatto.github.io/year-archive/). Also hosts the
-[Computational Proteomics Unit's web presence](https://lgatto.github.io/cpu-lab/).
+[Computational Biology Unit's web presence](https://lgatto.github.io/cbio-lab/).
 
 All content, unless explicitly stated, is published under a
 [CC-BY](http://creativecommons.org/licenses/by/4.0/) license. You are
