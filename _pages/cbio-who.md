@@ -50,6 +50,17 @@ sidebar:
   previously working in the banking sector and is currently transitioning to
   Bioinformatics/Biostatistics.
 
+- **Manon Martin** (ORCID:
+  [0000-0003-4800-0942](https://orcid.org/0000-0003-4800-0942), 
+  Github: [ManonMartin](https://github.com/ManonMartin)) is a research assistant 
+  in bioinformatics with a focus on transcriptomics and other omics data analysis. 
+  She joined the CBIO group in September 2020 and holds a PhD is biostatistics. 
+  During her thesis, she worked on several aspects of NMR metabolomics 
+  data treatment, mostly based on multivariate data analysis.
+
+- **Manojkumar Selvaraju** (ORCID:
+  [0000-0001-6439-5652](https://orcid.org/0000-0001-6439-5652), 
+  Github: [manogenome](https://github.com/manogenome), Twitter: [manogenome](https://twitter.com/manogenome)) is a PhD student working on the Bioconductor infrastructure for the integration of genomics, transcriptomics and proteomics data. He joined the CBIO group in September 2020 and holds an Engineering degree in Industrial Biotechnology from A.C.Tech, Anna University, Chennai. Previously, he worked as a Bioinformatician for several years at the academia-industry interface. He is funded by the de Duve Institute's doctoral scholarship.
 
 ## Remote members
 
