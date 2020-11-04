@@ -2,7 +2,7 @@
 permalink: /cbio-who/
 title: "Lab members"
 excerpt: "The team"
-modified: 2019-08-16
+modified: 2019-11-04
 author_profile: false
 sidebar:
   nav: "cbio"
