@@ -26,6 +26,14 @@ sidebar:
   epigenetics. She developed algorithms to identify aberrant
   transcripts induced by DNA hypomethylation in tumor cells, and DNA
   hypermethylation events linked to overlapping expression.
+  
+- **Manon Martin** (ORCID:
+  [0000-0003-4800-0942](https://orcid.org/0000-0003-4800-0942), 
+  Github: [ManonMartin](https://github.com/ManonMartin)) is a research assistant 
+  in bioinformatics with a focus on transcriptomics and other omics data analysis. 
+  She joined the CBIO group in September 2020 and holds a PhD is biostatistics. 
+  During her thesis, she worked on several aspects of NMR metabolomics 
+  data treatment, mostly based on multivariate data analysis.
 
 - **Christophe Vanderaa** (ORCID:
   [0000-0001-7443-5427](https://orcid.org/0000-0001-7443-5427),
@@ -44,55 +52,35 @@ sidebar:
   masters in bioinformatics from KULeuven. He is funded by a China
   Scholarship Council - FNRS scholarship.
 
+- **Manojkumar Selvaraju** (ORCID:
+  [0000-0001-6439-5652](https://orcid.org/0000-0001-6439-5652),
+  Github: [manogenome](https://github.com/manogenome), Twitter:
+  [manogenome](https://twitter.com/manogenome)) is a PhD student
+  working on the Bioconductor infrastructure for the integration of
+  genomics, transcriptomics and proteomics data. He joined the CBIO
+  group in September 2020 and holds an Engineering degree in
+  Industrial Biotechnology from A.C.Tech, Anna University,
+  Chennai. Previously, he worked as a Bioinformatician for several
+  years at the academia-industry interface. He is funded by the de
+  Duve Institute's doctoral scholarship.
+
 - **Philippe Hauchamps** (Github: [phauchamps](https://github.com/phauchamps))
   is a Master student in Biostatistics. He joined the CBIO lab in October 2019
   as an intern. He has a Master degree in Computer Science Engineering, has been
   previously working in the banking sector and is currently transitioning to
   Bioinformatics/Biostatistics.
 
-- **Manon Martin** (ORCID:
-  [0000-0003-4800-0942](https://orcid.org/0000-0003-4800-0942), 
-  Github: [ManonMartin](https://github.com/ManonMartin)) is a research assistant 
-  in bioinformatics with a focus on transcriptomics and other omics data analysis. 
-  She joined the CBIO group in September 2020 and holds a PhD is biostatistics. 
-  During her thesis, she worked on several aspects of NMR metabolomics 
-  data treatment, mostly based on multivariate data analysis.
-
-- **Manojkumar Selvaraju** (ORCID:
-  [0000-0001-6439-5652](https://orcid.org/0000-0001-6439-5652), 
-  Github: [manogenome](https://github.com/manogenome), Twitter: [manogenome](https://twitter.com/manogenome)) is a PhD student working on the Bioconductor infrastructure for the integration of genomics, transcriptomics and proteomics data. He joined the CBIO group in September 2020 and holds an Engineering degree in Industrial Biotechnology from A.C.Tech, Anna University, Chennai. Previously, he worked as a Bioinformatician for several years at the academia-industry interface. He is funded by the de Duve Institute's doctoral scholarship.
-
 ## Remote members
-
-- [**Lisa Breckels**](https://lmsimp.github.io/), Post-Doctoral
-  Research Associa in the Cambridge Centre for Proteomics, at the
-  University of Cambridge (UK). Her work focuses on the application
-  and development of machine learning and pattern recognition methods
-  to enable robust analysis of high-throughput quantitative proteomics
-  data.  All her methods and algorithms form part of the
-  [`pRoloc`](http://bioconductor.org/packages/pRoloc) framework for
-  protein localisation prediction.
-
-- [**Oliver Crook**](https://olivercrook.co.uk/) is a Wellcome Trust
-  PhD student at the University of Cambridge, jointly supervised with
-  [Paul
-  Kirk](http://www.mrc-bsu.cam.ac.uk/people/in-alphabetical-order/h-to-m/paul-kirk/)
-  from MRC Biostatistics Unit and [Kathryn
-  Lilley](http://www.bioc.cam.ac.uk/people/uto/lilley). Olly works on
-  new Bayesian methods for spatial proteomics ([Crook *et al.*
-  2018](https://doi.org/10.1371/journal.pcbi.1006516)), formalising
-  the theoretical foundations and implementing the algorithms that
-  will be included in [`pRoloc`](https://lgatto.github.io/pRoloc/).
 
 - **Aayush Grover** (ORCID:
   [0000-0002-3716-2850](https://orcid.org/0000-0002-3716-2850),
-  Github: [AayushGrover](https://github.com/AayushGrover)) is a
-  research intern at the CBIO lab. He has a bachelor's degree in
-  Computer Science Engineering and is currently pursuing his Master's
-  degree in Data Science from the International Institute of
-  Information Technology Bangalore (India). He is currently working on
-  predicting protein subcellular location using deep learning
-  techniques.
+  Github: [AayushGrover](https://github.com/AayushGrover)) is a Master
+  student the CBIO lab. He pursuing am Integrated Masters program at
+  International Institute of Information Technology Bangalore,
+  India. His research focuses on Artificial Intelligence, Machine
+  Learning in Healthcare. He worked on predicting protein subcellular
+  location using deep learning techniques during his internship and is
+  now focusing in the multi-omics integration is cancer.
 
 ## [R for Mass Spectrometry](https://www.rformassspectrometry.org/) core team
 
@@ -156,11 +144,35 @@ sidebar:
 
 ## Alumni
 
+- [**Oliver Crook**](https://olivercrook.co.uk/), was a Wellcome Trust
+  PhD student at the University of Cambridge, jointly supervised with
+  [Paul
+  Kirk](http://www.mrc-bsu.cam.ac.uk/people/in-alphabetical-order/h-to-m/paul-kirk/)
+  from MRC Biostatistics Unit and [Kathryn
+  Lilley](http://www.bioc.cam.ac.uk/people/uto/lilley). Olly worked on
+  new Bayesian methods for spatial proteomics (see for example [Crook
+  *et al.* 2018](https://doi.org/10.1371/journal.pcbi.1006516)),
+  formalising the theoretical foundations and implementing the
+  algorithms in the [`pRoloc`](https://lgatto.github.io/pRoloc/)
+  package. He is now pursuing post-doctoral research at the [Protein
+  Informatics Group](http://opig.stats.ox.ac.uk/) in the Department of
+  Statistics at the University of Oxford.
+
+- [**Lisa Breckels**](https://lmsimp.github.io/), Post-Doctoral
+  Research Associa in the Cambridge Centre for Proteomics, at the
+  University of Cambridge (UK). Her work focuses on the application
+  and development of machine learning and pattern recognition methods
+  to enable robust analysis of high-throughput quantitative proteomics
+  data.  All her methods and algorithms form part of the
+  [`pRoloc`](http://bioconductor.org/packages/pRoloc) framework for
+  protein localisation prediction.
+
 - [**Theo Killian**](https://github.com/tfkillian) was a
   bioinformatician and research programmer in the CBIO group at the de
   Duve Institute. Theo developes and maintains the
   [depmap](http://bioconductor.org/packages/release/data/experiment/html/depmap.html)
-  package.
+  package. He now works as a Bioinformatics scientist at the
+  Laboratory of Translational Genetics at the KULeuven.
 
 - [**Robin Kohze**](https://github.com/Kohze) comes from the Radboud
   University Nijmegen and visits the group in the frame of his
@@ -174,10 +186,11 @@ sidebar:
   first version of
   [`pRolocGUI`](https://bioconductor.org/packages/release/bioc/html/pRolocGUI.html),
   an interactive visualisation tools for organelle proteomics
-  data. Thomas is now a PhD student at Max Planck Institute of
+  data. Thomas has since earner a PhD from the Max Planck Institute of
   Molecular Plant Physiology.
 
 - **Victoria Carr**, Part III student in Systems Biology, applying
   graph-based methods to study protein sub-cellular
-  localisation. Victoria is now pursuing a PhD at King's College
-  London.
+  localisation. Vicky went on doing a PhD at King's College London and
+  is now working as a Scientific Programmer in the Pathogen
+  Informatics Unit at the Wellcome Sanger Institute.
