@@ -181,16 +181,16 @@ sidebar:
   PhD in the Department of Genetics at the University of Cambridge,
   UK.
 
-- **Thomas Naake**, visited the group in Spring 2014 as an ERASMUS
-  student affiliated to the University of Freiburg. He developed the
-  first version of
+- **Thomas Naake**, visited the group in Cambridge in Spring 2014 as
+  an ERASMUS student affiliated to the University of Freiburg. He
+  developed the first version of
   [`pRolocGUI`](https://bioconductor.org/packages/release/bioc/html/pRolocGUI.html),
   an interactive visualisation tools for organelle proteomics
   data. Thomas has since earner a PhD from the Max Planck Institute of
   Molecular Plant Physiology.
 
-- **Victoria Carr**, Part III student in Systems Biology, applying
-  graph-based methods to study protein sub-cellular
-  localisation. Vicky went on doing a PhD at King's College London and
-  is now working as a Scientific Programmer in the Pathogen
-  Informatics Unit at the Wellcome Sanger Institute.
+- **Victoria Carr**, was Part III student in Systems Biology at the
+  University of Cambridge, applying graph-based methods to study
+  protein sub-cellular localisation. Vicky went on doing a PhD at
+  King's College London and is now working as a Scientific Programmer
+  in the Pathogen Informatics Unit at the Wellcome Sanger Institute.
