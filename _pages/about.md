@@ -145,8 +145,8 @@ My current course at the UCLouvain are
 
 - [Introduction to bioinformatics](http://bit.ly/WSBIM1207) (since 2018)
 - [Eléments de statistiques médicales](https://uclouvain.be/cours-2018-wmds1114.html) (since 2018)
-- Bioinformatics (starting 2019)
-- Omics data analysis (starting 2019)
+- [Bioinformatics](http://bit.ly/WSBIM1322) (since 2019)
+- [Omics data analysis](http://bit.ly/WSBIM2122) (since 2019)
 
 Over the years I have been involved in many teaching activities,
 ranging from beginners and advanced R courses,
