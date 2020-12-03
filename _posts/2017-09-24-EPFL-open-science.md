@@ -192,9 +192,9 @@ socio-cultural and political.
 
 While it is important to identify why open can look dangerous to some,
 I don't want to spent too much time discussing these points. See Jon
-Tennant's recent presentation about
-[*Barriers to Open Science for junior researchers*](https://doi.org/10.6084/m9.figshare.5383711.v1.)  on
-figshare for more details.
+Tennant's recent presentation about [*Barriers to Open Science for
+junior researchers*](https://doi.org/10.6084/m9.figshare.5383711.v1)
+on figshare for more details.
 
 The important message at this point is that, many if not all of these
 fears are only *perceived* risks. Let's move on to why ECRs should
