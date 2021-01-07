@@ -171,6 +171,11 @@ Please do get in touch if you are interested in running workshops.
 
 ### Research articles
 
+Crook OM, Davies CTR, Gatto L, Kirk PDW, Lilley KS *Inferring
+differential subcellular localisation in comparative spatial
+proteomics using BANDLE* bioRxiv
+[https://doi.org/10.1101/2021.01.04.425239](https://doi.org/10.1101/2021.01.04.425239).
+
 Crook OM, Geladaki A, Nightingale DJH, Vennard O, Lilley KS, Gatto L,
 Kirk PDW *A semi-supervised Bayesian approach for simultaneous protein
 sub-cellular localisation assignment and novelty detection* PLOS
