@@ -57,12 +57,19 @@ experience for everyone, and we expect cooperation from all members to
 help ensuring a safe environment for everybody. See the [Code of
 conduct](https://lgatto.github.io/cbio-coc/) page for a longer version.
 
-<!-- # Funding -->
+# Funding
 
 <!-- Since 2010, we have benefited from the financial support from the -->
 <!-- **BBSRC**, the **7th Framework Programme of the European Union** -->
 <!-- (Contract no. 262067 [PRIME-XS](http://www.primexs.eu/)) and the -->
 <!-- **Wellcome Trust**. -->
+
+The CBIO lab benefits from funding from
+
+- The [de Duve Institute](https://www.deduveinstitute.be/).
+- The [National Fund for Scientific Research](https://www.frs-fnrs.be/fr/) (FNRS).
+- The [Research Foundation – Flanders](https://www.fwo.be/) (FWO).
+
 
 # Contact
 
