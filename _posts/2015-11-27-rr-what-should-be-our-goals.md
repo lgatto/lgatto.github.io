@@ -28,6 +28,11 @@ V. Stodden and R. Peng.
 review of *Terminologies for Reproducible Research* by Lorena
 A. Barba.
 
+**Update** (2021-01-18): In [this
+article](https://www.authorea.com/doi/full/10.22541/au.161048759.92883332/v1)
+Lorena Barba narrates "the history of the reproducibility terminology
+mixup, and the steps that led to the reversal of the ACM definitions".
+
 The following nomenclature is based on a talk by
 [Carol Gobble](https://sites.google.com/site/carolegoble/) at the
 Software Sustainability Collaborative Workshop in 2014. Here is a list
