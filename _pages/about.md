@@ -171,7 +171,7 @@ Please do get in touch if you are interested in running workshops.
 
 ### Research articles
 
-Christophe Vanderaa, Laurent Gatto *Utilizing Scp for the analysis and
+Christophe Vanderaa, Laurent Gatto *Utilizing `scp` for the analysis and
 replication of single-cell proteomics data* bioRxiv 2021.04.12.439408;
 doi:
 [https://doi.org/10.1101/2021.04.12.439408](https://doi.org/10.1101/2021.04.12.439408)
