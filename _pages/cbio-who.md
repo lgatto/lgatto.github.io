@@ -78,7 +78,7 @@ sidebar:
   and is co-supervised by Axelle.
 
 - **Kilian Maes** (Github:
-  [KilianMaes[(https://github.com/KilianMaes)) is master student
+  [KilianMaes](https://github.com/KilianMaes)) is master student
   finishing his degree in software engineering. He is working on the
   clustering of mass spectrometry data. He is co-supervised by [Prof
   Pierre Dupont](https://www.info.ucl.ac.be/~pdupont/) from the
