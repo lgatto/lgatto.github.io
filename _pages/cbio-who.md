@@ -26,13 +26,13 @@ sidebar:
   epigenetics. She developed algorithms to identify aberrant
   transcripts induced by DNA hypomethylation in tumor cells, and DNA
   hypermethylation events linked to overlapping expression.
-  
+
 - **Manon Martin** (ORCID:
-  [0000-0003-4800-0942](https://orcid.org/0000-0003-4800-0942), 
-  Github: [ManonMartin](https://github.com/ManonMartin)) is a research assistant 
-  in bioinformatics with a focus on transcriptomics and other omics data analysis. 
-  She joined the CBIO group in September 2020 and holds a PhD is biostatistics. 
-  During her thesis, she worked on several aspects of NMR metabolomics 
+  [0000-0003-4800-0942](https://orcid.org/0000-0003-4800-0942),
+  Github: [ManonMartin](https://github.com/ManonMartin)) is a research assistant
+  in bioinformatics with a focus on transcriptomics and other omics data analysis.
+  She joined the CBIO group in September 2020 and holds a PhD is biostatistics.
+  During her thesis, she worked on several aspects of NMR metabolomics
   data treatment, mostly based on multivariate data analysis.
 
 - **Christophe Vanderaa** (ORCID:
@@ -69,6 +69,26 @@ sidebar:
   as an intern. He has a Master degree in Computer Science Engineering, has been
   previously working in the banking sector and is currently transitioning to
   Bioinformatics/Biostatistics.
+
+- **Julie Devis** (Github:
+  [JulieDevis](https://github.com/JulieDevis)) is a master student in
+  biomedical sciences. She is working on deciphering complex
+  mechanisms of epigenetic alterations in cancer genomes. She is
+  pursuing her research in collaboration with the epigenetics group
+  and is co-supervised by Axelle.
+
+- **Kilian Maes** (Github:
+  [KilianMaes[(https://github.com/KilianMaes)) is master student
+  finishing his degree in software engineering. He is working on the
+  clustering of mass spectrometry data. He is co-supervised by [Prof
+  Pierre Dupont](https://www.info.ucl.ac.be/~pdupont/) from the
+  Machine Learning Group.
+
+- **Samuel Grégoire** is a master student in biomedical sciences who
+  is benchmarking single cell mass spectrometry-based proteomics
+  analysis pipelines. He is co-supervised by Sébastien Pyr dit Ruys
+  from the proteomics group.
+
 
 ## Remote members
 
