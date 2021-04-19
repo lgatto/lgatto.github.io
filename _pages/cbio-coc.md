@@ -35,8 +35,8 @@ immediately.
 If you are being harassed, notice that someone else is being harassed,
 or have any other concerns, please contact Laurent Gatto immediately
 or one of the dedicated [contact
-persons](https://intranet.uclouvain.be/fr/myucl/pour-egalite/harcelement.html)
-at the University
+persons](https://intranet.uclouvain.be/fr/myucl/serp/bien-etre/personnes-de-confiance.html)
+at the University.
 
 <!-- For official concerns, please see the Universities -->
 <!-- [Public Equality Duties](http://www.equality.admin.cam.ac.uk/training/equalities-law/public-equality-duties) -->
