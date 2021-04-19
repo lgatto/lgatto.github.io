@@ -19,13 +19,15 @@ sidebar:
   the CBIO group and teaches bioinformatics in the Facutly of Pharmacy
   and Biomedical Sciences (FASB).
 
-- **Axelle Loriot** (Github: [aloriot](https://github.com/aloriot)) is
-  a senior researcher at the de Duve Institute. Since 2001, she has
-  been part of the epigenetics group led by Charles De Smet. She
-  joined the CBIO group in 2018, focusing on transcriptomics and
-  epigenetics. She developed algorithms to identify aberrant
-  transcripts induced by DNA hypomethylation in tumor cells, and DNA
-  hypermethylation events linked to overlapping expression.
+- **Axelle Loriot** (ORCID:
+  [0000-0002-5288-8561](https://orcid.org/0000-0002-5288-8561),
+  Github: [aloriot](https://github.com/aloriot)) is a senior
+  researcher at the de Duve Institute. Since 2001, she has been part
+  of the epigenetics group led by Charles De Smet. She joined the CBIO
+  group in 2018, focusing on transcriptomics and epigenetics. She
+  developed algorithms to identify aberrant transcripts induced by DNA
+  hypomethylation in tumor cells, and DNA hypermethylation events
+  linked to overlapping expression.
 
 - **Manon Martin** (ORCID:
   [0000-0003-4800-0942](https://orcid.org/0000-0003-4800-0942),
