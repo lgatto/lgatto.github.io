@@ -102,7 +102,7 @@ sidebar:
   India. His research focuses on Artificial Intelligence, Machine
   Learning in Healthcare. He worked on predicting protein subcellular
   location using deep learning techniques during his internship and is
-  now focusing in the multi-omics integration is cancer.
+  now focusing on the multi-omics integration in cancer.
 
 ## [R for Mass Spectrometry](https://www.rformassspectrometry.org/) core team
 
