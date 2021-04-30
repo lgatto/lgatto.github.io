@@ -171,6 +171,19 @@ Please do get in touch if you are interested in running workshops.
 
 ### Research articles
 
+Christophe Vanderaa, Laurent Gatto *Utilizing `scp` for the analysis and
+replication of single-cell proteomics data* bioRxiv 2021.04.12.439408;
+doi:
+[https://doi.org/10.1101/2021.04.12.439408](https://doi.org/10.1101/2021.04.12.439408)
+
+
+Jérôme Ambroise, Laurent Gatto, Julie Hurel, Bertrand Bearzatto,
+Jean-Luc Gala *On the many advantages of using the VariantExperiment
+class to store, exchange and analyze SARS-CoV-2 genomic data and
+associated metadata* bioRxiv 2021.04.05.438328; doi:
+[https://doi.org/10.1101/2021.04.05.438328](https://doi.org/10.1101/2021.04.05.438328)
+
+
 Crook OM, Davies CTR, Gatto L, Kirk PDW, Lilley KS *Inferring
 differential subcellular localisation in comparative spatial
 proteomics using BANDLE* bioRxiv

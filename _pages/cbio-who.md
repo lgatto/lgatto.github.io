@@ -2,7 +2,7 @@
 permalink: /cbio-who/
 title: "Lab members"
 excerpt: "The team"
-modified: 2020-11-04
+modified: 2021-04-18
 author_profile: false
 sidebar:
   nav: "cbio"
@@ -19,20 +19,22 @@ sidebar:
   the CBIO group and teaches bioinformatics in the Facutly of Pharmacy
   and Biomedical Sciences (FASB).
 
-- **Axelle Loriot** (Github: [aloriot](https://github.com/aloriot)) is
-  a senior researcher at the de Duve Institute. Since 2001, she has
-  been part of the epigenetics group led by Charles De Smet. She
-  joined the CBIO group in 2018, focusing on transcriptomics and
-  epigenetics. She developed algorithms to identify aberrant
-  transcripts induced by DNA hypomethylation in tumor cells, and DNA
-  hypermethylation events linked to overlapping expression.
-  
+- **Axelle Loriot** (ORCID:
+  [0000-0002-5288-8561](https://orcid.org/0000-0002-5288-8561),
+  Github: [aloriot](https://github.com/aloriot)) is a senior
+  researcher at the de Duve Institute. Since 2001, she has been part
+  of the epigenetics group led by Charles De Smet. She joined the CBIO
+  group in 2018, focusing on transcriptomics and epigenetics. She
+  developed algorithms to identify aberrant transcripts induced by DNA
+  hypomethylation in tumor cells, and DNA hypermethylation events
+  linked to overlapping expression.
+
 - **Manon Martin** (ORCID:
-  [0000-0003-4800-0942](https://orcid.org/0000-0003-4800-0942), 
-  Github: [ManonMartin](https://github.com/ManonMartin)) is a research assistant 
-  in bioinformatics with a focus on transcriptomics and other omics data analysis. 
-  She joined the CBIO group in September 2020 and holds a PhD is biostatistics. 
-  During her thesis, she worked on several aspects of NMR metabolomics 
+  [0000-0003-4800-0942](https://orcid.org/0000-0003-4800-0942),
+  Github: [ManonMartin](https://github.com/ManonMartin)) is a research assistant
+  in bioinformatics with a focus on transcriptomics and other omics data analysis.
+  She joined the CBIO group in September 2020 and holds a PhD is biostatistics.
+  During her thesis, she worked on several aspects of NMR metabolomics
   data treatment, mostly based on multivariate data analysis.
 
 - **Christophe Vanderaa** (ORCID:
@@ -70,6 +72,26 @@ sidebar:
   previously working in the banking sector and is currently transitioning to
   Bioinformatics/Biostatistics.
 
+- **Julie Devis** (Github:
+  [JulieDevis](https://github.com/JulieDevis)) is a master student in
+  biomedical sciences. She is working on deciphering complex
+  mechanisms of epigenetic alterations in cancer genomes. She is
+  pursuing her research in collaboration with the epigenetics group
+  and is co-supervised by Axelle.
+
+- **Kilian Maes** (Github:
+  [KilianMaes](https://github.com/KilianMaes)) is master student
+  finishing his degree in software engineering. He is working on the
+  clustering of mass spectrometry data. He is co-supervised by [Prof
+  Pierre Dupont](https://www.info.ucl.ac.be/~pdupont/) from the
+  Machine Learning Group.
+
+- **Samuel Grégoire** is a master student in biomedical sciences who
+  is benchmarking single cell mass spectrometry-based proteomics
+  analysis pipelines. He is co-supervised by Sébastien Pyr dit Ruys
+  from the proteomics group.
+
+
 ## Remote members
 
 - **Aayush Grover** (ORCID:
@@ -80,7 +102,7 @@ sidebar:
   India. His research focuses on Artificial Intelligence, Machine
   Learning in Healthcare. He worked on predicting protein subcellular
   location using deep learning techniques during his internship and is
-  now focusing in the multi-omics integration is cancer.
+  now focusing on the multi-omics integration in cancer.
 
 ## [R for Mass Spectrometry](https://www.rformassspectrometry.org/) core team
 
