@@ -647,6 +647,9 @@ spectrometry and proteomics.
 
 This is an incomplete list of talks I have given in the past.
 
+Principled and Reproducible Mass Spectrometry-based Single Cell
+Proteomics Data Analysis, USHUPO, 08 March 2020.
+
 [Standardised and reproducible analysis of mass spectrometry-based
 single-cell proteomics data](http://bit.ly/2020SCP), [Single Cell
 Proteomics meeting](http://single-cell.net/proteomics/scp2020), 18
