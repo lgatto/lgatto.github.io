@@ -202,9 +202,10 @@ Elliptocytosis, Biomolecules 2020, 10(8), 1120;
 [https://doi.org/10.3390/biom10081120](https://www.mdpi.com/2218-273X/10/8/1120).
 
 Gatto L, Gibb S, Rainer J *MSnbase, efficient and elegant R-based
-processing and visualisation of raw mass spectrometry data* bioRxiv
-2020.04.29.067868; doi:
-[https://doi.org/10.1101/2020.04.29.067868](https://doi.org/10.1101/2020.04.29.067868).
+processing and visualisation of raw mass spectrometry data*
+J. Proteome Res. 2021, 20, 1, 1063–1069
+[https://doi.org/10.1021/acs.jproteome.0c00313](https://doi.org/10.1021/acs.jproteome.0c00313)
+([preprint](https://doi.org/10.1101/2020.04.29.067868)).
 
 Silverman EK *et al.*, *Molecular networks in Network Medicine:
 Development and applications*, WIREs Systems Biology and Medecine,
