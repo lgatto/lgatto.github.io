@@ -192,8 +192,8 @@ proteomics using BANDLE* bioRxiv
 Crook OM, Geladaki A, Nightingale DJH, Vennard O, Lilley KS, Gatto L,
 Kirk PDW *A semi-supervised Bayesian approach for simultaneous protein
 sub-cellular localisation assignment and novelty detection* PLOS
-Computational Biology 16(11):
-e1008288. https://doi.org/10.1371/journal.pcbi.1008288
+Computational Biology 2020
+16(11):e1008288. [https://doi.org/10.1371/journal.pcbi.1008288](https://doi.org/10.1371/journal.pcbi.1008288)
 ([preprint](https://doi.org/10.1101/2020.05.05.078345)).
 
 Pollet H *et al.*, Aberrant Membrane Composition and Biophysical
