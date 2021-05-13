@@ -4,6 +4,8 @@ tags: ["open research", "reproducible research", "talks", "R", "proteomics", "so
 comments: true
 ---
 
+{% include toc %}
+
 ## Acknowledgement
 
 I would like to start by thanking the [May
@@ -15,8 +17,6 @@ essential for researchers to be able to question their data without
 constrains - and we need the tools and the skills to be able to do
 that. The May Institute is one place where we can acquire or improve
 these skills.
-
-{% include toc %}
 
 ## Motivation
 
