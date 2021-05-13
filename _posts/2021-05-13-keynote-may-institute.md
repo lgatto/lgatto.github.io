@@ -281,7 +281,7 @@ In my experience, the installation of R and R/Bioconductor packages is
 relatively straighforward (and a useful experience) to be done by hand
 by researchers that want to analyse their own data.
 
-- Package from the **R for Mass Spectrometry initiative**
+- Packages from the **R for Mass Spectrometry initiative**
 
 # The [R for Mass Spectrometry](https://www.rformassspectrometry.org/) initiative
 
