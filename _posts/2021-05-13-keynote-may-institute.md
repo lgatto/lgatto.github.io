@@ -256,7 +256,7 @@ Biology 2015, 16:274.
 
 # Tools for reproducible research
 
-- R/Bioconductor -- many of you are familiar or even expecrts with R.
+- R/Bioconductor -- many of you are familiar or even experts with R.
 - Writing R scripts (could also be Rmd files) to keep track of what we
   do, and be able to easily re-run the code.
 
