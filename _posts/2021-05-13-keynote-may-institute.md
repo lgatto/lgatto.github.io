@@ -156,7 +156,7 @@ done and what is happening.
 
 I am not (that much) interested in blindly re-running something to
 confirm that I can the same results without understanding it. However,
-it is important to acknowledge that even simply repeating of
+it is important to acknowledge that even simply repeating or
 reproducing a complex analysis isn't trivial - especially for very
 large data, large compute requirement, dedicate hardware, long
 simulation times, ...
