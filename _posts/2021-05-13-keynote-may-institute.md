@@ -16,6 +16,8 @@ constrains - and we need the tools and the skills to be able to do
 that. The May Institute is one place where we can acquire or improve
 these skills.
 
+{% include toc %}
+
 ## Motivation
 
 **Inverse problems** are hard!
@@ -302,6 +304,13 @@ More info at
   [https://rformassspectrometry.github.io/docs/](https://rformassspectrometry.github.io/docs/)
 
 # Live coding
+
+I'll focus on raw data infrastructure, centred around the
+[Spectra](https://rformassspectrometry.github.io/Spectra/articles/Spectra.html)
+package. For quantitative data, see the
+[QFeatures](https://rformassspectrometry.github.io/QFeatures/articles/QFeatures.html)
+package.
+
 
 1. Package installation
 2. Downloading data
