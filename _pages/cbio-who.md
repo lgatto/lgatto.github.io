@@ -66,11 +66,14 @@ sidebar:
   years at the academia-industry interface. He is funded by the de
   Duve Institute's doctoral scholarship.
 
-- **Philippe Hauchamps** (Github: [phauchamps](https://github.com/phauchamps))
-  is a Master student in Biostatistics. He joined the CBIO lab in October 2019
-  as an intern. He has a Master degree in Computer Science Engineering, has been
-  previously working in the banking sector and is currently transitioning to
-  Bioinformatics/Biostatistics.
+- **Philippe Hauchamps** (Github:
+  [phauchamps](https://github.com/phauchamps)) is, since September
+  2021, a PhD student working on flow cytometry data analyis. He
+  joined the CBIO group in October 2019 as an intern and carried on
+  with a Master's project in computational proteomics, developing
+  Bayesian models to analyse quantitative proteomics data. He has a
+  Master degree in Computer Science Engineering and one in
+  Biostatistics.
 
 - **Julie Devis** (Github:
   [JulieDevis](https://github.com/JulieDevis)) is a master student in
@@ -78,13 +81,6 @@ sidebar:
   mechanisms of epigenetic alterations in cancer genomes. She is
   pursuing her research in collaboration with the epigenetics group
   and is co-supervised by Axelle.
-
-- **Kilian Maes** (Github:
-  [KilianMaes](https://github.com/KilianMaes)) is master student
-  finishing his degree in software engineering. He is working on the
-  clustering of mass spectrometry data. He is co-supervised by [Prof
-  Pierre Dupont](https://www.info.ucl.ac.be/~pdupont/) from the
-  Machine Learning Group.
 
 - **Samuel Grégoire** is a master student in biomedical sciences who
   is benchmarking single cell mass spectrometry-based proteomics
@@ -166,6 +162,14 @@ sidebar:
 
 ## Alumni
 
+- **Kilian Maes** (Github:
+  [KilianMaes](https://github.com/KilianMaes)) did his Master's
+  project in software engineering in the lab working on the clustering
+  of mass spectrometry data. He was co-supervised by [Prof Pierre
+  Dupont](https://www.info.ucl.ac.be/~pdupont/) from the Machine
+  Learning Group. He now works part-time as a software engineer and
+  continues his medical degree at the UCLouvain.
+
 - [**Oliver Crook**](https://olivercrook.co.uk/), was a Wellcome Trust
   PhD student at the University of Cambridge, jointly supervised with
   [Paul
@@ -203,16 +207,17 @@ sidebar:
   PhD in the Department of Genetics at the University of Cambridge,
   UK.
 
-- **Thomas Naake**, visited the group in Cambridge in Spring 2014 as
-  an ERASMUS student affiliated to the University of Freiburg. He
-  developed the first version of
+- [**Thomas Naake**](https://tnaake.github.io/), visited the group in
+  Cambridge in Spring 2014 as an ERASMUS student affiliated to the
+  University of Freiburg. He developed the first version of
   [`pRolocGUI`](https://bioconductor.org/packages/release/bioc/html/pRolocGUI.html),
   an interactive visualisation tools for organelle proteomics
   data. Thomas has since earner a PhD from the Max Planck Institute of
   Molecular Plant Physiology.
 
-- **Victoria Carr**, was Part III student in Systems Biology at the
-  University of Cambridge, applying graph-based methods to study
-  protein sub-cellular localisation. Vicky went on doing a PhD at
-  King's College London and is now working as a Scientific Programmer
-  in the Pathogen Informatics Unit at the Wellcome Sanger Institute.
+- [**Victoria Carr**](https://www.turing.ac.uk/people/victoria-carr),
+  was Part III student in Systems Biology at the University of
+  Cambridge, applying graph-based methods to study protein
+  sub-cellular localisation. Vicky went on doing a PhD at King's
+  College London and is now working as a Scientific Programmer in the
+  Pathogen Informatics Unit at the Wellcome Sanger Institute.
