@@ -10,6 +10,8 @@ sidebar:
 
 {% include toc %}
 
+![CBIO lab photo](/images/CBIO-20210908.jpg)
+
 ## CBIO core
 
 - [**Laurent Gatto**](http://lgatto.github.io/about/) (ORCID:
