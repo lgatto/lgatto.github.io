@@ -10,7 +10,6 @@ sidebar:
 
 {% include toc %}
 
-![CBIO lab photo](/images/CBIO-20210908.jpg)
 
 ## CBIO core
 
@@ -89,6 +88,7 @@ sidebar:
   analysis pipelines. He is co-supervised by Sébastien Pyr dit Ruys
   from the proteomics group.
 
+![CBIO lab photo](/images/CBIO-20210908.jpg)
 
 ## Remote members
 
