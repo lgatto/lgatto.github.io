@@ -90,6 +90,10 @@ sidebar:
 
 ![CBIO lab photo](/images/CBIO-20210908.jpg)
 
+From left to right: Chong, Philippe, Christophe, Manoj, Laurent,
+Julie, Samuel, Manon and Axelle. Picture taken at the de Duve
+Institute on 08 September 2021.
+
 ## Remote members
 
 - **Aayush Grover** (ORCID:
