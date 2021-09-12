@@ -102,8 +102,7 @@ Institute on 08 September 2021.
   student at the [Institute for Machine Learning of ETH Zurich](https://ml.inf.ethz.ch/) 
   where he is working on computational epigenetics of cancer. 
   He was a master thesis student at the CBIO lab after completing his summer 
-  internship (2020) at the CBIO lab. His research focuses on Artificial 
-  Intelligence in Biomedicine. He worked on predicting protein subcellular 
+  internship (2020) at the CBIO lab. He worked on predicting protein subcellular 
   location using deep learning techniques during his internship and focused on 
   the task of survival prediction in cancer using multi-omics integration and 
   few-shot learning.
