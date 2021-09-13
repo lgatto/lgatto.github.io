@@ -94,17 +94,7 @@ From left to right: Chong, Philippe, Christophe, Manoj, Laurent,
 Julie, Samuel, Manon and Axelle. Picture taken at the de Duve
 Institute on 08 September 2021.
 
-## Remote members
-
-- **Aayush Grover** (ORCID:
-  [0000-0002-3716-2850](https://orcid.org/0000-0002-3716-2850),
-  Github: [AayushGrover](https://github.com/AayushGrover)) is a Master
-  student the CBIO lab. He pursuing am Integrated Masters program at
-  International Institute of Information Technology Bangalore,
-  India. His research focuses on Artificial Intelligence, Machine
-  Learning in Healthcare. He worked on predicting protein subcellular
-  location using deep learning techniques during his internship and is
-  now focusing on the multi-omics integration in cancer.
+<!-- ## Remote members -->
 
 ## [R for Mass Spectrometry](https://www.rformassspectrometry.org/) core team
 
@@ -167,6 +157,16 @@ Institute on 08 September 2021.
   quantitative proteomics data.
 
 ## Alumni
+
+- **Aayush Grover** (ORCID:
+  [0000-0002-3716-2850](https://orcid.org/0000-0002-3716-2850),
+  Github: [AayushGrover](https://github.com/AayushGrover)) is a Master
+  student the CBIO lab. He pursuing am Integrated Masters program at
+  International Institute of Information Technology Bangalore,
+  India. His research focuses on Artificial Intelligence, Machine
+  Learning in Healthcare. He worked on predicting protein subcellular
+  location using deep learning techniques during his internship and is
+  now focusing on the multi-omics integration in cancer.
 
 - **Kilian Maes** (Github:
   [KilianMaes](https://github.com/KilianMaes)) did his Master's
