@@ -69,7 +69,7 @@ The CBIO lab benefits from funding from
 - The [de Duve Institute](https://www.deduveinstitute.be/).
 - The [National Fund for Scientific Research](https://www.frs-fnrs.be/fr/) (FNRS).
 - The [Research Foundation – Flanders](https://www.fwo.be/) (FWO).
-
+- The Sofina Covid Solidarity Fund.
 
 # Contact
 
