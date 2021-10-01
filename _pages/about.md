@@ -171,6 +171,13 @@ Please do get in touch if you are interested in running workshops.
 
 ### Research articles
 
+Mulvey CM, Breckels LM, Crook O, Sanders D, Ribeiro A, Geladaki A,
+Christoforou A, Britovsek NK, Hurrell T, Deery MJ, Gatto L, Smith A,
+and Lilley KS. *Spatiotemporal proteomic profiling of the
+pro-inflammatory response to lipopolysaccharide in the THP-1 human
+leukaemia cell line* Nat Commun 12, 5773
+(2021). DOI:[10.1038/s41467-021-26000-9](https://doi.org/10.1038/s41467-021-26000-9)
+
 Killian T and Gatto L. Exploiting the DepMap cancer dependency data
 using the `depmap` R package [version 1; peer review: 1 approved with
 reservations]. F1000Research 2021, 10:416
