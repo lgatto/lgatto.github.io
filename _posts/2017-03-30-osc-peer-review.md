@@ -1,6 +1,6 @@
 ---
 title: How to get the most out of modern peer-review
-tags: ["open research", "open science", "open data", "peer review"]
+tags: ["open research", "open data", "peer review"]
 comments: true
 ---
 
@@ -34,7 +34,7 @@ how peer review works. I was well structured, following a FAQ
 model. She also very entertainingly illustrated her talk with
 references to [PHDcomis](https://twitter.com/PHDcomics),
 [Lego Grad Student](https://twitter.com/legogradstudent) and
-[Shit Academics Say](https://twitter.com/AcademicsSay). 
+[Shit Academics Say](https://twitter.com/AcademicsSay).
 
 <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">.<a href="https://twitter.com/JennWrights">@JennWrights</a> uses <a href="https://twitter.com/legogradstudent">@legogradstudent</a> to illustrate her peer review faq at <a href="https://twitter.com/hashtag/oscpeerreview?src=hash">#oscpeerreview</a> <a href="https://t.co/1vA5z6irPc">pic.twitter.com/1vA5z6irPc</a></p>&mdash; Laurent Gⓐtt⓪ (@lgatt0) <a href="https://twitter.com/lgatt0/status/847459884199165953">March 30, 2017</a></blockquote>
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
@@ -47,7 +47,7 @@ review - what is it and what does it achieve?* talk. She made a strong
 point in favour of open peer review and reviewing ethics. Read her
 [lab code of conduct](http://www.corinalogan.com/ethics.html) about
 reviewing ethics, as well as publishing ethics, her commitment to
-conducting rigorous science, lab interpersonal interactions. 
+conducting rigorous science, lab interpersonal interactions.
 
 I was nice to hear how her efforts in ethical publishing and reviewing
 proved to have been very positive for her academic career, which
@@ -72,7 +72,7 @@ be a 2-stage process, where
 
 1. Submit your data and meta-data to a repository, where it get's
    checked (by specialists, data scientists, data curators) for
-   quality, annotation, meta-data. 
+   quality, annotation, meta-data.
 2. Submit your research with a link to the peer reviewed data.
 
 My talk earned me a lot of feed back and encouragements, both off and

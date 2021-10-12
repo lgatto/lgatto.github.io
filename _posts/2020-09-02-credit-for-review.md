@@ -1,6 +1,6 @@
 ---
 title: "So you want credit for your peer reviews?"
-tags: ["peer review", "open science", "open research"]
+tags: ["peer review", "open research"]
 comments: true
 ---
 

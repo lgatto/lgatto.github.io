@@ -1,6 +1,6 @@
 ---
 title: Exploring and sharing spatial proteomics data
-tags: ["open research", "open science", "Wellcome Trust", "Open Research Project", "spatial", "proteomics"]
+tags: ["open research", "Wellcome Trust", "Open Research Project", "spatial", "proteomics"]
 comments: true
 ---
 
@@ -24,7 +24,7 @@ interactive apps from the
 [`pRolocGUI` package](https://computationalproteomicsunit.github.io/pRolocGUI/). As
 part of my efforts to promote open research, I decided to write the
 grant proposal for the `SpatialMap.org` project, and promote it
-through this Open Research Project. 
+through this Open Research Project.
 
 It is unlikely I would ever have applied for funding for this project
 because its main goal is the development of a rather specialised
@@ -83,7 +83,7 @@ locations. Knowledge of the exact location of a protein is of
 paramount importance, as its whereabouts will define the biochemical
 conditions of its environment and the presence of interacting
 partners and hence, is essential for a protein to execute its intended
-function. 
+function.
 
 There exists a wide several experimental procedure to elucidate the
 sub-cellular location of a protein, that can be classified into
@@ -134,7 +134,7 @@ these individual efforts hardly meet the need for a consistent,
 interactive and modern interface across several datasets and don't
 support easy dissemination of data.
 
-#### Objectives 
+#### Objectives
 
 In this project, we propose to develop an online platform that will
 offer (1) an interface to interactively navigate numerous experimental

@@ -1,6 +1,6 @@
 ---
 title: Authorship, trust and open science
-tags: ["science", "open access", "open science", "open data", "academia"]
+tags: ["open access", "open research", "open data", "academia"]
 comments: true
 ---
 
@@ -17,7 +17,7 @@ From
 [Defining the Role of Authors and Contributors, International Committee of Medical Journal Editors](http://www.icmje.org/recommendations/browse/roles-and-responsibilities/defining-the-role-of-authors-and-contributors.html):
 
 > The ICMJE recommends that authorship be based on the following 4 criteria:
-> 
+>
 > * Substantial contributions to the conception or design of the work;
 >   or the acquisition, analysis, or interpretation of data for the
 >   work; **AND**
@@ -27,15 +27,15 @@ From
 > * Agreement to be accountable for all aspects of the work in ensuring
 >   that questions related to the accuracy or integrity of any part of
 >   the work are appropriately investigated and resolved.
- 
+
 And those who meet fewer than all 4 of the above criteria for
 authorship should **not** be listed as authors, but they should be
-acknowledged. 
+acknowledged.
 
 Well, that's a rather strict definition of authorship. Whether one
 agrees with it or one has another set of rules to grant authorship, I
 think that every project should clearly state contribution
-requirements in advance. 
+requirements in advance.
 
 ## Position in the author list
 
