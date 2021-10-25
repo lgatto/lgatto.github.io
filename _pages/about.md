@@ -171,6 +171,13 @@ Please do get in touch if you are interested in running workshops.
 
 ### Research articles
 
+Christophe Vanderaa, Laurent Gatto *Replication of single-cell
+proteomics data reveals important computational challenges* Expert
+Review of Proteomics, (2021)
+DOI:[10.1080/14789450.2021.1988571](https://www.tandfonline.com/doi/full/10.1080/14789450.2021.1988571)
+(pre-print:
+[10.1101/2021.04.12.439408v](https://doi.org/10.1101/2021.04.12.439408v2))
+
 Mulvey CM, Breckels LM, Crook O, Sanders D, Ribeiro A, Geladaki A,
 Christoforou A, Britovsek NK, Hurrell T, Deery MJ, Gatto L, Smith A,
 and Lilley KS. *Spatiotemporal proteomic profiling of the
@@ -182,11 +189,6 @@ Killian T and Gatto L. Exploiting the DepMap cancer dependency data
 using the `depmap` R package [version 1; peer review: 1 approved with
 reservations]. F1000Research 2021, 10:416
 [https://doi.org/10.12688/f1000research.52811.1](https://doi.org/10.12688/f1000research.52811.1)
-
-Christophe Vanderaa, Laurent Gatto *Replication of single-cell
-proteomics data reveals important computational challenges* bioRxiv
-2021.04.12.439408; doi:
-[https://doi.org/10.1101/2021.04.12.439408v](https://doi.org/10.1101/2021.04.12.439408v2)
 
 Jérôme Ambroise, Laurent Gatto, Julie Hurel, Bertrand Bearzatto,
 Jean-Luc Gala *On the many advantages of using the VariantExperiment
