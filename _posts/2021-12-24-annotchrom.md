@@ -22,6 +22,8 @@ identified precursor peaks.
 
 ![Annotated chromatogram](https://rformassspectrometry.github.io/docs/R4MS_files/figure-html/nSequencePlot-1.png)
 
+
+
 ## The data
 
 The generate the data for an annotated chromatogram, we need raw and
