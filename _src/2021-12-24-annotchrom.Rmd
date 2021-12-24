@@ -1,0 +1,129 @@
+---
+title: "New feature: annotated chromatograms"
+tags: ["Spectra", "R", "proteomics", "software", "Bioconductor"]
+comments: true
+---
+
+Today, I'm going to introduce a recent feature from the
+[Spectra](https://rformassspectrometry.github.io/Spectra/) package,
+namely annotated chromatograms. I'll start by showing the result and
+them explain how to produce it.
+
+## An annotated chromatogram
+
+You will immediately recognise a chromatogram on the figure below,
+showing MS1 scan total ion current over the experiment's retention
+time. Each MS1 event is highlighted by a dot which is colour-coded
+based on the number of MS2 offspring scans that lead to
+identifications. Grey dots are MS1 scans without any identified
+precursor peaks while coloured dots (from dark to light blue)
+represent MS1 scans have 1 to 10 (in one case, see details below)
+identified precursor peaks.
+
+![Annotated chromatogram](https://rformassspectrometry.github.io/docs/R4MS_files/figure-html/nSequencePlot-1.png)
+
+## The data
+
+The generate the data for an annotated chromatogram, we need raw and
+identification data and join them together. We will use the
+*TMT_Erwinia* data available in the
+[msdata](http://bioconductor.org/packages/release/data/experiment/html/msdata.html). Below,
+we get the raw and identification data files.
+
+```{r, message = FALSE}
+library("msdata")
+basename(mzml_file <- proteomics(pattern = "20141210.mzML", full.names = TRUE))
+basename(mzid_file <- ident(pattern = "20141210.mzid", full.names = TRUE))
+```
+
+Here, we load the raw data into R as a `Spectra` object:
+
+```{r, message = FALSE}
+library("Spectra")
+rw <- Spectra(mzml_file)
+rw
+```
+
+Below, we load the identification data into R as a `PSM` object and
+filter the PSMs:
+
+```{r, message = FALSE}
+library("PSMatch")
+id <- PSM(mzid_file) |>
+   filterPSMs()
+id
+```
+
+
+We can now annotate the spectra with the identification data. For
+details about these steps, see the details and example of the
+[joinSpectraData()](https://rformassspectrometry.github.io/Spectra/reference/Spectra.html#data-subsetting-filtering-and-merging-1)
+function.
+
+```{r, warning = FALSE}
+rw <- joinSpectraData(rw, id,
+                by.x = "spectrumId",
+                by.y = "spectrumID")
+head(na.omit(rw$sequence))
+```
+
+## The `countIdentifications()` function
+
+The function that permit to produce the data for the figure above is
+[countIdentifications()](https://rformassspectrometry.github.io/Spectra/reference/countIdentifications.html).
+
+
+The function is going to tally the number of identifications (i.e
+non-missing characters in the `sequence` spectra variable) for each
+scan. In the case of MS2 scans, these will be either 1 or 0, depending
+the presence of a sequence. For MS1 scans, the function will count the
+number of sequences for the descendant MS2 scans, i.e. those produced
+from precursor ions from each MS1 scan.
+
+```{r}
+rw <- countIdentifications(rw)
+```
+
+Below, we see on the second line that 3457 MS2 scans lead to no PSM,
+while 2546 lead to an identification. Among all MS1 scans, 833 lead to
+no MS2 scans with PSMs. 30 MS1 scans generated one MS2 scan that lead
+to a PSM, 45 lead to two PSMs, ...
+
+```{r}
+table(msLevel(rw), rw$countIdentifications)
+```
+
+We can now use this new `countIdentifications` variable to generate
+our annotated chromatogram. The code chunk below filters MS1 level
+data and then extracts the spectra variable, in particular the
+retention time `rtime`, the total ion current `totIonCurrent` and the
+newly created `countIdentifications` to produce a figure with
+[ggplot2](https://ggplot2.tidyverse.org/).
+
+
+```{r countIdentificationsFig, message = FALSE, fig.width = 10, fig.path = "images/"}
+library(tidyverse)
+rw |>
+filterMsLevel(1) |>
+spectraData() |>
+as_tibble() |>
+ggplot(aes(x = rtime,
+           y = totIonCurrent)) +
+    geom_line(alpha = 0.25) +
+    geom_point(aes(colour = ifelse(countIdentifications == 0,
+                                   NA, countIdentifications)),
+               size = 1,
+               alpha = 0.5) +
+    labs(colour = "Number of ids")
+```
+
+## More details and session information
+
+For details about the `Spectra` package, see the [package web
+page](https://rformassspectrometry.github.io/Spectra/) and the [*R for
+Mass Spectrometry*
+tutorial](https://rformassspectrometry.github.io/docs/).
+
+```{r}
+sessionInfo()
+```
