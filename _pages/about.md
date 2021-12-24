@@ -171,6 +171,13 @@ Please do get in touch if you are interested in running workshops.
 
 ### Research articles
 
+Kelly Eckenrode, Dario Righelli, Marcel Ramos, Ricard Argelaguet,
+Christophe Vanderaa, Ludwig Geistlinger, Aedin Culhane, Laurent Gatto,
+Vincent J. Carey, Martin Morgan, Davide Risso, Levi D Waldron *Curated
+Single Cell Multimodal Landmark Datasets for R/Bioconductor* bioRxiv
+2021.10.27.466079;
+doi:[10.1101/2021.10.27.466079](https://doi.org/10.1101/2021.10.27.466079)
+
 Christophe Vanderaa, Laurent Gatto *Replication of single-cell
 proteomics data reveals important computational challenges* Expert
 Review of Proteomics, (2021)
