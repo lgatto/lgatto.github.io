@@ -22,7 +22,7 @@ identified precursor peaks.
 
 ![Annotated chromatogram](https://rformassspectrometry.github.io/docs/R4MS_files/figure-html/nSequencePlot-1.png)
 
-
+You can also watch a video illustrating this post [here](https://youtu.be/skOfnVeJc_U).
 
 ## The data
 
