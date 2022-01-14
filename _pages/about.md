@@ -171,6 +171,12 @@ Please do get in touch if you are interested in running workshops.
 
 ### Research articles
 
+Aayush Grover and Laurent Gatto *ProtFinder: finding subcellular
+locations of proteins using protein interaction networks* bioRxiv
+2022.01.11.475836;
+doi:[10.1101/2022.01.11.475836](https://doi.org/10.1101/2022.01.11.475836)
+([software repo](https://github.com/UCLouvain-CBIO/ProtFinder))
+
 Kelly Eckenrode, Dario Righelli, Marcel Ramos, Ricard Argelaguet,
 Christophe Vanderaa, Ludwig Geistlinger, Aedin Culhane, Laurent Gatto,
 Vincent J. Carey, Martin Morgan, Davide Risso, Levi D Waldron *Curated
