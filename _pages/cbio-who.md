@@ -2,7 +2,7 @@
 permalink: /cbio-who/
 title: "Lab members"
 excerpt: "The team"
-modified: 2021-04-18
+modified: 2022-01-14
 author_profile: false
 sidebar:
   nav: "cbio"
@@ -46,15 +46,6 @@ sidebar:
   in bioinformatics at the KULeuven. He is funded by a FNRS
   fellowship.
 
-- **Chong Tang** (ORCID:
-  [0000-0002-0482-8361](https://orcid.org/0000-0002-0482-8361),
-  Github: [plantton](https://github.com/plantton)) is a PhD student
-  working on mass spectrometry-based proteomics software
-  development. He has a bachelor degree in biotechnology from the
-  Central South University of Forestry and Technology in China and a
-  masters in bioinformatics from KULeuven. He is funded by a China
-  Scholarship Council - FNRS scholarship.
-
 - **Manojkumar Selvaraju** (ORCID:
   [0000-0001-6439-5652](https://orcid.org/0000-0001-6439-5652),
   Github: [manogenome](https://github.com/manogenome), Twitter:
@@ -87,6 +78,13 @@ sidebar:
   is benchmarking single cell mass spectrometry-based proteomics
   analysis pipelines. He is co-supervised by Sébastien Pyr dit Ruys
   from the proteomics group.
+
+- **Charlotte Léonard** (Github:
+  [chachaleo](https://github.com/chachaleo)) is Master's project in
+  applied mathematics in the lab working on single-cell multi-modal
+  data integration. She is co-supervised by [Michel
+  Verleyse](https://mlg.info.ucl.ac.be/Members/MichelVerleysen) from
+  the Machine Learning Group at UCLouvain.
 
 ![CBIO lab photo](/images/CBIO-20210908.jpg)
 
@@ -158,6 +156,13 @@ Institute on 08 September 2021.
   quantitative proteomics data.
 
 ## Alumni
+
+- **Chong Tang** (ORCID:
+  [0000-0002-0482-8361](https://orcid.org/0000-0002-0482-8361),
+  Github: [plantton](https://github.com/plantton)) was part of the
+  CBIO lab from the very beginning in 2019 to 2021. He worked on mass
+  spectrometry-based proteomics software development with a special
+  focus on using databases to store and retrieve massive MS datasets.
 
 - **Aayush Grover** (ORCID:
   [0000-0002-3716-2850](https://orcid.org/0000-0002-3716-2850),
