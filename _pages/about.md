@@ -177,6 +177,13 @@ locations of proteins using protein interaction networks* bioRxiv
 doi:[10.1101/2022.01.11.475836](https://doi.org/10.1101/2022.01.11.475836)
 ([software repo](https://github.com/UCLouvain-CBIO/ProtFinder))
 
+
+Dechamps M, De Poortere, Martin M, Gatto L, et
+al. *Inflammation-Induced Coagulopathy Substantially Differs Between
+COVID-19 and Septic Shock: A Prospective Observational Study*
+Frontiers in Medicine (2022)
+doi:[10.3389/fmed.2021.780750](https://www.frontiersin.org/article/10.3389/fmed.2021.780750)
+
 Kelly Eckenrode, Dario Righelli, Marcel Ramos, Ricard Argelaguet,
 Christophe Vanderaa, Ludwig Geistlinger, Aedin Culhane, Laurent Gatto,
 Vincent J. Carey, Martin Morgan, Davide Risso, Levi D Waldron *Curated
