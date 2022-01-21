@@ -66,10 +66,11 @@ conduct](https://lgatto.github.io/cbio-coc/) page for a longer version.
 
 The CBIO lab benefits from funding from
 
-- The [de Duve Institute](https://www.deduveinstitute.be/).
-- The [National Fund for Scientific Research](https://www.frs-fnrs.be/fr/) (FNRS).
-- The [Research Foundation – Flanders](https://www.fwo.be/) (FWO).
-- The Sofina Covid Solidarity Fund.
+- [de Duve Institute](https://www.deduveinstitute.be/).
+- [National Fund for Scientific Research](https://www.frs-fnrs.be/fr/) (FNRS).
+- [Research Foundation – Flanders](https://www.fwo.be/) (FWO).
+- Sofina Covid Solidarity Fund.
+- [Televie](https://televie.be/)
 
 # Contact
 
