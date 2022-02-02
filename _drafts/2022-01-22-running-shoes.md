@@ -1,17 +1,16 @@
 ---
-title: "These shoes are made for running ..."
+title: "These shoes are made for running"
 tags: ["Running"]
-comments: true
+comments: false
 ---
 
 I'm approaching my 7 years running anniversary. My first recorded run
 was on the 10 February 2019, a decent 5 km run, starting from the
 wonderful [Centre for Mathematical
 Sciences](https://www.maths.cam.ac.uk/) and running along the West
-Cambriidge site. Since then, I have run on average 2000 km per year,
-tallying close to 12000 km. This post is a tribute to the running
-shoes I have been wearing since.
-
+Cambridge site. Since then, I have run on average 2000 km per year,
+tallying 12000 kms. This post is a tribute to the running shoes I have
+been wearing since.
 
 ## First pair: Asics Cumulus (March 2016 - ?)
 
@@ -94,11 +93,31 @@ needed something a bit sturdier and had to send them back. Altra was
 apparently out of stock with Torin and I ended up getting them
 somewhere else. Unfortunately, I wasn't too impressed this time. As
 you can see from the dates above, this pair didn't last very long in
-time, and even less compared to the other ones in kms.
+time, and even less compared to the other ones in kms. The inner sole
+was completely worn of at several places and the shoe tore at the
+outside along the sole rather quickly compared to its
+predecessors. The pair ended up in the bin in January 2021. I am also
+planning an ultra-trail in the Swiss mountains in the summer and thus
+thought I might try another pair with this in mind.
 
 
 ![Third pair of Altra Torin](/images/running_shoes_torin_grey.jpg)
 
 ## Altra Lone peak (February 2022)
 
+In January 2022, I ordered a pair of Lone Peak online (I really miss
+the Running Up shop in Cambridge). They don't feel as comfy as the
+Torin and probably also have a thinner outer sole, probably closer to
+the Escalante (I remember having the opposite impression when running
+with my first Torin). I must admit that I don't follow all the jargon
+that is advertised on the vendors websites (the only one that sticks
+is *drop* because I wanted to try a *zero drop* in May 2018), so my
+impressions here might not match the advertised metrics. Anyway, I'll
+need to wait a bit more to know if they are as good as the previous
+pairs I used.
+
 ![Altra Lone Peak, something new](/images/running_shoes_lone_peak_grey_2022.jpg)
+
+It's only towards the end of the summer, after testing them over 1000+
+kms and a couple of runs in the mountains, that I'll start thinking
+about the my next pair.
