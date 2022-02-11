@@ -83,7 +83,7 @@ sidebar:
   [chachaleo](https://github.com/chachaleo)) is Master's project in
   applied mathematics in the lab working on single-cell multi-modal
   data integration. She is co-supervised by [Michel
-  Verleyse](https://mlg.info.ucl.ac.be/Members/MichelVerleysen) from
+  Verleysen](https://mlg.info.ucl.ac.be/Members/MichelVerleysen) from
   the Machine Learning Group at UCLouvain.
 
 ![CBIO lab photo](/images/CBIO-20210908.jpg)
