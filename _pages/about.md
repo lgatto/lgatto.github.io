@@ -171,6 +171,13 @@ Please do get in touch if you are interested in running workshops.
 
 ### Research articles
 
+Rainer J, Vicini A, Salzer L, Stanstrup J, Badia JM, Neumann S, Stravs
+MA, Verri Hernandes V, Gatto L, Gibb S, Witting M. A Modular and
+Expandable Ecosystem for Metabolomics Data Annotation in
+R. Metabolites. 2022;
+12(2):173. doi:[10.3390/metabo12020173](https://doi.org/10.3390/metabo12020173)
+
+
 Aayush Grover and Laurent Gatto *ProtFinder: finding subcellular
 locations of proteins using protein interaction networks* bioRxiv
 2022.01.11.475836;
