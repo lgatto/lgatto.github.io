@@ -171,12 +171,19 @@ Please do get in touch if you are interested in running workshops.
 
 ### Research articles
 
+Delcorte O, Spourquet C, Lemoine P, Degosserie J, Van Der Smissen P,
+Dauguet N, Loriot A, Knauf JA, Gatto L, Marbaix E, Fagin JA, Pierreux
+CE. [BRAFV600E Induction in Thyrocytes Triggers Important Changes in
+the miRNAs Content and the Populations of Extracellular Vesicles
+Released in Thyroid Tumor
+Microenvironment](https://www.mdpi.com/2227-9059/10/4/755). Biomedicines. 2022;
+10(4):755. https://doi.org/10.3390/biomedicines10040755
+
 Aayush Grover and Laurent Gatto *ProtFinder: finding subcellular
 locations of proteins using protein interaction networks* bioRxiv
 2022.01.11.475836;
 doi:[10.1101/2022.01.11.475836](https://doi.org/10.1101/2022.01.11.475836)
 ([software repo](https://github.com/UCLouvain-CBIO/ProtFinder))
-
 
 Dechamps M, De Poortere, Martin M, Gatto L, et
 al. *Inflammation-Induced Coagulopathy Substantially Differs Between
