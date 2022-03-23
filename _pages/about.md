@@ -173,11 +173,10 @@ Please do get in touch if you are interested in running workshops.
 
 Delcorte O, Spourquet C, Lemoine P, Degosserie J, Van Der Smissen P,
 Dauguet N, Loriot A, Knauf JA, Gatto L, Marbaix E, Fagin JA, Pierreux
-CE. [BRAFV600E Induction in Thyrocytes Triggers Important Changes in
+CE. *BRAFV600E Induction in Thyrocytes Triggers Important Changes in
 the miRNAs Content and the Populations of Extracellular Vesicles
-Released in Thyroid Tumor
-Microenvironment](https://www.mdpi.com/2227-9059/10/4/755). Biomedicines. 2022;
-10(4):755. https://doi.org/10.3390/biomedicines10040755
+Released in Thyroid Tumor Microenvironment*. Biomedicines. 2022;
+10(4):755. [https://doi.org/10.3390/biomedicines10040755](https://www.mdpi.com/2227-9059/10/4/755)
 
 Rainer J, Vicini A, Salzer L, Stanstrup J, Badia JM, Neumann S, Stravs
 MA, Verri Hernandes V, Gatto L, Gibb S, Witting M. A Modular and
