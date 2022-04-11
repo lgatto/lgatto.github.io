@@ -1,11 +1,13 @@
 ---
-title: ""
+title: "Notes on the CZI workshop on single cell proteomics and metabolomics"
 tags: ["Running"]
 comments: false
 ---
 
-![Slide 0](/images/202204-czi-slide0.png)
+My short short intro talk for the recent virtual CZI workshop on
+single cell proteomics and metabolomics.
 
+![Slide 0](/images/202204-czi-slide0.png)
 
 
 ## Overview
@@ -13,22 +15,22 @@ comments: false
 As an example of state-of-the-art infrastructure, I would like to
 present the [R for Mass
 Spectrometry](http://rformassspectrometry.org/) initiative and
-illustrate som eif our approaches to tackle software and analysis
+illustrate some of our approaches to tackle software and analysis
 related bottlenecks in mass spectrometry-based proteomics and
 metabolomics.
 
 
 ![Slide 1](/images/202204-czi-slide1.png)
 
-R for Mass Spectrometry is formed by over 20 tighly integrated and
+R for Mass Spectrometry is formed by over 20 tightly integrated and
 interoperable software packages, tackling the whole spectrum of data
 and their analyses, from raw mass spectrometry data, peptide and
 metabolite identification, quantitative data analysis, up to
 single-cell proteomics data processing. Each package is thoroughly
 tested, documented and peer-reviewed. Once a package reaches maturity,
 it get submitted to and reviewed by the Bioconductor project. There's
-a project-level webpage in addition to each package's specific page
-and a book/tutorial.
+a project-level web page in addition to each package's specific page
+and a [book/tutorial](https://rformassspectrometry.github.io/docs/).
 
 There are currently 14 contributors. The 3 main developers and
 initiators of the project have over 30 years of cumulative experience
@@ -47,7 +49,8 @@ I would like to mention a couple of high-level challenges, beyond
 those that are at our reach, such as the handling of missing data (be
 it through technological means such as DIA, software solution, and/or
 both), or batch effect (through better experimental designs and/or
-software means) and the interaction between these two (see here).
+software means) and the interaction between these two (see
+[here](https://www.tandfonline.com/doi/full/10.1080/14789450.2021.1988571)).
 
 ![Slide 2](/images/202204-czi-slide2.png)
 
@@ -60,7 +63,7 @@ software means) and the interaction between these two (see here).
 
 These are particularly problematic at an early stage, when a
 technology and its applications are developed and mature, such as
-single-cell proteomcis/metabolomics. The example of the
+single-cell proteomics/metabolomics. The example of the
 [SCP.replication](https://uclouvain-cbio.github.io/SCP.replication/)
 package illustrates the reproduction and replication of some published
 studies, some of which we were able to reproduce and replicate, others
@@ -85,9 +88,9 @@ meta-data).
 
 ## Opportunities
 
-In terms of community, I think that the CZI Single Cell Biolgy Program
+In terms of community, I think that the CZI Single Cell Biology Program
 has demonstrated some notable successes. Related to some of the more
-technical points I have mentionned above, interoperability between the
+technical points I have mentioned above, interoperability between the
 R and Python ecosystems of single-cell RNA sequencing and common data
 structures have emerged.
 
@@ -102,7 +105,7 @@ systems. The
 [SpectriPy/](https://rformassspectrometry.github.io/SpectriPy/) is one
 effort in the R for Mass Spectrometry initiative.
 
-I mentionned repeatability, reproducibility, replicability and better
+I mentioned repeatability, reproducibility, replicability and better
 reporting. We need better benchmarking, not necessarily as a way to
 identify "the best software" (which is hardly the best, by merely the
 one that performed better in a given data/user setting), but more as a
@@ -113,10 +116,10 @@ In terms of single cell biology, we have a lot to learn and be
 inspired by what in done in genomics, including their experience in
 data integration. But in terms of applications, it's important to
 differentiate from genomics. I don't think that aiming for the same
-application, or at least no only or maintly the definition of cell
+application, or at least no only or mainly the definition of cell
 types and states (including dimensionality reduction, clustering, ...)
-is the best approach. Indeed, we currently lack scaleability
-(i.e. tens, hundreds of thousands or even millions of celles) and it
+is the best approach. Indeed, we currently lack scalability
+(i.e. tens, hundreds of thousands or even millions of cells) and it
 will be difficult to reach the level of genomics at a sensible
 cost. We should focus for example on the [inference of regulatory
 interactions with minimal
