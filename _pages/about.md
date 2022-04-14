@@ -171,6 +171,12 @@ Please do get in touch if you are interested in running workshops.
 
 ### Research articles
 
+
+Dontaine J, Bouali A, Daussin F *et al.* *The intra-mitochondrial
+O-GlcNAcylation system rapidly modulates OXPHOS function and ROS
+release in the heart*. Commun Biol 5, 349
+(2022). doi:[10.1038/s42003-022-03282-3](https://doi.org/10.1038/s42003-022-03282-3)
+
 Delcorte O, Spourquet C, Lemoine P, Degosserie J, Van Der Smissen P,
 Dauguet N, Loriot A, Knauf JA, Gatto L, Marbaix E, Fagin JA, Pierreux
 CE. *BRAFV600E Induction in Thyrocytes Triggers Important Changes in
