@@ -120,13 +120,13 @@ including proteomics and metabolomics experiments.
 
 ### Single-cell proteomics
 
-In a Nature Methods Technology Feature in August 2019
-([doi:10.1038/s41592-019-0540-6](https://doi.org/10.1038/s41592-019-0540-6)),
-Vivien Marx dreamt of single-cell proteomics. In 2021, thanks to some
-pioneers' groundbreaking efforts, we can confidently claim that
-single-cell proteomics is here. The CBIO lab has contributed the
-[`scp`](https://bioconductor.org/packages/scp) packge ([Vanderaa and
-Gatto,
+In a Nature Methods Technology Feature in August 2019, Vivien Marx
+[dreamt of single-cell
+proteomics](https://doi.org/10.1038/s41592-019-0540-6). In 2021,
+thanks to some pioneers' groundbreaking efforts, we can confidently
+claim that single-cell proteomics is here. The CBIO lab has
+contributed the [`scp`](https://bioconductor.org/packages/scp) packge
+([Vanderaa and Gatto,
 2021](https://www.tandfonline.com/doi/abs/10.1080/14789450.2021.1988571?journalCode=ieru20),
 or get to pre-print
 [here](https://www.biorxiv.org/content/10.1101/2021.04.12.439408v2) if
