@@ -125,7 +125,7 @@ In a Nature Methods Technology Feature in August 2019, Vivien Marx
 proteomics](https://doi.org/10.1038/s41592-019-0540-6). In 2021,
 thanks to some pioneers' groundbreaking efforts, we can confidently
 claim that single-cell proteomics is here. The CBIO lab has
-contributed the [`scp`](https://bioconductor.org/packages/scp) packge
+contributed the [`scp`](https://bioconductor.org/packages/scp) package
 ([Vanderaa and Gatto,
 2021](https://www.tandfonline.com/doi/abs/10.1080/14789450.2021.1988571?journalCode=ieru20),
 or get to pre-print
