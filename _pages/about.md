@@ -98,22 +98,43 @@ the research in biology calls for a open approaches, influenced by the
 between stake holders, **open research** and development to open
 dissemination of all research outputs.
 
-### Proteomics
+### Mass spectrometry and proteomics
 
 My work on the design and implementation of reproducible mass
 spectrometry-based proteomics data analysis pipeline has materialised
 in the development of the
-[`MSnbase`](http://bioconductor.org/packages/MSnbase)
-([Gatto et al., 2012](http://www.ncbi.nlm.nih.gov/pubmed/22113085))
+[`MSnbase`](http://bioconductor.org/packages/MSnbase) ([Gatto et al.,
+2012](http://www.ncbi.nlm.nih.gov/pubmed/22113085) and
+[2021](https://pubs.acs.org/doi/10.1021/acs.jproteome.0c00313))
 package to manipulate, process and analyse quantitative proteomics
 data. The `MSnbase` infrastructure also supports the work on the
-statistical learning applied to spatial proteomics (see below). The
-[`synapter`](http://bioconductor.org/packages/synapter) package and
-the associated publications
-([Bond et al., 2013](http://www.ncbi.nlm.nih.gov/pubmed/23510225) and
-[Shliaha et al., 2013](http://www.ncbi.nlm.nih.gov/pubmed/23514362))
-addresses MS<sup>E</sup> label-free quantitation, optionally including
-ion mobility separation.
+statistical learning applied to spatial proteomics (see below). After
+a [decade of `MSnbase`
+development](https://lgatto.github.io/msnbase-contribs-2/), Johannes
+Rainer, Sebastien Gibb and I have started the [R for Mass Spectrometry
+initiative](https://www.rformassspectrometry.org/). The aim of
+initiative is to use our decade-long experience and develop efficient,
+thoroughly documented, tested and flexible R software for the analysis
+and interpretation of high throughput mass spectrometry assays,
+including proteomics and metabolomics experiments.
+
+### Single-cell proteomics
+
+In a Nature Methods Technology Feature in August 2019
+([doi:10.1038/s41592-019-0540-6](https://doi.org/10.1038/s41592-019-0540-6)),
+Vivien Marx dreamt of single-cell proteomics. In 2021, thanks to some
+pioneers' groundbreaking efforts, we can confidently claim that
+single-cell proteomics is here. The CBIO lab has contributed the
+[`scp`](https://bioconductor.org/packages/scp) packge ([Vanderaa and
+Gatto,
+2021](https://www.tandfonline.com/doi/abs/10.1080/14789450.2021.1988571?journalCode=ieru20),
+or get to pre-print
+[here](https://www.biorxiv.org/content/10.1101/2021.04.12.439408v2) if
+you don't have access) to these efforts. `scp` relies of [R for Mass
+Spectrometry](https://www.rformassspectrometry.org/)'s
+[`QFeatures`](https://bioconductor.org/packages/QFeatures) package and
+dedicated functions to enable extensive single-cell proteomics data
+processing, analysis and interpretation.
 
 ### Spatial proteomics
 
