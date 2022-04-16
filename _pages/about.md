@@ -112,11 +112,12 @@ statistical learning applied to spatial proteomics (see below). After
 a [decade of `MSnbase`
 development](https://lgatto.github.io/msnbase-contribs-2/), Johannes
 Rainer, Sebastien Gibb and I have started the [R for Mass Spectrometry
-initiative](https://www.rformassspectrometry.org/). The aim of
-initiative is to use our decade-long experience and develop efficient,
-thoroughly documented, tested and flexible R software for the analysis
-and interpretation of high throughput mass spectrometry assays,
-including proteomics and metabolomics experiments.
+initiative](https://www.rformassspectrometry.org/). Base on our
+decade-long experiences, we have set ourselves the aim of designing
+and implementing efficient, thoroughly documented, tested and flexible
+R software for the analysis and interpretation of high throughput mass
+spectrometry assays, including proteomics and metabolomics
+experiments.
 
 ### Single-cell proteomics
 
