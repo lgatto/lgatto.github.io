@@ -48,11 +48,9 @@ proteomics, developing new methods and implementing computational
 tools with a strong emphasis on rigorous and reproducible data
 analysis. During my time in Cambridge, I have also a been a visiting
 scientist in the [PRIDE](http://www.ebi.ac.uk/pride/) team at the
-[European Bioinformatics Institute](http://www.ebi.ac.uk/pride/). I
-currently still hold a visitor position in the [Department of Applied
-Mathematics and Theoretical Physics
-(DAMTP)](http://www.damtp.cam.ac.uk/user/lg390/) at the University of
-Cambridge.
+[European Bioinformatics Institute](http://www.ebi.ac.uk/pride/) and I
+the [Department of Applied Mathematics and Theoretical Physics
+(DAMTP)](http://www.damtp.cam.ac.uk/).
 
 And even before that, during my MSc and [PhD
 work](http://difusion.ulb.ac.be/vufind/Record/ULB-DIPOT:oai:dipot.ulb.ac.be:2013/210855/Holdings),
