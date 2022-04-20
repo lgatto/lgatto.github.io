@@ -4,13 +4,13 @@ tags: ["Running"]
 comments: false
 ---
 
-I'm approaching my 7 years running anniversary. My first recorded run
-was on the 10 February 2019, a decent 5 km run, starting from the
+I've reached my 7 years running anniversary. My first recorded run was
+on the 10 February 2019, a decent 5 km run, starting from the
 wonderful [Centre for Mathematical
 Sciences](https://www.maths.cam.ac.uk/) and running along the West
 Cambridge site. Since then, I have run on average 2000 km per year,
-tallying 12000 kms. This post is a tribute to the running shoes I have
-been wearing since.
+tallying over 12000 kms. This post is a tribute to the running shoes I
+have been wearing since.
 
 ## First pair: Asics Cumulus (March 2016 - ?)
 
