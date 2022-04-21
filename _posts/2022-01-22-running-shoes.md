@@ -5,7 +5,7 @@ comments: false
 ---
 
 I've recently reached my 6 years running anniversary. My first
-recorded run was on the 10 February 2019, a decent 5 km run, starting
+recorded run was on the 10 February 2016, a decent 5 km run, starting
 from the wonderful [Centre for Mathematical
 Sciences](https://www.maths.cam.ac.uk/) and running along the West
 Cambridge site. Since then, I have run on average 2000 km per year,
