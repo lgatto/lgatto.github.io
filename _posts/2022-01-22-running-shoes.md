@@ -69,8 +69,9 @@ distance with that worn out pair of Escalante and had suffered from
 painful feet after the race. It was yet again at the Up and Running
 store that I found the Altra Torin shoes - I probably asked for Altra
 from the start. This is also the pair that I wore when running my
-longest distance so far, 80 km at the Brussels EcoTrail in September
-2019.
+longest distance so far, [80 km at the Brussels
+EcoTrail](https://twitter.com/lgatt0/status/1170938931485007872?s=20)
+in September 2019.
 
 ![First pair of Altra Torin](/images/running_shoes_torin_black.jpg)
 
