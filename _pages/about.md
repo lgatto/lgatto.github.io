@@ -191,6 +191,11 @@ Please do get in touch if you are interested in running workshops.
 
 ### Research articles
 
+De Berdt P, Vanvarenberg K, Ucakar B, Bouzin C, Paquot A, Gratpain V,
+Loriot A, Payen V, Bearzatto B, Muccioli GG, Gatto L, Diogenes A, des
+Rieux A *The human dental apical papilla promotes spinal cord repair
+through a paracrine mechanism* Cell. Mol. Life Sci. 79, 252
+(2022). doi:[10.1007/s00018-022-04210-8](https://doi.org/10.1007/s00018-022-04210-8).
 
 Dontaine J, Bouali A, Daussin F *et al.* *The intra-mitochondrial
 O-GlcNAcylation system rapidly modulates OXPHOS function and ROS
