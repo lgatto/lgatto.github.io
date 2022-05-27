@@ -46,18 +46,6 @@ sidebar:
   in bioinformatics at the KULeuven. He is funded by a FNRS
   fellowship.
 
-- **Manojkumar Selvaraju** (ORCID:
-  [0000-0001-6439-5652](https://orcid.org/0000-0001-6439-5652),
-  Github: [manogenome](https://github.com/manogenome), Twitter:
-  [manogenome](https://twitter.com/manogenome)) is a PhD student
-  working on the Bioconductor infrastructure for the integration of
-  genomics, transcriptomics and proteomics data. He joined the CBIO
-  group in September 2020 and holds an Engineering degree in
-  Industrial Biotechnology from A.C.Tech, Anna University,
-  Chennai. Previously, he worked as a Bioinformatician for several
-  years at the academia-industry interface. He is funded by the de
-  Duve Institute's doctoral scholarship.
-
 - **Philippe Hauchamps** (Github:
   [phauchamps](https://github.com/phauchamps)) is, since September
   2021, a PhD student working on flow cytometry data analyis. He
@@ -156,6 +144,12 @@ Institute on 08 September 2021.
   quantitative proteomics data.
 
 ## Alumni
+
+- **Manojkumar Selvaraju** (ORCID:
+  [0000-0001-6439-5652](https://orcid.org/0000-0001-6439-5652),
+  Github: [manogenome](https://github.com/manogenome)) worked from
+  September 2020 to May 2022 on software infrastructure for the
+  integration of genomics, transcriptomics and proteomics data.
 
 - **Chong Tang** (ORCID:
   [0000-0002-0482-8361](https://orcid.org/0000-0002-0482-8361),
