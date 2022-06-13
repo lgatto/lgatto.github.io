@@ -1,6 +1,6 @@
 ---
 title: "Notes on the CZI workshop on single cell proteomics and metabolomics"
-tags: ["Running"]
+tags: ["proteomics", "single cell", "Bioconductor", "R"]
 comments: false
 ---
 
