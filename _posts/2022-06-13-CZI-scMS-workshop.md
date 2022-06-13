@@ -4,8 +4,8 @@ tags: ["Running"]
 comments: false
 ---
 
-My short short intro talk for the recent virtual CZI workshop on
-single cell proteomics and metabolomics.
+Here's a summary of my recent short intro talk for the recent virtual
+CZI workshop on single cell proteomics and metabolomics, 8 April 2022.
 
 ![Slide 0](/images/202204-czi-slide0.png)
 
