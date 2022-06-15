@@ -191,6 +191,13 @@ Please do get in touch if you are interested in running workshops.
 
 ### Research articles
 
+Dewulf JP, Martin M, Marie S, Oguz F, Belkhir L, De Greef J, *et
+al*. *Urine metabolomics links dysregulation of the
+tryptophan-kynurenine pathway to inflammation and severity of
+COVID-19*. Sci Rep. 12: 1–8
+(2022). doi:[10.1038/s41598-022-14292-w](https://doi.org/10.1038/s41598-022-14292-w).
+
+
 De Berdt P, Vanvarenberg K, Ucakar B, Bouzin C, Paquot A, Gratpain V,
 Loriot A, Payen V, Bearzatto B, Muccioli GG, Gatto L, Diogenes A, des
 Rieux A *The human dental apical papilla promotes spinal cord repair
