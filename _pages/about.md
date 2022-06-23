@@ -191,6 +191,13 @@ Please do get in touch if you are interested in running workshops.
 
 ### Research articles
 
+Ward B, Yombi JC, Balligand J-L, Cani PD, Collet J-F, *et al.*
+*HYGIEIA: HYpothesizing the Genesis of Infectious Diseases and
+Epidemics through an Integrated Systems Biology
+Approach*. Viruses. 2022; 14(7):1373
+doi[10.3390/v14071373](https://doi.org/10.3390/v14071373).
+
+
 Dewulf JP, Martin M, Marie S, Oguz F, Belkhir L, De Greef J, *et
 al*. *Urine metabolomics links dysregulation of the
 tryptophan-kynurenine pathway to inflammation and severity of
