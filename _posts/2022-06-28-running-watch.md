@@ -40,14 +40,14 @@ Clicking on each one open a page with the track and all details. The
 screenshot below was taken from the phone app and features the
 September 2019 Brussels Eco-trail, my longest run so far.
 
-![Brussels Eco-trail - September 2019](/images/tomtom_bxl_ecotrail.png)
+![Brussels Eco-trail - September 2019](/images/tomtom_bxl_ecotrail.jpeg)
 
 A last, rather funny memory is how TomTom estimated my fitness age
 being 20 years old. Thank you, I'm flattered, and while I am likely
 fitter than the average 46-years-old male, I guarantee that 20 is
 vastly underestimated.
 
-![TomTom fitness age](/images/tomtom_bxl_ecotrail.png)
+![TomTom fitness age](/images/tomtom_age.png)
 
 I'll have to figure out how to bulk-download all my activities at
 once, rather than one at a time. Other than that, thank you dear
