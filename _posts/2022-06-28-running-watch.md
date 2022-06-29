@@ -15,8 +15,7 @@ but I don't think it would manage anymore now) and I wanted to be able
 to have maps integrated to my watch for longer runs and activities
 abroad, without having to rely on a phone[^1].
 
-[^1] I use an old second hand phone with rather limited battery life
-and thus isn't quite reliable enough for long trails.
+[^1]: I use an old second hand phone with rather limited battery life and thus isn't quite reliable enough for long trails.
 
 ![TomTom Runner watch](/images/tomtom.png)
 
