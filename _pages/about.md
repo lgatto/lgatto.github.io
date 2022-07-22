@@ -191,6 +191,11 @@ Please do get in touch if you are interested in running workshops.
 
 ### Research articles
 
+Moulis, M., Runser, S.V.M., Glorieux, L. *et al.* *Identification and
+implication of tissue-enriched ligands in epithelial–endothelial
+crosstalk during pancreas development*. Sci Rep 12, 12498
+(2022). doi:[10.1038/s41598-022-16072-y](https://doi.org/10.1038/s41598-022-16072-y).
+
 Ward B, Yombi JC, Balligand J-L, Cani PD, Collet J-F, *et al.*
 *HYGIEIA: HYpothesizing the Genesis of Infectious Diseases and
 Epidemics through an Integrated Systems Biology
