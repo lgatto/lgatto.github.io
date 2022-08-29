@@ -52,3 +52,8 @@ vastly underestimated.
 I'll have to figure out how to bulk-download all my activities at
 once, rather than one at a time. Other than that, thank you dear
 TomTom watch, we have a good run!
+
+**Update:** It is surprisingly easy to bulk-download all my data. From
+the TomTom page, go to `Settings` > `Manage my data` and `Download
+your data`. I was able to download 5 zip files containing, among other
+things, all my activities.
