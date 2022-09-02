@@ -4,7 +4,8 @@ tags: ["software", "Bioconductor", "R"]
 comments: false
 ---
 
-This post was motivated by the preparation of a the `CytoPipeline`
+This post was motivated by the preparation of a the
+[CytoPipeline](https://uclouvain-cbio.github.io/CytoPipeline/index.html)
 package and the following
 [question](https://support.bioconductor.org/p/9144841/) about software
 licenses. The `CytoPipeline` is developed by Philippe Hauchamps whose
@@ -92,8 +93,12 @@ permissive) such as updating from GPL 2 to 3 or from GPL 2 to >= 2,
 the impact is limited. There are however cases when the change comes
 with substantial restrictions.
 
-Discussion on license changes, mentioning to Artistic 2.0 to
-academic-only Fred Hutch license. [...] This is an example where
-copying code from an older version of the package, that was still
-released under a open sources license becomes relevant, and I would
-need to follow the two step highlighted in the simple case above.
+Some Bioconductor packages, notably `PACKAGE`, recently had their
+licence [changed](LINK TO COMMIT) from an Artistic 2.0 license to an
+academic-only [Fred Hutch license](ADD LINK). This change stops any
+non-academic user from using the re-licensed software in their
+day-to-day activities. This extreme limitation impacts all other
+packages, such as `CytoPipeline`, that depend on `PACKAGE`. In such a
+case, we had to copy the relevant code from an older version, that was
+still released under a open sources license, and follow the two step
+highlighted in the simple case above.
