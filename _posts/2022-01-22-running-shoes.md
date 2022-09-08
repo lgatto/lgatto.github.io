@@ -60,7 +60,7 @@ minimalistic format since then.
 I still have my pair of Escalante and only wear it for leasure,
 despite it really being worn out.
 
-## Altra Torin 1 (May 2019 - today)
+## Altra Torin 1 (May 2019 - September 2022)
 
 The Escalante was a great pair of shoes but given that I was aiming
 for longer distances and off-the-road terrain, I wanted to try
@@ -75,9 +75,9 @@ in September 2019.
 
 ![First pair of Altra Torin](/images/running_shoes_torin_black.jpg)
 
-Even though they are badly worn out and need to be changed, I still
-keep my back Torin shoes at work and use them whenever I go out for a
-work lunch-time run.
+Even though they were badly worn out, I have kept my black Torin shoes
+at work and used them for the occasional work lunch-time run until
+September 2022.
 
 ## Altra Torin 2 (May 2020 - July 2021)
 
