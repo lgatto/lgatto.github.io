@@ -121,5 +121,4 @@ impressions here might not match the advertised metrics.
 ![Altra Lone Peak, something new](/images/running_shoes_lone_peak_grey_2022.jpg)
 
 After a couple of months, I am very happy with this pair and I'm
-considering getting a second one for work (the black Torin are way too
-old now).
+considering getting a second one for work.
