@@ -8,10 +8,10 @@ This post was motivated by the preparation of a the
 [CytoPipeline](https://uclouvain-cbio.github.io/CytoPipeline/index.html)
 package and the following
 [question](https://support.bioconductor.org/p/9144841/) about software
-licenses. The `CytoPipeline` is developed by Philippe Hauchamps whose
-PhD project is funded by GSK. Any deliverable that is produced by this
-project needs to be approved by the funder prior to
-publication/release. It was this particularly important to review and
+licenses. The `CytoPipeline` package is developed by Philippe Hauchamps 
+whose PhD project is funded by GSK. Any deliverable that is produced by 
+this project needs to be approved by the funder prior to
+publication/release. It was thus particularly important to review and
 understand the open source licensing requirements with care.
 
 Most software licenses, in particular the open source software
@@ -39,14 +39,15 @@ else's code.
 
 When writing R packages, we almost never copy other packages' code
 into ours (see below for an exception). We use the depends/imports
-mechanisms which doesn't imply direct redistributing code. If my
+mechanisms which doesn't imply direct redistribution of code. If my
 package depends/imports another package, installation of my package
 will trigger the installation of these dependencies and the code (or
 parts thereof) of these dependencies will be loaded (copied?) into my
 workspace when my package is loaded.
 
-Do we consider the above redistribution of someone else code? If no,
-then licensing terms do not apply.
+Do we consider the above redistribution of someone else's code? If 
+not, then licensing terms do not necessarily apply, or at least are 
+open to discussion..
 
 One could argue that licenses need to be applied for code that is
 essential for the software to run, even if not distributed
@@ -73,14 +74,14 @@ packages.
 A nice feature of using a proper LICENCE file is that it can contain
 additional information, such as a license for the documentation. I
 think this is a very neat feature, given that many R packages come
-with ample documentation, notable the famous vignettes that can
-sometime be quite elaborate.
+with ample documentation, notably the famous vignettes that can
+sometimes be quite elaborate.
 
 A fully-fledged license file would list all software dependencies and
 their respective licenses. In R, the dependencies are listed in the
 DESCRIPTION file, but miss their respective licenses (but I guess we
-can live with that). This however only applied to R package
-dependencies. I a package depends (or redistributes) non-R
+can live with that). This however only applies to R package
+dependencies. If a package depends (or redistributes) non-R
 software/code, these should be referenced in the licensing file. The
 `shiny` package is a good example for such a situation, where
 JavaScript code is packaged within the R package.
@@ -93,12 +94,16 @@ permissive) such as updating from GPL 2 to 3 or from GPL 2 to >= 2,
 the impact is limited. There are however cases when the change comes
 with substantial restrictions.
 
-Some Bioconductor packages, notably `PACKAGE`, recently had their
-licence [changed](LINK TO COMMIT) from an Artistic 2.0 license to an
-academic-only [Fred Hutch license](ADD LINK). This change stops any
+Some Bioconductor packages, notably `flowWorkspace` and `CytoML`, 
+recently had their licence 
+[changed](https://github.com/RGLab/flowWorkspace/commit/a1be772b3a43c51cf2606ea9b68b720654389197) 
+from an Artistic 2.0 license to an
+academic-only 
+[Fred Hutch license](https://github.com/RGLab/flowWorkspace/blob/master/LICENSE). 
+This change stops any
 non-academic user from using the re-licensed software in their
 day-to-day activities. This extreme limitation impacts all other
-packages, such as `CytoPipeline`, that depend on `PACKAGE`. In such a
-case, we had to copy the relevant code from an older version, that was
-still released under a open sources license, and follow the two step
-highlighted in the simple case above.
+packages that depend on `flowWorkspace` or `CytoML`. In such a
+case, one would have to copy the relevant code from an older version, 
+that was still released under an open source license, and follow the 
+two steps highlighted in the simple case above.
