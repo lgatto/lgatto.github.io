@@ -11,7 +11,7 @@ package and the following
 licenses. The `CytoPipeline` package is developed by Philippe Hauchamps 
 whose PhD project is funded by GSK. Any deliverable that is produced by 
 this project needs to be approved by the funder prior to
-publication/release. It was particularly important to review and
+publication/release. It was thus particularly important to review and
 understand the open source licensing requirements with care.
 
 Most software licenses, in particular the open source software
@@ -39,14 +39,15 @@ else's code.
 
 When writing R packages, we almost never copy other packages' code
 into ours (see below for an exception). We use the depends/imports
-mechanisms which doesn't imply direct redistributing of code. If my
+mechanisms which doesn't imply direct redistribution of code. If my
 package depends/imports another package, installation of my package
 will trigger the installation of these dependencies and the code (or
 parts thereof) of these dependencies will be loaded (copied?) into my
 workspace when my package is loaded.
 
 Do we consider the above redistribution of someone else's code? If 
-no, then licensing terms do not apply.
+not, then licensing terms do not necessarily apply, or at least are 
+open to discussion..
 
 One could argue that licenses need to be applied for code that is
 essential for the software to run, even if not distributed
