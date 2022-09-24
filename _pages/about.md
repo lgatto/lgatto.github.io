@@ -191,6 +191,13 @@ Please do get in touch if you are interested in running workshops.
 
 ### Research articles
 
+Pollé O.G, Delfosse A., Martin M., Louis J., Gies I., den Brinker M.,
+Seret N., Lebrethon M., Mouraux T., Gatto L., Lysy P.A. on behalf of
+the DIATAG Working Group *Glycemic Variability Patterns Strongly
+Correlate with Partial Remission Status in Children with Newly
+Diagnosed Type 1 Diabetes*. Diabetes Care 45(10):2360–2368
+(2022). doi:[10.2337/dc21-2543](https://doi.org/10.2337/dc21-2543).
+
 Moulis, M., Runser, S.V.M., Glorieux, L. *et al.* *Identification and
 implication of tissue-enriched ligands in epithelial–endothelial
 crosstalk during pancreas development*. Sci Rep 12, 12498
