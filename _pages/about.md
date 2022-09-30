@@ -191,6 +191,13 @@ Please do get in touch if you are interested in running workshops.
 
 ### Research articles
 
+
+Lizcano-Perret B., Lardinois C., Wavreil F., Hauchamps P., Herinckx
+G., Sorgeloos F., Vertommen D., Gatto L., Michiels T. *Cardiovirus
+leader proteins retarget RSK kinases toward alternative substrates to
+perturb nucleocytoplasmic traffic*. bioRxiv 2022.06.16.496404;
+[doi:10.1101/2022.06.16.496404](https://doi.org/10.1101/2022.06.16.496404).
+
 Pollé O.G, Delfosse A., Martin M., Louis J., Gies I., den Brinker M.,
 Seret N., Lebrethon M., Mouraux T., Gatto L., Lysy P.A. on behalf of
 the DIATAG Working Group *Glycemic Variability Patterns Strongly
@@ -198,7 +205,7 @@ Correlate with Partial Remission Status in Children with Newly
 Diagnosed Type 1 Diabetes*. Diabetes Care 45(10):2360–2368
 (2022). doi:[10.2337/dc21-2543](https://doi.org/10.2337/dc21-2543).
 
-Moulis, M., Runser, S.V.M., Glorieux, L. *et al.* *Identification and
+Moulis M., Runser S.V.M., Glorieux L. *et al.* *Identification and
 implication of tissue-enriched ligands in epithelial–endothelial
 crosstalk during pancreas development*. Sci Rep 12, 12498
 (2022). doi:[10.1038/s41598-022-16072-y](https://doi.org/10.1038/s41598-022-16072-y).
