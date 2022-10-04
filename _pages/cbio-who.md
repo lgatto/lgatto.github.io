@@ -74,6 +74,10 @@ sidebar:
   Verleysen](https://mlg.info.ucl.ac.be/Members/MichelVerleysen) from
   the Machine Learning Group at UCLouvain.
 
+- **Andrea Vicini** (Github:
+  [andreavicini] (https://github.com/andreavicini)) is a research
+  assistant in bioinformatics working on the HYGIEIA project.
+
 ![CBIO lab photo](/images/CBIO-20210908.jpg)
 
 From left to right: Chong, Philippe, Christophe, Manoj, Laurent,
