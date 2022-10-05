@@ -58,13 +58,13 @@ sidebar:
   Smet](https://www.deduveinstitute.be/cancer-epigenetics) from the
   epigenetics group.
 
-- **Samuel Grégoire**
-  (Github:[samgregoire](https://github.com/samgregoire) did his
-  master's project in the CBIO lab and is now, since September 2022, a
-  PhD student in biomedical sciences. He is working on single-cell
-  biology in AML, including single-cell proteomics, in collaboration
-  with Didier Vertommen, who runs the institute's mass spectrometry
-  core facility.
+- **Samuel Grégoire** (Github:
+  [samgregoire](https://github.com/samgregoire)) did his master's
+  project in the CBIO lab and is now, since September 2022, a PhD
+  student in biomedical sciences. He is working on single-cell biology
+  in AML, including single-cell proteomics, in collaboration with
+  Didier Vertommen, who runs the institute's mass spectrometry core
+  facility.
 
 - **Andrea Vicini** (Github:
   [andreavicini](https://github.com/andreavicini)) is a research
