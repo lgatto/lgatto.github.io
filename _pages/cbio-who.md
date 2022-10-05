@@ -73,11 +73,15 @@ sidebar:
   part of the large, inter-institute
   [HYGIEIA](https://www.saintluc.be/fr/hygieia) project.
 
-![CBIO lab photo](/images/CBIO-20221005.jpg)
+- **Kristína Gömöryová** (Github:
+  [KristinaGomoryova ](https://github.com/KristinaGomoryova)) joined the lab in September 2022 as an OpenMS intern. She is doing her PhD in Animal Physiology and Immunology in the lab of
+  [prof. Bryja](https://www.sci.muni.cz/ofiz/en/bryja/) at Masaryk University, and in CBIO lab she focuses on the analysis of DIA proteomics data within the HYGIEIA project.
 
-From left to right: Philippe, Kristina, Samuel, Axelle, Christophe,
-Julie, Andrea and Laurent. Picture taken at the de Duve Institute on
-5 October 2022.
+![CBIO lab photo](/images/CBIO-20210908.jpg)
+
+From left to right: Chong, Philippe, Christophe, Manoj, Laurent,
+Julie, Samuel, Manon and Axelle. Picture taken at the de Duve
+Institute on 08 September 2021.
 
 <!-- ## Remote members -->
 
