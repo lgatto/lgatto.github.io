@@ -100,13 +100,13 @@ Institute on 08 September 2021.
 
 ## Key collaborators
 
-- [**Paul
-  Kirk**](https://www.mrc-bsu.cam.ac.uk/people/in-alphabetical-order/h-to-m/paul-kirk/),
-  MRC Biostatistics Unit, University of Cambridge, UK. Paul is part of
-  the team developing principled Bayesian model for spatial
-  proteomics, such as the T-Augmented Gaussian Mixture (TAGM) model
-  ([Crook *et al.*
-  2018](https://doi.org/10.1371/journal.pcbi.1006516)).
+<!-- - [**Paul -->
+<!--   Kirk**](https://www.mrc-bsu.cam.ac.uk/people/in-alphabetical-order/h-to-m/paul-kirk/), -->
+<!--   MRC Biostatistics Unit, University of Cambridge, UK. Paul is part of -->
+<!--   the team developing principled Bayesian model for spatial -->
+<!--   proteomics, such as the T-Augmented Gaussian Mixture (TAGM) model -->
+<!--   ([Crook *et al.* -->
+<!--   2018](https://doi.org/10.1371/journal.pcbi.1006516)). -->
 
 <!-- - [**Kathyn S. Lilley**](http://www.bioc.cam.ac.uk/people/uto/lilley), -->
 <!--   Cambridge Centre for Proteomics, Department of Biochemistry, -->
@@ -127,6 +127,12 @@ Institute on 08 September 2021.
 <!--   spatial proteomics. A recent example is transfer learning -->
 <!--   ([Breckels *et al.* 2016](http://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1004920)). -->
 
+- [**Lieven Clement**](https://statomics.github.io/), statOmics group,
+  UGent, Belgium. We collaborate on statistical analyses of
+  quantitative proteomics data, in particular the
+  [msqrob2](https://bioconductor.org/packages/release/bioc/html/msqrob2.html)
+  R/Bioconductor package.
+
 - [**Thomas
   Burger**](https://sites.google.com/site/thomasburgerswebpage/),
   BIG-BGE (Université Grenoble Alpes, CNRS, CEA, INSERM), France. We
@@ -138,9 +144,6 @@ Institute on 08 September 2021.
   contributed the *perTurbo* algorithms to
   [*pRoloc*](https://bioconductor.org/packages/pRoloc).
 
-- [**Lieven Clement**](https://statomics.github.io/), statOmics group,
-  UGent, Belgium. We collaborate on statistical analyses of
-  quantitative proteomics data.
 
 ## Alumni
 
