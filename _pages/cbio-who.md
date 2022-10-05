@@ -67,10 +67,10 @@ sidebar:
   analysis pipelines. He is co-supervised by Sébastien Pyr dit Ruys
   from the proteomics group.
 
-- **Andrea Vicini** (Github: [andreavicini]
-  (https://github.com/andreavicini)) is a research assistant in
-  bioinformatics working integrative multi-omics approach to study
-  infectious diseases as part of the large, inter-institute
+- **Andrea Vicini** (Github:
+  [andreavicini](https://github.com/andreavicini)) is a research
+  assistant in bioinformatics working integrative multi-omics approach
+  to study infectious diseases as part of the large, inter-institute
   [HYGIEIA](https://www.saintluc.be/fr/hygieia) project.
 
 ![CBIO lab photo](/images/CBIO-20210908.jpg)
