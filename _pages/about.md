@@ -191,7 +191,6 @@ Please do get in touch if you are interested in running workshops.
 
 ### Research articles
 
-
 Lizcano-Perret B., Lardinois C., Wavreil F., Hauchamps P., Herinckx
 G., Sorgeloos F., Vertommen D., Gatto L., Michiels T. *Cardiovirus
 leader proteins retarget RSK kinases toward alternative substrates to

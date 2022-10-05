@@ -67,16 +67,11 @@ sidebar:
   analysis pipelines. He is co-supervised by Sébastien Pyr dit Ruys
   from the proteomics group.
 
-- **Charlotte Léonard** (Github:
-  [chachaleo](https://github.com/chachaleo)) is Master's project in
-  applied mathematics in the lab working on single-cell multi-modal
-  data integration. She is co-supervised by [Michel
-  Verleysen](https://mlg.info.ucl.ac.be/Members/MichelVerleysen) from
-  the Machine Learning Group at UCLouvain.
-
-- **Andrea Vicini** (Github:
-  [andreavicini] (https://github.com/andreavicini)) is a research
-  assistant in bioinformatics working on the HYGIEIA project.
+- **Andrea Vicini** (Github: [andreavicini]
+  (https://github.com/andreavicini)) is a research assistant in
+  bioinformatics working integrative multi-omics approach to study
+  infectious diseases as part of the large, inter-institute
+  [HYGIEIA](https://www.saintluc.be/fr/hygieia) project.
 
 ![CBIO lab photo](/images/CBIO-20210908.jpg)
 
@@ -148,6 +143,13 @@ Institute on 08 September 2021.
   quantitative proteomics data.
 
 ## Alumni
+
+- **Charlotte Léonard** (Github:
+  [chachaleo](https://github.com/chachaleo)) did her Master's project
+  in applied mathematics, working on single-cell multi-modal data
+  integration. She is co-supervised by [Michel
+  Verleysen](https://mlg.info.ucl.ac.be/Members/MichelVerleysen) from
+  the Machine Learning Group at UCLouvain.
 
 - **Manojkumar Selvaraju** (ORCID:
   [0000-0001-6439-5652](https://orcid.org/0000-0001-6439-5652),
