@@ -28,15 +28,8 @@ sidebar:
   group in 2018, focusing on transcriptomics and epigenetics. She
   developed algorithms to identify aberrant transcripts induced by DNA
   hypomethylation in tumor cells, and DNA hypermethylation events
-  linked to overlapping expression.
-
-- **Manon Martin** (ORCID:
-  [0000-0003-4800-0942](https://orcid.org/0000-0003-4800-0942),
-  Github: [ManonMartin](https://github.com/ManonMartin)) is a research assistant
-  in bioinformatics with a focus on transcriptomics and other omics data analysis.
-  She joined the CBIO group in September 2020 and holds a PhD is biostatistics.
-  During her thesis, she worked on several aspects of NMR metabolomics
-  data treatment, mostly based on multivariate data analysis.
+  linked to overlapping expression. Axelle plays a major role in the
+  bioinformatics core facility.
 
 - **Christophe Vanderaa** (ORCID:
   [0000-0001-7443-5427](https://orcid.org/0000-0001-7443-5427),
@@ -132,6 +125,14 @@ Institute on 08 September 2021.
 <!--   application of machine learning algorithms to solve problems in -->
 <!--   spatial proteomics. A recent example is transfer learning -->
 <!--   ([Breckels *et al.* 2016](http://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1004920)). -->
+
+- **Manon Martin** (ORCID:
+  [0000-0003-4800-0942](https://orcid.org/0000-0003-4800-0942),
+  Github: [ManonMartin](https://github.com/ManonMartin)) is a research
+  assistant in bioinformatics at the LIBST and ELI institues and the
+  SMCS core facility on the Louvain-la-Neuve campus. She worked in the
+  CBIO group from September 2020 to June 2022. She still collaborates
+  with the lab as part of the bioinformatics core facility.
 
 - [**Lieven Clement**](https://statomics.github.io/), statOmics group,
   UGent, Belgium. We collaborate on statistical analyses of
