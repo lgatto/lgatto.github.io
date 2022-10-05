@@ -73,11 +73,11 @@ sidebar:
   part of the large, inter-institute
   [HYGIEIA](https://www.saintluc.be/fr/hygieia) project.
 
-![CBIO lab photo](/images/CBIO-20210908.jpg)
+![CBIO lab photo](/images/CBIO-20221005.jpg)
 
-From left to right: Chong, Philippe, Christophe, Manoj, Laurent,
-Julie, Samuel, Manon and Axelle. Picture taken at the de Duve
-Institute on 08 September 2021.
+From left to right: Philippe, Kristina, Samuel, Axelle, Christophe,
+Julie, Andrea and Laurent. Picture taken at the de Duve Institute on
+5 October 2022.
 
 <!-- ## Remote members -->
 
