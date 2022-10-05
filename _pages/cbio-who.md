@@ -56,16 +56,22 @@ sidebar:
   Biostatistics.
 
 - **Julie Devis** (Github:
-  [JulieDevis](https://github.com/JulieDevis)) is a master student in
-  biomedical sciences. She is working on deciphering complex
-  mechanisms of epigenetic alterations in cancer genomes. She is
-  pursuing her research in collaboration with the epigenetics group
-  and is co-supervised by Axelle.
+  [JulieDevis](https://github.com/JulieDevis)) did her master's
+  project in the CBIO lab and is now, since September 2022, a PhD
+  student in biomedical sciences. She is working on deciphering
+  complex mechanisms of epigenetic alterations in cancer genomes. She
+  is pursuing her research in collaboration with Axelle Loriot and
+  [Prof. Charles De
+  Smet](https://www.deduveinstitute.be/cancer-epigenetics) from the
+  epigenetics group.
 
-- **Samuel Grégoire** is a master student in biomedical sciences who
-  is benchmarking single cell mass spectrometry-based proteomics
-  analysis pipelines. He is co-supervised by Sébastien Pyr dit Ruys
-  from the proteomics group.
+- **Samuel Grégoire**
+  (Github:[samgregoire](https://github.com/samgregoire) did his
+  master's project in the CBIO lab and is now, since September 2022, a
+  PhD student in biomedical sciences. He is working on single-cell
+  biology in AML, including single-cell proteomics, in collaboration
+  with Didier Vertommen, who runs the institute's mass spectrometry
+  core facility.
 
 - **Andrea Vicini** (Github:
   [andreavicini](https://github.com/andreavicini)) is a research
