@@ -202,11 +202,13 @@ Here's how things look like after a couple of weeks:
    this a loss (for them, personally) compared to the opportunities
    offered by the change.
 
-2. The first post-test polls of the year indicated that the majority
-   of students understand the material but needed more work to fully
-   master it. A small (but increasing from the first and second polls)
-   fraction of students didn't understand the material and conceded
-   they needed more help.
+2. The first post-test polls of the year indicate that the majority of
+   students understand the material but needed more work to fully
+   master it (from 55 to 85%). Smaller fractions of students don't
+   understand the material and conceded they need more help (8 to 14%)
+   or fully master it (from 0 to 17%). The proportions are variable,
+   depending on the chapter, but the group understanding the material
+   is always the largest, by a comfortable margin.
 
 3. We set up office hours during the week and just before the
    lectures, making sure that these didn't conflict with the student
