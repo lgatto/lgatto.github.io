@@ -191,6 +191,13 @@ Please do get in touch if you are interested in running workshops.
 
 ### Research articles
 
+Crook OM, Davies CTR, Breckels LM, Christopher JA, Gatto L, Kirk PDW,
+Lilley KS *Inferring differential subcellular localisation in
+comparative spatial proteomics using BANDLE*, Nature Communications
+volume 135948
+(2022)[doi:10.1038/s41467-022-33570-9](https://doi.org/10.1038/s41467-022-33570-9)
+(Pre-print: [biorXiv](https://doi.org/10.1101/2021.01.04.425239)).
+
 Lizcano-Perret B., Lardinois C., Wavreil F., Hauchamps P., Herinckx
 G., Sorgeloos F., Vertommen D., Gatto L., Michiels T. *Cardiovirus
 leader proteins retarget RSK kinases toward alternative substrates to
@@ -290,12 +297,6 @@ Jean-Luc Gala *On the many advantages of using the VariantExperiment
 class to store, exchange and analyze SARS-CoV-2 genomic data and
 associated metadata* bioRxiv 2021.04.05.438328; doi:
 [https://doi.org/10.1101/2021.04.05.438328](https://doi.org/10.1101/2021.04.05.438328)
-
-
-Crook OM, Davies CTR, Gatto L, Kirk PDW, Lilley KS *Inferring
-differential subcellular localisation in comparative spatial
-proteomics using BANDLE* bioRxiv
-[https://doi.org/10.1101/2021.01.04.425239](https://doi.org/10.1101/2021.01.04.425239).
 
 Crook OM, Geladaki A, Nightingale DJH, Vennard O, Lilley KS, Gatto L,
 Kirk PDW *A semi-supervised Bayesian approach for simultaneous protein
