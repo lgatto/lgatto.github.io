@@ -25,6 +25,8 @@ master's course), and am now, as part of the [Bioconductor Teaching
 committee](https://www.bioconductor.org/help/education-training/),
 developing new lessons.
 
+<!--more-->
+
 Delivering good courses at workshops isn't an easy task, but everybody
 can get there with the right preparation and support (such as proposed
 by the Carpentries). There is however one aspect that makes it
