@@ -4,8 +4,6 @@ tags: ["education", "teaching"]
 comments: false
 ---
 
-## Introduction
-
 I have been extremely lucky to participate in a [Carpentries
 instructor](https://carpentries.github.io/instructor-training/)
 training as an early career researcher. By then, I had only taught a
@@ -24,8 +22,6 @@ courses respectively and [WSBIM2122](http://bit.ly/WSBIM2122) for the
 master's course), and am now, as part of the [Bioconductor Teaching
 committee](https://www.bioconductor.org/help/education-training/),
 developing new lessons.
-
-<!--more-->
 
 Delivering good courses at workshops isn't an easy task, but everybody
 can get there with the right preparation and support (such as proposed
