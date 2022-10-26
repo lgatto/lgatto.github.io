@@ -207,14 +207,16 @@ Here's how things look like after a couple of weeks:
    master it (from 55 to 85%). Smaller fractions of students don't
    understand the material and conceded they need more help (8 to 14%)
    or fully master it (from 0 to 17%). The proportions are variable,
-   depending on the chapter, but the group understanding the material
-   is always the largest, by a comfortable margin.
+   depending on the chapter, but the fraction of students
+   understanding the material is always the largest, by a comfortable
+   margin.
 
 3. We set up office hours during the week and just before the
    lectures, making sure that these didn't conflict with the student
-   schedule. So far, for the first weeks were this has been in place,
-   the number of students that booked and met with us was not in line
-   with the poll (but increased over the first and second tests).
+   schedule. So far, for the first weeks this has been in place, the
+   number of students that booked and met with us was not in line with
+   the poll - we meet with 1 to 3 students per week, out of a total
+   over 40.
 
 4. I have received a couple of emails from students not being able to
    attend. Most were related to clashes in their schedule (for
@@ -223,7 +225,7 @@ Here's how things look like after a couple of weeks:
    how they intended to make up for missing the classes: work by
    themselves, use the recordings we provide, interact with class
    mates who do attend the lectures. Along the same lines, I had one
-   student so far that was explicit about them re-reading the parts
+   student that explicitly wrote that they would revise the sections
    they struggled with on their end-of-class red sticky notes.
 
 ## Adjustments for smaller classes
@@ -321,10 +323,18 @@ the kind of data, analyses and interpretation that would be expected.
 ## Final thoughts
 
 There is quite some excitement on my part with these new approaches,
-which has, I believe, a positive impact on my teaching. It feels like
-clarifying and verbalising these goals also gives me more freedom to
-aim for them and reaching out to the students. The latest set of
-sticky notes goes along these lines and gives hope for the future.
+which has, I believe, a positive impact on my teaching. The lectures
+seem to have become more interactive: I try to make sure that all/most
+students get asked questions about the material we see and the
+exercises we do. Based on the sticky notes feedback that are collected
+at the end of each lecture, they seem to appreciate it because it
+improves their involvement and attention.  In previous years, sampling
+students at random for to answer my questions was reported as being
+stressful on the sticky notes. It feels like clarifying and
+verbalising the goals gives me more freedom to reach out to the
+students and them to take it as a genuine learning opportunity. The
+latest set of sticky notes goes along these lines and gives hope for
+the future.
 
 
 [^1]: In *UNgrading, why rating students undermines learning (and what to do instead)*, Susan D. Blum (editor), 2020.
