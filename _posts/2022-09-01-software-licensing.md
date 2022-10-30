@@ -8,8 +8,8 @@ This post was motivated by the preparation of a the
 [CytoPipeline](https://uclouvain-cbio.github.io/CytoPipeline/index.html)
 package and the following
 [question](https://support.bioconductor.org/p/9144841/) about software
-licenses. The `CytoPipeline` package is developed by Philippe Hauchamps 
-whose PhD project is funded by GSK. Any deliverable that is produced by 
+licenses. The `CytoPipeline` package is developed by Philippe Hauchamps
+whose PhD project is funded by GSK. Any deliverable that is produced by
 this project needs to be approved by the funder prior to
 publication/release. It was thus particularly important to review and
 understand the open source licensing requirements with care.
@@ -45,8 +45,8 @@ will trigger the installation of these dependencies and the code (or
 parts thereof) of these dependencies will be loaded (copied?) into my
 workspace when my package is loaded.
 
-Do we consider the above redistribution of someone else's code? If 
-not, then licensing terms do not necessarily apply, or at least are 
+Do we consider the above redistribution of someone else's code? If
+not, then licensing terms do not necessarily apply, or at least are
 open to discussion..
 
 One could argue that licenses need to be applied for code that is
@@ -94,16 +94,23 @@ permissive) such as updating from GPL 2 to 3 or from GPL 2 to >= 2,
 the impact is limited. There are however cases when the change comes
 with substantial restrictions.
 
-Some Bioconductor packages, notably `flowWorkspace` and `CytoML`, 
-recently had their licence 
-[changed](https://github.com/RGLab/flowWorkspace/commit/a1be772b3a43c51cf2606ea9b68b720654389197) 
+Some Bioconductor packages, notably `flowWorkspace` and `CytoML`,
+recently had their licence
+[changed](https://github.com/RGLab/flowWorkspace/commit/a1be772b3a43c51cf2606ea9b68b720654389197)
 from an Artistic 2.0 license to an
-academic-only 
-[Fred Hutch license](https://github.com/RGLab/flowWorkspace/blob/master/LICENSE). 
+academic-only
+[Fred Hutch license](https://github.com/RGLab/flowWorkspace/blob/master/LICENSE).
 This change stops any
 non-academic user from using the re-licensed software in their
 day-to-day activities. This extreme limitation impacts all other
 packages that depend on `flowWorkspace` or `CytoML`. In such a
-case, one would have to copy the relevant code from an older version, 
-that was still released under an open source license, and follow the 
+case, one would have to copy the relevant code from an older version,
+that was still released under an open source license, and follow the
 two steps highlighted in the simple case above.
+
+
+**Update** Good news! The licence of the
+[above](https://code.bioconductor.org/browse/flowWorkspace/commit/46dcefc254f249fa0ef4e514ded5ed3037cbe00a)
+[packages](https://code.bioconductor.org/browse/CytoML/commit/e4c10db6082885ac63978634084ed8f2ca74c4dd)
+has been updated to [GNU Affero General Public License version 3
+(AGPL)](https://opensource.org/licenses/agpl-3.0).
