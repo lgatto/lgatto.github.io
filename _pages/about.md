@@ -855,6 +855,6 @@ European Bioinformatics Institute, Hinxton, UK, 8 March 2016.
 
 ## Get in touch
 
-On the fediverse at <a rel="me"
-href="https://fosstodon.org/@lgatto">lgatto@fosstodon.org</a> or by
-email at `name.surname<at>institution.be`.
+On the fediverse at <a rel="me" href="https://fosstodon.org/@lgatto">lgatto@fosstodon.org</a>,
+by email at `name.surname<at>institution.be` or via a
+[Github](https://github.com/lgatto) issue on a relevant repo.
