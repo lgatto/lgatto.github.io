@@ -1,7 +1,7 @@
 ---
 permalink: /about/
 title: "About the author"
-modified: 2017-07-23
+modified: 2022-11-05
 comments: false
 author_profile: true
 header:
