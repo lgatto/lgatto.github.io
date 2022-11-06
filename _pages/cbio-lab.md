@@ -74,5 +74,6 @@ The CBIO lab benefits from funding from
 
 # Contact
 
-On [twitter](https://twitter.com/lgatt0) or by email
-![contact email](/images/contact-email.png)
+On the fediverse at <a rel="me"
+href="https://fosstodon.org/@lgatto">lgatto@fosstodon.org</a> or by
+email ![contact email](/images/contact-email.png)
