@@ -852,3 +852,9 @@ of quantitative proteomics data
 
 [Introduction to Integrative Omics: proteomics](http://tinyurl.com/Intro-Integ-Omics-Prot),
 European Bioinformatics Institute, Hinxton, UK, 8 March 2016.
+
+## Get in touch
+
+On the fediverse at <a rel="me"
+href="https://fosstodon.org/@lgatto">lgatto@fosstodon.org</a> or by
+email at `name.surname<at>institution.be`.
