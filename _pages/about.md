@@ -210,7 +210,7 @@ volume 135948 (2022)
 Lizcano-Perret B., Lardinois C., Wavreil F., Hauchamps P., Herinckx
 G., Sorgeloos F., Vertommen D., Gatto L., Michiels T. *Cardiovirus
 leader proteins retarget RSK kinases toward alternative substrates to
-perturb nucleocytoplasmic traffic*. bioRxiv 2022.06.16.496404;
+perturb nucleocytoplasmic traffic*. (2022) bioRxiv 2022.06.16.496404;
 [doi:10.1101/2022.06.16.496404](https://doi.org/10.1101/2022.06.16.496404).
 
 Pollé O.G, Delfosse A., Martin M., Louis J., Gies I., den Brinker M.,
