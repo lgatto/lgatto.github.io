@@ -5,23 +5,23 @@ comments: false
 ---
 
 Here's the initial assessment of the new *ungrading and feedback*
-pedagogy that the TAs and myself implemented this academic year
+pedagogy that the TAs and myself have implemented this academic year
 (2022-2023). In a nutshell, we decided to not mark any of the weekly
 test and maximise opportunities for feedback to favour student's
 self-assessment and reflection on their own work
 (meta-cognition). Read the [full
-post](https://lgatto.github.io/ungrading/) to learn the reasons and
-opportunities for dropping grading the weekly tests and maximise
+post](https://lgatto.github.io/ungrading/) to read about the reasons
+and opportunities for dropping grading the weekly tests and maximise
 feedback with students.
 
 ## Third bachelor course
 
 Let's start with the third bachelor student's feedback, collected as
-part of the 'Year committee' meeting, where student representatives
-meet with the professors and share the feedback they collected among
-all students. This is a cohort that experienced the previous approach,
-where each weekly test was graded and the students that earned a
-decent weighted average would get a dispense for the final exam.
+part of the 'Year committee', where student representatives meet with
+the professors and share the feedback they collected among all
+students. This is a cohort that experienced the previous approach,
+where each weekly test was graded and students that earned a decent
+weighted average would get a dispense for the final exam[^1].
 
 - While some students did prefer being kept on their toes with
   marking, the majority appreciate dropping marking to reduce
@@ -29,7 +29,7 @@ decent weighted average would get a dispense for the final exam.
 
 - The general pedagogy and the feedback are well received. In
   particular, students like the post-it notes for in-class
-  interactions and feedback and the possibility to book one-to-one
+  interactions and feedback, and the possibility to book one-to-one
   sessions to get individual feedback.
 
 - This year, we also have the support of a third TA, which helps a lot
@@ -37,10 +37,11 @@ decent weighted average would get a dispense for the final exam.
   during class.
 
 The feedback we gathered on the post-it notes after the last lecture
-and our subjective appreciation is along the same lines. Some students
-already mentioned on the post-it notes that they were looking forward
-to next year's (optional) Master's course, which is a strong argument
-in favour of our strategy.
+and our subjective appreciation (based on the perceived motivation of
+students, and the quantity and quality of their questions) is along
+the same lines. Some students already mentioned on the post-it notes
+that they were looking forward to next year's (optional) Master's
+course, which is a strong argument in favour of our strategy.
 
 - What about mandatory presence ... ?
 
@@ -96,23 +97,25 @@ which we use to update and improve the course.
 
 ## Next assessments
 
-- We need to consider whether the positive impact that we seem to
-  observe in the third bachelor's course also translates into a better
-  success rate in the exam. I do have to admit that this makes me
-  slightly uncomfortable. What if we were to see a negative impact
-  (which, honestly, I doubt)? It wouldn't necessarily mean that we did
-  worse, given that we have applied our new strategy on a single
-  cohort. This obviously also applied if we get better results - a
-  better or worse success rate might be the result other confounding
-  factors.
-- On the other hand, this cohort will be the only that has experienced
-  the change in teaching strategy.
-- If I'm being honest, I wouldn't want to teach to the test, for the
-  many reasons underlying the new [ungrading and
-  feedback](https://lgatto.github.io/ungrading/) strategy.
-- Next term, we start with a brand new second bachelor cohort. This
-  will also be an interesting experience, as they will be immediately
-  exposed to this [ungrading and
-  feedback](https://lgatto.github.io/ungrading/) strategy (with us
-  having a term's worth experience), and will experience and adapt to
-  it over two years.
+We need to consider whether the positive impact that we seem to
+observe in the third bachelor's course also translates into a better
+success rate in the exam. I do have to admit that this makes me
+slightly uncomfortable. What if we were to see a negative impact
+(which, honestly, I doubt)? It wouldn't necessarily mean that we did
+worse, given that we have applied our new strategy on a single
+cohort. This obviously also applied if we get better results - a
+better or worse success rate might be the result other confounding
+factors. However, this cohort will be the only that has experienced
+the change in teaching strategy, and hence probably an ideal situation
+for a direct assessment. If I'm being honest, I wouldn't want to teach
+to the test even if exam results were provable worse, for the many
+reasons underlying the new [ungrading and
+feedback](https://lgatto.github.io/ungrading/) strategy.
+
+Next term, we start with a brand new second bachelor cohort. This will
+also be an interesting experience, as they will be immediately exposed
+to this [ungrading and feedback](https://lgatto.github.io/ungrading/)
+strategy (with us having a term's worth experience), and will
+experience and adapt to it over two years.
+
+[^1]: The latter does read like a nice opportunity for students but do read the [motivation](https://lgatto.github.io/ungrading/) for dropping this, and learn about the perverse incentives of such an approach.
