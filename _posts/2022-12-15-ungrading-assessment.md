@@ -43,8 +43,6 @@ the same lines. Some students already mentioned on the post-it notes
 that they were looking forward to next year's (optional) Master's
 course, which is a strong argument in favour of our strategy.
 
-- What about mandatory presence ... ?
-
 ## First masters course
 
 This year, for the first time, students were asked to self-mark during
