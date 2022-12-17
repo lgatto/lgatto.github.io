@@ -114,6 +114,8 @@ Next term, we start with a brand new second bachelor cohort. This will
 also be an interesting experience, as they will be immediately exposed
 to this [ungrading and feedback](https://lgatto.github.io/ungrading/)
 strategy (with us having a term's worth experience), and will
-experience and adapt to it over two years.
+experience and adapt[^2] to it over two years.
 
 [^1]: The latter does read like a nice opportunity for students but do read the [motivation](https://lgatto.github.io/ungrading/) for dropping this, and learn about the perverse incentives of such an approach.
+
+[^2]: The word *adapting* is quite important here. Students adapt at whatever the system throws at them, all too often for the worse... here, I hope for the better. What we propose is quite different from what they are used to, so it does take some adaptation.
