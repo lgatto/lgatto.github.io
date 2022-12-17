@@ -166,6 +166,7 @@ Finish writing tables
 
 ## Acknowledgements
 
-Thank you very much to Kristina for her help in finding useful
-information, advising during installation and debugging, and
-generating the parameter file.
+Thank you very much to [Kristina
+Gomoryova](https://github.com/KristinaGomoryova) for her help in
+finding useful information, advising during installation and
+debugging, and generating the parameter file.
