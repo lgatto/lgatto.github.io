@@ -34,7 +34,7 @@ successfully.
 
 Next, I followed [these
 instructions](https://bioinformatics.stackexchange.com/a/13901), that
-suggsted to use `mono`, and installing it via `conda`. This proved to
+suggested to use `mono`, and installing it via `conda`. This proved to
 be successful and I will be using that setup in the following
 sections.
 
