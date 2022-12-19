@@ -1,20 +1,20 @@
 ---
-title: Installing and running MaxQuant on GNU Linux
+title: Installing and running MaxQuant on GNU/Linux
 tags: ["proteomics"]
 comments: false
 ---
 
 After a first analysis of 20 plasma samples, we wanted to compare the
-results of a single acquisition against a fractionation of the samples
-over 7 fractions, tallying a total of 140 raw files. This required a
-more powerful computer... running GNU Linux.
+results of a single acquisition against a fractionation of the same
+samples over 7 fractions, tallying a total of 140 raw files. This
+required a more powerful computer... running GNU/Linux.
 
 ## Installation
 
 My first reference was the following
 [video](https://www.youtube.com/watch?v=KHdvO1M85VM) by Pavel
-Sinitcyn, a post-doc in MaxQuant team. There's no actual installation
-of MaxQuant needed - the binaries simply need to be
+Sinitcyn, a post-doc in the MaxQuant team. There's no actual
+installation of MaxQuant - the binaries simply need to be
 [downloaded](http://www.coxdocs.org/doku.php?id=maxquant:common:download_and_installation#download_and_installation_guide)
 and unzipped. The challenge is however to install the infrastructure
 to run MaxQuant's C# code on Linux.
@@ -25,18 +25,17 @@ documented
 didn't work under Ubuntu 22.04 LTS.
 
 I am not sure of the reason... I had to install `dotnet` 3.1 (even
-though 2.1 was mentioned in the video above), an older version of
-`dotnet` than available by default on 22.04 LTS. This older version
-depended of an older version of `libssl`, namely `libss1`, that wasn't
-available on ubuntu (again, `libssl3` was the default version). I had
-to download and compile `libss1` by hand, which I seemed to do
-successfully.
+though 2.1 was mentioned in the video above), an older version than
+the one available by default on Ubuntu 22.04 LTS. `dotnet` version 3.1
+itself depended of an older version of `libssl`, namely `libss1`, that
+wasn't available on ubuntu (again, `libssl3` was the default
+version). I had to download and compile `libss1` by hand, which seemed
+to be successful, but ended up with a crashing MaxQuant.
 
 Next, I followed [these
 instructions](https://bioinformatics.stackexchange.com/a/13901), that
 suggested to use `mono`, and installing it via `conda`. This proved to
-be successful and I will be using that setup in the following
-sections.
+be successful. I will be using that setup in the following sections.
 
 ```
 # create the environment
@@ -56,6 +55,8 @@ time of writing) is 2.2.0.0.
 docker run -it nickdg/maxquant
 ```
 
+I couldn't find a up-to-date MaxQuant container elsewhere.
+
 ## Running and debugging
 
 Once installed, running MaxQuant is only a matter of passing it a
@@ -74,12 +75,11 @@ the instruction video above.
 
 The run crashed after just under a week's continuous run. I started
 the job remotely and lost the output, so didn't have any error
-messages to try to identify the cause. I however knew that the first
-MS/MS search was underway and thus resumed the run where it had
-crashed, using the `-p` argument, to start processing from a specific
-job. To find that job index, one can perform a dry run with the
-`--dryrun` argument. This will list all the steps as defined in the
-parameter file and their respective ids.
+messages to try to identify the cause. I knew that the first MS/MS
+search was underway and thus resumed the run at that step/job, using
+the `-p` argument. To find that job index, one can perform a dry run
+with the `--dryrun` argument. This will list all the steps as defined
+in the parameter file and their respective ids.
 
 ```
 mono /path/to/maxquant/bin/MaxQuantCmd.exe --dryrun mqpar.xml
@@ -133,7 +133,7 @@ the error was simply a matter of increasing the size of the heap with
 sudo sysctl -w vm.max_map_count=655350
 ```
 
-I then re-resumed the search with at step 25, corresponding the
+I then re-resumed the search with at step 25, corresponding to the
 calculation of posterior error probabilites:
 
 ```
