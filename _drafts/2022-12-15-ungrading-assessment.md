@@ -20,7 +20,7 @@ feedback with students.
 
 This initial assessment is split into several parts, describing
 different sources of data used for the assessment. The different parts
-have been added over different time periots. Part 1 was originally
+have been added over different time periods. Part 1 was originally
 added on 15 December 2022 and is based on direct, free-form
 informal/semi-formal feedback. Part 2 is based on on-line evaluation
 forms that students were invited to fill out and was prepared on 30
@@ -135,3 +135,68 @@ experience and adapt[^2] to it over two years.
 [^2]: The word *adapting* is quite important here. Students adapt at whatever the system throws at them, all too often for the worse... here, I hope for the better. What we propose is quite different from what they are used to, so it does take some adaptation.
 
 ## Part 2
+
+This second part of the assessment looks at on-line evaluation forms
+that 3rd bachelor students are asked to fill out. There are two types
+of forms, one for the teaching unit (i.e the theoretical part of the
+course) and a second one for the practical sessions. These evaluation
+forms can be requested by the instructor or the faculty (and are
+indeed asked for every three years by the latter, if I remember
+well). I have three forms available, from two different cohorts.
+
+1. Evaluations for the teaching unit from 2021. That's one that I
+   requested. Given that my courses blend theory and practice, I only
+   requested the teaching unit questions, asking students to fill out
+   the form considering both aspects. This form was completed by 27
+   students (individual questions were answered by 25 to 27 students)
+   with represents half of the students.
+
+2. Evaluations for the teaching unit and practicals from 2022. These
+   were requested by the faculty, hence for both parts. The requests
+   and links to the forms where received after I completed the course,
+   I was only able to inform and remind students by forum
+   announcements, hence a low participation rate: only 7 students
+   (with one question getting 6 answers), just under 12% of the full
+   cohort. This probably induces some bias, where only the most
+   committed students, and hence those more likely to provide positive
+   feedback, participated.
+
+Here are the score for the 2022 teaching unit and practical
+sessions. The student answer each question[^3] by providing a score
+from 1 (*Don't agree at all*) to 4 (*Totally agree*).
+
+[^3]: Original question are in French and were translated in English with Google translate, with minimal editing.
+
+![2022 evaluations for the teaching unit](/images/eval_scores_ue_22.png)
+![2022 evaluations for the practical sessions](/images/eval_scores_tp_22.png)
+
+These evaluation are quite good, especially when compared
+to 2021. Below are the questions for the teaching unit of that year.
+
+![2021 evaluations for the teaching unit](/images/eval_scores_ue_21.png)
+
+I also computed the mean scores and standard deviation per question to
+directly compare the 2021 and 2022 results. The figure below show the
+2021 results in the top left panel and the 2022 results in the top
+right and bottom left panels. The top right panel is helpful to
+compare individual questions and the bottom panel to get a more
+general assessment of the 2021 vs 2022 scores. The dotted red line
+represents the yearly mean score.
+
+![Comparison of mean 2021 and 2022 scores for the teaching unit evaluations](/images/mean_ue_21_22.png)
+
+The improvement is striking, to say the least. There are however two
+points to keep in mind:
+
+- In 2022, given that the evaluation request came in late, it is
+  possible that only the most committed students participated, hence
+  boosting these scores up.
+- The 2021 third bachelor cohort had a hard time during the COVID
+  lock-down while doing their second bachelor, and following the
+  course that is a prerequisite to the one evaluated above, which is
+  likely to reduce the overall score.
+
+Even considering the above confounding factors, I am tempted to take
+the figures from the student on-line evaluations as a strong
+endorsement for the new teaching strategy. Hopefully, this will also
+materialise in a part 3 describing the final exam results.
