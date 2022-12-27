@@ -23,7 +23,7 @@ different sources of data used for the assessment. The different parts
 have been added over different times. Part 1 was originally added on
 15 December 2022 and is based on direct, free-form informal and
 semi-formal feedback. Part 2 is based on on-line evaluation forms that
-students were invited to fill out and was prepared on 30 December
+students were invited to fill out and was published on 27 December
 2022.
 
 ## Part 1
