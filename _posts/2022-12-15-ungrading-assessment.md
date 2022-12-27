@@ -185,7 +185,7 @@ compare individual questions and the bottom panel to get a more
 general assessment of the 2021 vs 2022 scores. The dotted red line
 represents the yearly mean score.
 
-![Comparison of mean 2021 and 2022 scores for the teaching unit evaluations](/images/mean_ue_21_22.png)
+![Comparison of mean 2021 and 2022 scores for the teaching unit evaluations](/images/eval_mean_ue_21_22.png)
 
 The improvement is striking, to say the least. There are however two
 points to keep in mind:
