@@ -6,65 +6,62 @@ I hereby claim:
 
   * I am an admin of https://lgatto.github.io
   * I am lgatto (https://keybase.io/lgatto) on keybase.
-  * I have a public key with fingerprint 2068 E7FF 6881 FE54 9552  3DA0 D9DC DECC 8076 7E07
+  * I have a public key with fingerprint 3228 0F50 8589 B085 9E3D  A828 0C03 2B80 46E2 E38A
 
 To do so, I am signing this object:
 
 {
-    "body": {
-        "key": {
-            "eldest_kid": "0101e70a7d6ea2583bbce4a6a2d44a428734a979f4fc986b68c09eaacc005f9beb370a",
-            "fingerprint": "2068e7ff6881fe5495523da0d9dcdecc80767e07",
-            "host": "keybase.io",
-            "key_id": "d9dcdecc80767e07",
-            "kid": "0101e70a7d6ea2583bbce4a6a2d44a428734a979f4fc986b68c09eaacc005f9beb370a",
-            "uid": "4c68bfa68ae7701be29820ab26831e19",
-            "username": "lgatto"
-        },
-        "revoke": {
-            "sig_ids": [
-                "1ba75d379d272bfbded28a67a4ba50e312e8efcda4824a1bb12d717ca0873dc70f"
-            ]
-        },
-        "service": {
-            "hostname": "lgatto.github.io",
-            "protocol": "https:"
-        },
-        "type": "web_service_binding",
-        "version": 1
+  "body": {
+    "key": {
+      "eldest_kid": "01011ccc0bb7504d632535bf6d90265c7165018f329b7110d6538fd701df463a55960a",
+      "fingerprint": "32280f508589b0859e3da8280c032b8046e2e38a",
+      "host": "keybase.io",
+      "key_id": "0c032b8046e2e38a",
+      "kid": "01011ccc0bb7504d632535bf6d90265c7165018f329b7110d6538fd701df463a55960a",
+      "uid": "4c68bfa68ae7701be29820ab26831e19",
+      "username": "lgatto"
     },
-    "ctime": 1483108930,
-    "expire_in": 157680000,
-    "prev": "341a772e59c572d27fdacf4e51992a72c2dd8e3544295730d037d1afa0415b6e",
-    "seqno": 25,
-    "tag": "signature"
+    "service": {
+      "hostname": "lgatto.github.io",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 1
+  },
+  "ctime": 1672425136,
+  "expire_in": 157680000,
+  "prev": "44da43f9d442d29966001902de12f22fbf6a58ee7ae0b291a56de38a9f67615c",
+  "seqno": 55,
+  "tag": "signature"
 }
 
 which yields the signature:
 
 -----BEGIN PGP MESSAGE-----
-Version: Keybase OpenPGP v2.0.61
-Comment: https://keybase.io/crypto
 
-yMJwAnicrVJtiFVFGL6rpnY3U9xWsD/KbGs/XJaZOXPOzLkgxKqpQQhZbbbWdT7e
-c/d4t3Punnt2W7kuLH4kiP2I6IPIJAwMlFZDkJBSN13EW/QjJENLN9Kg7Mem+LWL
-OWerH0E/mz/DzDzP8z7vM++pOdNz+YZfb+xZ+dClF3c11E/e7Mu9ECQdNaRisxkV
-aqgMUxv0GKimxXJoUAFhgglwLLnxQFJXOEppYNKT1DAmGRXcYdLnfsAC7QtPeUJj
-H6TUGmM38BUox7JRGwrCqARJJQmj1MpS7AngQeAJQQJwme+61DESG99oA1oLzD0O
-mFtid1zNGNacklVoD2N7Zw/FKXv/gf+fffdNyTHtCRVIT0jgHBMF1BcUS0U94RAg
-fgasQhLJV8Cie0oyTWM02IYS6I/LkKVaDUvWchUVuhBRkrvG4b6hnKpAGTBUSI9L
-pqSLwSEUBATaSCYok0QpQg0nXEtsXRvNcYBestq2Xn+op8SzjP5Vu70Upt196q+0
-Kkmcxjrusa/daVqpFjJn6eZKBn8VVPFvoaIKI2N/yTL6IamGcYQKxCJ1GmbKhNlW
-sfAd3IZgoBImUAwzhMs9ge3K6kC/lXQYkZxTcH3tcmp7DIzUAQOX+D6VnGpqjADH
-ZYz6LnewwQ43RAYSM+IqD1DWWm8UowJ1rU9Zspo2vUimfQmgwZETG2bkGvK5mQ9M
-y8Y3l39w3j9DffuJ2bn62I19k6NnGgevrZ4YXrci+ObeD4+NP3lMjL/duLfr8/Ka
-g0tWtZzDE80zj4/+dD06/f2CtccW9X5YMz+/u25L7trXa86fbZozNNTx/uJDTUdK
-w9+1eC+/V266O/3h8ibmHO1k9cOXH79F3ly6P18nTbq48WJ92eS9sbXjB07e2rY/
-+WLfIyPbf2zd3XBnycDl5zq2vnbl6VOjO9+Z/eWF2/PKh3fP/3Z+15mb5/Y8/8bV
-39Y/tWNYtH461Hm8sr6rGU0MNrZc/GTB0OmNo884n91Fz57dtry5feDS9S0fLL9z
-YWvnofN/1K4c+GjWo5O/L8ofRH++FbkL236piZGvYHGx9eNZe09smPZ6Lxmbex81
-O2Oj
-=mwOq
+owGtUm1QVFUYXliVWNyWMCoQMC8fMsXA/f4AaUpJwkpCSSLI7X6cu1wW9+LuXVDI
+2jAdllEH7cNGiNIxNAk3mmZoptkNCCRkMRyJz0YdQBRhCrWpLMHu1fzR9Lfz45w5
+7/u8z3meZ06tUa8zBCzVP+laNz5RE9A7zel4T7K/EuJkYQeUWglZwd0DlAjAoZit
+kgClQjACIwjP8zDHUQSMCySGEhjBiaTAwChJ8BRCEjBCixjKcBSCwAJJYLQoUDAi
+iDiJsQTBkDALJUGiZLMAe6ldsikqLYaiNCwSME3QDKfuDMAEllZrPIyhHA3jJEAB
+RmuDRbJDm1DFcawDJEuyWlMv5nvy/ov/n3U779LhPElzIkvSLKBUDAdQhkZhlkNJ
+GkMAwmhAB7Db2K1ARZdYWEWRoZ1JkFork3igxar5+Fc/2SIpRU7unqNSu6zIvFyi
+dosUpdSRqk0rO0o1eDngzP8QmTnJJqhJqhNlwO6QZBuUiqhIXpE0ZoSkUBwlEIxM
+gsD2UskOzJKGICiShtWlvQPKND+4wOIFmMgIOI4KKMOQJAwjajQCQFARRUU1KZag
+AaBYAHMog7AEKWgBMyJJkQjBQ5q3bTYZSiUIVShrUUkdksXGKk47gHYa3IHYIl2A
+QRf9yMpFaKLppd3uL3Y3pJ9IvP/9Fgdqf09nCA69XynfZLrDvTL9IyipNgXdrqg5
+uO+95plVdpfyZp/zaNBvH9LjYRtN84OfNuorjU2+kNqosOotTT0WdyOUaH1rT++N
+5vyTt9rz3h+imZmRBqFwIGZZvSffuGrDbMjL/vjevrbiXCLeRsS2DXAxo+P53qcs
+l0+Pta/+40JK9YFQv6WlIKKwvjtu+tpIned6rKG8uLW97buqy5Ubx3zHaxqLvINo
+i/6KPUs4U3fqYtc3QT/8+UR49mR2WIahYevZw+ntAym+qxHnjpyTjYavoeHRjjzK
+NXTs6ZScD3yPmizhZ+SgXb9Hx26eXZuUcDB9ciLLqw8pyRjwGZ8/MB5tnLE1HT1/
+a8kmR3P5+Tsr8qYbly7v8tS1Zn+2a/RX2+Jn9f6yzAXmxb/G1p+KjMTTTOkJirWs
+x/1z15yco3ug3xm6PSZ3S+fmnw65Fz5n+KkVfXHUyNvds487Cjq/rEq4lJHVMZV/
++o3nEir2euKLl3cGxq+rW5hbSOnxBsrcUE7sq7ft62fFtNk56WaEd9zV4rn48U1l
+26Vr1tD+WtfkhXcz6eHuiIpg+LHO1phj8/vrXU1THd+u3WB5+HVrZiKYSLvxWtQy
+z76PWq54jrfLHiySr7r+wi9nO7z4yqDvo77yT4c/SPbHHBlbveek/h0oZfhE8DDx
+0CdmNjPEfXgmcI2zPncw/5mrS+bFuEN7C/f/DQ==
+=Y0hY
 -----END PGP MESSAGE-----
 
 And finally, I am proving ownership of this host by posting or
@@ -73,3 +70,4 @@ appending to this document.
 View my publicly-auditable identity here: https://keybase.io/lgatto
 
 ==================================================================
+
