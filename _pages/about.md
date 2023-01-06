@@ -141,10 +141,10 @@ In biology, localisation is function: knowledge of the localisation of
 proteins is of paramount importance to assess and study their
 function, and spatial proteomics is the systematic study of the
 sub-cellular localisation of proteins and changes thereof ([Gatto et
-al. 2010](http://www.ncbi.nlm.nih.gov/pubmed/21080489), [Gatto et
-al. 2014](http://www.mcponline.org/content/13/8/1937.long)). Since
-2010, my team has developed novel software and machine learning
-approaches enabling more reliable and systematic inference of protein
+al. 2010](http://www.ncbi.nlm.nih.gov/pubmed/21080489) and
+[2014](http://www.mcponline.org/content/13/8/1937.long)). Since 2010,
+my team has developed novel software and machine learning approaches
+enabling more reliable and systematic inference of protein
 localisations using quantitative proteomics. This work has
 materialised in the
 [`pRoloc`](http://bioconductor.org/packages/pRoloc) package ([Gatto et
@@ -155,10 +155,10 @@ visualisation techniques ([Gatto el al.
 detection ([Breckels et al.
 2013](http://www.ncbi.nlm.nih.gov/pubmed/23523639), [Crook et al.
 2020](https://doi.org/10.1371/journal.pcbi.1008288)) and transfer
-learning, harvesting GO annotations of microscopy-based methods to
-improve the spatial resolution of experimental spatial proteomics data
-([Breckels et al.
-2016](http://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1004920)). More
+learning ([Breckels et al.
+2016](http://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1004920)),
+harvesting GO annotations of microscopy-based methods to improve the
+spatial resolution of experimental spatial proteomics data. More
 recently, we proposed a Bayesian framework to quantify uncertainty and
 probabilisatically address multi-localsiation of proteins ([Crook et
 al. 2018](https://doi.org/10.1371/journal.pcbi.1006516)) and study
