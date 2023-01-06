@@ -101,7 +101,7 @@ dissemination of all research outputs.
 My work on the design and implementation of reproducible mass
 spectrometry-based proteomics data analysis pipeline has materialised
 in the development of the
-[`MSnbase`](http://bioconductor.org/packages/MSnbase) ([Gatto et al.,
+[`MSnbase`](http://bioconductor.org/packages/MSnbase) ([Gatto et al.
 2012](http://www.ncbi.nlm.nih.gov/pubmed/22113085) and
 [2021](https://pubs.acs.org/doi/10.1021/acs.jproteome.0c00313))
 package to manipulate, process and analyse quantitative proteomics
@@ -140,23 +140,30 @@ processing, analysis and interpretation.
 In biology, localisation is function: knowledge of the localisation of
 proteins is of paramount importance to assess and study their
 function, and spatial proteomics is the systematic study of the
-sub-cellular localisation of proteins and changes thereof
-([Gatto et al., 2010](http://www.ncbi.nlm.nih.gov/pubmed/21080489)). Since
-2010, I have developed novel software and machine learning approaches
-enabling more reliable and systematic inference of protein
+sub-cellular localisation of proteins and changes thereof ([Gatto et
+al. 2010](http://www.ncbi.nlm.nih.gov/pubmed/21080489), [Gatto et
+al. 2014](http://www.mcponline.org/content/13/8/1937.long)). Since
+2010, my team has developed novel software and machine learning
+approaches enabling more reliable and systematic inference of protein
 localisations using quantitative proteomics. This work has
-materialised in
-the [`pRoloc`](http://bioconductor.org/packages/pRoloc) package
-([Gatto et al., 2014](http://www.ncbi.nlm.nih.gov/pubmed/24413670))
-that implements various established classification algorithms,
-effective visualisation techniques
-([Gatto el al., 2015](http://www.ncbi.nlm.nih.gov/pubmed/25690415)) as
-well as novelty detection
-([Breckels et al., 2013](http://www.ncbi.nlm.nih.gov/pubmed/23523639))
-and transfer learning, harvesting GO annotations of microscopy-based
-methods to improve the spatial resolution of experimental spatial
-proteomics data
-([Breckels et al., 2016](http://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1004920)).
+materialised in the
+[`pRoloc`](http://bioconductor.org/packages/pRoloc) package ([Gatto et
+al. 2014](http://www.ncbi.nlm.nih.gov/pubmed/24413670)) that
+implements various established classification algorithms, effective
+visualisation techniques ([Gatto el al.
+2015](http://www.ncbi.nlm.nih.gov/pubmed/25690415)) as well as novelty
+detection ([Breckels et al.
+2013](http://www.ncbi.nlm.nih.gov/pubmed/23523639), [Crook et al.
+2020](https://doi.org/10.1371/journal.pcbi.1008288)) and transfer
+learning, harvesting GO annotations of microscopy-based methods to
+improve the spatial resolution of experimental spatial proteomics data
+([Breckels et al.
+2016](http://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1004920)). More
+recently, we proposed a Bayesian framework to quantify uncertainty and
+probabilisatically address multi-localsiation of proteins ([Crook et
+al. 2018](https://doi.org/10.1371/journal.pcbi.1006516)) and study
+comparative spatial proteomics to infer protein re-localisation
+([Crook et al. 2022](https://doi.org/10.1038/s41467-022-33570-9)).
 
 
 ## Teaching
