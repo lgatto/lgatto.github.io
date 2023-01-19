@@ -198,14 +198,15 @@ Please do get in touch if you are interested in running workshops.
 
 ### Research articles
 
-Vanderaa C and Gatto L *The current state of single-cell proteomics
-data analysis* (2022),
-[arXiv:2210.01020](https://arxiv.org/abs/2210.01020).
-
 Gatto L, Aebersold R, Cox J *et al.*, *Initial recommendations for
 performing, benchmarking, and reporting single-cell proteomics
 experiments* (2022),
 [arXiv:2207.10815](https://arxiv.org/abs/2207.10815).
+
+Vanderaa C and Gatto L *The current state of single-cell proteomics
+data analysis* (2022), Current Protocols 3 (1):e658
+[10.1002/cpz1.658]https://doi.org/10.1002/cpz1.658) (preprint:
+[arXiv:2210.01020](https://arxiv.org/abs/2210.01020)).
 
 Crook OM, Davies CTR, Breckels LM, Christopher JA, Gatto L, Kirk PDW,
 Lilley KS *Inferring differential subcellular localisation in
