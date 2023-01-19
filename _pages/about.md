@@ -211,7 +211,7 @@ data analysis* (2022), Current Protocols 3 (1):e658
 Crook OM, Davies CTR, Breckels LM, Christopher JA, Gatto L, Kirk PDW,
 Lilley KS *Inferring differential subcellular localisation in
 comparative spatial proteomics using BANDLE*, Nature Communications
-volume 135948 (2022)
+13, 5948 (2022)
 [doi:10.1038/s41467-022-33570-9](https://doi.org/10.1038/s41467-022-33570-9)
 (Pre-print: [biorXiv](https://doi.org/10.1101/2021.01.04.425239)).
 
