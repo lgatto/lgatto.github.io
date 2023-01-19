@@ -205,7 +205,7 @@ experiments* (2022),
 
 Vanderaa C and Gatto L *The current state of single-cell proteomics
 data analysis* (2022), Current Protocols 3 (1):e658
-[10.1002/cpz1.658]https://doi.org/10.1002/cpz1.658) (preprint:
+[10.1002/cpz1.658](https://doi.org/10.1002/cpz1.658) (preprint:
 [arXiv:2210.01020](https://arxiv.org/abs/2210.01020)).
 
 Crook OM, Davies CTR, Breckels LM, Christopher JA, Gatto L, Kirk PDW,
