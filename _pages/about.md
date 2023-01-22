@@ -529,7 +529,7 @@ href="http://www.plantphysiol.org/content/early/2014/08/13/pp.114.245589.short">
 <a href="http://www.ncbi.nlm.nih.gov/pubmed/25122472">PubMed</a>)
 
 
-Griss J, <i>et al.</i> *The mzTab Data Exchange Format: communicating
+Griss J, *et al.* *The mzTab Data Exchange Format: communicating
 MS-based proteomics and metabolomics experimental results to a wider
 audience*, Mol Cell Proteomics. 2014 June 30. (<a
 href="http://www.mcponline.org./content/early/2014/06/30/mcp.O113.036681.abstract">Publisher</a>)
@@ -553,13 +553,13 @@ coverage</a>)
 
 Walzer M, <i>et al.</i> *qcML: an exchange format for quality control
 metrics from mass spectrometry experiments*, Mol Cell Proteomics. 2014
-Apr 23. (<a
+Apr 23 (<a
 href="http://www.ncbi.nlm.nih.gov/pubmed/24760958">PubMed</a>).
 
 
 Vizcaíno J.A. <i>et al.</i> *ProteomeXchange: globally co-ordinated
 proteomics data submission and dissemination*, Nature Biotechnology
-2014, 32, 223–226.  (<a
+2014, 32, 223–226 (<a
 href="http://www.ncbi.nlm.nih.gov/pubmed/24727771">PubMed</a>)
 
 
