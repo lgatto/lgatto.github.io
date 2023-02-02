@@ -71,6 +71,7 @@ The CBIO lab benefits from funding from
 - [Research Foundation – Flanders](https://www.fwo.be/) (FWO).
 - Sofina Covid Solidarity Fund.
 - [Televie](https://televie.be/)
+- GSK
 
 # Contact
 
