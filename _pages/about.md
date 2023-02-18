@@ -41,30 +41,30 @@ group](https://elifesciences.org/about/people/early-career) and, since
 [Bioconductor](http://bioconductor.org) ([Huber et al.,
 2015](http://www.ncbi.nlm.nih.gov/pubmed/25633503)) is a project that
 has had a great impact on many aspects of research and development in
-bioinformatics, computational statistics, bio-medical sciences and many
-other fields. It also had a big impact on my vision of rigorous
+bioinformatics, computational statistics, bio-medical sciences and
+many other fields. It also had a big impact on my vision of rigorous
 research software development as the foundation of reliable, open and
-reproducible research. Since my very first software contribution
-([yaqcaffy](https://bioconductor.org/packages/2.2/bioc/html/yaqcaffy.html),
-in Bioconductor 2.2, since then deprecated), I have become involved in
-multiple capacity in the project. I have contributed many packages
-(focused on mass spectrometry and proteomics) since then, am a member
-of the [technical advisory
+reproducible research. Since my very first software contribution (the
+[yaqcaffy](https://bioconductor.org/packages/2.2/bioc/html/yaqcaffy.html)
+package, accepted in Bioconductor 2.2, since then deprecated), I have
+become involved in multiple capacity in the project. I have
+contributed many packages (mostly focused on mass spectrometry and
+proteomics), I am a member of the [technical advisory
 board](https://bioconductor.org/about/technical-advisory-board/),
 deputy-chair of the [European Bioconductor
 Society](https://bioconductor.org/about/european-bioconductor-society/),
-I co-lead of the [Teaching and education
+I co-lead the [Teaching and education
 committee](https://bioconductor.org/help/education-training/), I'm a
 member of the [Code of
 conduct](https://bioconductor.org/about/code-of-conduct/) committee
-since it was set up, contribute to various [working
+since it was set up, I contribute to various [working
 groups](http://workinggroups.bioconductor.org/), and am an occasional
 [package
 reviewer](https://bioconductor.org/about/package-reviewers/). In am
 one of the winners of the 2021 [Bioconductor Community
 Awards](https://bioconductor.org/about/awards/), one of my proudest
-professional achievements. In addition to delivering great science and software,
-Bioconductor is also a [welcoming and supportive
+professional achievements. In addition to delivering great science and
+software, Bioconductor is a [welcoming and supportive
 community](https://bioconductor.org/about/community-advisory-board/).
 
 Before my current position at the UCLouvain, I was a Senior Research
