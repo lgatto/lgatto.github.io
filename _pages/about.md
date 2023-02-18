@@ -77,7 +77,7 @@ developing new methods and implementing computational tools with a
 strong emphasis on rigorous and reproducible data analysis. During my
 time in Cambridge, I have also a been a visiting scientist in the
 [PRIDE](http://www.ebi.ac.uk/pride/) team at the [European
-Bioinformatics Institute](http://www.ebi.ac.uk/pride/) and I the
+Bioinformatics Institute](http://www.ebi.ac.uk/pride/) and in the
 [Department of Applied Mathematics and Theoretical Physics
 (DAMTP)](http://www.damtp.cam.ac.uk/).
 
