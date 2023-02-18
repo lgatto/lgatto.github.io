@@ -28,7 +28,7 @@ fellow](https://www.software.ac.uk/fellowship-programme), a
 [Data](http://www.datacarpentry.org/) and [Software
 Carpentry](https://software-carpentry.org/team/) instructor, and an
 affiliated [member](http://bioconductor.org/about/core-team/) of the
-[Bioconductor](http://bioconductor.org) project.
+[Bioconductor](http://bioconductor.org) project (see below).
 
 I am also involved in the [Bullied Into Bad
 Science](http://bulliedintobadscience.org/) campaign, an initiative by
@@ -38,18 +38,47 @@ part of the eLife [Early-career advisory
 group](https://elifesciences.org/about/people/early-career) and, since
 2017, am a [#ASAPbio](http://asapbio.org/) ambassador.
 
+[Bioconductor](http://bioconductor.org) ([Huber et al.,
+2015](http://www.ncbi.nlm.nih.gov/pubmed/25633503)) is a project that
+has had a great impact on many aspects of research and development in
+bioinformatics, computational statistics, bio-medical sciences and many
+other fields. It also had a big impact on my vision of rigorous
+research software development as the foundation of reliable, open and
+reproducible research. Since my very first software contribution
+([yaqcaffy](https://bioconductor.org/packages/2.2/bioc/html/yaqcaffy.html),
+in Bioconductor 2.2, since then deprecated), I have become involved in
+multiple capacity in the project. I have contributed many packages
+(focused on mass spectrometry and proteomics) since then, am a member
+of the [technical advisory
+board](https://bioconductor.org/about/technical-advisory-board/),
+deputy-chair of the [European Bioconductor
+Society](https://bioconductor.org/about/european-bioconductor-society/),
+I co-lead of the [Teaching and education
+committee](https://bioconductor.org/help/education-training/), I'm a
+member of the [Code of
+conduct](https://bioconductor.org/about/code-of-conduct/) committee
+since it was set up, contribute to various [working
+groups](http://workinggroups.bioconductor.org/), and am an occasional
+[package
+reviewer](https://bioconductor.org/about/package-reviewers/). In am
+one of the winners of the 2021 [Bioconductor Community
+Awards](https://bioconductor.org/about/awards/), one of my proudest
+professional achievements. In addition to delivering great science and software,
+Bioconductor is also a [welcoming and supportive
+community](https://bioconductor.org/about/community-advisory-board/).
 
-Before that, I was a Senior Research Associate in the Department of
-Biochemistry at the University of Cambridge. It's at the [Cambridge
-Centre for Proteomics](http://proteomics.bio.cam.ac.uk/) and the
-Computational Proteomics Unit (my former research group in Cambridge)
-that I started working on various aspects of quantitative and spatial
-proteomics, developing new methods and implementing computational
-tools with a strong emphasis on rigorous and reproducible data
-analysis. During my time in Cambridge, I have also a been a visiting
-scientist in the [PRIDE](http://www.ebi.ac.uk/pride/) team at the
-[European Bioinformatics Institute](http://www.ebi.ac.uk/pride/) and I
-the [Department of Applied Mathematics and Theoretical Physics
+Before my current position at the UCLouvain, I was a Senior Research
+Associate in the Department of Biochemistry at the University of
+Cambridge. It's at the [Cambridge Centre for
+Proteomics](http://proteomics.bio.cam.ac.uk/) and the Computational
+Proteomics Unit (my former research group in Cambridge) that I started
+working on various aspects of quantitative and spatial proteomics,
+developing new methods and implementing computational tools with a
+strong emphasis on rigorous and reproducible data analysis. During my
+time in Cambridge, I have also a been a visiting scientist in the
+[PRIDE](http://www.ebi.ac.uk/pride/) team at the [European
+Bioinformatics Institute](http://www.ebi.ac.uk/pride/) and I the
+[Department of Applied Mathematics and Theoretical Physics
 (DAMTP)](http://www.damtp.cam.ac.uk/).
 
 And even before that, during my MSc and [PhD
