@@ -103,3 +103,5 @@ Laurent Gatto:
 
 For more details, feel free to contact Laurent Gatto at
 laurent<DOT>gatto<AT>uclouvain.be.
+
+You might also be interested in [this position](https://lgatto.github.io/scp-job/).
