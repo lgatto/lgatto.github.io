@@ -1,0 +1,105 @@
+---
+title: "Open positions in the CBIO lab: spatial proteomics"
+tags: ["job"]
+comments: false
+---
+
+A position for a PhD student (4 years) or a research assistant (1 year
+contracts, renewable) is open in the CBIO lab focusing on protein
+sub-cellular localisation (spatial) proteomics, post-translational
+modification and machine learning.
+
+The goal of the project is to apply and extend existing spatial
+proteomics methods (see for example
+[1](https://pubmed.ncbi.nlm.nih.gov/24413670/) and
+[2](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1006516)
+TODO add bandle reference) and software infrastructure (such as the
+[pRoloc](https://bioconductor.org/packages/pRoloc) package) to focus
+more specifically on the detection and the effect of
+post-translational modifications in protein and proteoform
+sub-cellular localisation.
+
+This position is part of the [FWO](https://www.fwo.be/en/)-funded
+Protein Contours project, and is in collaboration with [Win
+Vranken](https://we.vub.ac.be/en/wim-vranken) from the VUB and
+[Lennart Martens](https://www.compomics.com/people/lennart-martens/)
+from Gent University. The funding is for 1 to 2 years, depending on
+expertise of the candidate. Depending on the candidate's goals and
+motivation, the post could be extended and converted to a PhD
+position.
+
+The successful candidate will have a degree in bioinformatics,
+statistics, computer sciences, biomedical sciences, or equivalent and
+be able to demonstrate experience and/or keen interest in at least
+several of the following:
+
+- experience in one or multiple omics technologies, data processing,
+  analysis and interpretation - experience in mass spectrometry and
+  proteomics is an advantage;
+- a keen interest in understanding and tackling biomedically relevant
+  questions;
+- interest in robust method development;
+- background/expertise in statistics, machine learning and/or
+  artificial intelligence;
+- open and reproducible research;
+- experience in R/Bioconductor data structures, in particular those
+  used for omics data analysis;
+- contribution to an open and inclusive research environment;
+- good written and oral communication skills.
+
+## About the CBIO lab
+
+The Computational Biology and Bioinformatics lab is header by Prof
+[Laurent Gatto](https://lgatto.github.io/about) and is composed of
+students and researchers with expertise in biomedical sciences,
+statistics, omics data analysis and bioinformatics. Details about our
+work and the members can be found at
+https://lgatto.github.io/cbio-lab/.
+
+The lab supports a friendly and supportive work environment through
+flexible working hours and the possibility to work remotely. The lab
+meetings are typically scheduled in-person (or mixed remote/in-person)
+to favour interactions among lab members. While joining the lab and
+contribution to our research, you will also have the opportunity to get
+involved in the international Bioconductor community. The lab members
+have opportunities to join courses and conferences in Belgium and
+abroad to present their work.
+
+## Academic environment
+
+The [de Duve Institute](https://www.deduveinstitute.be/) is a
+multidisciplinary biomedical research institute (250-300 scientists)
+hosting several laboratories the UCLouvain, as well as the Brussels
+branch of the Ludwig Institute for Cancer Research. The focus is on
+basic research in the fields of tumour immunology and signal
+transduction in cancer, genetics and development, including human
+genetics, stem cells and organ development, infection and inflammation
+and metabolism and hormones. The de Duve Institute also features
+several core facilities, including imaging, transgenesis, mass
+spectrometry, flow cytometry and cell sorting, as well as
+genomics. The de Duve Institute provides access a high-performance
+computing cluster and storage, managed by a dedicated IT team.
+
+## Application
+
+To apply for the position, please send the following documents to
+Laurent Gatto:
+
+- A cover letter describing why you would like to join the lab and how
+  you match the requirement;
+- A detailed CV including some or all of the following: a list of
+  publications, pre-prints, posters and/or software contributions; a
+  link to publicly available code/data analysis you have contributed
+  to; education and professional experience; awards; teaching
+  experience; any additional information you deem relevant.
+- If no code is publicly available, please include code chunks that
+  illustrate best your programming experience and interests.
+- Among your projects, select 1 and provide a short narrative
+  describing why these are important in your career, your specific
+  contributions and/or the unique skills you have gained through
+  these.
+- A list of at least 2 academic references.
+
+
+For more details, feel free to contact Laurent Gatto at
+laurent<DOT>gatto<AT>uclouvain.be.
