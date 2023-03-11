@@ -102,7 +102,7 @@ author:
   vine             :
   weibo            :
   xing             :
-  youtube          : # "https://youtube.com/c/MichaelRoseDesign"
+  youtube          : "https://www.youtube.com/@lgatto/videos"
 
 # Reading Files
 include:
@@ -175,6 +175,8 @@ timezone: # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
 
 # Plugins
+plugins:
+  - jekyll-feed
 
 # mimic GitHub Pages with --safe
 whitelist:
