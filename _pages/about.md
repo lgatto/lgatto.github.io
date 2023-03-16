@@ -229,8 +229,9 @@ Please do get in touch if you are interested in running workshops.
 
 Gatto L, Aebersold R, Cox J *et al.*, *Initial recommendations for
 performing, benchmarking, and reporting single-cell proteomics
-experiments* (2022),
-[arXiv:2207.10815](https://arxiv.org/abs/2207.10815).
+experiments* (2023) Nat Methods 20, 375–386
+[10.1038/s41592-023-01785-3](https://doi.org/10.1038/s41592-023-01785-3)
+(preprint: [arXiv:2207.10815](https://arxiv.org/abs/2207.10815)).
 
 Vanderaa C and Gatto L *The current state of single-cell proteomics
 data analysis* (2022), Current Protocols 3 (1):e658,
