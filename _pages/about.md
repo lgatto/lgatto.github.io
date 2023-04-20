@@ -231,8 +231,8 @@ Colson A, Depoix CL, Lambert I, Leducq C, Bedin M, De Beukelaer M,
 Gatto L, Loriot A, Peers de Nieuwburgh M, Bouhna K, Baldin P, Hubinont
 C, Sonveaux P, Debiève F *Specific HIF-2α (Hypoxia-Inducible Factor-2)
 Inhibitor PT2385 Mitigates Placental Dysfunction In Vitro and in a Rat
-Model of Preeclampsia (RUPP) (2023)
-Mar 6. [doi:10.1161/HYPERTENSIONAHA.122.20739](https://doi.org/10.1161/hypertensionaha.122.20739).
+Model of Preeclampsia (RUPP) (2023) Hypertension, 80:1011–1023
+[doi:10.1161/HYPERTENSIONAHA.122.20739](https://doi.org/10.1161/hypertensionaha.122.20739).
 
 Gatto L, Aebersold R, Cox J *et al.*, *Initial recommendations for
 performing, benchmarking, and reporting single-cell proteomics
