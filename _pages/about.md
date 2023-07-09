@@ -232,6 +232,15 @@ modulates tacrolimus pharmacokinetics through the transcriptional
 regulation of ABCB1*. Microbiome 11, 138 (2023)
 [doi:10.1186/s40168-023-01578-y](https://doi.org/10.1186/s40168-023-01578-y).
 
+Zhu J, Naulaerts S, Boudhan L, Martin M, Gatto L, and Van den Eynde
+BJ. *Tumour Immune Rejection Triggered by Activation of
+alpha2-Adrenergic Receptors* (2023) Nature, June, 1-9; doi:
+[10.1038/s41586-023-06110-8](https://doi.org/10.1038/s41586-023-06110-8).
+
+Vanderaa C and Gatto L. *Revisiting the Thorny Issue of Missing Values
+in Single-Cell Proteomics* (2023) arXiv [q-bio.QM], April;
+[arXiv:2304.06654v2](https://arxiv.org/abs/2304.06654).
+
 Colson A, Depoix CL, Lambert I, Leducq C, Bedin M, De Beukelaer M,
 Gatto L, Loriot A, Peers de Nieuwburgh M, Bouhna K, Baldin P, Hubinont
 C, Sonveaux P, Debiève F *Specific HIF-2α (Hypoxia-Inducible Factor-2)
