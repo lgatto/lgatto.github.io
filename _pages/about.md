@@ -227,6 +227,11 @@ Please do get in touch if you are interested in running workshops.
 
 ### Research articles
 
+Degraeve, A.L., Haufroid, V., Loriot, A. et al. Gut microbiome
+modulates tacrolimus pharmacokinetics through the transcriptional
+regulation of ABCB1. Microbiome 11, 138 (2023)
+[doi:10.1186/s40168-023-01578-y](https://doi.org/10.1186/s40168-023-01578-y).
+
 Colson A, Depoix CL, Lambert I, Leducq C, Bedin M, De Beukelaer M,
 Gatto L, Loriot A, Peers de Nieuwburgh M, Bouhna K, Baldin P, Hubinont
 C, Sonveaux P, Debiève F *Specific HIF-2α (Hypoxia-Inducible Factor-2)
