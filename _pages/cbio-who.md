@@ -262,8 +262,8 @@ Julie, Andrea and Laurent. Picture taken at the de Duve Institute on
   data. Thomas has since earner a PhD from the Max Planck Institute of
   Molecular Plant Physiology.
 
-- [**Victoria Carr**](https://www.turing.ac.uk/people/victoria-carr),
-  was Part III student in Systems Biology at the University of
+- [**Victoria Carr**](https://orcid.org/0000-0002-3038-8929),
+  was a Part III student in Systems Biology at the University of
   Cambridge, applying graph-based methods to study protein
   sub-cellular localisation. Vicky went on doing a PhD at King's
   College London and is now working as a Scientific Programmer in the
