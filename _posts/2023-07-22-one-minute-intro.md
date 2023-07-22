@@ -16,15 +16,18 @@ and plenty of links.
 
 - I am [Laurent Gatto](http://lgatto.github.io/about), professor of
   bioinformatics at the [UCLouvain](https://uclouvain.be/). I teach at
-  the [Faculty of pharmacy and biomedical sciences]() and run a
-  computation biology lab at the [de Duve institute]().
+  the [Faculty of pharmacy and biomedical
+  sciences](https://uclouvain.be/fr/facultes/fasb) and run a
+  computation biology lab at the [de Duve
+  institute](https://www.deduveinstitute.be/).
 
-- The lab's research focuses on developing statistical and machine
-  learning methods to process, explore and comprehend high-dimensional
-  biological data, such as typically produces by omics
-  technologies. Working on the university biomedical campus, we deploy
-  our work on clinically and biomedically relevant research projects,
-  in collaboration with other laboratories on the campus.
+- The [lab](https://lgatto.github.io/cbio-lab/)'s research focuses on
+  developing statistical and machine learning methods to process,
+  explore and comprehend high-dimensional biological data, such as
+  typically produces by omics technologies. Working on the university
+  biomedical campus, we deploy our work on clinically and biomedically
+  relevant research projects, in collaboration with other laboratories
+  on the campus.
 
 - I am committed to the open, transparent and rigorous practice of
   scientific enquiry. In particular, we make every possible effort to
