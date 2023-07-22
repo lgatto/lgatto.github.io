@@ -81,6 +81,21 @@ Julie, Andrea and Laurent. Picture taken at the de Duve Institute on
 
 <!-- ## Remote members -->
 
+## Undergraduates
+
+- **Guillaume Deflandre** is a final year student in
+  [bio-engineering](https://uclouvain.be/fr/facultes/agro) and is
+  pursuing his master's project on single-cell proteomics with Laurent
+  Gatto, Samuel Grégoire and Christophe Vanderaa.
+
+- **Badr-Ali Mouaden** is a final year engineering student that does
+  his master's project under the co-supervision of Laurent Gatto,
+  Philippe Hauchamps and [Prof Michel
+  Versleysen](https://mlg.info.ucl.ac.be/Members/MichelVerleysen) from
+  the [Louvain Engineering School
+  (EPL)](https://uclouvain.be/fr/facultes/epl). He works on the
+  development and application of deep convolution neural network on
+  flow cytometry data.
 
 ## [R for Mass Spectrometry](https://www.rformassspectrometry.org/) core team
 
@@ -247,8 +262,8 @@ Julie, Andrea and Laurent. Picture taken at the de Duve Institute on
   data. Thomas has since earner a PhD from the Max Planck Institute of
   Molecular Plant Physiology.
 
-- [**Victoria Carr**](https://www.turing.ac.uk/people/victoria-carr),
-  was Part III student in Systems Biology at the University of
+- [**Victoria Carr**](https://orcid.org/0000-0002-3038-8929),
+  was a Part III student in Systems Biology at the University of
   Cambridge, applying graph-based methods to study protein
   sub-cellular localisation. Vicky went on doing a PhD at King's
   College London and is now working as a Scientific Programmer in the
