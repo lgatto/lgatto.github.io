@@ -8,10 +8,11 @@ Every now and then, there's a situation where I need to briefly
 introduce myself, academically. This can be with or without any visual
 support (i.e a slide). Instead of doing so semi-randomly, I though I
 would prepare such a one-minute introduction, once an for all. So here
-I go, with a nice illustrative [heck-sticker slide]() and plenty of
-links.
+I go, with a nice illustrative [heck-sticker
+slide](https://docs.google.com/presentation/d/1R3W63-TdOJcjSs8p_QnTQ7iC7IsJnuwOe1EBb7thfTE/edit?usp=sharing)
+and plenty of links.
 
-[Add screenshot here.]
+![One-minute intro slide](/images/one-minute-slide.png)
 
 - I am [Laurent Gatto](http://lgatto.github.io/about), professor of
   bioinformatics at the [UCLouvain](https://uclouvain.be/). I teach at
@@ -37,8 +38,11 @@ links.
   part of my work and is reflected by my contributions to the
   [Bioconductor](http://www.bioconductor.org/) project.
 
-- I also serve on the Bioconductor [technical advisory board](),
+- I also serve on the Bioconductor [technical advisory
+  board](https://bioconductor.org/about/technical-advisory-board/),
   [European Bioconductor
   Society](https://bioconductor.org/about/european-bioconductor-society/),
-  [education and teaching committee]() and the [Code of conduct
-  committee]().
+  [education and teaching
+  committee](https://bioconductor.org/help/education-training/) and
+  the [Code of conduct
+  committee](https://bioconductor.org/about/code-of-conduct/).
