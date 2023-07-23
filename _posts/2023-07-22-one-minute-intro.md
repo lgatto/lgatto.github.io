@@ -15,8 +15,8 @@ and plenty of links.
 ![One-minute intro slide](/images/one-minute-slide.png)
 
 - I am [Laurent Gatto](http://lgatto.github.io/about), professor of
-  bioinformatics at the [UCLouvain](https://uclouvain.be/). I teach at
-  the [Faculty of pharmacy and biomedical
+  bioinformatics at the [UCLouvain](https://uclouvain.be/). I teach
+  (more of my courses) at the [Faculty of pharmacy and biomedical
   sciences](https://uclouvain.be/fr/facultes/fasb) and run a
   computation biology lab at the [de Duve
   institute](https://www.deduveinstitute.be/).
