@@ -48,6 +48,6 @@ and plenty of links.
   [education and teaching
   committee](https://bioconductor.org/help/education-training/) and
   the [Code of conduct
-  committee](https://bioconductor.org/about/code-of-conduct/) and
+  committee](https://bioconductor.org/about/code-of-conduct/), and
   co-organise the yearly European [EuroBioc
   conference](https://eurobioc2023.bioconductor.org/).
