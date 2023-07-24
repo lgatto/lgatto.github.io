@@ -39,7 +39,12 @@ and plenty of links.
   [here](https://github.com/lgatto) and
   [here](https://github.com/RforMassSpectrometry/)) is an integral
   part of my work and is reflected by my contributions to the
-  [Bioconductor](http://www.bioconductor.org/) project.
+  [Bioconductor](http://www.bioconductor.org/) project. Some specific
+  examples include spatial proteomics data analysis with
+  [pRoloc](https://lgatto.github.io/pRoloc/), single-cell proteomics
+  with [scp](https://uclouvain-cbio.github.io/scp/) and mass
+  spectrometry data processing with the [R for Mass
+  Spectrometry](https://www.rformassspectrometry.org/) packages.
 
 - I also serve on the Bioconductor [technical advisory
   board](https://bioconductor.org/about/technical-advisory-board/),
