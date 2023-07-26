@@ -227,10 +227,15 @@ Please do get in touch if you are interested in running workshops.
 
 ### Research articles
 
-Degraeve, A.L., Haufroid, V., Loriot, A. et al. *Gut microbiome
-modulates tacrolimus pharmacokinetics through the transcriptional
-regulation of ABCB1*. Microbiome 11, 138 (2023)
+Degraeve, AL, Haufroid V, Loriot A et al. *Gut microbiome modulates
+tacrolimus pharmacokinetics through the transcriptional regulation of
+ABCB1*. Microbiome 11, 138 (2023)
 [doi:10.1186/s40168-023-01578-y](https://doi.org/10.1186/s40168-023-01578-y).
+
+Jannone G, Bonaccorsi Riani E, de Magnée C, Tambucci R, Evraerts J,
+Ravau J, Baldin P, et al. 2023. *Senescence and Senotherapies in
+Biliary Atresia and Biliary Cirrhosis* Aging 15 (11): 4576–99
+[10.18632/aging.204700](https://doi.org/10.18632/aging.204700).
 
 Zhu J, Naulaerts S, Boudhan L, Martin M, Gatto L, and Van den Eynde
 BJ. *Tumour Immune Rejection Triggered by Activation of
