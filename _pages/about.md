@@ -227,15 +227,21 @@ Please do get in touch if you are interested in running workshops.
 
 ### Research articles
 
-Degraeve, A.L., Haufroid, V., Loriot, A. et al. *Gut microbiome
-modulates tacrolimus pharmacokinetics through the transcriptional
-regulation of ABCB1*. Microbiome 11, 138 (2023)
+Halbout M, Bury M, Nanet A, Gerin I, Graff J, Killian T, Gatto L,
+Vertommen D, Bommer G. *SUZ domain-containing proteins have multiple
+effects on nonsense-mediated decay target transcripts*. Journal of
+Biological Chemistry, July 2023;
+[doi:10.1016/j.jbc.2023.105095](https://doi.org/10.1016/j.jbc.2023.105095).
+
+Degraeve AL, Haufroid V, Loriot A, et al. *Gut microbiome modulates
+tacrolimus pharmacokinetics through the transcriptional regulation of
+ABCB1*. Microbiome 11, 138 (2023)
 [doi:10.1186/s40168-023-01578-y](https://doi.org/10.1186/s40168-023-01578-y).
 
 Zhu J, Naulaerts S, Boudhan L, Martin M, Gatto L, and Van den Eynde
 BJ. *Tumour Immune Rejection Triggered by Activation of
-alpha2-Adrenergic Receptors* (2023) Nature, June, 1-9; doi:
-[10.1038/s41586-023-06110-8](https://doi.org/10.1038/s41586-023-06110-8).
+alpha2-Adrenergic Receptors* (2023) Nature, June, 1-9;
+[doi:10.1038/s41586-023-06110-8](https://doi.org/10.1038/s41586-023-06110-8).
 
 Vanderaa C and Gatto L. *Revisiting the Thorny Issue of Missing Values
 in Single-Cell Proteomics* (2023) arXiv [q-bio.QM], April;
