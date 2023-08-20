@@ -230,7 +230,7 @@ Please do get in touch if you are interested in running workshops.
 Vanderaa C and Gatto L. *Revisiting the Thorny Issue of Missing Values
 in Single-Cell Proteomics* J. Proteome Res. (2023)
 [doi:10.1021/acs.jproteome.3c00227](https://pubs.acs.org/doi/10.1021/acs.jproteome.3c00227)
-(preprint [arXiv:2304.06654v2](https://arxiv.org/abs/2304.06654).
+(preprint [arXiv:2304.06654v2](https://arxiv.org/abs/2304.06654)).
 
 Halbout M, Bury M, Nanet A, Gerin I, Graff J, Killian T, Gatto L,
 Vertommen D, Bommer G. *SUZ domain-containing proteins have multiple
