@@ -231,7 +231,7 @@ Gannoun L, De Schrevel C, Belle M, Dauguet N, Achouri Y, Loriot A,
 Vanderaa C, Cordi S, Dili A, Heremans Y, Rooman I, Leclercq IA,
 Jacquemin P, Gatto L, Lemaigre FP. *Axon guidance genes control
 hepatic artery development* Development. 2023 Aug
-15;150(16):dev201642. doi:[https://doi.org/10.1242/dev.201642](10.1242/dev.201642). Epub
+15;150(16):dev201642. doi:[10.1242/dev.201642](https://doi.org/10.1242/dev.201642). Epub
 2023 Aug 17.
 
 Vanderaa C and Gatto L. *Revisiting the Thorny Issue of Missing Values
