@@ -227,6 +227,13 @@ Please do get in touch if you are interested in running workshops.
 
 ### Research articles
 
+Gannoun L, De Schrevel C, Belle M, Dauguet N, Achouri Y, Loriot A,
+Vanderaa C, Cordi S, Dili A, Heremans Y, Rooman I, Leclercq IA,
+Jacquemin P, Gatto L, Lemaigre FP. *Axon guidance genes control
+hepatic artery development* Development. 2023 Aug
+15;150(16):dev201642. doi:[https://doi.org/10.1242/dev.201642](10.1242/dev.201642). Epub
+2023 Aug 17.
+
 Vanderaa C and Gatto L. *Revisiting the Thorny Issue of Missing Values
 in Single-Cell Proteomics* J. Proteome Res. (2023)
 [doi:10.1021/acs.jproteome.3c00227](https://pubs.acs.org/doi/10.1021/acs.jproteome.3c00227)
