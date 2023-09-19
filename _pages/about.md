@@ -260,7 +260,7 @@ experiments* (2023) Nat Methods 20, 375–386
 (preprint: [arXiv:2207.10815](https://arxiv.org/abs/2207.10815)).
 
 Vanderaa C and Gatto L *The current state of single-cell proteomics
-data analysis* (2022), Current Protocols 3 (1):e658,
+data analysis* (2023), Current Protocols 3 (1):e658,
 [10.1002/cpz1.658](https://doi.org/10.1002/cpz1.658) (preprint:
 [arXiv:2210.01020](https://arxiv.org/abs/2210.01020)).
 
