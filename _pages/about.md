@@ -227,7 +227,25 @@ Please do get in touch if you are interested in running workshops.
 
 ### Research articles
 
-Degraeve, AL, Haufroid V, Loriot A et al. *Gut microbiome modulates
+Gannoun L, De Schrevel C, Belle M, Dauguet N, Achouri Y, Loriot A,
+Vanderaa C, Cordi S, Dili A, Heremans Y, Rooman I, Leclercq IA,
+Jacquemin P, Gatto L, Lemaigre FP. *Axon guidance genes control
+hepatic artery development* Development. 2023 Aug
+15;150(16):dev201642. doi:[10.1242/dev.201642](https://doi.org/10.1242/dev.201642). Epub
+2023 Aug 17.
+
+Vanderaa C and Gatto L. *Revisiting the Thorny Issue of Missing Values
+in Single-Cell Proteomics* J. Proteome Res. (2023)
+[doi:10.1021/acs.jproteome.3c00227](https://pubs.acs.org/doi/10.1021/acs.jproteome.3c00227)
+(preprint [arXiv:2304.06654v2](https://arxiv.org/abs/2304.06654)).
+
+Halbout M, Bury M, Nanet A, Gerin I, Graff J, Killian T, Gatto L,
+Vertommen D, Bommer G. *SUZ domain-containing proteins have multiple
+effects on nonsense-mediated decay target transcripts* (2023) Journal
+of Biological Chemistry, July 2023;
+[doi:10.1016/j.jbc.2023.105095](https://doi.org/10.1016/j.jbc.2023.105095).
+
+Degraeve AL, Haufroid V, Loriot A, et al. *Gut microbiome modulates
 tacrolimus pharmacokinetics through the transcriptional regulation of
 ABCB1*. Microbiome 11, 138 (2023)
 [doi:10.1186/s40168-023-01578-y](https://doi.org/10.1186/s40168-023-01578-y).
@@ -239,12 +257,8 @@ Biliary Atresia and Biliary Cirrhosis* Aging 15 (11): 4576–99
 
 Zhu J, Naulaerts S, Boudhan L, Martin M, Gatto L, and Van den Eynde
 BJ. *Tumour Immune Rejection Triggered by Activation of
-alpha2-Adrenergic Receptors* (2023) Nature, June, 1-9; doi:
-[10.1038/s41586-023-06110-8](https://doi.org/10.1038/s41586-023-06110-8).
-
-Vanderaa C and Gatto L. *Revisiting the Thorny Issue of Missing Values
-in Single-Cell Proteomics* (2023) arXiv [q-bio.QM], April;
-[arXiv:2304.06654v2](https://arxiv.org/abs/2304.06654).
+alpha2-Adrenergic Receptors* (2023) Nature, June, 1-9;
+[doi:10.1038/s41586-023-06110-8](https://doi.org/10.1038/s41586-023-06110-8).
 
 Colson A, Depoix CL, Lambert I, Leducq C, Bedin M, De Beukelaer M,
 Gatto L, Loriot A, Peers de Nieuwburgh M, Bouhna K, Baldin P, Hubinont
