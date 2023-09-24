@@ -88,15 +88,6 @@ Julie, Andrea and Laurent. Picture taken at the de Duve Institute on
   pursuing his master's project on single-cell proteomics with Laurent
   Gatto, Samuel Grégoire and Christophe Vanderaa.
 
-- **Badr-Ali Mouaden** is a final year engineering student that does
-  his master's project under the co-supervision of Laurent Gatto,
-  Philippe Hauchamps and [Prof Michel
-  Versleysen](https://mlg.info.ucl.ac.be/Members/MichelVerleysen) from
-  the [Louvain Engineering School
-  (EPL)](https://uclouvain.be/fr/facultes/epl). He works on the
-  development and application of deep convolution neural network on
-  flow cytometry data.
-
 ## [R for Mass Spectrometry](https://www.rformassspectrometry.org/) core team
 
 - [**Sebastian Gibb**](http://sebastiangibb.de/), Department of
@@ -169,6 +160,15 @@ Julie, Andrea and Laurent. Picture taken at the de Duve Institute on
 
 
 ## Alumni
+
+- **Badr-Ali Mouaden** finished his engineering degree in 2023 and did
+  his master's project under the co-supervision of Laurent Gatto,
+  Philippe Hauchamps and [Prof Michel
+  Versleysen](https://mlg.info.ucl.ac.be/Members/MichelVerleysen) from
+  the [Louvain Engineering School
+  (EPL)](https://uclouvain.be/fr/facultes/epl). He worked on the
+  development and application of deep convolution neural network on
+  flow cytometry data.
 
 - **Kristína Gömöryová**
   (Github:[KristinaGomoryova](https://github.com/KristinaGomoryova))
