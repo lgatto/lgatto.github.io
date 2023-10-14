@@ -227,13 +227,19 @@ Please do get in touch if you are interested in running workshops.
 
 ### Research articles
 
+Hauchamps P, Bayat B, Delandre S, Hamrouni M, Toussaint M, Temmerman
+S, Lin D, Gatto L *CytoPipeline & CytoPipelineGUI: An R package suite
+for building and visualizing automated pre-processing pipelines for
+flow cytometry data* bioRxiv 2023.10.10.561699;
+doi:[10.1101/2023.10.10.561699](https://doi.org/10.1101/2023.10.10.561699).
+
 Cloos AS, Pollet H, Stommen A, Maja M, Lingurski M, Brichard B,
 Lambert C, Henriet P, Pierreux C, Pyr Dit Ruys S, Van Der Smissen P,
 Vikkula M, Gatto L, Martin M, Brouillard P, Vertommen D, Tyteca
-D. Splenectomy improves erythrocyte functionality in spherocytosis
-based on septin abundance, but not maturation defects. Blood Adv. 2023
-Sep 12;7(17):4705-4720. doi:
-[10.1182/bloodadvances.2022009114](https://doi.org/10.1182/bloodadvances.2022009114).
+D. *Splenectomy improves erythrocyte functionality in spherocytosis
+based on septin abundance, but not maturation defects*. Blood
+Adv. 2023 Sep
+12;7(17):4705-4720. doi:[10.1182/bloodadvances.2022009114](https://doi.org/10.1182/bloodadvances.2022009114).
 
 Kelly Eckenrode, Dario Righelli, Marcel Ramos, Ricard Argelaguet,
 Christophe Vanderaa, Ludwig Geistlinger, Aedin Culhane, Laurent Gatto,
