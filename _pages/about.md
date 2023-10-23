@@ -227,6 +227,12 @@ Please do get in touch if you are interested in running workshops.
 
 ### Research articles
 
+Grégoire S, Vanderaa C, Pyr dit Ruys S, Mazzucchelli G, Kune C,
+Vertommen D and Gatto L *Standardised workflow for mass
+spectrometry-based single-cell proteomics data processing and analysis
+using the `scp` package* arXiv arXiv:2310.13598;
+doi:[10.48550/arXiv.2310.13598](https://doi.org/10.48550/arXiv.2310.13598).
+
 Hauchamps P, Bayat B, Delandre S, Hamrouni M, Toussaint M, Temmerman
 S, Lin D, Gatto L *CytoPipeline & CytoPipelineGUI: An R package suite
 for building and visualizing automated pre-processing pipelines for
