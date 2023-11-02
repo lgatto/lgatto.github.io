@@ -74,7 +74,7 @@ sidebar:
   [HYGIEIA](https://www.saintluc.be/fr/hygieia) project.
 
   **Enes Sefa Ayar** (Github:
-  [EnesSefaAyar]((https://github.com/EnesSefaAyar)) joined the lab in
+  [EnesSefaAyar](https://github.com/EnesSefaAyar)) joined the lab in
   November 2023 as a PhD student working on quantitative analysis of
   single-cell proteomics. He did a master's in computational sciences
   and engineering at the Koç University. He is funded by a FNRS
