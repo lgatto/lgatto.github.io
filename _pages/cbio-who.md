@@ -80,6 +80,13 @@ sidebar:
   and engineering at the Koç University. He is funded by a FNRS
   'Projet de Recherche' (PDR) awarded to L. Gatto.
 
+- **Jérôme Linden** (GitHub: [jerlinden](https://github.com/jerlinden))
+  joined the lab in November 2023 as a Project Manager for [e-OMIX](https://www.eomix.be),
+  a CBIO-led project aiming at establishing a collaborative
+  platform for the sharing and analyses of multiomics data. He has a PhD from
+  ULiège and is funded by the European Regional Development Fund (ERDF)
+  awarded to L. Gatto and S. Jodogne.  
+
 ![CBIO lab photo](/images/CBIO-20221005.jpg)
 
 From left to right: Philippe, Kristina, Samuel, Axelle, Christophe,
