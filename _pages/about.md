@@ -227,6 +227,13 @@ Please do get in touch if you are interested in running workshops.
 
 ### Research articles
 
+Harvengt AA, Polle OG, Martin M, van Maanen A, Gatto L, et al.
+*Post-Hypoglycemic hyperglycemia are highly relevant markers for
+stratification of glycemic variability and partial remission status of
+pediatric patients with new-onset type 1 diabetes* (2023) PLOS ONE
+18(11): e0294982
+doi:[10.1371/journal.pone.0294982](https://doi.org/10.1371/journal.pone.0294982).
+
 Grégoire S, Vanderaa C, Pyr dit Ruys S, Mazzucchelli G, Kune C,
 Vertommen D and Gatto L *Standardised workflow for mass
 spectrometry-based single-cell proteomics data processing and analysis
