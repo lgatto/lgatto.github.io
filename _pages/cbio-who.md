@@ -85,15 +85,7 @@ sidebar:
   a CBIO-led project aiming at establishing a collaborative
   platform for the sharing and analyses of multiomics data. He has a PhD from
   ULiège and is funded by the European Regional Development Fund (ERDF)
-  awarded to L. Gatto and S. Jodogne.  
-
-![CBIO lab photo](/images/CBIO-20221005.jpg)
-
-From left to right: Philippe, Kristina, Samuel, Axelle, Christophe,
-Julie, Andrea and Laurent. Picture taken at the de Duve Institute on
-5 October 2022.
-
-<!-- ## Remote members -->
+  awarded to L. Gatto and S. Jodogne.
 
 ## Undergraduates
 
@@ -101,6 +93,15 @@ Julie, Andrea and Laurent. Picture taken at the de Duve Institute on
   [bio-engineering](https://uclouvain.be/fr/facultes/agro) and is
   pursuing his master's project on single-cell proteomics with Laurent
   Gatto, Samuel Grégoire and Christophe Vanderaa.
+
+![CBIO lab photo](/images/CBIO-20231206.jpg)
+
+From left to right: Jérôme, Julie, Andrea, Enes, Guillaume, Samuel,
+Axelle, Christophe, Laurent and Philippe. Picture taken at the de Duve
+Institute on 6 December 2023.
+
+<!-- ## Remote members -->
+
 
 ## [R for Mass Spectrometry](https://www.rformassspectrometry.org/) core team
 
