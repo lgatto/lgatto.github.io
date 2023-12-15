@@ -69,9 +69,10 @@ The CBIO lab benefits from funding from
 - [de Duve Institute](https://www.deduveinstitute.be/).
 - [National Fund for Scientific Research](https://www.frs-fnrs.be/fr/) (FNRS).
 - [Research Foundation – Flanders](https://www.fwo.be/) (FWO).
-- Sofina Covid Solidarity Fund.
+- Sofina Covid Solidarity Fund (HYGIEIA project).
 - [Televie](https://televie.be/)
 - GSK
+- European Union and Walloon region ([e-Omix Hub project](https://www.eomix.be/))
 
 # Contact
 
