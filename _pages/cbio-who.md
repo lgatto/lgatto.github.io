@@ -15,8 +15,8 @@ sidebar:
 
 - [**Laurent Gatto**](http://lgatto.github.io/about/) (ORCID:
   [0000-0002-1520-2268](https://orcid.org/0000-0002-1520-2268),
-  Github: [lgatto](https://github.com/lgatto/), Twitter
-  [@lgatt0](https://twitter.com/lgatt0)), head of the unit. He runs
+  Github: [lgatto](https://github.com/lgatto/), fosstoodon:
+  [@lgatto](https://fosstodon.org/@lgatto)), head of the unit. He runs
   the CBIO group and teaches bioinformatics in the Facutly of Pharmacy
   and Biomedical Sciences (FASB).
 
