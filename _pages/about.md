@@ -227,6 +227,11 @@ Please do get in touch if you are interested in running workshops.
 
 ### Research articles
 
+Vanderaa C and Gatto L *scplainer: using linear models to understand
+mass spectrometry-based single-cell proteomics data* (2023) bioRxiv
+2023.12.14.571792;
+doi:[10.1101/2023.12.14.571792](https://doi.org/10.1101/2023.12.14.571792).
+
 Harvengt AA, Polle OG, Martin M, van Maanen A, Gatto L, et al.
 *Post-Hypoglycemic hyperglycemia are highly relevant markers for
 stratification of glycemic variability and partial remission status of
