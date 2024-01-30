@@ -74,6 +74,10 @@ The CBIO lab benefits from funding from
 - GSK
 - European Union and Walloon region ([e-Omix Hub project](https://www.eomix.be/))
 
+The CBIO lab thanks [Zulip](https://zulip.com/) for the free Cloud
+Standard hosting. Zulip is a open-source modern team chat app designed
+to keep both live and asynchronous conversations organised.
+
 # Contact
 
 On the fediverse at <a rel="me"
