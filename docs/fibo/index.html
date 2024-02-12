@@ -1,0 +1,846 @@
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8">
+
+<!-- begin SEO -->
+
+
+
+
+
+
+
+
+
+<title>            The Fibonacci Sequence      ~/      </title>
+
+
+
+
+<meta name="description" content="Here’s anotherpost inspired by some python code,this time aboutthe Fibonacci sequence by Stuart Mumford.">
+
+
+
+
+<meta property="og:locale" content="en_GB">
+<meta property="og:site_name" content="~/">
+<meta property="og:title" content="The Fibonacci Sequence">
+
+
+  <link rel="canonical" href="https://lgatto.github.io/fibo/">
+  <meta property="og:url" content="https://lgatto.github.io/fibo/">
+
+
+
+  <meta property="og:description" content="Here’s anotherpost inspired by some python code,this time aboutthe Fibonacci sequence by Stuart Mumford.">
+
+
+
+
+
+  
+
+  
+
+
+
+
+
+  <meta property="og:type" content="article">
+  <meta property="article:published_time" content="2015-10-21T00:00:00+02:00">
+
+
+
+
+
+
+
+
+  <script type="application/ld+json">
+    {
+      "@context" : "http://schema.org",
+      "@type" : "Person",
+      "name" : "Laurent Gatto",
+      "url" : "https://lgatto.github.io",
+      "sameAs" : null
+    }
+  </script>
+
+
+
+
+
+
+<!-- end SEO -->
+
+
+<link href="https://lgatto.github.io/feed.xml" type="application/atom+xml" rel="alternate" title="~/ Feed">
+
+<!-- http://t.co/dKP3o1e -->
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="https://lgatto.github.io/assets/css/main.css">
+
+<meta http-equiv="cleartype" content="on">
+    <!-- start custom head snippets -->
+
+<!-- insert favicons. use http://realfavicongenerator.net/ -->
+
+<!-- end custom head snippets -->
+  </head>
+
+  <body class="layout--single">
+
+    <!--[if lt IE 9]>
+<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
+<![endif]-->
+    <div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        <button><div class="navicon"></div></button>
+        <ul class="visible-links">
+          <li class="masthead__menu-item masthead__menu-item--lg"><a href="https://lgatto.github.io/">~/</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="https://lgatto.github.io/about/">About</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="https://lgatto.github.io/year-archive/">Posts</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="https://lgatto.github.io/tags/">Tags</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="https://lgatto.github.io/cbio-lab/">Lab</a></li>
+          
+        </ul>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+    
+
+
+
+<div id="main" role="main">
+  
+  <div class="sidebar sticky">
+  
+
+<div itemscope itemtype="http://schema.org/Person">
+
+  
+    <div class="author__avatar">
+      
+        <img src="https://lgatto.github.io/images/lgatto2.jpg" class="author__avatar" alt="Laurent Gatto" itemprop="image">
+      
+    </div>
+  
+
+  <div class="author__content">
+    <h3 class="author__name" itemprop="name">Laurent Gatto</h3>
+    
+      <p class="author__bio" itemprop="description">
+        Open science, reproducible research, data champion, computational biology, proteomics, more omics, emacs, a lot of R, quite a bit of running, and parenting.
+      </p>
+    
+  </div>
+
+  <div class="author__urls-wrapper">
+    <button class="btn btn--inverse">Follow</button>
+    <ul class="author__urls social-icons">
+      
+
+      
+
+      
+
+      
+        <li>
+          <a href="https://keybase.io/lgatto" itemprop="sameAs">
+            <i class="fa fa-fw fa-key" aria-hidden="true"></i> Keybase
+          </a>
+        </li>
+      
+
+      
+
+      
+
+      
+
+      
+        <li>
+          <a href="https://www.linkedin.com/in/lgatto" itemprop="sameAs">
+            <i class="fa fa-fw fa-linkedin-square" aria-hidden="true"></i> LinkedIn
+          </a>
+        </li>
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+        <li>
+          <a href="https://github.com/lgatto" itemprop="sameAs">
+            <i class="fa fa-fw fa-github" aria-hidden="true"></i> GitHub
+          </a>
+        </li>
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      <!--
+  <li>
+    <a href="http://link-to-whatever-social-network.com/user/" itemprop="sameAs">
+      <i class="fa fa-fw" aria-hidden="true"></i> Custom Social Profile Link
+    </a>
+  </li>
+-->
+
+
+  <li>
+    <a href="http://dissem.in/r/6231/laurent-gatto" itemprop="sameAs">
+      <i class="fa fa-fw fa-pencil" aria-hidden="true"></i> dissem.in
+    </a>
+  </li>
+
+  <li>
+    <a href="https://orcid.org/0000-0002-1520-2268" itemprop="sameAs">
+      <i class="fa fa-fw fa-pencil" aria-hidden="true"></i> ORCID
+    </a>
+  </li>
+
+  <li>
+    <a href="https://scholar.google.co.uk/citations?user=k5DrB74AAAAJ&hl=en" itemprop="sameAs">
+      <i class="fa fa-fw fa-google" aria-hidden="true"></i> scholar
+    </a>
+  </li>
+
+  <li>
+    <a href="https://impactstory.org/u/0000-0002-1520-2268" itemprop="sameAs">
+      <i class="fa fa-fw fa-sun-o" aria-hidden="true"></i> Impactstory
+    </a>
+  </li>
+
+    </ul>
+  </div>
+</div>
+
+  
+  </div>
+
+
+  <article class="page" itemscope itemtype="http://schema.org/CreativeWork">
+    <meta itemprop="headline" content="The Fibonacci Sequence">
+    <meta itemprop="description" content="Here’s anotherpost inspired by some python code,this time aboutthe Fibonacci sequence by Stuart Mumford.">
+    <meta itemprop="datePublished" content="October 21, 2015">
+    
+
+    <div class="page__inner-wrap">
+      
+        <header>
+          <h1 class="page__title" itemprop="headline">The Fibonacci Sequence
+</h1>
+          
+            <p class="page__meta"><i class="fa fa-clock-o" aria-hidden="true"></i> 
+
+
+
+
+  4 minute read
+</p>
+          
+        </header>
+      
+
+      <section class="page__content" itemprop="text">
+        <p>Here’s another
+<a href="http://lgatto.github.io/curse-dimensionality/">post inspired by some python code</a>,
+this time about
+<a href="http://www.stuartmumford.uk/blog/the-fibonacci-sequence.html">the Fibonacci sequence by Stuart Mumford</a>.</p>
+
+<p>I won’t be replicating the Python code here, as the first version,
+that dynamically grows the sequence would be horribly slow in R, and
+others don’t apply directly.</p>
+
+<p>Here’s a plain implementation that first initialises the results
+variable <code class="language-plaintext highlighter-rouge">res</code> before applying the Fibonacci formula <code class="language-plaintext highlighter-rouge">F[i] = F[i-1] + F[i-2]</code>.</p>
+
+<figure class="highlight"><pre><code class="language-r" data-lang="r"><span class="n">fib</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="k">function</span><span class="p">(</span><span class="n">n</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="n">res</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">c</span><span class="p">(</span><span class="m">1</span><span class="p">,</span><span class="w"> </span><span class="m">1</span><span class="p">,</span><span class="w"> </span><span class="n">numeric</span><span class="p">(</span><span class="n">n</span><span class="m">-2</span><span class="p">))</span><span class="w">
+    </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="n">i</span><span class="w"> </span><span class="k">in</span><span class="w"> </span><span class="m">3</span><span class="o">:</span><span class="nf">length</span><span class="p">(</span><span class="n">res</span><span class="p">))</span><span class="w">
+        </span><span class="n">res</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">res</span><span class="p">[</span><span class="n">i</span><span class="m">-1</span><span class="p">]</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">res</span><span class="p">[</span><span class="n">i</span><span class="m">-2</span><span class="p">]</span><span class="w">
+    </span><span class="nf">return</span><span class="p">(</span><span class="n">res</span><span class="p">)</span><span class="w">
+</span><span class="p">}</span></code></pre></figure>
+
+<p>Let’s now benchmark the function for <code class="language-plaintext highlighter-rouge">n = 1000</code> numbers.</p>
+
+<figure class="highlight"><pre><code class="language-r" data-lang="r"><span class="n">n</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="m">1000</span><span class="w">
+</span><span class="n">library</span><span class="p">(</span><span class="n">microbenchmark</span><span class="p">)</span><span class="w">
+</span><span class="p">(</span><span class="n">tm1</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">microbenchmark</span><span class="p">(</span><span class="n">fib</span><span class="p">(</span><span class="n">n</span><span class="p">)))</span></code></pre></figure>
+
+<figure class="highlight"><pre><code class="language-text" data-lang="text">## Unit: milliseconds
+##    expr      min       lq     mean   median       uq      max neval
+##  fib(n) 1.188045 1.244372 1.393931 1.258884 1.301569 2.396896   100</code></pre></figure>
+
+<p>About 1.259 milliseconds. Not great, but
+reasonable. We’ll compare these timings with python later.</p>
+
+<h2 id="byte-compiling">Byte compiling</h2>
+
+<p>The first optimisation we can do is to byte compile the <code class="language-plaintext highlighter-rouge">fib</code> function
+using the <code class="language-plaintext highlighter-rouge">cmpfun</code> function from the <code class="language-plaintext highlighter-rouge">compiler</code> package.</p>
+
+<figure class="highlight"><pre><code class="language-r" data-lang="r"><span class="n">library</span><span class="p">(</span><span class="n">compiler</span><span class="p">)</span><span class="w">
+</span><span class="n">cmpfib</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">cmpfun</span><span class="p">(</span><span class="n">fib</span><span class="p">)</span><span class="w">
+</span><span class="p">(</span><span class="n">tm2</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">microbenchmark</span><span class="p">(</span><span class="n">cmpfib</span><span class="p">(</span><span class="n">n</span><span class="p">)))</span></code></pre></figure>
+
+<figure class="highlight"><pre><code class="language-text" data-lang="text">## Unit: microseconds
+##       expr     min       lq     mean  median       uq    max neval
+##  cmpfib(n) 117.561 119.5005 121.6874 120.523 122.0945 153.51   100</code></pre></figure>
+
+<p>We improve the median timing by 10
+fold and reach 120.52 microseconds.
+That’s a neat improvement for very little extra effort (but note
+that, in my experience, byte compiling will not always give such
+benefits, is any).</p>
+
+<h2 id="using-rcpp">Using Rcpp</h2>
+
+<p>The famous <a href="http://rcpp.org/"><code class="language-plaintext highlighter-rouge">Rcpp</code></a> package is of course the way to
+go when efficiency is key. The package is nowadays so mature, well
+documented and has such a clean R/C++ interface and elegant
+<a href="https://cran.r-project.org/web/packages/Rcpp/vignettes/Rcpp-sugar.pdf">syntactic sugar</a>,
+that the overhead of calling C/C++ has become substantially smaller
+and certainly worth the extra effort.</p>
+
+<figure class="highlight"><pre><code class="language-r" data-lang="r"><span class="n">library</span><span class="p">(</span><span class="s2">"Rcpp"</span><span class="p">)</span><span class="w">
+</span><span class="n">cppFunction</span><span class="p">(</span><span class="s1">'NumericVector fibc(int n) {
+  NumericVector res(n);
+  res[0] = 1;
+  res[1] = 1;
+  for(int i = 2; i &lt; n; ++i) {
+    res[i] = res[i-1] + res[i-2];
+  }
+  return res;
+}'</span><span class="p">)</span></code></pre></figure>
+
+<figure class="highlight"><pre><code class="language-r" data-lang="r"><span class="p">(</span><span class="n">tm3</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">microbenchmark</span><span class="p">(</span><span class="n">fibc</span><span class="p">(</span><span class="n">n</span><span class="p">)))</span></code></pre></figure>
+
+<figure class="highlight"><pre><code class="language-text" data-lang="text">## Unit: microseconds
+##     expr   min    lq    mean median     uq    max neval
+##  fibc(n) 5.007 5.287 6.55657 5.5095 6.5975 36.185   100</code></pre></figure>
+
+<p>A median 5.51 microseconds, that’s
+certainly competitive.</p>
+
+<h3 id="summary">Summary</h3>
+
+<p>Let’s summarise our timings and benchmark the plain R implementation
+<code class="language-plaintext highlighter-rouge">fib</code>, the byte compiled version <code class="language-plaintext highlighter-rouge">cmpfib</code>, and the C++ version <code class="language-plaintext highlighter-rouge">fibc</code>.</p>
+
+<figure class="highlight"><pre><code class="language-r" data-lang="r"><span class="n">microbenchmark</span><span class="p">(</span><span class="n">fib</span><span class="p">(</span><span class="n">n</span><span class="p">),</span><span class="w"> </span><span class="n">cmpfib</span><span class="p">(</span><span class="n">n</span><span class="p">),</span><span class="w"> </span><span class="n">fibc</span><span class="p">(</span><span class="n">n</span><span class="p">))</span></code></pre></figure>
+
+<figure class="highlight"><pre><code class="language-text" data-lang="text">## Unit: microseconds
+##       expr      min        lq       mean   median        uq      max neval
+##     fib(n) 1157.960 1197.5640 1385.39855 1248.719 1366.8100 4133.164   100
+##  cmpfib(n)  112.275  114.8165  119.52424  117.345  121.7955  161.000   100
+##    fibc(n)    5.441    6.2460    7.98231    7.601    8.6850   16.644   100
+##  cld
+##    c
+##   b 
+##  a</code></pre></figure>
+
+<p>Of course, all this only makes sense if the results are actually
+identical.</p>
+
+<figure class="highlight"><pre><code class="language-r" data-lang="r"><span class="n">identical</span><span class="p">(</span><span class="n">fib</span><span class="p">(</span><span class="n">n</span><span class="p">),</span><span class="w"> </span><span class="n">fibc</span><span class="p">(</span><span class="n">n</span><span class="p">))</span></code></pre></figure>
+
+<figure class="highlight"><pre><code class="language-text" data-lang="text">## [1] TRUE</code></pre></figure>
+
+<figure class="highlight"><pre><code class="language-r" data-lang="r"><span class="n">identical</span><span class="p">(</span><span class="n">fib</span><span class="p">(</span><span class="n">n</span><span class="p">),</span><span class="w"> </span><span class="n">cmpfib</span><span class="p">(</span><span class="n">n</span><span class="p">))</span></code></pre></figure>
+
+<figure class="highlight"><pre><code class="language-text" data-lang="text">## [1] TRUE</code></pre></figure>
+
+<h2 id="recursion-is-beautiful">Recursion is beautiful</h2>
+
+<p>but slow, particularly in R.</p>
+
+<p>(code from the <a href="http://gallery.rcpp.org/articles/fibonacci-sequence/">Rcpp gallery</a>)</p>
+
+<p>Here, I’m only running the code for the 10th Fibonacci number.</p>
+
+<figure class="highlight"><pre><code class="language-r" data-lang="r"><span class="n">fibrec</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="k">function</span><span class="p">(</span><span class="n">n</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span><span class="k">if</span><span class="w"> </span><span class="p">((</span><span class="n">n</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="m">0</span><span class="p">)</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="p">(</span><span class="n">n</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="m">1</span><span class="p">))</span><span class="w"> </span><span class="nf">return</span><span class="p">(</span><span class="m">1</span><span class="p">)</span><span class="w">
+    </span><span class="k">else</span><span class="w"> </span><span class="nf">return</span><span class="p">(</span><span class="n">fibrec</span><span class="p">(</span><span class="n">n</span><span class="m">-1</span><span class="p">)</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">fibrec</span><span class="p">(</span><span class="n">n</span><span class="m">-2</span><span class="p">))</span><span class="w">
+</span><span class="p">}</span></code></pre></figure>
+
+<figure class="highlight"><pre><code class="language-r" data-lang="r"><span class="n">cppFunction</span><span class="p">(</span><span class="s1">'int fibrecc(int n) {
+  if ((n == 0) | (n == 1)) return 1;
+  else return fibrecc(n-1) + fibrecc(n-2);
+}'</span><span class="p">)</span></code></pre></figure>
+
+<figure class="highlight"><pre><code class="language-r" data-lang="r"><span class="n">microbenchmark</span><span class="p">(</span><span class="n">fibrec</span><span class="p">(</span><span class="m">10</span><span class="p">),</span><span class="w"> </span><span class="n">fibrecc</span><span class="p">(</span><span class="m">10</span><span class="p">))</span></code></pre></figure>
+
+<figure class="highlight"><pre><code class="language-text" data-lang="text">## Unit: microseconds
+##         expr     min       lq     mean   median      uq     max neval cld
+##   fibrec(10) 223.989 231.2355 235.5794 233.4070 237.154 304.463   100   b
+##  fibrecc(10)   1.688   2.1905   3.1256   2.7225   3.241  23.193   100  a</code></pre></figure>
+
+<h2 id="comparing-with-python">Comparing with python</h2>
+
+<p>The
+<a href="http://www.stuartmumford.uk/blog/the-fibonacci-sequence.html">python examples</a>
+used <code class="language-plaintext highlighter-rouge">n = 10000</code> to run the benchmarks. Let’s run our code with the
+same input and compare.</p>
+
+<figure class="highlight"><pre><code class="language-r" data-lang="r"><span class="n">n</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="m">10000</span><span class="w">
+</span><span class="n">microbenchmark</span><span class="p">(</span><span class="n">fib</span><span class="p">(</span><span class="n">n</span><span class="p">),</span><span class="w"> </span><span class="n">cmpfib</span><span class="p">(</span><span class="n">n</span><span class="p">),</span><span class="w"> </span><span class="n">fibc</span><span class="p">(</span><span class="n">n</span><span class="p">))</span></code></pre></figure>
+
+<figure class="highlight"><pre><code class="language-text" data-lang="text">## Unit: microseconds
+##       expr       min        lq        mean     median        uq      max
+##     fib(n) 12069.023 12371.270 13444.58376 13140.3095 13390.654 56483.90
+##  cmpfib(n)  1110.513  1124.640  1148.03574  1133.9155  1158.191  1256.67
+##    fibc(n)    40.014    41.879    47.36213    47.5155    51.648    72.05
+##  neval cld
+##    100   c
+##    100  b 
+##    100 a</code></pre></figure>
+
+<p>The first python implementation was</p>
+
+<script src="https://gist.github.com/lgatto/865cc3203b6f239286ad.js?file=fib.py"> </script>
+
+<p>which times, on my computer, at</p>
+
+<script src="https://gist.github.com/lgatto/865cc3203b6f239286ad.js?file=timeit.ipy"> </script>
+
+<p>The implementation using <code class="language-plaintext highlighter-rouge">numba</code>, a just in time compilation library
+for Python, which I failed to install locally, made a huge
+improvement - 45 microseconds, along the lines of our <code class="language-plaintext highlighter-rouge">Rcpp</code>
+implementation. (Stuart claimed that this was <em>“probably too much of a
+difference, something fishy is probably going on here”</em> - not sure
+why.)</p>
+
+<p>Anyway, the byte compiled R implementation comes pretty close to the
+standard (and other non-jit) Python implementations. The real
+difference, however, is in the output. In R, we reach the limit of
+2^1024 at <code class="language-plaintext highlighter-rouge">fib(1447)</code></p>
+
+<figure class="highlight"><pre><code class="language-r" data-lang="r"><span class="n">res</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">fibc</span><span class="p">(</span><span class="m">10000</span><span class="p">)</span><span class="w">
+</span><span class="n">table</span><span class="p">(</span><span class="nf">is.infinite</span><span class="p">(</span><span class="n">res</span><span class="p">))</span></code></pre></figure>
+
+<figure class="highlight"><pre><code class="language-text" data-lang="text">## 
+## FALSE  TRUE 
+##  1476  8524</code></pre></figure>
+
+<figure class="highlight"><pre><code class="language-r" data-lang="r"><span class="m">2</span><span class="o">^</span><span class="p">(</span><span class="n">.Machine</span><span class="o">$</span><span class="n">double.max.exp</span><span class="m">-1</span><span class="p">)</span></code></pre></figure>
+
+<figure class="highlight"><pre><code class="language-text" data-lang="text">## [1] 8.988466e+307</code></pre></figure>
+
+<figure class="highlight"><pre><code class="language-r" data-lang="r"><span class="m">2</span><span class="o">^</span><span class="n">.Machine</span><span class="o">$</span><span class="n">double.max.exp</span></code></pre></figure>
+
+<figure class="highlight"><pre><code class="language-text" data-lang="text">## [1] Inf</code></pre></figure>
+
+<figure class="highlight"><pre><code class="language-r" data-lang="r"><span class="n">res</span><span class="p">[</span><span class="m">1476</span><span class="o">:</span><span class="m">1477</span><span class="p">]</span></code></pre></figure>
+
+<figure class="highlight"><pre><code class="language-text" data-lang="text">## [1] 1.306989e+308           Inf</code></pre></figure>
+
+<p>whereas in Python</p>
+
+<script src="https://gist.github.com/lgatto/865cc3203b6f239286ad.js?file=res.ipy"> </script>
+
+<s>I don't know of a way, if any, to bypass this limitation in R.</s>
+
+<p><strong>EDIT</strong> Below is a
+<a href="https://gist.github.com/timyates/f2ef0637ed016085da80">solution</a>
+<a href="https://twitter.com/lgatt0/status/658962314188730368">by</a>
+<a href="https://twitter.com/tim_yates">Tim Yates</a>, that gives arbitrary
+precision integers, to break the 1447 barrier.</p>
+
+<figure class="highlight"><pre><code class="language-r" data-lang="r"><span class="n">library</span><span class="p">(</span><span class="s2">"gmp"</span><span class="p">)</span><span class="w">
+</span><span class="n">fibz</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="k">function</span><span class="p">(</span><span class="n">n</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w">
+  </span><span class="n">res</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">c</span><span class="p">(</span><span class="n">as.bigz</span><span class="p">(</span><span class="m">1</span><span class="p">),</span><span class="w"> </span><span class="n">as.bigz</span><span class="p">(</span><span class="m">1</span><span class="p">),</span><span class="w"> </span><span class="n">numeric</span><span class="p">(</span><span class="n">n</span><span class="m">-2</span><span class="p">))</span><span class="w">
+  </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="n">i</span><span class="w"> </span><span class="k">in</span><span class="w"> </span><span class="m">3</span><span class="o">:</span><span class="nf">length</span><span class="p">(</span><span class="n">res</span><span class="p">))</span><span class="w">
+    </span><span class="n">res</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">res</span><span class="p">[</span><span class="n">i</span><span class="m">-1</span><span class="p">]</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">res</span><span class="p">[</span><span class="n">i</span><span class="m">-2</span><span class="p">]</span><span class="w">
+  </span><span class="nf">return</span><span class="p">(</span><span class="n">res</span><span class="p">)</span><span class="w">
+</span><span class="p">}</span><span class="w">
+
+</span><span class="n">res</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">fibz</span><span class="p">(</span><span class="m">1477</span><span class="p">)</span><span class="w">
+</span><span class="n">tail</span><span class="p">(</span><span class="n">res</span><span class="p">)</span></code></pre></figure>
+
+<figure class="highlight"><pre><code class="language-text" data-lang="text">## Big Integer ('bigz') 6 x 1 matrix:
+##      [,1]                                                                                                                                                                                                                                                                                                                 
+## [1,] 19068715787993103250798191017822508780304711296653447105164617625061892380553158790029933641311895769883301076259336390381478959071042013362207470861439442042207716496877416186367716237827969144420530123057395842992396843429263278602433441912660289224629863753510222293898147458388732831214202620525571685189 
+## [2,] 30853830266784575100678257781542321845927673771368582171892474736689669436457638053409604601717742060442953667486779831823788109598285206820317254881870159525476238152062172030021830093387677115300762912267211089359316816370446352734136536195111047775110314012593682083284288938439502331878741597580734600418 
+## [3,] 49922546054777678351476448799364830626232385068022029277057092361751561817010796843439538243029637830326254743746116222205267068669327220182524725743309601567683954648939588216389546331215646259721293035324606932351713659799709631336569978107771336999740177766103904377182436396828235163092944218106306285607 
+## [4,] 80776376321562253452154706580907152472160058839390611448949567098441231253468434896849142844747379890769208411232896054029055178267612427002841980625179761093160192801001760246411376424603323375022055947591818021711030476170155984070706514302882384774850491778697586460466725335267737494971685815687040886025 
+## [5,] 130698922376339931803631155380271983098392443907412640726006659460192793070479231740288681087777017721095463154979012276234322246936939647185366706368489362660844147449941348462800922755818969634743348982916424954062744135969865615407276492410653721774590669544801490837649161732095972658064630033793347171632
+## [6,] 211475298697902185255785861961179135570552502746803252174956226558634024323947666637137823932524397611864671566211908330263377425204552074188208686993669123754004340250943108709212299180422293009765404930508242975773774612140021599477983006713536106549441161323499077298115887067363710153036315849480388057657</code></pre></figure>
+
+<p>Unfortunately, this comes at a substantial cost in terms of execution
+time (thanks to <a href="https://twitter.com/wligtenberg">Willem Ligtenberg</a>
+<a href="https://twitter.com/wligtenberg/status/659089707171762176">suggesting</a>
+to check this) and, to a lesser extend, size.</p>
+
+<figure class="highlight"><pre><code class="language-r" data-lang="r"><span class="n">n</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="m">1000</span><span class="w">
+</span><span class="n">microbenchmark</span><span class="p">(</span><span class="n">f1</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">fib</span><span class="p">(</span><span class="n">n</span><span class="p">),</span><span class="w">
+               </span><span class="n">fz</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">fibz</span><span class="p">(</span><span class="n">n</span><span class="p">),</span><span class="w">
+               </span><span class="n">times</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">10L</span><span class="p">)</span></code></pre></figure>
+
+<figure class="highlight"><pre><code class="language-text" data-lang="text">## Unit: milliseconds
+##           expr         min          lq        mean      median          uq
+##   f1 &lt;- fib(n)    1.139019    1.173742    1.194115    1.209615    1.215238
+##  fz &lt;- fibz(n) 1071.668161 1072.543708 1081.231261 1077.171210 1081.093749
+##         max neval cld
+##     1.22241    10  a 
+##  1121.27528    10   b</code></pre></figure>
+
+<figure class="highlight"><pre><code class="language-r" data-lang="r"><span class="n">print</span><span class="p">(</span><span class="n">object.size</span><span class="p">(</span><span class="n">f1</span><span class="p">),</span><span class="w"> </span><span class="n">units</span><span class="o">=</span><span class="s2">"Kb"</span><span class="p">)</span></code></pre></figure>
+
+<figure class="highlight"><pre><code class="language-text" data-lang="text">## 7.9 Kb</code></pre></figure>
+
+<figure class="highlight"><pre><code class="language-r" data-lang="r"><span class="n">print</span><span class="p">(</span><span class="n">object.size</span><span class="p">(</span><span class="n">fz</span><span class="p">),</span><span class="w"> </span><span class="n">units</span><span class="o">=</span><span class="s2">"Kb"</span><span class="p">)</span></code></pre></figure>
+
+<figure class="highlight"><pre><code class="language-text" data-lang="text">## 52.5 Kb</code></pre></figure>
+
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+  
+
+
+  
+  
+  
+
+  <p class="page__taxonomy">
+    <strong><i class="fa fa-fw fa-tags" aria-hidden="true"></i> Tags: </strong>
+    <span itemprop="keywords">
+    
+      
+      
+      <a href="https://lgatto.github.io/tags/#programming" class="page__taxonomy-item" rel="tag">programming</a><span class="sep">, </span>
+    
+      
+      
+      <a href="https://lgatto.github.io/tags/#python" class="page__taxonomy-item" rel="tag">python</a><span class="sep">, </span>
+    
+      
+      
+      <a href="https://lgatto.github.io/tags/#r" class="page__taxonomy-item" rel="tag">R</a>
+    
+    </span>
+  </p>
+
+
+
+
+        
+          <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> Updated:</strong> <time datetime="2015-10-21T00:00:00+02:00">October 21, 2015</time></p>
+        
+      </footer>
+
+      <section class="page__share">
+  
+    <h4 class="page__share-title">Share on</h4>
+  
+
+  <a href="https://twitter.com/intent/tweet?text=The Fibonacci Sequence https://lgatto.github.io/fibo/" class="btn btn--twitter" title="Share on Twitter"><i class="fa fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
+
+  <a href="https://www.facebook.com/sharer/sharer.php?u=https://lgatto.github.io/fibo/" class="btn btn--facebook" title="Share on Facebook"><i class="fa fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
+
+  <a href="https://plus.google.com/share?url=https://lgatto.github.io/fibo/" class="btn btn--google-plus" title="Share on Google Plus"><i class="fa fa-fw fa-google-plus" aria-hidden="true"></i><span> Google+</span></a>
+
+  <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://lgatto.github.io/fibo/" class="btn btn--linkedin" title="Share on LinkedIn"><i class="fa fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
+</section>
+
+
+      
+  <nav class="pagination">
+    
+      <a href="https://lgatto.github.io/authorship-trust-open-science/" class="pagination--pager" title="Authorship, trust and open science
+">Previous</a>
+    
+    
+      <a href="https://lgatto.github.io/rr-what-should-be-our-goals/" class="pagination--pager" title="Reproducible research - What should our goals be?
+">Next</a>
+    
+  </nav>
+
+    </div>
+
+    
+      <div class="page__comments">
+  
+  
+    <h4 class="page__comments-title">Leave a Comment</h4>
+    <section id="disqus_thread"></section>
+  
+</div>
+    
+  </article>
+
+  
+  
+    <div class="page__related">
+      
+        <h4 class="page__related-title">You May Also Enjoy</h4>
+      
+      <div class="grid__wrapper">
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+    
+      <div class="archive__item-teaser">
+        <img src=
+          
+            "https://lgatto.github.io/assets/images/slide-code.png"
+          
+          alt="">
+      </div>
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="https://lgatto.github.io/zulip/" rel="permalink">CBIO’s internal communication goes open source
+</a>
+      
+    </h2>
+    
+      <p class="page__meta"><i class="fa fa-clock-o" aria-hidden="true"></i> 
+
+
+
+
+  1 minute read
+</p>
+    
+    <p class="archive__item-excerpt" itemprop="description">I have been using slack for a rather long time as a discussion
+platform for the lab, even before moving to Belgium. Based on the
+access log, I set up the lab...</p>
+  </article>
+</div>
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+    
+      <div class="archive__item-teaser">
+        <img src=
+          
+            "https://lgatto.github.io/assets/images/slide-code.png"
+          
+          alt="">
+      </div>
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="https://lgatto.github.io/EuroBioc-Ghent/" rel="permalink">CBIO’s EuroBioc2023 posters and talks
+</a>
+      
+    </h2>
+    
+      <p class="page__meta"><i class="fa fa-clock-o" aria-hidden="true"></i> 
+
+
+
+
+  13 minute read
+</p>
+    
+    <p class="archive__item-excerpt" itemprop="description">Long overdue now, but here are the CBIO
+lab’s contributions to the
+EuroBioc2023 conference that
+was organised on Ghent, on the 20 - 22 September 2023.
+
+</p>
+  </article>
+</div>
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+    
+      <div class="archive__item-teaser">
+        <img src=
+          
+            "https://lgatto.github.io/assets/images/slide-code.png"
+          
+          alt="">
+      </div>
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="https://lgatto.github.io/one-minute-intro/" rel="permalink">One-minute introduction
+</a>
+      
+    </h2>
+    
+      <p class="page__meta"><i class="fa fa-clock-o" aria-hidden="true"></i> 
+
+
+
+
+  1 minute read
+</p>
+    
+    <p class="archive__item-excerpt" itemprop="description">Every now and then, there’s a situation where I need to briefly
+introduce myself, academically. This can be with or without any visual
+support (i.e a slide)....</p>
+  </article>
+</div>
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+    
+      <div class="archive__item-teaser">
+        <img src=
+          
+            "https://lgatto.github.io/assets/images/slide-code.png"
+          
+          alt="">
+      </div>
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="https://lgatto.github.io/spatprot-job-2023/" rel="permalink">Open position in the CBIO lab: spatial proteomics and PTMs
+</a>
+      
+    </h2>
+    
+      <p class="page__meta"><i class="fa fa-clock-o" aria-hidden="true"></i> 
+
+
+
+
+  3 minute read
+</p>
+    
+    <p class="archive__item-excerpt" itemprop="description">A position for a PhD student (4 years) or a research assistant (1 year
+contracts, renewable) is open in the CBIO lab focusing on protein
+sub-cellular localis...</p>
+  </article>
+</div>
+        
+      </div>
+    </div>
+  
+</div>
+
+    <div class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+
+<!-- end custom footer snippets -->
+        <div class="page__footer-follow">
+  <ul class="social-icons">
+    
+      <li><strong>Follow:</strong></li>
+    
+    
+    
+    
+      <li><a href="http://github.com/lgatto"><i class="fa fa-fw fa-github" aria-hidden="true"></i> GitHub</a></li>
+    
+    
+    <li><a href="https://lgatto.github.io/feed.xml"><i class="fa fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
+  </ul>
+</div>
+
+<div class="page__footer-copyright">&copy; 2024 Laurent Gatto CC-BY. Powered by <a href="http://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+
+      </footer>
+    </div>
+
+    <script src="https://lgatto.github.io/assets/js/main.min.js"></script>
+
+
+
+
+
+  
+  <script type="text/javascript">
+  	/* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+  	var disqus_shortname = 'laurentgatto';
+
+  	/* * * DON'T EDIT BELOW THIS LINE * * */
+  	(function() {
+  		var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+  		dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+  		(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+  	})();
+
+  	/* * * DON'T EDIT BELOW THIS LINE * * */
+  	(function () {
+  		var s = document.createElement('script'); s.async = true;
+  		s.type = 'text/javascript';
+  		s.src = '//' + disqus_shortname + '.disqus.com/count.js';
+  		(document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+  	}());
+  </script>
+  <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+
+
+
+
+
+  </body>
+</html>

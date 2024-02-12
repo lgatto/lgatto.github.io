@@ -1,0 +1,735 @@
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8">
+
+<!-- begin SEO -->
+
+
+
+
+
+
+
+
+
+<title>            Open and reproducible management and dissemination of knowledge      ~/      </title>
+
+
+
+
+<meta name="description" content="This post is part of my application for the CircleU chair at the UCLouvain. The sevenpartners of Circle U set up a chairprogrammeto ensure strong and sustainable connections across our universities,between research and teaching, between students and staff, and betweenuniversities and society.">
+
+
+
+
+<meta property="og:locale" content="en_GB">
+<meta property="og:site_name" content="~/">
+<meta property="og:title" content="Open and reproducible management and dissemination of knowledge">
+
+
+  <link rel="canonical" href="https://lgatto.github.io/circle-u/">
+  <meta property="og:url" content="https://lgatto.github.io/circle-u/">
+
+
+
+  <meta property="og:description" content="This post is part of my application for the CircleU chair at the UCLouvain. The sevenpartners of Circle U set up a chairprogrammeto ensure strong and sustainable connections across our universities,between research and teaching, between students and staff, and betweenuniversities and society.">
+
+
+
+
+
+  
+
+  
+
+
+
+
+
+  <meta property="og:type" content="article">
+  <meta property="article:published_time" content="2021-06-01T00:00:00+02:00">
+
+
+
+
+
+
+
+
+  <script type="application/ld+json">
+    {
+      "@context" : "http://schema.org",
+      "@type" : "Person",
+      "name" : "Laurent Gatto",
+      "url" : "https://lgatto.github.io",
+      "sameAs" : null
+    }
+  </script>
+
+
+
+
+
+
+<!-- end SEO -->
+
+
+<link href="https://lgatto.github.io/feed.xml" type="application/atom+xml" rel="alternate" title="~/ Feed">
+
+<!-- http://t.co/dKP3o1e -->
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="https://lgatto.github.io/assets/css/main.css">
+
+<meta http-equiv="cleartype" content="on">
+    <!-- start custom head snippets -->
+
+<!-- insert favicons. use http://realfavicongenerator.net/ -->
+
+<!-- end custom head snippets -->
+  </head>
+
+  <body class="layout--single">
+
+    <!--[if lt IE 9]>
+<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
+<![endif]-->
+    <div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        <button><div class="navicon"></div></button>
+        <ul class="visible-links">
+          <li class="masthead__menu-item masthead__menu-item--lg"><a href="https://lgatto.github.io/">~/</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="https://lgatto.github.io/about/">About</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="https://lgatto.github.io/year-archive/">Posts</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="https://lgatto.github.io/tags/">Tags</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="https://lgatto.github.io/cbio-lab/">Lab</a></li>
+          
+        </ul>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+    
+
+
+
+<div id="main" role="main">
+  
+  <div class="sidebar sticky">
+  
+
+<div itemscope itemtype="http://schema.org/Person">
+
+  
+    <div class="author__avatar">
+      
+        <img src="https://lgatto.github.io/images/lgatto2.jpg" class="author__avatar" alt="Laurent Gatto" itemprop="image">
+      
+    </div>
+  
+
+  <div class="author__content">
+    <h3 class="author__name" itemprop="name">Laurent Gatto</h3>
+    
+      <p class="author__bio" itemprop="description">
+        Open science, reproducible research, data champion, computational biology, proteomics, more omics, emacs, a lot of R, quite a bit of running, and parenting.
+      </p>
+    
+  </div>
+
+  <div class="author__urls-wrapper">
+    <button class="btn btn--inverse">Follow</button>
+    <ul class="author__urls social-icons">
+      
+
+      
+
+      
+
+      
+        <li>
+          <a href="https://keybase.io/lgatto" itemprop="sameAs">
+            <i class="fa fa-fw fa-key" aria-hidden="true"></i> Keybase
+          </a>
+        </li>
+      
+
+      
+
+      
+
+      
+
+      
+        <li>
+          <a href="https://www.linkedin.com/in/lgatto" itemprop="sameAs">
+            <i class="fa fa-fw fa-linkedin-square" aria-hidden="true"></i> LinkedIn
+          </a>
+        </li>
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+        <li>
+          <a href="https://github.com/lgatto" itemprop="sameAs">
+            <i class="fa fa-fw fa-github" aria-hidden="true"></i> GitHub
+          </a>
+        </li>
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      <!--
+  <li>
+    <a href="http://link-to-whatever-social-network.com/user/" itemprop="sameAs">
+      <i class="fa fa-fw" aria-hidden="true"></i> Custom Social Profile Link
+    </a>
+  </li>
+-->
+
+
+  <li>
+    <a href="http://dissem.in/r/6231/laurent-gatto" itemprop="sameAs">
+      <i class="fa fa-fw fa-pencil" aria-hidden="true"></i> dissem.in
+    </a>
+  </li>
+
+  <li>
+    <a href="https://orcid.org/0000-0002-1520-2268" itemprop="sameAs">
+      <i class="fa fa-fw fa-pencil" aria-hidden="true"></i> ORCID
+    </a>
+  </li>
+
+  <li>
+    <a href="https://scholar.google.co.uk/citations?user=k5DrB74AAAAJ&hl=en" itemprop="sameAs">
+      <i class="fa fa-fw fa-google" aria-hidden="true"></i> scholar
+    </a>
+  </li>
+
+  <li>
+    <a href="https://impactstory.org/u/0000-0002-1520-2268" itemprop="sameAs">
+      <i class="fa fa-fw fa-sun-o" aria-hidden="true"></i> Impactstory
+    </a>
+  </li>
+
+    </ul>
+  </div>
+</div>
+
+  
+  </div>
+
+
+  <article class="page" itemscope itemtype="http://schema.org/CreativeWork">
+    <meta itemprop="headline" content="Open and reproducible management and dissemination of knowledge">
+    <meta itemprop="description" content="This post is part of my application for the CircleU chair at the UCLouvain. The sevenpartners of Circle U set up a chairprogrammeto ensure strong and sustainable connections across our universities,between research and teaching, between students and staff, and betweenuniversities and society.">
+    <meta itemprop="datePublished" content="June 01, 2021">
+    
+
+    <div class="page__inner-wrap">
+      
+        <header>
+          <h1 class="page__title" itemprop="headline">Open and reproducible management and dissemination of knowledge
+</h1>
+          
+            <p class="page__meta"><i class="fa fa-clock-o" aria-hidden="true"></i> 
+
+
+
+
+  4 minute read
+</p>
+          
+        </header>
+      
+
+      <section class="page__content" itemprop="text">
+        <p>This post is part of my application for the <a href="https://www.circle-u.eu/">Circle
+U</a> chair at the UCLouvain. The seven
+partners of Circle U set up a <a href="https://www.circle-u.eu/education-research/chair-programme/">chair
+programme</a>
+to <em>ensure strong and sustainable connections across our universities,
+between research and teaching, between students and staff, and between
+universities and society</em>.</p>
+
+<p>My proposal for the Circle U chair can be articulated around the
+following question:</p>
+
+<blockquote>
+  <p>How is knowledge produced, maintained and shared?”</p>
+</blockquote>
+
+<p>with a special focus on global health in an area of big,
+inter-connected data and collaborative research.</p>
+
+<p>Universities are the focal point of <strong>knowledge production</strong> in our
+society. This knowledge is produced by the scholarship, research and
+development activities that are part of the academics’ principal
+duties.</p>
+
+<p>The <strong>maintenance of this knowledge</strong> is arguably the weakest link of
+the knowledge chain. How data, experimental designs, results,
+know-how, processes and operation procedures are produced, curated,
+documented and maintained over time is all too often done using ad hoc
+procedures, with little or no systematisation. This leads to little
+scope to scale up to new challenges and opportunities. The activity of
+doing research and the management of these output is lacking the
+professionalisation and standardisation that one could expect for such
+fundamental and expensive activities.</p>
+
+<p>The <strong>dissemination of this knowledge</strong> takes various forms. Education,
+the prime form of transfer of knowledge in universities, has widely
+diversified in recent years, with the digitisation of the education,
+the scale up and diversification of the student population, the
+increase in multi-way interactions between instructors and
+learners. This evolution is bound to continue to face novel
+challenges. Knowledge is also transferred between researchers. This
+dissemination takes the form of research articles, monographs, oral
+presentations among restricted audiences. This mode of communication
+has hardly evolved since the Royal Society started publishing research
+articles, despite the radical (r)evolution of modern research, and the
+advent of modern information and communication technologies. A third
+major mode of information dissemination, between the universities and
+the public is arguably the least active form of knowledge transfer.</p>
+
+<h2 id="proposal">Proposal</h2>
+
+<p>The premise of my proposal is that many of the current challenges in
+large scale, high throughput, collaborative health-related research
+activities, notably those that try to bridge disciplines, is
+<strong>inefficient management and transmission of knowledge</strong>. I would argue
+that the <strong>application of open and reproducible research principles and
+tools can address these challenges</strong>. This proposal is based on my own
+practical experience in quantitative and computational biomedical
+sciences, my decade-long advocacy for open and reproducible
+research, and my participation in the Open Science Steering Committee
+of the UCLouvain.</p>
+
+<p>It is essential to clarify a misconception about <strong>openness</strong> in
+research. It does not imply wild and immediate sharing of research
+outputs, which is particularly sensitive in clinical settings, when
+ethical and privacy concerns are paramount. Openness doesn’t enforce,
+but offers transparency and the possibility to disseminate
+appropriately, whether locally in a research lab, an institute, a
+global research network or to the public. <strong>Reproducibility</strong> in
+science and research defines the opposite of anecdotal
+observation. Reproducibility is a property that leads to trust in an
+experiment and its interpretations. Reproducibility is also a
+necessary quality to transmit knowledge.  <strong>Openness and
+reproducibility are hallmarks or rigorous, accountable and
+transmissible science.</strong> My proposal aims at promoting and
+implementing open and reproducible research, focusing on the
+management and the transmission of knowledge in a biomedical and
+global health context.</p>
+
+<h2 id="education">Education</h2>
+
+<p>I will be organising, contributing or promoting courses, seminars and
+workshops to raise awareness about and help implementing open and
+reproducible research to students, early career researchers (ECR),
+notably new PhD students as part of the doctoral schools, new
+academics arriving at the university and researchers across the
+institutes (As a member of the Open Science piloting committee, I am
+already committed to several of these actions at the UCLouvain). To
+maximise the impact of these initiatives, they should be informed or
+led by the students and ECR themselves to (1) maximise the
+effectiveness and long-term penetrance of these efforts and (2) make
+sure that the prime beneficiaries are the students and ECR themselves.</p>
+
+<p>In addition, and specifically as part of the international reach of
+circle U, I want to expand these efforts by sharing and contributing
+these activities with our partners and beyond through the organisation
+of international conferences and summer schools that will promote
+these best practices and apply existing tools and resources.</p>
+
+<h2 id="research">Research</h2>
+
+<p>My goal in terms of research is to foster collaborative projects
+between engineering and health-oriented research teams. These include
+for example the development and application of</p>
+
+<ul>
+  <li>
+    <p>software engineering practices to research processes and data
+management, notably continuous integration (i.e. the continuous
+testing and validation of data, software or results) to facilitate
+reproducible and transparent research in biomedical and clinical
+research, and</p>
+  </li>
+  <li>
+    <p>machine learning and artificial intelligence algorithms to integrate
+global health and clinical data across data types and physical
+locations.</p>
+  </li>
+</ul>
+
+<p>The expected outcomes of such efforts are (1) becoming better at
+scaling up (increase in size) and scaling out (increase in diversity)
+our capacity in managing digital health data, (2) the production and
+management of more transparent knowledge and, ultimately, the (3) the
+delivery of high quality, data/knowledge-driven health care.</p>
+
+<p>To reap the benefits from this proposal, it is essential that open and
+reproducible research principles <strong>percolate throughout all strata of
+universities and society at large</strong>. To do so, I believe that in
+addition to becoming part of the curriculum and widely discussed among
+scholars, these principles should also become part of the <strong>academic
+governance</strong>, such as the academic evaluation process.</p>
+
+<p>Finally, in a time where informed expertise on global health and mere
+opinions have been confronted and considered equivalent, it is
+absolutely essential to emphasise open and reproducible principles as
+pillars of research and to broadcast these widely outside of the
+university. I thus also advocate for a dedicated online and media
+presence (again, involving students and ERCs) and close collaboration
+with existing academic and non-academics initiatives.</p>
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+  
+
+
+  
+  
+  
+
+  <p class="page__taxonomy">
+    <strong><i class="fa fa-fw fa-tags" aria-hidden="true"></i> Tags: </strong>
+    <span itemprop="keywords">
+    
+      
+      
+      <a href="https://lgatto.github.io/tags/#circle-u" class="page__taxonomy-item" rel="tag">circle u</a><span class="sep">, </span>
+    
+      
+      
+      <a href="https://lgatto.github.io/tags/#open-research" class="page__taxonomy-item" rel="tag">open research</a><span class="sep">, </span>
+    
+      
+      
+      <a href="https://lgatto.github.io/tags/#reproducible-research" class="page__taxonomy-item" rel="tag">reproducible research</a>
+    
+    </span>
+  </p>
+
+
+
+
+        
+          <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> Updated:</strong> <time datetime="2021-06-01T00:00:00+02:00">June 01, 2021</time></p>
+        
+      </footer>
+
+      <section class="page__share">
+  
+    <h4 class="page__share-title">Share on</h4>
+  
+
+  <a href="https://twitter.com/intent/tweet?text=Open and reproducible management and dissemination of knowledge https://lgatto.github.io/circle-u/" class="btn btn--twitter" title="Share on Twitter"><i class="fa fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
+
+  <a href="https://www.facebook.com/sharer/sharer.php?u=https://lgatto.github.io/circle-u/" class="btn btn--facebook" title="Share on Facebook"><i class="fa fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
+
+  <a href="https://plus.google.com/share?url=https://lgatto.github.io/circle-u/" class="btn btn--google-plus" title="Share on Google Plus"><i class="fa fa-fw fa-google-plus" aria-hidden="true"></i><span> Google+</span></a>
+
+  <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://lgatto.github.io/circle-u/" class="btn btn--linkedin" title="Share on LinkedIn"><i class="fa fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
+</section>
+
+
+      
+  <nav class="pagination">
+    
+      <a href="https://lgatto.github.io/keynote-may-institute/" class="pagination--pager" title="May Institue keynote talk: Reproducible mass spectrometry-based research
+">Previous</a>
+    
+    
+      <a href="https://lgatto.github.io/exam-qst/" class="pagination--pager" title="How to succeed in my exam
+">Next</a>
+    
+  </nav>
+
+    </div>
+
+    
+      <div class="page__comments">
+  
+  
+    <h4 class="page__comments-title">Leave a Comment</h4>
+    <section id="disqus_thread"></section>
+  
+</div>
+    
+  </article>
+
+  
+  
+    <div class="page__related">
+      
+        <h4 class="page__related-title">You May Also Enjoy</h4>
+      
+      <div class="grid__wrapper">
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+    
+      <div class="archive__item-teaser">
+        <img src=
+          
+            "https://lgatto.github.io/assets/images/slide-code.png"
+          
+          alt="">
+      </div>
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="https://lgatto.github.io/zulip/" rel="permalink">CBIO’s internal communication goes open source
+</a>
+      
+    </h2>
+    
+      <p class="page__meta"><i class="fa fa-clock-o" aria-hidden="true"></i> 
+
+
+
+
+  1 minute read
+</p>
+    
+    <p class="archive__item-excerpt" itemprop="description">I have been using slack for a rather long time as a discussion
+platform for the lab, even before moving to Belgium. Based on the
+access log, I set up the lab...</p>
+  </article>
+</div>
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+    
+      <div class="archive__item-teaser">
+        <img src=
+          
+            "https://lgatto.github.io/assets/images/slide-code.png"
+          
+          alt="">
+      </div>
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="https://lgatto.github.io/EuroBioc-Ghent/" rel="permalink">CBIO’s EuroBioc2023 posters and talks
+</a>
+      
+    </h2>
+    
+      <p class="page__meta"><i class="fa fa-clock-o" aria-hidden="true"></i> 
+
+
+
+
+  13 minute read
+</p>
+    
+    <p class="archive__item-excerpt" itemprop="description">Long overdue now, but here are the CBIO
+lab’s contributions to the
+EuroBioc2023 conference that
+was organised on Ghent, on the 20 - 22 September 2023.
+
+</p>
+  </article>
+</div>
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+    
+      <div class="archive__item-teaser">
+        <img src=
+          
+            "https://lgatto.github.io/assets/images/slide-code.png"
+          
+          alt="">
+      </div>
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="https://lgatto.github.io/one-minute-intro/" rel="permalink">One-minute introduction
+</a>
+      
+    </h2>
+    
+      <p class="page__meta"><i class="fa fa-clock-o" aria-hidden="true"></i> 
+
+
+
+
+  1 minute read
+</p>
+    
+    <p class="archive__item-excerpt" itemprop="description">Every now and then, there’s a situation where I need to briefly
+introduce myself, academically. This can be with or without any visual
+support (i.e a slide)....</p>
+  </article>
+</div>
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+    
+      <div class="archive__item-teaser">
+        <img src=
+          
+            "https://lgatto.github.io/assets/images/slide-code.png"
+          
+          alt="">
+      </div>
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="https://lgatto.github.io/spatprot-job-2023/" rel="permalink">Open position in the CBIO lab: spatial proteomics and PTMs
+</a>
+      
+    </h2>
+    
+      <p class="page__meta"><i class="fa fa-clock-o" aria-hidden="true"></i> 
+
+
+
+
+  3 minute read
+</p>
+    
+    <p class="archive__item-excerpt" itemprop="description">A position for a PhD student (4 years) or a research assistant (1 year
+contracts, renewable) is open in the CBIO lab focusing on protein
+sub-cellular localis...</p>
+  </article>
+</div>
+        
+      </div>
+    </div>
+  
+</div>
+
+    <div class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+
+<!-- end custom footer snippets -->
+        <div class="page__footer-follow">
+  <ul class="social-icons">
+    
+      <li><strong>Follow:</strong></li>
+    
+    
+    
+    
+      <li><a href="http://github.com/lgatto"><i class="fa fa-fw fa-github" aria-hidden="true"></i> GitHub</a></li>
+    
+    
+    <li><a href="https://lgatto.github.io/feed.xml"><i class="fa fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
+  </ul>
+</div>
+
+<div class="page__footer-copyright">&copy; 2024 Laurent Gatto CC-BY. Powered by <a href="http://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+
+      </footer>
+    </div>
+
+    <script src="https://lgatto.github.io/assets/js/main.min.js"></script>
+
+
+
+
+
+  
+  <script type="text/javascript">
+  	/* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+  	var disqus_shortname = 'laurentgatto';
+
+  	/* * * DON'T EDIT BELOW THIS LINE * * */
+  	(function() {
+  		var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+  		dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+  		(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+  	})();
+
+  	/* * * DON'T EDIT BELOW THIS LINE * * */
+  	(function () {
+  		var s = document.createElement('script'); s.async = true;
+  		s.type = 'text/javascript';
+  		s.src = '//' + disqus_shortname + '.disqus.com/count.js';
+  		(document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+  	}());
+  </script>
+  <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+
+
+
+
+
+  </body>
+</html>

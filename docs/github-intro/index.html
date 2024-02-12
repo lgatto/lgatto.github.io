@@ -1,0 +1,1032 @@
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8">
+
+<!-- begin SEO -->
+
+
+
+
+
+
+
+
+
+<title>            A gentle introduction to git and Github      ~/      </title>
+
+
+
+
+<meta name="description" content="Git is a command line-based distributedversion control system. Version control system means that its goalis to track and record every change in a set of text files (typicallysource code, but not exclusively), collectively called a repository.It then possible to check what every changes contained and when itoccurred, and to recover and return to any previous state of thetracked files.">
+
+
+
+
+<meta property="og:locale" content="en_GB">
+<meta property="og:site_name" content="~/">
+<meta property="og:title" content="A gentle introduction to git and Github">
+
+
+  <link rel="canonical" href="https://lgatto.github.io/github-intro/">
+  <meta property="og:url" content="https://lgatto.github.io/github-intro/">
+
+
+
+  <meta property="og:description" content="Git is a command line-based distributedversion control system. Version control system means that its goalis to track and record every change in a set of text files (typicallysource code, but not exclusively), collectively called a repository.It then possible to check what every changes contained and when itoccurred, and to recover and return to any previous state of thetracked files.">
+
+
+
+
+
+  
+
+  
+
+
+
+
+
+  <meta property="og:type" content="article">
+  <meta property="article:published_time" content="2019-02-02T00:00:00+01:00">
+
+
+
+
+
+
+
+
+  <script type="application/ld+json">
+    {
+      "@context" : "http://schema.org",
+      "@type" : "Person",
+      "name" : "Laurent Gatto",
+      "url" : "https://lgatto.github.io",
+      "sameAs" : null
+    }
+  </script>
+
+
+
+
+
+
+<!-- end SEO -->
+
+
+<link href="https://lgatto.github.io/feed.xml" type="application/atom+xml" rel="alternate" title="~/ Feed">
+
+<!-- http://t.co/dKP3o1e -->
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="https://lgatto.github.io/assets/css/main.css">
+
+<meta http-equiv="cleartype" content="on">
+    <!-- start custom head snippets -->
+
+<!-- insert favicons. use http://realfavicongenerator.net/ -->
+
+<!-- end custom head snippets -->
+  </head>
+
+  <body class="layout--single">
+
+    <!--[if lt IE 9]>
+<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
+<![endif]-->
+    <div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        <button><div class="navicon"></div></button>
+        <ul class="visible-links">
+          <li class="masthead__menu-item masthead__menu-item--lg"><a href="https://lgatto.github.io/">~/</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="https://lgatto.github.io/about/">About</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="https://lgatto.github.io/year-archive/">Posts</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="https://lgatto.github.io/tags/">Tags</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="https://lgatto.github.io/cbio-lab/">Lab</a></li>
+          
+        </ul>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+    
+
+
+
+<div id="main" role="main">
+  
+  <div class="sidebar sticky">
+  
+
+<div itemscope itemtype="http://schema.org/Person">
+
+  
+    <div class="author__avatar">
+      
+        <img src="https://lgatto.github.io/images/lgatto2.jpg" class="author__avatar" alt="Laurent Gatto" itemprop="image">
+      
+    </div>
+  
+
+  <div class="author__content">
+    <h3 class="author__name" itemprop="name">Laurent Gatto</h3>
+    
+      <p class="author__bio" itemprop="description">
+        Open science, reproducible research, data champion, computational biology, proteomics, more omics, emacs, a lot of R, quite a bit of running, and parenting.
+      </p>
+    
+  </div>
+
+  <div class="author__urls-wrapper">
+    <button class="btn btn--inverse">Follow</button>
+    <ul class="author__urls social-icons">
+      
+
+      
+
+      
+
+      
+        <li>
+          <a href="https://keybase.io/lgatto" itemprop="sameAs">
+            <i class="fa fa-fw fa-key" aria-hidden="true"></i> Keybase
+          </a>
+        </li>
+      
+
+      
+
+      
+
+      
+
+      
+        <li>
+          <a href="https://www.linkedin.com/in/lgatto" itemprop="sameAs">
+            <i class="fa fa-fw fa-linkedin-square" aria-hidden="true"></i> LinkedIn
+          </a>
+        </li>
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+        <li>
+          <a href="https://github.com/lgatto" itemprop="sameAs">
+            <i class="fa fa-fw fa-github" aria-hidden="true"></i> GitHub
+          </a>
+        </li>
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      <!--
+  <li>
+    <a href="http://link-to-whatever-social-network.com/user/" itemprop="sameAs">
+      <i class="fa fa-fw" aria-hidden="true"></i> Custom Social Profile Link
+    </a>
+  </li>
+-->
+
+
+  <li>
+    <a href="http://dissem.in/r/6231/laurent-gatto" itemprop="sameAs">
+      <i class="fa fa-fw fa-pencil" aria-hidden="true"></i> dissem.in
+    </a>
+  </li>
+
+  <li>
+    <a href="https://orcid.org/0000-0002-1520-2268" itemprop="sameAs">
+      <i class="fa fa-fw fa-pencil" aria-hidden="true"></i> ORCID
+    </a>
+  </li>
+
+  <li>
+    <a href="https://scholar.google.co.uk/citations?user=k5DrB74AAAAJ&hl=en" itemprop="sameAs">
+      <i class="fa fa-fw fa-google" aria-hidden="true"></i> scholar
+    </a>
+  </li>
+
+  <li>
+    <a href="https://impactstory.org/u/0000-0002-1520-2268" itemprop="sameAs">
+      <i class="fa fa-fw fa-sun-o" aria-hidden="true"></i> Impactstory
+    </a>
+  </li>
+
+    </ul>
+  </div>
+</div>
+
+  
+  </div>
+
+
+  <article class="page" itemscope itemtype="http://schema.org/CreativeWork">
+    <meta itemprop="headline" content="A gentle introduction to git and Github">
+    <meta itemprop="description" content="Git is a command line-based distributedversion control system. Version control system means that its goalis to track and record every change in a set of text files (typicallysource code, but not exclusively), collectively called a repository.It then possible to check what every changes contained and when itoccurred, and to recover and return to any previous state of thetracked files.">
+    <meta itemprop="datePublished" content="February 02, 2019">
+    
+
+    <div class="page__inner-wrap">
+      
+        <header>
+          <h1 class="page__title" itemprop="headline">A gentle introduction to git and Github
+</h1>
+          
+            <p class="page__meta"><i class="fa fa-clock-o" aria-hidden="true"></i> 
+
+
+
+
+  10 minute read
+</p>
+          
+        </header>
+      
+
+      <section class="page__content" itemprop="text">
+        <p><a href="https://git-scm.com/">Git</a> is a command line-based <strong>distributed
+version control system</strong>. Version control system means that its goal
+is to track and record every change in a set of text files (typically
+source code, but not exclusively), collectively called a repository.
+It then possible to check what every changes contained and when it
+occurred, and to recover and return to any previous state of the
+tracked files.</p>
+
+<!--more-->
+
+<aside class="sidebar__right">
+<nav class="toc">
+    <header><h4 class="nav__title"><i class="fa fa-file-text"></i> On This Page</h4></header>
+<ul class="toc__menu" id="markdown-toc">
+  <li><a href="#a-new-repository" id="markdown-toc-a-new-repository">A new repository</a></li>
+  <li><a href="#adding-a-file" id="markdown-toc-adding-a-file">Adding a file</a></li>
+  <li><a href="#using-issues" id="markdown-toc-using-issues">Using issues</a></li>
+  <li><a href="#external-contributions" id="markdown-toc-external-contributions">External contributions</a></li>
+  <li><a href="#navigating-commits" id="markdown-toc-navigating-commits">Navigating commits</a></li>
+  <li><a href="#cloning-locally" id="markdown-toc-cloning-locally">Cloning locally</a></li>
+  <li><a href="#conclusions" id="markdown-toc-conclusions">Conclusions</a></li>
+  <li><a href="#further-reading-and-references" id="markdown-toc-further-reading-and-references">Further reading and references</a></li>
+</ul>
+
+  </nav>
+</aside>
+
+<p>Distributed means that these tracked files can be stored on many
+different computer systems, such as a local computer, remote servers,
+or in the cloud. None plays the role of main copy, they are all
+equivalent, and users can synchronise (pull and push) code from one to
+another.</p>
+
+<p>Git is without any doubt a powerful but relatively difficult piece of
+software to use. It was developed by Linus Torvalds, the main
+developer of the Linux Kernel, for the development of the Linux
+kernel. <a href="https://github.com/">GitHub</a>, is a web interface to git. It
+allows to perform the most important functions of git through a
+friendly and easy to use graphical interface, adding some handy
+project management and sharing features. We are going to focus on
+GitHub, an illustrate</p>
+
+<ul>
+  <li>the creation of a repository</li>
+  <li>adding and modifying files</li>
+  <li>external contributions using forks and pull requests</li>
+  <li>open, comment and close issues</li>
+</ul>
+
+<p>While the main context in which my colleagues come to know git and
+GitHub is bioinformatics-related, I’m going to demonstrate it with
+something many more people are familiar with. We are going to use
+GitHub to manage a <a href="https://www.bbc.com/food/recipes/basicpancakeswithsuga_66226">pancakes
+recipe</a>.</p>
+
+<p>Note that to use GitHub, one needs to create a free account, so that
+all operations can be tracked and attributed to a person. Here, I will
+be using two accounts here, namely my main account
+<a href="https://github.com/lgatto/">lgatto</a>, and
+<a href="https://github.com/LaurentGatto">LaurentGatto</a>.</p>
+
+<h2 id="a-new-repository">A new repository</h2>
+
+<p>Below, I start by creating a repository under user <code class="language-plaintext highlighter-rouge">lgatto</code> by
+clicking on the <code class="language-plaintext highlighter-rouge">+</code> in the top right corner, and choosing <em>New
+repository</em>.</p>
+
+<p><img src="/images/01-github-intro-new-repo.png" alt="A new GitHub repository*" /></p>
+
+<p>The next step is to name the repository (I call it <code class="language-plaintext highlighter-rouge">pancakes</code>),
+provide a short description, choose whether to make it public or
+private (we choose the former). I also choose to initialise the
+repository with a README<sup id="fnref:readme" role="doc-noteref"><a href="#fn:readme" class="footnote" rel="footnote">1</a></sup> file (by default, it will be
+<code class="language-plaintext highlighter-rouge">README.md</code>, in markdown format).</p>
+
+<p>We won’t use any of the suggested licences here, as those are targeted
+towards software generally. It we wanted to set one, we would probably
+use <a href="https://creativecommons.org/licenses/by/4.0/">CC-BY</a> and mention
+it in the README file.</p>
+
+<p><img src="/images/02-github-intro-create-repo.png" alt="Create a new repository" /></p>
+
+<p>We can now click the <code class="language-plaintext highlighter-rouge">Create repository</code> button to actually create
+it. We obtain the repository <code class="language-plaintext highlighter-rouge">lgatto/pancakes</code> populated with the
+<code class="language-plaintext highlighter-rouge">README.md</code> file.</p>
+
+<p><img src="/images/03-github-intro-repo-state-1.png" alt="Initial state of our new repository" /></p>
+
+<p>This is a <strong>remote</strong> repository, as it lives remotely (on one of the
+GitHub servers). Later, we’ll see how to <strong>clone</strong> it locally. Note
+that the remote repository isn’t special in any way, and doesn’t
+necessarily define the main one. In this case, it happens to be the
+first one that was created, but we could also have created a local
+repository and pushed it remotely.</p>
+
+<h2 id="adding-a-file">Adding a file</h2>
+
+<p>It is simple to create or upload new files to the remote repository by
+clicking the respective grey buttons (see the grey button on the
+previous screen-shot). I can click <code class="language-plaintext highlighter-rouge">Create new file</code> to open a
+interface where I can give the file a name (here we use
+<code class="language-plaintext highlighter-rouge">pancakes.md</code>, specifying the markdown file extension), and copy/paste
+and adapt the recipe from the recipe <a href="https://www.bbc.com/food/recipes/basicpancakeswithsuga_66226">BBC
+recipe</a>
+site.</p>
+
+<p><img src="/images/04-github-intro-pancakes-src.png" alt="Adding a new file" /></p>
+
+<p>At the bottom of the page, I provide a <strong>commit</strong> message, which is a
+message that is recorded as part of the history of the
+repository. Using good commit messages is important as it helps
+understand the changes and the evolution of a repository without the
+need to look at the actual individual changes.</p>
+
+<p><img src="/images/05-github-intro-pancakes-commit.png" alt="Committing our new file" /></p>
+
+<p>After clicking <code class="language-plaintext highlighter-rouge">Commit new file</code>, I see the new state of my
+repository, that now contains two files, namely <code class="language-plaintext highlighter-rouge">README.md</code> and
+<code class="language-plaintext highlighter-rouge">pancakes.md</code>.</p>
+
+<p><img src="/images/06-github-intro-repo-state-2.png" alt="Update repository" /></p>
+
+<p>I can inspect the history of that repository by clicking on the
+<strong>commits</strong> link under the repository name. At this stage I have two
+commits:</p>
+
+<ol>
+  <li>the initial commit that created the repository with the README
+file, and</li>
+  <li>the one that added the recipe itself.</li>
+</ol>
+
+<p><img src="/images/07-github-intro-commits.png" alt="Commits so far" /></p>
+
+<p>On the right, I can read the first couple of characters of the commit
+tags. It uniquely identifies each commit and, as a consequence, each
+state of the repository.</p>
+
+<h2 id="using-issues">Using issues</h2>
+
+<p>A very attractive feature of GitHub, which is specific to the web
+interface and is missing from the git software, is the availability of
+repository-specific issues. The current repository hasn’t any (open)
+issue yet, as shown by the <code class="language-plaintext highlighter-rouge">Issues (0)</code> tab.</p>
+
+<p><img src="/images/08-github-intro-issue-tab.png" alt="Github issues tab" /></p>
+
+<p>To open a new issue, I select that tab and then press the green <code class="language-plaintext highlighter-rouge">New
+issue</code> button, that opens an issue edition window.</p>
+
+<p><img src="/images/09-github-intro-new-issue.png" alt="Create a new issue" /></p>
+
+<p>I can now write a new issue using the markdown format. Here, I use an
+emoji, and could also easily add figures and links to other issues.</p>
+
+<p><img src="/images/10-github-intro-write-issue.png" alt="Write a GitHub issue" /></p>
+
+<p>Once submitted, the issue nicely displays for anyone to see and
+comment.</p>
+
+<p><img src="/images/11-github-intro-view-issue.png" alt="GitHub help" /></p>
+
+<p>I now switch to the <code class="language-plaintext highlighter-rouge">LaurentGatto</code> account and post a comment on this
+issue which, as a reminder, is an issue in the <code class="language-plaintext highlighter-rouge">pancakes</code> repository
+that belongs to user <code class="language-plaintext highlighter-rouge">lgatto</code>.</p>
+
+<p><img src="/images/12-github-intro-comment-on-issue.png" alt="Commenting on an issue" /></p>
+
+<p>The comment is publicly visible and others could further comment and
+discuss.</p>
+
+<p><img src="/images/13-github-intro-view-comment.png" alt="GitHub help" /></p>
+
+<h2 id="external-contributions">External contributions</h2>
+
+<p>The following feature is probably the one where GitHub particularly
+shines. It is an extremely powerful mechanism to collaborate and track
+external contribution to a repository.</p>
+
+<p>As user <code class="language-plaintext highlighter-rouge">LaurentGatto</code>, I can choose to <strong>fork</strong> <code class="language-plaintext highlighter-rouge">lgatto</code>’s <code class="language-plaintext highlighter-rouge">pancakes</code>
+repository (or any publicly available repository for the matter) by
+clicking on the <code class="language-plaintext highlighter-rouge">Fork</code> button in the top right corner. Forking is
+going to create an exact copy of the repository, including all the
+commit history (but not the issues) into the new account, while
+keeping a public record of where it comes from.</p>
+
+<p><img src="/images/14-github-intro-fork.png" alt="GitHub help" /></p>
+
+<p>The following screen-shot shows the forking transition screen.</p>
+
+<p><img src="/images/15-github-intro-forking.png" alt="GitHub help" /></p>
+
+<p>Below, we see the <code class="language-plaintext highlighter-rouge">LaurentGatto/pancakes</code> repository that, just under
+the repository title/name, is clearly labelled as a fork of
+<code class="language-plaintext highlighter-rouge">lgatto/pancakes</code>. The little avatar, on the left of the <em>latest
+commit</em> line, indicates that the last commit was by <code class="language-plaintext highlighter-rouge">lgatto</code> - the
+whole repository history is preserved.</p>
+
+<p><img src="/images/16-github-intro-forked.png" alt="GitHub help" /></p>
+
+<p>User <code class="language-plaintext highlighter-rouge">LaurentGatto</code> can now edit or upload new files. Below, he clicks
+the little pen on the right to edit the <code class="language-plaintext highlighter-rouge">pancakes.md</code> files.</p>
+
+<p><img src="/images/17-github-intro-edit-file.png" alt="GitHub help" /></p>
+
+<p><code class="language-plaintext highlighter-rouge">LaurentGatto</code> adds a <em>Tips</em> section and a new bullet point suggesting
+to enjoy the pancakes with chocolate spread and cold milk. The file
+update needs a message (and an optional extended description, that is
+left black here) before the actual commit.</p>
+
+<p><img src="/images/18-github-intro-commit-edit.png" alt="GitHub help" /></p>
+
+<p>Below, we see the updated <code class="language-plaintext highlighter-rouge">pancakes.md</code> file with <code class="language-plaintext highlighter-rouge">LaurentGatto</code>’s
+repository.</p>
+
+<p><img src="/images/19-github-intro-view-edit.png" alt="GitHub help" /></p>
+
+<p>Checking the commit history of the repository, we see that there’s now
+a third commit <em>Added nutella tip</em>, by <code class="language-plaintext highlighter-rouge">LaurentGatto</code>, in addition to
+the previous ones by <code class="language-plaintext highlighter-rouge">lgatto</code>. Note in the title above that these
+changes have been recorded in <code class="language-plaintext highlighter-rouge">LaurentGatto/pancakes</code>, a fork of
+<code class="language-plaintext highlighter-rouge">lgatto/pancakes</code>, and do not exist in <code class="language-plaintext highlighter-rouge">lgatto/pancakes</code> at this time.</p>
+
+<p><img src="/images/20-github-intro-commits-2.png" alt="GitHub help" /></p>
+
+<p>User <code class="language-plaintext highlighter-rouge">LaurentGatto</code>, is he wishes so, can now contribute his changes
+back to the original repository by sending a <strong>Pull request</strong> from the
+identically named tab.</p>
+
+<p><img src="/images/21-github-intro-pr-tab.png" alt="GitHub help" /></p>
+
+<p>There’s currently no existing pull request (often shorted as PR) under
+the <em>Pull requests</em> tab, and a new one can be started by clicking the
+green <code class="language-plaintext highlighter-rouge">New pull request</code> button.</p>
+
+<p><img src="/images/22-github-intro-new-pr.png" alt="GitHub help" /></p>
+
+<p><code class="language-plaintext highlighter-rouge">LaurentGatto</code> can now see the differences between the original and
+the forked repositories (i.e. a single commit by user <code class="language-plaintext highlighter-rouge">LaurentGatto</code> -
+the actual difference between the file(s) could be seen scrolling
+down) and can initiate the pull request by clicking the green <code class="language-plaintext highlighter-rouge">Create
+pull request</code> button.</p>
+
+<p><img src="/images/23-github-intro-create-pr-1.png" alt="GitHub help" /></p>
+
+<p>It can be useful to provide addition comments, or a general
+description for a PR, before actually sending it back to the original
+repository. Once the <code class="language-plaintext highlighter-rouge">Create pull request</code> button is pressed and the
+PR is sent, the page udpates to the destination repository,
+i.e. <code class="language-plaintext highlighter-rouge">lgatto/pancakes</code> in this example.</p>
+
+<p><img src="/images/24-github-intro-create-pr-2.png" alt="GitHub help" /></p>
+
+<p>Back in the initial <code class="language-plaintext highlighter-rouge">lgatto/pancakes</code> repository, we see that there’s
+no conflict between the current state of <code class="language-plaintext highlighter-rouge">lgatto/pancakes</code> and the PR
+from <code class="language-plaintext highlighter-rouge">LaurentGatto</code>. There could be a conflict if multiple changes
+affected the same line.</p>
+
+<p><img src="/images/25-github-intro-pr-received.png" alt="GitHub help" /></p>
+
+<p>The next screen-shot shows the <code class="language-plaintext highlighter-rouge">lgatto/pancake</code> repository as seen by
+<code class="language-plaintext highlighter-rouge">lgatto</code>, where the PR from <code class="language-plaintext highlighter-rouge">LaurentGatto</code> has now appeared and can be
+merged.</p>
+
+<p><img src="/images/26-github-intro-merge-pr.png" alt="GitHub help" /></p>
+
+<p>Below, the merge is confirmed with a small message. This mechanism
+however also allows to explicitly review pull requests and ask for
+specific changes before accepting to merge.</p>
+
+<p><img src="/images/27-github-intro-confirm-pr.png" alt="GitHub help" /></p>
+
+<p>The following screen-shot show the merged PR.</p>
+
+<p><img src="/images/28-github-intro-merged-pr.png" alt="GitHub help" /></p>
+
+<p>Here we look at the commit history of <code class="language-plaintext highlighter-rouge">lgatto/pancake</code>, and we can see
+that <code class="language-plaintext highlighter-rouge">LaurentGatto</code> did a modification and that <code class="language-plaintext highlighter-rouge">lgatto</code> merged it
+into <code class="language-plaintext highlighter-rouge">lgatto/pancakes</code>.</p>
+
+<p><img src="/images/29-github-intro-commits-3.png" alt="GitHub help" /></p>
+
+<p>Below, we show the previously opened <em>Pancake tips</em> issue (issue #1),
+how <code class="language-plaintext highlighter-rouge">lgatto</code> posts a last comment and closes the issue with the <code class="language-plaintext highlighter-rouge">Close
+and comment</code> green button.</p>
+
+<p><img src="/images/13-1-github-intro-close-issue.png" alt="GitHub intro" /></p>
+
+<p><img src="/images/13-2-github-intro-closed-issue.png" alt="GitHub intro" /></p>
+
+<p>Closed issues aren’t deleted and still visible on the repository.</p>
+
+<p><img src="/images/13-3-github-intro-closed-issues.png" alt="GitHub intro" /></p>
+
+<h2 id="navigating-commits">Navigating commits</h2>
+
+<p>If we look back at the commit history, we see towards the unique
+commit tags and, on their right, buttons that allow to browse a past
+state of the repository. Below, the commit corresponding to the
+addition of the pancake recipe is selected (commit message
+<code class="language-plaintext highlighter-rouge">3898b2c2cab04761b64b78dbe3725e84b585ca2c</code>).</p>
+
+<p><img src="/images/37-github-intro-nav-commits.png" alt="Choose a commit to browse" /></p>
+
+<p>We are now in the exact state of that commit.</p>
+
+<p><img src="/images/38-github-intro-nav-commit.png" alt="Previous state of the repository" /></p>
+
+<h2 id="cloning-locally">Cloning locally</h2>
+
+<p>So far, we have exclusively used GitHub. But for more substantial
+projects, where source code or analysis reports are written and
+executed, repositories are managed and updated locally. The creation
+of a new (local) copy is called <strong>cloning</strong>, and can be done using the
+URL under the <code class="language-plaintext highlighter-rouge">Clone or download</code> button<sup id="fnref:download" role="doc-noteref"><a href="#fn:download" class="footnote" rel="footnote">2</a></sup>.</p>
+
+<p><img src="/images/30-github-intro-clone-url.png" alt="GitHub help" /></p>
+
+<p>From the command line<sup id="fnref:cli" role="doc-noteref"><a href="#fn:cli" class="footnote" rel="footnote">3</a></sup>, the command<sup id="fnref:clone" role="doc-noteref"><a href="#fn:clone" class="footnote" rel="footnote">4</a></sup></p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git clone git@github.com:lgatto/pancakes.git
+</code></pre></div></div>
+
+<p>will produce a full copy (i.e. all files with complete history) in a
+local directory. In this case, we see that we have the two files.</p>
+
+<p><img src="/images/31-github-intro-clone.png" alt="GitHub help" /></p>
+
+<p>The <code class="language-plaintext highlighter-rouge">git log</code> command recapitulates the full commit history.</p>
+
+<p><img src="/images/32-github-intro-commits-4.png" alt="GitHub help" /></p>
+
+<!-- ![GitHub help](/images/33-github-intro-log.png) -->
+
+<p>It is of course also possible to add new files from a local
+repository. Below, we create a new (empty) file with <code class="language-plaintext highlighter-rouge">touch
+waffles.md</code> to store a recipe for waffles. We then in turn <code class="language-plaintext highlighter-rouge">add</code> the
+file to the local repository, <code class="language-plaintext highlighter-rouge">commit</code> the addition (with a little
+commit message), and actually <code class="language-plaintext highlighter-rouge">push</code> it to the remote repository. The
+screen-shot below also illustrates the <code class="language-plaintext highlighter-rouge">status</code> command to show the
+current status of the repository - here, one new added (A) file.</p>
+
+<p><img src="/images/34-github-intro-add-local.png" alt="GitHub help" /></p>
+
+<p>Below, we see the update repository <code class="language-plaintext highlighter-rouge">git log</code> output, with the latest
+commit.</p>
+
+<p><img src="/images/35-github-intro-commits-4.png" alt="GitHub help" /></p>
+
+<p>When pushing a commit from a local repository, the files and the
+history are updated in the remote repository.</p>
+
+<p><img src="/images/36-github-intro-commits-5.png" alt="GitHub help" /></p>
+
+<h2 id="conclusions">Conclusions</h2>
+
+<p>What do I use Github for? Many things, including</p>
+
+<ul>
+  <li>
+    <p><strong>software development</strong> (here’s the
+<a href="https://github.com/lgatto/MSnbase/"><code class="language-plaintext highlighter-rouge">MSnbase</code></a> R/Bioconductor
+package repository, that has been going on since Oct 4 2010,
+according to the git log)</p>
+  </li>
+  <li>
+    <p><strong>project management</strong> (here’s a current <a href="https://github.com/lgatto/MSnbase/projects/2"><code class="language-plaintext highlighter-rouge">MSnbase</code> development
+project</a>) and <strong>issue
+tracking</strong> and discussions (the latest <a href="https://github.com/lgatto/MSnbase/issues"><code class="language-plaintext highlighter-rouge">MSnbase</code>
+issue</a> is #425)</p>
+  </li>
+  <li>
+    <p>collaborative <strong>writing papers</strong> (here’s the repository of the <em>Ten
+Simple Rules for Taking Advantage of git and GitHub</em> paper, that was
+written and managed collaboratively using GitHub)</p>
+  </li>
+  <li>
+    <p><strong>course development</strong> (here’s the repository for my <a href="https://github.com/uclouvain-cbio/WSBIM1207">Introduction
+to bioinformatics course
+(WSBIM1207)</a> course)</p>
+  </li>
+  <li>
+    <p>…</p>
+  </li>
+</ul>
+
+<p>In particular, when analysing data for collaborators, we always create
+a GitHub repository in which all the code goes. Issues are used to
+discuss specific points, and very often, I ask my collaborators to
+create a Github account to join in, and ask project-related questions
+directly on Github rather than in scattered emails. This allows to
+track all discussion about a project in the same place.</p>
+
+<p>Finally, while it isn’t a replacement for a proper backup solution
+(the size of file on GitHub is limited), it can be used as such. In
+addition, even for a single user, it allows to easily work on
+different computers while keeping track of changes, irrespective of
+where they were done.</p>
+
+<h2 id="further-reading-and-references">Further reading and references</h2>
+
+<ul>
+  <li>
+    <p><a href="https://guides.github.com/activities/hello-world/">GitHub <em>Hello world</em> tutorial</a></p>
+  </li>
+  <li>
+    <p>Perez-Riverol Y, Gatto L, Wang R, Sachsenberg T, Uszkoreit J,
+Leprevost Fda V, Fufezan C, Ternent T, Eglen SJ, Katz DS, Pollard
+TJ, Konovalov A, Flight RM, Blin K, Vizcaino JA. <em>Ten Simple Rules
+for Taking Advantage of Git and GitHub</em>. PLoS Comput Biol. 2016 Jul
+14;12(7):e1004947. doi:<a href="http://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1004947">10.1371/journal.pcbi.1004947</a>
+<a href="http://www.ncbi.nlm.nih.gov/pubmed/27415786">PMID:27415786</a>.</p>
+  </li>
+</ul>
+<div class="footnotes" role="doc-endnotes">
+  <ol>
+    <li id="fn:readme" role="doc-endnote">
+      <p>README files are among <a href="https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1004947#pcbi.1004947.box003">the three most important
+files</a>
+in a repository, and typically provide a short description of the
+project, how to cite it, a quick start guide or tutorial,
+information on how to contribute, a TODO list, and links to
+additional documentation, … <a href="#fnref:readme" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+    <li id="fn:download" role="doc-endnote">
+      <p>It is also possible to download a repository, it the goal
+is only to get download the files and not keep working with git to
+commit new changes. <a href="#fnref:download" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+    <li id="fn:cli" role="doc-endnote">
+      <p>There also exists graphical user interfaces to manage local
+repositories. <a href="#fnref:cli" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+    <li id="fn:clone" role="doc-endnote">
+      <p>Using <code class="language-plaintext highlighter-rouge">git@github.com</code> requires to have write access to the
+repository. If that’s not the case, the <code class="language-plaintext highlighter-rouge">https</code> protocol should be
+used. <a href="#fnref:clone" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+  </ol>
+</div>
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+  
+
+
+  
+  
+  
+
+  <p class="page__taxonomy">
+    <strong><i class="fa fa-fw fa-tags" aria-hidden="true"></i> Tags: </strong>
+    <span itemprop="keywords">
+    
+      
+      
+      <a href="https://lgatto.github.io/tags/#git" class="page__taxonomy-item" rel="tag">git</a><span class="sep">, </span>
+    
+      
+      
+      <a href="https://lgatto.github.io/tags/#teaching" class="page__taxonomy-item" rel="tag">teaching</a>
+    
+    </span>
+  </p>
+
+
+
+
+        
+          <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> Updated:</strong> <time datetime="2019-02-02T00:00:00+01:00">February 02, 2019</time></p>
+        
+      </footer>
+
+      <section class="page__share">
+  
+    <h4 class="page__share-title">Share on</h4>
+  
+
+  <a href="https://twitter.com/intent/tweet?text=A gentle introduction to git and Github https://lgatto.github.io/github-intro/" class="btn btn--twitter" title="Share on Twitter"><i class="fa fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
+
+  <a href="https://www.facebook.com/sharer/sharer.php?u=https://lgatto.github.io/github-intro/" class="btn btn--facebook" title="Share on Facebook"><i class="fa fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
+
+  <a href="https://plus.google.com/share?url=https://lgatto.github.io/github-intro/" class="btn btn--google-plus" title="Share on Google Plus"><i class="fa fa-fw fa-google-plus" aria-hidden="true"></i><span> Google+</span></a>
+
+  <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://lgatto.github.io/github-intro/" class="btn btn--linkedin" title="Share on LinkedIn"><i class="fa fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
+</section>
+
+
+      
+  <nav class="pagination">
+    
+      <a href="https://lgatto.github.io/lego-vs-bioinfo/" class="pagination--pager" title="Using Lego as a metaphor to explain what I do
+">Previous</a>
+    
+    
+      <a href="https://lgatto.github.io/interview-questions/" class="pagination--pager" title="Notes on interview questions
+">Next</a>
+    
+  </nav>
+
+    </div>
+
+    
+      <div class="page__comments">
+  
+  
+    <h4 class="page__comments-title">Leave a Comment</h4>
+    <section id="disqus_thread"></section>
+  
+</div>
+    
+  </article>
+
+  
+  
+    <div class="page__related">
+      
+        <h4 class="page__related-title">You May Also Enjoy</h4>
+      
+      <div class="grid__wrapper">
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+    
+      <div class="archive__item-teaser">
+        <img src=
+          
+            "https://lgatto.github.io/assets/images/slide-code.png"
+          
+          alt="">
+      </div>
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="https://lgatto.github.io/zulip/" rel="permalink">CBIO’s internal communication goes open source
+</a>
+      
+    </h2>
+    
+      <p class="page__meta"><i class="fa fa-clock-o" aria-hidden="true"></i> 
+
+
+
+
+  1 minute read
+</p>
+    
+    <p class="archive__item-excerpt" itemprop="description">I have been using slack for a rather long time as a discussion
+platform for the lab, even before moving to Belgium. Based on the
+access log, I set up the lab...</p>
+  </article>
+</div>
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+    
+      <div class="archive__item-teaser">
+        <img src=
+          
+            "https://lgatto.github.io/assets/images/slide-code.png"
+          
+          alt="">
+      </div>
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="https://lgatto.github.io/EuroBioc-Ghent/" rel="permalink">CBIO’s EuroBioc2023 posters and talks
+</a>
+      
+    </h2>
+    
+      <p class="page__meta"><i class="fa fa-clock-o" aria-hidden="true"></i> 
+
+
+
+
+  13 minute read
+</p>
+    
+    <p class="archive__item-excerpt" itemprop="description">Long overdue now, but here are the CBIO
+lab’s contributions to the
+EuroBioc2023 conference that
+was organised on Ghent, on the 20 - 22 September 2023.
+
+</p>
+  </article>
+</div>
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+    
+      <div class="archive__item-teaser">
+        <img src=
+          
+            "https://lgatto.github.io/assets/images/slide-code.png"
+          
+          alt="">
+      </div>
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="https://lgatto.github.io/one-minute-intro/" rel="permalink">One-minute introduction
+</a>
+      
+    </h2>
+    
+      <p class="page__meta"><i class="fa fa-clock-o" aria-hidden="true"></i> 
+
+
+
+
+  1 minute read
+</p>
+    
+    <p class="archive__item-excerpt" itemprop="description">Every now and then, there’s a situation where I need to briefly
+introduce myself, academically. This can be with or without any visual
+support (i.e a slide)....</p>
+  </article>
+</div>
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+    
+      <div class="archive__item-teaser">
+        <img src=
+          
+            "https://lgatto.github.io/assets/images/slide-code.png"
+          
+          alt="">
+      </div>
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="https://lgatto.github.io/spatprot-job-2023/" rel="permalink">Open position in the CBIO lab: spatial proteomics and PTMs
+</a>
+      
+    </h2>
+    
+      <p class="page__meta"><i class="fa fa-clock-o" aria-hidden="true"></i> 
+
+
+
+
+  3 minute read
+</p>
+    
+    <p class="archive__item-excerpt" itemprop="description">A position for a PhD student (4 years) or a research assistant (1 year
+contracts, renewable) is open in the CBIO lab focusing on protein
+sub-cellular localis...</p>
+  </article>
+</div>
+        
+      </div>
+    </div>
+  
+</div>
+
+    <div class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+
+<!-- end custom footer snippets -->
+        <div class="page__footer-follow">
+  <ul class="social-icons">
+    
+      <li><strong>Follow:</strong></li>
+    
+    
+    
+    
+      <li><a href="http://github.com/lgatto"><i class="fa fa-fw fa-github" aria-hidden="true"></i> GitHub</a></li>
+    
+    
+    <li><a href="https://lgatto.github.io/feed.xml"><i class="fa fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
+  </ul>
+</div>
+
+<div class="page__footer-copyright">&copy; 2024 Laurent Gatto CC-BY. Powered by <a href="http://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+
+      </footer>
+    </div>
+
+    <script src="https://lgatto.github.io/assets/js/main.min.js"></script>
+
+
+
+
+
+  
+  <script type="text/javascript">
+  	/* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+  	var disqus_shortname = 'laurentgatto';
+
+  	/* * * DON'T EDIT BELOW THIS LINE * * */
+  	(function() {
+  		var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+  		dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+  		(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+  	})();
+
+  	/* * * DON'T EDIT BELOW THIS LINE * * */
+  	(function () {
+  		var s = document.createElement('script'); s.async = true;
+  		s.type = 'text/javascript';
+  		s.src = '//' + disqus_shortname + '.disqus.com/count.js';
+  		(document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+  	}());
+  </script>
+  <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+
+
+
+
+
+  </body>
+</html>

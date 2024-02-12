@@ -1,0 +1,706 @@
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8">
+
+<!-- begin SEO -->
+
+
+
+
+
+
+
+
+
+<title>            Programming with pen and paper      ~/      </title>
+
+
+
+
+<meta name="description" content="  Computer science is no more about computers than astronomy is about telescopes.">
+
+
+
+
+<meta property="og:locale" content="en_GB">
+<meta property="og:site_name" content="~/">
+<meta property="og:title" content="Programming with pen and paper">
+
+
+  <link rel="canonical" href="https://lgatto.github.io/programming-with-pen-and-paper/">
+  <meta property="og:url" content="https://lgatto.github.io/programming-with-pen-and-paper/">
+
+
+
+  <meta property="og:description" content="  Computer science is no more about computers than astronomy is about telescopes.">
+
+
+
+
+
+  
+
+  
+
+
+
+
+
+  <meta property="og:type" content="article">
+  <meta property="article:published_time" content="2015-09-24T00:00:00+02:00">
+
+
+
+
+
+
+
+
+  <script type="application/ld+json">
+    {
+      "@context" : "http://schema.org",
+      "@type" : "Person",
+      "name" : "Laurent Gatto",
+      "url" : "https://lgatto.github.io",
+      "sameAs" : null
+    }
+  </script>
+
+
+
+
+
+
+<!-- end SEO -->
+
+
+<link href="https://lgatto.github.io/feed.xml" type="application/atom+xml" rel="alternate" title="~/ Feed">
+
+<!-- http://t.co/dKP3o1e -->
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="https://lgatto.github.io/assets/css/main.css">
+
+<meta http-equiv="cleartype" content="on">
+    <!-- start custom head snippets -->
+
+<!-- insert favicons. use http://realfavicongenerator.net/ -->
+
+<!-- end custom head snippets -->
+  </head>
+
+  <body class="layout--single">
+
+    <!--[if lt IE 9]>
+<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
+<![endif]-->
+    <div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        <button><div class="navicon"></div></button>
+        <ul class="visible-links">
+          <li class="masthead__menu-item masthead__menu-item--lg"><a href="https://lgatto.github.io/">~/</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="https://lgatto.github.io/about/">About</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="https://lgatto.github.io/year-archive/">Posts</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="https://lgatto.github.io/tags/">Tags</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="https://lgatto.github.io/cbio-lab/">Lab</a></li>
+          
+        </ul>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+    
+
+
+
+<div id="main" role="main">
+  
+  <div class="sidebar sticky">
+  
+
+<div itemscope itemtype="http://schema.org/Person">
+
+  
+    <div class="author__avatar">
+      
+        <img src="https://lgatto.github.io/images/lgatto2.jpg" class="author__avatar" alt="Laurent Gatto" itemprop="image">
+      
+    </div>
+  
+
+  <div class="author__content">
+    <h3 class="author__name" itemprop="name">Laurent Gatto</h3>
+    
+      <p class="author__bio" itemprop="description">
+        Open science, reproducible research, data champion, computational biology, proteomics, more omics, emacs, a lot of R, quite a bit of running, and parenting.
+      </p>
+    
+  </div>
+
+  <div class="author__urls-wrapper">
+    <button class="btn btn--inverse">Follow</button>
+    <ul class="author__urls social-icons">
+      
+
+      
+
+      
+
+      
+        <li>
+          <a href="https://keybase.io/lgatto" itemprop="sameAs">
+            <i class="fa fa-fw fa-key" aria-hidden="true"></i> Keybase
+          </a>
+        </li>
+      
+
+      
+
+      
+
+      
+
+      
+        <li>
+          <a href="https://www.linkedin.com/in/lgatto" itemprop="sameAs">
+            <i class="fa fa-fw fa-linkedin-square" aria-hidden="true"></i> LinkedIn
+          </a>
+        </li>
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+        <li>
+          <a href="https://github.com/lgatto" itemprop="sameAs">
+            <i class="fa fa-fw fa-github" aria-hidden="true"></i> GitHub
+          </a>
+        </li>
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      <!--
+  <li>
+    <a href="http://link-to-whatever-social-network.com/user/" itemprop="sameAs">
+      <i class="fa fa-fw" aria-hidden="true"></i> Custom Social Profile Link
+    </a>
+  </li>
+-->
+
+
+  <li>
+    <a href="http://dissem.in/r/6231/laurent-gatto" itemprop="sameAs">
+      <i class="fa fa-fw fa-pencil" aria-hidden="true"></i> dissem.in
+    </a>
+  </li>
+
+  <li>
+    <a href="https://orcid.org/0000-0002-1520-2268" itemprop="sameAs">
+      <i class="fa fa-fw fa-pencil" aria-hidden="true"></i> ORCID
+    </a>
+  </li>
+
+  <li>
+    <a href="https://scholar.google.co.uk/citations?user=k5DrB74AAAAJ&hl=en" itemprop="sameAs">
+      <i class="fa fa-fw fa-google" aria-hidden="true"></i> scholar
+    </a>
+  </li>
+
+  <li>
+    <a href="https://impactstory.org/u/0000-0002-1520-2268" itemprop="sameAs">
+      <i class="fa fa-fw fa-sun-o" aria-hidden="true"></i> Impactstory
+    </a>
+  </li>
+
+    </ul>
+  </div>
+</div>
+
+  
+  </div>
+
+
+  <article class="page" itemscope itemtype="http://schema.org/CreativeWork">
+    <meta itemprop="headline" content="Programming with pen and paper">
+    <meta itemprop="description" content="  Computer science is no more about computers than astronomy is about telescopes.">
+    <meta itemprop="datePublished" content="September 24, 2015">
+    
+
+    <div class="page__inner-wrap">
+      
+        <header>
+          <h1 class="page__title" itemprop="headline">Programming with pen and paper
+</h1>
+          
+            <p class="page__meta"><i class="fa fa-clock-o" aria-hidden="true"></i> 
+
+
+
+
+  3 minute read
+</p>
+          
+        </header>
+      
+
+      <section class="page__content" itemprop="text">
+        <blockquote>
+  <p><a href="https://en.wikiquote.org/wiki/Computer_science">Computer science is no more about computers than astronomy is about telescopes</a>.</p>
+</blockquote>
+
+<!--more-->
+
+<aside class="sidebar__right">
+<nav class="toc">
+    <header><h4 class="nav__title"><i class="fa fa-file-text"></i> On This Page</h4></header>
+<ul class="toc__menu" id="markdown-toc">
+  <li><a href="#introduction" id="markdown-toc-introduction">Introduction</a></li>
+  <li><a href="#scratch-programming" id="markdown-toc-scratch-programming">Scratch programming</a></li>
+  <li><a href="#pen-and-paper" id="markdown-toc-pen-and-paper">Pen and paper</a></li>
+</ul>
+
+  </nav>
+</aside>
+
+<h2 id="introduction">Introduction</h2>
+
+<p>The biggest hurdle in introducing programming to young children are
+computers. Indeed, with all their bells and whistles, modern computers
+are a constant distraction for young children, or more generally for
+new users. Where to look, what to focus on? I think this is even more
+acute since now every child is accustomed to using tablets, and their
+experience of using ‘computers’ is very much driven by intuitive
+interfaces and instant gratification. Typing abstract keywords on a
+keyboard is certainly not an inviting experience.</p>
+
+<h2 id="scratch-programming">Scratch programming</h2>
+
+<p><a href="https://scratch.mit.edu/">Scratch</a> is a graphical programming
+language, that provides visual abstractions to programming concepts
+such as simple instructions, interaction, conditions,… Scratch
+programs are created by drag and dropping these visual elements to
+create programmes that control a cat on the screen.</p>
+
+<blockquote>
+  <p>With Scratch, you can program your own interactive stories, games,
+and animations - and share your creations with others in the online
+community.</p>
+
+  <p>Scratch helps young people learn to think creatively, reason
+systematically, and work collaboratively - essential skills for life
+in the 21st century.</p>
+</blockquote>
+
+<p>From my personal experience with my older son (now 9), even getting
+him interested in Scratch is a bit challenging. While the why and how
+of all these visual elements were clear to me because I could see a
+wider context, I find it difficult to introduce them in an interesting
+way. While the interface is without any doubt great and easy to
+navigate for someone who gets the bigger picture, I think it is still
+overwhelming for a newcomer. When trying to learn Scratch programming
+using this <a href="https://www.nostarch.com/scratch">book</a>, my son was focusing
+on the final product, a computer game he could play with (and
+imagining one as sophisticated as the ones plays with on the DS or tablet),
+rather than the process of creating it. In other words, the computer
+was more of a distraction rather than a tool to create, or think about
+how to create something.</p>
+
+<h2 id="pen-and-paper">Pen and paper</h2>
+
+<p>This reminded me of the opening quote, and my own experience, where
+algorithms or programmes I develop tend to be better when I first
+think about them using pen and paper rather than frantically
+assaulting the keyboard right away.</p>
+
+<p>Using the great Scratch platform as a source of inspiration, I printed
+and cut a set of simple instructions on little paper tags: <code class="language-plaintext highlighter-rouge">Move _
+steps</code>, <code class="language-plaintext highlighter-rouge">Turn _ degrees</code>, … where the young programmers had to fill
+in the <code class="language-plaintext highlighter-rouge">_</code> parameters.</p>
+
+<p><img src="/images/pen-paper-algo.jpg" alt="Pen and paper programming algorithm" /></p>
+
+<p>Before using the tags, we had a short discussion on what a programme
+(or algorithm) was, i.e. a set of steps or instructions that they
+would create, and that they (or somebody else, or a computer) would
+then execute. Each young programmer then got a sheet with a simple
+labyrinth on squared paper, a little character, and was asked to lay
+out the instructions needed to lead their character through the maze.</p>
+
+<p><img src="/images/pen-paper-intro.jpg" alt="Pen and paper programming intro" /></p>
+
+<p>The exercise went quite well. Our young programmers (aged 6 to 9) all
+wrote their own algorithms (the most difficult part was actually
+getting the angles and turning directions right - the programming
+course was a good revision for angles and degrees) and executed each
+others. We even discussed what kind of metrics we could infer from
+these programmes; for example, would we calculate the length of the
+programme in number of operations or in the total number of steps?</p>
+
+<p>I also prepared other instructions, such as <code class="language-plaintext highlighter-rouge">Repeat _ times</code>, <code class="language-plaintext highlighter-rouge">Pen up</code>
+and <code class="language-plaintext highlighter-rouge">Pen down</code>. For the latter, the other adult in the team created an
+algorithm that wrote her name. We saw that, despite a relatively short
+name, we ended up with a long set of instructions. This led then to a
+short discussion on using mini programmes that could write single
+letters inside other programmes, that would write names. I had never
+planned to mention such elaborated, abstract concepts, but they came
+up naturally when experimenting with programming without the technical
+barrier of using, or learning to use, a tool.</p>
+
+<p>I think the experiment went well. For the next session, I might give
+them all the same slightly more challenging maze, and they would need
+to design the shortest path to exit, or ask them to execute some
+algorithms to uncover a secret word.</p>
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+  
+
+
+  
+  
+  
+
+  <p class="page__taxonomy">
+    <strong><i class="fa fa-fw fa-tags" aria-hidden="true"></i> Tags: </strong>
+    <span itemprop="keywords">
+    
+      
+      
+      <a href="https://lgatto.github.io/tags/#children" class="page__taxonomy-item" rel="tag">children</a><span class="sep">, </span>
+    
+      
+      
+      <a href="https://lgatto.github.io/tags/#education" class="page__taxonomy-item" rel="tag">education</a><span class="sep">, </span>
+    
+      
+      
+      <a href="https://lgatto.github.io/tags/#programming" class="page__taxonomy-item" rel="tag">programming</a><span class="sep">, </span>
+    
+      
+      
+      <a href="https://lgatto.github.io/tags/#teaching" class="page__taxonomy-item" rel="tag">teaching</a>
+    
+    </span>
+  </p>
+
+
+
+
+        
+          <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> Updated:</strong> <time datetime="2015-09-24T00:00:00+02:00">September 24, 2015</time></p>
+        
+      </footer>
+
+      <section class="page__share">
+  
+    <h4 class="page__share-title">Share on</h4>
+  
+
+  <a href="https://twitter.com/intent/tweet?text=Programming with pen and paper https://lgatto.github.io/programming-with-pen-and-paper/" class="btn btn--twitter" title="Share on Twitter"><i class="fa fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
+
+  <a href="https://www.facebook.com/sharer/sharer.php?u=https://lgatto.github.io/programming-with-pen-and-paper/" class="btn btn--facebook" title="Share on Facebook"><i class="fa fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
+
+  <a href="https://plus.google.com/share?url=https://lgatto.github.io/programming-with-pen-and-paper/" class="btn btn--google-plus" title="Share on Google Plus"><i class="fa fa-fw fa-google-plus" aria-hidden="true"></i><span> Google+</span></a>
+
+  <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://lgatto.github.io/programming-with-pen-and-paper/" class="btn btn--linkedin" title="Share on LinkedIn"><i class="fa fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
+</section>
+
+
+      
+  <nav class="pagination">
+    
+      <a href="https://lgatto.github.io/ccp-lopit-hackathon/" class="pagination--pager" title="CCP LOPIT hackathon
+">Previous</a>
+    
+    
+      <a href="https://lgatto.github.io/authorship-trust-open-science/" class="pagination--pager" title="Authorship, trust and open science
+">Next</a>
+    
+  </nav>
+
+    </div>
+
+    
+      <div class="page__comments">
+  
+  
+    <h4 class="page__comments-title">Leave a Comment</h4>
+    <section id="disqus_thread"></section>
+  
+</div>
+    
+  </article>
+
+  
+  
+    <div class="page__related">
+      
+        <h4 class="page__related-title">You May Also Enjoy</h4>
+      
+      <div class="grid__wrapper">
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+    
+      <div class="archive__item-teaser">
+        <img src=
+          
+            "https://lgatto.github.io/assets/images/slide-code.png"
+          
+          alt="">
+      </div>
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="https://lgatto.github.io/zulip/" rel="permalink">CBIO’s internal communication goes open source
+</a>
+      
+    </h2>
+    
+      <p class="page__meta"><i class="fa fa-clock-o" aria-hidden="true"></i> 
+
+
+
+
+  1 minute read
+</p>
+    
+    <p class="archive__item-excerpt" itemprop="description">I have been using slack for a rather long time as a discussion
+platform for the lab, even before moving to Belgium. Based on the
+access log, I set up the lab...</p>
+  </article>
+</div>
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+    
+      <div class="archive__item-teaser">
+        <img src=
+          
+            "https://lgatto.github.io/assets/images/slide-code.png"
+          
+          alt="">
+      </div>
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="https://lgatto.github.io/EuroBioc-Ghent/" rel="permalink">CBIO’s EuroBioc2023 posters and talks
+</a>
+      
+    </h2>
+    
+      <p class="page__meta"><i class="fa fa-clock-o" aria-hidden="true"></i> 
+
+
+
+
+  13 minute read
+</p>
+    
+    <p class="archive__item-excerpt" itemprop="description">Long overdue now, but here are the CBIO
+lab’s contributions to the
+EuroBioc2023 conference that
+was organised on Ghent, on the 20 - 22 September 2023.
+
+</p>
+  </article>
+</div>
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+    
+      <div class="archive__item-teaser">
+        <img src=
+          
+            "https://lgatto.github.io/assets/images/slide-code.png"
+          
+          alt="">
+      </div>
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="https://lgatto.github.io/one-minute-intro/" rel="permalink">One-minute introduction
+</a>
+      
+    </h2>
+    
+      <p class="page__meta"><i class="fa fa-clock-o" aria-hidden="true"></i> 
+
+
+
+
+  1 minute read
+</p>
+    
+    <p class="archive__item-excerpt" itemprop="description">Every now and then, there’s a situation where I need to briefly
+introduce myself, academically. This can be with or without any visual
+support (i.e a slide)....</p>
+  </article>
+</div>
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+    
+      <div class="archive__item-teaser">
+        <img src=
+          
+            "https://lgatto.github.io/assets/images/slide-code.png"
+          
+          alt="">
+      </div>
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="https://lgatto.github.io/spatprot-job-2023/" rel="permalink">Open position in the CBIO lab: spatial proteomics and PTMs
+</a>
+      
+    </h2>
+    
+      <p class="page__meta"><i class="fa fa-clock-o" aria-hidden="true"></i> 
+
+
+
+
+  3 minute read
+</p>
+    
+    <p class="archive__item-excerpt" itemprop="description">A position for a PhD student (4 years) or a research assistant (1 year
+contracts, renewable) is open in the CBIO lab focusing on protein
+sub-cellular localis...</p>
+  </article>
+</div>
+        
+      </div>
+    </div>
+  
+</div>
+
+    <div class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+
+<!-- end custom footer snippets -->
+        <div class="page__footer-follow">
+  <ul class="social-icons">
+    
+      <li><strong>Follow:</strong></li>
+    
+    
+    
+    
+      <li><a href="http://github.com/lgatto"><i class="fa fa-fw fa-github" aria-hidden="true"></i> GitHub</a></li>
+    
+    
+    <li><a href="https://lgatto.github.io/feed.xml"><i class="fa fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
+  </ul>
+</div>
+
+<div class="page__footer-copyright">&copy; 2024 Laurent Gatto CC-BY. Powered by <a href="http://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+
+      </footer>
+    </div>
+
+    <script src="https://lgatto.github.io/assets/js/main.min.js"></script>
+
+
+
+
+
+  
+  <script type="text/javascript">
+  	/* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+  	var disqus_shortname = 'laurentgatto';
+
+  	/* * * DON'T EDIT BELOW THIS LINE * * */
+  	(function() {
+  		var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+  		dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+  		(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+  	})();
+
+  	/* * * DON'T EDIT BELOW THIS LINE * * */
+  	(function () {
+  		var s = document.createElement('script'); s.async = true;
+  		s.type = 'text/javascript';
+  		s.src = '//' + disqus_shortname + '.disqus.com/count.js';
+  		(document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+  	}());
+  </script>
+  <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+
+
+
+
+
+  </body>
+</html>

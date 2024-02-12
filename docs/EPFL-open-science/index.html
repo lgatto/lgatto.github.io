@@ -1,0 +1,1411 @@
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8">
+
+<!-- begin SEO -->
+
+
+
+
+
+
+
+
+
+<title>            An early career researcher’s view on modern and open scholarship      ~/      </title>
+
+
+
+
+<meta name="description" content="This post constitutes my talk atthe OPEN SCIENCE IN PRACTICE 2017 summerschool in Lausanne, on the 25 September 2017. The slides used duringthe presentation are available here.">
+
+
+
+
+<meta property="og:locale" content="en_GB">
+<meta property="og:site_name" content="~/">
+<meta property="og:title" content="An early career researcher’s view on modern and open scholarship">
+
+
+  <link rel="canonical" href="https://lgatto.github.io/EPFL-open-science/">
+  <meta property="og:url" content="https://lgatto.github.io/EPFL-open-science/">
+
+
+
+  <meta property="og:description" content="This post constitutes my talk atthe OPEN SCIENCE IN PRACTICE 2017 summerschool in Lausanne, on the 25 September 2017. The slides used duringthe presentation are available here.">
+
+
+
+
+
+  
+
+  
+
+
+
+
+
+  <meta property="og:type" content="article">
+  <meta property="article:published_time" content="2017-09-24T00:00:00+02:00">
+
+
+
+
+
+
+
+
+  <script type="application/ld+json">
+    {
+      "@context" : "http://schema.org",
+      "@type" : "Person",
+      "name" : "Laurent Gatto",
+      "url" : "https://lgatto.github.io",
+      "sameAs" : null
+    }
+  </script>
+
+
+
+
+
+
+<!-- end SEO -->
+
+
+<link href="https://lgatto.github.io/feed.xml" type="application/atom+xml" rel="alternate" title="~/ Feed">
+
+<!-- http://t.co/dKP3o1e -->
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="https://lgatto.github.io/assets/css/main.css">
+
+<meta http-equiv="cleartype" content="on">
+    <!-- start custom head snippets -->
+
+<!-- insert favicons. use http://realfavicongenerator.net/ -->
+
+<!-- end custom head snippets -->
+  </head>
+
+  <body class="layout--single">
+
+    <!--[if lt IE 9]>
+<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
+<![endif]-->
+    <div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        <button><div class="navicon"></div></button>
+        <ul class="visible-links">
+          <li class="masthead__menu-item masthead__menu-item--lg"><a href="https://lgatto.github.io/">~/</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="https://lgatto.github.io/about/">About</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="https://lgatto.github.io/year-archive/">Posts</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="https://lgatto.github.io/tags/">Tags</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="https://lgatto.github.io/cbio-lab/">Lab</a></li>
+          
+        </ul>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+    
+
+
+
+<div id="main" role="main">
+  
+  <div class="sidebar sticky">
+  
+
+<div itemscope itemtype="http://schema.org/Person">
+
+  
+    <div class="author__avatar">
+      
+        <img src="https://lgatto.github.io/images/lgatto2.jpg" class="author__avatar" alt="Laurent Gatto" itemprop="image">
+      
+    </div>
+  
+
+  <div class="author__content">
+    <h3 class="author__name" itemprop="name">Laurent Gatto</h3>
+    
+      <p class="author__bio" itemprop="description">
+        Open science, reproducible research, data champion, computational biology, proteomics, more omics, emacs, a lot of R, quite a bit of running, and parenting.
+      </p>
+    
+  </div>
+
+  <div class="author__urls-wrapper">
+    <button class="btn btn--inverse">Follow</button>
+    <ul class="author__urls social-icons">
+      
+
+      
+
+      
+
+      
+        <li>
+          <a href="https://keybase.io/lgatto" itemprop="sameAs">
+            <i class="fa fa-fw fa-key" aria-hidden="true"></i> Keybase
+          </a>
+        </li>
+      
+
+      
+
+      
+
+      
+
+      
+        <li>
+          <a href="https://www.linkedin.com/in/lgatto" itemprop="sameAs">
+            <i class="fa fa-fw fa-linkedin-square" aria-hidden="true"></i> LinkedIn
+          </a>
+        </li>
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+        <li>
+          <a href="https://github.com/lgatto" itemprop="sameAs">
+            <i class="fa fa-fw fa-github" aria-hidden="true"></i> GitHub
+          </a>
+        </li>
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      <!--
+  <li>
+    <a href="http://link-to-whatever-social-network.com/user/" itemprop="sameAs">
+      <i class="fa fa-fw" aria-hidden="true"></i> Custom Social Profile Link
+    </a>
+  </li>
+-->
+
+
+  <li>
+    <a href="http://dissem.in/r/6231/laurent-gatto" itemprop="sameAs">
+      <i class="fa fa-fw fa-pencil" aria-hidden="true"></i> dissem.in
+    </a>
+  </li>
+
+  <li>
+    <a href="https://orcid.org/0000-0002-1520-2268" itemprop="sameAs">
+      <i class="fa fa-fw fa-pencil" aria-hidden="true"></i> ORCID
+    </a>
+  </li>
+
+  <li>
+    <a href="https://scholar.google.co.uk/citations?user=k5DrB74AAAAJ&hl=en" itemprop="sameAs">
+      <i class="fa fa-fw fa-google" aria-hidden="true"></i> scholar
+    </a>
+  </li>
+
+  <li>
+    <a href="https://impactstory.org/u/0000-0002-1520-2268" itemprop="sameAs">
+      <i class="fa fa-fw fa-sun-o" aria-hidden="true"></i> Impactstory
+    </a>
+  </li>
+
+    </ul>
+  </div>
+</div>
+
+  
+  </div>
+
+
+  <article class="page" itemscope itemtype="http://schema.org/CreativeWork">
+    <meta itemprop="headline" content="An early career researcher’s view on modern and open scholarship">
+    <meta itemprop="description" content="This post constitutes my talk atthe OPEN SCIENCE IN PRACTICE 2017 summerschool in Lausanne, on the 25 September 2017. The slides used duringthe presentation are available here.">
+    <meta itemprop="datePublished" content="September 24, 2017">
+    
+
+    <div class="page__inner-wrap">
+      
+        <header>
+          <h1 class="page__title" itemprop="headline">An early career researcher’s view on modern and open scholarship
+</h1>
+          
+            <p class="page__meta"><i class="fa fa-clock-o" aria-hidden="true"></i> 
+
+
+
+
+  22 minute read
+</p>
+          
+        </header>
+      
+
+      <section class="page__content" itemprop="text">
+        <p>This post constitutes my talk at
+the <a href="https://osip2017.epfl.ch/">OPEN SCIENCE IN PRACTICE 2017</a> summer
+school in Lausanne, on the 25 September 2017. The slides used during
+the presentation are available <a href="http://bit.ly/20170925OpenScienceEPFL">here</a>.</p>
+
+<aside class="sidebar__right">
+<nav class="toc">
+    <header><h4 class="nav__title"><i class="fa fa-file-text"></i> On This Page</h4></header>
+<ul class="toc__menu" id="markdown-toc">
+  <li><a href="#introduction" id="markdown-toc-introduction">Introduction</a>    <ul>
+      <li><a href="#who" id="markdown-toc-who">Who?</a></li>
+    </ul>
+  </li>
+  <li><a href="#what-is-open-researchscience" id="markdown-toc-what-is-open-researchscience">What is Open Research/Science</a></li>
+  <li><a href="#open-vs-closed" id="markdown-toc-open-vs-closed">Open vs. closed?</a></li>
+  <li><a href="#why-isnt-it-open" id="markdown-toc-why-isnt-it-open">Why isn’t it open?</a></li>
+  <li><a href="#go-open" id="markdown-toc-go-open">Go OPEN!</a>    <ul>
+      <li><a href="#funders-requirements" id="markdown-toc-funders-requirements">Funders’ requirements</a></li>
+      <li><a href="#acceptance-of-open-practice-pre-prints" id="markdown-toc-acceptance-of-open-practice-pre-prints">Acceptance of open practice: pre-prints</a></li>
+      <li><a href="#open-science-evaluation-criteria" id="markdown-toc-open-science-evaluation-criteria">Open science evaluation criteria</a></li>
+      <li><a href="#open-as-a-career-boost" id="markdown-toc-open-as-a-career-boost">Open as a career boost</a></li>
+      <li><a href="#reproducible-research" id="markdown-toc-reproducible-research">Reproducible research</a></li>
+      <li><a href="#we-still-need-more" id="markdown-toc-we-still-need-more">We still need more</a></li>
+    </ul>
+  </li>
+  <li><a href="#what-can-we-do" id="markdown-toc-what-can-we-do">What can we do?</a>    <ul>
+      <li><a href="#build-openness-at-the-core-your-research" id="markdown-toc-build-openness-at-the-core-your-research">Build openness at the core your research</a></li>
+      <li><a href="#promoting-open-research-through-peer-review" id="markdown-toc-promoting-open-research-through-peer-review">Promoting open research through peer review</a></li>
+      <li><a href="#be-reproducible" id="markdown-toc-be-reproducible">Be reproducible!</a></li>
+      <li><a href="#promoting-open-researchscience" id="markdown-toc-promoting-open-researchscience">Promoting open research/science</a></li>
+    </ul>
+  </li>
+  <li><a href="#what-can-institutions-and-senior-academics-do" id="markdown-toc-what-can-institutions-and-senior-academics-do">What can institutions and senior academics do?</a></li>
+  <li><a href="#inclusivity-open-science-and-open-science" id="markdown-toc-inclusivity-open-science-and-open-science">Inclusivity: open science and open science</a></li>
+  <li><a href="#conclusions" id="markdown-toc-conclusions">Conclusions</a></li>
+</ul>
+
+  </nav>
+</aside>
+
+<p>Here’s a
+<a href="https://www.youtube.com/watch?v=AUoKV38HtcU">video</a> of a
+shorter version of this talk, presented in the evening at the EPFL
+library.</p>
+
+<p><strong>Abstract:</strong> If <em>research is the by-product of researchers getting
+promoted</em> (a quote by
+<a href="https://en.wikipedia.org/wiki/David_W._Barron">David Barron, Professor of Computer Science</a>,
+Prof. Leslie Carr, personal communication), then shouldn’t we, early
+career researchers (ECRs), focus on promotion and being docile
+academic citizens rather than aiming for the more noble cause of
+pursuing research to understand the world that surrounds us, and
+disseminate our findings using modern channels?
+Indeed,
+<a href="https://lgatto.github.io/open-research-project/">I have already argued</a> that
+a critical point that is failing us, is the academic promotion of open
+research and open researcher, as a way to promote a more rigorous and
+sound research process and tackle the reproducibility crisis. In this
+talk, I will present the case for open scholarship from an early
+career researcher’s perspective, pointing out that being an open
+researcher is not only the <em>right</em> thing to do, but is also the <em>best</em>
+thing to do.</p>
+
+<h2 id="introduction">Introduction</h2>
+
+<p>I am going to refer to the protagonists of this talk as <em>we</em>, we
+all. While I will focus specifically on early career researchers <sup id="fnref:1" role="doc-noteref"><a href="#fn:1" class="footnote" rel="footnote">1</a></sup>
+(ECRs), I really want to be inclusive, and use ‘we’. The reason is
+that open research is not only a concern for ECRs - that’s only the
+main theme of my talk - is concerns us all. In particular, we, ECRs,
+need <em>more</em> support from senior/established academics, librarians,
+funders, … Together, each of us in own quality, we need to drive
+change for a better, more open research environment.</p>
+
+<p>It is also important to highlight that <strong>open is not a replacement of
+good research</strong>. I have heard too often that open access is synonym of
+lesser publication. This is clearly nonsense, and the result of
+ignorance or the sole desire to harm those that publish on open access
+venues. We need to work hard to do the best research, and share it
+openly. As I will argue later, I would even claim that <strong>open is a
+gateway to better research</strong>. So let’s not give anyone an opportunity
+to be confused.</p>
+
+<p>I also tend to refer to <em>open research</em> rather than <em>open science</em> as
+to not explicitly exclude non-STEM field. And while my views will
+however resonate with scientists primarily, I believe many of the
+discussions below should also apply to other communities.</p>
+
+<h3 id="who">Who?</h3>
+
+<p>A few words about myself to offer some context on my view on modern
+and open scholarship:</p>
+
+<p>I am <a href="https://lgatto.github.io/">Laurent Gatto</a>, an <strong>early career
+researcher</strong> at the University of Cambridge, UK. I am a Senior
+Research Associate (<strong>non-established research staff</strong>) in the
+department of Biochemistry and a
+<a href="https://www.sysbiol.cam.ac.uk/Investigators/laurent-gatto">principal investigator in the Cambridge Systems Biology Centre</a>.</p>
+
+<p>My research focuses on the <strong>reproducible</strong> analysis and interpretation
+of high-throughput biological <strong>data</strong> and the development of
+statistical machine learning methods and <strong>research software</strong>.</p>
+
+<p>I am a <strong>open scholar</strong> and make a point of being vocal about it.</p>
+
+<h2 id="what-is-open-researchscience">What is Open Research/Science</h2>
+
+<p>Any research output should be</p>
+
+<ul>
+  <li>Free to read/access: no barriers to access knowledge</li>
+  <li>Free to re-use (data, software, text and data mining, …)</li>
+</ul>
+
+<p>But also</p>
+
+<ul>
+  <li>Free to publish (or how the golden OA movement excludes the global
+south and benefits commercial/hybrid predatory publishers<sup id="fnref:2" role="doc-noteref"><a href="#fn:2" class="footnote" rel="footnote">2</a></sup>. See
+also the
+<a href="http://rsnr.royalsocietypublishing.org/content/70/4/403">pay-to-publish model</a>).</li>
+</ul>
+
+<p>Open research/science should also be</p>
+
+<ul>
+  <li>Inclusive</li>
+</ul>
+
+<p>More on this below.</p>
+
+<h2 id="open-vs-closed">Open vs. closed?</h2>
+
+<p>Let’s first reflect on the nature of science, and whether there really
+should be anything like <em>explicitly</em> open science.</p>
+
+<p>In 1942, Robert Merton introduced his four
+<a href="https://en.wikipedia.org/wiki/Mertonian_norms">Mertonian norms of Science</a> (pdf:
+<a href="http://www.collier.sts.vt.edu/5424/pdfs/merton_1973.pdf">The Sociology of Science</a>, a set of institutional imperatives taken to represent the
+ethos of modern science.</p>
+
+<ul>
+  <li><strong>universalism</strong>: scientific validity is independent of the
+sociopolitical status/personal attributes of its participants</li>
+  <li><strong>communalism</strong>: all scientists should have common ownership of
+scientific goods (intellectual property), to promote collective
+collaboration; secrecy is the opposite of this norm.</li>
+  <li><strong>disinterestedness</strong>: scientific institutions act for the benefit of
+a common scientific enterprise, rather than for the personal gain of
+individuals within them</li>
+  <li><strong>organised scepticism</strong>: scientific claims should be exposed to
+critical scrutiny before being accepted: both in methodology and
+institutional codes of conduct.</li>
+</ul>
+
+<p>Are these imperatives in line with current practice? Status of
+researchers and their institutions has major influence on their
+incomes and outputs, and ownership, IP and secrecy are part of research
+business at the highest level. Personal gain is not unheard of in
+science (see
+<a href="https://www.repository.cam.ac.uk/handle/1810/267263">Danny Kingsley’s recent key note talks at COASP9</a> for
+examples of financial rewards for publishing in certain
+venues). Finally, scepticism is organised and controlled by an elite
+and validated by commercial publishers. On the other hand, the
+imperatives are line with principles promoted by open science.</p>
+
+<p>More recently, in 2015, Mick Watson asked the question more
+directly:
+<a href="https://genomebiology.biomedcentral.com/articles/10.1186/s13059-015-0669-2">When will <em>open science</em> become simply <em>science</em>?</a>.</p>
+
+<p><img src="/images/doi-13059-015-0669-2.png" alt="When will ‘open science’ become simply ‘science’?" /></p>
+
+<p>I claim that <strong>open is a gateway to more trustworthy research</strong>.</p>
+
+<ul>
+  <li>Open research is research that enables reproducible and repeatable
+research.</li>
+  <li>Open research is transparent and honest research.</li>
+  <li>Open research is research that we can build upon.</li>
+</ul>
+
+<p>Open is better, and we should always aim for the better, not the
+worse.</p>
+
+<p>But then,</p>
+
+<blockquote>
+  <p>Why would anyone not want to do open research?</p>
+</blockquote>
+
+<p>Note that nobody ever claimed (as far as I know, anyway) to do <em>closed
+science</em>. And there’s no black-and-white situation between open and
+non-open/closed. There is always a degree of how far one wants, or
+can, promote the most open possible research.</p>
+
+<h2 id="why-isnt-it-open">Why isn’t it open?</h2>
+
+<p>Incentives in for open career progression aren’t there (yet? - see
+below). On the contrary…</p>
+
+<blockquote>
+  <p>If <em>research is the by-product of researchers getting promoted</em> (a
+quote by
+<a href="https://en.wikipedia.org/wiki/David_W._Barron">David Barron, Professor of Computer Science</a>,
+Prof. Leslie Carr, personal communication), then shouldn’t we, early
+career researchers (ECRs), focus on promotion and being docile
+academic citizens rather than aiming for the more noble cause of
+pursuing research to understand the world that surrounds us, and
+disseminate our findings using modern channels?</p>
+</blockquote>
+
+<p>In my opinion, barriers are not technological, but rather
+socio-cultural and political.</p>
+
+<ul>
+  <li>Systemic control and inertia</li>
+  <li>Vested interests by people in charge</li>
+  <li>Abuse of power dynamics</li>
+  <li>Fear of being scooped (<strong>update</strong> - an editorial in PLoS Biology on
+<a href="http://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.2005203"><em>The importance of being second</em></a> and,
+and how they prefer to focus on <em>complementary research</em>,
+recognising its important role in reproducibility of science.)</li>
+  <li>Fear of not being credited</li>
+  <li>Fear of errors and public humiliation, risk for reputation</li>
+  <li>Fear of information overload</li>
+  <li>…</li>
+  <li>Fear of becoming less competitive in a over-competitive market!</li>
+</ul>
+
+<p>While it is important to identify why open can look dangerous to some,
+I don’t want to spent too much time discussing these points. See Jon
+Tennant’s recent presentation about <a href="https://doi.org/10.6084/m9.figshare.5383711.v1"><em>Barriers to Open Science for
+junior researchers</em></a>
+on figshare for more details.</p>
+
+<p>The important message at this point is that, many if not all of these
+fears are only <em>perceived</em> risks. Let’s move on to why ECRs should
+seriously consider being open researchers.</p>
+
+<h2 id="go-open">Go OPEN!</h2>
+
+<p>Open science/research is particularly important for ECRs. Open
+research practices are here, and won’t go away. It is clear that they
+will increase in the near future. If <em>you</em>, as an ECR, want to be a
+competitive researcher in the coming years (and you’ll need to be),
+you’ll need to be well versed in open research practices.</p>
+
+<p>Here, I give some reasons and examples supporting my claims.</p>
+
+<h3 id="funders-requirements">Funders’ requirements</h3>
+
+<ul>
+  <li>CC-BY open access publication (golden or green) with limited embargo
+period. In the UK, Wellcome Trust and all RCUK funders.</li>
+  <li>Requirement for a data management plan
+(see <a href="https://riojournal.com/articles.php?id=11624">here</a> for one of
+mine)</li>
+  <li>Open data mandatory for H2020 grants and many national applications.</li>
+  <li>The Wellcome Trust recently
+<a href="https://wellcome.ac.uk/news/our-new-policy-sharing-research-data-what-it-means-you">expanded it’s data management plan</a> to
+any research outputs (software, antibodies, cell lines, …) (July 2017).</li>
+</ul>
+
+<h3 id="acceptance-of-open-practice-pre-prints">Acceptance of open practice: pre-prints</h3>
+
+<ul>
+  <li><a href="https://wellcome.ac.uk/news/we-now-accept-preprints-grant-applications">Wellcome Trust</a> (Jan 2017) and the <a href="https://www.mrc.ac.uk/research/policies-and-guidance-for-researchers/preprints/">Medical Research Council (MRC)</a> (April 2017) accept pre-prints in grant applications.</li>
+  <li>NIH <a href="https://grants.nih.gov/grants/guide/notice-files/NOT-OD-17-050.html">encourages submission of pre-prints</a> and cite them (March 2017).</li>
+</ul>
+
+<h3 id="open-science-evaluation-criteria">Open science evaluation criteria</h3>
+
+<p>The EU’s
+<a href="https://cdn1.euraxess.org/sites/default/files/policy_library/os-rewards-wgreport-final_integrated_0.pdf">Evaluation of Research Careers fully acknowledging Open Science Practice</a> defines an Open Science Career Assessment Matrix (OS-CAM):</p>
+
+<p><img src="/images/2017-09-21-eu-os-cam.png" alt="Open Science Career Assessment Matrix (OS-CAM)" /></p>
+
+<p><a href="https://cos.io/blog/are-reproducibility-and-open-science-starting-matter-tenure-and-promotion-review/">Reproducibility and open science are starting to matter in tenure and promotion</a> July
+14th, 2017, Brian Nosek</p>
+
+<blockquote>
+  <p>In any case, my experience with <strong>promotion review requests</strong> this
+summer suggests that change is occurring, particularly in assigning
+<strong>scholarly value to open science</strong> contributions and behavior, and it’s
+great to see.</p>
+</blockquote>
+
+<h3 id="open-as-a-career-boost">Open as a career boost</h3>
+
+<p>The majority concluded that there is a <strong>significant citation
+advantage for Open Access articles</strong>.</p>
+
+<p><img src="https://f1000researchdata.s3.amazonaws.com/manuscripts/10376/4f98c19e-717b-4d16-87c5-aaf0602e1ff8_figure2.gif" alt="Citation advantage" /></p>
+
+<p>From Tennant JP, Waldner F, Jacques DC et
+al. <a href="https://f1000research.com/articles/5-632/"><em>The academic, economic and societal impacts of Open Access: an evidence-based review</em></a>. F1000Research
+2016, 5:632 (doi:10.12688/f1000research.8460.3)</p>
+
+<p><strong>Open access articles get more citations</strong> The relative citation rate
+(OA: non-OA) in 19 fields of research. This rate is defined as the
+mean citation rate of OA articles divided by the mean citation rate of
+non-OA articles.</p>
+
+<p><img src="https://iiif.elifesciences.org/lax:16800/elife-16800-fig1-v2.tif/full/1076,/0/default.jpg" alt="Open access articles get more citations." /></p>
+
+<p>From Erin C McKiernan et
+al. <a href="https://elifesciences.org/articles/16800"><em>Point of View: How open science helps researchers succeed</em></a> eLife
+2016;5:e16800 (doi:10.7554/eLife.16800)</p>
+
+<p><strong>Data availability is associated with citation benefit.</strong></p>
+
+<p><img src="https://dfzljdn9uc3pi.cloudfront.net/2013/175/1/fig-1-1x.jpg" alt=" Citation density for papers with and without publicly available microarray data, by year of study publication" /></p>
+
+<p>From Piwowar HA, Vision TJ. (2013)
+<a href="https://peerj.com/articles/175/"><em>Data reuse and the open data citation advantage</em></a>. PeerJ
+1:e175 https://doi.org/10.7717/peerj.175</p>
+
+<p>See also <a href="http://whyopenresearch.org/"><strong>Why Open Research</strong></a>.</p>
+
+<h3 id="reproducible-research">Reproducible research</h3>
+
+<p>Who hasn’t hear of the reproducibility crisis? A major underlying
+factor of the lack of reproducibility is the lack of openness
+(voluntary or accidental):</p>
+
+<ul>
+  <li>Is the data available and re-usable?</li>
+  <li>Is the software available usable?</li>
+  <li>Is the method described in enough details?</li>
+  <li>…</li>
+</ul>
+
+<p>(More about reproducible research below)</p>
+
+<p>Institutions should worry about research being reproducible and
+trustworthy, and some argue for it.</p>
+
+<p><a href="https://www.nature.com/news/faculty-promotion-must-assess-reproducibility-1.22596"><img src="/images/2017-09-22-promotion-rr.png" alt="Faculty promotion must assess reproducibility" /></a></p>
+
+<h3 id="we-still-need-more">We still need more</h3>
+
+<p>But, let’s face it, in practice, it is currently still relatively easy
+to brush over many of these requirements. In addition, the incentives
+are still inconsequential compared to the (perceived) risks. Maybe we
+need more threads when not being open.</p>
+
+<h2 id="what-can-we-do">What can we do?</h2>
+
+<h3 id="build-openness-at-the-core-your-research">Build openness at the core your research</h3>
+
+<p>Many aspects of open research, and arguable the most important ones,
+can’t be implemented as an afterthought. You won’t be able to share
+data that you don’t have anymore, or can’t find. You won’t want to
+share poor data or ugly code (half-backed, un-annotated, without any
+documentation), because you’ll look like a fool. You won’t be able to
+reproduce any results if your don’t make your research repeatable.</p>
+
+<p>In that respect, I want to briefly talk about the <em>SpatialMap</em>
+project, which aims at producing a visualisation and data sharing
+platform for
+<a href="https://lgatto.github.io/cpu-spat-prot-2015/">spatial proteomics</a>. I
+decided to promote and drive it as openly as possible in the frame of the
+<a href="http://osc.cam.ac.uk/open-research/open-research-pilot-project">Open Research Pilot Project</a>. The ORPP is a joint project by
+the <a href="http://osc.cam.ac.uk/">Office of Scholarly Communication</a> at the
+University of Cambridge and the
+<a href="https://wellcome.ac.uk/what-we-do/our-work/open-research">Wellcome Trust Open research team</a>. From
+the official page, the pilot project looks at:</p>
+
+<ul>
+  <li>the support research groups’ need in order to make all aspects of
+their research open,</li>
+  <li>why they want to do this,</li>
+  <li>how it benefits them,</li>
+  <li>how it improves the research process</li>
+  <li>what barriers there might be that prevent the sharing of their
+research.</li>
+</ul>
+
+<p>Four research groups from Cambridge have been selected to
+participate. The project proceeds through meetings with all
+participants (every 6 months), discussions between the research groups
+and their recognised OSC collaborator, blog posts and occasional
+emails on a dedicate mailing
+list. (<a href="https://lgatto.github.io/open-research-project/">Here</a> are
+some early thoughts about the project itself.)</p>
+
+<p>Here are the reasons why the <em>SpatialMap</em> project is an open project:</p>
+
+<ol>
+  <li>
+    <p>The <em>SpatialMap</em> project in itself is about opening up spatial
+proteomics data by facilitating data sharing and providing tools to
+further the comprehension of the data. One aim is to allow users to
+use the <em>SpatialMap</em> web portal to upload, share, explore and
+discuss their data privately with collaborators in a first instance
+(few researchers share their data before publication), then make
+the data available to reviewer, and finally, once reviewed, make it
+public at the push of a button. The incentive for early utilisation
+of the platform is to provide interactive data visualisation and
+integration with other tools and sharing of the data with close
+collaborators.</p>
+  </li>
+  <li>
+    <p>The project is developed completely openly in a public
+<a href="https://github.com/SpatialMap/SpatialMapDev">GitHub repository</a><sup id="fnref:3" role="doc-noteref"><a href="#fn:3" class="footnote" rel="footnote">3</a></sup>. Absolutely
+all code and contributions are publicly available. Anyone can
+collaborate, or even <em>fork</em> the project and build their own.</p>
+  </li>
+  <li>
+    <p>I publicly announced the <em>SpatialMap</em> project in
+a <a href="https://lgatto.github.io/spatialmap-proposal/">blog post</a>. The
+blog post was written as a legitimate grant application (albeit a
+little bit shorter and sticking to the most important parts).</p>
+  </li>
+</ol>
+
+<p>Note that I do not have any dedicated funding for this project. The
+progress so far was the result of a masters student visiting my
+group. Given that the project is not trivial, I am considering
+applying for dedicated funding to support the project.</p>
+
+<h3 id="promoting-open-research-through-peer-review">Promoting open research through peer review</h3>
+
+<p>This section is based on my
+<a href="https://rawgit.com/lgatto/2017-03-30-OSC-peerreview/master/slides.html">The role of peer-reviewers in <del>checking supporting information</del> promoting open science</a> talk.</p>
+
+<p>As an open researcher, I think it is important to apply and promote
+the importance of data and good data management on a day-to-day basis
+(see for example Marta Teperek’s 2017
+<a href="http://doi.org/10.5281/zenodo.897785">Data Management: Why would I bother?</a> slides),
+but also to express this ethic in our academic capacity, such as peer
+review. My responsibility as a reviewer is to</p>
+
+<ul>
+  <li>Accept sound/valid research and provide constructive comments</li>
+</ul>
+
+<p>and hence</p>
+
+<ul>
+  <li>Focus firstly on the validity of the research by inspecting the
+data, software and method. If the methods and/or data fail, the rest
+is meaningless.</li>
+</ul>
+
+<p>I don’t see novelty, relevance, news-worthiness as my business as a
+reviewer. These factors are not the prime qualities of thorough
+research, but rather characteristics of flashy news.</p>
+
+<p>Here are some aspects that are easy enough to check, and go a long way
+to verify the availability and validity and of the data</p>
+
+<ol>
+  <li>
+    <p><strong>Availability</strong>: Are the data/software/methods accessible and
+understandable in a way that would allow an informed researcher in
+the same or close field to reproduce and/or verify the results
+underlying the claims? Note that this doesn’t mean that as a
+reviewer, I will necessarily try to repeat the whole analysis (that
+would be too time consuming indeed). But, conversely, a submission
+without data/software will be reviewed (and rejected, or more
+appropriately send back for completion) in matters of minutes. Are
+the data available in a public repository that guarantees that it
+will remain accessible, such as a subject-specific or, if none is
+available, a generic repository (such
+as <a href="https://zenodo.org/">zenodo</a>
+or <a href="https://figshare.com/">figshare</a>, …), an institutional
+repository (we have <a href="https://www.repository.cam.ac.uk/">Apollo</a> at
+the University of Cambridge), or, but less desirable, supplementary
+information or a personal webpage<sup id="fnref:4" role="doc-noteref"><a href="#fn:4" class="footnote" rel="footnote">4</a></sup>.</p>
+  </li>
+  <li>
+    <p><strong>Meta-data</strong>: It’s of course not enough to provide a wild dump of
+the data/software/…, but these need to be appropriately
+documented. Personally, I recommend an <code class="language-plaintext highlighter-rouge">README</code> file in every top
+project directory to summarise the project, the data, …</p>
+  </li>
+  <li>
+    <p><strong>Do numbers match?</strong>: The first thing when reproducing someone’s
+analysis is to match the data files to the experimental
+design. That is one of the first things I check when reviewing a
+paper. For example if the experimental design says there are 2
+groups, each with 3 replicates, I expect to find 6 (or a multiple
+thereof) data files or data columns in the data matrix. Along these
+lines, I also look at the file names (of column names in the data
+matrix) for a consistent naming convention, that allows to match
+the files (columns) to the experimental groups and replicates.</p>
+  </li>
+  <li>
+    <p><strong>What data, what format</strong>: Is the data readable with standard and
+open/free software? Are the raw and processed available, and have
+the authors described how to get from one to the other?</p>
+  </li>
+  <li>
+    <p><strong>License</strong>: Is the data shared in a way that allows users to
+re-use it. Under what conditions? Is the research output shared
+under a valid license?</p>
+  </li>
+</ol>
+
+<p>Make sure that the data adhere to the
+<strong><a href="http://www.nature.com/articles/sdata201618">FAIR</a> principles</strong>:</p>
+
+<blockquote>
+  <p>Findable and Accessible and Interoperable and Reusable</p>
+</blockquote>
+
+<p>Note that SI are not FAIR, not discoverable, not structured,
+voluntary, used to bury stuff. A personal web page is likely to
+disappear in the near future.</p>
+
+<p>As a quick note, my <em>ideal</em> review system would be one where</p>
+
+<ol>
+  <li>
+    <p>Submit your data to a repository, where it get’s checked (by
+specialists, data scientists, data curators) for quality,
+annotation, meta-data.</p>
+  </li>
+  <li>
+    <p>Submit your research with a link to the peer reviewed data. First
+review the intro and methods, then only the results (to avoid
+positive results bias).</p>
+  </li>
+</ol>
+
+<p>When talking about open research and peer review, one logical
+extension is <strong>open peer review</strong>. While I personally value open peer
+review and practice it when possible, it can be a difficult issue for
+ECRs, exposing them unnecessarily when reviewing work from prominent
+peers. It also can reinforce an already unwelcoming environment for
+underrepresented minorities. See more about this in the <em>Inclusivity:
+open science and open science</em> section below.</p>
+
+<h3 id="be-reproducible">Be reproducible!</h3>
+
+<p><a href="https://doi.org/10.1186/s13059-015-0850-7"><img src="/images/2017-09-22-selfish-rr.png" alt="Five selfish reasons to work reproducibly" /></a></p>
+
+<blockquote>
+  <p>And so, my fellow scientists: ask not what you can do for
+reproducibility; ask what reproducibility can do for you!</p>
+</blockquote>
+
+<p>Florian Markowetz.. Five selfish reasons to work reproducibly, Genome
+Biology 2015 16:274 https://doi.org/10.1186/s13059-015-0850-7</p>
+
+<ol>
+  <li>
+    <p><strong>Reproducibility helps to avoid disaster</strong>: a project is more than
+a beautiful result. You need to record in detail how you got
+there. Starting to work reproducibly early on will save you time
+later. I had cases where a collaborator told me they preferred the
+results on the very first plots they received, that I couldn’t
+recover a couple of month later. But because my work was
+reproducible and I had tracked it over time (using git and GitHub),
+I was able, after a little bit of data analysis forensics, to
+identify why these first, preliminary plots weren’t consistent with
+later results (and it as a simple, but very relevant bug in the
+code). Imagine if my collaborators had just used these first plots
+for publication, or to decide to perform further experiments.</p>
+  </li>
+  <li>
+    <p><strong>Reproducibility makes it easier to write papers</strong>: Transparency
+in your analysis makes writing papers much easier. In dynamic
+documents (using
+<a href="http://rmarkdown.rstudio.com/">rmarkdown</a>,
+<a href="https://jupyter.org/">juypter notebook</a> and other similar tools),
+all results are automatically update when the data are changed. You
+can be confident your numbers, figures and tables are up-to-date.</p>
+  </li>
+  <li><strong>Reproducibility helps reviewers see it your way</strong>: a reproducible
+document will tick many of the boxes enumerated above. You will
+make me very happy reviewer if I can review a paper that is
+reproducible.</li>
+  <li><strong>Reproducibility enables continuity of your work:</strong> quoting
+Florian, “In my own group, I don’t even discuss results with
+students if they are not documented well. No proof of
+reproducibility, no result!”.</li>
+  <li><strong>Reproducibility helps to build your reputation:</strong> publishing
+reproducible research will build you the reputation of being an
+honest and careful researcher. In addition, should there ever be a
+problem with a paper, a reproducible analysis will allow to track
+the error and show that you reported everything in good faith.</li>
+</ol>
+
+<h3 id="promoting-open-researchscience">Promoting open research/science</h3>
+
+<p>If you want, as an ECR, you can also promote open
+research/science. Most of the open science supporters are young
+researchers that want to improve a system they find unhealthy, unfair
+and does not support good scientific practice.</p>
+
+<p><a href="https://www.nature.com/news/no-researcher-is-too-junior-to-fix-science-1.21928"><img src="/images/2017-09-21-fix-science.png" alt="No researcher is too junior to fix science" /></a></p>
+
+<p>Promoting open science, especially when done in an constructive way,
+might also give you an online presence that can be helpful in
+raising you profile as a researcher.</p>
+
+<p>Open science practice is also a valuable and transferable skill. Good
+data management and reproducible research might not always be skills
+that are appreciated in academia, but in many other fields (for
+example anything related to data science), they are absolutely
+essential. Science policy is also a very desirable career choice for
+many STEM graduates, and with the growing importance of open science,
+these skills would be an important addition to your CV.</p>
+
+<p>You can also support and join open science initiatives. One example
+I’ll be talking more about is
+the <a href="http://bulliedintobadscience.org/">BulliedIntoBadScience</a>
+campaign, an initiative by ECRs for ECRs who aim for a fairer, more
+open and ethical research and publication environment.</p>
+
+<h2 id="what-can-institutions-and-senior-academics-do">What can institutions and senior academics do?</h2>
+
+<p>One of the most depressing observations when promoting open research
+is the lack of support by senior academics, whether they have vested
+interests, are <em>only</em> mis-informed about open science, or just have no
+incentive to drive any change. Fortunately, it’s also important to
+highlight that there are established academics who support open
+research, but they are a minority.</p>
+
+<p>Here are eight actions that researchers and institutions should follow
+to improve open research and open ECR:</p>
+
+<ol>
+  <li>Sign the Declaration on Research Assessment
+(<a href="http://www.ascb.org/dora/">DORA</a>), make hiring and promotion
+criteria explicit and highlight that the content and quality of
+research outputs are more important than the venue they are
+published in.</li>
+  <li>Positively value the commitment to open research and publishing
+practices when considering candidates for positions and promotions.</li>
+  <li>Endorse immediate open publishing, favouring publications in
+journals that are 100% open access.</li>
+  <li>Endorse posting of pre-prints in recognised pre-print servers to
+avoid publishing delays that are detrimental to career progress for
+ECRs.</li>
+  <li>Endorse, support and promote the open publication of data and other
+scientific outputs such as software.</li>
+  <li>Educate researchers about publishing practices via public
+statements, mandatory courses, and inductions that cover open
+research/data/access, mandates, the hidden costs of traditional
+publishing and how to protect ECRs from exploitative publishing
+practices.</li>
+  <li>Report to the public how much institutions pay for research to be
+published, to raise awareness about the significant drain on public
+funding.</li>
+  <li>Make all postdocs and ECRs full voting members of their
+institutions to increase diversity and stay connected to the
+changing needs of this underrepresented group.</li>
+</ol>
+
+<p>These points are taken from
+the <a href="http://bulliedintobadscience.org/">BulliedIntoBadScience</a>
+campaign, an initiative by ECRs for ECRs who aim for a fairer, more
+open and ethical research and publication environment.</p>
+
+<blockquote>
+  <p>Whether you are an ECR or a senior academic,
+<a href="http://bulliedintobadscience.org/#ecrs:_sign_the_letter">sign</a> our letter or
+<a href="http://bulliedintobadscience.org/#non-ecrs:_support_the_campaign">support us</a> and
+our campaign!</p>
+</blockquote>
+
+<p>Funders have a paramount role to play in the promotion of open
+research. Many, especially the Wellcome Trust in the UK, have
+established mandates and requirement to promote some aspects of open
+research, such as open access publication of all the research they
+fund (see above). There is however much more they can do to actively
+promote open researcher in general, and open ECR in particular.</p>
+
+<h2 id="inclusivity-open-science-and-open-science">Inclusivity: open science and open science</h2>
+
+<p>There is</p>
+
+<blockquote>
+  <p>Open Science as in widely disseminated and openly accessible</p>
+</blockquote>
+
+<p>and</p>
+
+<blockquote>
+  <p>Open Science as in inclusive and welcoming</p>
+</blockquote>
+
+<p>On being inclusive -
+<a href="https://twitter.com/CameronNeylon/status/895546085468495873">Twitter thread</a> by
+<a href="https://twitter.com/CameronNeylon">Cameron Neylon</a>:</p>
+
+<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">The primary value proposition of <a href="https://twitter.com/hashtag/openscience?src=hash">#openscience</a>
+is that diverse contributions allow better critique, refinement, and
+application 3/n</p>&mdash; CⓐmeronNeylon (@CameronNeylon) <a href="https://twitter.com/CameronNeylon/status/895546764861853696">August
+10, 2017</a></blockquote>
+<script async="" src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+<blockquote class="twitter-tweet" data-conversation="none" data-lang="en"><p lang="en" dir="ltr">It was a damned hard community
+to break into. Any step I took to be more open, I felt attacked for
+not doing enough/doing it right.</p>&mdash; Christie Bahlai (@cbahlai)
+<a href="https://twitter.com/cbahlai/status/871413258107981824">June
+4, 2017</a></blockquote>
+<script async="" src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+<p>As far as I was concerned for a long time (until June 2017 to be
+accurate - this section is based
+this
+<a href="https://lgatto.github.io/open-and-open/">Open science and open science</a> post),
+the former more technical definition was always what I was focusing
+on, and the second community-level aspect of openness was, somehow,
+implicit from the former, but that’s not the case.</p>
+
+<p>Even if there are efforts to promote diversity, under-represented
+minorities (URM) don’t necessarily feel
+<a href="http://science.sciencemag.org/content/357/6356/1101.full">included</a>.
+When it comes to open science/research URMs can be further
+discriminated against by greater exposure or, can’t always afford to
+be vocal.</p>
+
+<ul>
+  <li>Not everybody has the privilege to be open.</li>
+  <li>There are different levels in how open one wants, or how open one
+could afford to be.</li>
+  <li>Every voice and support is welcome.</li>
+</ul>
+
+<h2 id="conclusions">Conclusions</h2>
+
+<blockquote>
+  <p>It’s all about research quality and integrity!</p>
+</blockquote>
+
+<p>Make sure you are ready to be open (for yourself now, your future
+self, open the your group/institute, or open to the research community
+or to the public)</p>
+
+<ul>
+  <li>manage and annotate you data</li>
+  <li>backup everything up</li>
+  <li>open source development</li>
+  <li>online presence</li>
+  <li>…</li>
+</ul>
+
+<p>and be as open and promote openness as much as you can.</p>
+
+<blockquote>
+  <p>There’s more than one open.</p>
+</blockquote>
+
+<p>Better research also means more diverse and inclusive research and a
+inclusive research environment. And, there are many useful ways and
+levels to be open.</p>
+
+<blockquote>
+  <p>You want to do more. Yes please!</p>
+</blockquote>
+
+<p>Inertia is very strong in academia. There are many stakeholders
+involved, and too few that really want to drive change, due to vested
+interests and the comfort of their position. There are too many
+battles to fight, so pick yours wisely, otherwise you seriously risk
+to be exhausted and completely demoralised.</p>
+
+<blockquote>
+  <p>If you want to go fast, go alone. If you want to go far, go
+together. - African Proverb</p>
+</blockquote>
+
+<p>There’s room for innovation and exploration, as well as influencing and
+advising the current establishment (slower, but as important).</p>
+
+<p>It is not easy to predict where Open Research/Science will get in the
+future. Open access has had both positive (widening access) and
+negative effects (when being re-purposed for commercial benefits, see
+also a recent interview with Leslie Chan,
+<a href="https://ocsdnet.org/confessions-of-an-open-access-advocate-leslie-chan/">Confessions of an Open Access Advocat</a>).
+As ECRs, we are the future of research and the future of research
+dissemination. We mustn’t be afraid of experimenting, debating, and
+challenging the establishment.</p>
+
+<p><strong>Acknowledgements:</strong> I have been influenced by many throughout my
+ongoing journey towards better (open) research. I would like to thank
+some of those that have inspired me, either directly or indirectly,
+along the way. In no particular order, I would like to
+thank
+<a href="http://corinalogan.com/">Corina Logan</a>,
+<a href="https://twitter.com/StephenEglen">Stephen Eglen</a>,
+<a href="https://twitter.com/martateperek">Marta Teperek</a>,
+<a href="https://twitter.com/dannykay68">Danny Kingsley</a>, members of
+the
+<a href="http://www.openconcam.org/">OpenConCam group</a>,
+<a href="https://twitter.com/sr120">Steve Russel</a>,
+<a href="https://twitter.com/yvonnenobis">Yvonne Nobis</a>,
+<a href="http://bjoern.brembs.net/">Bjoern Brembs</a>,
+<a href="http://www.michaeleisen.org/blog/">Micheal Eisen</a>,
+<a href="https://twitter.com/petermurrayrust">Peter Murray-Rust</a>,
+<a href="https://twitter.com/rupertgatti">Rupert Gatti</a>,
+<a href="https://gowers.wordpress.com/">Tim Gowers</a>,
+the <a href="https://bioconductor.org/">Bioconductor project</a>,
+the
+<a href="https://www.software.ac.uk/">Software Sustainability Institute</a>,
+<a href="https://twitter.com/gvwilson">Greg Wilson</a> and
+the <a href="https://software-carpentry.org/">Software/Data Carpentry</a>. And
+probably many more.</p>
+<div class="footnotes" role="doc-endnotes">
+  <ol>
+    <li id="fn:1" role="doc-endnote">
+      <p>ECR can broadly be define as a post-graduate student, a researcher in academia or industry or at a non-governmental organisation who is unemployed or on a temporary contract, or within 10 years of obtaining a permanent post. It doesn’t primarily relate to the age of the person. <a href="#fnref:1" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+    <li id="fn:2" role="doc-endnote">
+      <p>Predators aren’t the poor quality journals that disseminate spam, these are <em>opportunistic</em> publishers. The real predators are the big traditional and commercial that have taken control of scholarly dissemination and do everything they can to maintain it and maximise their gains. See for example <a href="https://lgatto.github.io/software-data-papers/">Why Software and data papers are a bad solution to a real problem</a>. <a href="#fnref:2" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+    <li id="fn:3" role="doc-endnote">
+      <p>Github is an online interface to the <code class="language-plaintext highlighter-rouge">git</code> version control software, which allows to track changes in any text file, revert back to any version. On top of a web interface to the version controlling, Github allows to file at track issues, and tremendously facilitate collaborative online development. I use it for pretty all my research and coding projects, papers, collaboration, analysis reports, … <a href="#fnref:3" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+    <li id="fn:4" role="doc-endnote">
+      <p>There is often no perfect solution, and a combination of the above might be desirable. <a href="#fnref:4" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+  </ol>
+</div>
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+  
+
+
+  
+  
+  
+
+  <p class="page__taxonomy">
+    <strong><i class="fa fa-fw fa-tags" aria-hidden="true"></i> Tags: </strong>
+    <span itemprop="keywords">
+    
+      
+      
+      <a href="https://lgatto.github.io/tags/#open-research" class="page__taxonomy-item" rel="tag">open research</a><span class="sep">, </span>
+    
+      
+      
+      <a href="https://lgatto.github.io/tags/#talks" class="page__taxonomy-item" rel="tag">talks</a>
+    
+    </span>
+  </p>
+
+
+
+
+        
+          <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> Updated:</strong> <time datetime="2017-09-24T00:00:00+02:00">September 24, 2017</time></p>
+        
+      </footer>
+
+      <section class="page__share">
+  
+    <h4 class="page__share-title">Share on</h4>
+  
+
+  <a href="https://twitter.com/intent/tweet?text=An early career researcher's view on modern and open scholarship https://lgatto.github.io/EPFL-open-science/" class="btn btn--twitter" title="Share on Twitter"><i class="fa fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
+
+  <a href="https://www.facebook.com/sharer/sharer.php?u=https://lgatto.github.io/EPFL-open-science/" class="btn btn--facebook" title="Share on Facebook"><i class="fa fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
+
+  <a href="https://plus.google.com/share?url=https://lgatto.github.io/EPFL-open-science/" class="btn btn--google-plus" title="Share on Google Plus"><i class="fa fa-fw fa-google-plus" aria-hidden="true"></i><span> Google+</span></a>
+
+  <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://lgatto.github.io/EPFL-open-science/" class="btn btn--linkedin" title="Share on LinkedIn"><i class="fa fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
+</section>
+
+
+      
+  <nav class="pagination">
+    
+      <a href="https://lgatto.github.io/DataChampions-Sept-2017/" class="pagination--pager" title="September data champions meeting
+">Previous</a>
+    
+    
+      <a href="https://lgatto.github.io/BulliedIntoBadScience-OpenConCam/" class="pagination--pager" title="I won’t be Bullied Into Bad Science!
+">Next</a>
+    
+  </nav>
+
+    </div>
+
+    
+      <div class="page__comments">
+  
+  
+    <h4 class="page__comments-title">Leave a Comment</h4>
+    <section id="disqus_thread"></section>
+  
+</div>
+    
+  </article>
+
+  
+  
+    <div class="page__related">
+      
+        <h4 class="page__related-title">You May Also Enjoy</h4>
+      
+      <div class="grid__wrapper">
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+    
+      <div class="archive__item-teaser">
+        <img src=
+          
+            "https://lgatto.github.io/assets/images/slide-code.png"
+          
+          alt="">
+      </div>
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="https://lgatto.github.io/zulip/" rel="permalink">CBIO’s internal communication goes open source
+</a>
+      
+    </h2>
+    
+      <p class="page__meta"><i class="fa fa-clock-o" aria-hidden="true"></i> 
+
+
+
+
+  1 minute read
+</p>
+    
+    <p class="archive__item-excerpt" itemprop="description">I have been using slack for a rather long time as a discussion
+platform for the lab, even before moving to Belgium. Based on the
+access log, I set up the lab...</p>
+  </article>
+</div>
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+    
+      <div class="archive__item-teaser">
+        <img src=
+          
+            "https://lgatto.github.io/assets/images/slide-code.png"
+          
+          alt="">
+      </div>
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="https://lgatto.github.io/EuroBioc-Ghent/" rel="permalink">CBIO’s EuroBioc2023 posters and talks
+</a>
+      
+    </h2>
+    
+      <p class="page__meta"><i class="fa fa-clock-o" aria-hidden="true"></i> 
+
+
+
+
+  13 minute read
+</p>
+    
+    <p class="archive__item-excerpt" itemprop="description">Long overdue now, but here are the CBIO
+lab’s contributions to the
+EuroBioc2023 conference that
+was organised on Ghent, on the 20 - 22 September 2023.
+
+</p>
+  </article>
+</div>
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+    
+      <div class="archive__item-teaser">
+        <img src=
+          
+            "https://lgatto.github.io/assets/images/slide-code.png"
+          
+          alt="">
+      </div>
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="https://lgatto.github.io/one-minute-intro/" rel="permalink">One-minute introduction
+</a>
+      
+    </h2>
+    
+      <p class="page__meta"><i class="fa fa-clock-o" aria-hidden="true"></i> 
+
+
+
+
+  1 minute read
+</p>
+    
+    <p class="archive__item-excerpt" itemprop="description">Every now and then, there’s a situation where I need to briefly
+introduce myself, academically. This can be with or without any visual
+support (i.e a slide)....</p>
+  </article>
+</div>
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+    
+      <div class="archive__item-teaser">
+        <img src=
+          
+            "https://lgatto.github.io/assets/images/slide-code.png"
+          
+          alt="">
+      </div>
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="https://lgatto.github.io/spatprot-job-2023/" rel="permalink">Open position in the CBIO lab: spatial proteomics and PTMs
+</a>
+      
+    </h2>
+    
+      <p class="page__meta"><i class="fa fa-clock-o" aria-hidden="true"></i> 
+
+
+
+
+  3 minute read
+</p>
+    
+    <p class="archive__item-excerpt" itemprop="description">A position for a PhD student (4 years) or a research assistant (1 year
+contracts, renewable) is open in the CBIO lab focusing on protein
+sub-cellular localis...</p>
+  </article>
+</div>
+        
+      </div>
+    </div>
+  
+</div>
+
+    <div class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+
+<!-- end custom footer snippets -->
+        <div class="page__footer-follow">
+  <ul class="social-icons">
+    
+      <li><strong>Follow:</strong></li>
+    
+    
+    
+    
+      <li><a href="http://github.com/lgatto"><i class="fa fa-fw fa-github" aria-hidden="true"></i> GitHub</a></li>
+    
+    
+    <li><a href="https://lgatto.github.io/feed.xml"><i class="fa fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
+  </ul>
+</div>
+
+<div class="page__footer-copyright">&copy; 2024 Laurent Gatto CC-BY. Powered by <a href="http://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+
+      </footer>
+    </div>
+
+    <script src="https://lgatto.github.io/assets/js/main.min.js"></script>
+
+
+
+
+
+  
+  <script type="text/javascript">
+  	/* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+  	var disqus_shortname = 'laurentgatto';
+
+  	/* * * DON'T EDIT BELOW THIS LINE * * */
+  	(function() {
+  		var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+  		dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+  		(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+  	})();
+
+  	/* * * DON'T EDIT BELOW THIS LINE * * */
+  	(function () {
+  		var s = document.createElement('script'); s.async = true;
+  		s.type = 'text/javascript';
+  		s.src = '//' + disqus_shortname + '.disqus.com/count.js';
+  		(document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+  	}());
+  </script>
+  <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+
+
+
+
+
+  </body>
+</html>

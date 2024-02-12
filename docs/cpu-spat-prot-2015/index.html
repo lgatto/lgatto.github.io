@@ -1,0 +1,955 @@
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8">
+
+<!-- begin SEO -->
+
+
+
+
+
+
+
+
+
+<title>            Computation spatial proteomics at CPU, 2010 - 2015      ~/      </title>
+
+
+
+
+<meta name="description" content="">
+
+
+
+
+<meta property="og:locale" content="en_GB">
+<meta property="og:site_name" content="~/">
+<meta property="og:title" content="Computation spatial proteomics at CPU, 2010 - 2015">
+
+
+  <link rel="canonical" href="https://lgatto.github.io/cpu-spat-prot-2015/">
+  <meta property="og:url" content="https://lgatto.github.io/cpu-spat-prot-2015/">
+
+
+
+  <meta property="og:description" content="">
+
+
+
+
+
+  
+
+  
+
+
+
+
+
+  <meta property="og:type" content="article">
+  <meta property="article:published_time" content="2016-02-15T00:00:00+01:00">
+
+
+
+
+
+
+
+
+  <script type="application/ld+json">
+    {
+      "@context" : "http://schema.org",
+      "@type" : "Person",
+      "name" : "Laurent Gatto",
+      "url" : "https://lgatto.github.io",
+      "sameAs" : null
+    }
+  </script>
+
+
+
+
+
+
+<!-- end SEO -->
+
+
+<link href="https://lgatto.github.io/feed.xml" type="application/atom+xml" rel="alternate" title="~/ Feed">
+
+<!-- http://t.co/dKP3o1e -->
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="https://lgatto.github.io/assets/css/main.css">
+
+<meta http-equiv="cleartype" content="on">
+    <!-- start custom head snippets -->
+
+<!-- insert favicons. use http://realfavicongenerator.net/ -->
+
+<!-- end custom head snippets -->
+  </head>
+
+  <body class="layout--single">
+
+    <!--[if lt IE 9]>
+<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
+<![endif]-->
+    <div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        <button><div class="navicon"></div></button>
+        <ul class="visible-links">
+          <li class="masthead__menu-item masthead__menu-item--lg"><a href="https://lgatto.github.io/">~/</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="https://lgatto.github.io/about/">About</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="https://lgatto.github.io/year-archive/">Posts</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="https://lgatto.github.io/tags/">Tags</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="https://lgatto.github.io/cbio-lab/">Lab</a></li>
+          
+        </ul>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+    
+
+
+
+<div id="main" role="main">
+  
+  <div class="sidebar sticky">
+  
+
+<div itemscope itemtype="http://schema.org/Person">
+
+  
+    <div class="author__avatar">
+      
+        <img src="https://lgatto.github.io/images/lgatto2.jpg" class="author__avatar" alt="Laurent Gatto" itemprop="image">
+      
+    </div>
+  
+
+  <div class="author__content">
+    <h3 class="author__name" itemprop="name">Laurent Gatto</h3>
+    
+      <p class="author__bio" itemprop="description">
+        Open science, reproducible research, data champion, computational biology, proteomics, more omics, emacs, a lot of R, quite a bit of running, and parenting.
+      </p>
+    
+  </div>
+
+  <div class="author__urls-wrapper">
+    <button class="btn btn--inverse">Follow</button>
+    <ul class="author__urls social-icons">
+      
+
+      
+
+      
+
+      
+        <li>
+          <a href="https://keybase.io/lgatto" itemprop="sameAs">
+            <i class="fa fa-fw fa-key" aria-hidden="true"></i> Keybase
+          </a>
+        </li>
+      
+
+      
+
+      
+
+      
+
+      
+        <li>
+          <a href="https://www.linkedin.com/in/lgatto" itemprop="sameAs">
+            <i class="fa fa-fw fa-linkedin-square" aria-hidden="true"></i> LinkedIn
+          </a>
+        </li>
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+        <li>
+          <a href="https://github.com/lgatto" itemprop="sameAs">
+            <i class="fa fa-fw fa-github" aria-hidden="true"></i> GitHub
+          </a>
+        </li>
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      <!--
+  <li>
+    <a href="http://link-to-whatever-social-network.com/user/" itemprop="sameAs">
+      <i class="fa fa-fw" aria-hidden="true"></i> Custom Social Profile Link
+    </a>
+  </li>
+-->
+
+
+  <li>
+    <a href="http://dissem.in/r/6231/laurent-gatto" itemprop="sameAs">
+      <i class="fa fa-fw fa-pencil" aria-hidden="true"></i> dissem.in
+    </a>
+  </li>
+
+  <li>
+    <a href="https://orcid.org/0000-0002-1520-2268" itemprop="sameAs">
+      <i class="fa fa-fw fa-pencil" aria-hidden="true"></i> ORCID
+    </a>
+  </li>
+
+  <li>
+    <a href="https://scholar.google.co.uk/citations?user=k5DrB74AAAAJ&hl=en" itemprop="sameAs">
+      <i class="fa fa-fw fa-google" aria-hidden="true"></i> scholar
+    </a>
+  </li>
+
+  <li>
+    <a href="https://impactstory.org/u/0000-0002-1520-2268" itemprop="sameAs">
+      <i class="fa fa-fw fa-sun-o" aria-hidden="true"></i> Impactstory
+    </a>
+  </li>
+
+    </ul>
+  </div>
+</div>
+
+  
+  </div>
+
+
+  <article class="page" itemscope itemtype="http://schema.org/CreativeWork">
+    <meta itemprop="headline" content="Computation spatial proteomics at CPU, 2010 - 2015">
+    <meta itemprop="description" content="">
+    <meta itemprop="datePublished" content="February 15, 2016">
+    
+
+    <div class="page__inner-wrap">
+      
+        <header>
+          <h1 class="page__title" itemprop="headline">Computation spatial proteomics at CPU, 2010 - 2015
+</h1>
+          
+            <p class="page__meta"><i class="fa fa-clock-o" aria-hidden="true"></i> 
+
+
+
+
+  10 minute read
+</p>
+          
+        </header>
+      
+
+      <section class="page__content" itemprop="text">
+        <script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+
+<p>What have we achieved so far? We are Lisa Breckels and Laurent Gatto
+at the
+<a href="http://cpu.sysbiol.cam.ac.uk/">Computational Proteomics Unit (CPU)</a>,
+the University of Cambridge. This post summarises some of our progress
+in spatial proteomics since 2010, the year (October and January
+respectively) when we joined the
+<a href="http://proteomics.bio.cam.ac.uk/">Cambridge Centre for Proteomics</a>,
+and later, in 2013, when the CPU was set up.</p>
+
+<!--more-->
+
+<aside class="sidebar__right">
+<nav class="toc">
+    <header><h4 class="nav__title"><i class="fa fa-file-text"></i> On This Page</h4></header>
+<ul class="toc__menu" id="markdown-toc">
+  <li><a href="#spatial-proteomics" id="markdown-toc-spatial-proteomics">Spatial proteomics</a></li>
+  <li><a href="#classification-software-and-reproducibility" id="markdown-toc-classification-software-and-reproducibility">Classification, software and reproducibility</a></li>
+  <li><a href="#data-handling-processing-and-visualisation" id="markdown-toc-data-handling-processing-and-visualisation">Data handling, processing and visualisation</a></li>
+  <li><a href="#new-algorithms" id="markdown-toc-new-algorithms">New algorithms</a>    <ul>
+      <li><a href="#novelty-detection" id="markdown-toc-novelty-detection">Novelty detection</a></li>
+      <li><a href="#transfer-learning" id="markdown-toc-transfer-learning">Transfer learning</a></li>
+    </ul>
+  </li>
+  <li><a href="#software" id="markdown-toc-software">Software</a></li>
+  <li><a href="#biology" id="markdown-toc-biology">Biology</a></li>
+  <li><a href="#future" id="markdown-toc-future">Future</a></li>
+</ul>
+
+  </nav>
+</aside>
+
+<h2 id="spatial-proteomics">Spatial proteomics</h2>
+
+<p>Spatial proteomics is the systematic study of protein sub-cellular
+localisation. Building such sub-cellular maps was coined a
+<a href="http://www.nature.com/nmeth/journal/v13/n1/full/nmeth.3708.html">method to watch</a>,
+giving us <em>an unprecedented picture of the [cellular]
+territory</em>. Here, we will focus on high throughput approaches, based
+on sub-cellular fractionation and quantitative mass spectrometry. In a
+nutshell, the plasma membrane of cells is firstly disrupted so as to
+release their intact content, including organelles, vesicles and
+macro-molecular complexes. This sub-cellular content is then separated
+using, for example, a continuous density gradient and a set of
+discrete fractions are collected along the continuous separation
+gradient. Fractions towards the end of the gradient will be enriched
+in dense sub-cellular compartments that migrated further down the
+gradient, while fractions from the top of the gradient will be
+enriched in lighter, less dense compartments. The proteins contained
+in the discrete fractions are then extracted, identified and
+quantified using mass spectrometry. The relative protein intensities
+along the gradient (see top and right on the figure below) can then be
+used to recreate the original organelle-specific profiles. By matching
+protein profiles (grey profiles below) to those of marker proteins,
+i.e. genuine and well-known residents of specific compartments
+(coloured profiles), it is possible to assign un-labelled proteins to
+their sub-cellular localisation. Rather than visualising data along
+multiple line plots, we prefer to summaries all the data on a
+principal component analysis (PCA) plot (or other dimensionality
+reduction methods).</p>
+
+<p><img src="../images/profiles-pca.png" alt="Protein profiles and PCA plot" /></p>
+
+<p>See <em>Organelle proteomics experimental designs and analysis</em>
+(<a href="http://www.ncbi.nlm.nih.gov/pubmed/21080489">Gatto et al. (2010)</a>)
+for a general introduction to spatial proteomics.</p>
+
+<h2 id="classification-software-and-reproducibility">Classification, software and reproducibility</h2>
+
+<p>The most direct analysis that one would do with spatial proteomics
+data is to assign proteins of unknown localisation to one of the
+labelled classes, i.e. organelles, defined by the annotated marker
+proteins. This is a straightforward application for supervised machine
+learning, i.e. classification.</p>
+
+<p>Before summarising our contributions on that front, it is worth noting
+that, despite this being, in many respects, the <em>main</em> analysis that
+will address the key questions of such experiments, this is not the
+part of the analysis that will be most time consuming. On the
+contrary (there are other more important issues to tackle or improve), 
+and this is pretty much a solved issue, that can be settled over
+coffee.</p>
+
+<p>Below, I reproduce (with re-formatted references and links) an excerpt
+from our 2014 paper
+<a href="http://www.ncbi.nlm.nih.gov/pmc/articles/PMC4125728/"><em>A foundation for reliable spatial proteomics data analysis</em></a>.</p>
+
+<blockquote>
+  <p>The first applications of large-scale organelle proteomics data
+analysis were protein correlation profiling efforts
+(<a href="http://www.ncbi.nlm.nih.gov/pubmed/16615899/">Foster et al. (2006)</a>,
+<a href="http://www.ncbi.nlm.nih.gov/pubmed/14654843/">Andersen et al. (2003)</a>)
+that calculated a \(\chi^2\) metric using in-house tools and LOPIT
+(<a href="http://www.ncbi.nlm.nih.gov/pubmed/16618929/">Dunkley et al. (2006)</a>,
+<a href="http://www.ncbi.nlm.nih.gov/pmc/articles/PMC2690488/">Tan et al. (2009)</a>,
+<a href="http://www.ncbi.nlm.nih.gov/pmc/articles/PMC2690488/">Hall et al. (2009)</a>)
+that applied partial least squares discriminant analysis using the
+commercial SIMCA software (Umetrics, Umea,
+Sweden). <a href="http://www.ncbi.nlm.nih.gov/pubmed/21058340/">Trotter et al. (2010)</a>
+implemented custom <a href="https://www.r-project.org/">R</a> code and used the
+SVM algorithm from the
+<a href="https://cran.r-project.org/web/packages/kernlab/">kernlab package</a>,
+but no code for others to repeat this state-of-the-art procedure is
+provided. Others have applied other contemporary machine learning
+algorithms, including random forests
+(<a href="http://www.ncbi.nlm.nih.gov/pmc/articles/PMC2982257/">Ohta et al.(2010)</a>),
+naive Bayes
+(<a href="http://www.ncbi.nlm.nih.gov/pmc/articles/PMC3461528/">Nikolovski et al. (2012)</a>),
+and neutral networks
+(<a href="http://www.ncbi.nlm.nih.gov/pubmed/22826458/">Tardiff et al. (2012)</a>),
+but did not provide means to apply their analyses to new
+data. Although proteomics data are commonly being disseminated
+through appropriate repositories, it is not commonplace to provide
+reproducibility in terms of software and data analysis, despite
+their recognised importance
+(<a href="http://www.ncbi.nlm.nih.gov/pmc/articles/PMC3226393/">Aebersold (2011)</a>).</p>
+</blockquote>
+
+<p>There are however three important facts about these classification
+analyses that are never highlighted in the literature. First, there is
+very little or no attempt to offer access to code and the ability to
+reproduce the analyses. Second, the crucial parameter optimisation
+step is hardly addressed (see the
+<a href="http://bioconductor.org/packages/release/bioc/html/pRoloc.html">pRoloc software</a>
+and our reference above for details). Finally, possibly in an
+attempt to emphasise novelty in using other algorithms for the first
+time in such a context, it generally doesn’t matter what algorithms is
+used, as long as it is used adequately (see second point). Below is a
+figure taken from one of the
+<a href="http://bioconductor.org/packages/release/bioc/html/pRoloc.html">pRoloc</a>
+vignettes (manuals), that shows classifier accuracy metrics (F1 on the
+y axis) for various classifiers (k-nearest neighbours, naive Bayes,
+neural networks, partial least square discriminant analysis, random
+forests and support vector machines) for 9 different data sets
+(available in the
+<a href="http://bioconductor.org/packages/release/data/experiment/html/pRolocdata.html">pRolocdata</a>
+package).</p>
+
+<p><img src="../images/2016-02-03-115558_594x585_scrot.png" alt="Classifier performances" /></p>
+
+<p>We have designed the
+<a href="http://bioconductor.org/packages/release/bioc/html/pRoloc.html">pRoloc</a>
+(<a href="http://www.ncbi.nlm.nih.gov/pmc/articles/PMC3998135/">Gatto et al. (2014)</a>)
+software to support the consistent and reproducible analysis of such
+data.</p>
+
+<h2 id="data-handling-processing-and-visualisation">Data handling, processing and visualisation</h2>
+
+<p>In addition to the classification of proteins of unknown localisation,
+we have developed a complete suite of data structures and data
+processing methods to explore quantitative proteomics data
+(<a href="http://bioinformatics.oxfordjournals.org/content/28/2/288.long">Gatto et al. (2012)</a>),
+such as our spatial proteomics experiments. An important aspect of
+this data exploration is the visualisation of spatial proteomics data
+using profile plots (to visualise the protein) and PCA plots. These
+have proven invaluable to inspect the quality of data, assess the
+separation along the density gradient and the compartment-specific data
+clusters, and, ultimately, to critically assess the results of the
+classification analysis.</p>
+
+<p>More recently, we have been working on interactive interfaces (see for
+example <a href="https://lgatto.shinyapps.io/christoforou2015">here</a>) to
+explore the data, available in the
+<a href="http://bioconductor.org/packages/devel/bioc/html/pRolocGUI.html">pRolocGUI</a>
+package. The screen shot below illustrates the PCA interfaces that
+supports zooming, selection of sub-cellular niches to be displayed,
+searching, feature selection (by clicking points on the figures
+and lines in the feature table) to cite a few.</p>
+
+<p><img src="../images/pRolocVis_pca.png" alt="pRolocVis graphical user interface" /></p>
+
+<h2 id="new-algorithms">New algorithms</h2>
+
+<p>We have also developed novel algorithms to reveal new features and shed
+new light on these spatial proteomics data sets. All these new
+algorithms are readily available and documented in the
+<a href="http://bioconductor.org/packages/release/bioc/html/pRoloc.html">pRoloc</a>
+software.</p>
+
+<h3 id="novelty-detection">Novelty detection</h3>
+
+<p>In
+<a href="http://www.ncbi.nlm.nih.gov/pubmed/23523639">Breckels et al. (2013)</a>,
+we published a semi-supervised novelty detection algorithm, coined
+<em>phenoDisco</em>, that mines the quantitative data for un-annotated data
+clusters to reveal sub-cellar niches that were not identified by the
+user (i.e. there were no protein markers for that specific
+sub-cellular compartments).</p>
+
+<p>The figure below shows the application of the
+<a href="http://www.rdocumentation.org/packages/pRoloc/functions/phenoDisco"><code class="language-plaintext highlighter-rouge">phenoDisco</code></a>
+function on fly data from
+<a href="http://www.ncbi.nlm.nih.gov/pmc/articles/PMC2690488/">Tan et al. (2009)</a>. Initially,
+3 sub-cellular cluster were annotated, one of which combined ER and
+Golgi (left). We re-analysed the same quantitative data matrix (right)
+and identified a total of 12 sub-cellular niches, including ribosomal
+clusters and deconvoluted the ER/Golgi clusters. In addition, on the
+figure below, we used the classification score (SVM in this case) to
+adjust the point size, to reflect better (larger points) prediction
+accuracy.</p>
+
+<p><img src="../images/novelty-detection.png" alt="Novelty detection on Tan et al. (2009)" /></p>
+
+<h3 id="transfer-learning">Transfer learning</h3>
+
+<p>More recently in
+<a href="http://biorxiv.org/content/early/2015/07/07/022152">Breckels et al. (2015)</a>,
+we published a transfer learning algorithm that combines heterogeneous
+data such as mass spectrometry-based spatial proteomics data (our
+primary data, expensive to produce but of high quality and specific to
+a biological system and conditions of interest) and a secondary data
+source (generally readily available from third party resources) such
+as gene ontology annotations or sub-cellular imaging data (from the
+<a href="http://www.proteinatlas.org/">Human Protein Atlas</a>, for example) to
+improve upon the assignment of proteins to their sub-cellular niche.</p>
+
+<p>We implemented two approaches, one based on nearest neighbours that
+optimises weights for different data sources and different
+sub-cellular niches, and one based on support vector machines,
+utilising separate Gaussian kernels for the two data sources. We
+showed that combining these heterogeneous data sources substantially
+improves the classification accuracy. One particularly useful feature
+of the transfer learning was the improvement of the discrimination of
+true and false positives. Indeed, running a classification algorithm
+will classify every un-labelled protein to one of the labelled
+classes (sub-cellular niches). One can however never guarantee that
+all sub-cellular niches are present and it is widely known that
+proteins reside in multiple locations. As
+such, it is crucial to carefully set classification score thresholds
+to minimise false positive assignments. In the figure below, we
+compared the classification scores for one data classifier (knn
+or svm) to the data transfer learning version (knn-tl or
+svm-tl) using data for which true localisation was known, and compared
+correct and incorrect outcomes. We see that the separation between
+these correct an incorrect outcomes scores is greater for the transfer
+learning algorithms: it becomes much easier to set score thresholds
+that minimise incorrect outcomes while still maximising the number of
+correct predictions.</p>
+
+<p><img src="../images/tl-discrimination.png" alt="Discriminating true and false assignments" /></p>
+
+<h2 id="software">Software</h2>
+
+<p>An important achievement, that is not immediately obvious from
+research papers, is the data management and analysis infrastructure
+that we can rely on. In a matter of minutes, using our software, one
+can generate an annotated R object (an
+<a href="http://www.rdocumentation.org/packages/MSnbase/functions/MSnSet-class"><code class="language-plaintext highlighter-rouge">MSnSet</code></a>)
+from an arbitrary
+<a href="http://www.rdocumentation.org/packages/MSnbase/functions/readMSnSet">spreadsheet</a>,
+if there already is one for the existing data, and 
+<a href="http://www.rdocumentation.org/packages/pRoloc/functions/addMarkers">add markers</a>
+if they are not readily available, to visualise, explore and assess the
+quality of the data. If appropriate, we can then readily run various
+analyses such as
+<a href="http://www.rdocumentation.org/packages/pRoloc/functions/svmClassification">classification</a>,
+<a href="http://www.rdocumentation.org/packages/pRoloc/functions/phenoDisco">novelty detection</a>
+or
+<a href="http://bioconductor.org/packages/devel/bioc/vignettes/pRoloc/inst/doc/pRoloc-transfer-learning.pdf">transfer learning</a>. This
+brings the analysis of spatial proteomics data on par with shotgun
+proteomics or transcriptomics data, where easy things are
+straightforward to do, and can be done <strong>consistently</strong> and
+<strong>reproducibly</strong>. This infrastructure also offers robust grounds for
+more complex analyses and developments; for example, all the transfer
+learning methods and visualisation (both static and interactive) would
+have been substantially more difficult to implement and disseminate to
+the wider community. As we are using generic and well-defined data
+structures, it is straightforward to apply these methods to different
+types of <a href="http://www.ncbi.nlm.nih.gov/pubmed/26059426">experiment</a>.</p>
+
+<p>Another noteworthy aspect of our work is the open and collaborative
+development of our software. Several packages that are used for the
+analysis of quantitative spatial proteomics data, among others, have
+benefited from a number of contributions. The figure below names the
+contributors to the
+<a href="http://bioconductor.org/packages/devel/bioc/html/MSnbase.html"><code class="language-plaintext highlighter-rouge">MSnbase</code></a>
+(and <a href="https://github.com/lgatto/MSnbase">here</a> on GitHub) package
+since 2010 (the initial public release).</p>
+
+<p><img src="../images/msnbase-contributors.png" alt="MSnbase contributors" /></p>
+
+<h2 id="biology">Biology</h2>
+
+<p>Of course, what matters in the end, is how these progress impact on
+the biology. Consistency, replicability and sound algorithmic
+procedures can only have a positive impact on the validity of the
+biological interpretation of these data. But recent advances in data
+analyses as well as fractionation and mass spectrometry (<em>hyperLOPIT</em>,
+see
+<a href="http://www.nature.com/ncomms/2016/160112/ncomms9992/full/ncomms9992.html">Christoforou et al. (2016)</a>)
+enables us to shed new lights on the spatial behaviour of proteins.</p>
+
+<p>These high-throughput spatial proteomics experiments record the
+steady-state distributions of transitory proteins, revealing
+information about the state in the entire assessed cell
+population. One example from
+<a href="http://www.nature.com/ncomms/2016/160112/ncomms9992/full/ncomms9992.html">Christoforou et al. (2016)</a>
+is the Tfe3 transcription factor (Q64092-4), a modulator of the exit
+of ES cells from pluripotency.  As shown on the figure below, we infer
+a mixed localisation between the cytoplasm and nucleus from its
+position on the PCA plot. This mixed localisation is consistent with
+immunocytochemistry data in ES cells. In the pluripotent state, Tfe3
+localises to both the nucleus and cytosol, and regulates the
+expression of key pluripotency factor Esrrb. In the early stages of
+differentiation, it is excluded from the nucleus
+(<a href="http://www.ncbi.nlm.nih.gov/pmc/articles/PMC3661979/">Betschinger et al. (2013)</a>).</p>
+
+<p><img src="../images/hyperlopit-tfe3.png" alt="Tfe3 and hyperLOPIT data" /></p>
+
+<p>The PCA plot with Tfe3 can very easily be reproduced with the 9 lines
+of codes transcribed below.</p>
+
+<script src="https://gist.github.com/lgatto/dbdcdb5b76e83d202ed7.js?file=hyperlopit-tfe.R"> </script>
+
+<p>This hyperLOPIT spatial proteomics data enables exploration of many
+additional cell features such as sub-organellar resolution, mapping of
+vesicles and protein complexes, mapping of the sub-cellular
+localisation of signalling cascade components (see for example the
+screenshot from our <a href="https://lgatto.shinyapps.io/christoforou2015">online
+GUI</a> below, showing the
+spatial overview of the interaction partners of pluripotency Sox2
+factor) and protein isoforms with differential sub-cellular
+localisation.</p>
+
+<p><img src="../images/hyperlopit-sox2-ip.png" alt="Sox2 and its interaction partners" /></p>
+
+<p>To further exploit these rich data, we organised a <a href="http://lgatto.github.io/ccp-lopit-hackathon/">LOPIT
+hackathon</a> to
+collaboratively explore and understand the spatial organisation of
+these cells.</p>
+
+<h2 id="future">Future</h2>
+
+<p>There is still much more we hope to achieve. We have been <a href="https://github.com/ComputationalProteomicsUnit/pRolocGUI/graphs/contributors?from=2015-09-22&amp;to=2016-02-09&amp;type=c">very
+active</a>
+in developing better interactive interfaces to explore spatial
+proteomics data and plan offer dedicated infrastructure to widen
+dissemination of such data (both from our groups in Cambridge and
+others).</p>
+
+<p>We have also recently applied for a <a href="http://www.bbsrc.ac.uk/funding/filter/tools-and-resources-2015-call2/">BBSRC Tools and Resources
+development
+fund</a>
+to develop a better statistical framework to reliably and
+systematically identify mixed localisation (see the Tfe3 example
+above) and changes in localisation upon perturbations, i.e. were
+proteins exhibit different sub-cellar localisation patterns in
+different conditions (see below).</p>
+
+<p><img src="../images/spatprot-dynamics.png" alt="Changes in sub-cellular localisation" /></p>
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+  
+
+
+  
+  
+  
+
+  <p class="page__taxonomy">
+    <strong><i class="fa fa-fw fa-tags" aria-hidden="true"></i> Tags: </strong>
+    <span itemprop="keywords">
+    
+      
+      
+      <a href="https://lgatto.github.io/tags/#cpu" class="page__taxonomy-item" rel="tag">CPU</a><span class="sep">, </span>
+    
+      
+      
+      <a href="https://lgatto.github.io/tags/#proloc" class="page__taxonomy-item" rel="tag">pRoloc</a><span class="sep">, </span>
+    
+      
+      
+      <a href="https://lgatto.github.io/tags/#proteomics" class="page__taxonomy-item" rel="tag">proteomics</a><span class="sep">, </span>
+    
+      
+      
+      <a href="https://lgatto.github.io/tags/#r" class="page__taxonomy-item" rel="tag">R</a><span class="sep">, </span>
+    
+      
+      
+      <a href="https://lgatto.github.io/tags/#spatial" class="page__taxonomy-item" rel="tag">spatial</a>
+    
+    </span>
+  </p>
+
+
+
+
+        
+          <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> Updated:</strong> <time datetime="2016-02-15T00:00:00+01:00">February 15, 2016</time></p>
+        
+      </footer>
+
+      <section class="page__share">
+  
+    <h4 class="page__share-title">Share on</h4>
+  
+
+  <a href="https://twitter.com/intent/tweet?text=Computation spatial proteomics at CPU, 2010 - 2015 https://lgatto.github.io/cpu-spat-prot-2015/" class="btn btn--twitter" title="Share on Twitter"><i class="fa fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
+
+  <a href="https://www.facebook.com/sharer/sharer.php?u=https://lgatto.github.io/cpu-spat-prot-2015/" class="btn btn--facebook" title="Share on Facebook"><i class="fa fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
+
+  <a href="https://plus.google.com/share?url=https://lgatto.github.io/cpu-spat-prot-2015/" class="btn btn--google-plus" title="Share on Google Plus"><i class="fa fa-fw fa-google-plus" aria-hidden="true"></i><span> Google+</span></a>
+
+  <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://lgatto.github.io/cpu-spat-prot-2015/" class="btn btn--linkedin" title="Share on LinkedIn"><i class="fa fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
+</section>
+
+
+      
+  <nav class="pagination">
+    
+      <a href="https://lgatto.github.io/rr-what-should-be-our-goals/" class="pagination--pager" title="Reproducible research - What should our goals be?
+">Previous</a>
+    
+    
+      <a href="https://lgatto.github.io/brief-data-analysis-advice/" class="pagination--pager" title="Some brief advice on data analysis
+">Next</a>
+    
+  </nav>
+
+    </div>
+
+    
+      <div class="page__comments">
+  
+  
+    <h4 class="page__comments-title">Leave a Comment</h4>
+    <section id="disqus_thread"></section>
+  
+</div>
+    
+  </article>
+
+  
+  
+    <div class="page__related">
+      
+        <h4 class="page__related-title">You May Also Enjoy</h4>
+      
+      <div class="grid__wrapper">
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+    
+      <div class="archive__item-teaser">
+        <img src=
+          
+            "https://lgatto.github.io/assets/images/slide-code.png"
+          
+          alt="">
+      </div>
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="https://lgatto.github.io/zulip/" rel="permalink">CBIO’s internal communication goes open source
+</a>
+      
+    </h2>
+    
+      <p class="page__meta"><i class="fa fa-clock-o" aria-hidden="true"></i> 
+
+
+
+
+  1 minute read
+</p>
+    
+    <p class="archive__item-excerpt" itemprop="description">I have been using slack for a rather long time as a discussion
+platform for the lab, even before moving to Belgium. Based on the
+access log, I set up the lab...</p>
+  </article>
+</div>
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+    
+      <div class="archive__item-teaser">
+        <img src=
+          
+            "https://lgatto.github.io/assets/images/slide-code.png"
+          
+          alt="">
+      </div>
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="https://lgatto.github.io/EuroBioc-Ghent/" rel="permalink">CBIO’s EuroBioc2023 posters and talks
+</a>
+      
+    </h2>
+    
+      <p class="page__meta"><i class="fa fa-clock-o" aria-hidden="true"></i> 
+
+
+
+
+  13 minute read
+</p>
+    
+    <p class="archive__item-excerpt" itemprop="description">Long overdue now, but here are the CBIO
+lab’s contributions to the
+EuroBioc2023 conference that
+was organised on Ghent, on the 20 - 22 September 2023.
+
+</p>
+  </article>
+</div>
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+    
+      <div class="archive__item-teaser">
+        <img src=
+          
+            "https://lgatto.github.io/assets/images/slide-code.png"
+          
+          alt="">
+      </div>
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="https://lgatto.github.io/one-minute-intro/" rel="permalink">One-minute introduction
+</a>
+      
+    </h2>
+    
+      <p class="page__meta"><i class="fa fa-clock-o" aria-hidden="true"></i> 
+
+
+
+
+  1 minute read
+</p>
+    
+    <p class="archive__item-excerpt" itemprop="description">Every now and then, there’s a situation where I need to briefly
+introduce myself, academically. This can be with or without any visual
+support (i.e a slide)....</p>
+  </article>
+</div>
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+    
+      <div class="archive__item-teaser">
+        <img src=
+          
+            "https://lgatto.github.io/assets/images/slide-code.png"
+          
+          alt="">
+      </div>
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="https://lgatto.github.io/spatprot-job-2023/" rel="permalink">Open position in the CBIO lab: spatial proteomics and PTMs
+</a>
+      
+    </h2>
+    
+      <p class="page__meta"><i class="fa fa-clock-o" aria-hidden="true"></i> 
+
+
+
+
+  3 minute read
+</p>
+    
+    <p class="archive__item-excerpt" itemprop="description">A position for a PhD student (4 years) or a research assistant (1 year
+contracts, renewable) is open in the CBIO lab focusing on protein
+sub-cellular localis...</p>
+  </article>
+</div>
+        
+      </div>
+    </div>
+  
+</div>
+
+    <div class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+
+<!-- end custom footer snippets -->
+        <div class="page__footer-follow">
+  <ul class="social-icons">
+    
+      <li><strong>Follow:</strong></li>
+    
+    
+    
+    
+      <li><a href="http://github.com/lgatto"><i class="fa fa-fw fa-github" aria-hidden="true"></i> GitHub</a></li>
+    
+    
+    <li><a href="https://lgatto.github.io/feed.xml"><i class="fa fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
+  </ul>
+</div>
+
+<div class="page__footer-copyright">&copy; 2024 Laurent Gatto CC-BY. Powered by <a href="http://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+
+      </footer>
+    </div>
+
+    <script src="https://lgatto.github.io/assets/js/main.min.js"></script>
+
+
+
+
+
+  
+  <script type="text/javascript">
+  	/* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+  	var disqus_shortname = 'laurentgatto';
+
+  	/* * * DON'T EDIT BELOW THIS LINE * * */
+  	(function() {
+  		var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+  		dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+  		(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+  	})();
+
+  	/* * * DON'T EDIT BELOW THIS LINE * * */
+  	(function () {
+  		var s = document.createElement('script'); s.async = true;
+  		s.type = 'text/javascript';
+  		s.src = '//' + disqus_shortname + '.disqus.com/count.js';
+  		(document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+  	}());
+  </script>
+  <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+
+
+
+
+
+  </body>
+</html>
