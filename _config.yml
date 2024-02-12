@@ -102,7 +102,7 @@ author:
   vine             :
   weibo            :
   xing             :
-  youtube          : "https://www.youtube.com/@lgatto/videos"
+  # youtube          : "https://www.youtube.com/@lgatto/videos"
 
 # Reading Files
 include:
