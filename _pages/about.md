@@ -230,7 +230,7 @@ Please do get in touch if you are interested in running workshops.
 Lizcano-Perret B, Vertommen Didier, Herinckx G, Calabrese V, Gatto L,
 Roux P and Michiels T *Identification of RSK substrates using an
 analog-sensitive kinase approach* (2024)
-J. Biol. Chem. doi:[https://doi.org/10.1016/j.jbc.2024.105739](10.1016/j.jbc.2024.105739).
+J. Biol. Chem. doi:[10.1016/j.jbc.2024.105739](https://doi.org/10.1016/j.jbc.2024.105739).
 
 Vanderaa C and Gatto L *scplainer: using linear models to understand
 mass spectrometry-based single-cell proteomics data* (2023) bioRxiv
