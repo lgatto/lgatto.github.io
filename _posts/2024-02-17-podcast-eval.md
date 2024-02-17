@@ -25,8 +25,8 @@ qui a suscité la réflexion suivante.
 
 L'évaluation se doit avant tout d'être au service de la
 formation. L'évaluation certificative est pour moi une voie sans
-issue, que j'ai beaucoup de mal à percevoir comment faisant partie de
-ma mission d'enseignement.
+issue, que j'ai beaucoup de mal à percevoir comment elle fait partie
+de ma mission d'enseignement.
 
 ![Évaluations certificative :-( et formative :-)](/images/eval.png)
 

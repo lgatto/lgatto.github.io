@@ -16,7 +16,8 @@ email.
 ### Howto
 
 - Add new posts to `_posts`
-- Figures go into `images` and are referenced with `[Description](/images/fig.png]`.
+- Figures go into `images` and are referenced with
+  `[Description](/images/fig.png]`.
 - Assuming [jekyll] is installed, build locally with:
 
 ```
@@ -27,3 +28,6 @@ bundle exec jekyll build -d docs
   for pages and posts.
 
 - Push to Github, where gh-pages is configured to render the content of `docs`.
+
+- Check again, find typos and other issues, fix locally, build and
+  push.
