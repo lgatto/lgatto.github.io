@@ -1,5 +1,5 @@
 ---
-title: "Podcasts du LLL: pepensons l'évaluation"
+title: "Podcasts du LLL: repensons l'évaluation"
 tags: ["teaching", "education"]
 comments: false
 ---
@@ -28,7 +28,7 @@ formation. L'évaluation certificative est pour moi une voie sans
 issue, que j'ai beaucoup de mal à percevoir comment faisant partie de
 ma mission d'enseignement.
 
-![Évaluations certificative :-( et formative :-)](./images/eval.pnd)
+![Évaluations certificative :-( et formative :-)](/images/eval.png)
 
 
 Pour moi, une évaluation idéale, c'est une formalité, c'est une

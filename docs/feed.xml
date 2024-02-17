@@ -1,4 +1,39 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.3">Jekyll</generator><link href="https://lgatto.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://lgatto.github.io/" rel="alternate" type="text/html" /><updated>2024-02-12T17:40:25+01:00</updated><id>https://lgatto.github.io/feed.xml</id><title type="html">~/</title><subtitle>Laurent Gatto&apos;s online home</subtitle><author><name>Laurent Gatto</name></author><entry><title type="html">CBIO’s internal communication goes open source</title><link href="https://lgatto.github.io/zulip/" rel="alternate" type="text/html" title="CBIO’s internal communication goes open source" /><published>2024-02-04T00:00:00+01:00</published><updated>2024-02-04T00:00:00+01:00</updated><id>https://lgatto.github.io/zulip</id><content type="html" xml:base="https://lgatto.github.io/zulip/">&lt;p&gt;I have been using slack for a rather long time as a discussion
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.3">Jekyll</generator><link href="https://lgatto.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://lgatto.github.io/" rel="alternate" type="text/html" /><updated>2024-02-17T12:35:25+01:00</updated><id>https://lgatto.github.io/feed.xml</id><title type="html">~/</title><subtitle>Laurent Gatto&apos;s online home</subtitle><author><name>Laurent Gatto</name></author><entry><title type="html">Podcasts du LLL: repensons l’évaluation</title><link href="https://lgatto.github.io/podcast-eval/" rel="alternate" type="text/html" title="Podcasts du LLL: repensons l’évaluation" /><published>2024-02-17T00:00:00+01:00</published><updated>2024-02-17T00:00:00+01:00</updated><id>https://lgatto.github.io/podcast-eval</id><content type="html" xml:base="https://lgatto.github.io/podcast-eval/">&lt;p&gt;Une fois n’est pas coutume, un billet en français, pour attirer votre
+attention sur les podcasts du LLL. Le LLL, ou &lt;a href=&quot;https://uclouvain.be/fr/etudier/lll/a-propos.html&quot;&gt;Louvain Learning
+Lab&lt;/a&gt; accompagne
+tous les acteurs et actrices de la formation de l’UCLouvain dans leurs
+activités d’enseignement. En plus, c’est une équipe super chouette!&lt;/p&gt;
+
+&lt;p&gt;Parmi leurs
+&lt;a href=&quot;https://uclouvain.be/fr/etudier/lll/les-podcasts-du-lll.html&quot;&gt;podcasts&lt;/a&gt;,
+il y a celui qui se penche sur &lt;a href=&quot;https://www.podcastics.com/podcast/repensons-les-evaluations/&quot;&gt;l’évaluation des
+acquis&lt;/a&gt;
+des étudiant(e)s, réalisé et écrit par Emilie Malcourant, que je vous
+conseille.&lt;/p&gt;
+
+&lt;p&gt;Parmi les points abordés, il y avait la question&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Quelle serait l’évaluation idéale?&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;qui a suscité la réflexion suivante.&lt;/p&gt;
+
+&lt;p&gt;L’évaluation se doit avant tout d’être au service de la
+formation. L’évaluation certificative est pour moi une voie sans
+issue, que j’ai beaucoup de mal à percevoir comment faisant partie de
+ma mission d’enseignement.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/eval.png&quot; alt=&quot;Évaluations certificative :-( et formative :-)&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Pour moi, une évaluation idéale, c’est une formalité, c’est une
+évaluation qui n’a pas raison d’être, car les intervenant(e)s du cours
+savent que les étudiant(e)s maîtrisent la matière, et que l’évaluation
+finale n’est qu’une formalité, et qu’elle n’est donc plus nécessaire.&lt;/p&gt;
+
+&lt;p&gt;Le but d’un enseignement serait donc de rendre l’évaluation
+certificative irrelevante, de faire en sorte qu’elle ne soit plus
+pertinente, de la rendre impertinente.&lt;/p&gt;</content><author><name>Laurent Gatto</name></author><category term="teaching" /><category term="education" /><summary type="html">Une fois n’est pas coutume, un billet en français, pour attirer votre attention sur les podcasts du LLL. Le LLL, ou Louvain Learning Lab accompagne tous les acteurs et actrices de la formation de l’UCLouvain dans leurs activités d’enseignement. En plus, c’est une équipe super chouette!</summary></entry><entry><title type="html">CBIO’s internal communication goes open source</title><link href="https://lgatto.github.io/zulip/" rel="alternate" type="text/html" title="CBIO’s internal communication goes open source" /><published>2024-02-04T00:00:00+01:00</published><updated>2024-02-04T00:00:00+01:00</updated><id>https://lgatto.github.io/zulip</id><content type="html" xml:base="https://lgatto.github.io/zulip/">&lt;p&gt;I have been using slack for a rather long time as a discussion
 platform for the lab, even before moving to Belgium. Based on the
 access log, I set up the lab slack workspace in June 2016. It has
 proven very useful, even with the more recent limitations that come
@@ -1606,61 +1641,4 @@ two steps highlighted in the simple case above.&lt;/p&gt;
 &lt;a href=&quot;https://code.bioconductor.org/browse/flowWorkspace/commit/46dcefc254f249fa0ef4e514ded5ed3037cbe00a&quot;&gt;above&lt;/a&gt;
 &lt;a href=&quot;https://code.bioconductor.org/browse/CytoML/commit/e4c10db6082885ac63978634084ed8f2ca74c4dd&quot;&gt;packages&lt;/a&gt;
 has been updated to &lt;a href=&quot;https://opensource.org/licenses/agpl-3.0&quot;&gt;GNU Affero General Public License version 3
-(AGPL)&lt;/a&gt;.&lt;/p&gt;</content><author><name>Laurent Gatto</name></author><category term="software" /><category term="Bioconductor" /><category term="R" /><summary type="html">This post was motivated by the preparation of a the CytoPipeline package and the following question about software licenses. The CytoPipeline package is developed by Philippe Hauchamps whose PhD project is funded by GSK. Any deliverable that is produced by this project needs to be approved by the funder prior to publication/release. It was thus particularly important to review and understand the open source licensing requirements with care.</summary></entry><entry><title type="html">Tribute to my first running watch</title><link href="https://lgatto.github.io/running-watch/" rel="alternate" type="text/html" title="Tribute to my first running watch" /><published>2022-06-28T00:00:00+02:00</published><updated>2022-06-28T00:00:00+02:00</updated><id>https://lgatto.github.io/running-watch</id><content type="html" xml:base="https://lgatto.github.io/running-watch/">&lt;p&gt;I have recently acquired a new running watch and wanted to give a
-little tribute to my TomTom runner watch that has accompanied my for
-just over 6 years and 12000 kms. This watch doesn’t come with all the
-bells and whistles of other high end models, but it does exactly
-what’s written on the tin, and does it well. I used is to track and
-record my runs. I however was keen to change it to benefit from longer
-battery life (it did record a just over 10h run in 2019 - see below,
-but I don’t think it would manage anymore now) and I wanted to be able
-to have maps integrated to my watch for longer runs and activities
-abroad, without having to rely on a phone&lt;sup id=&quot;fnref:1&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:1&quot; class=&quot;footnote&quot; rel=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/images/tomtom.png&quot; alt=&quot;TomTom Runner watch&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;I got the watch in 2016, for my 40th birthday, a couple of month after
-starting running. Here are a few good memories that I wanted to
-record. The screenshots are taken from the TomTom online software - as
-the watch itself, it’s simple, useful and to the point.&lt;/p&gt;
-
-&lt;p&gt;The progress page shows an overview over these 6 years I used the
-watch. Apparently, I recorded 985 activities, running 12550 kms (there
-might be a couple of non-running activities) in 1182 hours, and
-climbing 149 km.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/images/tomtom_progress.png&quot; alt=&quot;Progress from May 2016 to June 2022&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;And here are the last activities I recorded in June 2022, before
-switching to a new device.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/images/tomtom_activities.png&quot; alt=&quot;TomTom activities - June 2022&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Clicking on each one open a page with the track and all details. The
-screenshot below was taken from the phone app and features the
-September 2019 Brussels Eco-trail, my longest run so far.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/images/tomtom_bxl_ecotrail.jpeg&quot; alt=&quot;Brussels Eco-trail - September 2019&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;A last, rather funny memory is how TomTom estimated my fitness age
-being 20 years old. Thank you, I’m flattered, and while I am likely
-fitter than the average 46-years-old male, I guarantee that 20 is
-vastly underestimated.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/images/tomtom_age.png&quot; alt=&quot;TomTom fitness age&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;I’ll have to figure out how to bulk-download all my activities at
-once, rather than one at a time. Other than that, thank you dear
-TomTom watch, we have a good run!&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Update:&lt;/strong&gt; It is surprisingly easy to bulk-download all my data. From
-the TomTom page, go to &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Settings&lt;/code&gt; &amp;gt; &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Manage my data&lt;/code&gt; and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Download
-your data&lt;/code&gt;. I was able to download 5 zip files containing, among other
-things, all my activities.&lt;/p&gt;
-&lt;div class=&quot;footnotes&quot; role=&quot;doc-endnotes&quot;&gt;
-  &lt;ol&gt;
-    &lt;li id=&quot;fn:1&quot; role=&quot;doc-endnote&quot;&gt;
-      &lt;p&gt;I use an old second hand phone with rather limited battery life and thus isn’t quite reliable enough for long trails. &lt;a href=&quot;#fnref:1&quot; class=&quot;reversefootnote&quot; role=&quot;doc-backlink&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
-    &lt;/li&gt;
-  &lt;/ol&gt;
-&lt;/div&gt;</content><author><name>Laurent Gatto</name></author><category term="Running" /><summary type="html">I have recently acquired a new running watch and wanted to give a little tribute to my TomTom runner watch that has accompanied my for just over 6 years and 12000 kms. This watch doesn’t come with all the bells and whistles of other high end models, but it does exactly what’s written on the tin, and does it well. I used is to track and record my runs. I however was keen to change it to benefit from longer battery life (it did record a just over 10h run in 2019 - see below, but I don’t think it would manage anymore now) and I wanted to be able to have maps integrated to my watch for longer runs and activities abroad, without having to rely on a phone1. I use an old second hand phone with rather limited battery life and thus isn’t quite reliable enough for long trails. &amp;#8617;</summary></entry></feed>
+(AGPL)&lt;/a&gt;.&lt;/p&gt;</content><author><name>Laurent Gatto</name></author><category term="software" /><category term="Bioconductor" /><category term="R" /><summary type="html">This post was motivated by the preparation of a the CytoPipeline package and the following question about software licenses. The CytoPipeline package is developed by Philippe Hauchamps whose PhD project is funded by GSK. Any deliverable that is produced by this project needs to be approved by the funder prior to publication/release. It was thus particularly important to review and understand the open source licensing requirements with care.</summary></entry></feed>
