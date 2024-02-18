@@ -1,4 +1,107 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.3">Jekyll</generator><link href="https://lgatto.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://lgatto.github.io/" rel="alternate" type="text/html" /><updated>2024-02-17T12:41:56+01:00</updated><id>https://lgatto.github.io/feed.xml</id><title type="html">~/</title><subtitle>Laurent Gatto&apos;s online home</subtitle><author><name>Laurent Gatto</name></author><entry><title type="html">Podcasts du LLL: repensons l’évaluation</title><link href="https://lgatto.github.io/podcast-eval/" rel="alternate" type="text/html" title="Podcasts du LLL: repensons l’évaluation" /><published>2024-02-17T00:00:00+01:00</published><updated>2024-02-17T00:00:00+01:00</updated><id>https://lgatto.github.io/podcast-eval</id><content type="html" xml:base="https://lgatto.github.io/podcast-eval/">&lt;p&gt;Une fois n’est pas coutume, un billet en français, pour attirer votre
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.3">Jekyll</generator><link href="https://lgatto.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://lgatto.github.io/" rel="alternate" type="text/html" /><updated>2024-02-18T11:32:48+01:00</updated><id>https://lgatto.github.io/feed.xml</id><title type="html">~/</title><subtitle>Laurent Gatto&apos;s online home</subtitle><author><name>Laurent Gatto</name></author><entry><title type="html">The Grid poster, in R</title><link href="https://lgatto.github.io/the-grid-in-r/" rel="alternate" type="text/html" title="The Grid poster, in R" /><published>2024-02-18T00:00:00+01:00</published><updated>2024-02-18T00:00:00+01:00</updated><id>https://lgatto.github.io/the-grid-in-r</id><content type="html" xml:base="https://lgatto.github.io/the-grid-in-r/">&lt;p&gt;The &lt;a href=&quot;https://museel.be/&quot;&gt;MuseeL&lt;/a&gt; is the
+&lt;a href=&quot;https://uclouvain.be/&quot;&gt;UCLouvain&lt;/a&gt; University museum in
+Louvain-la-Neuve. Highly recommended. It’s located to the lively
+&lt;em&gt;place des sciences&lt;/em&gt;, in a nice brutalist style building, formerly the
+science university library. If you ever spend some time in
+Louvain-la-Neuve, do spare a couple of hours to visit it.&lt;/p&gt;
+
+&lt;p&gt;As an academic and an ‘amis du musée’, I can get in for free, and
+sometimes enjoy the quiet and rather unique atmosphere to get some
+work. The previous exhibition, named &lt;a href=&quot;https://museel.be/fr/evenement/visite-guidee/decouvrir-lexposition-grid-0&quot;&gt;The
+Grid&lt;/a&gt;,
+was dedicated to the use of a grid in science. The poster and book of
+the exhibition, shown below, shows a grid, formed of smaller, slightly
+irregular squares. I thought this was a funny example to reproduce in
+R.&lt;/p&gt;
+
+&lt;p&gt;The first thing I need is the be able to draw squares. The
+&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;plotSquare()&lt;/code&gt; function below plots on of width &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;width&lt;/code&gt; at positions
+&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;x&lt;/code&gt; and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;y&lt;/code&gt;.&lt;/p&gt;
+
+&lt;div class=&quot;language-r highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;plotSquare&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;-&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;k&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;y&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;width&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+    &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x1&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;-&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;width&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;m&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+    &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;y1&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;-&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;y&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;width&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;m&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+    &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x2&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;-&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x1&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;+&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;width&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+    &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;y2&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;-&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;y1&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;+&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;width&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+    &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;rect&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;y1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;y2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Assuming I want an &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;nsq&lt;/code&gt; by &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;nsq&lt;/code&gt; grid of squares, below, I define
+that value to be 10, to draw a total of 100 squares.&lt;/p&gt;
+
+&lt;div class=&quot;language-r highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c1&quot;&gt;## Number of squares&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;nsq&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;-&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;m&quot;&gt;10&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;I also want some jitter, i.e. some random displacements from a perfect
+10 by 10 alignment, set by the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;amount&lt;/code&gt; variables.&lt;/p&gt;
+
+&lt;div class=&quot;language-r highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c1&quot;&gt;## amount of square jittering&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;amount&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;-&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;m&quot;&gt;1.2&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Finally, I need to define how much space is dedicated to the border
+between the squares.&lt;/p&gt;
+
+&lt;div class=&quot;language-r highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c1&quot;&gt;## border ratio&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ratio&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;-&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;m&quot;&gt;0.2&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Assuming that the grid will have a width and a height of 100
+(arbitrary) unites, below I define the width &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;sq_w&lt;/code&gt; of a square,
+considering the number of squares and the space that is dedicated to
+the border between squares. One I have the with of a square, I can
+compute the width &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;border_w&lt;/code&gt; of the border between two squares.&lt;/p&gt;
+
+&lt;div class=&quot;language-r highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;sq_w&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;-&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;100&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;nsq&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ratio&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;border_w&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;-&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;100&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;nsq&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;sq_w&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;nsq&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;+&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;m&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;I can now compute the x and y position of my squares. Given that my
+final grid is a square itself, these x and y positions apply to rows
+and columns of squares.&lt;/p&gt;
+
+&lt;div class=&quot;language-r highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;pos&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;-&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;seq&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;border_w&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;m&quot;&gt;100&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;border_w&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+           &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;length.out&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;nsq&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;We can now produce the figure. I first define the margins of my plot
+with the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;par&lt;/code&gt; function: the margins have width 1 and outer
+margins 0. The &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;plot()&lt;/code&gt; function doesn’t plot anything (`type = “n”),
+no axes, no frame, no labels. It however sets a grid itself, ranging
+from -2 to 100, to accommodate my squares and borders.&lt;/p&gt;
+
+&lt;div class=&quot;language-r highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;par&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;mar&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;rep&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;m&quot;&gt;4&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;oma&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;rep&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;m&quot;&gt;4&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;plot&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;-2&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;100&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;border_w&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;+&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;m&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;m&quot;&gt;-2&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;100&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;border_w&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;+&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;m&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+     &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;type&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;n&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;xaxt&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;n&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;yaxt&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;n&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+     &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;xlab&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ylab&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+     &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;frame.plot&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;kc&quot;&gt;FALSE&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;The last step is to place the squares. The x and y positions are
+symmetrical, i.e defined by the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;pos&lt;/code&gt; variable above: the lines and
+columns are &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;pos[1]&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;pos[2]&lt;/code&gt;, …, respectively, and the squares are
+added line by line, starting at line at &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;pos[1]&lt;/code&gt;. A little amount of
+noise (defined by &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;amount&lt;/code&gt; above) is added to the actual x and y
+position by the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;jitter()&lt;/code&gt; function.&lt;/p&gt;
+
+&lt;div class=&quot;language-r highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;for&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;y&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;k&quot;&gt;in&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;pos&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+    &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;pos_x&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;-&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;jitter&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;rep&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;y&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;nsq&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;amount&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;amount&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+    &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;pos_y&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;-&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;jitter&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;pos&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;amount&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;amount&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+    &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;plotSquare&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;pos_x&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;pos_y&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;sq_w&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;The final output (with &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;set.seed(123)&lt;/code&gt;), with the parameter above is
+show here.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/grid123.png&quot; alt=&quot;The R Grid&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;The full script is available
+&lt;a href=&quot;https://gist.github.com/lgatto/4fa4b3a8a6668a6b755b47da40d8ca81&quot;&gt;here&lt;/a&gt;. The
+fun part is of course to play with the parameters, which is left as an
+exercise for the reader :-).&lt;/p&gt;</content><author><name>Laurent Gatto</name></author><category term="R" /><category term="UCLouvain" /><summary type="html">The MuseeL is the UCLouvain University museum in Louvain-la-Neuve. Highly recommended. It’s located to the lively place des sciences, in a nice brutalist style building, formerly the science university library. If you ever spend some time in Louvain-la-Neuve, do spare a couple of hours to visit it.</summary></entry><entry><title type="html">Podcasts du LLL: repensons l’évaluation</title><link href="https://lgatto.github.io/podcast-eval/" rel="alternate" type="text/html" title="Podcasts du LLL: repensons l’évaluation" /><published>2024-02-17T00:00:00+01:00</published><updated>2024-02-17T00:00:00+01:00</updated><id>https://lgatto.github.io/podcast-eval</id><content type="html" xml:base="https://lgatto.github.io/podcast-eval/">&lt;p&gt;Une fois n’est pas coutume, un billet en français, pour attirer votre
 attention sur les podcasts du LLL. Le LLL, ou &lt;a href=&quot;https://uclouvain.be/fr/etudier/lll/a-propos.html&quot;&gt;Louvain Learning
 Lab&lt;/a&gt; accompagne
 tous les acteurs et actrices de la formation de l’UCLouvain dans leurs
@@ -33,7 +136,7 @@ finale n’est qu’une formalité, et qu’elle n’est donc plus nécessaire.&
 
 &lt;p&gt;Le but d’un enseignement serait donc de rendre l’évaluation
 certificative irrelevante, de faire en sorte qu’elle ne soit plus
-pertinente, de la rendre impertinente.&lt;/p&gt;</content><author><name>Laurent Gatto</name></author><category term="teaching" /><category term="education" /><summary type="html">Une fois n’est pas coutume, un billet en français, pour attirer votre attention sur les podcasts du LLL. Le LLL, ou Louvain Learning Lab accompagne tous les acteurs et actrices de la formation de l’UCLouvain dans leurs activités d’enseignement. En plus, c’est une équipe super chouette!</summary></entry><entry><title type="html">CBIO’s internal communication goes open source</title><link href="https://lgatto.github.io/zulip/" rel="alternate" type="text/html" title="CBIO’s internal communication goes open source" /><published>2024-02-04T00:00:00+01:00</published><updated>2024-02-04T00:00:00+01:00</updated><id>https://lgatto.github.io/zulip</id><content type="html" xml:base="https://lgatto.github.io/zulip/">&lt;p&gt;I have been using slack for a rather long time as a discussion
+pertinente, de la rendre impertinente.&lt;/p&gt;</content><author><name>Laurent Gatto</name></author><category term="teaching" /><category term="education" /><category term="UCLouvain" /><summary type="html">Une fois n’est pas coutume, un billet en français, pour attirer votre attention sur les podcasts du LLL. Le LLL, ou Louvain Learning Lab accompagne tous les acteurs et actrices de la formation de l’UCLouvain dans leurs activités d’enseignement. En plus, c’est une équipe super chouette!</summary></entry><entry><title type="html">CBIO’s internal communication goes open source</title><link href="https://lgatto.github.io/zulip/" rel="alternate" type="text/html" title="CBIO’s internal communication goes open source" /><published>2024-02-04T00:00:00+01:00</published><updated>2024-02-04T00:00:00+01:00</updated><id>https://lgatto.github.io/zulip</id><content type="html" xml:base="https://lgatto.github.io/zulip/">&lt;p&gt;I have been using slack for a rather long time as a discussion
 platform for the lab, even before moving to Belgium. Based on the
 access log, I set up the lab slack workspace in June 2016. It has
 proven very useful, even with the more recent limitations that come
@@ -1533,112 +1636,4 @@ assessment&lt;/a&gt;, posted on
       &lt;p&gt;In &lt;em&gt;UNgrading, why rating students undermines learning (and what to do instead)&lt;/em&gt;, Susan D. Blum (editor), 2020. &lt;a href=&quot;#fnref:1&quot; class=&quot;reversefootnote&quot; role=&quot;doc-backlink&quot;&gt;&amp;#8617;&lt;/a&gt; &lt;a href=&quot;#fnref:1:1&quot; class=&quot;reversefootnote&quot; role=&quot;doc-backlink&quot;&gt;&amp;#8617;&lt;sup&gt;2&lt;/sup&gt;&lt;/a&gt;&lt;/p&gt;
     &lt;/li&gt;
   &lt;/ol&gt;
-&lt;/div&gt;</content><author><name>Laurent Gatto</name></author><category term="education" /><category term="teaching" /><summary type="html">I have been extremely lucky to participate in a Carpentries instructor training as an early career researcher. By then, I had only taught a few workshops, and was very impressed by the content of the training, and by Greg Wilson, who delivered it with touching sincerity and dedication. A couple of years later, I managed to secure some funding from the R Consortium to organise an instructor course in Cambridge, where I worked at the time, and was delighted to be able to revisit the content. The Carpentries approach to lesson design and teaching has stuck with me since then. I have applied these principles and some of the material to my main university courses (WSBIM1207 and WSBIM1322 for the second and third bachelor courses respectively and WSBIM2122 for the master’s course), and am now, as part of the Bioconductor Teaching committee, developing new lessons.</summary></entry><entry><title type="html">Notes on software licenses</title><link href="https://lgatto.github.io/software-licensing/" rel="alternate" type="text/html" title="Notes on software licenses" /><published>2022-09-01T00:00:00+02:00</published><updated>2022-09-01T00:00:00+02:00</updated><id>https://lgatto.github.io/software-licensing</id><content type="html" xml:base="https://lgatto.github.io/software-licensing/">&lt;p&gt;This post was motivated by the preparation of a the
-&lt;a href=&quot;https://uclouvain-cbio.github.io/CytoPipeline/index.html&quot;&gt;CytoPipeline&lt;/a&gt;
-package and the following
-&lt;a href=&quot;https://support.bioconductor.org/p/9144841/&quot;&gt;question&lt;/a&gt; about software
-licenses. The &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;CytoPipeline&lt;/code&gt; package is developed by Philippe Hauchamps
-whose PhD project is funded by GSK. Any deliverable that is produced by
-this project needs to be approved by the funder prior to
-publication/release. It was thus particularly important to review and
-understand the open source licensing requirements with care.&lt;/p&gt;
-
-&lt;p&gt;Most software licenses, in particular the open source software
-licenses that I (and many academics) are confronted with, define how
-one can redistribute code. They do not say anything about what users
-are allowed to do when running the software/code. The latter is a
-point that I will address toward the end of this post.&lt;/p&gt;
-
-&lt;p&gt;So what does it mean to redistribute code? When do research software
-engineers, and R developers in particular, redistribute code?&lt;/p&gt;
-
-&lt;h2 id=&quot;simple-case&quot;&gt;Simple case&lt;/h2&gt;
-
-&lt;p&gt;Let’s start with a straightforward case. I copy a piece of code and
-include it in my own code base. From the moment I distribute my code,
-I re-distribute the copied code. To be able to do this, I need to (1)
-make sure the respective licenses are compatible and (2) if different
-from my software’s license, copy the license header and author names
-of the code of origin with the copied code chunk.&lt;/p&gt;
-
-&lt;p&gt;This is a very obvious case because I explicitly redistribute someone
-else’s code.&lt;/p&gt;
-
-&lt;h2 id=&quot;where-things-become-less-obvious&quot;&gt;Where things become less obvious&lt;/h2&gt;
-
-&lt;p&gt;When writing R packages, we almost never copy other packages’ code
-into ours (see below for an exception). We use the depends/imports
-mechanisms which doesn’t imply direct redistribution of code. If my
-package depends/imports another package, installation of my package
-will trigger the installation of these dependencies and the code (or
-parts thereof) of these dependencies will be loaded (copied?) into my
-workspace when my package is loaded.&lt;/p&gt;
-
-&lt;p&gt;Do we consider the above redistribution of someone else’s code? If
-not, then licensing terms do not necessarily apply, or at least are
-open to discussion..&lt;/p&gt;
-
-&lt;p&gt;One could argue that licenses need to be applied for code that is
-essential for the software to run, even if not distributed
-directly. For R packages, I think we would then want to disentangle
-whether that dependency plays a central role or not. But if we agree
-to that then, given that R and the base packages are released under
-GPL &amp;gt;= 2.0 (and some parts under LGPL &amp;gt;= 2.1) (see &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;?license&lt;/code&gt;), then
-all packages would have to be released under GPL compatible licenses,
-which is clearly not the case.&lt;/p&gt;
-
-&lt;p&gt;A similar discussion applies to binaries that use statically or
-dynamically linked libraries.&lt;/p&gt;
-
-&lt;h2 id=&quot;licensing-r-packages&quot;&gt;Licensing R packages&lt;/h2&gt;
-
-&lt;p&gt;It actually could be pedantically argued that a majority of R packages
-don’t apply licences correctly. Indeed, proper application of most
-licenses requires the LICENCE file (or a link to the text of the
-license) including the names of the authors (which can be found in an
-R package’s DESCRIPTION file) and owner of the code (typically, the
-authors employer), the latter never being specified explicitly in R
-packages.&lt;/p&gt;
-
-&lt;p&gt;A nice feature of using a proper LICENCE file is that it can contain
-additional information, such as a license for the documentation. I
-think this is a very neat feature, given that many R packages come
-with ample documentation, notably the famous vignettes that can
-sometimes be quite elaborate.&lt;/p&gt;
-
-&lt;p&gt;A fully-fledged license file would list all software dependencies and
-their respective licenses. In R, the dependencies are listed in the
-DESCRIPTION file, but miss their respective licenses (but I guess we
-can live with that). This however only applies to R package
-dependencies. If a package depends (or redistributes) non-R
-software/code, these should be referenced in the licensing file. The
-&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;shiny&lt;/code&gt; package is a good example for such a situation, where
-JavaScript code is packaged within the R package.&lt;/p&gt;
-
-&lt;h2 id=&quot;re-licensing-software&quot;&gt;Re-licensing software&lt;/h2&gt;
-
-&lt;p&gt;Software can also be re-licensed by its owners. When the license
-changes for a similar license (copyleft to copyleft, permissive to
-permissive) such as updating from GPL 2 to 3 or from GPL 2 to &amp;gt;= 2,
-the impact is limited. There are however cases when the change comes
-with substantial restrictions.&lt;/p&gt;
-
-&lt;p&gt;Some Bioconductor packages, notably &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;flowWorkspace&lt;/code&gt; and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;CytoML&lt;/code&gt;,
-recently had their licence
-&lt;a href=&quot;https://github.com/RGLab/flowWorkspace/commit/a1be772b3a43c51cf2606ea9b68b720654389197&quot;&gt;changed&lt;/a&gt;
-from an Artistic 2.0 license to an
-academic-only
-&lt;a href=&quot;https://github.com/RGLab/flowWorkspace/blob/master/LICENSE&quot;&gt;Fred Hutch license&lt;/a&gt;.
-This change stops any
-non-academic user from using the re-licensed software in their
-day-to-day activities. This extreme limitation impacts all other
-packages that depend on &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;flowWorkspace&lt;/code&gt; or &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;CytoML&lt;/code&gt;. In such a
-case, one would have to copy the relevant code from an older version,
-that was still released under an open source license, and follow the
-two steps highlighted in the simple case above.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Update&lt;/strong&gt; Good news! The licence of the
-&lt;a href=&quot;https://code.bioconductor.org/browse/flowWorkspace/commit/46dcefc254f249fa0ef4e514ded5ed3037cbe00a&quot;&gt;above&lt;/a&gt;
-&lt;a href=&quot;https://code.bioconductor.org/browse/CytoML/commit/e4c10db6082885ac63978634084ed8f2ca74c4dd&quot;&gt;packages&lt;/a&gt;
-has been updated to &lt;a href=&quot;https://opensource.org/licenses/agpl-3.0&quot;&gt;GNU Affero General Public License version 3
-(AGPL)&lt;/a&gt;.&lt;/p&gt;</content><author><name>Laurent Gatto</name></author><category term="software" /><category term="Bioconductor" /><category term="R" /><summary type="html">This post was motivated by the preparation of a the CytoPipeline package and the following question about software licenses. The CytoPipeline package is developed by Philippe Hauchamps whose PhD project is funded by GSK. Any deliverable that is produced by this project needs to be approved by the funder prior to publication/release. It was thus particularly important to review and understand the open source licensing requirements with care.</summary></entry></feed>
+&lt;/div&gt;</content><author><name>Laurent Gatto</name></author><category term="education" /><category term="teaching" /><summary type="html">I have been extremely lucky to participate in a Carpentries instructor training as an early career researcher. By then, I had only taught a few workshops, and was very impressed by the content of the training, and by Greg Wilson, who delivered it with touching sincerity and dedication. A couple of years later, I managed to secure some funding from the R Consortium to organise an instructor course in Cambridge, where I worked at the time, and was delighted to be able to revisit the content. The Carpentries approach to lesson design and teaching has stuck with me since then. I have applied these principles and some of the material to my main university courses (WSBIM1207 and WSBIM1322 for the second and third bachelor courses respectively and WSBIM2122 for the master’s course), and am now, as part of the Bioconductor Teaching committee, developing new lessons.</summary></entry></feed>

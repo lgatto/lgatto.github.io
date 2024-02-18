@@ -1,0 +1,661 @@
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8">
+
+<!-- begin SEO -->
+
+
+
+
+
+
+
+
+
+<title>            The Grid poster, in R      ~/      </title>
+
+
+
+
+<meta name="description" content="The MuseeL is theUCLouvain University museum inLouvain-la-Neuve. Highly recommended. It’s located to the livelyplace des sciences, in a nice brutalist style building, formerly thescience university library. If you ever spend some time inLouvain-la-Neuve, do spare a couple of hours to visit it.">
+
+
+
+
+<meta property="og:locale" content="en_GB">
+<meta property="og:site_name" content="~/">
+<meta property="og:title" content="The Grid poster, in R">
+
+
+  <link rel="canonical" href="https://lgatto.github.io/the-grid-in-r/">
+  <meta property="og:url" content="https://lgatto.github.io/the-grid-in-r/">
+
+
+
+  <meta property="og:description" content="The MuseeL is theUCLouvain University museum inLouvain-la-Neuve. Highly recommended. It’s located to the livelyplace des sciences, in a nice brutalist style building, formerly thescience university library. If you ever spend some time inLouvain-la-Neuve, do spare a couple of hours to visit it.">
+
+
+
+
+
+  
+
+  
+
+
+
+
+
+  <meta property="og:type" content="article">
+  <meta property="article:published_time" content="2024-02-18T00:00:00+01:00">
+
+
+
+
+
+
+
+
+  <script type="application/ld+json">
+    {
+      "@context" : "http://schema.org",
+      "@type" : "Person",
+      "name" : "Laurent Gatto",
+      "url" : "https://lgatto.github.io",
+      "sameAs" : null
+    }
+  </script>
+
+
+
+
+
+
+<!-- end SEO -->
+
+
+<link href="https://lgatto.github.io/feed.xml" type="application/atom+xml" rel="alternate" title="~/ Feed">
+
+<!-- http://t.co/dKP3o1e -->
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="https://lgatto.github.io/assets/css/main.css">
+
+<meta http-equiv="cleartype" content="on">
+    <!-- start custom head snippets -->
+
+<!-- insert favicons. use http://realfavicongenerator.net/ -->
+
+<!-- end custom head snippets -->
+  </head>
+
+  <body class="layout--single">
+
+    <!--[if lt IE 9]>
+<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
+<![endif]-->
+    <div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        <button><div class="navicon"></div></button>
+        <ul class="visible-links">
+          <li class="masthead__menu-item masthead__menu-item--lg"><a href="https://lgatto.github.io/">~/</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="https://lgatto.github.io/about/">About</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="https://lgatto.github.io/year-archive/">Posts</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="https://lgatto.github.io/tags/">Tags</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="https://lgatto.github.io/cbio-lab/">Lab</a></li>
+          
+        </ul>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+    
+
+
+
+<div id="main" role="main">
+  
+  <div class="sidebar sticky">
+  
+
+<div itemscope itemtype="http://schema.org/Person">
+
+  
+    <div class="author__avatar">
+      
+        <img src="https://lgatto.github.io/images/lgatto2.jpg" class="author__avatar" alt="Laurent Gatto" itemprop="image">
+      
+    </div>
+  
+
+  <div class="author__content">
+    <h3 class="author__name" itemprop="name">Laurent Gatto</h3>
+    
+      <p class="author__bio" itemprop="description">
+        Open science, reproducible research, data champion, computational biology, proteomics, more omics, emacs, a lot of R, quite a bit of running, and parenting.
+      </p>
+    
+  </div>
+
+  <div class="author__urls-wrapper">
+    <button class="btn btn--inverse">Follow</button>
+    <ul class="author__urls social-icons">
+      
+
+      
+
+      
+
+      
+        <li>
+          <a href="https://keybase.io/lgatto" itemprop="sameAs">
+            <i class="fa fa-fw fa-key" aria-hidden="true"></i> Keybase
+          </a>
+        </li>
+      
+
+      
+
+      
+
+      
+
+      
+        <li>
+          <a href="https://www.linkedin.com/in/lgatto" itemprop="sameAs">
+            <i class="fa fa-fw fa-linkedin-square" aria-hidden="true"></i> LinkedIn
+          </a>
+        </li>
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+        <li>
+          <a href="https://github.com/lgatto" itemprop="sameAs">
+            <i class="fa fa-fw fa-github" aria-hidden="true"></i> GitHub
+          </a>
+        </li>
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      <!--
+  <li>
+    <a href="http://link-to-whatever-social-network.com/user/" itemprop="sameAs">
+      <i class="fa fa-fw" aria-hidden="true"></i> Custom Social Profile Link
+    </a>
+  </li>
+-->
+
+
+  <li>
+    <a href="http://dissem.in/r/6231/laurent-gatto" itemprop="sameAs">
+      <i class="fa fa-fw fa-pencil" aria-hidden="true"></i> dissem.in
+    </a>
+  </li>
+
+  <li>
+    <a href="https://orcid.org/0000-0002-1520-2268" itemprop="sameAs">
+      <i class="fa fa-fw fa-pencil" aria-hidden="true"></i> ORCID
+    </a>
+  </li>
+
+  <li>
+    <a href="https://scholar.google.co.uk/citations?user=k5DrB74AAAAJ&hl=en" itemprop="sameAs">
+      <i class="fa fa-fw fa-google" aria-hidden="true"></i> scholar
+    </a>
+  </li>
+
+  <li>
+    <a href="https://impactstory.org/u/0000-0002-1520-2268" itemprop="sameAs">
+      <i class="fa fa-fw fa-sun-o" aria-hidden="true"></i> Impactstory
+    </a>
+  </li>
+
+    </ul>
+  </div>
+</div>
+
+  
+  </div>
+
+
+  <article class="page" itemscope itemtype="http://schema.org/CreativeWork">
+    <meta itemprop="headline" content="The Grid poster, in R">
+    <meta itemprop="description" content="The MuseeL is theUCLouvain University museum inLouvain-la-Neuve. Highly recommended. It’s located to the livelyplace des sciences, in a nice brutalist style building, formerly thescience university library. If you ever spend some time inLouvain-la-Neuve, do spare a couple of hours to visit it.">
+    <meta itemprop="datePublished" content="February 18, 2024">
+    
+
+    <div class="page__inner-wrap">
+      
+        <header>
+          <h1 class="page__title" itemprop="headline">The Grid poster, in R
+</h1>
+          
+            <p class="page__meta"><i class="fa fa-clock-o" aria-hidden="true"></i> 
+
+
+
+
+  3 minute read
+</p>
+          
+        </header>
+      
+
+      <section class="page__content" itemprop="text">
+        <p>The <a href="https://museel.be/">MuseeL</a> is the
+<a href="https://uclouvain.be/">UCLouvain</a> University museum in
+Louvain-la-Neuve. Highly recommended. It’s located to the lively
+<em>place des sciences</em>, in a nice brutalist style building, formerly the
+science university library. If you ever spend some time in
+Louvain-la-Neuve, do spare a couple of hours to visit it.</p>
+
+<p>As an academic and an ‘amis du musée’, I can get in for free, and
+sometimes enjoy the quiet and rather unique atmosphere to get some
+work. The previous exhibition, named <a href="https://museel.be/fr/evenement/visite-guidee/decouvrir-lexposition-grid-0">The
+Grid</a>,
+was dedicated to the use of a grid in science. The poster and book of
+the exhibition, shown below, shows a grid, formed of smaller, slightly
+irregular squares. I thought this was a funny example to reproduce in
+R.</p>
+
+<p>The first thing I need is the be able to draw squares. The
+<code class="language-plaintext highlighter-rouge">plotSquare()</code> function below plots on of width <code class="language-plaintext highlighter-rouge">width</code> at positions
+<code class="language-plaintext highlighter-rouge">x</code> and <code class="language-plaintext highlighter-rouge">y</code>.</p>
+
+<div class="language-r highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">plotSquare</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="k">function</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="w"> </span><span class="n">y</span><span class="p">,</span><span class="w"> </span><span class="n">width</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="n">x1</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">x</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="p">(</span><span class="n">width</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="m">2</span><span class="p">)</span><span class="w">
+    </span><span class="n">y1</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">y</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="p">(</span><span class="n">width</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="m">2</span><span class="p">)</span><span class="w">
+    </span><span class="n">x2</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">x1</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">width</span><span class="w">
+    </span><span class="n">y2</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">y1</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">width</span><span class="w">
+    </span><span class="n">rect</span><span class="p">(</span><span class="n">x1</span><span class="p">,</span><span class="w"> </span><span class="n">y1</span><span class="p">,</span><span class="w"> </span><span class="n">x2</span><span class="p">,</span><span class="w"> </span><span class="n">y2</span><span class="p">)</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div></div>
+
+<p>Assuming I want an <code class="language-plaintext highlighter-rouge">nsq</code> by <code class="language-plaintext highlighter-rouge">nsq</code> grid of squares, below, I define
+that value to be 10, to draw a total of 100 squares.</p>
+
+<div class="language-r highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">## Number of squares</span><span class="w">
+</span><span class="n">nsq</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="m">10</span><span class="w">
+</span></code></pre></div></div>
+
+<p>I also want some jitter, i.e. some random displacements from a perfect
+10 by 10 alignment, set by the <code class="language-plaintext highlighter-rouge">amount</code> variables.</p>
+
+<div class="language-r highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">## amount of square jittering</span><span class="w">
+</span><span class="n">amount</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="m">1.2</span><span class="w">
+</span></code></pre></div></div>
+
+<p>Finally, I need to define how much space is dedicated to the border
+between the squares.</p>
+
+<div class="language-r highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">## border ratio</span><span class="w">
+</span><span class="n">ratio</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="m">0.2</span><span class="w">
+</span></code></pre></div></div>
+
+<p>Assuming that the grid will have a width and a height of 100
+(arbitrary) unites, below I define the width <code class="language-plaintext highlighter-rouge">sq_w</code> of a square,
+considering the number of squares and the space that is dedicated to
+the border between squares. One I have the with of a square, I can
+compute the width <code class="language-plaintext highlighter-rouge">border_w</code> of the border between two squares.</p>
+
+<div class="language-r highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">sq_w</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="p">(</span><span class="m">100</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="n">nsq</span><span class="p">)</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="p">(</span><span class="m">1</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="n">ratio</span><span class="p">)</span><span class="w">
+</span><span class="n">border_w</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="p">(</span><span class="m">100</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="p">(</span><span class="n">nsq</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">sq_w</span><span class="p">))</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="p">(</span><span class="n">nsq</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="m">1</span><span class="p">)</span><span class="w">
+</span></code></pre></div></div>
+
+<p>I can now compute the x and y position of my squares. Given that my
+final grid is a square itself, these x and y positions apply to rows
+and columns of squares.</p>
+
+<div class="language-r highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">pos</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">seq</span><span class="p">(</span><span class="n">border_w</span><span class="p">,</span><span class="w"> </span><span class="m">100</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="n">border_w</span><span class="p">,</span><span class="w">
+           </span><span class="n">length.out</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">nsq</span><span class="p">)</span><span class="w">
+</span></code></pre></div></div>
+
+<p>We can now produce the figure. I first define the margins of my plot
+with the <code class="language-plaintext highlighter-rouge">par</code> function: the margins have width 1 and outer
+margins 0. The <code class="language-plaintext highlighter-rouge">plot()</code> function doesn’t plot anything (`type = “n”),
+no axes, no frame, no labels. It however sets a grid itself, ranging
+from -2 to 100, to accommodate my squares and borders.</p>
+
+<div class="language-r highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">par</span><span class="p">(</span><span class="n">mar</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nf">rep</span><span class="p">(</span><span class="m">1</span><span class="p">,</span><span class="w"> </span><span class="m">4</span><span class="p">),</span><span class="w"> </span><span class="n">oma</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nf">rep</span><span class="p">(</span><span class="m">0</span><span class="p">,</span><span class="w"> </span><span class="m">4</span><span class="p">))</span><span class="w">
+</span><span class="n">plot</span><span class="p">(</span><span class="m">-2</span><span class="o">:</span><span class="p">(</span><span class="m">100</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="n">border_w</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="m">2</span><span class="p">),</span><span class="w"> </span><span class="m">-2</span><span class="o">:</span><span class="p">(</span><span class="m">100</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="n">border_w</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="m">2</span><span class="p">),</span><span class="w">
+     </span><span class="n">type</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">"n"</span><span class="p">,</span><span class="w"> </span><span class="n">xaxt</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">"n"</span><span class="p">,</span><span class="w"> </span><span class="n">yaxt</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">"n"</span><span class="p">,</span><span class="w">
+     </span><span class="n">xlab</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span><span class="w"> </span><span class="n">ylab</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span><span class="w">
+     </span><span class="n">frame.plot</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">FALSE</span><span class="p">)</span><span class="w">
+</span></code></pre></div></div>
+
+<p>The last step is to place the squares. The x and y positions are
+symmetrical, i.e defined by the <code class="language-plaintext highlighter-rouge">pos</code> variable above: the lines and
+columns are <code class="language-plaintext highlighter-rouge">pos[1]</code>, <code class="language-plaintext highlighter-rouge">pos[2]</code>, …, respectively, and the squares are
+added line by line, starting at line at <code class="language-plaintext highlighter-rouge">pos[1]</code>. A little amount of
+noise (defined by <code class="language-plaintext highlighter-rouge">amount</code> above) is added to the actual x and y
+position by the <code class="language-plaintext highlighter-rouge">jitter()</code> function.</p>
+
+<div class="language-r highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="n">y</span><span class="w"> </span><span class="k">in</span><span class="w"> </span><span class="n">pos</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="n">pos_x</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">jitter</span><span class="p">(</span><span class="nf">rep</span><span class="p">(</span><span class="n">y</span><span class="p">,</span><span class="w"> </span><span class="n">nsq</span><span class="p">),</span><span class="w"> </span><span class="n">amount</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">amount</span><span class="p">)</span><span class="w">
+    </span><span class="n">pos_y</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">jitter</span><span class="p">(</span><span class="n">pos</span><span class="p">,</span><span class="w"> </span><span class="n">amount</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">amount</span><span class="p">)</span><span class="w">
+    </span><span class="n">plotSquare</span><span class="p">(</span><span class="n">pos_x</span><span class="p">,</span><span class="w"> </span><span class="n">pos_y</span><span class="p">,</span><span class="w"> </span><span class="n">sq_w</span><span class="p">)</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div></div>
+
+<p>The final output (with <code class="language-plaintext highlighter-rouge">set.seed(123)</code>), with the parameter above is
+show here.</p>
+
+<p><img src="/images/grid123.png" alt="The R Grid" /></p>
+
+<p>The full script is available
+<a href="https://gist.github.com/lgatto/4fa4b3a8a6668a6b755b47da40d8ca81">here</a>. The
+fun part is of course to play with the parameters, which is left as an
+exercise for the reader :-).</p>
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+  
+
+
+  
+  
+  
+
+  <p class="page__taxonomy">
+    <strong><i class="fa fa-fw fa-tags" aria-hidden="true"></i> Tags: </strong>
+    <span itemprop="keywords">
+    
+      
+      
+      <a href="https://lgatto.github.io/tags/#r" class="page__taxonomy-item" rel="tag">R</a><span class="sep">, </span>
+    
+      
+      
+      <a href="https://lgatto.github.io/tags/#uclouvain" class="page__taxonomy-item" rel="tag">UCLouvain</a>
+    
+    </span>
+  </p>
+
+
+
+
+        
+          <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> Updated:</strong> <time datetime="2024-02-18T00:00:00+01:00">February 18, 2024</time></p>
+        
+      </footer>
+
+      <section class="page__share">
+  
+    <h4 class="page__share-title">Share on</h4>
+  
+
+  <a href="https://twitter.com/intent/tweet?text=The Grid poster, in R https://lgatto.github.io/the-grid-in-r/" class="btn btn--twitter" title="Share on Twitter"><i class="fa fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
+
+  <a href="https://www.facebook.com/sharer/sharer.php?u=https://lgatto.github.io/the-grid-in-r/" class="btn btn--facebook" title="Share on Facebook"><i class="fa fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
+
+  <a href="https://plus.google.com/share?url=https://lgatto.github.io/the-grid-in-r/" class="btn btn--google-plus" title="Share on Google Plus"><i class="fa fa-fw fa-google-plus" aria-hidden="true"></i><span> Google+</span></a>
+
+  <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://lgatto.github.io/the-grid-in-r/" class="btn btn--linkedin" title="Share on LinkedIn"><i class="fa fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
+</section>
+
+
+      
+  <nav class="pagination">
+    
+      <a href="https://lgatto.github.io/podcast-eval/" class="pagination--pager" title="Podcasts du LLL: repensons l’évaluation
+">Previous</a>
+    
+    
+      <a href="#" class="pagination--pager disabled">Next</a>
+    
+  </nav>
+
+    </div>
+
+    
+  </article>
+
+  
+  
+    <div class="page__related">
+      
+        <h4 class="page__related-title">You May Also Enjoy</h4>
+      
+      <div class="grid__wrapper">
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+    
+      <div class="archive__item-teaser">
+        <img src=
+          
+            "https://lgatto.github.io/assets/images/slide-code.png"
+          
+          alt="">
+      </div>
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="https://lgatto.github.io/podcast-eval/" rel="permalink">Podcasts du LLL: repensons l’évaluation
+</a>
+      
+    </h2>
+    
+      <p class="page__meta"><i class="fa fa-clock-o" aria-hidden="true"></i> 
+
+
+
+
+  less than 1 minute read
+</p>
+    
+    <p class="archive__item-excerpt" itemprop="description">Une fois n’est pas coutume, un billet en français, pour attirer votre
+attention sur les podcasts du LLL. Le LLL, ou Louvain Learning
+Lab accompagne
+tous les ...</p>
+  </article>
+</div>
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+    
+      <div class="archive__item-teaser">
+        <img src=
+          
+            "https://lgatto.github.io/assets/images/slide-code.png"
+          
+          alt="">
+      </div>
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="https://lgatto.github.io/zulip/" rel="permalink">CBIO’s internal communication goes open source
+</a>
+      
+    </h2>
+    
+      <p class="page__meta"><i class="fa fa-clock-o" aria-hidden="true"></i> 
+
+
+
+
+  1 minute read
+</p>
+    
+    <p class="archive__item-excerpt" itemprop="description">I have been using slack for a rather long time as a discussion
+platform for the lab, even before moving to Belgium. Based on the
+access log, I set up the lab...</p>
+  </article>
+</div>
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+    
+      <div class="archive__item-teaser">
+        <img src=
+          
+            "https://lgatto.github.io/assets/images/slide-code.png"
+          
+          alt="">
+      </div>
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="https://lgatto.github.io/EuroBioc-Ghent/" rel="permalink">CBIO’s EuroBioc2023 posters and talks
+</a>
+      
+    </h2>
+    
+      <p class="page__meta"><i class="fa fa-clock-o" aria-hidden="true"></i> 
+
+
+
+
+  13 minute read
+</p>
+    
+    <p class="archive__item-excerpt" itemprop="description">Long overdue now, but here are the CBIO
+lab’s contributions to the
+EuroBioc2023 conference that
+was organised on Ghent, on the 20 - 22 September 2023.
+
+</p>
+  </article>
+</div>
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+    
+      <div class="archive__item-teaser">
+        <img src=
+          
+            "https://lgatto.github.io/assets/images/slide-code.png"
+          
+          alt="">
+      </div>
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="https://lgatto.github.io/one-minute-intro/" rel="permalink">One-minute introduction
+</a>
+      
+    </h2>
+    
+      <p class="page__meta"><i class="fa fa-clock-o" aria-hidden="true"></i> 
+
+
+
+
+  1 minute read
+</p>
+    
+    <p class="archive__item-excerpt" itemprop="description">Every now and then, there’s a situation where I need to briefly
+introduce myself, academically. This can be with or without any visual
+support (i.e a slide)....</p>
+  </article>
+</div>
+        
+      </div>
+    </div>
+  
+</div>
+
+    <div class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+
+<!-- end custom footer snippets -->
+        <div class="page__footer-follow">
+  <ul class="social-icons">
+    
+      <li><strong>Follow:</strong></li>
+    
+    
+    
+    
+      <li><a href="http://github.com/lgatto"><i class="fa fa-fw fa-github" aria-hidden="true"></i> GitHub</a></li>
+    
+    
+    <li><a href="https://lgatto.github.io/feed.xml"><i class="fa fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
+  </ul>
+</div>
+
+<div class="page__footer-copyright">&copy; 2024 Laurent Gatto CC-BY. Powered by <a href="http://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+
+      </footer>
+    </div>
+
+    <script src="https://lgatto.github.io/assets/js/main.min.js"></script>
+
+
+
+
+
+  </body>
+</html>
