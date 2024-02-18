@@ -21,6 +21,8 @@ the exhibition, shown below, shows a grid, formed of smaller, slightly
 irregular squares. I thought this was a funny example to reproduce in
 R.
 
+![The Grid poster](/images/grid-poster.jpg)
+
 The first thing I need is the be able to draw squares. The
 `plotSquare()` function below plots on of width `width` at positions
 `x` and `y`.

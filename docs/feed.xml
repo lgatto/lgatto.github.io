@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.3">Jekyll</generator><link href="https://lgatto.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://lgatto.github.io/" rel="alternate" type="text/html" /><updated>2024-02-18T11:32:48+01:00</updated><id>https://lgatto.github.io/feed.xml</id><title type="html">~/</title><subtitle>Laurent Gatto&apos;s online home</subtitle><author><name>Laurent Gatto</name></author><entry><title type="html">The Grid poster, in R</title><link href="https://lgatto.github.io/the-grid-in-r/" rel="alternate" type="text/html" title="The Grid poster, in R" /><published>2024-02-18T00:00:00+01:00</published><updated>2024-02-18T00:00:00+01:00</updated><id>https://lgatto.github.io/the-grid-in-r</id><content type="html" xml:base="https://lgatto.github.io/the-grid-in-r/">&lt;p&gt;The &lt;a href=&quot;https://museel.be/&quot;&gt;MuseeL&lt;/a&gt; is the
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.3">Jekyll</generator><link href="https://lgatto.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://lgatto.github.io/" rel="alternate" type="text/html" /><updated>2024-02-18T21:53:43+01:00</updated><id>https://lgatto.github.io/feed.xml</id><title type="html">~/</title><subtitle>Laurent Gatto&apos;s online home</subtitle><author><name>Laurent Gatto</name></author><entry><title type="html">The Grid poster, in R</title><link href="https://lgatto.github.io/the-grid-in-r/" rel="alternate" type="text/html" title="The Grid poster, in R" /><published>2024-02-18T00:00:00+01:00</published><updated>2024-02-18T00:00:00+01:00</updated><id>https://lgatto.github.io/the-grid-in-r</id><content type="html" xml:base="https://lgatto.github.io/the-grid-in-r/">&lt;p&gt;The &lt;a href=&quot;https://museel.be/&quot;&gt;MuseeL&lt;/a&gt; is the
 &lt;a href=&quot;https://uclouvain.be/&quot;&gt;UCLouvain&lt;/a&gt; University museum in
 Louvain-la-Neuve. Highly recommended. It’s located to the lively
 &lt;em&gt;place des sciences&lt;/em&gt;, in a nice brutalist style building, formerly the
@@ -13,6 +13,8 @@ was dedicated to the use of a grid in science. The poster and book of
 the exhibition, shown below, shows a grid, formed of smaller, slightly
 irregular squares. I thought this was a funny example to reproduce in
 R.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/grid-poster.jpg&quot; alt=&quot;The Grid poster&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;The first thing I need is the be able to draw squares. The
 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;plotSquare()&lt;/code&gt; function below plots on of width &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;width&lt;/code&gt; at positions
