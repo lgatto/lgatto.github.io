@@ -335,10 +335,14 @@ latest set of sticky notes goes along these lines and gives hope for
 the future.
 
 
-**Edit**: Here's a [first ungrading
-assessment](https://lgatto.github.io/ungrading-assessment/), posted on
-15 December 2022.
+**Edit**:
 
+- Here's a [first ungrading
+  assessment](https://lgatto.github.io/ungrading-assessment/), posted
+  on 15 December 2022.
+- A short interview, in French: [Evaluation dans l'enseignement
+  supérieur : « UNgrading » ou évaluer et apprendre sans
+  points](https://www.youtube.com/watch?v=i4KebCqSP8Q).
 
 
 [^1]: In *UNgrading, why rating students undermines learning (and what to do instead)*, Susan D. Blum (editor), 2020.
