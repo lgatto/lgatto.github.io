@@ -39,3 +39,13 @@ finale n'est qu'une formalité, et qu'elle n'est donc plus nécessaire.
 Le but d'un enseignement serait donc de rendre l'évaluation
 certificative irrelevante, de faire en sorte qu'elle ne soit plus
 pertinente, de la rendre impertinente.
+
+Edit (2024-02-19): The emoticons in my simple chart above use the
+number `8` for the eyes, rather than the standard `:` because the
+column has a specific meaning in
+[ditaa](https://github.com/stathissideris/ditaa), the cool
+mini-language used to generate the figure, and these special characters
+[can't easily be
+escaped](https://github.com/stathissideris/ditaa/issues/9). But I just
+learnt that I was 1 character away of calling students a
+[`8-E`](https://pc.net/emoticons/categories/characters).
