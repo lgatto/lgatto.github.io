@@ -227,6 +227,14 @@ Please do get in touch if you are interested in running workshops.
 
 ### Research articles
 
+Hauchamps P, Bayat B, Delandre S, Hamrouni M, Toussaint M, Temmerman
+S, Lin D, Gatto L *CytoPipeline and CytoPipelineGUI: a Bioconductor R
+package suite for building and visualizing automated pre-processing
+pipelines for flow cytometry data* BMC Bioinformatics 25, 80
+(2024). doi:[10.1186/s12859-024-05691-z](https://doi.org/10.1186/s12859-024-05691-z)
+(pre-print:
+[10.1101/2023.10.10.561699](https://doi.org/10.1101/2023.10.10.561699)).
+
 Lizcano-Perret B, Vertommen Didier, Herinckx G, Calabrese V, Gatto L,
 Roux P and Michiels T *Identification of RSK substrates using an
 analog-sensitive kinase approach* (2024)
@@ -249,12 +257,6 @@ Vertommen D and Gatto L *Standardised workflow for mass
 spectrometry-based single-cell proteomics data processing and analysis
 using the `scp` package* arXiv arXiv:2310.13598;
 doi:[10.48550/2310.13598](https://doi.org/10.48550/arXiv.2310.13598).
-
-Hauchamps P, Bayat B, Delandre S, Hamrouni M, Toussaint M, Temmerman
-S, Lin D, Gatto L *CytoPipeline & CytoPipelineGUI: An R package suite
-for building and visualizing automated pre-processing pipelines for
-flow cytometry data* bioRxiv 2023.10.10.561699;
-doi:[10.1101/2023.10.10.561699](https://doi.org/10.1101/2023.10.10.561699).
 
 Cloos AS, Pollet H, Stommen A, Maja M, Lingurski M, Brichard B,
 Lambert C, Henriet P, Pierreux C, Pyr Dit Ruys S, Van Der Smissen P,
