@@ -179,7 +179,10 @@ Institute on 6 December 2023.
   student working on single-cell assay bioinformatics. He did a
   masters in biomedical sciences at the UCLouvain and followed up with
   a masters in bioinformatics at the KULeuven before conducting his
-  PhD training in the lab funded by an FNRS fellowship.
+  PhD training in the lab funded by an FNRS fellowship. Chris then
+  enrolled as a postdoc at the UGent in the statOmics group (headed by
+  Lieven Clement) to develop statistical frameworks for the analysis
+  of single-cell proteomics data.
 
 - **Badr-Ali Mouaden** finished his engineering degree in 2023 and did
   his master's project under the co-supervision of Laurent Gatto,
