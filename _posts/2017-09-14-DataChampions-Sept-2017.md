@@ -1,6 +1,6 @@
 ---
 title: 'September data champions meeting '
-tags: ["peer review", "open science", "data champions", "talk"]
+tags: ["peer review", "open research", "data champions", "talk"]
 comments: true
 ---
 
@@ -22,7 +22,7 @@ So I'll start with a apology
 
 > I'm sorry for being a bad data champion.
 
-Why I am a bad data champion? 
+Why I am a bad data champion?
 
 My personal and limited experience indicates that my department isn't
 a place worth spending my time and energy in terms of good (and open)
@@ -111,7 +111,7 @@ The above implies that the review can be very quick
 
 > If no data/software are available, there can’t be any review.
 
-### Tips 
+### Tips
 
 (See [slides](https://rawgit.com/lgatto/2017-03-30-OSC-peerreview/master/slides.html) for
 details)
@@ -135,11 +135,11 @@ details)
 - Who would like to see this done systematically?
 - Who does this in their peer review activities?
 
-**The real question** however is 
+**The real question** however is
 
 > who applies these principles when they prepare data?
 
-### My *"ideal"* review system 
+### My *"ideal"* review system
 
 1. Submit your data to a repository, where it get's checked (by
    specialists, data scientists, data curators) for quality,

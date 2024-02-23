@@ -1,0 +1,1282 @@
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8">
+
+<!-- begin SEO -->
+
+
+
+
+
+
+
+
+
+<title>            How to Manage Data: Data Stewardship and FAIR Skills      ~/      </title>
+
+
+
+
+<meta name="description" content="In this interactive talk at the Hong Kong University of Science andTechnology Research Data Management Symposium2021,Laurent Gatto and Marta Teperek will join forces to offer someconcrete examples on improving research reproducibility andtransparency. Laurent will speak from his own perspective as aresearcher and will share some tips and tricks on how one can become abetter scientist by applying open and reproducible researchpractices. Marta will speak from the perspective of support staff andwill offer several examples of how institutions can partner withresearchers to help make research more reproducible and moretransparent.">
+
+
+
+
+<meta property="og:locale" content="en_GB">
+<meta property="og:site_name" content="~/">
+<meta property="og:title" content="How to Manage Data: Data Stewardship and FAIR Skills">
+
+
+  <link rel="canonical" href="https://lgatto.github.io/rdmhk/">
+  <meta property="og:url" content="https://lgatto.github.io/rdmhk/">
+
+
+
+  <meta property="og:description" content="In this interactive talk at the Hong Kong University of Science andTechnology Research Data Management Symposium2021,Laurent Gatto and Marta Teperek will join forces to offer someconcrete examples on improving research reproducibility andtransparency. Laurent will speak from his own perspective as aresearcher and will share some tips and tricks on how one can become abetter scientist by applying open and reproducible researchpractices. Marta will speak from the perspective of support staff andwill offer several examples of how institutions can partner withresearchers to help make research more reproducible and moretransparent.">
+
+
+
+
+
+  
+
+  
+
+
+
+
+
+  <meta property="og:type" content="article">
+  <meta property="article:published_time" content="2021-10-13T00:00:00+02:00">
+
+
+
+
+
+
+
+
+  <script type="application/ld+json">
+    {
+      "@context" : "http://schema.org",
+      "@type" : "Person",
+      "name" : "Laurent Gatto",
+      "url" : "https://lgatto.github.io",
+      "sameAs" : null
+    }
+  </script>
+
+
+
+
+
+
+<!-- end SEO -->
+
+
+<link href="https://lgatto.github.io/feed.xml" type="application/atom+xml" rel="alternate" title="~/ Feed">
+
+<!-- http://t.co/dKP3o1e -->
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="https://lgatto.github.io/assets/css/main.css">
+
+<meta http-equiv="cleartype" content="on">
+    <!-- start custom head snippets -->
+
+<!-- insert favicons. use http://realfavicongenerator.net/ -->
+
+<!-- end custom head snippets -->
+  </head>
+
+  <body class="layout--single">
+
+    <!--[if lt IE 9]>
+<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
+<![endif]-->
+    <div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        <button><div class="navicon"></div></button>
+        <ul class="visible-links">
+          <li class="masthead__menu-item masthead__menu-item--lg"><a href="https://lgatto.github.io/">~/</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="https://lgatto.github.io/about/">About</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="https://lgatto.github.io/year-archive/">Posts</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="https://lgatto.github.io/tags/">Tags</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="https://lgatto.github.io/cbio-lab/">Lab</a></li>
+          
+        </ul>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+    
+
+
+
+<div id="main" role="main">
+  
+  <div class="sidebar sticky">
+  
+
+<div itemscope itemtype="http://schema.org/Person">
+
+  
+    <div class="author__avatar">
+      
+        <img src="https://lgatto.github.io/images/lgatto2.jpg" class="author__avatar" alt="Laurent Gatto" itemprop="image">
+      
+    </div>
+  
+
+  <div class="author__content">
+    <h3 class="author__name" itemprop="name">Laurent Gatto</h3>
+    
+      <p class="author__bio" itemprop="description">
+        Open science, reproducible research, data champion, computational biology, proteomics, more omics, emacs, a lot of R, quite a bit of running, and parenting.
+      </p>
+    
+  </div>
+
+  <div class="author__urls-wrapper">
+    <button class="btn btn--inverse">Follow</button>
+    <ul class="author__urls social-icons">
+      
+
+      
+
+      
+
+      
+        <li>
+          <a href="https://keybase.io/lgatto" itemprop="sameAs">
+            <i class="fa fa-fw fa-key" aria-hidden="true"></i> Keybase
+          </a>
+        </li>
+      
+
+      
+
+      
+
+      
+
+      
+        <li>
+          <a href="https://www.linkedin.com/in/lgatto" itemprop="sameAs">
+            <i class="fa fa-fw fa-linkedin-square" aria-hidden="true"></i> LinkedIn
+          </a>
+        </li>
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+        <li>
+          <a href="https://github.com/lgatto" itemprop="sameAs">
+            <i class="fa fa-fw fa-github" aria-hidden="true"></i> GitHub
+          </a>
+        </li>
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      <!--
+  <li>
+    <a href="http://link-to-whatever-social-network.com/user/" itemprop="sameAs">
+      <i class="fa fa-fw" aria-hidden="true"></i> Custom Social Profile Link
+    </a>
+  </li>
+-->
+
+
+  <li>
+    <a href="http://dissem.in/r/6231/laurent-gatto" itemprop="sameAs">
+      <i class="fa fa-fw fa-pencil" aria-hidden="true"></i> dissem.in
+    </a>
+  </li>
+
+  <li>
+    <a href="https://orcid.org/0000-0002-1520-2268" itemprop="sameAs">
+      <i class="fa fa-fw fa-pencil" aria-hidden="true"></i> ORCID
+    </a>
+  </li>
+
+  <li>
+    <a href="https://scholar.google.co.uk/citations?user=k5DrB74AAAAJ&hl=en" itemprop="sameAs">
+      <i class="fa fa-fw fa-google" aria-hidden="true"></i> scholar
+    </a>
+  </li>
+
+  <li>
+    <a href="https://impactstory.org/u/0000-0002-1520-2268" itemprop="sameAs">
+      <i class="fa fa-fw fa-sun-o" aria-hidden="true"></i> Impactstory
+    </a>
+  </li>
+
+    </ul>
+  </div>
+</div>
+
+  
+  </div>
+
+
+  <article class="page" itemscope itemtype="http://schema.org/CreativeWork">
+    <meta itemprop="headline" content="How to Manage Data: Data Stewardship and FAIR Skills">
+    <meta itemprop="description" content="In this interactive talk at the Hong Kong University of Science andTechnology Research Data Management Symposium2021,Laurent Gatto and Marta Teperek will join forces to offer someconcrete examples on improving research reproducibility andtransparency. Laurent will speak from his own perspective as aresearcher and will share some tips and tricks on how one can become abetter scientist by applying open and reproducible researchpractices. Marta will speak from the perspective of support staff andwill offer several examples of how institutions can partner withresearchers to help make research more reproducible and moretransparent.">
+    <meta itemprop="datePublished" content="October 13, 2021">
+    
+
+    <div class="page__inner-wrap">
+      
+        <header>
+          <h1 class="page__title" itemprop="headline">How to Manage Data: Data Stewardship and FAIR Skills
+</h1>
+          
+            <p class="page__meta"><i class="fa fa-clock-o" aria-hidden="true"></i> 
+
+
+
+
+  18 minute read
+</p>
+          
+        </header>
+      
+
+      <section class="page__content" itemprop="text">
+        <p>In this interactive talk at the Hong Kong University of Science and
+Technology <a href="https://library.ust.hk/events/conferences/rdm-symposium-2021/">Research Data Management Symposium
+2021</a>,
+<strong>Laurent Gatto</strong> and <strong>Marta Teperek</strong> will join forces to offer some
+concrete examples on improving research reproducibility and
+transparency. Laurent will speak from his own perspective as a
+researcher and will share some tips and tricks on how one can become a
+better scientist by applying open and reproducible research
+practices. Marta will speak from the perspective of support staff and
+will offer several examples of how institutions can partner with
+researchers to help make research more reproducible and more
+transparent.</p>
+
+<p>In our talk we will cover aspects such as people support, policies,
+training, rewards and community building. The common theme will be
+collaboration and partnership between researchers and support staff.</p>
+
+<p>We promise a lot of concrete examples and interaction, and plenty of
+time for questions!</p>
+
+<p>The slides are available here at
+<a href="https://bit.ly/202110RDM">bit.ly/202110RDM</a>.</p>
+
+<aside class="sidebar__right">
+<nav class="toc">
+    <header><h4 class="nav__title"><i class="fa fa-file-text"></i> On This Page</h4></header>
+<ul class="toc__menu" id="markdown-toc">
+  <li><a href="#what-its-really-about" id="markdown-toc-what-its-really-about">What it’s really about</a></li>
+  <li><a href="#whos-here" id="markdown-toc-whos-here">Who’s here?</a></li>
+  <li><a href="#how-it-all-started" id="markdown-toc-how-it-all-started">How it all started</a></li>
+  <li><a href="#what-is-open-reproducible-and-good-science" id="markdown-toc-what-is-open-reproducible-and-good-science">What is ‘Open’, ‘Reproducible’ and ‘Good’ science?</a>    <ul>
+      <li><a href="#laurent" id="markdown-toc-laurent">Laurent</a></li>
+    </ul>
+  </li>
+  <li><a href="#people-support" id="markdown-toc-people-support">People support</a>    <ul>
+      <li><a href="#laurent-1" id="markdown-toc-laurent-1">Laurent</a></li>
+      <li><a href="#marta" id="markdown-toc-marta">Marta</a></li>
+    </ul>
+  </li>
+  <li><a href="#practice-and-policy" id="markdown-toc-practice-and-policy">Practice and policy</a>    <ul>
+      <li><a href="#laurent-2" id="markdown-toc-laurent-2">Laurent</a></li>
+      <li><a href="#marta-1" id="markdown-toc-marta-1">Marta</a></li>
+    </ul>
+  </li>
+  <li><a href="#training" id="markdown-toc-training">Training</a>    <ul>
+      <li><a href="#laurent-3" id="markdown-toc-laurent-3">Laurent</a></li>
+      <li><a href="#marta-2" id="markdown-toc-marta-2">Marta</a></li>
+    </ul>
+  </li>
+  <li><a href="#rewards" id="markdown-toc-rewards">Rewards</a>    <ul>
+      <li><a href="#laurent-4" id="markdown-toc-laurent-4">Laurent</a></li>
+      <li><a href="#marta-3" id="markdown-toc-marta-3">Marta</a></li>
+    </ul>
+  </li>
+  <li><a href="#community" id="markdown-toc-community">Community</a>    <ul>
+      <li><a href="#laurent-5" id="markdown-toc-laurent-5">Laurent</a></li>
+      <li><a href="#marta-4" id="markdown-toc-marta-4">Marta</a></li>
+    </ul>
+  </li>
+  <li><a href="#credits" id="markdown-toc-credits">Credits</a></li>
+</ul>
+
+  </nav>
+</aside>
+
+<h2 id="what-its-really-about">What it’s really about</h2>
+
+<p>The actual title of this talk comes in two parts:</p>
+
+<blockquote>
+  <p><strong>Becoming a better scientist with open and reproducible research
+and supporting the scientist on this journey.</strong></p>
+</blockquote>
+
+<p>and</p>
+
+<blockquote>
+  <p><strong>Or… the importance of collaboration between researchers and
+support staff for sustainable open and reproducible research
+practices.</strong></p>
+</blockquote>
+
+<p>The goal is to have a joint seminar, is to mix some of Laurent’s
+experiences as an open researcher/teacher and Marta’s experience from
+TU Delft in providing the support to help researchers achieve these
+goals. We hope that by doing this we would appeal to both researchers
+and to support staff in the audience:</p>
+
+<ul>
+  <li>Researchers will get some tangible examples from Laurent’s
+experience.</li>
+  <li>Support staff can see how to best support researchers with making
+their research more Findable, Accessible, Interoperable and
+Re-usable (FAIR).</li>
+</ul>
+
+<p>Parts of this post are based on previous Laurent’s notes/talks from
+talks on Becoming a better scientist with open and reproducible
+research from <a href="https://lgatto.github.io/rr-publ/">May 2019</a> and <a href="https://lgatto.github.io/open-and-rr-2/">Dec
+2020</a>.</p>
+
+<h2 id="whos-here">Who’s here?</h2>
+
+<p><strong>Speakers</strong>: we are Dr Marta Teperek (Head of Research Data Services
+at TU Delft Library and Director of 4TU.ResearchData, The Netherlands)
+and Prof Laurent Gatto (Computational Biology and Bioinformatics Unit,
+de Duve Institute, UCLouvain, Belgium)</p>
+
+<p><strong>Audience</strong>: a week or so before the seminar, we had 158 registered
+attendees. Out of which 114 are research postgraduate students, 26 are
+HKUST staff/faculty, and 9 are guest participants (librarians from
+other HK universities).  The break-down of HKUST participants’ school
+affiliations gives: Science: 48 (32%), Business: 13 (9%), Admin
+offices (library, research office): 12 (8%), Humanities and Social
+Sciences: 19 (12%) and Engineering: 59 (39%).</p>
+
+<h2 id="how-it-all-started">How it all started</h2>
+
+<blockquote>
+  <p>From 2010 in Cambridge to 2021 in Hong Kong (virtually).</p>
+</blockquote>
+
+<p>In 2010 Laurent was doing his postdoc in the Department of
+Biochemistry at the University of Cambridge. At the same time, Marta
+was doing her PhD at the Gurdon Institute, also in Cambridge. We were
+literally next door neighbours, worked on similar types of research
+(in fact Marta even collaborated with Laurent’s group on some
+proteomics analysis) and yet we have only met each other properly in
+2016 when our shared passion for open and reproducible research
+practice allowed us to connect in context of the Data Champions
+initiative. Laurent was then a Data Champion, and Marta part of the
+Research Data Services at Cambridge.</p>
+
+<p><img src="/images/start-cam.png" alt="Cambridge, 2010" /></p>
+
+<h2 id="what-is-open-reproducible-and-good-science">What is ‘Open’, ‘Reproducible’ and ‘Good’ science?</h2>
+
+<ul>
+  <li><strong>Poll</strong>: Do you practice open and/or reproducible research?</li>
+</ul>
+
+<p><img src="/images/rdmhk-wooclap1.png" alt="Do you practice open and/or reproducible research?" /></p>
+
+<ul>
+  <li><strong>Wordcloud</strong>: Ask for a couple of words describing how participants
+see open/reproducible research and create a word cloud?</li>
+</ul>
+
+<p><img src="/images/rdmhk-wooclap2.png" alt="Describe open/reproducible research?" /></p>
+
+<h3 id="laurent">Laurent</h3>
+
+<p>We can start with a definition:</p>
+
+<blockquote>
+  <p>Open science/research is the process of transparent dissemination
+and access to knowledge, that can be applied to various scientific
+practices: open data, open source, open access, …</p>
+</blockquote>
+
+<p>and</p>
+
+<blockquote>
+  <p>Reproducible research: there exist several levels, of increasing
+difficulty, that describe the action of using external
+data/software/material/informations to attempt to observe the same
+or comparable results. Formally, we <a href="https://lgatto.github.io/rr-what-should-be-our-goals/">repeat, reproduce, replicate or
+re-use</a>
+depending on how much of the original material we have access to.</p>
+</blockquote>
+
+<p>What I dislike about the previous open science/research definition is
+that it can give the misleading impression that open research is about
+collecting badges, and that the more badges you possess, the better an
+open researcher you are. And reciprocally, not having any badge to
+display excludes one from being an open researcher. And as soon as
+people start to believe this, we will stop practicing open research
+and will start doing stamp collection.</p>
+
+<p>Also, Open science/research can mean different things to different
+people, in particular when declined along its many technical,
+administrative, legal and philosophical attributes.</p>
+
+<p>An important word above is <strong>excludes</strong>: as thriving open researchers,
+we need to understand that it isn’t only the distance towards
+better/open research that we have travelled that is relevant, but that
+the starting point matters a lot. The way somebody practices open
+research, whether that person has the possibility to implement this or
+that open (and reproducible) research practice, or whether they can be
+vocal about it mostly depends on their environment and the support or
+push back they get.</p>
+
+<p>Embrace open and reproducible research to the extent you want and you
+can. Seek allies and support around you, but do not feel pressured. It
+isn’t open or closed. It is certainly not the same open or close for
+everybody.</p>
+
+<p>So my very first take-home messages are:</p>
+
+<blockquote>
+  <p>Open and reproducible aren’t binary, they are gradients,
+multidisciplinary and multidimensional.</p>
+</blockquote>
+
+<p>How to be an open scientist and implement RR:</p>
+
+<blockquote>
+  <p>Let’s be open and understanding of different situations and
+constraints, including our own.</p>
+</blockquote>
+
+<p>And also:</p>
+
+<blockquote>
+  <p>Open != reproducible</p>
+</blockquote>
+
+<blockquote>
+  <p>Open != good (by default)</p>
+</blockquote>
+
+<blockquote>
+  <p>Reproducible != good (by default)</p>
+</blockquote>
+
+<p>Open research and reproducible research aren’t the same thing, and one
+doesn’t imply the other. Even though in our modern understanding of
+these terms and concepts, they are intimately linked, historically,
+they are very different. And research being open or reproducible
+doesn’t make it good (whatever the definition of good).</p>
+
+<p>But open and reproducible research are <strong>supported by good data
+management</strong> (the topic of this talk/post) and lead to <strong>trust,
+verification and guarantees</strong>:</p>
+
+<ul>
+  <li>Trust in Reporting - result is accurately reported</li>
+  <li>Trust in Implementation - analysis code successfully implements
+chosen methods</li>
+  <li>Statistical Trust - data and methods are (still) appropriate</li>
+  <li>Scientific Trust - result convincingly supports claim(s) about
+underlying systems or truths</li>
+</ul>
+
+<p>which are a hallmark of good research.</p>
+
+<p>From Gabriel Becker <a href="https://gmbecker.github.io/MayInstituteKeynote2019/outline.html">An Imperfect Guide to Imperfect
+Reproducibility</a>,
+May Institute for Computational Proteomics, 2019.</p>
+
+<h2 id="people-support">People support</h2>
+
+<h3 id="laurent-1">Laurent</h3>
+
+<p>Working openly and reproducibly is paramount for my own and my close
+collaborators/students’ benefit. Hence, it was natural for me, when
+starting my research group, to center the lab’s activities around the
+<strong>principles of good data management</strong> to enable open and reproducible
+research that you can trust.</p>
+
+<p>This is reflected in the CBIO <a href="https://lgatto.github.io/cbio-lab/">lab
+statement</a>:</p>
+
+<blockquote>
+  <p>Open Science and Reproducible Research We are committed to the open,
+transparent and rigorous practice of scientific enquiry. In
+particular, we make every possible effort to make our research
+repeatable, reproducible and replicable, in the hope that it can be
+re-used and improved upon by as many as possible. Concomitantly, we
+release all our software and data under open permissible
+licences. Finally, we will also ensure that our research (such as,
+but not limited to journals articles, presentations, and book
+chapters) is published under open access licences to allow everybody
+to freely read, re-use and mine it.</p>
+</blockquote>
+
+<h3 id="marta">Marta</h3>
+
+<p>To a lot of researchers the effort, but also the skills needed to
+effectively manage their research data and software might be
+insurmountable barriers. And the truth is that we should not be
+expecting researchers to be excellent at everything: doing research,
+applying for grants, managing people, writing papers, teaching,
+managing research data and software. <a href="https://issues.org/say-goodbye-hero-model-science-elkins-tanton-kavli/">Science should be more about
+teamwork, not about heroic efforts of
+individuals</a>. And
+working as a team and bringing different types of expertise together,
+teams can be much more efficient at answering the big and challenging
+questions. So researchers need to be supported by skilled
+professionals.</p>
+
+<p>At TU Delft we have two main groups of colleagues who provide
+researchers with dedicated support for data and software management:</p>
+
+<ul>
+  <li>
+    <p><strong>Data stewards</strong> - at TU Delft we have one data steward at every
+faculty. Each faculty specialises in its own area of research and
+data steward provide expert advice in this research area. They are
+not only the go to people for researchers who need support with data
+management, but they also advise the faculties on policies, provide
+training and raise awareness about data management and reproducible
+research within the research community.</p>
+  </li>
+  <li>
+    <p><strong>Digital Competence Centre Support team</strong> - this team consists of a
+central pool of data managers and research software
+engineers. Members of this team provide hands-on support to research
+groups. They teach researchers skills necessary to make their data
+and software Findable, Accessible, Interoperable and Reusable (FAIR)
+by working with them on their data and software. They help
+researchers create effective data management pipelines, make
+datasets more interoperable, introduce entire teams to version
+control for data and code, improve the quality and sustainability of
+their research software. Researchers apply to receive their support
+and if such applications are granted (competitive process), team
+members join their research groups for up to 2 days per week and up
+to 6 months.</p>
+  </li>
+</ul>
+
+<p>All of these colleagues have research experience and most have a PhD
+degree.</p>
+
+<p>And dedicated people are also essential to support infrastructure - to
+be the human side of it. At TU Delft we also make use of
+<a href="https://data.4tu.nl/info/en/">4TU.ResearchData</a>, which is a data and
+code repository shared between four technical universities in the
+Netherlands. It provides all the state-of-the-art functionalities,
+such as DOIs for data, long-term preservation, versioning, Git
+integration, but what makes the biggest difference to the researchers
+is the dedicated support of our data curators.</p>
+
+<h2 id="practice-and-policy">Practice and policy</h2>
+
+<ul>
+  <li><strong>Poll</strong>: Does your institution have policies in place on data management?</li>
+</ul>
+
+<p><img src="/images/rdmhk-wooclap3.png" alt="Does your institution have policies in place on data management?" /></p>
+
+<h3 id="laurent-2">Laurent</h3>
+
+<p>Here’s an example of practice from my research:</p>
+
+<p><img src="/images/rr-delft-qsep.png" alt="qsep screenshots" /></p>
+
+<p>From left to right, we have an example of practice of open and reproducible research:</p>
+
+<ul>
+  <li>A <a href="https://github.com/lgatto/QSep-manuscript">reproducible
+document</a>, produced with
+<a href="http://bioconductor.org/packages/release/bioc/html/pRoloc.html">open source
+software</a>
+and <a href="http://bioconductor.org/packages/release/data/experiment/html/pRolocdata.html">curated
+data</a>,</li>
+  <li>a <a href="https://doi.org/10.1101/377630">preprint</a> and</li>
+  <li>a <a href="https://doi.org/10.1016/j.cbpa.2018.11.015">peer reviewer paper</a>.</li>
+</ul>
+
+<p>But one might ask: does it take more time to work reproducibly?</p>
+
+<p><strong>No</strong>, it is a matter of relocating time!</p>
+
+<p><img src="/images/reproducibiity_relocates_time.png" alt="Reproducibility relocates time" /></p>
+
+<p>From <a href="https://osf.io/2jt9u/">Five things about open and reproducible science that every early
+career researcher should know</a>.</p>
+
+<p>From personal experience, I can say that policies aren’t the main
+motivation to practice good data management. It is important for data
+management to be an <strong>intrinsic motivation</strong>, which can (or should)
+easily be triggered by the desire to produce <strong>trusted
+research</strong>.</p>
+
+<p>Local action at a lab’s level and/or at the initiative of one or a few
+motivated researchers (early career researchers and faculty) is
+possible, easy and efficient. However, it is extremely difficult to
+expand outside of one’s direct environment. For this, policies are
+important.</p>
+
+<h3 id="marta-1">Marta</h3>
+
+<p>If policies are introduced top-down and just for the sake of having
+them in place (compliance reasons or ways for research institutions to
+demonstrate they care about the good practice), there is indeed a high
+risk that they would turn into a box-ticking exercise. Or worse, they
+turn into meaningless documents with the majority of people they are
+supposed to apply to, not even aware they exist.</p>
+
+<p>On the other hand, if policies are introduced through consultations
+with the community and if they go hand-in-hand with practice, they can
+become powerful tools for driving cultural change more widely, at the
+institutional level. At TU Delft we have a separate <a href="https://www.tudelft.nl/en/library/research-data-management/r/policies/tu-delft-faculty-policies">set of policies
+(!) for research data management and a recently introduced policy and
+guidelines for research
+software</a>.</p>
+
+<p>Our data policy consists of a framework policy which sets out the
+basic roles and responsibilities for everyone at TU Delft: from every
+researcher, through deans, support staff, and all the way to the
+rectorate. Faculties developed their own data policies, based on the
+framework policy, where they provide disciplinary specific
+interpretations of the framework.</p>
+
+<p>It took years of consultations with all the stakeholders at TU Delft
+to arrive at a policy text with which everyone was happy with, as well
+as with concrete roles and responsibilities. Interestingly,
+researchers were sometimes the main drivers for strict policies. For
+example, some of the professors were really concerned about PhD
+students leaving TU Delft with all the data, or leaving messy data
+behind. Hence, they were very keen on introducing a data management
+plan as a compulsory deliverable for PhD students during their first
+year Viva (go/no go assessment) and also to ensure that they upload
+their data to a repository before graduation.</p>
+
+<p>These two actions are drivers to better data management. Since the
+introduction of the policy we have seen huge demand for training on
+data management, but also keep hearing from PhD students who say that
+they managed to introduce their supervisors and sometimes their entire
+research teams to better data management practices.</p>
+
+<p>Another example is <a href="https://doi.org/10.5281/zenodo.4629662">TU Delft’s Research Software
+Policy</a>. That’s another policy
+which took years to develop and implement and one which was driven by
+a researcher who was fed up with TU Delft’s copyright stance. TU
+Delft’s official stance on copyright, probably the same as of most
+research institutions, was largely that TU Delft owns copyright on
+software produced by TU Delft researchers, and if researchers wished
+to publish software, they needed to ask TU Delft for a written
+permission through filing an invention disclosure form. A lot of
+unnecessary bureaucracy, frustrating for everyone.</p>
+
+<p>Under the new software policy, researchers who wish to publish their
+research software under open licences, are automatically allowed to do
+so and TU Delft transfers copyright to them. This not only hugely
+reduces the administrative burden on everyone, but also promotes open
+source software practices across the entire institution.</p>
+
+<h2 id="training">Training</h2>
+
+<ul>
+  <li><strong>Poll</strong>: have you had any dedicated training on data management and
+reproducible research?</li>
+</ul>
+
+<p><img src="/images/rdmhk-wooclap4.png" alt="Have you had any dedicated training on data management?" /></p>
+
+<h3 id="laurent-3">Laurent</h3>
+
+<p>I started as a Carpentries instructor and now apply these lessons and
+best practices in my university courses (bachelor and masters in
+biomedical sciences (for example <a href="http://bit.ly/WSBIM1207">here</a>,
+<a href="http://bit.ly/WSBIM1322">here</a> and <a href="(http://bit.ly/WSBIM2122)">here</a>)
+and teaching these in workshops for graduate students and ECR.</p>
+
+<p>Teaching data management, open and reproducible research principles
+when running a lab is ideal to host students that are well trained in
+RDM and RR are readily up to speed to start their research.</p>
+
+<h3 id="marta-2">Marta</h3>
+
+<p>I wholeheartedly believe that it is essential that adequate training
+is available to support researchers in managing their data and
+software. While researchers should not need to do everything on their
+own (there is also the need for people support), having a solid
+background in data management and software management skills is often
+essential to properly benefit from such support and to make sure it
+leads to long-term benefits by becoming embedded in the researchers’
+workflows and practices.</p>
+
+<p>At TU Delft our Data Managers and Research Software Engineers
+regularly receive requests for hands-on support. But often for these
+technical experts to even get started, it is essential to establish a
+common understanding with the research team about what needs to be
+done and how to do it best. For this to happen, they need to speak the
+same language. Solid software and data management skills are essential
+to do efficient and effective research and to save a lot of time and
+money.</p>
+
+<p>As nicely articulated in the recent <a href="https://doi.org/10.1787/e08aa3bb-en">OECD report <em>Building Digital
+Workforce Capacity and Skills for Data-intensive
+Science</em></a>:</p>
+
+<blockquote>
+  <p>Academic libraries (…) are a natural focus for digital skills
+support and capacity building (…). [They] train others in data and
+software practices, particularly in relation to foundational skills
+and data stewardship.(…)…Libraries can be an important resource
+for universities to increase their digital workforce capacities,
+provided that the necessary investment is made.</p>
+</blockquote>
+
+<p>At TU Delft we have developed a shared vision on what kind of data and
+software management training should be provided to our
+researchers. The <a href="https://doi.org/10.5281/zenodo.3516874">vision was published in
+2019</a>. Since then we have been
+working hard to implement this vision. Feedback we have been receiving
+on our courses has been really good and emphasised the need for
+training. However, we have already hit a capacity gap. Our supply for
+training is unable to meet the demand. So, as the OECD report stated,
+investment is necessary.</p>
+
+<p>But as Laurent said, the Carpentries are an excellent example of where
+collaboration between support staff and researchers is essential. To
+deliver the Carpentries, the Library provides the framework, pays for
+the membership, organises instructor training and coordinates the
+organisations. The courses themselves are delivered by a community of
+instructors, consisting of data stewards and researchers. Software
+Carpentry workshops are typically discipline-agnostic, but to delivery
+discipline-specific data carpentries, such as the Genomic Data
+Carpentry or Data Carpentry for Social Sciences, it is essential to
+partner with researchers who work on these types of data.</p>
+
+<h2 id="rewards">Rewards</h2>
+
+<ul>
+  <li><strong>Wordcloud</strong>: What would motivate you towards being more open/RR?
+More citations, better chances of getting hired, …</li>
+</ul>
+
+<p><img src="/images/rdmhk-wooclap5.png" alt="What would motivate you towards being more open/RR?" /></p>
+
+<h3 id="laurent-4">Laurent</h3>
+
+<p><strong>Benefits for your academic career</strong>: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4973366/">How open science helps
+researchers
+succeed</a> and
+more examples from the <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4973366/">Open as a career
+boost</a>
+paragraph:</p>
+
+<ul>
+  <li>Open access articles get more citations.</li>
+  <li>Open publications get more media coverage.</li>
+  <li>Data availability is associated with citation benefit.</li>
+  <li>Openly available software is more likely to be used. (I don’t have
+any reference for this, and there are of course many
+couterexamples).</li>
+  <li>Benefit from institutional support of open research practices</li>
+</ul>
+
+<p><strong>Networking opportunities</strong> (this talk here today)</p>
+
+<p>See also <a href="http://whyopenresearch.org/index">Why Open Research</a></p>
+
+<ul>
+  <li>Increase your visibility: Build a name for yourself. Share your work
+and make it more visible.</li>
+  <li>Reduce publishing costs: Open publishing can cost the same or less
+than traditional publishing.</li>
+  <li>Take back control: Know your rights. Keep your rights. Decide how
+your work is used</li>
+  <li>Publish where you want: Publish in the journal of your choice and
+archive an open copy. (See The cost of knowledge boycott of
+Elsevier).</li>
+  <li>Get more funding: Meet funder requirements, and qualify for special
+funds such as the Wellcome Trust Open Research Fund.</li>
+  <li>Get that promotion: Open research is increasingly recognised in
+promotion and tenure. See also Reproducibility and open science are
+starting to matter in tenure and promotion July 14th, 2017, Brian
+Nosek) and the EU’s Evaluation of Research Careers fully
+acknowledging Open Science Practice defines an Open Science Career
+Assessment Matrix (OS-CAM).</li>
+</ul>
+
+<p><strong>And of course the <a href="https://doi.org/10.1186/s13059-015-0850-7">Five selfish reasons to work
+reproducibly!</a>.</strong></p>
+
+<h3 id="marta-3">Marta</h3>
+
+<p>There are also changes happening in the reward and recognition of
+researchers at institutional, national and international
+levels. Internationally, DORA has been the agent of change. There
+seems to be the moment growing recognising that publications and
+impact factors aren’t suitable indicators of research quality or
+impact and that publication pressure can have serious adverse
+effects. More and more organisations want to discourage the use of
+impact factors in research evaluation. <a href="https://doi.org/10.1038/d41586-021-02145-x">DORA will develop a dashboard
+tracking hiring and promotion criteria across the
+institutions</a>. Funders are
+also taking important steps forward. For example, the Wellcome Trust
+in the UK has been awarding dedicated <a href="https://wellcome.org/grant-funding/schemes/open-research-fund">funds for Open Research since
+2018</a>.
+NWO, the main Dutch science funder not only has been awarding funding
+to open science and reproducible research, but also introduced
+‘narrative CVs’ for researchers who apply for grants. Institutions
+also become increasingly pro-active at recognising that change in
+recognition and rewards is necessary.</p>
+
+<p>But in my opinion the most important changes are the ones done by
+individuals. Everyone matters, everyone can contribute to making a
+difference. When I think about the work that Laurent does… he now has
+two Master students in his lab who got inspired by his practice and
+wanted to do projects with him. We can all lead by example and should
+continue doing this.</p>
+
+<p>Here we should also remember that recognition also means recognising
+the crucial work of support staff, who are often important drivers for
+Open Science and Reproducible Research practice. The work of data
+managers, data stewards, research software engineers, community
+managers, librarians is sometimes not visible, but it is essential and
+should be recognised as such. Here we would also like to thank the
+organisers for bringing us all together today and facilitating today’s
+discussion on open and reproducible research practices.</p>
+
+<h2 id="community">Community</h2>
+
+<p>Community, peer support and meeting great people. Open not only as in
+sharing, but as inclusive and welcoming. ♥</p>
+
+<h3 id="laurent-5">Laurent</h3>
+
+<p>There is</p>
+
+<blockquote>
+  <p>Open Science as in widely disseminated and openly accessible</p>
+</blockquote>
+
+<p>and</p>
+
+<blockquote>
+  <p>Open Science as in inclusive and welcoming</p>
+</blockquote>
+
+<p>Citing <a href="https://twitter.com/CameronNeylon/status/895546085468495873">Cameron
+Neylon</a>:</p>
+
+<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">The primary value proposition of <a href="https://twitter.com/hashtag/openscience?src=hash">#openscience</a>
+is that diverse contributions allow better critique, refinement, and
+application 3/n</p>&mdash; CⓐmeronNeylon (@CameronNeylon) <a href="https://twitter.com/CameronNeylon/status/895546764861853696">August
+10, 2017</a></blockquote>
+<script async="" src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+<p>And since 2010, Marta and Laurent still work together :-)</p>
+
+<h3 id="marta-4">Marta</h3>
+
+<p>I fully agree with Laurent about the impact and importance of
+communities. In many universities there are now Data Champions, Data
+Ambassadors, Open Science or Open Research Communities… So join one if
+you have one! And if you don’t have one, no problem. These communities
+are bottom up. This means you can simply start from meeting for a
+coffee with a like-minded colleague or two. That’s how Laurent and
+colleagues have started the OpenConCambridge back then. Entirely
+bottom-up. You don’t need to wait for someone else to get started. Any
+opportunity to connect with like-minded individuals sharing your
+thoughts and curiosity about open science and reproducible working
+practices is a great opportunity. And who knows, maybe this webinar
+will be your chance to get started?</p>
+
+<p>And to give you some concrete benefit… The journey that Laurent and I
+had together started in 2010. Now, in 2021, virtually in Honk-Kong we
+are still friends and we now we will always support one another and
+can rely on each other. Also when preparing this seminar.</p>
+
+<h2 id="credits">Credits</h2>
+
+<p><strong>Laurent</strong>: One of my advice was to <strong>make allies</strong>. I have been lucky to meet
+wonderful allies and inspiring friends along the path towards open and
+reproducible research that works for me. Among these, I would like to
+highlight <a href="https://twitter.com/LoganCorina">Corina Logan</a>, <a href="https://twitter.com/StephenEglen">Stephen
+Eglen</a>, <a href="https://twitter.com/martateperek">Marta
+Teperek</a>, <a href="https://twitter.com/kirstie_j">Kirstie
+Whitaker</a>, <a href="https://twitter.com/chartgerink">Chris
+Hartgenink</a>, <a href="https://twitter.com/npscience">Naomie
+Penfold</a>, <a href="https://twitter.com/yvonnenobis">Yvonne
+Nobis</a>.</p>
+
+<p><strong>Marta</strong>: Would like to give credit to numerous colleagues from TU
+Delft and beyond who were the driving force behind all the work
+described in this post, and in particular: Alastair Dunning, Anke
+Versteeg, Connie Clare, Data Stewards (Diana Popa, Esther Plomp,
+Heather Andrews, Jasper van Dijk, Jeff Love, Kees den Heijer, Nicolas
+Dintzner, Robert Eggermont, Santosh Ilamparuthi, Shalini Kurapati, Yan
+Wang, Yasemin Turkyilmaz-van der Velden), Digital Competence Centre
+Support Team (Amir Fard, Ashley Cryan, Jose Urra, Julie Beardsell,
+Manuel Garcia, Mark Schenk, Maurits Kok, Meta Keijzer-de Ruijter,
+Niket Agrawal, Susan Branchett), Eirini Zormpa, Emmy Tsang, Irene
+Haslinger, Karel Luyben, Maria Cruz, Paula Martinez Lavanchy.</p>
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+  
+
+
+  
+  
+  
+
+  <p class="page__taxonomy">
+    <strong><i class="fa fa-fw fa-tags" aria-hidden="true"></i> Tags: </strong>
+    <span itemprop="keywords">
+    
+      
+      
+      <a href="https://lgatto.github.io/tags/#data-management" class="page__taxonomy-item" rel="tag">data management</a><span class="sep">, </span>
+    
+      
+      
+      <a href="https://lgatto.github.io/tags/#open-research" class="page__taxonomy-item" rel="tag">open research</a><span class="sep">, </span>
+    
+      
+      
+      <a href="https://lgatto.github.io/tags/#reproducible-research" class="page__taxonomy-item" rel="tag">reproducible research</a><span class="sep">, </span>
+    
+      
+      
+      <a href="https://lgatto.github.io/tags/#talks" class="page__taxonomy-item" rel="tag">talks</a>
+    
+    </span>
+  </p>
+
+
+
+
+        
+          <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> Updated:</strong> <time datetime="2021-10-13T00:00:00+02:00">October 13, 2021</time></p>
+        
+      </footer>
+
+      <section class="page__share">
+  
+    <h4 class="page__share-title">Share on</h4>
+  
+
+  <a href="https://twitter.com/intent/tweet?text=How to Manage Data: Data Stewardship and FAIR Skills https://lgatto.github.io/rdmhk/" class="btn btn--twitter" title="Share on Twitter"><i class="fa fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
+
+  <a href="https://www.facebook.com/sharer/sharer.php?u=https://lgatto.github.io/rdmhk/" class="btn btn--facebook" title="Share on Facebook"><i class="fa fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
+
+  <a href="https://plus.google.com/share?url=https://lgatto.github.io/rdmhk/" class="btn btn--google-plus" title="Share on Google Plus"><i class="fa fa-fw fa-google-plus" aria-hidden="true"></i><span> Google+</span></a>
+
+  <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://lgatto.github.io/rdmhk/" class="btn btn--linkedin" title="Share on LinkedIn"><i class="fa fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
+</section>
+
+
+      
+  <nav class="pagination">
+    
+      <a href="https://lgatto.github.io/exam-qst/" class="pagination--pager" title="How to succeed in my exam
+">Previous</a>
+    
+    
+      <a href="https://lgatto.github.io/annotchrom/" class="pagination--pager" title="New feature: annotated chromatograms
+">Next</a>
+    
+  </nav>
+
+    </div>
+
+    
+      <div class="page__comments">
+  
+  
+    <h4 class="page__comments-title">Leave a Comment</h4>
+    <section id="disqus_thread"></section>
+  
+</div>
+    
+  </article>
+
+  
+  
+    <div class="page__related">
+      
+        <h4 class="page__related-title">You May Also Enjoy</h4>
+      
+      <div class="grid__wrapper">
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+    
+      <div class="archive__item-teaser">
+        <img src=
+          
+            "https://lgatto.github.io/assets/images/slide-code.png"
+          
+          alt="">
+      </div>
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="https://lgatto.github.io/the-grid-in-r/" rel="permalink">The Grid poster, in R
+</a>
+      
+    </h2>
+    
+      <p class="page__meta"><i class="fa fa-clock-o" aria-hidden="true"></i> 
+
+
+
+
+  3 minute read
+</p>
+    
+    <p class="archive__item-excerpt" itemprop="description">The MuseeL is the
+UCLouvain University museum in
+Louvain-la-Neuve. Highly recommended. It’s located to the lively
+place des sciences, in a nice brutalist sty...</p>
+  </article>
+</div>
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+    
+      <div class="archive__item-teaser">
+        <img src=
+          
+            "https://lgatto.github.io/assets/images/slide-code.png"
+          
+          alt="">
+      </div>
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="https://lgatto.github.io/podcast-eval/" rel="permalink">Podcasts du LLL: repensons l’évaluation
+</a>
+      
+    </h2>
+    
+      <p class="page__meta"><i class="fa fa-clock-o" aria-hidden="true"></i> 
+
+
+
+
+  1 minute read
+</p>
+    
+    <p class="archive__item-excerpt" itemprop="description">Une fois n’est pas coutume, un billet en français, pour attirer votre
+attention sur les podcasts du LLL. Le LLL, ou Louvain Learning
+Lab accompagne
+tous les ...</p>
+  </article>
+</div>
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+    
+      <div class="archive__item-teaser">
+        <img src=
+          
+            "https://lgatto.github.io/assets/images/slide-code.png"
+          
+          alt="">
+      </div>
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="https://lgatto.github.io/zulip/" rel="permalink">CBIO’s internal communication goes open source
+</a>
+      
+    </h2>
+    
+      <p class="page__meta"><i class="fa fa-clock-o" aria-hidden="true"></i> 
+
+
+
+
+  1 minute read
+</p>
+    
+    <p class="archive__item-excerpt" itemprop="description">I have been using slack for a rather long time as a discussion
+platform for the lab, even before moving to Belgium. Based on the
+access log, I set up the lab...</p>
+  </article>
+</div>
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+    
+      <div class="archive__item-teaser">
+        <img src=
+          
+            "https://lgatto.github.io/assets/images/slide-code.png"
+          
+          alt="">
+      </div>
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="https://lgatto.github.io/EuroBioc-Ghent/" rel="permalink">CBIO’s EuroBioc2023 posters and talks
+</a>
+      
+    </h2>
+    
+      <p class="page__meta"><i class="fa fa-clock-o" aria-hidden="true"></i> 
+
+
+
+
+  13 minute read
+</p>
+    
+    <p class="archive__item-excerpt" itemprop="description">Long overdue now, but here are the CBIO
+lab’s contributions to the
+EuroBioc2023 conference that
+was organised on Ghent, on the 20 - 22 September 2023.
+
+</p>
+  </article>
+</div>
+        
+      </div>
+    </div>
+  
+</div>
+
+    <div class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+
+<!-- end custom footer snippets -->
+        <div class="page__footer-follow">
+  <ul class="social-icons">
+    
+      <li><strong>Follow:</strong></li>
+    
+    
+    
+    
+      <li><a href="http://github.com/lgatto"><i class="fa fa-fw fa-github" aria-hidden="true"></i> GitHub</a></li>
+    
+    
+    <li><a href="https://lgatto.github.io/feed.xml"><i class="fa fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
+  </ul>
+</div>
+
+<div class="page__footer-copyright">&copy; 2024 Laurent Gatto CC-BY. Powered by <a href="http://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+
+      </footer>
+    </div>
+
+    <script src="https://lgatto.github.io/assets/js/main.min.js"></script>
+
+
+
+
+
+  
+  <script type="text/javascript">
+  	/* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+  	var disqus_shortname = 'laurentgatto';
+
+  	/* * * DON'T EDIT BELOW THIS LINE * * */
+  	(function() {
+  		var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+  		dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+  		(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+  	})();
+
+  	/* * * DON'T EDIT BELOW THIS LINE * * */
+  	(function () {
+  		var s = document.createElement('script'); s.async = true;
+  		s.type = 'text/javascript';
+  		s.src = '//' + disqus_shortname + '.disqus.com/count.js';
+  		(document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+  	}());
+  </script>
+  <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+
+
+
+
+
+  </body>
+</html>

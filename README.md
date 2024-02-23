@@ -11,3 +11,23 @@ any purpose, even commercially
 Questions or comments. Open an
 [issue](https://github.com/lgatto/lgatto.github.io/issues) or send an
 email.
+
+
+### Howto
+
+- Add new posts to `_posts`
+- Figures go into `images` and are referenced with
+  `[Description](/images/fig.png]`.
+- Assuming [jekyll] is installed, build locally with:
+
+```
+bundle exec jekyll build -d docs
+```
+
+- Check locally by opening `docs/index.html` or `docs/XXX/index.html`
+  for pages and posts.
+
+- Push to Github, where gh-pages is configured to render the content of `docs`.
+
+- Check again, find typos and other issues, fix locally, build and
+  push.

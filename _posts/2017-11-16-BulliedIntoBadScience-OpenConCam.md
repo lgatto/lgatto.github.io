@@ -1,6 +1,6 @@
 ---
 title: I won't be Bullied Into Bad Science!
-tags: ["open research", "open science", "OpenCon", "OpenConCam"]
+tags: ["open research", "OpenCon", "OpenConCam"]
 comments: true
 ---
 
@@ -67,7 +67,7 @@ continue doing until the very end.
 It is about the science that **we** are passionate about, it's about
 the science that we can trust.
 
-But that is not always the science that is practised. 
+But that is not always the science that is practised.
 
 This is a quote shared with us by one of the ECR signatories of the
 **#BulliedIntoBadScience** campaign.
@@ -132,7 +132,7 @@ we could consider indicators of success, or lack thereof.
 - In Cambridge, there hasn't been any change as a result of the
   campaign - **FAIL**. (But that doesn't matter, as long as others
   benefit. It never was meant to be a Cambridge thing anyway) ...
-  
+
 - ... as for Cambridge signing the Declaration on Research Assessment
   (DORA): "No way on God’s earth" - **FAIL**
 
@@ -140,12 +140,12 @@ we could consider indicators of success, or lack thereof.
 
 - Approach prominent academics directly, because we need to show that
   those in charge also care, so that ECRs don't feel intimidated to
-  raise their voice. 
+  raise their voice.
 
 - We have submitted evidence to the UK Parliament Science and
   Technology Committee inquiry on
   [Research Integrity](https://www.parliament.uk/business/committees/committees-a-z/commons-select/science-and-technology-committee/inquiries/parliament-2017/research-integrity-17-19/) in the name of the campaign.
-  
+
 - An update to our web page is immindent, including translations (we
   are looking for more translators!), and we want to write regular
   blog posts.
@@ -158,12 +158,12 @@ we could consider indicators of success, or lack thereof.
 
 - And what about my **day job**? Why do *ECRs* need to fight for
   **better**, **open** and more **trustworthy** research?
-  
+
 - What's the impact of being an open activist on my academic
   **career**?  **Good, IMHO!**
   (see [here](https://lgatto.github.io/EPFL-open-science/) for more
   details)
-  
+
 - There is so much work, and so little time. There are too many fights
   to pick - **pick the battles that matter most to you**.
 

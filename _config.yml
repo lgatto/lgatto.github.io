@@ -55,7 +55,7 @@ yandex_site_verification :
 
 # Social Sharing
 twitter:
-  username               : lgatt0
+  username               :
 facebook:
   username               :
   app_id                 :
@@ -79,7 +79,7 @@ social:
 author:
   name             : "Laurent Gatto"
   avatar           : /images/lgatto2.jpg # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "Open science, reproducible research, data champion, computational biology, proteomics, more omics, emacs, a lot of R, quite a bit of running, and parenting. <script type='text/javascript' src='https://ko-fi.com/widgets/widget_2.js'></script><script type='text/javascript'>kofiwidget2.init('Buy Me a Coffee', '#46b798', 'I3I39BB0');kofiwidget2.draw();</script>"
+  bio              : "Open science, reproducible research, data champion, computational biology, proteomics, more omics, emacs, a lot of R, quite a bit of running, and parenting."
   email            :
   uri              :
   bitbucket        :
@@ -99,11 +99,10 @@ author:
   stackoverflow    : # "123456/username" (the last part of your profile url, e.g. http://stackoverflow.com/users/123456/username)
   steam            :
   tumblr           :
-  twitter          : lgatt0
   vine             :
   weibo            :
   xing             :
-  youtube          : # "https://youtube.com/c/MichaelRoseDesign"
+  # youtube          : "https://www.youtube.com/@lgatto/videos"
 
 # Reading Files
 include:
@@ -176,6 +175,8 @@ timezone: # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
 
 # Plugins
+plugins:
+  - jekyll-feed
 
 # mimic GitHub Pages with --safe
 whitelist:

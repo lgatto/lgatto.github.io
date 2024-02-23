@@ -1,0 +1,760 @@
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8">
+
+<!-- begin SEO -->
+
+
+
+
+
+
+
+
+
+<title>            Why Software and data papers are a bad solution to a real problem      ~/      </title>
+
+
+
+
+<meta name="description" content="I am unhappy and concerned with data/software papers: it’s is a badanswer to a real problem and we end up recapitulating the perverseincentives in academic publishing. The situation is neither helpingthose that value data and software, and open science in general, northe dissemination of science in general.">
+
+
+
+
+<meta property="og:locale" content="en_GB">
+<meta property="og:site_name" content="~/">
+<meta property="og:title" content="Why Software and data papers are a bad solution to a real problem">
+
+
+  <link rel="canonical" href="https://lgatto.github.io/software-data-papers/">
+  <meta property="og:url" content="https://lgatto.github.io/software-data-papers/">
+
+
+
+  <meta property="og:description" content="I am unhappy and concerned with data/software papers: it’s is a badanswer to a real problem and we end up recapitulating the perverseincentives in academic publishing. The situation is neither helpingthose that value data and software, and open science in general, northe dissemination of science in general.">
+
+
+
+
+
+  
+
+  
+
+
+
+
+
+  <meta property="og:type" content="article">
+  <meta property="article:published_time" content="2017-02-10T00:00:00+01:00">
+
+
+
+
+
+
+
+
+  <script type="application/ld+json">
+    {
+      "@context" : "http://schema.org",
+      "@type" : "Person",
+      "name" : "Laurent Gatto",
+      "url" : "https://lgatto.github.io",
+      "sameAs" : null
+    }
+  </script>
+
+
+
+
+
+
+<!-- end SEO -->
+
+
+<link href="https://lgatto.github.io/feed.xml" type="application/atom+xml" rel="alternate" title="~/ Feed">
+
+<!-- http://t.co/dKP3o1e -->
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="https://lgatto.github.io/assets/css/main.css">
+
+<meta http-equiv="cleartype" content="on">
+    <!-- start custom head snippets -->
+
+<!-- insert favicons. use http://realfavicongenerator.net/ -->
+
+<!-- end custom head snippets -->
+  </head>
+
+  <body class="layout--single">
+
+    <!--[if lt IE 9]>
+<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
+<![endif]-->
+    <div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        <button><div class="navicon"></div></button>
+        <ul class="visible-links">
+          <li class="masthead__menu-item masthead__menu-item--lg"><a href="https://lgatto.github.io/">~/</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="https://lgatto.github.io/about/">About</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="https://lgatto.github.io/year-archive/">Posts</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="https://lgatto.github.io/tags/">Tags</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="https://lgatto.github.io/cbio-lab/">Lab</a></li>
+          
+        </ul>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+    
+
+
+
+<div id="main" role="main">
+  
+  <div class="sidebar sticky">
+  
+
+<div itemscope itemtype="http://schema.org/Person">
+
+  
+    <div class="author__avatar">
+      
+        <img src="https://lgatto.github.io/images/lgatto2.jpg" class="author__avatar" alt="Laurent Gatto" itemprop="image">
+      
+    </div>
+  
+
+  <div class="author__content">
+    <h3 class="author__name" itemprop="name">Laurent Gatto</h3>
+    
+      <p class="author__bio" itemprop="description">
+        Open science, reproducible research, data champion, computational biology, proteomics, more omics, emacs, a lot of R, quite a bit of running, and parenting.
+      </p>
+    
+  </div>
+
+  <div class="author__urls-wrapper">
+    <button class="btn btn--inverse">Follow</button>
+    <ul class="author__urls social-icons">
+      
+
+      
+
+      
+
+      
+        <li>
+          <a href="https://keybase.io/lgatto" itemprop="sameAs">
+            <i class="fa fa-fw fa-key" aria-hidden="true"></i> Keybase
+          </a>
+        </li>
+      
+
+      
+
+      
+
+      
+
+      
+        <li>
+          <a href="https://www.linkedin.com/in/lgatto" itemprop="sameAs">
+            <i class="fa fa-fw fa-linkedin-square" aria-hidden="true"></i> LinkedIn
+          </a>
+        </li>
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+        <li>
+          <a href="https://github.com/lgatto" itemprop="sameAs">
+            <i class="fa fa-fw fa-github" aria-hidden="true"></i> GitHub
+          </a>
+        </li>
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      <!--
+  <li>
+    <a href="http://link-to-whatever-social-network.com/user/" itemprop="sameAs">
+      <i class="fa fa-fw" aria-hidden="true"></i> Custom Social Profile Link
+    </a>
+  </li>
+-->
+
+
+  <li>
+    <a href="http://dissem.in/r/6231/laurent-gatto" itemprop="sameAs">
+      <i class="fa fa-fw fa-pencil" aria-hidden="true"></i> dissem.in
+    </a>
+  </li>
+
+  <li>
+    <a href="https://orcid.org/0000-0002-1520-2268" itemprop="sameAs">
+      <i class="fa fa-fw fa-pencil" aria-hidden="true"></i> ORCID
+    </a>
+  </li>
+
+  <li>
+    <a href="https://scholar.google.co.uk/citations?user=k5DrB74AAAAJ&hl=en" itemprop="sameAs">
+      <i class="fa fa-fw fa-google" aria-hidden="true"></i> scholar
+    </a>
+  </li>
+
+  <li>
+    <a href="https://impactstory.org/u/0000-0002-1520-2268" itemprop="sameAs">
+      <i class="fa fa-fw fa-sun-o" aria-hidden="true"></i> Impactstory
+    </a>
+  </li>
+
+    </ul>
+  </div>
+</div>
+
+  
+  </div>
+
+
+  <article class="page" itemscope itemtype="http://schema.org/CreativeWork">
+    <meta itemprop="headline" content="Why Software and data papers are a bad solution to a real problem">
+    <meta itemprop="description" content="I am unhappy and concerned with data/software papers: it’s is a badanswer to a real problem and we end up recapitulating the perverseincentives in academic publishing. The situation is neither helpingthose that value data and software, and open science in general, northe dissemination of science in general.">
+    <meta itemprop="datePublished" content="February 10, 2017">
+    
+
+    <div class="page__inner-wrap">
+      
+        <header>
+          <h1 class="page__title" itemprop="headline">Why Software and data papers are a bad solution to a real problem
+</h1>
+          
+            <p class="page__meta"><i class="fa fa-clock-o" aria-hidden="true"></i> 
+
+
+
+
+  6 minute read
+</p>
+          
+        </header>
+      
+
+      <section class="page__content" itemprop="text">
+        <p>I am unhappy and concerned with data/software papers: it’s is a bad
+answer to a real problem and we end up recapitulating the perverse
+incentives in academic publishing. The situation is neither helping
+those that value data and software, and open science in general, nor
+the dissemination of science in general.</p>
+
+<h2 id="the-real-issue">The <em>real</em> issue</h2>
+
+<p>The problem we are facing is lack of credit for scientists, research
+software engineers and anyone who produces data and software; they do
+not get the academic credit for their contributions, despite the
+importance of data and scientific software, and end up without any
+clear career progression opportunities. The suggested solution is to
+publish data/software papers (or data/application notes, as they are
+often referred to). The intended fix is that this ties back in with
+the usual academic business, but ends up reinforcing the usual bean
+counting habit of relying on number papers rather than the actual
+inputs. As a result of relying on a broken system to fix the
+recognition of data/software, the papers that describe these inputs
+become a mere way to boost the number of publications and end up doing
+a terrible job at actually describing and promoting the outputs for
+what they really are.</p>
+
+<p>Let me elaborate on this.</p>
+
+<h2 id="bad-softwaredata-papers">Bad software/data papers</h2>
+
+<p>I have come across terrible data papers, including some from
+<em>reputable</em> labs: full of typos, superficial data description, data
+provided as supplementary tables in pdf, … Similar situations for
+software, where the emphasis on the software and scientific software
+development and <em>good enough</em> practice is completely lost: minimal
+documentation, unreadable code (no spaces, miles-long lines, no
+indentation), completely inappropriate data structures, missing data,
+…</p>
+
+<p>What we would really need is an in-depth/hands-on review of the data
+when submitted to the repository. The authors should provide evidence
+that their data is of good quality, describe the data with good
+(possibly interactive) visualisations, document the experimental
+design, show how they processed the data, make sure this can be
+reproduced, disseminate the raw and processed data in a way that
+enables others to easily re-use it, … I really don’t think these
+requests are extraordinary, but I hardly ever see data papers that
+match all these requirements.</p>
+
+<p>This also applies to software. The review should focus on the
+software, like what happens for the
+<a href="https://bioconductor.org/developers/package-submission/">Bioconductor</a>
+project: meta-data, documentation, source code, unit testing,
+… rather then only (or mainly) the relevance of the software, or a
+systematic comparison with other software. I don’t mean to say this is
+not useful or important, but not relevant if the software is not up to
+standards anyway. And if the authors want to publish a comparison of
+different software, they shouldn’t try to grep an additional citation
+by drafting a <em>quick and dirty</em> application note.</p>
+
+<p>Once these goals have been attained, the actual data/software in their
+original repositories is the important deliverable and one should be
+able to cite these, directly. As far as I am concerned, the additional
+paper is only a detail. Why not, if that’s what’s needed for the
+authors to get proper academic credit. But the data/software paper
+shouldn’t become a shortcut for credit at the expense of the actual
+deliverable. Let’s not forget that a paper is only an advertisement of
+the scholarship.</p>
+
+<p>That was my first point, bad data and software papers.</p>
+
+<h2 id="predatory-publishing">Predatory publishing</h2>
+
+<p>Another perverse effect is the proliferation of data or software
+journals with very low standards but with a big appetite for poor
+data/software notes. Here, you’ll find your typical predatory
+publishers, such as Elsevier. Their business model is to publish the
+scientific paper and the data paper, which will cite each other so
+that they boost the citation statistics and their money income. I am
+not making this us; I did get my hands on an internal email that
+stated this quite explicitly.</p>
+
+<p>Here’s the predatory <em>business model</em>:</p>
+
+<p>At the research article revision stage, authors are offered the option
+to convert their supplementary data into a data article to be
+published in the open access
+<a href="https://www.journals.elsevier.com/data-in-brief/">Data in Brief</a>
+journal. This comes, of course, at a minor cost; in this case
+£500. According the the editor, “the data is then easier to download
+and use, i.e. not behind a subscription paywall” (you can’t make that
+up, can you!). The <em>Data in Brief</em> and the research articles then
+automatically cite and link to each other. To add insult to injury,
+editors and reviewers are <em>explicitly</em> told that they are not required
+to review this <em>Data in Brief</em> article, but may need to look at it if
+the need to look into the supporting material.</p>
+
+<p>The benefits, as outlined in the email are:</p>
+
+<ul>
+  <li>data that were once behind a subscription paywall is now open
+access, and</li>
+  <li>the link from the Data in Brief article drives more traffic to the
+research article and the research article gets an extra citation.</li>
+</ul>
+
+<p>What it really means:</p>
+
+<p>Let’s pretend we care about open access and data, increasing our
+self-citations and metrics, drive more traffic, earn more money. As
+the main paper will already be accepted, the data paper is just a
+formality and will hardly get reviewed. And we will explicitly tell
+the reviewers to ignore data in the main paper.</p>
+
+<p>Unfortunately, the editors’ replies haven’t leaked to my inbox. But
+the mere fact that this something like that is considered is <strong>truly
+disgusting</strong>, but in line with Elsevier’s general policy.</p>
+
+<p>Now, to be fair, there are also great examples out there. The
+<a href="http://openresearchsoftware.metajnl.com/">Journal of Open Research Software (JORS)</a>,
+for example, covers how the software results can be trusted, concrete
+and useful suggestions for reuse of the software, addresses
+implementation and architecture, … The
+<a href="http://joss.theoj.org/">Journal of Open Source Software</a> is a
+<em>developer friendly journal for research software packages</em> with <em>a
+formal peer review process that is designed to improve the quality of
+the software submitted</em>. (Note that I haven’t published in any of
+those so far.)</p>
+
+<h2 id="what-can-we-do">What can we do?</h2>
+
+<p>Ideally, the repositories would have the man power and expertise to do
+an in-depth review of every submission, and, if necessary, provide the
+support to get every submission to a good standard. Then, no journals
+would even consider publishing any output that didn’t pass this
+in-depth technical review and proceed with the interpretation of the
+data. But that’s not going to happen.</p>
+
+<blockquote>
+  <p>I just want to reiterate how Elsevier’s predatory model is the exact
+opposite: don’t care about the data, just use it as a pretend open
+access solution and make scientists pay more for the scam.</p>
+</blockquote>
+
+<p>If you don’t care about all this, and just mind the final piece of
+advertisement of your research, just keep on how you are
+doing. Otherwise, make sure you put every effort in doing the very
+best job you can in documenting your data and developing your
+software. Publish them ahead of the actual paper, and make sure as
+many as possible get a chance to look at then and comment. If you ever
+review a paper with software or data, go through it with a
+fine-toothed comb, and don’t hesitate to highlight what’s wrong and
+what needs to be improved. Don’t hesitate to praise a good software or
+data article when you read one too, of course.</p>
+
+<p>I plan to start a systematic and extensive guide describing how to
+document a data set in mass spectrometry-based proteomics.</p>
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+  
+
+
+  
+  
+  
+
+  <p class="page__taxonomy">
+    <strong><i class="fa fa-fw fa-tags" aria-hidden="true"></i> Tags: </strong>
+    <span itemprop="keywords">
+    
+      
+      
+      <a href="https://lgatto.github.io/tags/#elsevier" class="page__taxonomy-item" rel="tag">Elsevier</a><span class="sep">, </span>
+    
+      
+      
+      <a href="https://lgatto.github.io/tags/#open-access" class="page__taxonomy-item" rel="tag">open access</a><span class="sep">, </span>
+    
+      
+      
+      <a href="https://lgatto.github.io/tags/#open-data" class="page__taxonomy-item" rel="tag">open data</a><span class="sep">, </span>
+    
+      
+      
+      <a href="https://lgatto.github.io/tags/#predatory-publishing" class="page__taxonomy-item" rel="tag">predatory publishing</a><span class="sep">, </span>
+    
+      
+      
+      <a href="https://lgatto.github.io/tags/#software" class="page__taxonomy-item" rel="tag">software</a>
+    
+    </span>
+  </p>
+
+
+
+
+        
+          <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> Updated:</strong> <time datetime="2017-02-10T00:00:00+01:00">February 10, 2017</time></p>
+        
+      </footer>
+
+      <section class="page__share">
+  
+    <h4 class="page__share-title">Share on</h4>
+  
+
+  <a href="https://twitter.com/intent/tweet?text=Why Software and data papers are a bad solution to a real problem https://lgatto.github.io/software-data-papers/" class="btn btn--twitter" title="Share on Twitter"><i class="fa fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
+
+  <a href="https://www.facebook.com/sharer/sharer.php?u=https://lgatto.github.io/software-data-papers/" class="btn btn--facebook" title="Share on Facebook"><i class="fa fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
+
+  <a href="https://plus.google.com/share?url=https://lgatto.github.io/software-data-papers/" class="btn btn--google-plus" title="Share on Google Plus"><i class="fa fa-fw fa-google-plus" aria-hidden="true"></i><span> Google+</span></a>
+
+  <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://lgatto.github.io/software-data-papers/" class="btn btn--linkedin" title="Share on LinkedIn"><i class="fa fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
+</section>
+
+
+      
+  <nav class="pagination">
+    
+      <a href="https://lgatto.github.io/branch-specific-gitignore/" class="pagination--pager" title="Branch specific gitignores for Bioconductor package documentation
+">Previous</a>
+    
+    
+      <a href="https://lgatto.github.io/open-research-project/" class="pagination--pager" title="Open Research Project, first thoughts
+">Next</a>
+    
+  </nav>
+
+    </div>
+
+    
+      <div class="page__comments">
+  
+  
+    <h4 class="page__comments-title">Leave a Comment</h4>
+    <section id="disqus_thread"></section>
+  
+</div>
+    
+  </article>
+
+  
+  
+    <div class="page__related">
+      
+        <h4 class="page__related-title">You May Also Enjoy</h4>
+      
+      <div class="grid__wrapper">
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+    
+      <div class="archive__item-teaser">
+        <img src=
+          
+            "https://lgatto.github.io/assets/images/slide-code.png"
+          
+          alt="">
+      </div>
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="https://lgatto.github.io/the-grid-in-r/" rel="permalink">The Grid poster, in R
+</a>
+      
+    </h2>
+    
+      <p class="page__meta"><i class="fa fa-clock-o" aria-hidden="true"></i> 
+
+
+
+
+  3 minute read
+</p>
+    
+    <p class="archive__item-excerpt" itemprop="description">The MuseeL is the
+UCLouvain University museum in
+Louvain-la-Neuve. Highly recommended. It’s located to the lively
+place des sciences, in a nice brutalist sty...</p>
+  </article>
+</div>
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+    
+      <div class="archive__item-teaser">
+        <img src=
+          
+            "https://lgatto.github.io/assets/images/slide-code.png"
+          
+          alt="">
+      </div>
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="https://lgatto.github.io/podcast-eval/" rel="permalink">Podcasts du LLL: repensons l’évaluation
+</a>
+      
+    </h2>
+    
+      <p class="page__meta"><i class="fa fa-clock-o" aria-hidden="true"></i> 
+
+
+
+
+  1 minute read
+</p>
+    
+    <p class="archive__item-excerpt" itemprop="description">Une fois n’est pas coutume, un billet en français, pour attirer votre
+attention sur les podcasts du LLL. Le LLL, ou Louvain Learning
+Lab accompagne
+tous les ...</p>
+  </article>
+</div>
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+    
+      <div class="archive__item-teaser">
+        <img src=
+          
+            "https://lgatto.github.io/assets/images/slide-code.png"
+          
+          alt="">
+      </div>
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="https://lgatto.github.io/zulip/" rel="permalink">CBIO’s internal communication goes open source
+</a>
+      
+    </h2>
+    
+      <p class="page__meta"><i class="fa fa-clock-o" aria-hidden="true"></i> 
+
+
+
+
+  1 minute read
+</p>
+    
+    <p class="archive__item-excerpt" itemprop="description">I have been using slack for a rather long time as a discussion
+platform for the lab, even before moving to Belgium. Based on the
+access log, I set up the lab...</p>
+  </article>
+</div>
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+    
+      <div class="archive__item-teaser">
+        <img src=
+          
+            "https://lgatto.github.io/assets/images/slide-code.png"
+          
+          alt="">
+      </div>
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="https://lgatto.github.io/EuroBioc-Ghent/" rel="permalink">CBIO’s EuroBioc2023 posters and talks
+</a>
+      
+    </h2>
+    
+      <p class="page__meta"><i class="fa fa-clock-o" aria-hidden="true"></i> 
+
+
+
+
+  13 minute read
+</p>
+    
+    <p class="archive__item-excerpt" itemprop="description">Long overdue now, but here are the CBIO
+lab’s contributions to the
+EuroBioc2023 conference that
+was organised on Ghent, on the 20 - 22 September 2023.
+
+</p>
+  </article>
+</div>
+        
+      </div>
+    </div>
+  
+</div>
+
+    <div class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+
+<!-- end custom footer snippets -->
+        <div class="page__footer-follow">
+  <ul class="social-icons">
+    
+      <li><strong>Follow:</strong></li>
+    
+    
+    
+    
+      <li><a href="http://github.com/lgatto"><i class="fa fa-fw fa-github" aria-hidden="true"></i> GitHub</a></li>
+    
+    
+    <li><a href="https://lgatto.github.io/feed.xml"><i class="fa fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
+  </ul>
+</div>
+
+<div class="page__footer-copyright">&copy; 2024 Laurent Gatto CC-BY. Powered by <a href="http://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+
+      </footer>
+    </div>
+
+    <script src="https://lgatto.github.io/assets/js/main.min.js"></script>
+
+
+
+
+
+  
+  <script type="text/javascript">
+  	/* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+  	var disqus_shortname = 'laurentgatto';
+
+  	/* * * DON'T EDIT BELOW THIS LINE * * */
+  	(function() {
+  		var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+  		dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+  		(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+  	})();
+
+  	/* * * DON'T EDIT BELOW THIS LINE * * */
+  	(function () {
+  		var s = document.createElement('script'); s.async = true;
+  		s.type = 'text/javascript';
+  		s.src = '//' + disqus_shortname + '.disqus.com/count.js';
+  		(document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+  	}());
+  </script>
+  <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+
+
+
+
+
+  </body>
+</html>

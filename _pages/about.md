@@ -1,7 +1,7 @@
 ---
 permalink: /about/
 title: "About the author"
-modified: 2017-07-23
+modified: 2022-11-05
 comments: false
 author_profile: true
 header:
@@ -28,7 +28,7 @@ fellow](https://www.software.ac.uk/fellowship-programme), a
 [Data](http://www.datacarpentry.org/) and [Software
 Carpentry](https://software-carpentry.org/team/) instructor, and an
 affiliated [member](http://bioconductor.org/about/core-team/) of the
-[Bioconductor](http://bioconductor.org) project.
+[Bioconductor](http://bioconductor.org) project (see below).
 
 I am also involved in the [Bullied Into Bad
 Science](http://bulliedintobadscience.org/) campaign, an initiative by
@@ -38,21 +38,48 @@ part of the eLife [Early-career advisory
 group](https://elifesciences.org/about/people/early-career) and, since
 2017, am a [#ASAPbio](http://asapbio.org/) ambassador.
 
+[Bioconductor](http://bioconductor.org) ([Huber et al.,
+2015](http://www.ncbi.nlm.nih.gov/pubmed/25633503)) is a project that
+has had a great impact on many aspects of research and development in
+bioinformatics, computational statistics, bio-medical sciences and
+many other fields. It also had a big impact on my vision of rigorous
+research software development as the foundation of reliable, open and
+reproducible research. Since my very first software contribution (the
+[yaqcaffy](https://bioconductor.org/packages/2.2/bioc/html/yaqcaffy.html)
+package, accepted in Bioconductor 2.2, since then deprecated), I have
+become involved in multiple capacity in the project. I have
+contributed many packages (mostly focused on mass spectrometry and
+proteomics), I am a member of the [technical advisory
+board](https://bioconductor.org/about/technical-advisory-board/),
+deputy-chair of the [European Bioconductor
+Society](https://bioconductor.org/about/european-bioconductor-society/),
+I co-lead the [Teaching and education
+committee](https://bioconductor.org/help/education-training/), I'm a
+member of the [Code of
+conduct](https://bioconductor.org/about/code-of-conduct/) committee
+since it was set up, I contribute to various [working
+groups](http://workinggroups.bioconductor.org/), and am an occasional
+[package
+reviewer](https://bioconductor.org/about/package-reviewers/). In am
+one of the winners of the 2021 [Bioconductor Community
+Awards](https://bioconductor.org/about/awards/), one of my proudest
+professional achievements. In addition to delivering great science and
+software, Bioconductor is a [welcoming and supportive
+community](https://bioconductor.org/about/community-advisory-board/).
 
-Before that, I was a Senior Research Associate in the Department of
-Biochemistry at the University of Cambridge. It's at the [Cambridge
-Centre for Proteomics](http://proteomics.bio.cam.ac.uk/) and the
-Computational Proteomics Unit (my former research group in Cambridge)
-that I started working on various aspects of quantitative and spatial
-proteomics, developing new methods and implementing computational
-tools with a strong emphasis on rigorous and reproducible data
-analysis. During my time in Cambridge, I have also a been a visiting
-scientist in the [PRIDE](http://www.ebi.ac.uk/pride/) team at the
-[European Bioinformatics Institute](http://www.ebi.ac.uk/pride/). I
-currently still hold a visitor position in the [Department of Applied
-Mathematics and Theoretical Physics
-(DAMTP)](http://www.damtp.cam.ac.uk/user/lg390/) at the University of
-Cambridge.
+Before my current position at the UCLouvain, I was a Senior Research
+Associate in the Department of Biochemistry at the University of
+Cambridge. It's at the [Cambridge Centre for
+Proteomics](http://proteomics.bio.cam.ac.uk/) and the Computational
+Proteomics Unit (my former research group in Cambridge) that I started
+working on various aspects of quantitative and spatial proteomics,
+developing new methods and implementing computational tools with a
+strong emphasis on rigorous and reproducible data analysis. During my
+time in Cambridge, I have also a been a visiting scientist in the
+[PRIDE](http://www.ebi.ac.uk/pride/) team at the [European
+Bioinformatics Institute](http://www.ebi.ac.uk/pride/) and in the
+[Department of Applied Mathematics and Theoretical Physics
+(DAMTP)](http://www.damtp.cam.ac.uk/).
 
 And even before that, during my MSc and [PhD
 work](http://difusion.ulb.ac.be/vufind/Record/ULB-DIPOT:oai:dipot.ulb.ac.be:2013/210855/Holdings),
@@ -98,45 +125,74 @@ the research in biology calls for a open approaches, influenced by the
 between stake holders, **open research** and development to open
 dissemination of all research outputs.
 
-### Proteomics
+### Mass spectrometry and proteomics
 
 My work on the design and implementation of reproducible mass
 spectrometry-based proteomics data analysis pipeline has materialised
 in the development of the
-[`MSnbase`](http://bioconductor.org/packages/MSnbase)
-([Gatto et al., 2012](http://www.ncbi.nlm.nih.gov/pubmed/22113085))
+[`MSnbase`](http://bioconductor.org/packages/MSnbase) ([Gatto et al.
+2012](http://www.ncbi.nlm.nih.gov/pubmed/22113085) and
+[2021](https://pubs.acs.org/doi/10.1021/acs.jproteome.0c00313))
 package to manipulate, process and analyse quantitative proteomics
 data. The `MSnbase` infrastructure also supports the work on the
-statistical learning applied to spatial proteomics (see below). The
-[`synapter`](http://bioconductor.org/packages/synapter) package and
-the associated publications
-([Bond et al., 2013](http://www.ncbi.nlm.nih.gov/pubmed/23510225) and
-[Shliaha et al., 2013](http://www.ncbi.nlm.nih.gov/pubmed/23514362))
-addresses MS<sup>E</sup> label-free quantitation, optionally including
-ion mobility separation.
+statistical learning applied to spatial proteomics (see below). After
+a [decade of `MSnbase`
+development](https://lgatto.github.io/msnbase-contribs-2/), Johannes
+Rainer, Sebastien Gibb and I have started the [R for Mass Spectrometry
+initiative](https://www.rformassspectrometry.org/). Base on our
+decade-long experiences, we have set ourselves the aim of designing
+and implementing efficient, thoroughly documented, tested and flexible
+R software for the analysis and interpretation of high throughput mass
+spectrometry assays, including proteomics and metabolomics
+experiments.
+
+### Single-cell proteomics
+
+In a Nature Methods Technology Feature in August 2019, Vivien Marx
+[dreamt of single-cell
+proteomics](https://doi.org/10.1038/s41592-019-0540-6). In 2021,
+thanks to some pioneers' groundbreaking efforts, we can confidently
+claim that single-cell proteomics is here. The CBIO lab has
+contributed the [`scp`](https://bioconductor.org/packages/scp) package
+([Vanderaa and Gatto,
+2021](https://www.tandfonline.com/doi/abs/10.1080/14789450.2021.1988571?journalCode=ieru20),
+or get to pre-print
+[here](https://www.biorxiv.org/content/10.1101/2021.04.12.439408v2) if
+you don't have access) to these efforts. `scp` relies of [R for Mass
+Spectrometry](https://www.rformassspectrometry.org/)'s
+[`QFeatures`](https://bioconductor.org/packages/QFeatures) package and
+dedicated functions to enable extensive single-cell proteomics data
+processing, analysis and interpretation.
 
 ### Spatial proteomics
 
 In biology, localisation is function: knowledge of the localisation of
 proteins is of paramount importance to assess and study their
 function, and spatial proteomics is the systematic study of the
-sub-cellular localisation of proteins and changes thereof
-([Gatto et al., 2010](http://www.ncbi.nlm.nih.gov/pubmed/21080489)). Since
-2010, I have developed novel software and machine learning approaches
+sub-cellular localisation of proteins and changes thereof ([Gatto et
+al. 2010](http://www.ncbi.nlm.nih.gov/pubmed/21080489) and
+[2014](http://www.mcponline.org/content/13/8/1937.long)). Since 2010,
+my team has developed novel software and machine learning approaches
 enabling more reliable and systematic inference of protein
 localisations using quantitative proteomics. This work has
-materialised in
-the [`pRoloc`](http://bioconductor.org/packages/pRoloc) package
-([Gatto et al., 2014](http://www.ncbi.nlm.nih.gov/pubmed/24413670))
-that implements various established classification algorithms,
-effective visualisation techniques
-([Gatto el al., 2015](http://www.ncbi.nlm.nih.gov/pubmed/25690415)) as
-well as novelty detection
-([Breckels et al., 2013](http://www.ncbi.nlm.nih.gov/pubmed/23523639))
-and transfer learning, harvesting GO annotations of microscopy-based
-methods to improve the spatial resolution of experimental spatial
-proteomics data
-([Breckels et al., 2016](http://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1004920)).
+materialised in the
+[`pRoloc`](http://bioconductor.org/packages/pRoloc) package ([Gatto et
+al. 2014](http://www.ncbi.nlm.nih.gov/pubmed/24413670)) that
+implements various established classification algorithms, effective
+visualisation techniques ([Gatto el al.
+2015](http://www.ncbi.nlm.nih.gov/pubmed/25690415)) as well as novelty
+detection ([Breckels et al.
+2013](http://www.ncbi.nlm.nih.gov/pubmed/23523639), [Crook et al.
+2020](https://doi.org/10.1371/journal.pcbi.1008288)) and transfer
+learning ([Breckels et al.
+2016](http://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1004920)),
+harvesting GO annotations of microscopy-based methods to improve the
+spatial resolution of experimental spatial proteomics data. More
+recently, we proposed a Bayesian framework to quantify uncertainty and
+probabilisatically address multi-localsiation of proteins ([Crook et
+al. 2018](https://doi.org/10.1371/journal.pcbi.1006516)) and study
+comparative spatial proteomics to infer protein re-localisation
+([Crook et al. 2022](https://doi.org/10.1038/s41467-022-33570-9)).
 
 
 ## Teaching
@@ -144,9 +200,9 @@ proteomics data
 My current course at the UCLouvain are
 
 - [Introduction to bioinformatics](http://bit.ly/WSBIM1207) (since 2018)
-- [Eléments de statistiques médicales](https://uclouvain.be/cours-2018-wmds1114.html) (since 2018)
-- Bioinformatics (starting 2019)
-- Omics data analysis (starting 2019)
+- [Eléments de statistiques médicales](https://uclouvain.be/cours-2023-wmds1114) (since 2018)
+- [Bioinformatics](http://bit.ly/WSBIM1322) (since 2019)
+- [Omics data analysis](http://bit.ly/WSBIM2122) (since 2019)
 
 Over the years I have been involved in many teaching activities,
 ranging from beginners and advanced R courses,
@@ -171,50 +227,252 @@ Please do get in touch if you are interested in running workshops.
 
 ### Research articles
 
-Pollet H *et al.*, Aberrant Membrane Composition and Biophysical
-Properties Impair Erythrocyte Morphology and Functionality in
-Elliptocytosis, Biomolecules 2020, 10(8), 1120;
-[https://doi.org/10.3390/biom10081120](https://www.mdpi.com/2218-273X/10/8/1120).
+Hauchamps P, Bayat B, Delandre S, Hamrouni M, Toussaint M, Temmerman
+S, Lin D, Gatto L *CytoPipeline and CytoPipelineGUI: a Bioconductor R
+package suite for building and visualizing automated pre-processing
+pipelines for flow cytometry data* BMC Bioinformatics 25, 80
+(2024). doi:[10.1186/s12859-024-05691-z](https://doi.org/10.1186/s12859-024-05691-z)
+(pre-print:
+[10.1101/2023.10.10.561699](https://doi.org/10.1101/2023.10.10.561699)).
 
-Gatto L, Gibb S, Rainer J *MSnbase, efficient and elegant R-based
-processing and visualisation of raw mass spectrometry data* bioRxiv
-2020.04.29.067868; doi:
-[https://doi.org/10.1101/2020.04.29.067868](https://doi.org/10.1101/2020.04.29.067868).
+Lizcano-Perret B, Vertommen Didier, Herinckx G, Calabrese V, Gatto L,
+Roux P and Michiels T *Identification of RSK substrates using an
+analog-sensitive kinase approach* (2024)
+J. Biol. Chem. doi:[10.1016/j.jbc.2024.105739](https://doi.org/10.1016/j.jbc.2024.105739).
+
+Vanderaa C and Gatto L *scplainer: using linear models to understand
+mass spectrometry-based single-cell proteomics data* (2023) bioRxiv
+2023.12.14.571792;
+doi:[10.1101/2023.12.14.571792](https://doi.org/10.1101/2023.12.14.571792).
+
+Harvengt AA, Polle OG, Martin M, van Maanen A, Gatto L, et al.
+*Post-Hypoglycemic hyperglycemia are highly relevant markers for
+stratification of glycemic variability and partial remission status of
+pediatric patients with new-onset type 1 diabetes* (2023) PLOS ONE
+18(11): e0294982
+doi:[10.1371/journal.pone.0294982](https://doi.org/10.1371/journal.pone.0294982).
+
+Grégoire S, Vanderaa C, Pyr dit Ruys S, Mazzucchelli G, Kune C,
+Vertommen D and Gatto L *Standardised workflow for mass
+spectrometry-based single-cell proteomics data processing and analysis
+using the `scp` package* arXiv arXiv:2310.13598;
+doi:[10.48550/2310.13598](https://doi.org/10.48550/arXiv.2310.13598).
+
+Cloos AS, Pollet H, Stommen A, Maja M, Lingurski M, Brichard B,
+Lambert C, Henriet P, Pierreux C, Pyr Dit Ruys S, Van Der Smissen P,
+Vikkula M, Gatto L, Martin M, Brouillard P, Vertommen D, Tyteca
+D. *Splenectomy improves erythrocyte functionality in spherocytosis
+based on septin abundance, but not maturation defects*. Blood
+Adv. 2023 Sep
+12;7(17):4705-4720. doi:[10.1182/bloodadvances.2022009114](https://doi.org/10.1182/bloodadvances.2022009114).
+
+Kelly Eckenrode, Dario Righelli, Marcel Ramos, Ricard Argelaguet,
+Christophe Vanderaa, Ludwig Geistlinger, Aedin Culhane, Laurent Gatto,
+Vincent J. Carey, Martin Morgan, Davide Risso, Levi D Waldron *Curated
+single cell multimodal landmark datasets for R/Bioconductor* PLOS
+Computational Biology 19(8):
+e1011324. doi:[10.1371/journal.pcbi.1011324](https://doi.org/10.1371/journal.pcbi.1011324)
+(preprint
+bioRxiv:[10.1101/2021.10.27.466079](https://doi.org/10.1101/2021.10.27.466079)).
+
+Gannoun L, De Schrevel C, Belle M, Dauguet N, Achouri Y, Loriot A,
+Vanderaa C, Cordi S, Dili A, Heremans Y, Rooman I, Leclercq IA,
+Jacquemin P, Gatto L, Lemaigre FP. *Axon guidance genes control
+hepatic artery development* Development. 2023 Aug
+15;150(16):dev201642. doi:[10.1242/dev.201642](https://doi.org/10.1242/dev.201642). Epub
+2023 Aug 17.
+
+Vanderaa C and Gatto L. *Revisiting the Thorny Issue of Missing Values
+in Single-Cell Proteomics* J. Proteome Res. (2023)
+[doi:10.1021/acs.jproteome.3c00227](https://pubs.acs.org/doi/10.1021/acs.jproteome.3c00227)
+(preprint [arXiv:2304.06654v2](https://arxiv.org/abs/2304.06654)).
+
+Halbout M, Bury M, Nanet A, Gerin I, Graff J, Killian T, Gatto L,
+Vertommen D, Bommer G. *SUZ domain-containing proteins have multiple
+effects on nonsense-mediated decay target transcripts* (2023) Journal
+of Biological Chemistry, July 2023;
+[doi:10.1016/j.jbc.2023.105095](https://doi.org/10.1016/j.jbc.2023.105095).
+
+Degraeve AL, Haufroid V, Loriot A, et al. *Gut microbiome modulates
+tacrolimus pharmacokinetics through the transcriptional regulation of
+ABCB1*. Microbiome 11, 138 (2023)
+[doi:10.1186/s40168-023-01578-y](https://doi.org/10.1186/s40168-023-01578-y).
+
+Jannone G, Bonaccorsi Riani E, de Magnée C, Tambucci R, Evraerts J,
+Ravau J, Baldin P, et al. (2023). *Senescence and Senotherapies in
+Biliary Atresia and Biliary Cirrhosis* Aging 15 (11): 4576–99
+[10.18632/aging.204700](https://doi.org/10.18632/aging.204700).
+
+Zhu J, Naulaerts S, Boudhan L, Martin M, Gatto L, and Van den Eynde
+BJ. *Tumour Immune Rejection Triggered by Activation of
+alpha2-Adrenergic Receptors* (2023) Nature, June, 1-9;
+[doi:10.1038/s41586-023-06110-8](https://doi.org/10.1038/s41586-023-06110-8).
+
+Colson A, Depoix CL, Lambert I, Leducq C, Bedin M, De Beukelaer M,
+Gatto L, Loriot A, Peers de Nieuwburgh M, Bouhna K, Baldin P, Hubinont
+C, Sonveaux P, Debiève F *Specific HIF-2α (Hypoxia-Inducible Factor-2)
+Inhibitor PT2385 Mitigates Placental Dysfunction In Vitro and in a Rat
+Model of Preeclampsia (RUPP)* (2023) Hypertension, 80:1011–1023
+[doi:10.1161/HYPERTENSIONAHA.122.20739](https://doi.org/10.1161/hypertensionaha.122.20739).
+
+Gatto L, Aebersold R, Cox J *et al.*, *Initial recommendations for
+performing, benchmarking, and reporting single-cell proteomics
+experiments* (2023) Nat Methods 20, 375–386
+[doi:10.1038/s41592-023-01785-3](https://doi.org/10.1038/s41592-023-01785-3)
+(preprint: [arXiv:2207.10815](https://arxiv.org/abs/2207.10815)).
+
+Vanderaa C and Gatto L *The current state of single-cell proteomics
+data analysis* (2023), Current Protocols 3 (1):e658,
+[10.1002/cpz1.658](https://doi.org/10.1002/cpz1.658) (preprint:
+[arXiv:2210.01020](https://arxiv.org/abs/2210.01020)).
+
+Crook OM, Davies CTR, Breckels LM, Christopher JA, Gatto L, Kirk PDW,
+Lilley KS *Inferring differential subcellular localisation in
+comparative spatial proteomics using BANDLE*, Nature Communications
+13, 5948 (2022)
+[doi:10.1038/s41467-022-33570-9](https://doi.org/10.1038/s41467-022-33570-9)
+(Pre-print: [biorXiv](https://doi.org/10.1101/2021.01.04.425239)).
+
+Lizcano-Perret B., Lardinois C., Wavreil F., Hauchamps P., Herinckx
+G., Sorgeloos F., Vertommen D., Gatto L., Michiels T. *Cardiovirus
+leader proteins retarget RSK kinases toward alternative substrates to
+perturb nucleocytoplasmic traffic*. (2022) PLoS Pathogens
+18(2):e1011042. [doi:10.1371/journal.ppat.1011042](https://doi.org/10.1371/journal.ppat.1011042).
+
+Pollé O.G, Delfosse A., Martin M., Louis J., Gies I., den Brinker M.,
+Seret N., Lebrethon M., Mouraux T., Gatto L., Lysy P.A. on behalf of
+the DIATAG Working Group *Glycemic Variability Patterns Strongly
+Correlate with Partial Remission Status in Children with Newly
+Diagnosed Type 1 Diabetes*. Diabetes Care 45(10):2360–2368
+(2022), doi:[10.2337/dc21-2543](https://doi.org/10.2337/dc21-2543).
+
+Moulis M., Runser S.V.M., Glorieux L. *et al.* *Identification and
+implication of tissue-enriched ligands in epithelial–endothelial
+crosstalk during pancreas development*. Sci Rep 12, 12498 (2022),
+doi:[10.1038/s41598-022-16072-y](https://doi.org/10.1038/s41598-022-16072-y).
+
+Ward B, Yombi JC, Balligand J-L, Cani PD, Collet J-F, *et al.*
+*HYGIEIA: HYpothesizing the Genesis of Infectious Diseases and
+Epidemics through an Integrated Systems Biology
+Approach*. Viruses. 2022; 14(7):1373,
+doi:[10.3390/v14071373](https://doi.org/10.3390/v14071373).
+
+
+Dewulf JP, Martin M, Marie S, Oguz F, Belkhir L, De Greef J, *et
+al*. *Urine metabolomics links dysregulation of the
+tryptophan-kynurenine pathway to inflammation and severity of
+COVID-19*. Sci Rep. 12: 1–8 (2022),
+doi:[10.1038/s41598-022-14292-w](https://doi.org/10.1038/s41598-022-14292-w).
+
+
+De Berdt P, Vanvarenberg K, Ucakar B, Bouzin C, Paquot A, Gratpain V,
+Loriot A, Payen V, Bearzatto B, Muccioli GG, Gatto L, Diogenes A, des
+Rieux A *The human dental apical papilla promotes spinal cord repair
+through a paracrine mechanism* Cell. Mol. Life Sci. 79, 252
+(2022), doi:[10.1007/s00018-022-04210-8](https://doi.org/10.1007/s00018-022-04210-8).
+
+Dontaine J, Bouali A, Daussin F *et al.* *The intra-mitochondrial
+O-GlcNAcylation system rapidly modulates OXPHOS function and ROS
+release in the heart*. Commun Biol 5, 349
+(2022), doi:[10.1038/s42003-022-03282-3](https://doi.org/10.1038/s42003-022-03282-3).
+
+Delcorte O, Spourquet C, Lemoine P, Degosserie J, Van Der Smissen P,
+Dauguet N, Loriot A, Knauf JA, Gatto L, Marbaix E, Fagin JA, Pierreux
+CE. *BRAFV600E Induction in Thyrocytes Triggers Important Changes in
+the miRNAs Content and the Populations of Extracellular Vesicles
+Released in Thyroid Tumor Microenvironment*. Biomedicines. 2022;
+10(4):755,
+doi:[10.3390/biomedicines10040755](https://www.mdpi.com/2227-9059/10/4/755).
+
+Rainer J, Vicini A, Salzer L, Stanstrup J, Badia JM, Neumann S, Stravs
+MA, Verri Hernandes V, Gatto L, Gibb S, Witting M. A Modular and
+Expandable Ecosystem for Metabolomics Data Annotation in
+R. Metabolites. 2022;
+12(2):173, doi:[10.3390/metabo12020173](https://doi.org/10.3390/metabo12020173).
+
+Aayush Grover and Laurent Gatto *ProtFinder: finding subcellular
+locations of proteins using protein interaction networks* bioRxiv
+2022.01.11.475836,
+doi:[10.1101/2022.01.11.475836](https://doi.org/10.1101/2022.01.11.475836)
+([software repo](https://github.com/UCLouvain-CBIO/ProtFinder)).
+
+Dechamps M, De Poortere, Martin M, Gatto L, et
+al. *Inflammation-Induced Coagulopathy Substantially Differs Between
+COVID-19 and Septic Shock: A Prospective Observational Study*
+Frontiers in Medicine (2022),
+doi:[10.3389/fmed.2021.780750](https://www.frontiersin.org/article/10.3389/fmed.2021.780750).
+
+Christophe Vanderaa, Laurent Gatto *Replication of single-cell
+proteomics data reveals important computational challenges* Expert
+Review of Proteomics (2021),
+doi:[10.1080/14789450.2021.1988571](https://www.tandfonline.com/doi/full/10.1080/14789450.2021.1988571)
+(pre-print:
+[10.1101/2021.04.12.439408v2](https://www.biorxiv.org/content/10.1101/2021.04.12.439408v2)).
+
+Mulvey CM, Breckels LM, Crook O, Sanders D, Ribeiro A, Geladaki A,
+Christoforou A, Britovsek NK, Hurrell T, Deery MJ, Gatto L, Smith A,
+and Lilley KS. *Spatiotemporal proteomic profiling of the
+pro-inflammatory response to lipopolysaccharide in the THP-1 human
+leukaemia cell line* Nat Commun 12, 5773 (2021),
+doi:[10.1038/s41467-021-26000-9](https://doi.org/10.1038/s41467-021-26000-9).
+
+Killian T and Gatto L. Exploiting the DepMap cancer dependency data
+using the `depmap` R package [version 1; peer review: 1 approved with
+reservations]. F1000Research 2021, 10:416,
+doi:[10.12688/f1000research.52811.1](https://doi.org/10.12688/f1000research.52811.1).
+
+Jérôme Ambroise, Laurent Gatto, Julie Hurel, Bertrand Bearzatto,
+Jean-Luc Gala *On the many advantages of using the VariantExperiment
+class to store, exchange and analyze SARS-CoV-2 genomic data and
+associated metadata* bioRxiv 2021.04.05.438328, doi:
+[https://doi.org/10.1101/2021.04.05.438328](https://doi.org/10.1101/2021.04.05.438328).
 
 Crook OM, Geladaki A, Nightingale DJH, Vennard O, Lilley KS, Gatto L,
 Kirk PDW *A semi-supervised Bayesian approach for simultaneous protein
-sub-cellular localisation assignment and novelty detection* bioRxiv
-2020.05.05.078345; doi:
-[https://doi.org/10.1101/2020.05.05.078345](https://doi.org/10.1101/2020.05.05.078345).
+sub-cellular localisation assignment and novelty detection* PLOS
+Computational Biology 2020 16(11):e1008288,
+doi:[10.1371/journal.pcbi.1008288](https://doi.org/10.1371/journal.pcbi.1008288)
+([preprint](https://doi.org/10.1101/2020.05.05.078345)).
+
+Pollet H *et al.*, Aberrant Membrane Composition and Biophysical
+Properties Impair Erythrocyte Morphology and Functionality in
+Elliptocytosis, Biomolecules 2020, 10(8), 1120,
+doi:[10.3390/biom10081120](https://www.mdpi.com/2218-273X/10/8/1120).
+
+Gatto L, Gibb S, Rainer J *MSnbase, efficient and elegant R-based
+processing and visualisation of raw mass spectrometry data*
+J. Proteome Res. 2021, 20, 1, 1063–1069,
+doi:[10.1021/acs.jproteome.0c00313](https://doi.org/10.1021/acs.jproteome.0c00313)
+([preprint](https://doi.org/10.1101/2020.04.29.067868)).
 
 Silverman EK *et al.*, *Molecular networks in Network Medicine:
 Development and applications*, WIREs Systems Biology and Medecine,
-2020 [10.1002/wsbm.1489](https://dx.doi.org/10.1002/wsbm.1489).
+2020, doi:[10.1002/wsbm.1489](https://dx.doi.org/10.1002/wsbm.1489).
 
 Crook PM, Gatto L, Kirk PDW *Fast approximate inference for variable
 selection in Dirichlet process mixtures, with an application to
 pan-cancer proteomics* Statistical Applications in Genetics and
-Molecular Biology, Volume 18, Issue 6, 1544-6115 DOI:
-[10.1515/sagmb-2018-0065](https://doi.org/10.1515/sagmb-2018-0065)
+Molecular Biology, Volume 18, Issue 6, 1544-6115,
+doi:[10.1515/sagmb-2018-0065](https://doi.org/10.1515/sagmb-2018-0065)
 2019 (pre-print:
 [arXiv:1810.05450](https://arxiv.org/abs/1810.05450)).
 
 Baers LL, Breckels LM, Mills LA, Gatto L, Deery M, Stevens TJ, Howe
 CH, Lilley KS, Lea-Smith DJ *Proteome mapping of a cyanobacterium
 reveals distinct compartment organisation and cell-dispersed
-metabolism*, Plant Physiology 2019
-[https://doi.org/10.1104/pp.19.00897](https://doi.org/10.1104/pp.19.00897).
+metabolism*, Plant Physiology 2019,
+doi:[10.1104/pp.19.00897](https://doi.org/10.1104/pp.19.00897).
 
 Petyuk VA, Gatto L and Payne SH *Reproducibility and Transparency by
 Design*, Molecular & Cellular Proteomics July 4, 2019,
-mcp.IP119.001567;
-[https://doi.org/10.1074/mcp.IP119.001567](https://doi.org/10.1074/mcp.IP119.001567).
+mcp.IP119.001567,
+doi:[10.1074/mcp.IP119.001567](https://doi.org/10.1074/mcp.IP119.001567).
 
 Crook OM, Breckels LM, Lilley KS, Kirk PDW and Gatto L (2019) *A
 Bioconductor workflow for the Bayesian analysis of spatial proteomics*
 [version 1; peer review: 1 approved, 2 approved with reservations]
-F1000Research 2019, 8:446
-[https://doi.org/10.12688/f1000research.18636.1](https://doi.org/10.12688/f1000research.18636.1).
+F1000Research 2019, 8:446,
+doi:[10.12688/f1000research.18636.1](https://doi.org/10.12688/f1000research.18636.1).
 
 Crook OM, Lilley KS, Gatto L, Kirk PDW (2019). *Semi-Supervised
 Non-Parametric Bayesian Modelling of Spatial Proteomics.* arXiv
@@ -223,12 +481,12 @@ Non-Parametric Bayesian Modelling of Spatial Proteomics.* arXiv
 Johannes Rainer, Laurent Gatto, Christian X. Weichenberger;
 *`ensembldb`: an R package to create and use Ensembl-based annotation
 resources*, Bioinformatics, btz031,
-[https://doi.org/10.1093/bioinformatics/btz031](https://doi.org/10.1093/bioinformatics/btz031).
+doi:[10.1093/bioinformatics/btz031](https://doi.org/10.1093/bioinformatics/btz031).
 
 Laurent Gatto, Lisa M Breckels, Kathryn S Lilley *Assessing
 sub-cellular resolution in spatial proteomics experiments* Current
 Opinion in Chemical Biology, 48 123-149
-(2019) DOI:[10.1016/j.cbpa.2018.11.015](https://doi.org/10.1016/j.cbpa.2018.11.015).
+(2019), doi:[10.1016/j.cbpa.2018.11.015](https://doi.org/10.1016/j.cbpa.2018.11.015).
 
 Crook OM, Mulvey CM, Kirk PDW, Lilley KS, Gatto L (2018) *A Bayesian
 mixture modelling approach for spatial proteomics*. PLoS Comput Biol
@@ -238,8 +496,8 @@ e1006516. [https://doi.org/10.1371/journal.pcbi.1006516](https://doi.org/10.1371
 Eglen, S., Mounce, R., Gatto, L., Currie, A., & Nobis, Y. *Recent
 developments in scholarly publishing: a view from the life
 sciences*. Emerging Topics in Life Sciences, Dec 21, 2018, 2 (6)
-775-778; doi:
-[10.1042/ETLS20180172](http://www.emergtoplifesci.org/content/2/6/775)
+775-778,
+doi:[10.1042/ETLS20180172](http://www.emergtoplifesci.org/content/2/6/775)
 (pre-print
 [doi:10.31219/osf.io/57hcs](https://doi.org/10.31219/osf.io/57hcs)).
 
@@ -256,17 +514,17 @@ Morell CM, Kaserman JE, Madrigal P, Hannan N, Gatto L, Tan L, Wilson
 AA, Lilley K, Marciniak SJ, Gooptu B, Lomas DA, Vallier L. *hiPSC
 hepatocyte model demonstrates the role of unfolded protein response
 and inflammatory networks in α(1)-antitrypsin deficiency.* J
-Hepatol. 2018 Jun 4. pii: S0168-8278(18)32113-5. doi:
-[10.1016/j.jhep.2018.05.028](https://dx.doi.org/10.1016/j.jhep.2018.05.028).
+Hepatol. 2018 Jun 4. pii:
+S0168-8278(18)32113-5. doi:[10.1016/j.jhep.2018.05.028](https://dx.doi.org/10.1016/j.jhep.2018.05.028).
 
 Nett I, Mulas C, Gatto L, Lilley KS, Smith A. *Negative feedback via
 RSK modulates Erk‐dependent progression from naïve pluripotency* EMBO
-reports (2018) e45642
+reports (2018) e45642,
 doi:[10.15252/embr.201745642](http://dx.doi.org/10.15252/embr.201745642).
 
 Thul PJ, *et al.* *A subcellular map of the human
-proteome*. Science. 2017 May 11. pii:
-eaal3321. [doi:10.1126/science.aal3321](http://science.sciencemag.org/content/early/2017/05/10/science.aal3321). [Epub ahead of print]
+proteome*. Science. 2017 May 11. pii: eaal3321,
+doi:[10.1126/science.aal3321](http://science.sciencemag.org/content/early/2017/05/10/science.aal3321).
 PubMed [PMID:28495876](https://www.ncbi.nlm.nih.gov/pubmed/28495876).
 
 Mulvey CM, Breckels LM, Geladaki A, Kocevar Britovsek N, Nightingale
@@ -280,14 +538,15 @@ for details on the computational side of the protocol.)
 
 Leprevost FD, et al. *[BioContainers](http://biocontainers.pro/): An
 open-source and community-driven framework for software
-standardization.* Bioinformatics. 2017
-Mar 30. [doi:10.1093/bioinformatics/btx192](https://academic.oup.com/bioinformatics/article/doi/10.1093/bioinformatics/btx192/3096437/BioContainers-An-open-source-and-community-driven). [Epub ahead of print]
-[PubMed PMID:28379341](https://www.ncbi.nlm.nih.gov/pubmed/28379341).
+standardization.* Bioinformatics. 2017 Mar 30,
+doi:[10.1093/bioinformatics/btx192](https://academic.oup.com/bioinformatics/article/doi/10.1093/bioinformatics/btx192/3096437/BioContainers-An-open-source-and-community-driven). [Epub
+ahead of print] [PubMed
+PMID:28379341](https://www.ncbi.nlm.nih.gov/pubmed/28379341).
 
 Breckels LM, Mulvey CM, Lilley KS and Gatto L. *A Bioconductor
-workflow for processing and analysing spatial proteomics
-data* F1000Research 2016, 5:2926
-([doi:10.12688/f1000research.10411.1](https://f1000research.com/articles/5-2926/)).
+workflow for processing and analysing spatial proteomics data*
+F1000Research 2016, 5:2926
+(doi:[10.12688/f1000research.10411.1](https://f1000research.com/articles/5-2926/)).
 [Software: [MSnbase](http://bioconductor.org/packages/MSnbase),
 [pRoloc](http://bioconductor.org/packages/pRoloc),
 [pRolocGUI](http://bioconductor.org/packages/pRolocGUI)]
@@ -296,20 +555,21 @@ Wieczorek S, Combes F, Lazar C, Giai Gianetto Q, Gatto L, Dorffer A,
 Hesse A, Coute Y, Ferro M, Bruley C, and Burger T. *DAPAR & ProStaR:
 software to perform statistical analyses in quantitative discovery
 proteomics* Bioinformatics 2016,
-[doi:10.1093/bioinformatics/btw580](http://bioinformatics.oxfordjournals.org/content/33/1/135).
+doi:[10.1093/bioinformatics/btw580](http://bioinformatics.oxfordjournals.org/content/33/1/135).
 
 Perez-Riverol Y, Gatto L, Wang R, Sachsenberg T, Uszkoreit J,
 Leprevost Fda V, Fufezan C, Ternent T, Eglen SJ, Katz DS, Pollard TJ,
 Konovalov A, Flight RM, Blin K, Vizcaino JA. *Ten Simple Rules for
 Taking Advantage of Git and GitHub*. PLoS Comput Biol. 2016 Jul
-14;12(7):e1004947. [doi:10.1371/journal.pcbi.1004947](http://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1004947)
+14;12(7):e1004947,
+doi:[10.1371/journal.pcbi.1004947](http://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1004947)
 [PMID:27415786](http://www.ncbi.nlm.nih.gov/pubmed/27415786).
 
 Breckels LM, Holden S, Wonjar D, Mulvey CM, Christoforou A, Groen AJ,
 Kohlbacher O, Lilley KS, Gatto L. *Learning from heterogeneous data
 sources: an application in spatial proteomics*. PLoS Comput Biol. 2016
-May 13;12(5):e1004920
-[doi:10.1371/journal.pcbi.1004920](http://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1004920),
+May 13;12(5):e1004920,
+doi:[10.1371/journal.pcbi.1004920](http://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1004920),
 [Software](http://bioconductor.org/packages/release/bioc/html/pRoloc.html))
 
 Fabre B, Korona D, Groen A, Vowinckel J, Gatto L, Deery MJ, Ralser M,
@@ -333,17 +593,17 @@ and
 Christoforou A, Mulvey CM, Breckels LM, Geladaki A, Hurrell T, Hayward
 PC, Naake T, Gatto L, Viner R, Arias AM, Lilley KS. A draft map of the
 mouse pluripotent stem cell spatial proteome. Nat Commun. 2016 Jan
-12;7:9992
-[doi:10.1038/ncomms9992](http://www.nature.com/ncomms/2016/160112/ncomms9992/abs/ncomms9992.html)
+12;7:9992,
+doi:[10.1038/ncomms9992](http://www.nature.com/ncomms/2016/160112/ncomms9992/abs/ncomms9992.html)
 ([PMID:26754106](http://www.ncbi.nlm.nih.gov/pubmed/26754106),
 [data](http://www.bioconductor.org/packages/release/data/experiment/html/pRolocdata.html),
 [PRIDE](http://www.ebi.ac.uk/pride/archive/projects/PXD001279),
-[resource](https://lgatto.shinyapps.io/christoforou2015/))
+[resource](https://lgatto.shinyapps.io/christoforou2015/)).
 
 Gatto L, Hansen KD, Hoopmann MR, Hermjakob H, Kohlbacher O and Beyer,
 A *Testing and validation of computational methods for mass
-spectrometry*. J Proteome
-Res. 2015. [doi: 10.1002/stem.2067](http://pubs.acs.org/doi/abs/10.1021/acs.jproteome.5b00852)
+spectrometry*. J Proteome Res. 2015,
+doi:[10.1002/stem.2067](http://pubs.acs.org/doi/abs/10.1021/acs.jproteome.5b00852)
 ([PubMed](http://www.ncbi.nlm.nih.gov/pubmed/26549429)).
 
 Mulvey CM, Schröter C, Gatto L, Dikicioglu D, Baris Fidaner I,
@@ -380,7 +640,7 @@ href="http://www.plantphysiol.org/content/early/2014/08/13/pp.114.245589.short">
 <a href="http://www.ncbi.nlm.nih.gov/pubmed/25122472">PubMed</a>)
 
 
-Griss J, <i>et al.</i> *The mzTab Data Exchange Format: communicating
+Griss J, *et al.* *The mzTab Data Exchange Format: communicating
 MS-based proteomics and metabolomics experimental results to a wider
 audience*, Mol Cell Proteomics. 2014 June 30. (<a
 href="http://www.mcponline.org./content/early/2014/06/30/mcp.O113.036681.abstract">Publisher</a>)
@@ -404,13 +664,13 @@ coverage</a>)
 
 Walzer M, <i>et al.</i> *qcML: an exchange format for quality control
 metrics from mass spectrometry experiments*, Mol Cell Proteomics. 2014
-Apr 23. (<a
+Apr 23 (<a
 href="http://www.ncbi.nlm.nih.gov/pubmed/24760958">PubMed</a>).
 
 
 Vizcaíno J.A. <i>et al.</i> *ProteomeXchange: globally co-ordinated
 proteomics data submission and dissemination*, Nature Biotechnology
-2014, 32, 223–226.  (<a
+2014, 32, 223–226 (<a
 href="http://www.ncbi.nlm.nih.gov/pubmed/24727771">PubMed</a>)
 
 
@@ -627,6 +887,9 @@ spectrometry and proteomics.
 
 This is an incomplete list of talks I have given in the past.
 
+Principled and Reproducible Mass Spectrometry-based Single Cell
+Proteomics Data Analysis, USHUPO, 08 March 2020.
+
 [Standardised and reproducible analysis of mass spectrometry-based
 single-cell proteomics data](http://bit.ly/2020SCP), [Single Cell
 Proteomics meeting](http://single-cell.net/proteomics/scp2020), 18
@@ -720,3 +983,10 @@ of quantitative proteomics data
 
 [Introduction to Integrative Omics: proteomics](http://tinyurl.com/Intro-Integ-Omics-Prot),
 European Bioinformatics Institute, Hinxton, UK, 8 March 2016.
+
+## Get in touch
+
+On the fediverse at <a rel="me" href="https://fosstodon.org/@lgatto">lgatto@fosstodon.org</a>,
+by email at `name.surname<at>institution.be`, via a
+[Github](https://github.com/lgatto) issue on a relevant repo or on the
+[Bioconductor community slack](https://bioc-community.herokuapp.com/).

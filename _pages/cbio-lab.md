@@ -57,14 +57,29 @@ experience for everyone, and we expect cooperation from all members to
 help ensuring a safe environment for everybody. See the [Code of
 conduct](https://lgatto.github.io/cbio-coc/) page for a longer version.
 
-<!-- # Funding -->
+# Funding
 
 <!-- Since 2010, we have benefited from the financial support from the -->
 <!-- **BBSRC**, the **7th Framework Programme of the European Union** -->
 <!-- (Contract no. 262067 [PRIME-XS](http://www.primexs.eu/)) and the -->
 <!-- **Wellcome Trust**. -->
 
+The CBIO lab benefits from funding from
+
+- [de Duve Institute](https://www.deduveinstitute.be/).
+- [National Fund for Scientific Research](https://www.frs-fnrs.be/fr/) (FNRS).
+- [Research Foundation – Flanders](https://www.fwo.be/) (FWO).
+- Sofina Covid Solidarity Fund (HYGIEIA project).
+- [Televie](https://televie.be/)
+- GSK
+- European Union and Walloon region ([e-Omix Hub project](https://www.eomix.be/))
+
+The CBIO lab thanks [Zulip](https://zulip.com/) for the free Cloud
+Standard hosting. Zulip is a open-source modern team chat app designed
+to keep both live and asynchronous conversations organised.
+
 # Contact
 
-On [twitter](https://twitter.com/lgatt0) or by email
-![contact email](/images/contact-email.png)
+On the fediverse at <a rel="me"
+href="https://fosstodon.org/@lgatto">lgatto@fosstodon.org</a> or by
+email ![contact email](/images/contact-email.png)

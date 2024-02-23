@@ -1,0 +1,932 @@
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8">
+
+<!-- begin SEO -->
+
+
+
+
+
+
+
+
+
+<title>            Ungrading my teaching      ~/      </title>
+
+
+
+
+<meta name="description" content="I have been extremely lucky to participate in a Carpentriesinstructortraining as an early career researcher. By then, I had only taught afew workshops, and was very impressed by the content of the training,and by Greg Wilson, who delivered it withtouching sincerity and dedication. A couple of years later, I managedto secure some funding from the RConsortium to organise an instructorcourse in Cambridge, where I worked at the time, and was delighted tobe able to revisit the content. The Carpentries approach to lessondesign and teaching has stuck with me since then. I have applied theseprinciples and some of the material to my main university courses(WSBIM1207 andWSBIM1322 for the second and third bachelorcourses respectively and WSBIM2122 for themaster’s course), and am now, as part of the Bioconductor Teachingcommittee,developing new lessons.">
+
+
+
+
+<meta property="og:locale" content="en_GB">
+<meta property="og:site_name" content="~/">
+<meta property="og:title" content="Ungrading my teaching">
+
+
+  <link rel="canonical" href="https://lgatto.github.io/ungrading/">
+  <meta property="og:url" content="https://lgatto.github.io/ungrading/">
+
+
+
+  <meta property="og:description" content="I have been extremely lucky to participate in a Carpentriesinstructortraining as an early career researcher. By then, I had only taught afew workshops, and was very impressed by the content of the training,and by Greg Wilson, who delivered it withtouching sincerity and dedication. A couple of years later, I managedto secure some funding from the RConsortium to organise an instructorcourse in Cambridge, where I worked at the time, and was delighted tobe able to revisit the content. The Carpentries approach to lessondesign and teaching has stuck with me since then. I have applied theseprinciples and some of the material to my main university courses(WSBIM1207 andWSBIM1322 for the second and third bachelorcourses respectively and WSBIM2122 for themaster’s course), and am now, as part of the Bioconductor Teachingcommittee,developing new lessons.">
+
+
+
+
+
+  
+
+  
+
+
+
+
+
+  <meta property="og:type" content="article">
+  <meta property="article:published_time" content="2022-10-26T00:00:00+02:00">
+
+
+
+
+
+
+
+
+  <script type="application/ld+json">
+    {
+      "@context" : "http://schema.org",
+      "@type" : "Person",
+      "name" : "Laurent Gatto",
+      "url" : "https://lgatto.github.io",
+      "sameAs" : null
+    }
+  </script>
+
+
+
+
+
+
+<!-- end SEO -->
+
+
+<link href="https://lgatto.github.io/feed.xml" type="application/atom+xml" rel="alternate" title="~/ Feed">
+
+<!-- http://t.co/dKP3o1e -->
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="https://lgatto.github.io/assets/css/main.css">
+
+<meta http-equiv="cleartype" content="on">
+    <!-- start custom head snippets -->
+
+<!-- insert favicons. use http://realfavicongenerator.net/ -->
+
+<!-- end custom head snippets -->
+  </head>
+
+  <body class="layout--single">
+
+    <!--[if lt IE 9]>
+<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
+<![endif]-->
+    <div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        <button><div class="navicon"></div></button>
+        <ul class="visible-links">
+          <li class="masthead__menu-item masthead__menu-item--lg"><a href="https://lgatto.github.io/">~/</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="https://lgatto.github.io/about/">About</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="https://lgatto.github.io/year-archive/">Posts</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="https://lgatto.github.io/tags/">Tags</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="https://lgatto.github.io/cbio-lab/">Lab</a></li>
+          
+        </ul>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+    
+
+
+
+<div id="main" role="main">
+  
+  <div class="sidebar sticky">
+  
+
+<div itemscope itemtype="http://schema.org/Person">
+
+  
+    <div class="author__avatar">
+      
+        <img src="https://lgatto.github.io/images/lgatto2.jpg" class="author__avatar" alt="Laurent Gatto" itemprop="image">
+      
+    </div>
+  
+
+  <div class="author__content">
+    <h3 class="author__name" itemprop="name">Laurent Gatto</h3>
+    
+      <p class="author__bio" itemprop="description">
+        Open science, reproducible research, data champion, computational biology, proteomics, more omics, emacs, a lot of R, quite a bit of running, and parenting.
+      </p>
+    
+  </div>
+
+  <div class="author__urls-wrapper">
+    <button class="btn btn--inverse">Follow</button>
+    <ul class="author__urls social-icons">
+      
+
+      
+
+      
+
+      
+        <li>
+          <a href="https://keybase.io/lgatto" itemprop="sameAs">
+            <i class="fa fa-fw fa-key" aria-hidden="true"></i> Keybase
+          </a>
+        </li>
+      
+
+      
+
+      
+
+      
+
+      
+        <li>
+          <a href="https://www.linkedin.com/in/lgatto" itemprop="sameAs">
+            <i class="fa fa-fw fa-linkedin-square" aria-hidden="true"></i> LinkedIn
+          </a>
+        </li>
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+        <li>
+          <a href="https://github.com/lgatto" itemprop="sameAs">
+            <i class="fa fa-fw fa-github" aria-hidden="true"></i> GitHub
+          </a>
+        </li>
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      <!--
+  <li>
+    <a href="http://link-to-whatever-social-network.com/user/" itemprop="sameAs">
+      <i class="fa fa-fw" aria-hidden="true"></i> Custom Social Profile Link
+    </a>
+  </li>
+-->
+
+
+  <li>
+    <a href="http://dissem.in/r/6231/laurent-gatto" itemprop="sameAs">
+      <i class="fa fa-fw fa-pencil" aria-hidden="true"></i> dissem.in
+    </a>
+  </li>
+
+  <li>
+    <a href="https://orcid.org/0000-0002-1520-2268" itemprop="sameAs">
+      <i class="fa fa-fw fa-pencil" aria-hidden="true"></i> ORCID
+    </a>
+  </li>
+
+  <li>
+    <a href="https://scholar.google.co.uk/citations?user=k5DrB74AAAAJ&hl=en" itemprop="sameAs">
+      <i class="fa fa-fw fa-google" aria-hidden="true"></i> scholar
+    </a>
+  </li>
+
+  <li>
+    <a href="https://impactstory.org/u/0000-0002-1520-2268" itemprop="sameAs">
+      <i class="fa fa-fw fa-sun-o" aria-hidden="true"></i> Impactstory
+    </a>
+  </li>
+
+    </ul>
+  </div>
+</div>
+
+  
+  </div>
+
+
+  <article class="page" itemscope itemtype="http://schema.org/CreativeWork">
+    <meta itemprop="headline" content="Ungrading my teaching">
+    <meta itemprop="description" content="I have been extremely lucky to participate in a Carpentriesinstructortraining as an early career researcher. By then, I had only taught afew workshops, and was very impressed by the content of the training,and by Greg Wilson, who delivered it withtouching sincerity and dedication. A couple of years later, I managedto secure some funding from the RConsortium to organise an instructorcourse in Cambridge, where I worked at the time, and was delighted tobe able to revisit the content. The Carpentries approach to lessondesign and teaching has stuck with me since then. I have applied theseprinciples and some of the material to my main university courses(WSBIM1207 andWSBIM1322 for the second and third bachelorcourses respectively and WSBIM2122 for themaster’s course), and am now, as part of the Bioconductor Teachingcommittee,developing new lessons.">
+    <meta itemprop="datePublished" content="October 26, 2022">
+    
+
+    <div class="page__inner-wrap">
+      
+        <header>
+          <h1 class="page__title" itemprop="headline">Ungrading my teaching
+</h1>
+          
+            <p class="page__meta"><i class="fa fa-clock-o" aria-hidden="true"></i> 
+
+
+
+
+  15 minute read
+</p>
+          
+        </header>
+      
+
+      <section class="page__content" itemprop="text">
+        <p>I have been extremely lucky to participate in a <a href="https://carpentries.github.io/instructor-training/">Carpentries
+instructor</a>
+training as an early career researcher. By then, I had only taught a
+few workshops, and was very impressed by the content of the training,
+and by <a href="https://third-bit.com/">Greg Wilson</a>, who delivered it with
+touching sincerity and dedication. A couple of years later, I managed
+to secure some funding from the <a href="https://www.r-consortium.org/">R
+Consortium</a> to organise an instructor
+course in Cambridge, where I worked at the time, and was delighted to
+be able to revisit the content. The Carpentries approach to lesson
+design and teaching has stuck with me since then. I have applied these
+principles and some of the material to my main university courses
+(<a href="http://bit.ly/WSBIM1207">WSBIM1207</a> and
+<a href="http://bit.ly/WSBIM1207">WSBIM1322</a> for the second and third bachelor
+courses respectively and <a href="http://bit.ly/WSBIM2122">WSBIM2122</a> for the
+master’s course), and am now, as part of the <a href="https://www.bioconductor.org/help/education-training/">Bioconductor Teaching
+committee</a>,
+developing new lessons.</p>
+
+<p>Delivering good courses at workshops isn’t an easy task, but everybody
+can get there with the right preparation and support (such as proposed
+by the Carpentries). There is however one aspect that makes it
+<em>easier</em> than teaching a university curriculum: as an workshop
+instructor, you focus on the day (or days) you teach, giving your
+best, and then it’s over - no need to think about
+tomorrow. Participants will hopefully apply what they have learnt,
+some might get back to you with questions (extremely rare in my
+experience), but others might not and you’ll never hear from them. In
+a university setting, on the other hand, you have to think about
+assignments, test, exams, marks, … and possibly even about
+pre-requisites for follow-up classes. You have to be able to assess
+the students, i.e. assess whether they have acquired (enough of) the
+material, and whether they are sufficiently well prepared for next
+year’s class and, more generally, their future activities. In my
+opinion/experience, this makes for a more complex teaching experience,
+more careful planning and a whole different level of responsibilities.</p>
+
+<h2 id="criticising-my-own-pedagogy">Criticising my own pedagogy</h2>
+
+<p>I have adapted how I test/assess students during the 4 years, 3 course
+and 10 semester classes I have taught since I moved to my current
+position. Following the Carpentries philosophy, my courses are
+hands-on and are based on repeated practice, so that students <em>get it</em>
+and have a chance to apply what they have learnt. As opposed to other
+courses, it isn’t quite possible to leave it to the last week(s)
+before the exam to cram all the material in short term memory -
+students need to attend and practise exercises in class and (ideally
+also) at home. To promote students’ work, I organise weekly tests
+which, for a couple of years now, allowed those that earned good
+marks, to transfer their mean test scores to their final grade, and
+thus get a dispense for the exam. Unfortunately, this hasn’t proven as
+successful as I had hoped.</p>
+
+<p>The reason for the failure of this test/dispense approach is well
+known to those that have studied to effect of marking and grading -
+the focus of the student is switched from <em>learning</em> new skills to
+obtaining a <em>good</em> mark. And, as clearly stated by Marcus
+Schultz-Bergin in his chapter <em>Grade Anarchy in the Philosophy
+Classroom</em> (p. 175) (from <sup id="fnref:1" role="doc-noteref"><a href="#fn:1" class="footnote" rel="footnote">1</a></sup>): <strong>Grades do not track learning</strong> (or
+anything else of importance) and, to add insult to injury, <strong>grading
+reduces student learning</strong>.</p>
+
+<p>This indeed matches my observation. My students have access to any
+material they see fit for the tests and exams. Some focus their
+preparation on gathering as much material as possible (such as answers
+from previous tests and exercises) and then apply the <em>minimax</em>
+strategy to maximise the marks while minimising their own work by
+matching the answers they have gathered to the questions of the
+day. The focus of the tests has become the tests’ marks, and most
+criticism/feedback at the end of a lesson (I use the Carpentries
+famous <a href="https://carpentries.github.io/instructor-training/21-management/index.html#sticky-notes">colour sticky
+notes</a>
+to increase interactions and collect feedback after each class) was
+the lack of time to finish/get good marks, with little questioning
+about the understanding/mastering of the material (such as being able
+to answer the questions in a limited but doable amount of time).</p>
+
+<p>It is important to clarify here that I don’t blame the
+students. Students, as a collective entity, will adapt to rules and
+constrains that are set to them. Maximising the success in exams is a
+natural adaptation to the current system, that has focused on grades
+as a mean of standardisation. Even if the goal of this standardisation
+is (or was) equality and fairness (in the face of an increasing number
+of students), it has led to the acquisition of grades to become the
+main (and often only) assessment of successful learning and teaching.</p>
+
+<h2 id="ungrading-why-rating-students-undermines-learning">UNgrading, why rating students undermines learning</h2>
+
+<p>During the last summer holidays, I read <em>UNgrading, why rating
+students undermines learning (and what to do instead)</em> <sup id="fnref:1:1" role="doc-noteref"><a href="#fn:1" class="footnote" rel="footnote">1</a></sup>, a
+collection of chapters edited by Susan D. Blum, highlighting the
+issues with grading and sharing the experiences of some instructors
+that decided to drop them in their classes. To summarise the main
+arguments made by the many authors in the book, I’ll cite Marcus
+Schultz-Bergin again:</p>
+
+<ol>
+  <li>Grades do not track learning (or anything else of importance).</li>
+  <li>Grading reduces student learning.</li>
+  <li>Only receiving feedback (and no grades) increases student learning.</li>
+  <li>Self-evaluation and self-reflection improve student learning.</li>
+</ol>
+
+<p>The last point refers to the concept of <em>meta-cognition</em>, thinking
+about how we think, and learn, and the ability to self-assess. It is
+paramount for students to learn how to receive and use the feedback
+they are given. Self-evaluation of one’s own learning process should
+be the ultimate goal of any teaching enterprise, as it essentially
+provides the means for anyone to learn any new subject they are
+interested in.</p>
+
+<p>The authors provide more details about points 1 and 2 above, but my
+own observation made it abundantly clear that, despite my best
+intentions, tests offering a possibility to get a dispense for the
+exam wasn’t working. I took plenty of notes during my reading of the
+ungrading book and have devised alternative approaches that I’m
+looking forward to apply this semester. I will drop marking and put as
+much emphasis as possible on providing feedback, and leading students
+to assess their own work, focusing on understanding and mastering the
+material, rather than on obtaining grades. Before I describe my plans,
+I must specify that I will have to provide a grade for the end of year
+assessment, that students will earn with an exam. Even though I am
+convinced that marking isn’t an appropriate assessment of learning, I
+will first need to implement this in my classes and assess if/how this
+affects student learning and (hopefully) how they perform in that
+final exam. There is a long learning curve ahead (for me) and battle
+to extend this further. I have exciting plans for my bachelor and
+master courses. Read on…</p>
+
+<h2 id="first-steps-in-ungraded-land">First steps in ungraded land</h2>
+
+<p>I will be dropping grades in all the tests that are given throughout
+the term (typically at each or most lectures but the first one) in
+both bachelor courses. The first implication of this is that there
+won’t be any opportunity for students to be dispensed from the final
+exam, which is an opportunity several counted on. I will thus need to
+make sure that the reasons for this, described above, are clear (see
+point 1 below). The goal is to promote self-evaluation, feedback on
+their understanding of the material, and a reflection on their
+learning process. Instead of grading each individual test (a
+time-consuming activity), we will answer test’s questions together, in
+class, right after the test itself. This is something I have done
+previously, albeit rather swiftly. Here, I intend to take more time
+and involve the students as much as possible by asking for their
+active participation. After the collaborative correction, I will ask
+them to answer a quick poll, assessing whether (1) they understood the
+material but need more work to really master it, (2) they mastered the
+material and are ready to move on or (3) they neither understood nor
+mastered it and will ask for help (see point 2 below). Teaching
+assistants (TAs) and myself will spare some considerable time by not
+grading tens of copies (sometime over 60) and will seize it to put
+this new pedagogical strategy into place. After the poll, students
+will be invited to review their work after the lecture, in the light
+of the correction and their self-assessment and come to us to ask
+specific questions about their work, things they struggled with, or
+advice on how they could improve their learning (see point 3
+below). The goal of this is to steer away from grades and re-focus on
+their understanding/mastering of the material, offer opportunities for
+personalised feedback, and promote self-evaluation and
+meta-cognition. Fingers crossed!</p>
+
+<p>Self-evaluation works best in an environment where we trust each
+other. To emphasise this, I have also decided to change the attendance
+formalities. Since the beginning, I have made attendance mandatory. At
+my institution and in Belgium in general, attendance is only mandatory
+for practicals, and optional for formal lectures. Given that in my
+courses, theory and practice blend into each other, that I try to give
+as much hands-on work as possible during the classes, and that it is
+unlikely to master the material without that practice anyway, presence
+was mandatory, and TAs circulated attendance sheet that students had
+to sign. I will be honest that I didn’t check them systematically and
+didn’t follow up on absences. But I thought that this <em>pressure</em> would
+force students to attend and get them a chance to practise. I decided
+to change this. Attendance is still mandatory for the reasons
+mentioned above, but I will not use presence sheets anymore. If a
+student can’t make it, I’m asking for a short email to let me know
+that they aren’t or weren’t able to attend. I do not need any reason
+for the absence. I will just ask them to specify, in that email, how
+they plan to make up for the missed lesson, including asking me or the
+TAs for extra help. I think this approach builds on trust and
+self-motivation, invites students to take responsibility for their own
+learning, and promotes reflection of their progress, notably when they
+miss a class (whatever the reason).</p>
+
+<h2 id="first-self-assessments-theirs-and-mine">First self-assessments (theirs and mine)</h2>
+
+<p>Here’s how things look like after a couple of weeks:</p>
+
+<ol>
+  <li>
+    <p>A short live poll (using sticky notes) during the first class of
+the year, after explaining the reasons for dropping the dispense
+and implementing the new strategy, was seen in a positive light by
+the great majority of the students. A handful of the 50 students
+regretted not being able to get a dispense. My impression is that
+these are the students that were aiming to get one (some of them
+probably already got one for the previous course), and consider
+this a loss (for them, personally) compared to the opportunities
+offered by the change.</p>
+  </li>
+  <li>
+    <p>The first post-test polls of the year indicate that the majority of
+students understand the material but needed more work to fully
+master it (from 55 to 85%). Smaller fractions of students don’t
+understand the material and conceded they need more help (8 to 14%)
+or fully master it (from 0 to 17%). The proportions are variable,
+depending on the chapter, but the fraction of students
+understanding the material is always the largest, by a comfortable
+margin.</p>
+  </li>
+  <li>
+    <p>We set up office hours during the week and just before the
+lectures, making sure that these didn’t conflict with the student
+schedule. So far, for the first weeks this has been in place, the
+number of students that booked and met with us was not in line with
+the poll - we meet with 1 to 3 students per week, out of a total
+over 40.</p>
+  </li>
+  <li>
+    <p>I have received a couple of emails from students not being able to
+attend. Most were related to clashes in their schedule (for
+students that had lectures from second and third bachelor
+years). Some of these emails did follow the guideline and explained
+how they intended to make up for missing the classes: work by
+themselves, use the recordings we provide, interact with class
+mates who do attend the lectures. Along the same lines, I had one
+student that explicitly wrote that they would revise the sections
+they struggled with on their end-of-class red sticky notes.</p>
+  </li>
+</ol>
+
+<h2 id="adjustments-for-smaller-classes">Adjustments for smaller classes</h2>
+
+<p>The master’s course provides more freedom to experiment further, as
+there are less students in the class and allows for more one-to-one
+interactions.</p>
+
+<ul>
+  <li>
+    <p>So far, students had to prepare and present two data analysis
+reports throughout the semester course, focusing on two different
+high-throughput data types (transcriptomics and proteomics). We
+devote 3 to 4 successive session to each project: (1) lectures and
+exercises for them to learn and practice the theory, (2) a session
+where they test what they have learnt on their own data and can ask
+questions about the material and their data and (3) a short
+presentation with questions from the audience (other students and
+instructors), followed by, the following week, the submission of a
+detailed report that takes into account the questions and discussion
+during the respective presentations. I am considering to let
+students choose whether they prefer to do the second project, or
+propose improvements and extension to the first project and, if they
+wish, implement these during the next practice sessions.</p>
+  </li>
+  <li>
+    <p>I am also considering to ask students to comment on each others
+written reports, in addition to the question and answer sessions, to
+further emphasise peer assessment and promote
+peer/self-evaluation. This could also be a good source of
+inspiration for improvements and extension to their first project
+(see previous point).</p>
+  </li>
+  <li>
+    <p>During the master course’s oral exam, we focus primarily on the
+questions and discussions from the written reports. I systematically
+ask what students preferred in the course or felt they have mastered
+best, and what they struggled with. I would like to go a step
+further and ask them to propose and motivate their marks.</p>
+  </li>
+</ul>
+
+<h2 id="ideas-for-the-future">Ideas for the future</h2>
+
+<p>Depending on how the attempts above are received and how they
+influence the students’ learning, I might consider propose a more
+ambitious project to the 3rd bachelor students. This might only really
+apply to students that are re-taking the class and thus have already
+an overview of the whole material, and are in a position to anticipate
+the kind of data, analyses and interpretation that would be expected.</p>
+
+<ol>
+  <li>
+    <p>One or a group of students will be able to choose a project they
+want to work on throughout the year. Choosing a project would
+entail to identify a dataset and one or several questions they want
+to address with that data, confirm that the project would be
+written up as a (reproducible) report, and, if they work as a
+group, some sort of agreement that all members of the group will
+contribute.</p>
+  </li>
+  <li>
+    <p>They have total freedom in the complexity of the data and questions
+they choose to work on. It could either be a rather ambitous
+project, that would account for all credits/marks of the course, or
+choose something smaller. There could be an option to make up for
+the rest of the marks with (parts of) the final exam (that those
+that didn’t choose a project would have to take anyway), although I
+haven’t figured out the details of this.</p>
+  </li>
+  <li>
+    <p>The students and the education team (i.e. TAs and myself) would
+discuss their project (data and questions), the feasibility and the
+adequacy of their proposal, and the marks they would obtain upon
+successful completion. All these are open to discussion and
+amendments during the iterations in the next point.</p>
+  </li>
+  <li>
+    <p>Students and the education team would meet regularly to discuss the
+project’s advancement and provide guidance to help them to
+successfully reach their goals. These goals and the marks/credits
+could be revisited accordingly: an overly ambitous project could be
+reduced and, conversely, if the goals are attained earlier than
+expected, students could propose extensions if they wish so.</p>
+  </li>
+  <li>
+    <p>I think students should have the freedom to back out whenever they
+want to, if at any point they prefer to take the exam. They should
+also have the freedom to propose a project that counts for, say 50%
+of the marks, and settle with that without taking the exam if they
+reach their goals.</p>
+  </li>
+  <li>
+    <p>The completion of the project would be officialised by the final
+submission of the report. Importantly, the education team wouldn’t
+read/discover that report for the first time at that point, but
+would have followed its progress throughout the year so that, at
+the time of submission, little doubts persist as to the successful
+completion of the project.</p>
+  </li>
+  <li>
+    <p>If students worked as a group, they would need to provide a section
+describing their respective contributions. Again, these would have
+been laid out early on, and possibly updated, throughout the
+project. Every student of the group would get the same final mark
+but individuals would get recognised for their specific
+contribution.</p>
+  </li>
+</ol>
+
+<h2 id="final-thoughts">Final thoughts</h2>
+
+<p>There is quite some excitement on my part with these new approaches,
+which has, I believe, a positive impact on my teaching. The lectures
+seem to have become more interactive: I try to make sure that all/most
+students get asked questions about the material we see and the
+exercises we do. Based on the sticky notes feedback that are collected
+at the end of each lecture, they seem to appreciate it because it
+improves their involvement and attention.  In previous years, sampling
+students at random for to answer my questions was reported as being
+stressful on the sticky notes. It feels like clarifying and
+verbalising the goals gives me more freedom to reach out to the
+students and them to take it as a genuine learning opportunity. The
+latest set of sticky notes goes along these lines and gives hope for
+the future.</p>
+
+<p><strong>Edit</strong>:</p>
+
+<ul>
+  <li>Here’s a <a href="https://lgatto.github.io/ungrading-assessment/">first ungrading
+assessment</a>, posted
+on 15 December 2022.</li>
+  <li>A short interview, in French: <a href="https://www.youtube.com/watch?v=i4KebCqSP8Q">Evaluation dans l’enseignement
+supérieur : « UNgrading » ou évaluer et apprendre sans
+points</a>.</li>
+</ul>
+
+<div class="footnotes" role="doc-endnotes">
+  <ol>
+    <li id="fn:1" role="doc-endnote">
+      <p>In <em>UNgrading, why rating students undermines learning (and what to do instead)</em>, Susan D. Blum (editor), 2020. <a href="#fnref:1" class="reversefootnote" role="doc-backlink">&#8617;</a> <a href="#fnref:1:1" class="reversefootnote" role="doc-backlink">&#8617;<sup>2</sup></a></p>
+    </li>
+  </ol>
+</div>
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+  
+
+
+  
+  
+  
+
+  <p class="page__taxonomy">
+    <strong><i class="fa fa-fw fa-tags" aria-hidden="true"></i> Tags: </strong>
+    <span itemprop="keywords">
+    
+      
+      
+      <a href="https://lgatto.github.io/tags/#education" class="page__taxonomy-item" rel="tag">education</a><span class="sep">, </span>
+    
+      
+      
+      <a href="https://lgatto.github.io/tags/#teaching" class="page__taxonomy-item" rel="tag">teaching</a>
+    
+    </span>
+  </p>
+
+
+
+
+        
+          <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> Updated:</strong> <time datetime="2022-10-26T00:00:00+02:00">October 26, 2022</time></p>
+        
+      </footer>
+
+      <section class="page__share">
+  
+    <h4 class="page__share-title">Share on</h4>
+  
+
+  <a href="https://twitter.com/intent/tweet?text=Ungrading my teaching https://lgatto.github.io/ungrading/" class="btn btn--twitter" title="Share on Twitter"><i class="fa fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
+
+  <a href="https://www.facebook.com/sharer/sharer.php?u=https://lgatto.github.io/ungrading/" class="btn btn--facebook" title="Share on Facebook"><i class="fa fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
+
+  <a href="https://plus.google.com/share?url=https://lgatto.github.io/ungrading/" class="btn btn--google-plus" title="Share on Google Plus"><i class="fa fa-fw fa-google-plus" aria-hidden="true"></i><span> Google+</span></a>
+
+  <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://lgatto.github.io/ungrading/" class="btn btn--linkedin" title="Share on LinkedIn"><i class="fa fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
+</section>
+
+
+      
+  <nav class="pagination">
+    
+      <a href="https://lgatto.github.io/software-licensing/" class="pagination--pager" title="Notes on software licenses
+">Previous</a>
+    
+    
+      <a href="https://lgatto.github.io/ungrading-assessment/" class="pagination--pager" title="First ungrading assessment
+">Next</a>
+    
+  </nav>
+
+    </div>
+
+    
+  </article>
+
+  
+  
+    <div class="page__related">
+      
+        <h4 class="page__related-title">You May Also Enjoy</h4>
+      
+      <div class="grid__wrapper">
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+    
+      <div class="archive__item-teaser">
+        <img src=
+          
+            "https://lgatto.github.io/assets/images/slide-code.png"
+          
+          alt="">
+      </div>
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="https://lgatto.github.io/the-grid-in-r/" rel="permalink">The Grid poster, in R
+</a>
+      
+    </h2>
+    
+      <p class="page__meta"><i class="fa fa-clock-o" aria-hidden="true"></i> 
+
+
+
+
+  3 minute read
+</p>
+    
+    <p class="archive__item-excerpt" itemprop="description">The MuseeL is the
+UCLouvain University museum in
+Louvain-la-Neuve. Highly recommended. It’s located to the lively
+place des sciences, in a nice brutalist sty...</p>
+  </article>
+</div>
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+    
+      <div class="archive__item-teaser">
+        <img src=
+          
+            "https://lgatto.github.io/assets/images/slide-code.png"
+          
+          alt="">
+      </div>
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="https://lgatto.github.io/podcast-eval/" rel="permalink">Podcasts du LLL: repensons l’évaluation
+</a>
+      
+    </h2>
+    
+      <p class="page__meta"><i class="fa fa-clock-o" aria-hidden="true"></i> 
+
+
+
+
+  1 minute read
+</p>
+    
+    <p class="archive__item-excerpt" itemprop="description">Une fois n’est pas coutume, un billet en français, pour attirer votre
+attention sur les podcasts du LLL. Le LLL, ou Louvain Learning
+Lab accompagne
+tous les ...</p>
+  </article>
+</div>
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+    
+      <div class="archive__item-teaser">
+        <img src=
+          
+            "https://lgatto.github.io/assets/images/slide-code.png"
+          
+          alt="">
+      </div>
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="https://lgatto.github.io/zulip/" rel="permalink">CBIO’s internal communication goes open source
+</a>
+      
+    </h2>
+    
+      <p class="page__meta"><i class="fa fa-clock-o" aria-hidden="true"></i> 
+
+
+
+
+  1 minute read
+</p>
+    
+    <p class="archive__item-excerpt" itemprop="description">I have been using slack for a rather long time as a discussion
+platform for the lab, even before moving to Belgium. Based on the
+access log, I set up the lab...</p>
+  </article>
+</div>
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+    
+      <div class="archive__item-teaser">
+        <img src=
+          
+            "https://lgatto.github.io/assets/images/slide-code.png"
+          
+          alt="">
+      </div>
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="https://lgatto.github.io/EuroBioc-Ghent/" rel="permalink">CBIO’s EuroBioc2023 posters and talks
+</a>
+      
+    </h2>
+    
+      <p class="page__meta"><i class="fa fa-clock-o" aria-hidden="true"></i> 
+
+
+
+
+  13 minute read
+</p>
+    
+    <p class="archive__item-excerpt" itemprop="description">Long overdue now, but here are the CBIO
+lab’s contributions to the
+EuroBioc2023 conference that
+was organised on Ghent, on the 20 - 22 September 2023.
+
+</p>
+  </article>
+</div>
+        
+      </div>
+    </div>
+  
+</div>
+
+    <div class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+
+<!-- end custom footer snippets -->
+        <div class="page__footer-follow">
+  <ul class="social-icons">
+    
+      <li><strong>Follow:</strong></li>
+    
+    
+    
+    
+      <li><a href="http://github.com/lgatto"><i class="fa fa-fw fa-github" aria-hidden="true"></i> GitHub</a></li>
+    
+    
+    <li><a href="https://lgatto.github.io/feed.xml"><i class="fa fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
+  </ul>
+</div>
+
+<div class="page__footer-copyright">&copy; 2024 Laurent Gatto CC-BY. Powered by <a href="http://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+
+      </footer>
+    </div>
+
+    <script src="https://lgatto.github.io/assets/js/main.min.js"></script>
+
+
+
+
+
+  </body>
+</html>

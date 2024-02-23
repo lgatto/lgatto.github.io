@@ -1,0 +1,1023 @@
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8">
+
+<!-- begin SEO -->
+
+
+
+
+
+
+
+
+
+<title>            Standardised and reproducible analysis of mass spectrometry-based single-cell proteomics data      ~/      </title>
+
+
+
+
+<meta name="description" content="We are excited to anounce the official release of thescppackage. scp has been accepted in Bioconductor andpublishedas its first stable release (version 1.0) on the 28 October. Wepresent here a transcript of a recent talk Christophe Vanderaa andLaurent Gatto gave at the SCP2020conference.">
+
+
+
+
+<meta property="og:locale" content="en_GB">
+<meta property="og:site_name" content="~/">
+<meta property="og:title" content="Standardised and reproducible analysis of mass spectrometry-based single-cell proteomics data">
+
+
+  <link rel="canonical" href="https://lgatto.github.io/scp-1/">
+  <meta property="og:url" content="https://lgatto.github.io/scp-1/">
+
+
+
+  <meta property="og:description" content="We are excited to anounce the official release of thescppackage. scp has been accepted in Bioconductor andpublishedas its first stable release (version 1.0) on the 28 October. Wepresent here a transcript of a recent talk Christophe Vanderaa andLaurent Gatto gave at the SCP2020conference.">
+
+
+
+
+
+  
+
+  
+
+
+
+
+
+  <meta property="og:type" content="article">
+  <meta property="article:published_time" content="2020-11-10T00:00:00+01:00">
+
+
+
+
+
+
+
+
+  <script type="application/ld+json">
+    {
+      "@context" : "http://schema.org",
+      "@type" : "Person",
+      "name" : "Laurent Gatto",
+      "url" : "https://lgatto.github.io",
+      "sameAs" : null
+    }
+  </script>
+
+
+
+
+
+
+<!-- end SEO -->
+
+
+<link href="https://lgatto.github.io/feed.xml" type="application/atom+xml" rel="alternate" title="~/ Feed">
+
+<!-- http://t.co/dKP3o1e -->
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="https://lgatto.github.io/assets/css/main.css">
+
+<meta http-equiv="cleartype" content="on">
+    <!-- start custom head snippets -->
+
+<!-- insert favicons. use http://realfavicongenerator.net/ -->
+
+<!-- end custom head snippets -->
+  </head>
+
+  <body class="layout--single">
+
+    <!--[if lt IE 9]>
+<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
+<![endif]-->
+    <div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        <button><div class="navicon"></div></button>
+        <ul class="visible-links">
+          <li class="masthead__menu-item masthead__menu-item--lg"><a href="https://lgatto.github.io/">~/</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="https://lgatto.github.io/about/">About</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="https://lgatto.github.io/year-archive/">Posts</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="https://lgatto.github.io/tags/">Tags</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="https://lgatto.github.io/cbio-lab/">Lab</a></li>
+          
+        </ul>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+    
+
+
+
+<div id="main" role="main">
+  
+  <div class="sidebar sticky">
+  
+
+<div itemscope itemtype="http://schema.org/Person">
+
+  
+    <div class="author__avatar">
+      
+        <img src="https://lgatto.github.io/images/lgatto2.jpg" class="author__avatar" alt="Laurent Gatto" itemprop="image">
+      
+    </div>
+  
+
+  <div class="author__content">
+    <h3 class="author__name" itemprop="name">Laurent Gatto</h3>
+    
+      <p class="author__bio" itemprop="description">
+        Open science, reproducible research, data champion, computational biology, proteomics, more omics, emacs, a lot of R, quite a bit of running, and parenting.
+      </p>
+    
+  </div>
+
+  <div class="author__urls-wrapper">
+    <button class="btn btn--inverse">Follow</button>
+    <ul class="author__urls social-icons">
+      
+
+      
+
+      
+
+      
+        <li>
+          <a href="https://keybase.io/lgatto" itemprop="sameAs">
+            <i class="fa fa-fw fa-key" aria-hidden="true"></i> Keybase
+          </a>
+        </li>
+      
+
+      
+
+      
+
+      
+
+      
+        <li>
+          <a href="https://www.linkedin.com/in/lgatto" itemprop="sameAs">
+            <i class="fa fa-fw fa-linkedin-square" aria-hidden="true"></i> LinkedIn
+          </a>
+        </li>
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+        <li>
+          <a href="https://github.com/lgatto" itemprop="sameAs">
+            <i class="fa fa-fw fa-github" aria-hidden="true"></i> GitHub
+          </a>
+        </li>
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      <!--
+  <li>
+    <a href="http://link-to-whatever-social-network.com/user/" itemprop="sameAs">
+      <i class="fa fa-fw" aria-hidden="true"></i> Custom Social Profile Link
+    </a>
+  </li>
+-->
+
+
+  <li>
+    <a href="http://dissem.in/r/6231/laurent-gatto" itemprop="sameAs">
+      <i class="fa fa-fw fa-pencil" aria-hidden="true"></i> dissem.in
+    </a>
+  </li>
+
+  <li>
+    <a href="https://orcid.org/0000-0002-1520-2268" itemprop="sameAs">
+      <i class="fa fa-fw fa-pencil" aria-hidden="true"></i> ORCID
+    </a>
+  </li>
+
+  <li>
+    <a href="https://scholar.google.co.uk/citations?user=k5DrB74AAAAJ&hl=en" itemprop="sameAs">
+      <i class="fa fa-fw fa-google" aria-hidden="true"></i> scholar
+    </a>
+  </li>
+
+  <li>
+    <a href="https://impactstory.org/u/0000-0002-1520-2268" itemprop="sameAs">
+      <i class="fa fa-fw fa-sun-o" aria-hidden="true"></i> Impactstory
+    </a>
+  </li>
+
+    </ul>
+  </div>
+</div>
+
+  
+  </div>
+
+
+  <article class="page" itemscope itemtype="http://schema.org/CreativeWork">
+    <meta itemprop="headline" content="Standardised and reproducible analysis of mass spectrometry-based single-cell proteomics data">
+    <meta itemprop="description" content="We are excited to anounce the official release of thescppackage. scp has been accepted in Bioconductor andpublishedas its first stable release (version 1.0) on the 28 October. Wepresent here a transcript of a recent talk Christophe Vanderaa andLaurent Gatto gave at the SCP2020conference.">
+    <meta itemprop="datePublished" content="November 10, 2020">
+    
+
+    <div class="page__inner-wrap">
+      
+        <header>
+          <h1 class="page__title" itemprop="headline">Standardised and reproducible analysis of mass spectrometry-based single-cell proteomics data
+</h1>
+          
+            <p class="page__meta"><i class="fa fa-clock-o" aria-hidden="true"></i> 
+
+
+
+
+  11 minute read
+</p>
+          
+        </header>
+      
+
+      <section class="page__content" itemprop="text">
+        <p>We are excited to anounce the official release of the
+<a href="https://uclouvain-cbio.github.io/scp/articles/scp.html"><code class="language-plaintext highlighter-rouge">scp</code></a>
+package. <code class="language-plaintext highlighter-rouge">scp</code> has been accepted in <a href="http://bioconductor.org/packages/release/bioc/html/scp.html">Bioconductor and
+published</a>
+as its first stable release (version 1.0) on the 28 October. We
+present here a transcript of a recent talk Christophe Vanderaa and
+Laurent Gatto gave at the <a href="http://single-cell.net/proteomics/scp2020">SCP2020
+conference</a>.</p>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/XMxZkw8yorY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+
+<p>The images in this post were taken from <a href="http://bit.ly/2020SCP">our slides</a></p>
+
+<h2 id="introduction">Introduction</h2>
+
+<p>Mass spectrometry-based single cell proteomics is a young and exciting
+field that comes with many challenges. Great progress has been made in
+recent years, and this conference is a hallmark of its success and
+promises. In this presentation, we, that is Christophe Vanderaa and
+myself, would like to share our efforts in proposing an infrastructure
+for standardised and reproducible analysis of such data. We will
+illustrate this infrastructure by presenting a replication of the
+recent SCoPE2 data by Harrison Specht et al.</p>
+
+<h3 id="the-value-of-replication">The value of replication</h3>
+
+<p>We will focus here on computational replication, starting from the
+low-level (PSM) quantitation data. We will posit that results that can
+be reproduced are more trustable.</p>
+
+<ul>
+  <li><strong>Expectation</strong>: the processing and analysis of data leads to
+results and discoveries</li>
+  <li><strong>Reality</strong>: many steps of the analysis pipeline can go wrong
+leading to inaccurate, misleading, wrong results.</li>
+</ul>
+
+<p>A pipeline that can’t be reproduced is a pipeline that is ill defined,
+that leads, mostly, to false discoveries. Of course, replication isn’t
+a guarantee for accuracy, but an analysis that can’t be replicated is
+one that can’t be trusted.</p>
+
+<p>Replication is a first step towards a trustworthy and shareable
+process. The development of non-trivial software tools isn’t done out 
+of the blue, in isolation. Ideally, it is a collaboration between the 
+developer, the data producer and the user. In other words Replication- 
+or Reproduction-based development is an efficient approach to tool 
+development.</p>
+
+<p>Replication is of course only the first step to define sound data
+infrastructure and principled analysis.</p>
+
+<h3 id="why-scope2">Why SCoPE2</h3>
+
+<p>The goal is not to focus on one type of single cell data
+exclusively. Indeed, many of the processing steps that will be
+mentioned are ubiquitous in quantitative data processing.</p>
+
+<p>SCoPE2 offered an ideal reproduction-based development use case: full
+protocol, data and analysis scripts are available, plus support from
+the authors.</p>
+
+<p><img src="/images/2020-09-10-scp-1-slide5.png" alt="SCP2020-presentation" /></p>
+
+<p>Our objectives</p>
+
+<ol>
+  <li>Contribute a standardised and principled data and analysis that is
+broadly applicable, i.e. to any MS-based single cell proteomics
+data.</li>
+  <li>Open, transparent and reproducible computational infrastructure
+that can be leveraged to further improve data analysis and
+interpretation.</li>
+  <li>R and Bioconductor offer an ideal environment for this.</li>
+</ol>
+
+<p><img src="/images/2020-09-10-scp-1-slide6.png" alt="SCP2020-presentation" /></p>
+
+<h2 id="scp-package"><code class="language-plaintext highlighter-rouge">scp</code> package</h2>
+
+<h3 id="data-infrastructure">Data infrastructure</h3>
+
+<h4 id="qfeatures"><code class="language-plaintext highlighter-rouge">QFeatures</code></h4>
+
+<p><a href="https://bioconductor.org/packages/release/bioc/html/QFeatures.html"><code class="language-plaintext highlighter-rouge">QFeatures</code></a>
+(also recently accepted in Bioconductor) is a general infrastructure
+(i.e. not specifically for MS-based single cell data) to manipulate
+quantitative data from MS experiments. Proteomics data is multi-level:
+data is acquired at the (low) spectrum level and protein-level data is
+progressively built up through multiple processing steps. The goal of
+<code class="language-plaintext highlighter-rouge">QFeatures</code> is to explicitly record the successive steps so as to
+allow users to navigate up and down these different levels.</p>
+
+<p><img src="/images/2020-09-10-scp-1-slide8.png" alt="SCP2020-presentation" /></p>
+
+<p>The following example illustrates
+what this means using a real data example. At the end of an analysis
+pipeline, it is easy to check any proteins, here STAT1 and STAT3, and
+verify the summarised expression profiles at the protein level, the
+expression profiles and the peptides level or at the spectrum level
+for labelled MS2 methods. Here, we can immediately visualise that the
+former is composed of a single PSM/peptide, while the other displays a
+more coherent profile for 10 PSMs/9 peptides.</p>
+
+<p><img src="/images/2020-09-10-scp-1-slide8b.png" alt="SCP2020-presentation" /></p>
+
+<h4 id="singlecellexperiment"><code class="language-plaintext highlighter-rouge">SingleCellExperiment</code></h4>
+
+<p>The scp package also relies on the work of colleagues working on 
+single cell RNA sequencing, in particular on the 
+<a href="http://bioconductor.org/packages/release/bioc/html/SingleCellExperiment.html"><code class="language-plaintext highlighter-rouge">SingleCellExperiment</code></a>
+package. The figure here represents how the <code class="language-plaintext highlighter-rouge">SingleCellExperiment</code> data 
+class captures single cell RNASeq data, which of course also fit single 
+cell proteomics data.</p>
+
+<p><img src="/images/2020-09-10-scp-1-slide9.png" alt="SCP2020-presentation" /></p>
+
+<p>Such an experiment is composed of primary and transformed
+quantitative data, with genes/peptides/proteins along the rows and
+cells along the columns.</p>
+<ul>
+  <li>A table that captures metadata along the rows.</li>
+  <li>A table that captures metadata along the columns.</li>
+</ul>
+
+<p>An additional slot to store data from various dimensionality reduction
+techniques, an important and widely used tool in single cell data
+analysis.</p>
+
+<h4 id="scp"><code class="language-plaintext highlighter-rouge">scp</code></h4>
+
+<p>The <a href="https://github.com/UCLouvain-CBIO/scp"><code class="language-plaintext highlighter-rouge">scp</code></a> 
+package relies on these two pieces of software,
+<code class="language-plaintext highlighter-rouge">SingleCellExperiment</code> to individually handle PSM, peptide and protein
+level data, that are all, collectively linked and managed by
+<code class="language-plaintext highlighter-rouge">QFeatures</code>.  In addition, and most importantly, scp offers the function
+to process and analyse the single cell proteomics data.</p>
+
+<p><img src="/images/2020-09-10-scp-1-slide10.png" alt="SCP2020-presentation" /></p>
+
+<h3 id="load-data">Load data</h3>
+
+<p>To start the replication, we have formatted the supplementary data
+from the SCoPE2 preprint using the <code class="language-plaintext highlighter-rouge">scp</code> infrastructure that was
+just introduced. The dataset is stored in a data package called
+<code class="language-plaintext highlighter-rouge">scpdata</code>. So, we load <code class="language-plaintext highlighter-rouge">scpdata</code> and fetch the dataset that we called
+<code class="language-plaintext highlighter-rouge">specht2019v2</code>.</p>
+
+<p><img src="/images/2020-09-10-scp-1-slide11.png" alt="SCP2020-presentation" /></p>
+
+<p>The <code class="language-plaintext highlighter-rouge">show</code> method gives a compact overview of the data object. The
+header indicates the dataset is a <code class="language-plaintext highlighter-rouge">QFeatures</code> object and it contains
+179 assays. Remember, each assay within the dataset is stored
+as a <code class="language-plaintext highlighter-rouge">SingleCellExperiment</code> object. Assays 1 to 177 contain the
+quantitative PSM data and metadata for the different SCoPE2 sets. They
+contain either 11 or 16 columns, depending on whether the TMT-11 or 16
+protocol was used. The before last assay contains the peptide data for
+all sets. The last assay is the protein data assay.</p>
+
+<p>The tabular data generated by MaxQuant or Proteome Discoverer can
+easily be converted to a <code class="language-plaintext highlighter-rouge">QFeatures</code> object using our <code class="language-plaintext highlighter-rouge">readSCP</code> 
+function.</p>
+
+<h3 id="metadata">Metadata</h3>
+
+<p>The sample metadata that is common to all assays are stored in a
+single table called the <code class="language-plaintext highlighter-rouge">colData</code> where each row represents a sample
+in one of the assays and the columns are the metadata fields. In this
+example, the <code class="language-plaintext highlighter-rouge">Set</code> field gives the name of the SCoPE2 set, <code class="language-plaintext highlighter-rouge">Channel</code>
+in which channel the sample was acquired, <code class="language-plaintext highlighter-rouge">SampleType</code> the type of
+sample, <code class="language-plaintext highlighter-rouge">lcbatch</code> the chromatographic batch, etc.</p>
+
+<p><img src="/images/2020-09-10-scp-1-slide12.png" alt="SCP2020-presentation" /></p>
+
+<p>So, all useful information is contained in a single object, ready for 
+processing.</p>
+
+<h3 id="analysis-workflow">Analysis workflow</h3>
+
+<p>The SCoPE2 analysis is composed of a series of data processing steps
+and I just mentioned loading the data. We start the workflow with PSM
+level data acquired over 177 different sets.</p>
+
+<p>These data will go through feature filtering, division of expression
+channel by the reference channel, aggregating the data to peptides,
+combine the different sets in one, single-cell filtering,
+normalization, removal of highly missing peptides, and
+log-transformation. After these steps, we get the peptide data that is
+provided in the preprint.</p>
+
+<p>The peptides are then aggregated to proteins, normalized, imputed and
+batch corrected to get the processed protein data from the article.</p>
+
+<p><img src="/images/2020-09-10-scp-1-slide13.png" alt="SCP2020-presentation" /></p>
+
+<p>We will not cover all steps but focus on a few representative ones.</p>
+
+<h2 id="scp-showcase">scp showcase</h2>
+
+<p>Let’s see how it works</p>
+
+<h3 id="psm-filtering">PSM filtering</h3>
+
+<p>One common functionality is to remove low-confidence features based on
+the metadata stored along with the dataset.</p>
+
+<p>For example, we want to remove PSMs that are matched to the reversed
+database that serves as a decoy database. This information was already
+generated by MaxQuant and is stored in the <code class="language-plaintext highlighter-rouge">Reverse</code> field of the
+metadata. The <code class="language-plaintext highlighter-rouge">filterFeatures</code> function takes our dataset and a
+filtering condition. In this case, the features for which <code class="language-plaintext highlighter-rouge">Reverse</code> is
+not positive. The function then returns the dataset containing only
+PSM that passed the condition. This is done automatically for all 177
+PSM-level assays.</p>
+
+<p><img src="/images/2020-09-10-scp-1-slide15.png" alt="SCP2020-presentation" /></p>
+
+<h3 id="data-filtering-compute-qc-metrics">Data filtering: compute QC metrics</h3>
+
+<p>Of course, some QC metrics might be specific to single-cell proteomics
+and are not computed by MaxQuant. For instance, SCoPE2 computes a
+sample to carrier ratio to discard samples with intensities higher
+than it would be expected. It also computes peptide FDR, the expected
+proportion of features that are wrongly assigned to a given
+peptide. Another example is to filter single-cells based on the median
+coefficient of variation that indicates the reliability of the protein
+quantification.</p>
+
+<p><img src="/images/2020-09-10-scp-1-slide16.png" alt="SCP2020-presentation" /></p>
+
+<p>We provide the functionality to compute those three metrics. See here,
+<code class="language-plaintext highlighter-rouge">computeMedianCV</code> takes the dataset, the name of the assay from which
+the median CVs should be computed, here <code class="language-plaintext highlighter-rouge">peptides</code>, and the names of
+the metadata fields that hold the required information for computing
+the CV.</p>
+
+<h3 id="data-filtering-plot-qc-metrics">Data filtering: plot QC metrics</h3>
+
+<p>The computed CVs are stored in a new metadata field called <code class="language-plaintext highlighter-rouge">medianCV</code>
+and allows for easy plotting and subsetting of the data. Let’s plot
+the CVs. First, we retrieve the assay <code class="language-plaintext highlighter-rouge">peptides</code> in which the CVs were
+stored. Then we get the <code class="language-plaintext highlighter-rouge">colData</code> where the <code class="language-plaintext highlighter-rouge">medianCV</code> is stored and
+format it to a <code class="language-plaintext highlighter-rouge">data.frame</code> for plotting. The remainder of the code is
+creating the histogram using <code class="language-plaintext highlighter-rouge">ggplot2</code>. We can see here that blank
+samples exhibit much higher CVs than the single-cells and the black
+line shows the cutoff used in SCoPE2 for filtering cells.</p>
+
+<p><img src="/images/2020-09-10-scp-1-slide17.png" alt="SCP2020-presentation" /></p>
+
+<h3 id="feature-aggregation">Feature aggregation</h3>
+
+<p>Next, feature aggregation allows combining features into a
+higher-level structure. For example, multiple peptides can be
+aggregated to a single protein. This functionality includes 2
+steps. First, we combine the quantitative data from multiple peptides
+to a single protein. Second, we store the relationship from the
+aggregated peptides to the protein.</p>
+
+<p><img src="/images/2020-09-10-scp-1-slide18.png" alt="SCP2020-presentation" /></p>
+
+<p>We use the <code class="language-plaintext highlighter-rouge">aggregateFeatures</code> for this. It takes the dataset, the
+assay to aggregate, here the assay called <code class="language-plaintext highlighter-rouge">peptides</code>, the name of the
+newly aggregated assay, here <code class="language-plaintext highlighter-rouge">proteins</code>, the metadata field name that
+contains the protein to which the peptide belongs to, and a function
+to combine the data with possible associated arguments.</p>
+
+<h3 id="managing-missingness">Managing missingness</h3>
+
+<p>Single-cell technologies do contain many zeros, and so does
+single-cell proteomics. Zeros can either be biological zeros or
+technical zeros. They are better replaced by the missing value <code class="language-plaintext highlighter-rouge">NA</code> to
+avoid confusion in downstream analyses. This is done by
+<code class="language-plaintext highlighter-rouge">zeroIsNA</code>. Again, we supply the dataset and the name of the assay for
+which the zeros should be replaced.</p>
+
+<p><img src="/images/2020-09-10-scp-1-slide19.png" alt="SCP2020-presentation" /></p>
+
+<p>SCoPE2 and other single-cell pipelines remove highly-missing features,
+for instance removing peptides that have over 99% missingness. This is
+performed using the <code class="language-plaintext highlighter-rouge">filterNA</code> function. The <code class="language-plaintext highlighter-rouge">pNA</code> argument will
+control the tolerated proportion of missingness.</p>
+
+<p>Finally, missing data can be imputed using the <code class="language-plaintext highlighter-rouge">impute</code> function. This
+code chunk imputes the assay called <code class="language-plaintext highlighter-rouge">proteins</code> using the KNN method
+with k equals 3. Other methods are also available what facilitates
+benchmarking of imputation methods.</p>
+
+<h3 id="data-transformation">Data transformation</h3>
+
+<p>Another processing step is data transformation. We provide common data
+transformation function, such as normalization and
+log-transformation. For instance, we apply a base-2 log-transformation
+using the <code class="language-plaintext highlighter-rouge">logTransform</code> function. Beside the dataset, we need to
+supply the name of the assay to transform, the log base, and the name
+of the new assay that will contain the transformed data.</p>
+
+<p><img src="/images/2020-09-10-scp-1-slide20.png" alt="SCP2020-presentation" /></p>
+
+<h3 id="custom-function">Custom function</h3>
+
+<p>Finally, our framework can easily adapt to any custom function, for
+example, batch correction using <code class="language-plaintext highlighter-rouge">ComBat</code>. It requires a three-step
+procedure.</p>
+
+<p><img src="/images/2020-09-10-scp-1-slide21.png" alt="SCP2020-presentation" /></p>
+
+<p>First, we extract the assay to process, here it is the
+protein data. Then, we apply the custom function, <code class="language-plaintext highlighter-rouge">ComBat</code> in this
+case.  <code class="language-plaintext highlighter-rouge">ComBat</code> requires a data matrix that we can access with the
+<code class="language-plaintext highlighter-rouge">assay</code> function. The dots represent the required arguments that we
+omit here for clarity. Once, the assay data is overwritten, we can add
+the transformed assay back in the dataset using <code class="language-plaintext highlighter-rouge">addAssay</code>. Remember
+that the added assay should be a <code class="language-plaintext highlighter-rouge">SingleCellExperiment</code>.</p>
+
+<h4 id="replication-results">Replication results</h4>
+
+<p>We replicated the SCoPE2 analysis using our standardized
+framework. The results that are shown in the next slides compare the
+expected SCoPE2 supplementary data with the output of our <code class="language-plaintext highlighter-rouge">scp</code>
+framework.</p>
+
+<h4 id="selected-features">Selected Features</h4>
+
+<p>We first compared the selected features present in the two
+datasets. The overlap between the selected features is very high, for
+both the peptide and the protein data. Around 9000 peptides are common
+to both workflows, with over 99% agreement. Similarly, for proteins,
+around 2700 proteins are common to both workflows with over 97%
+agreement.</p>
+
+<p><img src="/images/2020-09-10-scp-1-slide23.png" alt="SCP2020-presentation" /></p>
+
+<h4 id="numerical-comparison">Numerical comparison</h4>
+
+<p>Next, we looked at the numerical differences. The graphs show the
+distribution of the difference between the two datasets. In order to
+do this, we had to subset the data matrices to common features and
+samples. The distribution sharply peaks around 0 for both protein and
+peptide data. The protein data is a bit more spread out because the
+differences seen for the peptide data accumulate during the
+processing.</p>
+
+<p><img src="/images/2020-09-10-scp-1-slide24.png" alt="SCP2020-presentation" /></p>
+
+<h4 id="replicate-weighted-pca">Replicate weighted PCA</h4>
+
+<p>Although small differences are seen, the datasets are highly
+similar. This can be seen from the weighted PCA plots on the protein
+data. The left figure can be found in the SCoPE2 preprint and the
+right figure is our attempt to reproduce it. The two PCA plots exhibit
+the exact same trend, indicating the underlying main patterns are well
+replicated.</p>
+
+<p><img src="/images/2020-09-10-scp-1-slide25.png" alt="SCP2020-presentation" /></p>
+
+<h3 id="note-about-replication">Note about replication</h3>
+
+<p>Let’s finish the result part with a small note about reproducing data
+analyses. Identifying key processing steps is essential for
+reproducible work.</p>
+
+<p><img src="/images/2020-09-10-scp-1-slide26.png" alt="SCP2020-presentation" /></p>
+
+<p>Good software development includes continuous maintenance and
+improvement. Changes in the implementation of algorithms can impact
+the reproducibility of an analysis. For example, we noticed, with the
+help of Harrison Specht, that the batch correction results using 
+<code class="language-plaintext highlighter-rouge">CombBat</code> depended on the software versions. These differences are due 
+to a new invariant feature filter that was added recently to the batch
+correction algorithm. This filtering step in turn highlighted
+technical artefacts of the data.</p>
+
+<h2 id="conclusions">Conclusions</h2>
+
+<h3 id="take-home-messages">Take home messages</h3>
+
+<p>Here are our main take home messages with regard to the <code class="language-plaintext highlighter-rouge">scp</code> package.
+We are all excited by MS-based single cell proteomics and are well
+aware of the many challenges ahead. With <code class="language-plaintext highlighter-rouge">scp</code>, we offer a principled
+and reproducible way to manage, process and analyse such data.  While
+we have used SCoPE2 data as an illustration, the package isn’t limited
+to MS2 labelled data. The processing functions in scp are perfectly
+applicable to label free data which are generated using the nanoPOTS
+method, which we also will highlight in future work.  <code class="language-plaintext highlighter-rouge">scp</code> uses the
+same data structure as scRNAseq data, which facilitates, when
+relevant, consistent data processing and integration of various single
+cell assay modalities. Most importantly, perhaps, this is only the
+beginning, and we are already using <code class="language-plaintext highlighter-rouge">scp</code> for the next generation of
+single cell proteomics data modelling.</p>
+
+<p><img src="/images/2020-09-10-scp-1-slide28.png" alt="SCP2020-presentation" /></p>
+
+<h3 id="resources-and-acknowledgements">Resources and acknowledgements:</h3>
+
+<p>The <code class="language-plaintext highlighter-rouge">scp</code> package is publicly available at <a href="https://github.com/UCLouvain-CBIO/scp">this
+URL</a> and has been submitted to
+Bioconductor. We will also release the pre-formatted SCoPE2 data as
+well as other single cell proteomics datasets that we use for our
+method development. The <code class="language-plaintext highlighter-rouge">QFeatures</code> and <code class="language-plaintext highlighter-rouge">SingleCellExperiment</code>
+packages have been available for quite some time now. Our slides are
+also available at <a href="http://bit.ly/2020SCP">http://bit.ly/2020SCP</a>.</p>
+
+<p>We would like to thank Harrison, Ed and Nikolai for their keenness to
+share their data and experience with their data, the FNRS for funding
+this work and you for your attention.</p>
+
+<p><img src="/images/2020-09-10-scp-1-slide30.png" alt="SCP2020-presentation" /></p>
+
+<h3 id="references">References</h3>
+
+<p><img src="/images/2020-09-10-scp-1-slide31.png" alt="SCP2020-presentation" /></p>
+
+<p><img src="/images/2020-09-10-scp-1-slide32.png" alt="SCP2020-presentation" /></p>
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+  
+
+
+  
+  
+  
+
+  <p class="page__taxonomy">
+    <strong><i class="fa fa-fw fa-tags" aria-hidden="true"></i> Tags: </strong>
+    <span itemprop="keywords">
+    
+      
+      
+      <a href="https://lgatto.github.io/tags/#analysis" class="page__taxonomy-item" rel="tag">analysis</a><span class="sep">, </span>
+    
+      
+      
+      <a href="https://lgatto.github.io/tags/#bioconductor" class="page__taxonomy-item" rel="tag">Bioconductor</a><span class="sep">, </span>
+    
+      
+      
+      <a href="https://lgatto.github.io/tags/#open-research" class="page__taxonomy-item" rel="tag">open research</a><span class="sep">, </span>
+    
+      
+      
+      <a href="https://lgatto.github.io/tags/#proteomics" class="page__taxonomy-item" rel="tag">proteomics</a><span class="sep">, </span>
+    
+      
+      
+      <a href="https://lgatto.github.io/tags/#r" class="page__taxonomy-item" rel="tag">R</a><span class="sep">, </span>
+    
+      
+      
+      <a href="https://lgatto.github.io/tags/#single-cell" class="page__taxonomy-item" rel="tag">single cell</a>
+    
+    </span>
+  </p>
+
+
+
+
+        
+          <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> Updated:</strong> <time datetime="2020-11-10T00:00:00+01:00">November 10, 2020</time></p>
+        
+      </footer>
+
+      <section class="page__share">
+  
+    <h4 class="page__share-title">Share on</h4>
+  
+
+  <a href="https://twitter.com/intent/tweet?text=Standardised and reproducible analysis of mass spectrometry-based single-cell proteomics data https://lgatto.github.io/scp-1/" class="btn btn--twitter" title="Share on Twitter"><i class="fa fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
+
+  <a href="https://www.facebook.com/sharer/sharer.php?u=https://lgatto.github.io/scp-1/" class="btn btn--facebook" title="Share on Facebook"><i class="fa fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
+
+  <a href="https://plus.google.com/share?url=https://lgatto.github.io/scp-1/" class="btn btn--google-plus" title="Share on Google Plus"><i class="fa fa-fw fa-google-plus" aria-hidden="true"></i><span> Google+</span></a>
+
+  <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://lgatto.github.io/scp-1/" class="btn btn--linkedin" title="Share on LinkedIn"><i class="fa fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
+</section>
+
+
+      
+  <nav class="pagination">
+    
+      <a href="https://lgatto.github.io/credit-for-review/" class="pagination--pager" title="So you want credit for your peer reviews?
+">Previous</a>
+    
+    
+      <a href="https://lgatto.github.io/open-and-rr-2/" class="pagination--pager" title="Becoming a better scientist with open and reproducible research (2)
+">Next</a>
+    
+  </nav>
+
+    </div>
+
+    
+      <div class="page__comments">
+  
+  
+    <h4 class="page__comments-title">Leave a Comment</h4>
+    <section id="disqus_thread"></section>
+  
+</div>
+    
+  </article>
+
+  
+  
+    <div class="page__related">
+      
+        <h4 class="page__related-title">You May Also Enjoy</h4>
+      
+      <div class="grid__wrapper">
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+    
+      <div class="archive__item-teaser">
+        <img src=
+          
+            "https://lgatto.github.io/assets/images/slide-code.png"
+          
+          alt="">
+      </div>
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="https://lgatto.github.io/the-grid-in-r/" rel="permalink">The Grid poster, in R
+</a>
+      
+    </h2>
+    
+      <p class="page__meta"><i class="fa fa-clock-o" aria-hidden="true"></i> 
+
+
+
+
+  3 minute read
+</p>
+    
+    <p class="archive__item-excerpt" itemprop="description">The MuseeL is the
+UCLouvain University museum in
+Louvain-la-Neuve. Highly recommended. It’s located to the lively
+place des sciences, in a nice brutalist sty...</p>
+  </article>
+</div>
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+    
+      <div class="archive__item-teaser">
+        <img src=
+          
+            "https://lgatto.github.io/assets/images/slide-code.png"
+          
+          alt="">
+      </div>
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="https://lgatto.github.io/podcast-eval/" rel="permalink">Podcasts du LLL: repensons l’évaluation
+</a>
+      
+    </h2>
+    
+      <p class="page__meta"><i class="fa fa-clock-o" aria-hidden="true"></i> 
+
+
+
+
+  1 minute read
+</p>
+    
+    <p class="archive__item-excerpt" itemprop="description">Une fois n’est pas coutume, un billet en français, pour attirer votre
+attention sur les podcasts du LLL. Le LLL, ou Louvain Learning
+Lab accompagne
+tous les ...</p>
+  </article>
+</div>
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+    
+      <div class="archive__item-teaser">
+        <img src=
+          
+            "https://lgatto.github.io/assets/images/slide-code.png"
+          
+          alt="">
+      </div>
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="https://lgatto.github.io/zulip/" rel="permalink">CBIO’s internal communication goes open source
+</a>
+      
+    </h2>
+    
+      <p class="page__meta"><i class="fa fa-clock-o" aria-hidden="true"></i> 
+
+
+
+
+  1 minute read
+</p>
+    
+    <p class="archive__item-excerpt" itemprop="description">I have been using slack for a rather long time as a discussion
+platform for the lab, even before moving to Belgium. Based on the
+access log, I set up the lab...</p>
+  </article>
+</div>
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+    
+      <div class="archive__item-teaser">
+        <img src=
+          
+            "https://lgatto.github.io/assets/images/slide-code.png"
+          
+          alt="">
+      </div>
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="https://lgatto.github.io/EuroBioc-Ghent/" rel="permalink">CBIO’s EuroBioc2023 posters and talks
+</a>
+      
+    </h2>
+    
+      <p class="page__meta"><i class="fa fa-clock-o" aria-hidden="true"></i> 
+
+
+
+
+  13 minute read
+</p>
+    
+    <p class="archive__item-excerpt" itemprop="description">Long overdue now, but here are the CBIO
+lab’s contributions to the
+EuroBioc2023 conference that
+was organised on Ghent, on the 20 - 22 September 2023.
+
+</p>
+  </article>
+</div>
+        
+      </div>
+    </div>
+  
+</div>
+
+    <div class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+
+<!-- end custom footer snippets -->
+        <div class="page__footer-follow">
+  <ul class="social-icons">
+    
+      <li><strong>Follow:</strong></li>
+    
+    
+    
+    
+      <li><a href="http://github.com/lgatto"><i class="fa fa-fw fa-github" aria-hidden="true"></i> GitHub</a></li>
+    
+    
+    <li><a href="https://lgatto.github.io/feed.xml"><i class="fa fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
+  </ul>
+</div>
+
+<div class="page__footer-copyright">&copy; 2024 Laurent Gatto CC-BY. Powered by <a href="http://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+
+      </footer>
+    </div>
+
+    <script src="https://lgatto.github.io/assets/js/main.min.js"></script>
+
+
+
+
+
+  
+  <script type="text/javascript">
+  	/* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+  	var disqus_shortname = 'laurentgatto';
+
+  	/* * * DON'T EDIT BELOW THIS LINE * * */
+  	(function() {
+  		var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+  		dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+  		(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+  	})();
+
+  	/* * * DON'T EDIT BELOW THIS LINE * * */
+  	(function () {
+  		var s = document.createElement('script'); s.async = true;
+  		s.type = 'text/javascript';
+  		s.src = '//' + disqus_shortname + '.disqus.com/count.js';
+  		(document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+  	}());
+  </script>
+  <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+
+
+
+
+
+  </body>
+</html>

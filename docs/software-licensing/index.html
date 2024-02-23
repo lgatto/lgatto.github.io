@@ -1,0 +1,672 @@
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8">
+
+<!-- begin SEO -->
+
+
+
+
+
+
+
+
+
+<title>            Notes on software licenses      ~/      </title>
+
+
+
+
+<meta name="description" content="This post was motivated by the preparation of a theCytoPipelinepackage and the followingquestion about softwarelicenses. The CytoPipeline package is developed by Philippe Hauchampswhose PhD project is funded by GSK. Any deliverable that is produced bythis project needs to be approved by the funder prior topublication/release. It was thus particularly important to review andunderstand the open source licensing requirements with care.">
+
+
+
+
+<meta property="og:locale" content="en_GB">
+<meta property="og:site_name" content="~/">
+<meta property="og:title" content="Notes on software licenses">
+
+
+  <link rel="canonical" href="https://lgatto.github.io/software-licensing/">
+  <meta property="og:url" content="https://lgatto.github.io/software-licensing/">
+
+
+
+  <meta property="og:description" content="This post was motivated by the preparation of a theCytoPipelinepackage and the followingquestion about softwarelicenses. The CytoPipeline package is developed by Philippe Hauchampswhose PhD project is funded by GSK. Any deliverable that is produced bythis project needs to be approved by the funder prior topublication/release. It was thus particularly important to review andunderstand the open source licensing requirements with care.">
+
+
+
+
+
+  
+
+  
+
+
+
+
+
+  <meta property="og:type" content="article">
+  <meta property="article:published_time" content="2022-09-01T00:00:00+02:00">
+
+
+
+
+
+
+
+
+  <script type="application/ld+json">
+    {
+      "@context" : "http://schema.org",
+      "@type" : "Person",
+      "name" : "Laurent Gatto",
+      "url" : "https://lgatto.github.io",
+      "sameAs" : null
+    }
+  </script>
+
+
+
+
+
+
+<!-- end SEO -->
+
+
+<link href="https://lgatto.github.io/feed.xml" type="application/atom+xml" rel="alternate" title="~/ Feed">
+
+<!-- http://t.co/dKP3o1e -->
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="https://lgatto.github.io/assets/css/main.css">
+
+<meta http-equiv="cleartype" content="on">
+    <!-- start custom head snippets -->
+
+<!-- insert favicons. use http://realfavicongenerator.net/ -->
+
+<!-- end custom head snippets -->
+  </head>
+
+  <body class="layout--single">
+
+    <!--[if lt IE 9]>
+<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
+<![endif]-->
+    <div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        <button><div class="navicon"></div></button>
+        <ul class="visible-links">
+          <li class="masthead__menu-item masthead__menu-item--lg"><a href="https://lgatto.github.io/">~/</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="https://lgatto.github.io/about/">About</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="https://lgatto.github.io/year-archive/">Posts</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="https://lgatto.github.io/tags/">Tags</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="https://lgatto.github.io/cbio-lab/">Lab</a></li>
+          
+        </ul>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+    
+
+
+
+<div id="main" role="main">
+  
+  <div class="sidebar sticky">
+  
+
+<div itemscope itemtype="http://schema.org/Person">
+
+  
+    <div class="author__avatar">
+      
+        <img src="https://lgatto.github.io/images/lgatto2.jpg" class="author__avatar" alt="Laurent Gatto" itemprop="image">
+      
+    </div>
+  
+
+  <div class="author__content">
+    <h3 class="author__name" itemprop="name">Laurent Gatto</h3>
+    
+      <p class="author__bio" itemprop="description">
+        Open science, reproducible research, data champion, computational biology, proteomics, more omics, emacs, a lot of R, quite a bit of running, and parenting.
+      </p>
+    
+  </div>
+
+  <div class="author__urls-wrapper">
+    <button class="btn btn--inverse">Follow</button>
+    <ul class="author__urls social-icons">
+      
+
+      
+
+      
+
+      
+        <li>
+          <a href="https://keybase.io/lgatto" itemprop="sameAs">
+            <i class="fa fa-fw fa-key" aria-hidden="true"></i> Keybase
+          </a>
+        </li>
+      
+
+      
+
+      
+
+      
+
+      
+        <li>
+          <a href="https://www.linkedin.com/in/lgatto" itemprop="sameAs">
+            <i class="fa fa-fw fa-linkedin-square" aria-hidden="true"></i> LinkedIn
+          </a>
+        </li>
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+        <li>
+          <a href="https://github.com/lgatto" itemprop="sameAs">
+            <i class="fa fa-fw fa-github" aria-hidden="true"></i> GitHub
+          </a>
+        </li>
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      <!--
+  <li>
+    <a href="http://link-to-whatever-social-network.com/user/" itemprop="sameAs">
+      <i class="fa fa-fw" aria-hidden="true"></i> Custom Social Profile Link
+    </a>
+  </li>
+-->
+
+
+  <li>
+    <a href="http://dissem.in/r/6231/laurent-gatto" itemprop="sameAs">
+      <i class="fa fa-fw fa-pencil" aria-hidden="true"></i> dissem.in
+    </a>
+  </li>
+
+  <li>
+    <a href="https://orcid.org/0000-0002-1520-2268" itemprop="sameAs">
+      <i class="fa fa-fw fa-pencil" aria-hidden="true"></i> ORCID
+    </a>
+  </li>
+
+  <li>
+    <a href="https://scholar.google.co.uk/citations?user=k5DrB74AAAAJ&hl=en" itemprop="sameAs">
+      <i class="fa fa-fw fa-google" aria-hidden="true"></i> scholar
+    </a>
+  </li>
+
+  <li>
+    <a href="https://impactstory.org/u/0000-0002-1520-2268" itemprop="sameAs">
+      <i class="fa fa-fw fa-sun-o" aria-hidden="true"></i> Impactstory
+    </a>
+  </li>
+
+    </ul>
+  </div>
+</div>
+
+  
+  </div>
+
+
+  <article class="page" itemscope itemtype="http://schema.org/CreativeWork">
+    <meta itemprop="headline" content="Notes on software licenses">
+    <meta itemprop="description" content="This post was motivated by the preparation of a theCytoPipelinepackage and the followingquestion about softwarelicenses. The CytoPipeline package is developed by Philippe Hauchampswhose PhD project is funded by GSK. Any deliverable that is produced bythis project needs to be approved by the funder prior topublication/release. It was thus particularly important to review andunderstand the open source licensing requirements with care.">
+    <meta itemprop="datePublished" content="September 01, 2022">
+    
+
+    <div class="page__inner-wrap">
+      
+        <header>
+          <h1 class="page__title" itemprop="headline">Notes on software licenses
+</h1>
+          
+            <p class="page__meta"><i class="fa fa-clock-o" aria-hidden="true"></i> 
+
+
+
+
+  3 minute read
+</p>
+          
+        </header>
+      
+
+      <section class="page__content" itemprop="text">
+        <p>This post was motivated by the preparation of a the
+<a href="https://uclouvain-cbio.github.io/CytoPipeline/index.html">CytoPipeline</a>
+package and the following
+<a href="https://support.bioconductor.org/p/9144841/">question</a> about software
+licenses. The <code class="language-plaintext highlighter-rouge">CytoPipeline</code> package is developed by Philippe Hauchamps
+whose PhD project is funded by GSK. Any deliverable that is produced by
+this project needs to be approved by the funder prior to
+publication/release. It was thus particularly important to review and
+understand the open source licensing requirements with care.</p>
+
+<p>Most software licenses, in particular the open source software
+licenses that I (and many academics) are confronted with, define how
+one can redistribute code. They do not say anything about what users
+are allowed to do when running the software/code. The latter is a
+point that I will address toward the end of this post.</p>
+
+<p>So what does it mean to redistribute code? When do research software
+engineers, and R developers in particular, redistribute code?</p>
+
+<h2 id="simple-case">Simple case</h2>
+
+<p>Let’s start with a straightforward case. I copy a piece of code and
+include it in my own code base. From the moment I distribute my code,
+I re-distribute the copied code. To be able to do this, I need to (1)
+make sure the respective licenses are compatible and (2) if different
+from my software’s license, copy the license header and author names
+of the code of origin with the copied code chunk.</p>
+
+<p>This is a very obvious case because I explicitly redistribute someone
+else’s code.</p>
+
+<h2 id="where-things-become-less-obvious">Where things become less obvious</h2>
+
+<p>When writing R packages, we almost never copy other packages’ code
+into ours (see below for an exception). We use the depends/imports
+mechanisms which doesn’t imply direct redistribution of code. If my
+package depends/imports another package, installation of my package
+will trigger the installation of these dependencies and the code (or
+parts thereof) of these dependencies will be loaded (copied?) into my
+workspace when my package is loaded.</p>
+
+<p>Do we consider the above redistribution of someone else’s code? If
+not, then licensing terms do not necessarily apply, or at least are
+open to discussion..</p>
+
+<p>One could argue that licenses need to be applied for code that is
+essential for the software to run, even if not distributed
+directly. For R packages, I think we would then want to disentangle
+whether that dependency plays a central role or not. But if we agree
+to that then, given that R and the base packages are released under
+GPL &gt;= 2.0 (and some parts under LGPL &gt;= 2.1) (see <code class="language-plaintext highlighter-rouge">?license</code>), then
+all packages would have to be released under GPL compatible licenses,
+which is clearly not the case.</p>
+
+<p>A similar discussion applies to binaries that use statically or
+dynamically linked libraries.</p>
+
+<h2 id="licensing-r-packages">Licensing R packages</h2>
+
+<p>It actually could be pedantically argued that a majority of R packages
+don’t apply licences correctly. Indeed, proper application of most
+licenses requires the LICENCE file (or a link to the text of the
+license) including the names of the authors (which can be found in an
+R package’s DESCRIPTION file) and owner of the code (typically, the
+authors employer), the latter never being specified explicitly in R
+packages.</p>
+
+<p>A nice feature of using a proper LICENCE file is that it can contain
+additional information, such as a license for the documentation. I
+think this is a very neat feature, given that many R packages come
+with ample documentation, notably the famous vignettes that can
+sometimes be quite elaborate.</p>
+
+<p>A fully-fledged license file would list all software dependencies and
+their respective licenses. In R, the dependencies are listed in the
+DESCRIPTION file, but miss their respective licenses (but I guess we
+can live with that). This however only applies to R package
+dependencies. If a package depends (or redistributes) non-R
+software/code, these should be referenced in the licensing file. The
+<code class="language-plaintext highlighter-rouge">shiny</code> package is a good example for such a situation, where
+JavaScript code is packaged within the R package.</p>
+
+<h2 id="re-licensing-software">Re-licensing software</h2>
+
+<p>Software can also be re-licensed by its owners. When the license
+changes for a similar license (copyleft to copyleft, permissive to
+permissive) such as updating from GPL 2 to 3 or from GPL 2 to &gt;= 2,
+the impact is limited. There are however cases when the change comes
+with substantial restrictions.</p>
+
+<p>Some Bioconductor packages, notably <code class="language-plaintext highlighter-rouge">flowWorkspace</code> and <code class="language-plaintext highlighter-rouge">CytoML</code>,
+recently had their licence
+<a href="https://github.com/RGLab/flowWorkspace/commit/a1be772b3a43c51cf2606ea9b68b720654389197">changed</a>
+from an Artistic 2.0 license to an
+academic-only
+<a href="https://github.com/RGLab/flowWorkspace/blob/master/LICENSE">Fred Hutch license</a>.
+This change stops any
+non-academic user from using the re-licensed software in their
+day-to-day activities. This extreme limitation impacts all other
+packages that depend on <code class="language-plaintext highlighter-rouge">flowWorkspace</code> or <code class="language-plaintext highlighter-rouge">CytoML</code>. In such a
+case, one would have to copy the relevant code from an older version,
+that was still released under an open source license, and follow the
+two steps highlighted in the simple case above.</p>
+
+<p><strong>Update</strong> Good news! The licence of the
+<a href="https://code.bioconductor.org/browse/flowWorkspace/commit/46dcefc254f249fa0ef4e514ded5ed3037cbe00a">above</a>
+<a href="https://code.bioconductor.org/browse/CytoML/commit/e4c10db6082885ac63978634084ed8f2ca74c4dd">packages</a>
+has been updated to <a href="https://opensource.org/licenses/agpl-3.0">GNU Affero General Public License version 3
+(AGPL)</a>.</p>
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+  
+
+
+  
+  
+  
+
+  <p class="page__taxonomy">
+    <strong><i class="fa fa-fw fa-tags" aria-hidden="true"></i> Tags: </strong>
+    <span itemprop="keywords">
+    
+      
+      
+      <a href="https://lgatto.github.io/tags/#bioconductor" class="page__taxonomy-item" rel="tag">Bioconductor</a><span class="sep">, </span>
+    
+      
+      
+      <a href="https://lgatto.github.io/tags/#r" class="page__taxonomy-item" rel="tag">R</a><span class="sep">, </span>
+    
+      
+      
+      <a href="https://lgatto.github.io/tags/#software" class="page__taxonomy-item" rel="tag">software</a>
+    
+    </span>
+  </p>
+
+
+
+
+        
+          <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> Updated:</strong> <time datetime="2022-09-01T00:00:00+02:00">September 01, 2022</time></p>
+        
+      </footer>
+
+      <section class="page__share">
+  
+    <h4 class="page__share-title">Share on</h4>
+  
+
+  <a href="https://twitter.com/intent/tweet?text=Notes on software licenses https://lgatto.github.io/software-licensing/" class="btn btn--twitter" title="Share on Twitter"><i class="fa fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
+
+  <a href="https://www.facebook.com/sharer/sharer.php?u=https://lgatto.github.io/software-licensing/" class="btn btn--facebook" title="Share on Facebook"><i class="fa fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
+
+  <a href="https://plus.google.com/share?url=https://lgatto.github.io/software-licensing/" class="btn btn--google-plus" title="Share on Google Plus"><i class="fa fa-fw fa-google-plus" aria-hidden="true"></i><span> Google+</span></a>
+
+  <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://lgatto.github.io/software-licensing/" class="btn btn--linkedin" title="Share on LinkedIn"><i class="fa fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
+</section>
+
+
+      
+  <nav class="pagination">
+    
+      <a href="https://lgatto.github.io/running-watch/" class="pagination--pager" title="Tribute to my first running watch
+">Previous</a>
+    
+    
+      <a href="https://lgatto.github.io/ungrading/" class="pagination--pager" title="Ungrading my teaching
+">Next</a>
+    
+  </nav>
+
+    </div>
+
+    
+  </article>
+
+  
+  
+    <div class="page__related">
+      
+        <h4 class="page__related-title">You May Also Enjoy</h4>
+      
+      <div class="grid__wrapper">
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+    
+      <div class="archive__item-teaser">
+        <img src=
+          
+            "https://lgatto.github.io/assets/images/slide-code.png"
+          
+          alt="">
+      </div>
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="https://lgatto.github.io/the-grid-in-r/" rel="permalink">The Grid poster, in R
+</a>
+      
+    </h2>
+    
+      <p class="page__meta"><i class="fa fa-clock-o" aria-hidden="true"></i> 
+
+
+
+
+  3 minute read
+</p>
+    
+    <p class="archive__item-excerpt" itemprop="description">The MuseeL is the
+UCLouvain University museum in
+Louvain-la-Neuve. Highly recommended. It’s located to the lively
+place des sciences, in a nice brutalist sty...</p>
+  </article>
+</div>
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+    
+      <div class="archive__item-teaser">
+        <img src=
+          
+            "https://lgatto.github.io/assets/images/slide-code.png"
+          
+          alt="">
+      </div>
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="https://lgatto.github.io/podcast-eval/" rel="permalink">Podcasts du LLL: repensons l’évaluation
+</a>
+      
+    </h2>
+    
+      <p class="page__meta"><i class="fa fa-clock-o" aria-hidden="true"></i> 
+
+
+
+
+  1 minute read
+</p>
+    
+    <p class="archive__item-excerpt" itemprop="description">Une fois n’est pas coutume, un billet en français, pour attirer votre
+attention sur les podcasts du LLL. Le LLL, ou Louvain Learning
+Lab accompagne
+tous les ...</p>
+  </article>
+</div>
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+    
+      <div class="archive__item-teaser">
+        <img src=
+          
+            "https://lgatto.github.io/assets/images/slide-code.png"
+          
+          alt="">
+      </div>
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="https://lgatto.github.io/zulip/" rel="permalink">CBIO’s internal communication goes open source
+</a>
+      
+    </h2>
+    
+      <p class="page__meta"><i class="fa fa-clock-o" aria-hidden="true"></i> 
+
+
+
+
+  1 minute read
+</p>
+    
+    <p class="archive__item-excerpt" itemprop="description">I have been using slack for a rather long time as a discussion
+platform for the lab, even before moving to Belgium. Based on the
+access log, I set up the lab...</p>
+  </article>
+</div>
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+    
+      <div class="archive__item-teaser">
+        <img src=
+          
+            "https://lgatto.github.io/assets/images/slide-code.png"
+          
+          alt="">
+      </div>
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="https://lgatto.github.io/EuroBioc-Ghent/" rel="permalink">CBIO’s EuroBioc2023 posters and talks
+</a>
+      
+    </h2>
+    
+      <p class="page__meta"><i class="fa fa-clock-o" aria-hidden="true"></i> 
+
+
+
+
+  13 minute read
+</p>
+    
+    <p class="archive__item-excerpt" itemprop="description">Long overdue now, but here are the CBIO
+lab’s contributions to the
+EuroBioc2023 conference that
+was organised on Ghent, on the 20 - 22 September 2023.
+
+</p>
+  </article>
+</div>
+        
+      </div>
+    </div>
+  
+</div>
+
+    <div class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+
+<!-- end custom footer snippets -->
+        <div class="page__footer-follow">
+  <ul class="social-icons">
+    
+      <li><strong>Follow:</strong></li>
+    
+    
+    
+    
+      <li><a href="http://github.com/lgatto"><i class="fa fa-fw fa-github" aria-hidden="true"></i> GitHub</a></li>
+    
+    
+    <li><a href="https://lgatto.github.io/feed.xml"><i class="fa fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
+  </ul>
+</div>
+
+<div class="page__footer-copyright">&copy; 2024 Laurent Gatto CC-BY. Powered by <a href="http://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+
+      </footer>
+    </div>
+
+    <script src="https://lgatto.github.io/assets/js/main.min.js"></script>
+
+
+
+
+
+  </body>
+</html>

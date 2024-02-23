@@ -1,6 +1,6 @@
 ---
 title: 'Peer review week: Panel discussion at Cambidge University Press'
-tags: ["peer review", "open science"]
+tags: ["peer review", "open research"]
 comments: true
 ---
 
@@ -92,7 +92,7 @@ research independently of a possibly lengthy peer review process.
 ## What do publishers do to support good Peer Review and what could they do better?
 
 I personally haven't seen many publishers do much for peer
-review. Three spring to mind: 
+review. Three spring to mind:
 
 - [PeerJ](https://peerj.com/) has a nice interface to enter your peer
   review and they explicitly offer the possibility to post reviews
@@ -139,7 +139,7 @@ disseminate and review our work.
 ## Does peer-reviewing benefit the reviewers, or is it just for the benefit of the authors and end-readers?
 
 Peer review should benefits the author in helping them producing
-better research outputs, but that's certainly not universal. 
+better research outputs, but that's certainly not universal.
 
 The benefits for the peer reviewer are that they learn about some
 research before it's published (although that's not necessarily true
@@ -159,7 +159,7 @@ quality of the output without delaying it too much.
 
 Open to debate. I prefer my reviews to be open, but there are also
 situations where blind review has advantages (in particular for ECR
-and under-represented minorities). 
+and under-represented minorities).
 
 I have never participated in a double blind peer review, but I am
 pretty sure it wouldn't be too difficult to the reviewer to identify
@@ -173,7 +173,7 @@ the traditional and rigid academic system.
 
 ## Could traditional pre-publication peer-review survive without publishers mediating it?
 
-Why not? 
+Why not?
 
 I don't see publishers as particularly important players in the
 dissemination of research papers (things might be somehow different
@@ -183,7 +183,7 @@ limited number of research outputs (research manuscripts and books),
 have failed to support and promote data sharing and reproducible
 research for many years (there is a slow start among a few now), have
 promoted ill-informed metrics to promote their business, and are
-driven, at least partly, by market shares and profit. 
+driven, at least partly, by market shares and profit.
 
 There's a spectrum of offenders, of course, and some publishers that
 genuinely try to innovate in favour of the dissemination of
@@ -196,7 +196,7 @@ that
 One experiment I would like to see is for publishers to invite authors
 to submit their pre-prints. I have heard of such cases but I don't
 know if this is something that is done more systematically by some
-journals or publishers. 
+journals or publishers.
 
 ## Gender bias in Peer review
 
@@ -240,7 +240,7 @@ example
 [here](https://epriego.wordpress.com/2017/08/02/scholarly-communications-on-fire/) and
 [here](https://epriego.wordpress.com/2017/08/03/scholarly-communications-on-fire-what-can-we-do/)). Publishers
 could however get involved in supporting (financially) and promoting
-(using) community-led initiatives and platforms. 
+(using) community-led initiatives and platforms.
 
 When it comes to submission for peer review, there are also some very
 simple things publishers could do right away: spare us that silly and
@@ -248,7 +248,7 @@ stupid formatting, and make sure that the manuscripts we review are in
 a format that suites reading and reviewing by putting the figures in
 the text - as far as I understand, submission of figures separately is
 only for the benefit of the publishers way down the line, if the paper
-gets accepted. 
+gets accepted.
 
 
 ## References and further reading

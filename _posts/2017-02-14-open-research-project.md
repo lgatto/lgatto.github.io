@@ -1,6 +1,6 @@
 ---
 title: Open Research Project, first thoughts
-tags: ["open research", "open science", "Wellcome Trust", "Open Research Project"]
+tags: ["open research", "Wellcome Trust", "Open Research Project"]
 comments: true
 ---
 
@@ -24,7 +24,7 @@ call was initially opened in December 2016 and was pitched like this
 > University of Cambridge.
 
 This of course sounded like a great initiative for me and I promptly
-filed an application. 
+filed an application.
 
 We had our kick-off meeting on the 27th January, with the aim of
 getting to know each other and somehow define/clarify some of the
@@ -43,7 +43,7 @@ such as [OpenConCam](http://openconcam.org/) and
 [Data Champions](http://www.data.cam.ac.uk/datachampions) initiative.
 
 #### What is your research about and what kind of data does your research generate?
-	
+
 My area of research is computational biology, with special focus on
 high-throughput proteomics and integration of different data and
 annotations. I use raw data produced by third parties, in particular
@@ -60,7 +60,7 @@ research and communication, and participate in improving openness (and
 hence reproducibility/rigour) more widely.
 
 #### What kind of outputs are you planning to share? Do you foresee any difficulties in sharing?
-	
+
 My direct outputs are systematically shared openly early on: open
 source software (before publication), pre-prints, improved data (as
 data packages). Difficulties, if any, generally stem from
@@ -74,7 +74,7 @@ go. The continued involvement of the participants over time will play
 a major role in the project's success.
 
 
-#### What are attainable goals? 
+#### What are attainable goals?
 
 It is important to note that there is no funding for the
 participants. We are driven by a desire to be open, benefit from being
@@ -130,7 +130,7 @@ at, as not being the real stuff.
 
 Another desire is that this project will enable us to **influence
 funders**, such as the Wellcome Trust, of course, but also more widely
-the research councils. 
+the research councils.
 
 As a concrete example, I would like all grants that are accepted to be
 openly published beyond the daft *layman summary*. Published grants
@@ -157,7 +157,7 @@ seems to be a need for clarification.
 I believe that I do a pretty decent job in conducting open science:
 pre-prints, open access, release data, ... In the frame of this
 project, I shall do a better job at promoting open science for its own
-sake. 
+sake.
 
 I also hope that by bringing some of my projects under the umbrella of
 the the *Open Research Project*, I will benefit from a broader

@@ -1,6 +1,6 @@
 ---
 title: A discussion about Open Access
-tags: ["open research", "open science"]
+tags: ["open research"]
 comments: true
 ---
 
@@ -78,7 +78,7 @@ its dissemination at such a high cost is a reasonable solution.
 
 
 Finally, we also briefly discussed different publishing models, beyond
-the green and golden OA models that are currently mainstream. 
+the green and golden OA models that are currently mainstream.
 
 **Flipping**, where publishers would flip to a fully OA model and
 would be paid by bulk deals. This is what I believe the current

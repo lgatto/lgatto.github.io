@@ -2,7 +2,7 @@
 permalink: /cbio-who/
 title: "Lab members"
 excerpt: "The team"
-modified: 2019-08-16
+modified: 2022-01-14
 author_profile: false
 sidebar:
   nav: "cbio"
@@ -10,70 +10,90 @@ sidebar:
 
 {% include toc %}
 
+
 ## CBIO core
 
 - [**Laurent Gatto**](http://lgatto.github.io/about/) (ORCID:
   [0000-0002-1520-2268](https://orcid.org/0000-0002-1520-2268),
-  Github: [lgatto](https://github.com/lgatto/), Twitter
-  [@lgatt0](https://twitter.com/lgatt0)), head of the unit. He runs
+  Github: [lgatto](https://github.com/lgatto/), fosstoodon:
+  [@lgatto](https://fosstodon.org/@lgatto)), head of the unit. He runs
   the CBIO group and teaches bioinformatics in the Facutly of Pharmacy
   and Biomedical Sciences (FASB).
 
-- **Axelle Loriot** (Github: [aloriot](https://github.com/aloriot)) is
-  a senior researcher at the de Duve Institute. Since 2001, she has
-  been part of the epigenetics group led by Charles De Smet. She
-  joined the CBIO group in 2018, focusing on transcriptomics and
-  epigenetics. She developed algorithms to identify aberrant
-  transcripts induced by DNA hypomethylation in tumor cells, and DNA
-  hypermethylation events linked to overlapping expression.
+- **Axelle Loriot** (ORCID:
+  [0000-0002-5288-8561](https://orcid.org/0000-0002-5288-8561),
+  Github: [aloriot](https://github.com/aloriot)) is a senior
+  researcher at the de Duve Institute. Since 2001, she has been part
+  of the epigenetics group led by Charles De Smet. She joined the CBIO
+  group in 2018, focusing on transcriptomics and epigenetics. She
+  developed algorithms to identify aberrant transcripts induced by DNA
+  hypomethylation in tumor cells, and DNA hypermethylation events
+  linked to overlapping expression. Axelle plays a major role in the
+  bioinformatics core facility.
 
-- **Chong Tang** (ORCID:
-  [0000-0002-0482-8361](https://orcid.org/0000-0002-0482-8361),
-  Github: [plantton](https://github.com/plantton)) is a PhD student
-  working on mass spectrometry-based proteomics software
-  development. He has a bachelor degree in biotechnology from the
-  Central South University of Forestry and Technology in China and a
-  masters in bioinformatics from KULeuven. He is funded by a China
-  Scholarship Council - FNRS scholarship.
+- **Philippe Hauchamps** (Github:
+  [phauchamps](https://github.com/phauchamps)) is, since September
+  2021, a PhD student working on flow cytometry data analyis. He
+  joined the CBIO group in October 2019 as an intern and carried on
+  with a Master's project in computational proteomics, developing
+  Bayesian models to analyse quantitative proteomics data. He has a
+  Master degree in Computer Science Engineering and one in
+  Biostatistics.
 
-- **Philippe Hauchamps** (Github: [phauchamps](https://github.com/phauchamps))
-  is a Master student in Biostatistics. He joined the CBIO lab in October 2019
-  as an intern. He has a Master degree in Computer Science Engineering, has been
-  previously working in the banking sector and is currently transitioning to
-  Bioinformatics/Biostatistics.
+- **Julie Devis** (Github:
+  [JulieDevis](https://github.com/JulieDevis)) did her master's
+  project in the CBIO lab and is now, since September 2022, a PhD
+  student in biomedical sciences. She is working on deciphering
+  complex mechanisms of epigenetic alterations in cancer genomes. She
+  is pursuing her research in collaboration with Axelle Loriot and
+  [Prof. Charles De
+  Smet](https://www.deduveinstitute.be/cancer-epigenetics) from the
+  epigenetics group.
 
+- **Samuel Grégoire** (Github:
+  [samgregoire](https://github.com/samgregoire)) did his master's
+  project in the CBIO lab and is now, since September 2022, a PhD
+  student in biomedical sciences. He is working on single-cell biology
+  in AML, including single-cell proteomics, in collaboration with
+  Didier Vertommen, who runs the institute's mass spectrometry core
+  facility.
 
-## Remote members
+- **Andrea Vicini** (Github:
+  [andreavicini](https://github.com/andreavicini)) joined the lab in
+  October 2022 as a research assistant in bioinformatics. He focuses
+  on integrative multi-omics approach to study infectious diseases as
+  part of the large, inter-institute
+  [HYGIEIA](https://www.saintluc.be/fr/hygieia) project.
 
-- [**Lisa Breckels**](https://lmsimp.github.io/), Post-Doctoral
-  Research Associa in the Cambridge Centre for Proteomics, at the
-  University of Cambridge (UK). Her work focuses on the application
-  and development of machine learning and pattern recognition methods
-  to enable robust analysis of high-throughput quantitative proteomics
-  data.  All her methods and algorithms form part of the
-  [`pRoloc`](http://bioconductor.org/packages/pRoloc) framework for
-  protein localisation prediction.
+- **Enes Sefa Ayar** (Github:
+  [EnesSefaAyar](https://github.com/EnesSefaAyar)) joined the lab in
+  November 2023 as a PhD student working on quantitative analysis of
+  single-cell proteomics. He did a master's in computational sciences
+  and engineering at the Koç University. He is funded by a FNRS
+  'Projet de Recherche' (PDR) awarded to L. Gatto.
 
-- [**Oliver Crook**](https://olivercrook.co.uk/) is a Wellcome Trust
-  PhD student at the University of Cambridge, jointly supervised with
-  [Paul
-  Kirk](http://www.mrc-bsu.cam.ac.uk/people/in-alphabetical-order/h-to-m/paul-kirk/)
-  from MRC Biostatistics Unit and [Kathryn
-  Lilley](http://www.bioc.cam.ac.uk/people/uto/lilley). Olly works on
-  new Bayesian methods for spatial proteomics ([Crook *et al.*
-  2018](https://doi.org/10.1371/journal.pcbi.1006516)), formalising
-  the theoretical foundations and implementing the algorithms that
-  will be included in [`pRoloc`](https://lgatto.github.io/pRoloc/).
+- **Jérôme Linden** (GitHub: [jerlinden](https://github.com/jerlinden))
+  joined the lab in November 2023 as a Project Manager for [e-OMIX](https://www.eomix.be),
+  a CBIO-led project aiming at establishing a collaborative
+  platform for the sharing and analyses of multiomics data. He has a PhD from
+  ULiège and is funded by the European Regional Development Fund (ERDF)
+  awarded to L. Gatto and S. Jodogne.
 
-- **Aayush Grover** (ORCID:
-  [0000-0002-3716-2850](https://orcid.org/0000-0002-3716-2850),
-  Github: [AayushGrover](https://github.com/AayushGrover)) is a
-  research intern at the CBIO lab. He has a bachelor's degree in
-  Computer Science Engineering and is currently pursuing his Master's
-  degree in Data Science from the International Institute of
-  Information Technology Bangalore (India). He is currently working on
-  predicting protein subcellular location using deep learning
-  techniques.
+## Undergraduates
+
+- **Guillaume Deflandre** is a final year student in
+  [bio-engineering](https://uclouvain.be/fr/facultes/agro) and is
+  pursuing his master's project on single-cell proteomics with Laurent
+  Gatto, Samuel Grégoire and Christophe Vanderaa.
+
+![CBIO lab photo](/images/CBIO-20231206.jpg)
+
+From left to right: Jérôme, Julie, Andrea, Enes, Guillaume, Samuel,
+Axelle, Christophe, Laurent and Philippe. Picture taken at the de Duve
+Institute on 6 December 2023.
+
+<!-- ## Remote members -->
+
 
 ## [R for Mass Spectrometry](https://www.rformassspectrometry.org/) core team
 
@@ -93,13 +113,13 @@ sidebar:
 
 ## Key collaborators
 
-- [**Paul
-  Kirk**](https://www.mrc-bsu.cam.ac.uk/people/in-alphabetical-order/h-to-m/paul-kirk/),
-  MRC Biostatistics Unit, University of Cambridge, UK. Paul is part of
-  the team developing principled Bayesian model for spatial
-  proteomics, such as the T-Augmented Gaussian Mixture (TAGM) model
-  ([Crook *et al.*
-  2018](https://doi.org/10.1371/journal.pcbi.1006516)).
+<!-- - [**Paul -->
+<!--   Kirk**](https://www.mrc-bsu.cam.ac.uk/people/in-alphabetical-order/h-to-m/paul-kirk/), -->
+<!--   MRC Biostatistics Unit, University of Cambridge, UK. Paul is part of -->
+<!--   the team developing principled Bayesian model for spatial -->
+<!--   proteomics, such as the T-Augmented Gaussian Mixture (TAGM) model -->
+<!--   ([Crook *et al.* -->
+<!--   2018](https://doi.org/10.1371/journal.pcbi.1006516)). -->
 
 <!-- - [**Kathyn S. Lilley**](http://www.bioc.cam.ac.uk/people/uto/lilley), -->
 <!--   Cambridge Centre for Proteomics, Department of Biochemistry, -->
@@ -120,6 +140,20 @@ sidebar:
 <!--   spatial proteomics. A recent example is transfer learning -->
 <!--   ([Breckels *et al.* 2016](http://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1004920)). -->
 
+- **Manon Martin** (ORCID:
+  [0000-0003-4800-0942](https://orcid.org/0000-0003-4800-0942),
+  Github: [ManonMartin](https://github.com/ManonMartin)) is a research
+  assistant in bioinformatics at the LIBST and ELI institues and the
+  SMCS core facility on the Louvain-la-Neuve campus. She worked in the
+  CBIO group from September 2020 to June 2022. She still collaborates
+  with the lab as part of the bioinformatics core facility.
+
+- [**Lieven Clement**](https://statomics.github.io/), statOmics group,
+  UGent, Belgium. We collaborate on statistical analyses of
+  quantitative proteomics data, in particular the
+  [msqrob2](https://bioconductor.org/packages/release/bioc/html/msqrob2.html)
+  R/Bioconductor package.
+
 - [**Thomas
   Burger**](https://sites.google.com/site/thomasburgerswebpage/),
   BIG-BGE (Université Grenoble Alpes, CNRS, CEA, INSERM), France. We
@@ -131,9 +165,6 @@ sidebar:
   contributed the *perTurbo* algorithms to
   [*pRoloc*](https://bioconductor.org/packages/pRoloc).
 
-- [**Lieven Clement**](https://statomics.github.io/), statOmics group,
-  UGent, Belgium. We collaborate on statistical analyses of
-  quantitative proteomics data.
 
 - [**Christophe Vanderaa**](https://github.com/cvanderaa), statOmics group,
   UGent, Belgium. We pursue our collaboration on the development of
@@ -150,11 +181,92 @@ sidebar:
   a masters in bioinformatics at the KULeuven before conducting his
   PhD training in the lab funded by an FNRS fellowship.
 
+- **Badr-Ali Mouaden** finished his engineering degree in 2023 and did
+  his master's project under the co-supervision of Laurent Gatto,
+  Philippe Hauchamps and [Prof Michel
+  Versleysen](https://mlg.info.ucl.ac.be/Members/MichelVerleysen) from
+  the [Louvain Engineering School
+  (EPL)](https://uclouvain.be/fr/facultes/epl). He worked on the
+  development and application of deep convolution neural network on
+  flow cytometry data.
+
+- **Kristína Gömöryová**
+  (Github:[KristinaGomoryova](https://github.com/KristinaGomoryova))
+  joined the lab in September 2022 as an OpenMS intern. She is doing
+  her PhD in Animal Physiology and Immunology in the lab of
+  [prof. Bryja](https://www.sci.muni.cz/ofiz/en/bryja/) at Masaryk
+  University. In CBIO lab she focuses on the analysis of DIA
+  proteomics data within the HYGIEIA project.
+
+- **Charlotte Léonard** (Github:
+  [chachaleo](https://github.com/chachaleo)) did her Master's project
+  in applied mathematics, working on single-cell multi-modal data
+  integration. She is co-supervised by [Michel
+  Verleysen](https://mlg.info.ucl.ac.be/Members/MichelVerleysen) from
+  the Machine Learning Group at UCLouvain.
+
+- **Manojkumar Selvaraju** (ORCID:
+  [0000-0001-6439-5652](https://orcid.org/0000-0001-6439-5652),
+  Github: [manogenome](https://github.com/manogenome)) worked from
+  September 2020 to May 2022 on software infrastructure for the
+  integration of genomics, transcriptomics and proteomics data.
+
+- **Chong Tang** (ORCID:
+  [0000-0002-0482-8361](https://orcid.org/0000-0002-0482-8361),
+  Github: [plantton](https://github.com/plantton)) was part of the
+  CBIO lab from the very beginning in 2019 to 2021. He worked on mass
+  spectrometry-based proteomics software development with a special
+  focus on using databases to store and retrieve massive MS datasets.
+
+- **Aayush Grover** (ORCID:
+  [0000-0002-3716-2850](https://orcid.org/0000-0002-3716-2850),
+  Github: [AayushGrover](https://github.com/AayushGrover)) is a PhD
+  student at the [Institute for Machine Learning of ETH Zurich](https://ml.inf.ethz.ch/)
+  where he is working on computational epigenetics of cancer.
+  He was a master thesis student at the CBIO lab after completing his summer
+  internship (2020) at the CBIO lab. He worked on predicting protein subcellular
+  location using deep learning techniques during his internship and focused on
+  the task of survival prediction in cancer using multi-omics integration and
+  few-shot learning.
+
+- **Kilian Maes** (Github:
+  [KilianMaes](https://github.com/KilianMaes)) did his Master's
+  project in software engineering in the lab working on the clustering
+  of mass spectrometry data. He was co-supervised by [Prof Pierre
+  Dupont](https://www.info.ucl.ac.be/~pdupont/) from the Machine
+  Learning Group. He now works part-time as a software engineer and
+  continues his medical degree at the UCLouvain.
+
+- [**Oliver Crook**](https://olivercrook.co.uk/), was a Wellcome Trust
+  PhD student at the University of Cambridge, jointly supervised with
+  [Paul
+  Kirk](http://www.mrc-bsu.cam.ac.uk/people/in-alphabetical-order/h-to-m/paul-kirk/)
+  from MRC Biostatistics Unit and [Kathryn
+  Lilley](http://www.bioc.cam.ac.uk/people/uto/lilley). Olly worked on
+  new Bayesian methods for spatial proteomics (see for example [Crook
+  *et al.* 2018](https://doi.org/10.1371/journal.pcbi.1006516)),
+  formalising the theoretical foundations and implementing the
+  algorithms in the [`pRoloc`](https://lgatto.github.io/pRoloc/)
+  package. He is now pursuing post-doctoral research at the [Protein
+  Informatics Group](http://opig.stats.ox.ac.uk/) in the Department of
+  Statistics at the University of Oxford.
+
+- [**Lisa Breckels**](https://lmsimp.github.io/), Post-Doctoral
+  Research Associa in the Cambridge Centre for Proteomics, at the
+  University of Cambridge (UK). Her work focuses on the application
+  and development of machine learning and pattern recognition methods
+  to enable robust analysis of high-throughput quantitative proteomics
+  data.  All her methods and algorithms form part of the
+  [`pRoloc`](http://bioconductor.org/packages/pRoloc) framework for
+  protein localisation prediction.
+>>>>>>> 8744c59b508d3cb762f1f5fab1b39db7a776bffb
+
 - [**Theo Killian**](https://github.com/tfkillian) was a
   bioinformatician and research programmer in the CBIO group at the de
   Duve Institute. Theo developes and maintains the
   [depmap](http://bioconductor.org/packages/release/data/experiment/html/depmap.html)
-  package.
+  package. He now works as a Bioinformatics scientist at the
+  Laboratory of Translational Genetics at the KULeuven.
 
 - [**Robin Kohze**](https://github.com/Kohze) comes from the Radboud
   University Nijmegen and visits the group in the frame of his
@@ -163,15 +275,17 @@ sidebar:
   PhD in the Department of Genetics at the University of Cambridge,
   UK.
 
-- **Thomas Naake**, visited the group in Spring 2014 as an ERASMUS
-  student affiliated to the University of Freiburg. He developed the
-  first version of
+- [**Thomas Naake**](https://tnaake.github.io/), visited the group in
+  Cambridge in Spring 2014 as an ERASMUS student affiliated to the
+  University of Freiburg. He developed the first version of
   [`pRolocGUI`](https://bioconductor.org/packages/release/bioc/html/pRolocGUI.html),
   an interactive visualisation tools for organelle proteomics
-  data. Thomas is now a PhD student at Max Planck Institute of
+  data. Thomas has since earner a PhD from the Max Planck Institute of
   Molecular Plant Physiology.
 
-- **Victoria Carr**, Part III student in Systems Biology, applying
-  graph-based methods to study protein sub-cellular
-  localisation. Victoria is now pursuing a PhD at King's College
-  London.
+- [**Victoria Carr**](https://orcid.org/0000-0002-3038-8929),
+  was a Part III student in Systems Biology at the University of
+  Cambridge, applying graph-based methods to study protein
+  sub-cellular localisation. Vicky went on doing a PhD at King's
+  College London and is now working as a Scientific Programmer in the
+  Pathogen Informatics Unit at the Wellcome Sanger Institute.

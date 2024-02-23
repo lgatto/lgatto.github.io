@@ -1,0 +1,1658 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.3">Jekyll</generator><link href="https://lgatto.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://lgatto.github.io/" rel="alternate" type="text/html" /><updated>2024-02-20T12:56:37+01:00</updated><id>https://lgatto.github.io/feed.xml</id><title type="html">~/</title><subtitle>Laurent Gatto&apos;s online home</subtitle><author><name>Laurent Gatto</name></author><entry><title type="html">The Grid poster, in R</title><link href="https://lgatto.github.io/the-grid-in-r/" rel="alternate" type="text/html" title="The Grid poster, in R" /><published>2024-02-18T00:00:00+01:00</published><updated>2024-02-18T00:00:00+01:00</updated><id>https://lgatto.github.io/the-grid-in-r</id><content type="html" xml:base="https://lgatto.github.io/the-grid-in-r/">&lt;p&gt;The &lt;a href=&quot;https://museel.be/&quot;&gt;MuseeL&lt;/a&gt; is the
+&lt;a href=&quot;https://uclouvain.be/&quot;&gt;UCLouvain&lt;/a&gt; University museum in
+Louvain-la-Neuve. Highly recommended. It’s located to the lively
+&lt;em&gt;place des sciences&lt;/em&gt;, in a nice brutalist style building, formerly the
+science university library. If you ever spend some time in
+Louvain-la-Neuve, do spare a couple of hours to visit it.&lt;/p&gt;
+
+&lt;p&gt;As an academic and an ‘amis du musée’, I can get in for free, and
+sometimes enjoy the quiet and rather unique atmosphere to get some
+work. The previous exhibition, named &lt;a href=&quot;https://museel.be/fr/evenement/visite-guidee/decouvrir-lexposition-grid-0&quot;&gt;The
+Grid&lt;/a&gt;,
+was dedicated to the use of a grid in science. The poster and book of
+the exhibition, shown below, shows a grid, formed of smaller, slightly
+irregular squares. I thought this was a funny example to reproduce in
+R.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/grid-poster.jpg&quot; alt=&quot;The Grid poster&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;The first thing I need is the be able to draw squares. The
+&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;plotSquare()&lt;/code&gt; function below plots on of width &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;width&lt;/code&gt; at positions
+&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;x&lt;/code&gt; and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;y&lt;/code&gt;.&lt;/p&gt;
+
+&lt;div class=&quot;language-r highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;plotSquare&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;-&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;k&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;y&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;width&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+    &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x1&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;-&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;width&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;m&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+    &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;y1&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;-&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;y&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;width&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;m&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+    &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x2&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;-&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x1&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;+&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;width&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+    &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;y2&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;-&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;y1&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;+&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;width&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+    &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;rect&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;y1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;y2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Assuming I want an &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;nsq&lt;/code&gt; by &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;nsq&lt;/code&gt; grid of squares, below, I define
+that value to be 10, to draw a total of 100 squares.&lt;/p&gt;
+
+&lt;div class=&quot;language-r highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c1&quot;&gt;## Number of squares&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;nsq&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;-&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;m&quot;&gt;10&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;I also want some jitter, i.e. some random displacements from a perfect
+10 by 10 alignment, set by the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;amount&lt;/code&gt; variables.&lt;/p&gt;
+
+&lt;div class=&quot;language-r highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c1&quot;&gt;## amount of square jittering&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;amount&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;-&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;m&quot;&gt;1.2&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Finally, I need to define how much space is dedicated to the border
+between the squares.&lt;/p&gt;
+
+&lt;div class=&quot;language-r highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c1&quot;&gt;## border ratio&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ratio&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;-&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;m&quot;&gt;0.2&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Assuming that the grid will have a width and a height of 100
+(arbitrary) unites, below I define the width &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;sq_w&lt;/code&gt; of a square,
+considering the number of squares and the space that is dedicated to
+the border between squares. One I have the with of a square, I can
+compute the width &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;border_w&lt;/code&gt; of the border between two squares.&lt;/p&gt;
+
+&lt;div class=&quot;language-r highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;sq_w&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;-&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;100&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;nsq&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ratio&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;border_w&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;-&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;100&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;nsq&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;sq_w&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;nsq&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;+&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;m&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;I can now compute the x and y position of my squares. Given that my
+final grid is a square itself, these x and y positions apply to rows
+and columns of squares.&lt;/p&gt;
+
+&lt;div class=&quot;language-r highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;pos&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;-&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;seq&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;border_w&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;m&quot;&gt;100&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;border_w&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+           &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;length.out&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;nsq&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;We can now produce the figure. I first define the margins of my plot
+with the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;par&lt;/code&gt; function: the margins have width 1 and outer
+margins 0. The &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;plot()&lt;/code&gt; function doesn’t plot anything (`type = “n”),
+no axes, no frame, no labels. It however sets a grid itself, ranging
+from -2 to 100, to accommodate my squares and borders.&lt;/p&gt;
+
+&lt;div class=&quot;language-r highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;par&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;mar&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;rep&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;m&quot;&gt;4&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;oma&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;rep&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;m&quot;&gt;4&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;plot&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;-2&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;100&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;border_w&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;+&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;m&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;m&quot;&gt;-2&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;100&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;border_w&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;+&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;m&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+     &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;type&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;n&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;xaxt&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;n&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;yaxt&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;n&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+     &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;xlab&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ylab&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+     &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;frame.plot&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;kc&quot;&gt;FALSE&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;The last step is to place the squares. The x and y positions are
+symmetrical, i.e defined by the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;pos&lt;/code&gt; variable above: the lines and
+columns are &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;pos[1]&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;pos[2]&lt;/code&gt;, …, respectively, and the squares are
+added line by line, starting at line at &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;pos[1]&lt;/code&gt;. A little amount of
+noise (defined by &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;amount&lt;/code&gt; above) is added to the actual x and y
+position by the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;jitter()&lt;/code&gt; function.&lt;/p&gt;
+
+&lt;div class=&quot;language-r highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;for&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;y&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;k&quot;&gt;in&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;pos&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+    &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;pos_x&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;-&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;jitter&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;rep&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;y&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;nsq&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;amount&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;amount&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+    &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;pos_y&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;-&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;jitter&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;pos&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;amount&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;amount&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+    &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;plotSquare&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;pos_x&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;pos_y&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;sq_w&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;The final output (with &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;set.seed(123)&lt;/code&gt;), with the parameter above is
+show here.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/grid123.png&quot; alt=&quot;The R Grid&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;The full script is available
+&lt;a href=&quot;https://gist.github.com/lgatto/4fa4b3a8a6668a6b755b47da40d8ca81&quot;&gt;here&lt;/a&gt;. The
+fun part is of course to play with the parameters, which is left as an
+exercise for the reader :-).&lt;/p&gt;</content><author><name>Laurent Gatto</name></author><category term="R" /><category term="UCLouvain" /><summary type="html">The MuseeL is the UCLouvain University museum in Louvain-la-Neuve. Highly recommended. It’s located to the lively place des sciences, in a nice brutalist style building, formerly the science university library. If you ever spend some time in Louvain-la-Neuve, do spare a couple of hours to visit it.</summary></entry><entry><title type="html">Podcasts du LLL: repensons l’évaluation</title><link href="https://lgatto.github.io/podcast-eval/" rel="alternate" type="text/html" title="Podcasts du LLL: repensons l’évaluation" /><published>2024-02-17T00:00:00+01:00</published><updated>2024-02-17T00:00:00+01:00</updated><id>https://lgatto.github.io/podcast-eval</id><content type="html" xml:base="https://lgatto.github.io/podcast-eval/">&lt;p&gt;Une fois n’est pas coutume, un billet en français, pour attirer votre
+attention sur les podcasts du LLL. Le LLL, ou &lt;a href=&quot;https://uclouvain.be/fr/etudier/lll/a-propos.html&quot;&gt;Louvain Learning
+Lab&lt;/a&gt; accompagne
+tous les acteurs et actrices de la formation de l’UCLouvain dans leurs
+activités d’enseignement. En plus, c’est une équipe super chouette!&lt;/p&gt;
+
+&lt;p&gt;Parmi leurs
+&lt;a href=&quot;https://uclouvain.be/fr/etudier/lll/les-podcasts-du-lll.html&quot;&gt;podcasts&lt;/a&gt;,
+il y a celui qui se penche sur &lt;a href=&quot;https://www.podcastics.com/podcast/repensons-les-evaluations/&quot;&gt;l’évaluation des
+acquis&lt;/a&gt;
+des étudiant(e)s, réalisé et écrit par Emilie Malcourant, que je vous
+conseille.&lt;/p&gt;
+
+&lt;p&gt;Parmi les points abordés, il y avait la question&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Quelle serait l’évaluation idéale?&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;qui a suscité la réflexion suivante.&lt;/p&gt;
+
+&lt;p&gt;L’évaluation se doit avant tout d’être au service de la
+formation. L’évaluation certificative est pour moi une voie sans
+issue, que j’ai beaucoup de mal à percevoir comment elle fait partie
+de ma mission d’enseignement.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/eval.png&quot; alt=&quot;Évaluations certificative :-( et formative :-)&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Pour moi, une évaluation idéale, c’est une formalité, c’est une
+évaluation qui n’a pas raison d’être, car les intervenant(e)s du cours
+savent que les étudiant(e)s maîtrisent la matière, et que l’évaluation
+finale n’est qu’une formalité, et qu’elle n’est donc plus nécessaire.&lt;/p&gt;
+
+&lt;p&gt;Le but d’un enseignement serait donc de rendre l’évaluation
+certificative irrelevante, de faire en sorte qu’elle ne soit plus
+pertinente, de la rendre impertinente.&lt;/p&gt;
+
+&lt;p&gt;Edit (2024-02-19): The emoticons in my simple chart above use the
+number &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;8&lt;/code&gt; for the eyes, rather than the standard &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;:&lt;/code&gt; because the
+column has a specific meaning in
+&lt;a href=&quot;https://github.com/stathissideris/ditaa&quot;&gt;ditaa&lt;/a&gt;, the cool
+mini-language used to generate the figure, and these special characters
+&lt;a href=&quot;https://github.com/stathissideris/ditaa/issues/9&quot;&gt;can’t easily be
+escaped&lt;/a&gt;. But I just
+learnt that I was 1 character away of calling students a
+&lt;a href=&quot;https://pc.net/emoticons/categories/characters&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;8-E&lt;/code&gt;&lt;/a&gt;.&lt;/p&gt;</content><author><name>Laurent Gatto</name></author><category term="teaching" /><category term="education" /><category term="UCLouvain" /><summary type="html">Une fois n’est pas coutume, un billet en français, pour attirer votre attention sur les podcasts du LLL. Le LLL, ou Louvain Learning Lab accompagne tous les acteurs et actrices de la formation de l’UCLouvain dans leurs activités d’enseignement. En plus, c’est une équipe super chouette!</summary></entry><entry><title type="html">CBIO’s internal communication goes open source</title><link href="https://lgatto.github.io/zulip/" rel="alternate" type="text/html" title="CBIO’s internal communication goes open source" /><published>2024-02-04T00:00:00+01:00</published><updated>2024-02-04T00:00:00+01:00</updated><id>https://lgatto.github.io/zulip</id><content type="html" xml:base="https://lgatto.github.io/zulip/">&lt;p&gt;I have been using slack for a rather long time as a discussion
+platform for the lab, even before moving to Belgium. Based on the
+access log, I set up the lab slack workspace in June 2016. It has
+proven very useful, even with the more recent limitations that come
+with the free slack plan. I have been thinking for some time that I
+should move to an open source offering. Based on a little bit of
+reading
+(&lt;a href=&quot;https://blog.ossph.org/best-open-source-alternatives-to-slack/&quot;&gt;here&lt;/a&gt;
+and &lt;a href=&quot;https://opensource.com/alternatives/slack&quot;&gt;here&lt;/a&gt;) and asking on
+&lt;a href=&quot;https://fosstodon.org/@lgatto/111840609295851868&quot;&gt;social media&lt;/a&gt;,
+there were a couple of contenders:
+&lt;a href=&quot;https://mattermost.com/&quot;&gt;Mattermost&lt;/a&gt;,
+&lt;a href=&quot;https://element.io/&quot;&gt;element.io&lt;/a&gt;,
+&lt;a href=&quot;https://www.rocket.chat/&quot;&gt;rocket.chat&lt;/a&gt; and
+&lt;a href=&quot;https://zulip.com/&quot;&gt;Zulip&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;My needs are pretty simple: I would like to have access to all
+messages, and apps for various desktop and mobile OSes. Cost is also
+an issue - with say 15 users at around 7$ per month, it would cost the
+lab over 1200$ per year. While not a big amount per se for an academic
+lab, given the restrictions of what can be paid for from academic
+funding (salary only or consumable, for example), that money is money
+that couldn’t be used to support students with their travelling to
+conferences. I thus considered self-hosting, but it wasn’t clear I
+could get the support from IT, a public facing IP, with the necessary
+port accessible to the world.&lt;/p&gt;
+
+&lt;p&gt;Then I discovered that Zulip offers their Cloud Standard plan for
+&lt;a href=&quot;https://zulip.com/for/research/&quot;&gt;free for academic research&lt;/a&gt;, which
+is what I finally went for with &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;cbio.zulipchat.com&lt;/code&gt;. They ask to
+acknowledge their support on the &lt;a href=&quot;https://lgatto.github.io/cbio-lab/&quot;&gt;lab
+webpage&lt;/a&gt; (see at the bottom),
+which is a fair request. The sponsorship was accepted on the day, and
+a couple of days later, their support
+&lt;a href=&quot;https://zulip.com/help/import-from-slack&quot;&gt;imported&lt;/a&gt;&lt;sup id=&quot;fnref:fn&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:fn&quot; class=&quot;footnote&quot; rel=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt; all the
+slack messages from our non-private channels.&lt;/p&gt;
+
+&lt;p&gt;So far, all works very smoothly, and I’m quite happy. The web
+interface and the GNU/Linux and Android apps work very well. I think
+I’m also liking the possibility to provide a title to posts/threads -
+future will tell if all members make use of this. Another useful
+difference with slack (at least the free plan) is there are &lt;a href=&quot;https://zulip.com/help/roles-and-permissions&quot;&gt;guest
+accounts&lt;/a&gt; (that are
+given access to specific streams/channels when joining), in addition
+to regular members (who can join all public streams).&lt;/p&gt;
+
+&lt;div class=&quot;footnotes&quot; role=&quot;doc-endnotes&quot;&gt;
+  &lt;ol&gt;
+    &lt;li id=&quot;fn:fn&quot; role=&quot;doc-endnote&quot;&gt;
+      &lt;p&gt;Even if one can only see the last messages with a free slack
+plan, all messages from public channels get exported. This, and a
+bot user OAuth token is all they need. &lt;a href=&quot;#fnref:fn&quot; class=&quot;reversefootnote&quot; role=&quot;doc-backlink&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+  &lt;/ol&gt;
+&lt;/div&gt;</content><author><name>Laurent Gatto</name></author><category term="CBIO" /><category term="communication" /><summary type="html">I have been using slack for a rather long time as a discussion platform for the lab, even before moving to Belgium. Based on the access log, I set up the lab slack workspace in June 2016. It has proven very useful, even with the more recent limitations that come with the free slack plan. I have been thinking for some time that I should move to an open source offering. Based on a little bit of reading (here and here) and asking on social media, there were a couple of contenders: Mattermost, element.io, rocket.chat and Zulip.</summary></entry><entry><title type="html">CBIO’s EuroBioc2023 posters and talks</title><link href="https://lgatto.github.io/EuroBioc-Ghent/" rel="alternate" type="text/html" title="CBIO’s EuroBioc2023 posters and talks" /><published>2023-10-20T00:00:00+02:00</published><updated>2023-10-20T00:00:00+02:00</updated><id>https://lgatto.github.io/EuroBioc-Ghent</id><content type="html" xml:base="https://lgatto.github.io/EuroBioc-Ghent/">&lt;p&gt;Long overdue now, but here are the &lt;a href=&quot;https://lgatto.github.io/cbio-lab/&quot;&gt;CBIO
+lab&lt;/a&gt;’s contributions to the
+&lt;a href=&quot;https://eurobioc2023.bioconductor.org/&quot;&gt;EuroBioc2023&lt;/a&gt; conference that
+was organised on Ghent, on the 20 - 22 September 2023.&lt;/p&gt;
+
+&lt;h2 id=&quot;poster-a-reliable-and-reproducible-resource-for-ct-genes&quot;&gt;Poster: A reliable and reproducible resource for CT genes&lt;/h2&gt;
+
+&lt;p&gt;Julie Devis, Axelle Loriot, Charles De Smet and Laurent Gatto&lt;/p&gt;
+
+&lt;p&gt;Cancer-Testis (CT) genes are tissue-specific genes whose expression is
+limited to the germline. They are normally repressed in somatic
+tissues, but can be aberrantly activated in tumors. For many CT genes,
+tumoral activation is enabled by loss of promoter DNA methylation. CT
+genes are of great interest. First, they have clinical potential as
+cancer-specific antigens, and can thus be used as target for cancer
+immunotherapy and as cancer biomarkers. Second, they are also a good
+model to study DNA demethylation in cancer, which is still poorly
+understood.&lt;/p&gt;
+
+&lt;p&gt;The definition of CT genes differs vastly according to the literature
+source. Some databases already exist [1,2,3] but they are neither
+up-to-date nor well annotated, and thus difficult to use. There is
+therefore a need for a reliable and reproducible resource when
+studying CT genes. We therefor created CTexploreR, a package that
+rigorously defines and explores CT genes. Our main objective was to
+propose a reliable and well-defined list of CT genes based on publicly
+available RNAseq databases.  We also determined their precise
+transcription start site in order to be able to realise an accurate
+promoter methylation analysis. Our list contains 307 CT genes that
+were carefully classified as regulated by DNA methylation or not. We
+also developed functions to visualise CT genes expression and promoter
+DNA methylation in normal and tumoral tissues.&lt;/p&gt;
+
+&lt;p&gt;We also performed a thorough comparison of CTexploreR with the
+available resources mentioned above. It allowed us to clearly
+establish and characterise the difference between CT lists and clarify
+the origins of the inconsistencies. These analyses demonstrate that
+CTexploreR is a clear, curated and rigorously established up-to-date
+reference. Our package can thus be used as the starting point for
+further investigations.&lt;/p&gt;
+
+&lt;p&gt;[1] Almeida, L. G., Sakabe, N. J., deOliveira, A. R., Silva, M. C. C.,
+    Mundstein, A. S., Cohen, T., Chen, Y.-T., Chua, R., Gurung, S.,
+    Gnjatic, S., Jungbluth, A. A., Caballero, O. L., Bairoch, A.,
+    Kiesler, E., White, S. L., Simpson, A. J. G., Old, L. J., Camargo,
+    A. A., &amp;amp; Vasconcelos, A. T. R. (2009). CTdatabase: a
+    knowledge-base of high-throughput and curated data on
+    cancer-testis antigens. Nucleic Acids Research, 37(Database
+    issue), D816-9.&lt;/p&gt;
+
+&lt;p&gt;[2] Jamin, S. P., Hikmet, F., Mathieu, R., Jégou, B., Lindskog, C.,
+    Chalmel, F., &amp;amp; Primig, M. (2021). Combined RNA/tissue profiling
+    identifies novel Cancer/testis genes. Molecular Oncology, 15(11),
+    3003–3023.&lt;/p&gt;
+
+&lt;p&gt;[3] Wang, C., Gu, Y., Zhang, K., Xie, K., Zhu, M., Dai, N., Jiang, Y.,
+    Guo, X., Liu, M., Dai, J., Wu, L., Jin, G., Ma, H., Jiang, T.,
+    Yin, R., Xia, Y., Liu, L., Wang, S., Shen, B., … Hu,
+    Z. (2016). Systematic identification of genes with a cancer-testis
+    expression pattern in 19 cancer types. Nature Communications, 7,
+    10499.&lt;/p&gt;
+
+&lt;h2 id=&quot;workshop-cytopipeline-building-and-visualizing-automated-pre-processing-and-quality-control-pipelines-for-flow-cytometry-data&quot;&gt;Workshop: CytoPipeline: Building and visualizing automated pre-processing and quality control pipelines for flow cytometry data&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/phauchamps/CytoPipeline_BiocWS&quot;&gt;Workshop repo&lt;/a&gt; and
+&lt;a href=&quot;https://www.biorxiv.org/content/10.1101/2023.10.10.561699v1&quot;&gt;pre-print&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Philippe Hauchamps, Dan Lin and Laurent Gatto&lt;/p&gt;
+
+&lt;p&gt;With the increase of the dimensionality in conventional flow cytometry
+data over the past years, there is a growing need to replace or
+complement traditional manual analysis (i.e. iterative 2D gating) with
+automated data analysis pipelines. Examples of such pipelines have
+been documented in the recent literature (e.g. [1],[2],[3]). A crucial
+part of these pipelines consists of pre-processing and applying
+quality control filtering to the raw data, in order to use high
+quality events in the downstream statistical analysis. This part can
+in turn be split into a number of elementary steps : margin events
+removal, signal compensation, scale transformations, debris and dead
+cells removal, batch effect correction,… etc.&lt;/p&gt;
+
+&lt;p&gt;However, when designing automated flow cytometry data analysis
+pipelines, assembling and assessing the pre-processing part can be
+challenging for a number of reasons. First, each of the involved
+elementary steps can be implemented using various methods and R
+packages. Second, the order of the steps can have an impact on the
+downstream analysis results. Finally, each method typically comes with
+its specific, unstandardized diagnostic and visualizations, making
+objective comparison difficult for the end user.&lt;/p&gt;
+
+&lt;p&gt;Here, we present CytoPipeline, an R package suite for building,
+assessing and comparing pre-processing pipelines for flow cytometry
+data. To exemplify our tool, we present the steps involved in
+designing a pre-processing pipeline on a real life dataset and
+demonstrate the visualization utilities. We also show how CytoPipeline
+can nicely complement benchmarking tools, like e.g. PipeComp [4], by
+providing user intuitive insight into benchmarking results.&lt;/p&gt;
+
+&lt;p&gt;[1] Quintelier, Katrien, Artuur Couckuyt, Annelies Emmaneel, Joachim
+    Aerts, Yvan Saeys, and Sofie Van Gassen. 2021. “Analyzing
+    High-Dimensional Cytometry Data Using FlowSOM.” Nature Protocols
+    16 (8): 3775–3801.&lt;/p&gt;
+
+&lt;p&gt;[2] Ashhurst, Thomas Myles, Felix Marsh-Wakefield, Givanna Haryono
+    Putri, Alanna Gabrielle Spiteri, Diana Shinko, Mark Norman Read,
+    Adrian Lloyd Smith, and Nicholas Jonathan Cole
+    King. 2021. “Integration, Exploration, and Analysis of
+    High-Dimensional Single-Cell Cytometry Data Using Spectre.”
+    Cytometry. Part A: The Journal of the International Society for
+    Analytical Cytology, no. cyto.a.24350
+    (April). https://doi.org/10.1002/cyto.a.24350.&lt;/p&gt;
+
+&lt;p&gt;[3] Nowicka, Malgorzata, Carsten Krieg, Helena L. Crowell, Lukas
+    M. Weber, Felix J. Hartmann, Silvia Guglietta, Burkhard Becher,
+    Mitchell P. Levesque, and Mark D. Robinson. 2017. “CyTOF Workflow:
+    Differential Discovery in High-Throughput High-Dimensional
+    Cytometry Datasets.” F1000Research 6 (May): 748.&lt;/p&gt;
+
+&lt;p&gt;[4] Germain, Pierre-Luc, Anthony Sonrel, and Mark
+    D. Robinson. 2020. “pipeComp, a General Framework for the
+    Evaluation of Computational Pipelines, Reveals Performant Single
+    Cell RNA-Seq Preprocessing Tools.” Genome Biology 21 (1): 227.&lt;/p&gt;
+
+&lt;h2 id=&quot;poster-fmsne---fast-multi-scale-neighbour-embedding-in-r&quot;&gt;Poster: &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;fmsne&lt;/code&gt; - fast multi-scale neighbour embedding in R&lt;/h2&gt;
+
+&lt;p&gt;Laurent Gatto and Cyril de Bodt&lt;/p&gt;
+
+&lt;p&gt;Dimensionality reduction (DR) has been a workhorse of large scale,
+multivariate omics data analysis from the early days. Since the advent
+of single-cell RNA sequencing, non-linear approaches have taken the
+front stage, with t-distributed stochastic neighbour embedding (t-SNE)
+[1,2] being one of, if not the main player. Packages such as &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Rtsne&lt;/code&gt;
+[3] and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;scater&lt;/code&gt; [4] have made it easy to apply t-SNE in
+R/Bioconductor workflows.&lt;/p&gt;
+
+&lt;p&gt;One sticking point with t-SNE is the single perplexity parameter, that
+controls the number of nearest high-dimensional (HD) neighbours that
+are taken into account when constructing the low-dimensional (LD)
+embedding: small (resp. large) values only enable preserving small
+(resp. large) neighbourhoods from HD to LD during DR, impairing the
+reproduction of large (resp. small) neighbourhoods. It is thus a key
+parameter, especially if the LD embedding is used for interpretation,
+which is often the case in omics-based applications.&lt;/p&gt;
+
+&lt;p&gt;Multi-scale neighbour embedding [5] is an extension to single-scale
+approaches such as t-SNE, that exempt users from having to set a
+single perplexity (scale) arbitrarily. Multi-scale approaches maximise
+the LD embedding quality at all scales, preserving both local and
+global HD neighbourhoods [6]. They have been shown to better capture
+the structure of data and to significantly improve DR quality [7].&lt;/p&gt;
+
+&lt;p&gt;Here, we present &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;fmsne&lt;/code&gt; (https://github.com/lgatto/fmsne), an R
+package that relies on the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;basiliks&lt;/code&gt; package [8] to provide
+Bioconductor-friendly interface to fast multi-scale methods
+implemented in python. &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;fmsne&lt;/code&gt; implements fast multi-scale functions
+such as &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;runFMSTSNE()&lt;/code&gt; and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;plotFMSTSNE()&lt;/code&gt;, based on scater’s
+&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;scater::run*()&lt;/code&gt; and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;scater::plot*()&lt;/code&gt; interface [4]. It also exposes
+the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;drQuality()&lt;/code&gt; function to assess DR quality using rank-based
+criteria [7]. Finally, we illustrate fast multi-scale methods on
+various single-cell datasets.&lt;/p&gt;
+
+&lt;p&gt;[1] van der Maaten, L., &amp;amp; Hinton, G. (2008). Visualizing data using
+    t-SNE. &lt;em&gt;Journal of Machine Learning Research&lt;/em&gt;, 9(Nov), 2579-2605.&lt;/p&gt;
+
+&lt;p&gt;[2] van der Maaten, L. (2014). Accelerating t-SNE using tree-based
+    algorithms. &lt;em&gt;Journal of Machine Learning Research&lt;/em&gt;, 15(1),
+    3221-3245.&lt;/p&gt;
+
+&lt;p&gt;[3] Jesse H. Krijthe (2015). Rtsne: T-Distributed Stochastic Neighbor
+    Embedding using a Barnes-Hut Implementation, URL:
+    https://github.com/jkrijthe/Rtsne&lt;/p&gt;
+
+&lt;p&gt;[4] McCarthy DJ, Campbell KR, Lun ATL, Willis QF (2017). Scater:
+    pre-processing, quality control, normalisation and visualisation
+    of single-cell RNA-seq data in R. &lt;em&gt;Bioinformatics&lt;/em&gt;, 33,
+    1179-1186. doi:10.1093/bioinformatics/btw777&lt;/p&gt;
+
+&lt;p&gt;[5] C. de Bodt, D. Mulders, M. Verleysen and J. A. Lee, “Fast
+    Multiscale Neighbor Embedding,” in &lt;em&gt;IEEE Transactions on Neural
+    Networks and Learning Systems&lt;/em&gt;, 2020, doi:
+    10.1109/TNNLS.2020.3042807.&lt;/p&gt;
+
+&lt;p&gt;[6] Lee, J. A., Peluffo-Ordóñez, D. H., &amp;amp; Verleysen,
+    M. (2015). Multi-scale similarities in stochastic neighbour
+    embedding: Reducing dimensionality while preserving both local and
+    global structure. &lt;em&gt;Neurocomputing&lt;/em&gt;, 169, 246-261.&lt;/p&gt;
+
+&lt;p&gt;[7] Lee, J. A., &amp;amp; Verleysen, M. (2009). Quality assessment of
+    dimensionality reduction: Rank-based criteria. &lt;em&gt;Neurocomputing&lt;/em&gt;,
+    72(7-9), 1431-1443.&lt;/p&gt;
+
+&lt;p&gt;[8] Lun ATL (2022). basilisk: a Bioconductor package for managing
+    Python environments. &lt;em&gt;Journal of Open Source Software&lt;/em&gt;,
+    7, 4742. doi:10.21105/joss.04742.&lt;/p&gt;
+
+&lt;h2 id=&quot;talk-linear-models-for-single-cell-proteomics&quot;&gt;Talk: Linear models for single-cell proteomics&lt;/h2&gt;
+
+&lt;p&gt;Christophe Vanderaa and Laurent Gatto&lt;/p&gt;
+
+&lt;p&gt;Mass spectrometry (MS)-based single-cell proteomics (SCP) has become a
+credible player in the single-cell biology arena [1,2]. Continuous
+technical improvements have pushed the boundaries of sensitivity and
+throughput. However, the computational efforts to support the analysis
+of these complex data have been missing. Strong batch effects coupled
+to high proportions of missing values complicate the analysis, causing
+strong entanglement between biological and technical variability
+[3,4].&lt;/p&gt;
+
+&lt;p&gt;We propose a simple, yet powerful approach to address this need:
+linear models. We use linear regression to model and remove undesired
+technical factors while retaining the biological variability, even in
+the presence of high proportions of missing values. The key advantage
+of linear models lies in the interpretability of the results they
+generate. Inspired by previous research [5], we streamlined modelling
+and exploration of the patterns induced by known technical and
+biological factors. The exploration enables a thorough assessment of
+the model coefficients, and highlights key factors influencing
+SCP experiments. Further exploration of the unmodelled variance
+recovers unknown but biologically relevant patterns in the data,
+leveraging the power of single-cell proteomics technologies. We
+successfully applied our approach to a diverse collection of SCP
+datasets [6], and could demonstrate that it is also amenable for
+integrating datasets acquired using different technologies.&lt;/p&gt;
+
+&lt;p&gt;We implemented and documented this approach in our Bioconductor
+package scp [7]. In summary, our approach represents a turning point
+for principled SCP data analysis, moving the tension point from how to
+perform the analysis to result generation and interpretation.&lt;/p&gt;
+
+&lt;p&gt;[1] “Single-Cell Proteomics: Challenges and Prospects.” 2023. Nature
+    Methods 20 (3): 317–18.&lt;/p&gt;
+
+&lt;p&gt;[2] Bennett HM, Stephenson W, Rose CM, and Darmanis S. 2023.
+    “Single-Cell Proteomics Enabled by next-Generation Sequencing or
+    Mass Spectrometry.” Nature Methods, March.&lt;/p&gt;
+
+&lt;p&gt;[3] Vanderaa C, and Gatto L. 2021. “Replication of Single-Cell
+    Proteomics Data Reveals Important Computational Challenges.”
+    Expert Review of Proteomics, October, 1–9.&lt;/p&gt;
+
+&lt;p&gt;[4] Vanderaa C, and Gatto L. 2023. “The Current State of Single-Cell
+    Proteomics Data Analysis.” Current Protocols 3 (1): e658.&lt;/p&gt;
+
+&lt;p&gt;[5] Thiel M, Féraud B, Govaerts B. 2017. “ASCA+ and APCA+: Extensions
+    of ASCA and APCA in the Analysis of Unbalanced Multifactorial
+    Designs.” Journal of Chemometrics 31 (6): e2895.&lt;/p&gt;
+
+&lt;p&gt;[6] Vanderaa C, and Gatto L.. scpdata: Single-Cell Proteomics Data
+    Package. R package verison 1.6.0,
+    &lt;a href=&quot;https://bioconductor.org/packages/release/data/experiment/html/scpdata.html&quot;&gt;https://bioconductor.org/packages/release/data/experiment/html/scpdata.html&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;[7] Vanderaa C, and Gatto L.. scp: Mass Spectrometry-Based Single-Cell
+    Proteomics Data Analysis. R package version 1.8.0,
+    &lt;a href=&quot;https://bioconductor.org/packages/release/bioc/html/scp.html&quot;&gt;https://bioconductor.org/packages/release/bioc/html/scp.html&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;workshop-spectra----an-expandable-infrastructure-to-handle-mass-spectrometry-data&quot;&gt;Workshop: &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Spectra&lt;/code&gt; -  an expandable infrastructure to handle mass spectrometry data&lt;/h2&gt;
+
+&lt;p&gt;Johannes Rainer, Sebastian Gibb, Laurent Gatto&lt;/p&gt;
+
+&lt;p&gt;Mass spectrometry (MS) data is a key technology in modern metabolomics and
+proteomics experiments. Continuous improvements in MS instrumentation, larger
+experiments and new technological developments lead to ever growing data sizes
+and increased number of available variables making &lt;em&gt;standard&lt;/em&gt; in-memory data
+handling and processing difficult.&lt;/p&gt;
+
+&lt;p&gt;The &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Spectra&lt;/code&gt; package provides a modern infrastructure for MS data handling
+specifically designed to enable extension to additional data resources or
+alternative data representations. These can be realized by extending the virtual
+&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;MsBackend&lt;/code&gt; class and its related methods. Implementations of such &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;MsBackend&lt;/code&gt;
+classes can be tailored for specific needs, such as low memory footprint, fast
+processing, remote data access, or also support for specific additional data
+types or variables. Importantly, data processing of &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Spectra&lt;/code&gt; objects is
+independent of the backend in use due to a &lt;em&gt;lazy evaluation&lt;/em&gt; mechanism that
+caches data manipulations internally.&lt;/p&gt;
+
+&lt;p&gt;This workshop discusses different available data representations for MS data
+along with their properties, advantages and performances. In addition,
+&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Spectra&lt;/code&gt;’s concept of lazy evaluation for data manipulations is presented, as
+well as a simple caching mechanism for data modifications. Finally, it explains
+how new &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;MsBackend&lt;/code&gt; instances can be implemented and tested to ensure
+compliance.&lt;/p&gt;
+
+&lt;h2 id=&quot;workshop-the-r-for-mass-spectrometry-initiative---from-raw-data-to-identifications-and-quantitative-proteomics-data-analysis&quot;&gt;Workshop: The R for Mass Spectrometry initiative - from raw data to identifications and quantitative proteomics data analysis&lt;/h2&gt;
+
+&lt;p&gt;Laurent Gatto, Sebastien Gibb and Johannes Rainer&lt;/p&gt;
+
+&lt;p&gt;The aim of the RforMassSpectrometry initiative
+(https://www.rformassspectrometry.org/) is to provide efficient,
+thoroughly documented, tested and flexible R software for the analysis
+and interpretation of high throughput mass spectrometry assays. In
+this software demo, we will demonstrate three software packages that
+are central for proteomics data analysis.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;The Spectra package [1], that defines an efficient infrastructure
+for storing and handling mass spectrometry spectra and functionality
+to subset, process, visualise and compare spectra data.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;The PSMatch package [2] allows to load, process and analyse
+peptide-spectrum matches, and can, among others, explore and
+deconvolute the peptide-protein (group) relations using adjacency
+matrices and connected components.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;The QFeatures package [3] provides infrastructure to management and
+process quantitative features for high-throughput mass spectrometry
+assay, in particular so across assay levels (such as precursors,
+peptide spectrum matches, peptides and proteins or protein groups)
+in a coherent and tractable format.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;We will conclude by illustrating how the MsExperiment package [5] can
+be used to bundle these three types of data together.&lt;/p&gt;
+
+&lt;p&gt;[1] Gatto L et al. (2023). &lt;em&gt;Spectra Infrastructure for Mass
+    Spectrometry Data&lt;/em&gt;, R package version
+    1.9.15. &lt;a href=&quot;https://rformassspectrometry.github.io/Spectra/&quot;&gt;https://rformassspectrometry.github.io/Spectra/&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;[2] Gatto L, Rainer J, Gibb S (2023). &lt;em&gt;PSMatch: Handling and Managing
+    Peptide Spectrum Matches&lt;/em&gt;. R package version 1.3.3,
+    &lt;a href=&quot;https://github.com/RforMassSpectrometry/PSM&quot;&gt;https://github.com/RforMassSpectrometry/PSM&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;[3] Gatto L, Vanderaa C (2023). &lt;em&gt;QFeatures: Quantitative features for
+    mass spectrometry data&lt;/em&gt;. R package version 1.9.3,
+    &lt;a href=&quot;https://github.com/RforMassSpectrometry/QFeatures&quot;&gt;https://github.com/RforMassSpectrometry/QFeatures&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;[4] Gatto L, Rainer J, Gibb S (2022). &lt;em&gt;MsExperiment: Infrastructure
+    for Mass Spectrometry Experiments&lt;/em&gt;. R package version 1.0.0,
+    &lt;a href=&quot;https://github.com/RforMassSpectrometry/MsExperiment&quot;&gt;https://github.com/RforMassSpectrometry/MsExperiment&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;poster-a-mixed-cell-control-design-to-assess-data-processing-in-single-cell-proteomics&quot;&gt;Poster: A mixed-cell control design to assess data processing in single-cell proteomics&lt;/h2&gt;
+
+&lt;p&gt;Samuel Grégoire, Sébastien Pyr dit Ruys, Christophe Vanderaa, Didier Vertommen and Laurent Gatto&lt;/p&gt;
+
+&lt;p&gt;Single-cell proteomics (SCP) aims at studying cellular heterogeneity
+by focusing on the functional effectors of the cells, proteins. While
+this is essential to identify cells undergoing subtle processes and
+point out underlying relevant protein and proteoform abundance
+patterns, assessing protein content inside a single cell is
+challenging.&lt;/p&gt;
+
+&lt;p&gt;Thanks to recent breakthroughs in mass spectrometry and sample
+processing, it has become possible to increase the depth of proteome
+covered, reduce the time needed to analyse a cell and make this
+technology more accessible [1].&lt;/p&gt;
+
+&lt;p&gt;However, extracting meaningful biological information from this type
+of data requires robust and suitable data analysis methods. Progress
+in this field is tempered by the lack of standardised
+workflows. Currently, data analysis workflows are custom made and
+substantially different from one research team to another
+[2]. Moreover, it is difficult to evaluate specific steps or entire
+pipelines as ground truths are missing. In an effort to bridge the gap
+towards the standardisation of SCP data analysis, our team has
+developed the scp package [3] relying on the QFeatures and
+SingleCellExperiment infrastructures to provide a standardised
+framework for SCP data analysis. In addition, we produced our own SCP
+datasets to constitute a basis for data analysis benchmarking. To this
+end, we used a design containing cell lines mixed in known proportions
+to generate controlled variability [4].&lt;/p&gt;
+
+&lt;p&gt;In this work, we used the scp package to test different combinations
+of data processing steps and evaluated them using our ground truth
+data. We illustrate how we benefited from this modular, standardised
+framework and highlight some crucial steps.&lt;/p&gt;
+
+&lt;p&gt;[1] Slavov, Nikolai. Scaling Up Single-Cell Proteomics. Molecular &amp;amp;
+    Cellular Proteomics 21, no 1 (2022): 100179.
+    https://doi.org/10.1016/j.mcpro.2021.100179.&lt;/p&gt;
+
+&lt;p&gt;[2] Vanderaa, Christophe, and Laurent Gatto. 2023. The Current State
+    of Single-Cell Proteomics Data Analysis. Current Protocols 3 (1):
+    e658. https://doi.org/10.1002/cpz1.658&lt;/p&gt;
+
+&lt;p&gt;[3] Vanderaa Christophe and Laurent Gatto. Replication of Single-Cell
+    Proteomics Data Reveals Important Computational Challenges.
+    Expert Review of Proteomics, 1–9
+    (2021). https://doi.org/10.1080/14789450.2021.1988571&lt;/p&gt;
+
+&lt;p&gt;[4] Tian, L., Dong, X., Freytag, S. et al. Benchmarking single cell
+    RNA-sequencing analysis pipelines using mixture control
+    experiments.  Nat Methods 16, 479–487
+    (2019). https://doi.org/10.1038/s41592-019-0425&lt;/p&gt;</content><author><name>Laurent Gatto</name></author><category term="conference" /><category term="software" /><category term="talks" /><category term="CBIO" /><summary type="html">Long overdue now, but here are the CBIO lab’s contributions to the EuroBioc2023 conference that was organised on Ghent, on the 20 - 22 September 2023.</summary></entry><entry><title type="html">One-minute introduction</title><link href="https://lgatto.github.io/one-minute-intro/" rel="alternate" type="text/html" title="One-minute introduction" /><published>2023-07-22T00:00:00+02:00</published><updated>2023-07-22T00:00:00+02:00</updated><id>https://lgatto.github.io/one-minute-intro</id><content type="html" xml:base="https://lgatto.github.io/one-minute-intro/">&lt;p&gt;Every now and then, there’s a situation where I need to briefly
+introduce myself, academically. This can be with or without any visual
+support (i.e a slide). Instead of doing so semi-randomly, I though I
+would prepare such a one-minute introduction, once an for all. So here
+I go, with a nice illustrative &lt;a href=&quot;https://docs.google.com/presentation/d/1R3W63-TdOJcjSs8p_QnTQ7iC7IsJnuwOe1EBb7thfTE/edit?usp=sharing&quot;&gt;heck-sticker
+slide&lt;/a&gt;
+and plenty of links.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/one-minute-slide.png&quot; alt=&quot;One-minute intro slide&quot; /&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;I am &lt;a href=&quot;http://lgatto.github.io/about&quot;&gt;Laurent Gatto&lt;/a&gt;, professor of
+bioinformatics at the &lt;a href=&quot;https://uclouvain.be/&quot;&gt;UCLouvain&lt;/a&gt;. I teach
+(more of my courses) at the &lt;a href=&quot;https://uclouvain.be/fr/facultes/fasb&quot;&gt;Faculty of pharmacy and biomedical
+sciences&lt;/a&gt; and run a
+computation biology lab at the &lt;a href=&quot;https://www.deduveinstitute.be/&quot;&gt;de Duve
+institute&lt;/a&gt;.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;The &lt;a href=&quot;https://lgatto.github.io/cbio-lab/&quot;&gt;lab&lt;/a&gt;’s research focuses on
+developing statistical and machine learning methods to process,
+explore and comprehend high-dimensional biological data, such as
+typically produces by omics technologies. Working on the university
+biomedical campus, we deploy our work on clinically and biomedically
+relevant research projects, in collaboration with other laboratories
+on the campus.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;I am committed to the open, transparent and rigorous practice of
+scientific enquiry. In particular, we make every possible effort to
+make our &lt;a href=&quot;http://lgatto.github.io/rr-what-should-be-our-goals/&quot;&gt;research repeatable, reproducible and
+replicable&lt;/a&gt;.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;The development and publication of scientific software (see
+&lt;a href=&quot;https://github.com/UCLouvain-CBIO/&quot;&gt;here&lt;/a&gt;,
+&lt;a href=&quot;https://github.com/lgatto&quot;&gt;here&lt;/a&gt; and
+&lt;a href=&quot;https://github.com/RforMassSpectrometry/&quot;&gt;here&lt;/a&gt;) is an integral
+part of my work and is reflected by my contributions to the
+&lt;a href=&quot;http://www.bioconductor.org/&quot;&gt;Bioconductor&lt;/a&gt; project. Some specific
+examples include spatial proteomics data analysis with
+&lt;a href=&quot;https://lgatto.github.io/pRoloc/&quot;&gt;pRoloc&lt;/a&gt;, single-cell proteomics
+with &lt;a href=&quot;https://uclouvain-cbio.github.io/scp/&quot;&gt;scp&lt;/a&gt; and mass
+spectrometry data processing with the &lt;a href=&quot;https://www.rformassspectrometry.org/&quot;&gt;R for Mass
+Spectrometry&lt;/a&gt; packages.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;I also serve on the Bioconductor &lt;a href=&quot;https://bioconductor.org/about/technical-advisory-board/&quot;&gt;technical advisory
+board&lt;/a&gt;,
+&lt;a href=&quot;https://bioconductor.org/about/european-bioconductor-society/&quot;&gt;European Bioconductor
+Society&lt;/a&gt;,
+&lt;a href=&quot;https://bioconductor.org/help/education-training/&quot;&gt;education and teaching
+committee&lt;/a&gt; and
+the &lt;a href=&quot;https://bioconductor.org/about/code-of-conduct/&quot;&gt;Code of conduct
+committee&lt;/a&gt;, and
+co-organise the yearly European &lt;a href=&quot;https://eurobioc2023.bioconductor.org/&quot;&gt;EuroBioc
+conference&lt;/a&gt;.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;</content><author><name>Laurent Gatto</name></author><category term="science" /><category term="open research" /><category term="software" /><summary type="html">Every now and then, there’s a situation where I need to briefly introduce myself, academically. This can be with or without any visual support (i.e a slide). Instead of doing so semi-randomly, I though I would prepare such a one-minute introduction, once an for all. So here I go, with a nice illustrative heck-sticker slide and plenty of links.</summary></entry><entry><title type="html">Open position in the CBIO lab: single-cell proteomics</title><link href="https://lgatto.github.io/scp-job-2023/" rel="alternate" type="text/html" title="Open position in the CBIO lab: single-cell proteomics" /><published>2023-02-27T00:00:00+01:00</published><updated>2023-02-27T00:00:00+01:00</updated><id>https://lgatto.github.io/scp-job-2023</id><content type="html" xml:base="https://lgatto.github.io/scp-job-2023/">&lt;p&gt;A fully-funded position for a PhD student (4 years) or a post-doctoral
+researcher (2 - 3 years, depending on experience) is open in the
+Computational Biology and Bioinformatics lab (CBIO) at the de Duve
+Institute, UCLouvain in Brussels, Belgium.&lt;/p&gt;
+
+&lt;p&gt;The &lt;a href=&quot;https://lgatto.github.io/cbio-lab&quot;&gt;CBIO lab&lt;/a&gt; has developed a
+leading expertise in mass spectrometry-based &lt;a href=&quot;https://paperpile.com/shared/paTK2y&quot;&gt;single-cell proteomics
+data processing, analysis and
+interpretation&lt;/a&gt; and is looking
+for a researcher to contribute to this research theme. The position
+will focus on computational and statistical approaches, including
+research software development, integration with other omics
+modalities, and could, depending on the candidate interests and
+experience, also include a small wet lab component.&lt;/p&gt;
+
+&lt;p&gt;The successful candidate will have a degree in bioinformatics,
+statistics, computer sciences, biomedical sciences, bio-engineering,
+or equivalent and be able to demonstrate experience and/or keen
+interest in one or several of the following:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;experience in one or multiple omics experimental technologies, data
+processing, analysis and/or interpretation - experience in mass
+spectrometry and proteomics is an advantage;&lt;/li&gt;
+  &lt;li&gt;a keen interest in understanding and tackling biomedically relevant
+questions;&lt;/li&gt;
+  &lt;li&gt;interest in robust method development;&lt;/li&gt;
+  &lt;li&gt;background/expertise in statistics, machine learning and/or
+artificial intelligence;&lt;/li&gt;
+  &lt;li&gt;open and reproducible research (e.g. Rmarkdown, Jupyter notebooks,
+Github, version control, …);&lt;/li&gt;
+  &lt;li&gt;research software development (e.g. unit testing, version control,
+continuous integration, …);&lt;/li&gt;
+  &lt;li&gt;experience in R/Bioconductor data structures, in particular those
+used for omics data analysis (e.g. SummarizedExperiment,
+SingleCellExeriment, QFeatures, …);&lt;/li&gt;
+  &lt;li&gt;contribution to an open and inclusive research environment;&lt;/li&gt;
+  &lt;li&gt;good written and oral communication skills.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;The project is funded by the Fonds National de la Recherche
+Scientifique (FNRS). The position is open immediately until filled.&lt;/p&gt;
+
+&lt;h2 id=&quot;about-the-cbio-lab&quot;&gt;About the CBIO lab&lt;/h2&gt;
+
+&lt;p&gt;The Computational Biology and Bioinformatics lab is headed by Prof
+&lt;a href=&quot;https://lgatto.github.io/about&quot;&gt;Laurent Gatto&lt;/a&gt; and is composed of
+students and researchers with expertise in biomedical sciences,
+statistics, omics data analysis and bioinformatics. Details about our
+work and the members can be found at
+&lt;a href=&quot;https://lgatto.github.io/cbio-lab/&quot;&gt;https://lgatto.github.io/cbio-lab/&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;The lab supports a friendly and supportive work environment through
+flexible working hours and the possibility to work remotely. The lab
+meetings are typically scheduled in-person (or mixed remote/in-person)
+to favour interactions among lab members. While joining the lab and
+contribution to our research, you will also have the opportunity to get
+involved in the international Bioconductor community. The lab members
+have opportunities to join courses and conferences in Belgium and
+abroad to present their work.&lt;/p&gt;
+
+&lt;h2 id=&quot;academic-environment&quot;&gt;Academic environment&lt;/h2&gt;
+
+&lt;p&gt;The &lt;a href=&quot;https://www.deduveinstitute.be/&quot;&gt;de Duve Institute&lt;/a&gt; is a
+multidisciplinary biomedical research institute (250-300 scientists)
+hosting several laboratories the UCLouvain, as well as the Brussels
+branch of the Ludwig Institute for Cancer Research. The focus is on
+basic research in the fields of tumour immunology and signal
+transduction in cancer, genetics and development, including human
+genetics, stem cells and organ development, infection and inflammation
+and metabolism and hormones. The de Duve Institute also features
+several core facilities, including imaging, transgenesis, mass
+spectrometry, flow cytometry and cell sorting, as well as
+genomics. The de Duve Institute provides access to a high-performance
+computing cluster and storage, managed by a dedicated IT team.&lt;/p&gt;
+
+&lt;h2 id=&quot;application&quot;&gt;Application&lt;/h2&gt;
+
+&lt;p&gt;To apply for the position, please send the following documents to
+Laurent Gatto:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;A cover letter describing why you would like to join the lab and how
+you match the requirement;&lt;/li&gt;
+  &lt;li&gt;A detailed CV including, depending on seniority, some or all of the
+following: a list of publications, pre-prints, posters and/or
+software contributions; a link to publicly available code/data
+analysis you have contributed to; education and professional
+experience; current and past positions; awards; obtained funding;
+teaching experience; any additional information you deem relevant.&lt;/li&gt;
+  &lt;li&gt;If no code is publicly available, please include code chunks that
+illustrate best your programming experience and interests.&lt;/li&gt;
+  &lt;li&gt;Among your publications/software/projects, select up to 3 and
+provide a short narrative describing why these are important in your
+career, your specific contributions and/or the unique skills you
+have gained through these.&lt;/li&gt;
+  &lt;li&gt;A list of at least 2 (for a PhD application) or 3 (for a
+post-doctoral researcher application) academic references.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Expectations are different for PhD or PDRA application and will be
+assessed accordingly.&lt;/p&gt;
+
+&lt;h2 id=&quot;salary&quot;&gt;Salary&lt;/h2&gt;
+
+&lt;p&gt;A PhD-student salary is around 2000 euros in Belgium. Other positions,
+such as research assistants (assumes a MS degree) or post-doctoral
+associates (assumes a PhD degree), the gross salary will depend on
+seniority (year after acquiring the degree) and the net salary will
+depend on family circumstances.&lt;/p&gt;
+
+&lt;p&gt;For more details about this position, feel free to contact Laurent
+Gatto at &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;laurent&amp;lt;DOT&amp;gt;gatto&amp;lt;AT&amp;gt;uclouvain.be&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;You might also be interested in &lt;a href=&quot;https://lgatto.github.io/spatprot-job-2023/&quot;&gt;this
+position&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Please do share this position with your students and colleagues
+(&lt;a href=&quot;/images/2023-job-scp.pdf&quot;&gt;pdf&lt;/a&gt;).&lt;/p&gt;</content><author><name>Laurent Gatto</name></author><category term="job" /><summary type="html">A fully-funded position for a PhD student (4 years) or a post-doctoral researcher (2 - 3 years, depending on experience) is open in the Computational Biology and Bioinformatics lab (CBIO) at the de Duve Institute, UCLouvain in Brussels, Belgium.</summary></entry><entry><title type="html">Open position in the CBIO lab: spatial proteomics and PTMs</title><link href="https://lgatto.github.io/spatprot-job-2023/" rel="alternate" type="text/html" title="Open position in the CBIO lab: spatial proteomics and PTMs" /><published>2023-02-27T00:00:00+01:00</published><updated>2023-02-27T00:00:00+01:00</updated><id>https://lgatto.github.io/spatprot-job-2023</id><content type="html" xml:base="https://lgatto.github.io/spatprot-job-2023/">&lt;p&gt;A position for a PhD student (4 years) or a research assistant (1 year
+contracts, renewable) is open in the CBIO lab focusing on protein
+sub-cellular localisation (spatial) proteomics, post-translational
+modification and machine learning.&lt;/p&gt;
+
+&lt;p&gt;The goal of the project is to apply and extend existing spatial
+proteomics methods [&lt;a href=&quot;https://pubmed.ncbi.nlm.nih.gov/24413670/&quot;&gt;1&lt;/a&gt;,
+&lt;a href=&quot;https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1006516&quot;&gt;2&lt;/a&gt;,
+&lt;a href=&quot;https://www.nature.com/articles/s41467-022-33570-9&quot;&gt;3&lt;/a&gt;] and software
+infrastructure (such as the
+&lt;a href=&quot;https://bioconductor.org/packages/pRoloc&quot;&gt;pRoloc&lt;/a&gt; package) to focus
+more specifically on the detection and the effect of
+post-translational modifications in protein and proteoform
+sub-cellular localisation.&lt;/p&gt;
+
+&lt;p&gt;This position is part of the &lt;a href=&quot;https://www.fwo.be/en/&quot;&gt;FWO&lt;/a&gt;-funded
+Protein Contours project, in collaboration with &lt;a href=&quot;https://we.vub.ac.be/en/wim-vranken&quot;&gt;Win
+Vranken&lt;/a&gt; from the VUB and
+&lt;a href=&quot;https://www.compomics.com/people/lennart-martens/&quot;&gt;Lennart Martens&lt;/a&gt;
+from the VIB and Ghent University.&lt;/p&gt;
+
+&lt;p&gt;The successful candidate will have a degree in bioinformatics,
+statistics, computer sciences, biomedical sciences, or equivalent and
+be able to demonstrate experience and/or keen interest in at least
+several of the following:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;experience in one or multiple omics experimental technologies, data
+processing, analysis and/or interpretation - experience in mass
+spectrometry and proteomics is an advantage;&lt;/li&gt;
+  &lt;li&gt;a keen interest in understanding and tackling biomedically relevant
+questions;&lt;/li&gt;
+  &lt;li&gt;interest in robust method development;&lt;/li&gt;
+  &lt;li&gt;background/expertise in statistics, machine learning and/or
+artificial intelligence;&lt;/li&gt;
+  &lt;li&gt;open and reproducible research (e.g. Rmarkdown, Jupyter notebooks,
+Github, version control, …);&lt;/li&gt;
+  &lt;li&gt;experience in R/Bioconductor data structures, in particular those
+used for omics data analysis (e.g. SummarizedExperiment,
+SingleCellExeriment, QFeatures, …);&lt;/li&gt;
+  &lt;li&gt;contribution to an open and inclusive research environment;&lt;/li&gt;
+  &lt;li&gt;good written and oral communication skills.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;about-the-cbio-lab&quot;&gt;About the CBIO lab&lt;/h2&gt;
+
+&lt;p&gt;The Computational Biology and Bioinformatics lab is headed by Prof
+&lt;a href=&quot;https://lgatto.github.io/about&quot;&gt;Laurent Gatto&lt;/a&gt; and is composed of
+students and researchers with expertise in biomedical sciences,
+statistics, omics data analysis and bioinformatics. Details about our
+work and the members can be found at
+&lt;a href=&quot;https://lgatto.github.io/cbio-lab/&quot;&gt;https://lgatto.github.io/cbio-lab/&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;The lab supports a friendly and supportive work environment through
+flexible working hours and the possibility to work remotely. The lab
+meetings are typically scheduled in-person (or mixed remote/in-person)
+to favour interactions among lab members. While joining the lab and
+contribution to our research, you will also have the opportunity to get
+involved in the international Bioconductor community. The lab members
+have opportunities to join courses and conferences in Belgium and
+abroad to present their work.&lt;/p&gt;
+
+&lt;h2 id=&quot;academic-environment&quot;&gt;Academic environment&lt;/h2&gt;
+
+&lt;p&gt;The &lt;a href=&quot;https://www.deduveinstitute.be/&quot;&gt;de Duve Institute&lt;/a&gt; is a
+multidisciplinary biomedical research institute (250-300 scientists)
+hosting several laboratories the UCLouvain, as well as the Brussels
+branch of the Ludwig Institute for Cancer Research. The focus is on
+basic research in the fields of tumour immunology and signal
+transduction in cancer, genetics and development, including human
+genetics, stem cells and organ development, infection and inflammation
+and metabolism and hormones. The de Duve Institute also features
+several core facilities, including imaging, transgenesis, mass
+spectrometry, flow cytometry and cell sorting, as well as
+genomics. The de Duve Institute provides access to a high-performance
+computing cluster and storage, managed by a dedicated IT team.&lt;/p&gt;
+
+&lt;h2 id=&quot;application&quot;&gt;Application&lt;/h2&gt;
+
+&lt;p&gt;To apply for the position, please send the following documents to
+Laurent Gatto:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;A cover letter describing why you would like to join the lab and how
+you match the requirement;&lt;/li&gt;
+  &lt;li&gt;A detailed CV including some or all of the following: a list of
+publications, pre-prints, posters and/or software contributions; a
+link to publicly available code/data analysis you have contributed
+to; education and professional experience; awards; teaching
+experience; any additional information you deem relevant.&lt;/li&gt;
+  &lt;li&gt;If no code is publicly available, please include code chunks that
+illustrate best your programming experience and interests.&lt;/li&gt;
+  &lt;li&gt;Among your projects, select 1 and provide a short narrative
+describing why these are important in your career, your specific
+contributions and/or the unique skills you have gained through
+these.&lt;/li&gt;
+  &lt;li&gt;A list of at least 2 academic references.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;salary&quot;&gt;Salary&lt;/h2&gt;
+
+&lt;p&gt;A PhD-student salary is around 2000 euros in Belgium. Other positions,
+such as research assistants (assumes a MS degree) or post-doctoral
+associates (assumes a PhD degree), the gross salary will depend on
+seniority (year after acquiring the degree) and the net salary will
+depend on family circumstances.&lt;/p&gt;
+
+&lt;p&gt;For more details about this position, feel free to contact Laurent
+Gatto at &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;laurent&amp;lt;DOT&amp;gt;gatto&amp;lt;AT&amp;gt;uclouvain.be&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;You might also be interested in &lt;a href=&quot;https://lgatto.github.io/scp-job-2023/&quot;&gt;this
+position&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Please do share this position with your students and colleagues
+(&lt;a href=&quot;/images/2023-job-spatprot.pdf&quot;&gt;pdf&lt;/a&gt;).&lt;/p&gt;</content><author><name>Laurent Gatto</name></author><category term="job" /><summary type="html">A position for a PhD student (4 years) or a research assistant (1 year contracts, renewable) is open in the CBIO lab focusing on protein sub-cellular localisation (spatial) proteomics, post-translational modification and machine learning.</summary></entry><entry><title type="html">Installing and running MaxQuant on GNU/Linux</title><link href="https://lgatto.github.io/maxquant-linux/" rel="alternate" type="text/html" title="Installing and running MaxQuant on GNU/Linux" /><published>2022-12-16T00:00:00+01:00</published><updated>2022-12-16T00:00:00+01:00</updated><id>https://lgatto.github.io/maxquant-linux</id><content type="html" xml:base="https://lgatto.github.io/maxquant-linux/">&lt;p&gt;After a first analysis of 20 plasma samples, we wanted to compare the
+results of a single acquisition against a fractionation of the same
+samples over 7 fractions, tallying a total of 140 raw files. This
+required a more powerful computer… running GNU/Linux.&lt;/p&gt;
+
+&lt;h2 id=&quot;installation&quot;&gt;Installation&lt;/h2&gt;
+
+&lt;p&gt;My first reference was the following
+&lt;a href=&quot;https://www.youtube.com/watch?v=KHdvO1M85VM&quot;&gt;video&lt;/a&gt; by Pavel
+Sinitcyn, a post-doc in the MaxQuant team. There’s no actual
+installation of MaxQuant - the binaries simply need to be
+&lt;a href=&quot;http://www.coxdocs.org/doku.php?id=maxquant:common:download_and_installation#download_and_installation_guide&quot;&gt;downloaded&lt;/a&gt;
+and unzipped. The challenge is however to install the infrastructure
+to run MaxQuant’s C# code on Linux.&lt;/p&gt;
+
+&lt;p&gt;The instructions in the video suggested to install &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;dotnet&lt;/code&gt;, as
+documented
+&lt;a href=&quot;https://learn.microsoft.com/en-us/dotnet/core/install/linux-ubuntu#&quot;&gt;here&lt;/a&gt;. This
+didn’t work under Ubuntu 22.04 LTS.&lt;/p&gt;
+
+&lt;p&gt;I am not sure of the reason… I had to install &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;dotnet&lt;/code&gt; 3.1 (even
+though 2.1 was mentioned in the video above), an older version than
+the one available by default on Ubuntu 22.04 LTS. &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;dotnet&lt;/code&gt; version 3.1
+itself depended of an older version of &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;libssl&lt;/code&gt;, namely &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;libss1&lt;/code&gt;, that
+wasn’t available on ubuntu (again, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;libssl3&lt;/code&gt; was the default
+version). I had to download and compile &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;libss1&lt;/code&gt; by hand, which seemed
+to be successful, but ended up with a crashing MaxQuant.&lt;/p&gt;
+
+&lt;p&gt;Next, I followed &lt;a href=&quot;https://bioinformatics.stackexchange.com/a/13901&quot;&gt;these
+instructions&lt;/a&gt;, that
+suggested to use &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;mono&lt;/code&gt;, and installing it via &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;conda&lt;/code&gt;. This proved to
+be successful. I will be using that setup in the following sections.&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;# create the environment
+conda create -n maxquant -c conda-forge mono
+# activate the environment
+conda activate maxquant
+# run any maxquant version
+mono /path/to/maxquant/bin/MaxQuantCmd.exe mqpar.xml
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;It is worth noting that there’s also a &lt;a href=&quot;https://github.com/nickdelgrosso/DockerizeMaxQuant&quot;&gt;MaxQuant docker
+container&lt;/a&gt;, but
+for an older version of MQ, 1.6.5.0, while the current one (at the
+time of writing) is 2.2.0.0.&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;docker run -it nickdg/maxquant
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;I couldn’t find a up-to-date MaxQuant container elsewhere.&lt;/p&gt;
+
+&lt;h2 id=&quot;running-and-debugging&quot;&gt;Running and debugging&lt;/h2&gt;
+
+&lt;p&gt;Once installed, running MaxQuant is only a matter of passing it a
+parameter file.&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;mono /path/to/maxquant/bin/MaxQuantCmd.exe mqpar.xml
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;That parameter can be generated using the GUI on Windows, and adapted
+for linux by changing the paths to the data and fasta file folders
+using the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;--changeFolder&lt;/code&gt; argument . This is described in detail in
+the instruction video above.&lt;/p&gt;
+
+&lt;h2 id=&quot;debugging&quot;&gt;Debugging&lt;/h2&gt;
+
+&lt;p&gt;The run crashed after just under a week’s continuous run. I started
+the job remotely and lost the output, so didn’t have any error
+messages to try to identify the cause. I knew that the first MS/MS
+search was underway and thus resumed the run at that step/job, using
+the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;-p&lt;/code&gt; argument. To find that job index, one can perform a dry run
+with the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;--dryrun&lt;/code&gt; argument. This will list all the steps as defined
+in the parameter file and their respective ids.&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;mono /path/to/maxquant/bin/MaxQuantCmd.exe --dryrun mqpar.xml
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Take note the index &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;N&lt;/code&gt; of the step you want to resume your run with
+and run it with:&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;mono /path/to/maxquant/bin/MaxQuantCmd.exe -p N mqpar.xml
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;And, as expected, the error happened again, but this time I managed to
+capture the output:&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Reading search engine results
+Preparing reverse hits
+Finish search engine results
+Filter identifications (MS/MS)
+Calculating PEP
+
+Unhandled Exception:
+System.Exception: Exception during execution of external process: 1302419 Error: Garbage collector could not allocate 16384u bytes of memory for major heap section.
+
+  at QueueingSystem.WorkDispatcher.ProcessSingleRunExternalProcess (System.Int32 taskIndex, System.Int32 threadIndex) [0x0009d] in &amp;lt;48f64397b7dc4fdd807bfd54c44c2941&amp;gt;:0
+  at QueueingSystem.WorkDispatcher.DoWork (System.Int32 taskIndex, System.Int32 threadIndex) [0x0001e] in &amp;lt;48f64397b7dc4fdd807bfd54c44c2941&amp;gt;:0
+  at QueueingSystem.WorkDispatcher.Work (System.Object threadIndex) [0x00054] in &amp;lt;48f64397b7dc4fdd807bfd54c44c2941&amp;gt;:0
+  at System.Threading.ThreadHelper.ThreadStart_Context (System.Object state) [0x00025] in &amp;lt;aa5dff9b31c64fce86559bbbf6cd364f&amp;gt;:0
+  at System.Threading.ExecutionContext.RunInternal (System.Threading.ExecutionContext executionContext, System.Threading.ContextCallback callback, System.Object state, System.Boolean preserveSyncCtx) [0x00071] in &amp;lt;aa5dff9b31c64fce86559bbbf6cd364f&amp;gt;:0
+  at System.Threading.ExecutionContext.Run (System.Threading.ExecutionContext executionContext, System.Threading.ContextCallback callback, System.Object state, System.Boolean preserveSyncCtx) [0x00000] in &amp;lt;aa5dff9b31c64fce86559bbbf6cd364f&amp;gt;:0
+  at System.Threading.ExecutionContext.Run (System.Threading.ExecutionContext executionContext, System.Threading.ContextCallback callback, System.Object state) [0x0002b] in &amp;lt;aa5dff9b31c64fce86559bbbf6cd364f&amp;gt;:0
+  at System.Threading.ThreadHelper.ThreadStart (System.Object obj) [0x0000f] in &amp;lt;aa5dff9b31c64fce86559bbbf6cd364f&amp;gt;:0
+[ERROR] FATAL UNHANDLED EXCEPTION: System.Exception: Exception during execution of external process: 1302419 Error: Garbage collector could not allocate 16384u bytes of memory for major heap section.
+
+  at QueueingSystem.WorkDispatcher.ProcessSingleRunExternalProcess (System.Int32 taskIndex, System.Int32 threadIndex) [0x0009d] in &amp;lt;48f64397b7dc4fdd807bfd54c44c2941&amp;gt;:0
+  at QueueingSystem.WorkDispatcher.DoWork (System.Int32 taskIndex, System.Int32 threadIndex) [0x0001e] in &amp;lt;48f64397b7dc4fdd807bfd54c44c2941&amp;gt;:0
+  at QueueingSystem.WorkDispatcher.Work (System.Object threadIndex) [0x00054] in &amp;lt;48f64397b7dc4fdd807bfd54c44c2941&amp;gt;:0
+  at System.Threading.ThreadHelper.ThreadStart_Context (System.Object state) [0x00025] in &amp;lt;aa5dff9b31c64fce86559bbbf6cd364f&amp;gt;:0
+  at System.Threading.ExecutionContext.RunInternal (System.Threading.ExecutionContext executionContext, System.Threading.ContextCallback callback, System.Object state, System.Boolean preserveSyncCtx) [0x00071] in &amp;lt;aa5dff9b31c64fce86559bbbf6cd364f&amp;gt;:0
+  at System.Threading.ExecutionContext.Run (System.Threading.ExecutionContext executionContext, System.Threading.ContextCallback callback, System.Object state, System.Boolean preserveSyncCtx) [0x00000] in &amp;lt;aa5dff9b31c64fce86559bbbf6cd364f&amp;gt;:0
+  at System.Threading.ExecutionContext.Run (System.Threading.ExecutionContext executionContext, System.Threading.ContextCallback callback, System.Object state) [0x0002b] in &amp;lt;aa5dff9b31c64fce86559bbbf6cd364f&amp;gt;:0
+  at System.Threading.ThreadHelper.ThreadStart (System.Object obj) [0x0000f] in &amp;lt;aa5dff9b31c64fce86559bbbf6cd364f&amp;gt;:0
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Thanks to Kristina’s help,
+&lt;a href=&quot;https://gist.github.com/elrubio/4e7797d7d0d9add96ce82f0472f17908?permalink_comment_id=2961278&quot;&gt;addressing&lt;/a&gt;
+the error was simply a matter of increasing the size of the heap with&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sudo sysctl -w vm.max_map_count=655350
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;I then re-resumed the search with at step 25, corresponding to the
+calculation of posterior error probabilites:&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;mono /path/to/maxquant/bin/MaxQuantCmd.exe -p 25 mqpar_linux.xml
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;and… after just over a week of total run time, success!&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Calculating PEP
+Copying identifications
+Applying FDR
+Assembling second peptide MS/MS
+Combining second peptide files
+Second peptide search
+Reading search engine results (SP)
+Finish search engine results (SP)
+Filtering identifications (SP)
+Applying FDR (SP)
+Re-quantification
+Reporter quantification
+Retention time alignment
+Matching between runs 1
+Matching between runs 2
+Matching between runs 3
+Matching between runs 4
+Prepare protein assembly
+Assembling proteins
+Assembling unidentified peptides
+Finish protein assembly
+Updating identifications
+iBAQ
+Label-free preparation
+Label-free normalization
+Label-free quantification
+Label-free collect
+Estimating complexity
+Prepare writing tables
+Writing tables
+Finish writing tables
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;acknowledgements&quot;&gt;Acknowledgements&lt;/h2&gt;
+
+&lt;p&gt;Thank you very much to &lt;a href=&quot;https://github.com/KristinaGomoryova&quot;&gt;Kristina
+Gomoryova&lt;/a&gt; for her help in
+finding the relevant information, advising during installation and
+debugging, and generating the parameter file.&lt;/p&gt;</content><author><name>Laurent Gatto</name></author><category term="proteomics" /><summary type="html">After a first analysis of 20 plasma samples, we wanted to compare the results of a single acquisition against a fractionation of the same samples over 7 fractions, tallying a total of 140 raw files. This required a more powerful computer… running GNU/Linux.</summary></entry><entry><title type="html">First ungrading assessment</title><link href="https://lgatto.github.io/ungrading-assessment/" rel="alternate" type="text/html" title="First ungrading assessment" /><published>2022-12-15T00:00:00+01:00</published><updated>2022-12-15T00:00:00+01:00</updated><id>https://lgatto.github.io/ungrading-assessment</id><content type="html" xml:base="https://lgatto.github.io/ungrading-assessment/">&lt;p&gt;Here’s the initial assessment of the new &lt;em&gt;ungrading and feedback&lt;/em&gt;
+pedagogy that the TAs and myself have implemented this academic year
+(2022-2023). In a nutshell, we decided to not mark any of the weekly
+test and maximise opportunities for feedback to favour student’s
+self-assessment and reflection on their own work
+(meta-cognition). Read the &lt;a href=&quot;https://lgatto.github.io/ungrading/&quot;&gt;full
+post&lt;/a&gt; to read about the reasons
+and opportunities for dropping grading the weekly tests and maximise
+feedback with students.&lt;/p&gt;
+
+&lt;!--more--&gt;
+
+&lt;aside class=&quot;sidebar__right&quot;&gt;
+&lt;nav class=&quot;toc&quot;&gt;
+    &lt;header&gt;&lt;h4 class=&quot;nav__title&quot;&gt;&lt;i class=&quot;fa fa-file-text&quot;&gt;&lt;/i&gt; On This Page&lt;/h4&gt;&lt;/header&gt;
+&lt;ul class=&quot;toc__menu&quot; id=&quot;markdown-toc&quot;&gt;
+  &lt;li&gt;&lt;a href=&quot;#part-1&quot; id=&quot;markdown-toc-part-1&quot;&gt;Part 1&lt;/a&gt;    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;#third-bachelor-course&quot; id=&quot;markdown-toc-third-bachelor-course&quot;&gt;Third bachelor course&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#first-masters-course&quot; id=&quot;markdown-toc-first-masters-course&quot;&gt;First masters course&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#next-assessments&quot; id=&quot;markdown-toc-next-assessments&quot;&gt;Next assessments&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#part-2&quot; id=&quot;markdown-toc-part-2&quot;&gt;Part 2&lt;/a&gt;    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;#on-line-questionnaire&quot; id=&quot;markdown-toc-on-line-questionnaire&quot;&gt;On-line questionnaire&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+  &lt;/nav&gt;
+&lt;/aside&gt;
+
+&lt;p&gt;This initial assessment is split into several parts, describing
+different sources of data used for the assessment. The different parts
+have been added over different times. Part 1 was originally added on
+15 December 2022 and is based on direct, free-form informal and
+semi-formal feedback. Part 2 is based on on-line evaluation forms that
+students were invited to fill out and was published on 27 December
+2022.&lt;/p&gt;
+
+&lt;h2 id=&quot;part-1&quot;&gt;Part 1&lt;/h2&gt;
+
+&lt;h3 id=&quot;third-bachelor-course&quot;&gt;Third bachelor course&lt;/h3&gt;
+
+&lt;p&gt;Let’s start with the third bachelor student’s feedback, collected as
+part of the ‘Year committee’, where student representatives meet with
+the professors and share the feedback they collected among all
+students. This is a cohort that experienced the previous approach,
+where each weekly test was graded and students that earned a decent
+weighted average would get a dispense for the final exam&lt;sup id=&quot;fnref:1&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:1&quot; class=&quot;footnote&quot; rel=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;While some students did prefer being kept on their toes with
+marking, the majority appreciate dropping marking to reduce
+stress/pressure during weekly tests.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;The general pedagogy and the feedback are well received. In
+particular, students like the post-it notes for in-class
+interactions and feedback, and the possibility to book one-to-one
+sessions to get individual feedback.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;This year, we also have the support of a third TA, which helps a lot
+to provide prompt technical help and answer questions without delay
+during class.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;The feedback we gathered on the post-it notes after the last lecture
+and our subjective appreciation (based on the perceived motivation of
+students, and the quantity and quality of their questions) is along
+the same lines. Some students already mentioned on the post-it notes
+that they were looking forward to next year’s (optional) Master’s
+course, which is a strong argument in favour of our strategy.&lt;/p&gt;
+
+&lt;h3 id=&quot;first-masters-course&quot;&gt;First masters course&lt;/h3&gt;
+
+&lt;p&gt;This year, for the first time, students were asked to self-mark during
+the final oral exam. They all provided a fair assessment of their
+work, at times even slightly lower that what they really deserved (in
+which case we obviously bumped the mark accordingly). I also
+systematically asked what they thought they could have improved and if
+more time would have helped. Interestingly, the topic of the last
+project/presentations, which was a more open-ended and creative task,
+was one point that came up repeatedly, with analysis approaches that
+they didn’t think of but thought they should have.&lt;/p&gt;
+
+&lt;p&gt;We also considered some further updates for next year, to promote
+feedback and allow students to act specifically on that feedback. For
+the first report, that focuses on a &lt;a href=&quot;https://uclouvain-cbio.github.io/WSBIM2122/sec-rnaseq.html&quot;&gt;hands-on analysis of RNA-Seq
+data&lt;/a&gt;,
+here are the steps that we plan to implement:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;After receiving their data, students will give a first short
+presentation focusing on introducing their dataset, the
+experimental design, the biological question(s) they want to focus
+on, and the associated statistical model(s). This is a first
+opportunity for feedback and to make sure we catch any
+misdirections early on.&lt;/li&gt;
+  &lt;li&gt;A full 4-hour session dedicated to questions and answers on their
+data, the corresponding chapters, and how to prepare the report.&lt;/li&gt;
+  &lt;li&gt;A report, written in R markdown and compiled in pdf, detailing the
+analyses introduced in the presentation above (point 1).&lt;/li&gt;
+  &lt;li&gt;We will read and annotate the reports, and provide an individual
+feedback sheet including a short section with positive points, a
+short section with possible improvements and a list of
+questions. The questions we will ask during the end-of-term oral
+exam (point 6 below) will be among those in this list, so that
+students can prepare beforehand and thus address any short-comings
+in their respective reports.&lt;/li&gt;
+  &lt;li&gt;Each students will receive another report to read and provide
+constructive comments. This will allow them to explore how others
+have addressed their project and experience how to critically read
+and assess another person’s work (and thus reflect on their own
+contribution).&lt;/li&gt;
+  &lt;li&gt;An oral exam to offer the students an opportunity to answer (some
+of) the questions we handed them (point 4).&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;As every year so far, I have also asked for students to comment on one
+aspect of the course they particularly appreciated and one that they
+did less, as well as an assessment of the amount of work they had to
+invest. This is interesting as it provides them with an opportunity to
+reflect on the whole course and discuss their impressions with us,
+which we use to update and improve the course.&lt;/p&gt;
+
+&lt;h3 id=&quot;next-assessments&quot;&gt;Next assessments&lt;/h3&gt;
+
+&lt;p&gt;We need to consider whether the positive impact that we seem to
+observe in the third bachelor’s course also translates into a better
+success rate in the exam. I do have to admit that this makes me
+slightly uncomfortable. What if we were to see a negative impact
+(which, honestly, I doubt)? It wouldn’t necessarily mean that we did
+worse, given that we have applied our new strategy on a single
+cohort. This obviously also applied if we get better results - a
+better or worse success rate might be the result other confounding
+factors. However, this cohort will be the only that has experienced
+the change in teaching strategy, and hence probably an ideal situation
+for a direct assessment. If I’m being honest, I wouldn’t want to teach
+to the test even if exam results were provable worse, for the many
+reasons underlying the new &lt;a href=&quot;https://lgatto.github.io/ungrading/&quot;&gt;ungrading and
+feedback&lt;/a&gt; strategy.&lt;/p&gt;
+
+&lt;p&gt;Next term, we start with a brand new second bachelor cohort. This will
+also be an interesting experience, as they will be immediately exposed
+to this &lt;a href=&quot;https://lgatto.github.io/ungrading/&quot;&gt;ungrading and feedback&lt;/a&gt;
+strategy (with us having a term’s worth experience), and will
+experience and adapt&lt;sup id=&quot;fnref:2&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:2&quot; class=&quot;footnote&quot; rel=&quot;footnote&quot;&gt;2&lt;/a&gt;&lt;/sup&gt; to it over two years.&lt;/p&gt;
+
+&lt;h2 id=&quot;part-2&quot;&gt;Part 2&lt;/h2&gt;
+
+&lt;h3 id=&quot;on-line-questionnaire&quot;&gt;On-line questionnaire&lt;/h3&gt;
+
+&lt;p&gt;This second part of the assessment looks at on-line evaluation forms
+that 3rd bachelor students are asked to fill out. There are two types
+of forms: one for the teaching unit (i.e the theoretical part of the
+course) and a second one for the practical sessions. These evaluation
+forms can be requested by the instructor or the faculty (and are
+indeed asked for every three years by the latter, if I remember
+well). I have three forms available, for two different cohorts.&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;Evaluations for the teaching unit from 2021. That’s one that I
+requested myself. Given that my courses blend theory and practice,
+I only requested the teaching unit questions, asking students to
+fill out the form considering both aspects. This form was completed
+by 27 students (individual questions were answered by 25 to 27
+students), corresponding to half of the class.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Evaluations for the teaching unit and practicals from 2022. These
+were requested by the faculty, hence for both parts. The requests
+and links to the forms where received after completion of the
+course, and I was only able to inform and remind students through
+forum announcements, hence a low participation rate: only 7
+students (with one question getting 6 answers), corresponding to
+just under 12% of the full cohort. This probably induces some bias,
+where only the most committed students, and hence those more likely
+to provide positive feedback, participated.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Here are the score for the 2022 teaching unit and practical
+sessions. The student answer each question&lt;sup id=&quot;fnref:3&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:3&quot; class=&quot;footnote&quot; rel=&quot;footnote&quot;&gt;3&lt;/a&gt;&lt;/sup&gt; by providing a score
+from 1 (&lt;em&gt;Don’t agree at all&lt;/em&gt;) to 4 (&lt;em&gt;Totally agree&lt;/em&gt;).&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/eval_scores_ue_22.png&quot; alt=&quot;2022 evaluations for the teaching unit&quot; /&gt;
+&lt;img src=&quot;/images/eval_scores_tp_22.png&quot; alt=&quot;2022 evaluations for the practical sessions&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;These evaluation are quite good, especially when compared
+to 2021. Below are the questions for the teaching unit of that year.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/eval_scores_ue_21.png&quot; alt=&quot;2021 evaluations for the teaching unit&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;I also computed the mean scores and standard deviations per question
+to directly compare the 2021 and 2022 results. The figure below show
+the 2021 results in the top left panel and the 2022 results in the top
+right and bottom left panels. The top right panel is helpful to
+compare individual questions and the bottom panel to get a more
+general assessment of the 2021 vs 2022 scores. The dotted red line
+represents the yearly mean score.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/eval_mean_ue_21_22.png&quot; alt=&quot;Comparison of mean 2021 and 2022 scores for the teaching unit evaluations&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;The improvement is striking, to say the least. There are however two
+points to keep in mind:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;In 2022, given that the evaluation request came in late, it is
+possible that only the most committed students participated, hence
+boosting these scores up.&lt;/li&gt;
+  &lt;li&gt;The 2021 cohort had a hard time during the COVID lock-down. They had
+to follow the second bachelor course (a prerequisite to the one
+evaluated above) remotely, which was hard on them and is likely to
+reduce the overall score.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Even considering the above possible confounding factors, I am tempted
+to take the figures from the student on-line evaluations as a strong
+endorsement for the new teaching strategy. Hopefully, this will also
+materialise in a likely part 3 to this post, describing the final exam
+results.&lt;/p&gt;
+&lt;div class=&quot;footnotes&quot; role=&quot;doc-endnotes&quot;&gt;
+  &lt;ol&gt;
+    &lt;li id=&quot;fn:1&quot; role=&quot;doc-endnote&quot;&gt;
+      &lt;p&gt;The latter does read like a nice opportunity for students but do read the &lt;a href=&quot;https://lgatto.github.io/ungrading/&quot;&gt;motivation&lt;/a&gt; for dropping this, and learn about the perverse incentives of such an approach. &lt;a href=&quot;#fnref:1&quot; class=&quot;reversefootnote&quot; role=&quot;doc-backlink&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+    &lt;li id=&quot;fn:2&quot; role=&quot;doc-endnote&quot;&gt;
+      &lt;p&gt;The word &lt;em&gt;adapting&lt;/em&gt; is quite important here. Students adapt at whatever the system throws at them, all too often for the worse… here, I hope for the better. What we propose is quite different from what they are used to, so it does take some adaptation. &lt;a href=&quot;#fnref:2&quot; class=&quot;reversefootnote&quot; role=&quot;doc-backlink&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+    &lt;li id=&quot;fn:3&quot; role=&quot;doc-endnote&quot;&gt;
+      &lt;p&gt;Original question are in French and were translated in English with Google translate, with minimal editing. &lt;a href=&quot;#fnref:3&quot; class=&quot;reversefootnote&quot; role=&quot;doc-backlink&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+  &lt;/ol&gt;
+&lt;/div&gt;</content><author><name>Laurent Gatto</name></author><category term="education" /><category term="teaching" /><summary type="html">Here’s the initial assessment of the new ungrading and feedback pedagogy that the TAs and myself have implemented this academic year (2022-2023). In a nutshell, we decided to not mark any of the weekly test and maximise opportunities for feedback to favour student’s self-assessment and reflection on their own work (meta-cognition). Read the full post to read about the reasons and opportunities for dropping grading the weekly tests and maximise feedback with students.</summary></entry><entry><title type="html">Ungrading my teaching</title><link href="https://lgatto.github.io/ungrading/" rel="alternate" type="text/html" title="Ungrading my teaching" /><published>2022-10-26T00:00:00+02:00</published><updated>2022-10-26T00:00:00+02:00</updated><id>https://lgatto.github.io/ungrading</id><content type="html" xml:base="https://lgatto.github.io/ungrading/">&lt;p&gt;I have been extremely lucky to participate in a &lt;a href=&quot;https://carpentries.github.io/instructor-training/&quot;&gt;Carpentries
+instructor&lt;/a&gt;
+training as an early career researcher. By then, I had only taught a
+few workshops, and was very impressed by the content of the training,
+and by &lt;a href=&quot;https://third-bit.com/&quot;&gt;Greg Wilson&lt;/a&gt;, who delivered it with
+touching sincerity and dedication. A couple of years later, I managed
+to secure some funding from the &lt;a href=&quot;https://www.r-consortium.org/&quot;&gt;R
+Consortium&lt;/a&gt; to organise an instructor
+course in Cambridge, where I worked at the time, and was delighted to
+be able to revisit the content. The Carpentries approach to lesson
+design and teaching has stuck with me since then. I have applied these
+principles and some of the material to my main university courses
+(&lt;a href=&quot;http://bit.ly/WSBIM1207&quot;&gt;WSBIM1207&lt;/a&gt; and
+&lt;a href=&quot;http://bit.ly/WSBIM1207&quot;&gt;WSBIM1322&lt;/a&gt; for the second and third bachelor
+courses respectively and &lt;a href=&quot;http://bit.ly/WSBIM2122&quot;&gt;WSBIM2122&lt;/a&gt; for the
+master’s course), and am now, as part of the &lt;a href=&quot;https://www.bioconductor.org/help/education-training/&quot;&gt;Bioconductor Teaching
+committee&lt;/a&gt;,
+developing new lessons.&lt;/p&gt;
+
+&lt;p&gt;Delivering good courses at workshops isn’t an easy task, but everybody
+can get there with the right preparation and support (such as proposed
+by the Carpentries). There is however one aspect that makes it
+&lt;em&gt;easier&lt;/em&gt; than teaching a university curriculum: as an workshop
+instructor, you focus on the day (or days) you teach, giving your
+best, and then it’s over - no need to think about
+tomorrow. Participants will hopefully apply what they have learnt,
+some might get back to you with questions (extremely rare in my
+experience), but others might not and you’ll never hear from them. In
+a university setting, on the other hand, you have to think about
+assignments, test, exams, marks, … and possibly even about
+pre-requisites for follow-up classes. You have to be able to assess
+the students, i.e. assess whether they have acquired (enough of) the
+material, and whether they are sufficiently well prepared for next
+year’s class and, more generally, their future activities. In my
+opinion/experience, this makes for a more complex teaching experience,
+more careful planning and a whole different level of responsibilities.&lt;/p&gt;
+
+&lt;h2 id=&quot;criticising-my-own-pedagogy&quot;&gt;Criticising my own pedagogy&lt;/h2&gt;
+
+&lt;p&gt;I have adapted how I test/assess students during the 4 years, 3 course
+and 10 semester classes I have taught since I moved to my current
+position. Following the Carpentries philosophy, my courses are
+hands-on and are based on repeated practice, so that students &lt;em&gt;get it&lt;/em&gt;
+and have a chance to apply what they have learnt. As opposed to other
+courses, it isn’t quite possible to leave it to the last week(s)
+before the exam to cram all the material in short term memory -
+students need to attend and practise exercises in class and (ideally
+also) at home. To promote students’ work, I organise weekly tests
+which, for a couple of years now, allowed those that earned good
+marks, to transfer their mean test scores to their final grade, and
+thus get a dispense for the exam. Unfortunately, this hasn’t proven as
+successful as I had hoped.&lt;/p&gt;
+
+&lt;p&gt;The reason for the failure of this test/dispense approach is well
+known to those that have studied to effect of marking and grading -
+the focus of the student is switched from &lt;em&gt;learning&lt;/em&gt; new skills to
+obtaining a &lt;em&gt;good&lt;/em&gt; mark. And, as clearly stated by Marcus
+Schultz-Bergin in his chapter &lt;em&gt;Grade Anarchy in the Philosophy
+Classroom&lt;/em&gt; (p. 175) (from &lt;sup id=&quot;fnref:1&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:1&quot; class=&quot;footnote&quot; rel=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;): &lt;strong&gt;Grades do not track learning&lt;/strong&gt; (or
+anything else of importance) and, to add insult to injury, &lt;strong&gt;grading
+reduces student learning&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;This indeed matches my observation. My students have access to any
+material they see fit for the tests and exams. Some focus their
+preparation on gathering as much material as possible (such as answers
+from previous tests and exercises) and then apply the &lt;em&gt;minimax&lt;/em&gt;
+strategy to maximise the marks while minimising their own work by
+matching the answers they have gathered to the questions of the
+day. The focus of the tests has become the tests’ marks, and most
+criticism/feedback at the end of a lesson (I use the Carpentries
+famous &lt;a href=&quot;https://carpentries.github.io/instructor-training/21-management/index.html#sticky-notes&quot;&gt;colour sticky
+notes&lt;/a&gt;
+to increase interactions and collect feedback after each class) was
+the lack of time to finish/get good marks, with little questioning
+about the understanding/mastering of the material (such as being able
+to answer the questions in a limited but doable amount of time).&lt;/p&gt;
+
+&lt;p&gt;It is important to clarify here that I don’t blame the
+students. Students, as a collective entity, will adapt to rules and
+constrains that are set to them. Maximising the success in exams is a
+natural adaptation to the current system, that has focused on grades
+as a mean of standardisation. Even if the goal of this standardisation
+is (or was) equality and fairness (in the face of an increasing number
+of students), it has led to the acquisition of grades to become the
+main (and often only) assessment of successful learning and teaching.&lt;/p&gt;
+
+&lt;h2 id=&quot;ungrading-why-rating-students-undermines-learning&quot;&gt;UNgrading, why rating students undermines learning&lt;/h2&gt;
+
+&lt;p&gt;During the last summer holidays, I read &lt;em&gt;UNgrading, why rating
+students undermines learning (and what to do instead)&lt;/em&gt; &lt;sup id=&quot;fnref:1:1&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:1&quot; class=&quot;footnote&quot; rel=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;, a
+collection of chapters edited by Susan D. Blum, highlighting the
+issues with grading and sharing the experiences of some instructors
+that decided to drop them in their classes. To summarise the main
+arguments made by the many authors in the book, I’ll cite Marcus
+Schultz-Bergin again:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Grades do not track learning (or anything else of importance).&lt;/li&gt;
+  &lt;li&gt;Grading reduces student learning.&lt;/li&gt;
+  &lt;li&gt;Only receiving feedback (and no grades) increases student learning.&lt;/li&gt;
+  &lt;li&gt;Self-evaluation and self-reflection improve student learning.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;The last point refers to the concept of &lt;em&gt;meta-cognition&lt;/em&gt;, thinking
+about how we think, and learn, and the ability to self-assess. It is
+paramount for students to learn how to receive and use the feedback
+they are given. Self-evaluation of one’s own learning process should
+be the ultimate goal of any teaching enterprise, as it essentially
+provides the means for anyone to learn any new subject they are
+interested in.&lt;/p&gt;
+
+&lt;p&gt;The authors provide more details about points 1 and 2 above, but my
+own observation made it abundantly clear that, despite my best
+intentions, tests offering a possibility to get a dispense for the
+exam wasn’t working. I took plenty of notes during my reading of the
+ungrading book and have devised alternative approaches that I’m
+looking forward to apply this semester. I will drop marking and put as
+much emphasis as possible on providing feedback, and leading students
+to assess their own work, focusing on understanding and mastering the
+material, rather than on obtaining grades. Before I describe my plans,
+I must specify that I will have to provide a grade for the end of year
+assessment, that students will earn with an exam. Even though I am
+convinced that marking isn’t an appropriate assessment of learning, I
+will first need to implement this in my classes and assess if/how this
+affects student learning and (hopefully) how they perform in that
+final exam. There is a long learning curve ahead (for me) and battle
+to extend this further. I have exciting plans for my bachelor and
+master courses. Read on…&lt;/p&gt;
+
+&lt;h2 id=&quot;first-steps-in-ungraded-land&quot;&gt;First steps in ungraded land&lt;/h2&gt;
+
+&lt;p&gt;I will be dropping grades in all the tests that are given throughout
+the term (typically at each or most lectures but the first one) in
+both bachelor courses. The first implication of this is that there
+won’t be any opportunity for students to be dispensed from the final
+exam, which is an opportunity several counted on. I will thus need to
+make sure that the reasons for this, described above, are clear (see
+point 1 below). The goal is to promote self-evaluation, feedback on
+their understanding of the material, and a reflection on their
+learning process. Instead of grading each individual test (a
+time-consuming activity), we will answer test’s questions together, in
+class, right after the test itself. This is something I have done
+previously, albeit rather swiftly. Here, I intend to take more time
+and involve the students as much as possible by asking for their
+active participation. After the collaborative correction, I will ask
+them to answer a quick poll, assessing whether (1) they understood the
+material but need more work to really master it, (2) they mastered the
+material and are ready to move on or (3) they neither understood nor
+mastered it and will ask for help (see point 2 below). Teaching
+assistants (TAs) and myself will spare some considerable time by not
+grading tens of copies (sometime over 60) and will seize it to put
+this new pedagogical strategy into place. After the poll, students
+will be invited to review their work after the lecture, in the light
+of the correction and their self-assessment and come to us to ask
+specific questions about their work, things they struggled with, or
+advice on how they could improve their learning (see point 3
+below). The goal of this is to steer away from grades and re-focus on
+their understanding/mastering of the material, offer opportunities for
+personalised feedback, and promote self-evaluation and
+meta-cognition. Fingers crossed!&lt;/p&gt;
+
+&lt;p&gt;Self-evaluation works best in an environment where we trust each
+other. To emphasise this, I have also decided to change the attendance
+formalities. Since the beginning, I have made attendance mandatory. At
+my institution and in Belgium in general, attendance is only mandatory
+for practicals, and optional for formal lectures. Given that in my
+courses, theory and practice blend into each other, that I try to give
+as much hands-on work as possible during the classes, and that it is
+unlikely to master the material without that practice anyway, presence
+was mandatory, and TAs circulated attendance sheet that students had
+to sign. I will be honest that I didn’t check them systematically and
+didn’t follow up on absences. But I thought that this &lt;em&gt;pressure&lt;/em&gt; would
+force students to attend and get them a chance to practise. I decided
+to change this. Attendance is still mandatory for the reasons
+mentioned above, but I will not use presence sheets anymore. If a
+student can’t make it, I’m asking for a short email to let me know
+that they aren’t or weren’t able to attend. I do not need any reason
+for the absence. I will just ask them to specify, in that email, how
+they plan to make up for the missed lesson, including asking me or the
+TAs for extra help. I think this approach builds on trust and
+self-motivation, invites students to take responsibility for their own
+learning, and promotes reflection of their progress, notably when they
+miss a class (whatever the reason).&lt;/p&gt;
+
+&lt;h2 id=&quot;first-self-assessments-theirs-and-mine&quot;&gt;First self-assessments (theirs and mine)&lt;/h2&gt;
+
+&lt;p&gt;Here’s how things look like after a couple of weeks:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;A short live poll (using sticky notes) during the first class of
+the year, after explaining the reasons for dropping the dispense
+and implementing the new strategy, was seen in a positive light by
+the great majority of the students. A handful of the 50 students
+regretted not being able to get a dispense. My impression is that
+these are the students that were aiming to get one (some of them
+probably already got one for the previous course), and consider
+this a loss (for them, personally) compared to the opportunities
+offered by the change.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;The first post-test polls of the year indicate that the majority of
+students understand the material but needed more work to fully
+master it (from 55 to 85%). Smaller fractions of students don’t
+understand the material and conceded they need more help (8 to 14%)
+or fully master it (from 0 to 17%). The proportions are variable,
+depending on the chapter, but the fraction of students
+understanding the material is always the largest, by a comfortable
+margin.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;We set up office hours during the week and just before the
+lectures, making sure that these didn’t conflict with the student
+schedule. So far, for the first weeks this has been in place, the
+number of students that booked and met with us was not in line with
+the poll - we meet with 1 to 3 students per week, out of a total
+over 40.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;I have received a couple of emails from students not being able to
+attend. Most were related to clashes in their schedule (for
+students that had lectures from second and third bachelor
+years). Some of these emails did follow the guideline and explained
+how they intended to make up for missing the classes: work by
+themselves, use the recordings we provide, interact with class
+mates who do attend the lectures. Along the same lines, I had one
+student that explicitly wrote that they would revise the sections
+they struggled with on their end-of-class red sticky notes.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&quot;adjustments-for-smaller-classes&quot;&gt;Adjustments for smaller classes&lt;/h2&gt;
+
+&lt;p&gt;The master’s course provides more freedom to experiment further, as
+there are less students in the class and allows for more one-to-one
+interactions.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;So far, students had to prepare and present two data analysis
+reports throughout the semester course, focusing on two different
+high-throughput data types (transcriptomics and proteomics). We
+devote 3 to 4 successive session to each project: (1) lectures and
+exercises for them to learn and practice the theory, (2) a session
+where they test what they have learnt on their own data and can ask
+questions about the material and their data and (3) a short
+presentation with questions from the audience (other students and
+instructors), followed by, the following week, the submission of a
+detailed report that takes into account the questions and discussion
+during the respective presentations. I am considering to let
+students choose whether they prefer to do the second project, or
+propose improvements and extension to the first project and, if they
+wish, implement these during the next practice sessions.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;I am also considering to ask students to comment on each others
+written reports, in addition to the question and answer sessions, to
+further emphasise peer assessment and promote
+peer/self-evaluation. This could also be a good source of
+inspiration for improvements and extension to their first project
+(see previous point).&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;During the master course’s oral exam, we focus primarily on the
+questions and discussions from the written reports. I systematically
+ask what students preferred in the course or felt they have mastered
+best, and what they struggled with. I would like to go a step
+further and ask them to propose and motivate their marks.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;ideas-for-the-future&quot;&gt;Ideas for the future&lt;/h2&gt;
+
+&lt;p&gt;Depending on how the attempts above are received and how they
+influence the students’ learning, I might consider propose a more
+ambitious project to the 3rd bachelor students. This might only really
+apply to students that are re-taking the class and thus have already
+an overview of the whole material, and are in a position to anticipate
+the kind of data, analyses and interpretation that would be expected.&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;One or a group of students will be able to choose a project they
+want to work on throughout the year. Choosing a project would
+entail to identify a dataset and one or several questions they want
+to address with that data, confirm that the project would be
+written up as a (reproducible) report, and, if they work as a
+group, some sort of agreement that all members of the group will
+contribute.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;They have total freedom in the complexity of the data and questions
+they choose to work on. It could either be a rather ambitous
+project, that would account for all credits/marks of the course, or
+choose something smaller. There could be an option to make up for
+the rest of the marks with (parts of) the final exam (that those
+that didn’t choose a project would have to take anyway), although I
+haven’t figured out the details of this.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;The students and the education team (i.e. TAs and myself) would
+discuss their project (data and questions), the feasibility and the
+adequacy of their proposal, and the marks they would obtain upon
+successful completion. All these are open to discussion and
+amendments during the iterations in the next point.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Students and the education team would meet regularly to discuss the
+project’s advancement and provide guidance to help them to
+successfully reach their goals. These goals and the marks/credits
+could be revisited accordingly: an overly ambitous project could be
+reduced and, conversely, if the goals are attained earlier than
+expected, students could propose extensions if they wish so.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;I think students should have the freedom to back out whenever they
+want to, if at any point they prefer to take the exam. They should
+also have the freedom to propose a project that counts for, say 50%
+of the marks, and settle with that without taking the exam if they
+reach their goals.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;The completion of the project would be officialised by the final
+submission of the report. Importantly, the education team wouldn’t
+read/discover that report for the first time at that point, but
+would have followed its progress throughout the year so that, at
+the time of submission, little doubts persist as to the successful
+completion of the project.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;If students worked as a group, they would need to provide a section
+describing their respective contributions. Again, these would have
+been laid out early on, and possibly updated, throughout the
+project. Every student of the group would get the same final mark
+but individuals would get recognised for their specific
+contribution.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&quot;final-thoughts&quot;&gt;Final thoughts&lt;/h2&gt;
+
+&lt;p&gt;There is quite some excitement on my part with these new approaches,
+which has, I believe, a positive impact on my teaching. The lectures
+seem to have become more interactive: I try to make sure that all/most
+students get asked questions about the material we see and the
+exercises we do. Based on the sticky notes feedback that are collected
+at the end of each lecture, they seem to appreciate it because it
+improves their involvement and attention.  In previous years, sampling
+students at random for to answer my questions was reported as being
+stressful on the sticky notes. It feels like clarifying and
+verbalising the goals gives me more freedom to reach out to the
+students and them to take it as a genuine learning opportunity. The
+latest set of sticky notes goes along these lines and gives hope for
+the future.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Edit&lt;/strong&gt;:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Here’s a &lt;a href=&quot;https://lgatto.github.io/ungrading-assessment/&quot;&gt;first ungrading
+assessment&lt;/a&gt;, posted
+on 15 December 2022.&lt;/li&gt;
+  &lt;li&gt;A short interview, in French: &lt;a href=&quot;https://www.youtube.com/watch?v=i4KebCqSP8Q&quot;&gt;Evaluation dans l’enseignement
+supérieur : « UNgrading » ou évaluer et apprendre sans
+points&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;footnotes&quot; role=&quot;doc-endnotes&quot;&gt;
+  &lt;ol&gt;
+    &lt;li id=&quot;fn:1&quot; role=&quot;doc-endnote&quot;&gt;
+      &lt;p&gt;In &lt;em&gt;UNgrading, why rating students undermines learning (and what to do instead)&lt;/em&gt;, Susan D. Blum (editor), 2020. &lt;a href=&quot;#fnref:1&quot; class=&quot;reversefootnote&quot; role=&quot;doc-backlink&quot;&gt;&amp;#8617;&lt;/a&gt; &lt;a href=&quot;#fnref:1:1&quot; class=&quot;reversefootnote&quot; role=&quot;doc-backlink&quot;&gt;&amp;#8617;&lt;sup&gt;2&lt;/sup&gt;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+  &lt;/ol&gt;
+&lt;/div&gt;</content><author><name>Laurent Gatto</name></author><category term="education" /><category term="teaching" /><summary type="html">I have been extremely lucky to participate in a Carpentries instructor training as an early career researcher. By then, I had only taught a few workshops, and was very impressed by the content of the training, and by Greg Wilson, who delivered it with touching sincerity and dedication. A couple of years later, I managed to secure some funding from the R Consortium to organise an instructor course in Cambridge, where I worked at the time, and was delighted to be able to revisit the content. The Carpentries approach to lesson design and teaching has stuck with me since then. I have applied these principles and some of the material to my main university courses (WSBIM1207 and WSBIM1322 for the second and third bachelor courses respectively and WSBIM2122 for the master’s course), and am now, as part of the Bioconductor Teaching committee, developing new lessons.</summary></entry></feed>

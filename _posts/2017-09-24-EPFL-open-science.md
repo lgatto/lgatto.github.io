@@ -1,6 +1,6 @@
 ---
 title: "An early career researcher's view on modern and open scholarship"
-tags: ["open science", "talks"]
+tags: ["open research", "talks"]
 comments: true
 ---
 
@@ -93,12 +93,12 @@ But also
   south and benefits commercial/hybrid predatory publishers[^2]. See
   also the
   [pay-to-publish model](http://rsnr.royalsocietypublishing.org/content/70/4/403)).
-  
+
 [^2]: Predators aren't the poor quality journals that disseminate spam, these are *opportunistic* publishers. The real predators are the big traditional and commercial that have taken control of scholarly dissemination and do everything they can to maintain it and maximise their gains. See for example [Why Software and data papers are a bad solution to a real problem](https://lgatto.github.io/software-data-papers/).
 
 Open research/science should also be
 
-- Inclusive 
+- Inclusive
 
 More on this below.
 
@@ -112,7 +112,7 @@ In 1942, Robert Merton introduced his four
 [The Sociology of Science](http://www.collier.sts.vt.edu/5424/pdfs/merton_1973.pdf), a set of institutional imperatives taken to represent the
 ethos of modern science.
 
-- **universalism**: scientific validity is independent of the 
+- **universalism**: scientific validity is independent of the
   sociopolitical status/personal attributes of its participants
 - **communalism**: all scientists should have common ownership of
   scientific goods (intellectual property), to promote collective
@@ -139,9 +139,9 @@ More recently, in 2015, Mick Watson asked the question more
 directly:
 [When will *open science* become simply *science*?](https://genomebiology.biomedcentral.com/articles/10.1186/s13059-015-0669-2).
 
-![When will ‘open science’ become simply ‘science’?](/images/doi-13059-015-0669-2.png) 
+![When will ‘open science’ become simply ‘science’?](/images/doi-13059-015-0669-2.png)
 
-I claim that **open is a gateway to more trustworthy research**. 
+I claim that **open is a gateway to more trustworthy research**.
 
 - Open research is research that enables reproducible and repeatable
   research.
@@ -178,7 +178,7 @@ In my opinion, barriers are not technological, but rather
 socio-cultural and political.
 
 - Systemic control and inertia
-- Vested interests by people in charge 
+- Vested interests by people in charge
 - Abuse of power dynamics
 - Fear of being scooped (**update** - an editorial in PLoS Biology on
   [*The importance of being second*](http://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.2005203) and,
@@ -192,21 +192,21 @@ socio-cultural and political.
 
 While it is important to identify why open can look dangerous to some,
 I don't want to spent too much time discussing these points. See Jon
-Tennant's recent presentation about
-[*Barriers to Open Science for junior researchers*](https://doi.org/10.6084/m9.figshare.5383711.v1.)  on
-figshare for more details.
+Tennant's recent presentation about [*Barriers to Open Science for
+junior researchers*](https://doi.org/10.6084/m9.figshare.5383711.v1)
+on figshare for more details.
 
 The important message at this point is that, many if not all of these
 fears are only *perceived* risks. Let's move on to why ECRs should
 seriously consider being open researchers.
 
-## Go OPEN! 
+## Go OPEN!
 
 Open science/research is particularly important for ECRs. Open
 research practices are here, and won't go away. It is clear that they
 will increase in the near future. If *you*, as an ECR, want to be a
 competitive researcher in the coming years (and you'll need to be),
-you'll need to be well versed in open research practices. 
+you'll need to be well versed in open research practices.
 
 Here, I give some reasons and examples supporting my claims.
 
@@ -427,10 +427,10 @@ to verify the availability and validity and of the data
    lines, I also look at the file names (of column names in the data
    matrix) for a consistent naming convention, that allows to match
    the files (columns) to the experimental groups and replicates.
-  
+
 4. **What data, what format**: Is the data readable with standard and
    open/free software? Are the raw and processed available, and have
-   the authors described how to get from one to the other? 
+   the authors described how to get from one to the other?
 
 5. **License**: Is the data shared in a way that allows users to
    re-use it. Under what conditions? Is the research output shared
@@ -487,7 +487,7 @@ Biology 2015 16:274 https://doi.org/10.1186/s13059-015-0850-7
    later results (and it as a simple, but very relevant bug in the
    code). Imagine if my collaborators had just used these first plots
    for publication, or to decide to perform further experiments.
-   
+
 2. **Reproducibility makes it easier to write papers**: Transparency
    in your analysis makes writing papers much easier. In dynamic
    documents (using
@@ -495,7 +495,7 @@ Biology 2015 16:274 https://doi.org/10.1186/s13059-015-0850-7
    [juypter notebook](https://jupyter.org/) and other similar tools),
    all results are automatically update when the data are changed. You
    can be confident your numbers, figures and tables are up-to-date.
-   
+
 3. **Reproducibility helps reviewers see it your way**: a reproducible
    document will tick many of the boxes enumerated above. You will
    make me very happy reviewer if I can review a paper that is
@@ -515,7 +515,7 @@ Biology 2015 16:274 https://doi.org/10.1186/s13059-015-0850-7
 If you want, as an ECR, you can also promote open
 research/science. Most of the open science supporters are young
 researchers that want to improve a system they find unhealthy, unfair
-and does not support good scientific practice. 
+and does not support good scientific practice.
 
 [![No researcher is too junior to fix science](/images/2017-09-21-fix-science.png)](https://www.nature.com/news/no-researcher-is-too-junior-to-fix-science-1.21928)
 
@@ -578,7 +578,7 @@ to improve open research and open ECR:
 These points are taken from
 the [BulliedIntoBadScience](http://bulliedintobadscience.org/)
 campaign, an initiative by ECRs for ECRs who aim for a fairer, more
-open and ethical research and publication environment. 
+open and ethical research and publication environment.
 
 > Whether you are an ECR or a senior academic,
 > [sign](http://bulliedintobadscience.org/#ecrs:_sign_the_letter) our letter or
@@ -594,7 +594,7 @@ promote open researcher in general, and open ECR in particular.
 
 ## Inclusivity: open science and open science
 
-There is 
+There is
 
 > Open Science as in widely disseminated and openly accessible
 
@@ -631,7 +631,7 @@ this
 [Open science and open science](https://lgatto.github.io/open-and-open/) post),
 the former more technical definition was always what I was focusing
 on, and the second community-level aspect of openness was, somehow,
-implicit from the former, but that's not the case. 
+implicit from the former, but that's not the case.
 
 Even if there are efforts to promote diversity, under-represented
 minorities (URM) don't necessarily feel
@@ -655,7 +655,7 @@ or to the public)
 
 - manage and annotate you data
 - backup everything up
-- open source development 
+- open source development
 - online presence
 - ...
 
