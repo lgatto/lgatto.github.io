@@ -27,14 +27,6 @@ sidebar:
   transcripts induced by DNA hypomethylation in tumor cells, and DNA
   hypermethylation events linked to overlapping expression.
 
-- **Christophe Vanderaa** (ORCID:
-  [0000-0001-7443-5427](https://orcid.org/0000-0001-7443-5427),
-  Github: [cvanderaa](https://github.com/cvanderaa)) is a PhD student
-  working on single cell assay bioinformatics. He did a masters in
-  biomedical sciences at the UCLouvain and followed up with a masters
-  in bioinformatics at the KULeuven. He is funded by a FNRS
-  fellowship.
-
 - **Chong Tang** (ORCID:
   [0000-0002-0482-8361](https://orcid.org/0000-0002-0482-8361),
   Github: [plantton](https://github.com/plantton)) is a PhD student
@@ -143,7 +135,20 @@ sidebar:
   UGent, Belgium. We collaborate on statistical analyses of
   quantitative proteomics data.
 
+- [**Christophe Vanderaa**](https://github.com/cvanderaa), statOmics group,
+  UGent, Belgium. We pursue our collaboration on the development of
+  computational solutions for the analysis of single-cell proteomics
+  data.
+
 ## Alumni
+
+- **Christophe Vanderaa** (ORCID:
+  [0000-0001-7443-5427](https://orcid.org/0000-0001-7443-5427),
+  Github: [cvanderaa](https://github.com/cvanderaa)) is a former PhD
+  student working on single-cell assay bioinformatics. He did a
+  masters in biomedical sciences at the UCLouvain and followed up with
+  a masters in bioinformatics at the KULeuven before conducting his
+  PhD training in the lab funded by an FNRS fellowship.
 
 - [**Theo Killian**](https://github.com/tfkillian) was a
   bioinformatician and research programmer in the CBIO group at the de
