@@ -259,7 +259,6 @@ Institute on 6 December 2023.
   data.  All her methods and algorithms form part of the
   [`pRoloc`](http://bioconductor.org/packages/pRoloc) framework for
   protein localisation prediction.
->>>>>>> 8744c59b508d3cb762f1f5fab1b39db7a776bffb
 
 - [**Theo Killian**](https://github.com/tfkillian) was a
   bioinformatician and research programmer in the CBIO group at the de
