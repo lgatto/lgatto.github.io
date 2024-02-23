@@ -31,14 +31,6 @@ sidebar:
   linked to overlapping expression. Axelle plays a major role in the
   bioinformatics core facility.
 
-- **Christophe Vanderaa** (ORCID:
-  [0000-0001-7443-5427](https://orcid.org/0000-0001-7443-5427),
-  Github: [cvanderaa](https://github.com/cvanderaa)) is a PhD student
-  working on single cell assay bioinformatics. He did a masters in
-  biomedical sciences at the UCLouvain and followed up with a masters
-  in bioinformatics at the KULeuven. He is funded by a FNRS
-  fellowship.
-
 - **Philippe Hauchamps** (Github:
   [phauchamps](https://github.com/phauchamps)) is, since September
   2021, a PhD student working on flow cytometry data analyis. He
@@ -174,7 +166,23 @@ Institute on 6 December 2023.
   [*pRoloc*](https://bioconductor.org/packages/pRoloc).
 
 
+- [**Christophe Vanderaa**](https://github.com/cvanderaa), statOmics group,
+  UGent, Belgium. We pursue our collaboration on the development of
+  computational solutions for the analysis of single-cell proteomics
+  data.
+
 ## Alumni
+
+- **Christophe Vanderaa** (ORCID:
+  [0000-0001-7443-5427](https://orcid.org/0000-0001-7443-5427),
+  Github: [cvanderaa](https://github.com/cvanderaa)) is a former PhD
+  student working on single-cell assay bioinformatics. He did a
+  masters in biomedical sciences at the UCLouvain and followed up with
+  a masters in bioinformatics at the KULeuven before conducting his
+  PhD training in the lab funded by an FNRS fellowship. Chris then
+  enrolled as a postdoc at the UGent in the statOmics group (headed by
+  Lieven Clement) to develop statistical frameworks for the analysis
+  of single-cell proteomics data.
 
 - **Badr-Ali Mouaden** finished his engineering degree in 2023 and did
   his master's project under the co-supervision of Laurent Gatto,
