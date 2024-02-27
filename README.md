@@ -31,3 +31,14 @@ bundle exec jekyll build -d docs
 
 - Check again, find typos and other issues, fix locally, build and
   push.
+
+To serve locally:
+
+```
+bundle exec jekyll server --future --watch
+```
+
+- the `--future` tag will also build and serve future posts,
+  i.e. forthcoming post that have a date in the future;
+- the `--watch` tag allows to re-build the site automatically upon
+  modification of post files. Very useful for fixing typos.

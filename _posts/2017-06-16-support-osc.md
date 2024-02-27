@@ -1,6 +1,6 @@
 ---
 title: Supporting those that support Open Research
-tags: ["open research", "open access", "open data", "Cambridge"]
+tags: ["open research", "open access", "open data", "Cambridge", "ECR"]
 comments: true
 ---
 
@@ -9,14 +9,14 @@ the main structure that focuses on all matters related to open
 research at the University of Cambridge. It *stays abreast of new
 scholarly communication tools, techniques, policies and practices for
 the University.* The OSC and its team do an outstanding job to support
-and train all researchers Open Access and Research Data policies. 
+and train all researchers Open Access and Research Data policies.
 
 The OSC, despite its critical contributions, is currently
 [under review](https://www.admin.cam.ac.uk/reporter/2016-17/weekly/6466/section1.shtml#heading2-6).
 A review is not a very nice position to be in, but it could also be an
 opportunity to highlight to the top managers of the University what an
 important role the OSC plays, and hopefully resulting in more open
-research support at the University. 
+research support at the University.
 
 The members of the University were invited to contribute to the
 review. I sent my comments out; here they are.
@@ -61,7 +61,7 @@ should play a leading and pioneering role in understanding and
 defining the future directions of this changing open research
 landscape.
 
-  
+
 Who, at the University of Cambridge, is in a better position to
 successfully address these fundamental needs of an ever more dynamic
 research horizon than the Office of Scholarly Communication?  The OSC
@@ -105,7 +105,7 @@ modern, open research, and the OSC is currently the only entity at the
 University of Cambridge, capable of successfully accomplishing these
 tasks.
 
-  
+
 On a personal level, as a modern and open scholar, I have immensely
 benefited from the support, networking opportunities, and
 collaborations (I am an active participant in the Data Champions
@@ -124,7 +124,7 @@ particular. Firstly, I would urge the University to:
 * to give the OSC its full support, including financial, so that the
   OSC can maintain and expand its highly qualified team and continue
   to support the community.
-    
+
 In addition, the University, in collaboration with the OSC, should
 
 
@@ -167,4 +167,3 @@ the panel to continue to and increase their support the OSC.
 Yours sincerely
 
 Dr Laurent Gatto
-

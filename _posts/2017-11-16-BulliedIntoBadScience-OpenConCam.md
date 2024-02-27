@@ -1,6 +1,6 @@
 ---
 title: I won't be Bullied Into Bad Science!
-tags: ["open research", "OpenCon", "OpenConCam"]
+tags: ["open research", "OpenCon", "OpenConCam", "ECR"]
 comments: true
 ---
 

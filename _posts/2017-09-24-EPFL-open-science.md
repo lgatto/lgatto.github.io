@@ -1,6 +1,6 @@
 ---
 title: "An early career researcher's view on modern and open scholarship"
-tags: ["open research", "talks"]
+tags: ["open research", "talks", "ECR"]
 comments: true
 ---
 

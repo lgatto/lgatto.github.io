@@ -1,6 +1,6 @@
 ---
 title: Bad publishing and bullied into bad science.
-tags: ["open research"]
+tags: ["open research", "ECR"]
 comments: true
 ---
 
