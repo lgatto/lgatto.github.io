@@ -1,4 +1,240 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.3">Jekyll</generator><link href="https://lgatto.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://lgatto.github.io/" rel="alternate" type="text/html" /><updated>2024-02-27T23:10:35+01:00</updated><id>https://lgatto.github.io/feed.xml</id><title type="html">~/</title><subtitle>Laurent Gatto&apos;s online home</subtitle><author><name>Laurent Gatto</name></author><entry><title type="html">The Grid poster, in R</title><link href="https://lgatto.github.io/the-grid-in-r/" rel="alternate" type="text/html" title="The Grid poster, in R" /><published>2024-02-18T00:00:00+01:00</published><updated>2024-02-18T00:00:00+01:00</updated><id>https://lgatto.github.io/the-grid-in-r</id><content type="html" xml:base="https://lgatto.github.io/the-grid-in-r/">&lt;p&gt;The &lt;a href=&quot;https://museel.be/&quot;&gt;MuseeL&lt;/a&gt; is the
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.3">Jekyll</generator><link href="https://lgatto.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://lgatto.github.io/" rel="alternate" type="text/html" /><updated>2024-02-28T07:46:19+01:00</updated><id>https://lgatto.github.io/feed.xml</id><title type="html">~/</title><subtitle>Laurent Gatto&apos;s online home</subtitle><author><name>Laurent Gatto</name></author><entry><title type="html">HUPO ECR Online Panel Discussion - Getting recognised for your work</title><link href="https://lgatto.github.io/ecr-recognition/" rel="alternate" type="text/html" title="HUPO ECR Online Panel Discussion - Getting recognised for your work" /><published>2024-02-28T00:00:00+01:00</published><updated>2024-02-28T00:00:00+01:00</updated><id>https://lgatto.github.io/ecr-recognition</id><content type="html" xml:base="https://lgatto.github.io/ecr-recognition/">&lt;p&gt;The HUPO Early Career Researcher (ECR) committee has organised a
+discussion panel on &lt;em&gt;Getting recognised for your work&lt;/em&gt; and have asked
+me to participate - thank you! I am always keen on such events,
+organised by and for ECRs.&lt;/p&gt;
+
+&lt;h2 id=&quot;introductions&quot;&gt;Introductions&lt;/h2&gt;
+
+&lt;p&gt;The first part of the panel is a short 5-minute introduction of the
+panellists, including &lt;a href=&quot;https://www.malakerlab.com/&quot;&gt;Prof Stacy
+Malaker&lt;/a&gt; from Yale University and &lt;a href=&quot;https://www.ebi.ac.uk/people/person/juan-vizcaino/&quot;&gt;Dr
+Juan Antonio
+Vizcaino&lt;/a&gt; from the
+EMBL-EBI and myself.&lt;/p&gt;
+
+&lt;p&gt;I prepared this career flow chart as a visual aid:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/2024-ecr-recognition-careerpath.png&quot; alt=&quot;Career path&quot; /&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;I earned my PhD in 2006, from the &lt;a href=&quot;https://www.ulb.be/&quot;&gt;Free University of
+Brussels&lt;/a&gt; (ULB). My PhD work focused on the
+evaluation of different types of evolutionary genetic markers to
+study cetaceans phylogeny.&lt;/li&gt;
+  &lt;li&gt;During my PhD (probably around 2004 or so), when my work and
+interests shifted toward bioinformatics, I started a part-time
+degree in computer science at the &lt;a href=&quot;https://unamur.be/&quot;&gt;University of
+Namur&lt;/a&gt;. That lasted until I left Belgium for the
+UK in 2010, after completing all my exams, but before finishing my
+masters project - I never graduated.&lt;/li&gt;
+  &lt;li&gt;After my PhD, I worked for 3 years in industry, in a small company
+(we probably were about 15 employees). I didn’t see much point in
+continuing in academia at that point, considering my experience so
+far and my personal situation. The environment and general
+atmosphere was very much like an academic lab, with many more
+collaborations within the team, and clear and common
+objectives. This goal-oriented work environment was a very
+refreshing experience that has been influential for the next steps
+of my career. At some point, I felt I was starting to run in circles
+and got a chance to move back to academia, at the &lt;a href=&quot;https://www.cam.ac.uk/&quot;&gt;University of
+Cambridge&lt;/a&gt; nonetheless.&lt;/li&gt;
+  &lt;li&gt;In 2010, I started a post-doctoral research associate (PDRA)
+position in the &lt;a href=&quot;https://proteomics.bio.cam.ac.uk/&quot;&gt;Cambridge Centre for
+Proteomics&lt;/a&gt;, working on mass
+spectrometry-based proteomics.&lt;/li&gt;
+  &lt;li&gt;In 2013, I got promoted to senior research associate (SRA), which
+allowed me to earn some grants as main PI and develop a small
+research team.&lt;/li&gt;
+  &lt;li&gt;In 2018, I joined the
+&lt;a href=&quot;https://uclouvain.be/fr/index.html&quot;&gt;UCLouvain&lt;/a&gt; as a professor of
+bioinformatics. I teach in the &lt;a href=&quot;https://uclouvain.be/fr/facultes/fasb&quot;&gt;faculty of pharmacy and biomedical
+sciences&lt;/a&gt; (FASB) and run the
+CBIO &lt;a href=&quot;https://lgatto.github.io/cbio-lab/&quot;&gt;computational research
+group&lt;/a&gt; in the &lt;a href=&quot;https://www.deduveinstitute.be/&quot;&gt;de Duve
+Institute&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;An interesting fact is that I started working on DNA during my PhD,
+moved on with RNA in the private company, and since moving back to
+academia, I have been focusing on proteins: my career followed the
+main path of the &lt;a href=&quot;https://en.wikipedia.org/wiki/Central_dogma_of_molecular_biology&quot;&gt;central dogma of molecular
+biology&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;To give more context to my career path, I also highlight some other
+activities and interests, that have guided and supported my academic
+activities.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;I started to realise the importance of open and reproducible
+research around 2010, both with respect to the rigour of doing
+research, but also in the light of the (at times) &lt;a href=&quot;http://bulliedintobadscience.org/&quot;&gt;oppressive and
+restrictive global research
+environment&lt;/a&gt; ECR have to
+endure. The desire for others to benefit from my research by making
+it as open, collaborative and reproducible as possible, and being
+&lt;a href=&quot;https://lgatto.github.io/open-and-rr-2/&quot;&gt;vocal about it&lt;/a&gt;, has
+followed me since then.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;The &lt;a href=&quot;https://bioconductor.org/&quot;&gt;Bioconductor project&lt;/a&gt; has been
+instrumental for me. It has allowed me over the years to meet and be
+influenced by outstanding scientists, and has offered an
+international environment in which I was able to grow and
+flourish. I published my first (now retired) &lt;a href=&quot;https://bioconductor.org/packages/3.12/bioc/html/yaqcaffy.html&quot;&gt;Bioconductor
+package&lt;/a&gt;
+around 2007 (Bioconductor 2.2 and R 2.7), and many more followed. I
+am a Bioconductor package reviewer, a member of the European
+Bioconductor (EuroBioc) conference organisation committee (I was a
+local organiser for a handful EuroBioc conferences in Cambridge, in
+2019 in Brussels, and in &lt;a href=&quot;https://eurobioc2023.bioconductor.org/&quot;&gt;2023 in
+Ghent&lt;/a&gt;), have been part
+until recently of the &lt;a href=&quot;https://bioconductor.org/about/code-of-conduct/&quot;&gt;Code of
+Conduct&lt;/a&gt; committee,
+am part of the social media working group, I co-lead the &lt;a href=&quot;https://bioconductor.org/help/education-training/&quot;&gt;Teaching
+committee&lt;/a&gt;, am
+since 2018 member of the &lt;a href=&quot;https://bioconductor.org/about/technical-advisory-board/&quot;&gt;Technical Advisory
+Board&lt;/a&gt;,
+and co-created, in 2021, the &lt;a href=&quot;https://bioconductor.org/about/european-bioconductor-society/&quot;&gt;European Bioconductor
+Society&lt;/a&gt;.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;recognition&quot;&gt;Recognition&lt;/h2&gt;
+
+&lt;p&gt;The panellists were also asked to comment on how they have been
+recognised for their work, with a particular emphasis their time as
+ECRs. This is of course very subjective, and I’m not sure if my answer
+will reflect how I have been recognised (assuming I have), or how I
+hope I have been. I will also try to look beyond papers, the obvious
+academic outputs - without those, there is little chance to get
+academic recognition. This is of course a major problem, as there’s
+much more to research than papers:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;An article about computational science in a scientific publication
+is not the scholarship itself, it is merely advertising of the
+scholarship. The actual scholarship is the complete software
+development environment and that complete set of instructions that
+generated the figures.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;[Buckheit and Donoho 1995, after Claerbout]&lt;/p&gt;
+
+&lt;p&gt;I think I’m known for the computational development and applications
+in spatial (2010…) and single-cell proteomics (2018…), my efforts
+to produce open and reproducible research, open and collaborative
+software development, my R/Bioconductor contributions (some packages
+have been around for since 2010) as well as my involvement in
+teaching, such as international workshops (for example the mythical -
+for me at least - Bioconductor &lt;a href=&quot;https://csama2024.bioconductor.eu/&quot;&gt;CSAMA
+course&lt;/a&gt; workshop).&lt;/p&gt;
+
+&lt;p&gt;One noteworthy aspect of my publication strategy, that highlights my
+efforts for openness and reproducibility, is the workflow that
+typically starts with the release of the software (more often than not
+after review, on Bioconductor), then the publication of a pre-print
+with code to reproduce the analyses and, eventually, a peer-reviewed
+paper.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/2024-ecr-recognition-pubworkflow.png&quot; alt=&quot;open software, pre-print and paper publication workflow&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;I think I have gained some reputation as having acquired some
+expertise in my computational quantitative proteomics, including
+demonstrable &lt;em&gt;technical skills&lt;/em&gt;, in addition to more standard
+&lt;em&gt;scientific/academic output&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;In terms of recognition, I suppose that invitations to give talks (for
+scientific outputs), teach at workshops (pedagogical and technical
+skills) and to submit papers are obvious goals. Being recognised for
+my open and collaborative contributions with a &lt;a href=&quot;https://bioconductor.org/about/awards/&quot;&gt;Bioconductor community
+award&lt;/a&gt; is one of my proudest
+moments. High on the list are also the
+&lt;a href=&quot;https://lgatto.github.io/msnbase-contribs/&quot;&gt;many&lt;/a&gt;
+&lt;a href=&quot;https://lgatto.github.io/msnbase-contribs-2/&quot;&gt;contributions&lt;/a&gt; that the
+&lt;a href=&quot;https://bioconductor.org/packages/release/bioc/html/MSnbase.html&quot;&gt;MSnbase&lt;/a&gt;
+package benefited from - some of these indirectly initiated the
+collaborations that lead to the creation of the &lt;a href=&quot;https://www.rformassspectrometry.org/&quot;&gt;R for Mass
+Spectrometry&lt;/a&gt; initiative.&lt;/p&gt;
+
+&lt;p&gt;But what matters the most, in my eyes, and what in the end leads to
+the most precious recognition, are the &lt;strong&gt;values&lt;/strong&gt; that we carry with
+the research we do, and the &lt;strong&gt;intrinsic motivation&lt;/strong&gt; that drive us.&lt;/p&gt;
+
+&lt;h2 id=&quot;questions&quot;&gt;Questions&lt;/h2&gt;
+
+&lt;p&gt;We were also asked to prepare answers to three short questions. These
+have been pre-determined by the HUPO ECR to get things going and give
+us, the panellists, a chance to think about the comments we would like
+to make.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;When hiring a new postdoctoral researcher for your group, what are
+the most important attributes for them to have on their CV? What do
+you look for other than publication history?&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Here are a couple of things I look for, and that I consider absolutely
+essential, much more important than papers. Papers are only one of the
+attributes that will help me assess the following:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Does the candidate’s skills match the project’s needs?&lt;/li&gt;
+  &lt;li&gt;What are &lt;strong&gt;concrete signs of mastery&lt;/strong&gt;? I perform regular (and
+constructive) appraisals with the researchers in my group, and one
+question in that appraisal is “What do you want to become an expert
+in?”. In a CV, I want to find what the candidate is an expert in,
+whey they can teach me/bring to the lab.&lt;/li&gt;
+  &lt;li&gt;I also need to see public/open &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;code&lt;/code&gt;, such as for example
+&lt;strong&gt;active&lt;/strong&gt; Github/Gitlab profiles and repositories and
+&lt;strong&gt;contributions&lt;/strong&gt; (to their or other’s code base).&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;And of course, last but not least, will the person be a good lab/team
+member? It is of course very difficult (and arguably subjective) to
+assess, but we (the lab) will be attentive to red flags pointing to
+the contrary. In case of doubt, I will invite the candidate on site if
+the interview (always with the whole group) was remote. I wouldn’t
+want to take any risks that could harm the cohesion and well-being of
+the group.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;How would you recommend that ECRs promote their work other than
+research e.g., teaching, outreach, committee work? Is there anything
+they can do other than add a line on their CV?&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Yes, ‘add lines’ to your CV, but not at all costs. Be pragmatic! Not
+need to run or teach workshops several time a year to demonstrate
+that you have done some teaching. Don’t forget that your post-doc
+years should be the most productive research-wise of your career!&lt;/li&gt;
+  &lt;li&gt;Promote &lt;strong&gt;your research&lt;/strong&gt;, don’t be a vehicle for some else’s
+research (typically your advisor), don’t limit yourself to merely
+doing it. Show how you go the extra mile - for example by delivering
+reproducible research.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Do things you like!&lt;/strong&gt; Nothing beats motivation when it comes to
+convincing others that you are good at what you do.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;How much does networking (either via social media or in-person
+meetings) play a role in promoting your work?&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;It is &lt;strong&gt;very important!&lt;/strong&gt; Networking are opportunities to learn,
+share, discuss, and make yourself known, … Networking can be hard
+though, so don’t be too hard on yourselves. It takes time.&lt;/p&gt;
+
+&lt;p&gt;Here’s a simple example illustrating the importance of building a
+network: I happily spare myself organising and running interviews when
+I can find a candidate in my direct or indirect network.&lt;/p&gt;
+
+&lt;p&gt;To build that network, there’s of course the in-person or remote
+conferences and workshops, there may be social media (might not be for
+everybody), but also Github issues and code and documentation
+contributions and typo fixes. The large and small contributions are
+very concrete examples that address the first question above.&lt;/p&gt;</content><author><name>Laurent Gatto</name></author><category term="ECR" /><category term="communication" /><summary type="html">The HUPO Early Career Researcher (ECR) committee has organised a discussion panel on Getting recognised for your work and have asked me to participate - thank you! I am always keen on such events, organised by and for ECRs.</summary></entry><entry><title type="html">The Grid poster, in R</title><link href="https://lgatto.github.io/the-grid-in-r/" rel="alternate" type="text/html" title="The Grid poster, in R" /><published>2024-02-18T00:00:00+01:00</published><updated>2024-02-18T00:00:00+01:00</updated><id>https://lgatto.github.io/the-grid-in-r</id><content type="html" xml:base="https://lgatto.github.io/the-grid-in-r/">&lt;p&gt;The &lt;a href=&quot;https://museel.be/&quot;&gt;MuseeL&lt;/a&gt; is the
 &lt;a href=&quot;https://uclouvain.be/&quot;&gt;UCLouvain&lt;/a&gt; University museum in
 Louvain-la-Neuve. Highly recommended. It’s located to the lively
 &lt;em&gt;place des sciences&lt;/em&gt;, in a nice brutalist style building, formerly the
@@ -1283,376 +1519,4 @@ results.&lt;/p&gt;
       &lt;p&gt;Original question are in French and were translated in English with Google translate, with minimal editing. &lt;a href=&quot;#fnref:3&quot; class=&quot;reversefootnote&quot; role=&quot;doc-backlink&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
     &lt;/li&gt;
   &lt;/ol&gt;
-&lt;/div&gt;</content><author><name>Laurent Gatto</name></author><category term="education" /><category term="teaching" /><summary type="html">Here’s the initial assessment of the new ungrading and feedback pedagogy that the TAs and myself have implemented this academic year (2022-2023). In a nutshell, we decided to not mark any of the weekly test and maximise opportunities for feedback to favour student’s self-assessment and reflection on their own work (meta-cognition). Read the full post to read about the reasons and opportunities for dropping grading the weekly tests and maximise feedback with students.</summary></entry><entry><title type="html">Ungrading my teaching</title><link href="https://lgatto.github.io/ungrading/" rel="alternate" type="text/html" title="Ungrading my teaching" /><published>2022-10-26T00:00:00+02:00</published><updated>2022-10-26T00:00:00+02:00</updated><id>https://lgatto.github.io/ungrading</id><content type="html" xml:base="https://lgatto.github.io/ungrading/">&lt;p&gt;I have been extremely lucky to participate in a &lt;a href=&quot;https://carpentries.github.io/instructor-training/&quot;&gt;Carpentries
-instructor&lt;/a&gt;
-training as an early career researcher. By then, I had only taught a
-few workshops, and was very impressed by the content of the training,
-and by &lt;a href=&quot;https://third-bit.com/&quot;&gt;Greg Wilson&lt;/a&gt;, who delivered it with
-touching sincerity and dedication. A couple of years later, I managed
-to secure some funding from the &lt;a href=&quot;https://www.r-consortium.org/&quot;&gt;R
-Consortium&lt;/a&gt; to organise an instructor
-course in Cambridge, where I worked at the time, and was delighted to
-be able to revisit the content. The Carpentries approach to lesson
-design and teaching has stuck with me since then. I have applied these
-principles and some of the material to my main university courses
-(&lt;a href=&quot;http://bit.ly/WSBIM1207&quot;&gt;WSBIM1207&lt;/a&gt; and
-&lt;a href=&quot;http://bit.ly/WSBIM1207&quot;&gt;WSBIM1322&lt;/a&gt; for the second and third bachelor
-courses respectively and &lt;a href=&quot;http://bit.ly/WSBIM2122&quot;&gt;WSBIM2122&lt;/a&gt; for the
-master’s course), and am now, as part of the &lt;a href=&quot;https://www.bioconductor.org/help/education-training/&quot;&gt;Bioconductor Teaching
-committee&lt;/a&gt;,
-developing new lessons.&lt;/p&gt;
-
-&lt;p&gt;Delivering good courses at workshops isn’t an easy task, but everybody
-can get there with the right preparation and support (such as proposed
-by the Carpentries). There is however one aspect that makes it
-&lt;em&gt;easier&lt;/em&gt; than teaching a university curriculum: as an workshop
-instructor, you focus on the day (or days) you teach, giving your
-best, and then it’s over - no need to think about
-tomorrow. Participants will hopefully apply what they have learnt,
-some might get back to you with questions (extremely rare in my
-experience), but others might not and you’ll never hear from them. In
-a university setting, on the other hand, you have to think about
-assignments, test, exams, marks, … and possibly even about
-pre-requisites for follow-up classes. You have to be able to assess
-the students, i.e. assess whether they have acquired (enough of) the
-material, and whether they are sufficiently well prepared for next
-year’s class and, more generally, their future activities. In my
-opinion/experience, this makes for a more complex teaching experience,
-more careful planning and a whole different level of responsibilities.&lt;/p&gt;
-
-&lt;h2 id=&quot;criticising-my-own-pedagogy&quot;&gt;Criticising my own pedagogy&lt;/h2&gt;
-
-&lt;p&gt;I have adapted how I test/assess students during the 4 years, 3 course
-and 10 semester classes I have taught since I moved to my current
-position. Following the Carpentries philosophy, my courses are
-hands-on and are based on repeated practice, so that students &lt;em&gt;get it&lt;/em&gt;
-and have a chance to apply what they have learnt. As opposed to other
-courses, it isn’t quite possible to leave it to the last week(s)
-before the exam to cram all the material in short term memory -
-students need to attend and practise exercises in class and (ideally
-also) at home. To promote students’ work, I organise weekly tests
-which, for a couple of years now, allowed those that earned good
-marks, to transfer their mean test scores to their final grade, and
-thus get a dispense for the exam. Unfortunately, this hasn’t proven as
-successful as I had hoped.&lt;/p&gt;
-
-&lt;p&gt;The reason for the failure of this test/dispense approach is well
-known to those that have studied to effect of marking and grading -
-the focus of the student is switched from &lt;em&gt;learning&lt;/em&gt; new skills to
-obtaining a &lt;em&gt;good&lt;/em&gt; mark. And, as clearly stated by Marcus
-Schultz-Bergin in his chapter &lt;em&gt;Grade Anarchy in the Philosophy
-Classroom&lt;/em&gt; (p. 175) (from &lt;sup id=&quot;fnref:1&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:1&quot; class=&quot;footnote&quot; rel=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;): &lt;strong&gt;Grades do not track learning&lt;/strong&gt; (or
-anything else of importance) and, to add insult to injury, &lt;strong&gt;grading
-reduces student learning&lt;/strong&gt;.&lt;/p&gt;
-
-&lt;p&gt;This indeed matches my observation. My students have access to any
-material they see fit for the tests and exams. Some focus their
-preparation on gathering as much material as possible (such as answers
-from previous tests and exercises) and then apply the &lt;em&gt;minimax&lt;/em&gt;
-strategy to maximise the marks while minimising their own work by
-matching the answers they have gathered to the questions of the
-day. The focus of the tests has become the tests’ marks, and most
-criticism/feedback at the end of a lesson (I use the Carpentries
-famous &lt;a href=&quot;https://carpentries.github.io/instructor-training/21-management/index.html#sticky-notes&quot;&gt;colour sticky
-notes&lt;/a&gt;
-to increase interactions and collect feedback after each class) was
-the lack of time to finish/get good marks, with little questioning
-about the understanding/mastering of the material (such as being able
-to answer the questions in a limited but doable amount of time).&lt;/p&gt;
-
-&lt;p&gt;It is important to clarify here that I don’t blame the
-students. Students, as a collective entity, will adapt to rules and
-constrains that are set to them. Maximising the success in exams is a
-natural adaptation to the current system, that has focused on grades
-as a mean of standardisation. Even if the goal of this standardisation
-is (or was) equality and fairness (in the face of an increasing number
-of students), it has led to the acquisition of grades to become the
-main (and often only) assessment of successful learning and teaching.&lt;/p&gt;
-
-&lt;h2 id=&quot;ungrading-why-rating-students-undermines-learning&quot;&gt;UNgrading, why rating students undermines learning&lt;/h2&gt;
-
-&lt;p&gt;During the last summer holidays, I read &lt;em&gt;UNgrading, why rating
-students undermines learning (and what to do instead)&lt;/em&gt; &lt;sup id=&quot;fnref:1:1&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:1&quot; class=&quot;footnote&quot; rel=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;, a
-collection of chapters edited by Susan D. Blum, highlighting the
-issues with grading and sharing the experiences of some instructors
-that decided to drop them in their classes. To summarise the main
-arguments made by the many authors in the book, I’ll cite Marcus
-Schultz-Bergin again:&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;Grades do not track learning (or anything else of importance).&lt;/li&gt;
-  &lt;li&gt;Grading reduces student learning.&lt;/li&gt;
-  &lt;li&gt;Only receiving feedback (and no grades) increases student learning.&lt;/li&gt;
-  &lt;li&gt;Self-evaluation and self-reflection improve student learning.&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;The last point refers to the concept of &lt;em&gt;meta-cognition&lt;/em&gt;, thinking
-about how we think, and learn, and the ability to self-assess. It is
-paramount for students to learn how to receive and use the feedback
-they are given. Self-evaluation of one’s own learning process should
-be the ultimate goal of any teaching enterprise, as it essentially
-provides the means for anyone to learn any new subject they are
-interested in.&lt;/p&gt;
-
-&lt;p&gt;The authors provide more details about points 1 and 2 above, but my
-own observation made it abundantly clear that, despite my best
-intentions, tests offering a possibility to get a dispense for the
-exam wasn’t working. I took plenty of notes during my reading of the
-ungrading book and have devised alternative approaches that I’m
-looking forward to apply this semester. I will drop marking and put as
-much emphasis as possible on providing feedback, and leading students
-to assess their own work, focusing on understanding and mastering the
-material, rather than on obtaining grades. Before I describe my plans,
-I must specify that I will have to provide a grade for the end of year
-assessment, that students will earn with an exam. Even though I am
-convinced that marking isn’t an appropriate assessment of learning, I
-will first need to implement this in my classes and assess if/how this
-affects student learning and (hopefully) how they perform in that
-final exam. There is a long learning curve ahead (for me) and battle
-to extend this further. I have exciting plans for my bachelor and
-master courses. Read on…&lt;/p&gt;
-
-&lt;h2 id=&quot;first-steps-in-ungraded-land&quot;&gt;First steps in ungraded land&lt;/h2&gt;
-
-&lt;p&gt;I will be dropping grades in all the tests that are given throughout
-the term (typically at each or most lectures but the first one) in
-both bachelor courses. The first implication of this is that there
-won’t be any opportunity for students to be dispensed from the final
-exam, which is an opportunity several counted on. I will thus need to
-make sure that the reasons for this, described above, are clear (see
-point 1 below). The goal is to promote self-evaluation, feedback on
-their understanding of the material, and a reflection on their
-learning process. Instead of grading each individual test (a
-time-consuming activity), we will answer test’s questions together, in
-class, right after the test itself. This is something I have done
-previously, albeit rather swiftly. Here, I intend to take more time
-and involve the students as much as possible by asking for their
-active participation. After the collaborative correction, I will ask
-them to answer a quick poll, assessing whether (1) they understood the
-material but need more work to really master it, (2) they mastered the
-material and are ready to move on or (3) they neither understood nor
-mastered it and will ask for help (see point 2 below). Teaching
-assistants (TAs) and myself will spare some considerable time by not
-grading tens of copies (sometime over 60) and will seize it to put
-this new pedagogical strategy into place. After the poll, students
-will be invited to review their work after the lecture, in the light
-of the correction and their self-assessment and come to us to ask
-specific questions about their work, things they struggled with, or
-advice on how they could improve their learning (see point 3
-below). The goal of this is to steer away from grades and re-focus on
-their understanding/mastering of the material, offer opportunities for
-personalised feedback, and promote self-evaluation and
-meta-cognition. Fingers crossed!&lt;/p&gt;
-
-&lt;p&gt;Self-evaluation works best in an environment where we trust each
-other. To emphasise this, I have also decided to change the attendance
-formalities. Since the beginning, I have made attendance mandatory. At
-my institution and in Belgium in general, attendance is only mandatory
-for practicals, and optional for formal lectures. Given that in my
-courses, theory and practice blend into each other, that I try to give
-as much hands-on work as possible during the classes, and that it is
-unlikely to master the material without that practice anyway, presence
-was mandatory, and TAs circulated attendance sheet that students had
-to sign. I will be honest that I didn’t check them systematically and
-didn’t follow up on absences. But I thought that this &lt;em&gt;pressure&lt;/em&gt; would
-force students to attend and get them a chance to practise. I decided
-to change this. Attendance is still mandatory for the reasons
-mentioned above, but I will not use presence sheets anymore. If a
-student can’t make it, I’m asking for a short email to let me know
-that they aren’t or weren’t able to attend. I do not need any reason
-for the absence. I will just ask them to specify, in that email, how
-they plan to make up for the missed lesson, including asking me or the
-TAs for extra help. I think this approach builds on trust and
-self-motivation, invites students to take responsibility for their own
-learning, and promotes reflection of their progress, notably when they
-miss a class (whatever the reason).&lt;/p&gt;
-
-&lt;h2 id=&quot;first-self-assessments-theirs-and-mine&quot;&gt;First self-assessments (theirs and mine)&lt;/h2&gt;
-
-&lt;p&gt;Here’s how things look like after a couple of weeks:&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;
-    &lt;p&gt;A short live poll (using sticky notes) during the first class of
-the year, after explaining the reasons for dropping the dispense
-and implementing the new strategy, was seen in a positive light by
-the great majority of the students. A handful of the 50 students
-regretted not being able to get a dispense. My impression is that
-these are the students that were aiming to get one (some of them
-probably already got one for the previous course), and consider
-this a loss (for them, personally) compared to the opportunities
-offered by the change.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;The first post-test polls of the year indicate that the majority of
-students understand the material but needed more work to fully
-master it (from 55 to 85%). Smaller fractions of students don’t
-understand the material and conceded they need more help (8 to 14%)
-or fully master it (from 0 to 17%). The proportions are variable,
-depending on the chapter, but the fraction of students
-understanding the material is always the largest, by a comfortable
-margin.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;We set up office hours during the week and just before the
-lectures, making sure that these didn’t conflict with the student
-schedule. So far, for the first weeks this has been in place, the
-number of students that booked and met with us was not in line with
-the poll - we meet with 1 to 3 students per week, out of a total
-over 40.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;I have received a couple of emails from students not being able to
-attend. Most were related to clashes in their schedule (for
-students that had lectures from second and third bachelor
-years). Some of these emails did follow the guideline and explained
-how they intended to make up for missing the classes: work by
-themselves, use the recordings we provide, interact with class
-mates who do attend the lectures. Along the same lines, I had one
-student that explicitly wrote that they would revise the sections
-they struggled with on their end-of-class red sticky notes.&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h2 id=&quot;adjustments-for-smaller-classes&quot;&gt;Adjustments for smaller classes&lt;/h2&gt;
-
-&lt;p&gt;The master’s course provides more freedom to experiment further, as
-there are less students in the class and allows for more one-to-one
-interactions.&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;So far, students had to prepare and present two data analysis
-reports throughout the semester course, focusing on two different
-high-throughput data types (transcriptomics and proteomics). We
-devote 3 to 4 successive session to each project: (1) lectures and
-exercises for them to learn and practice the theory, (2) a session
-where they test what they have learnt on their own data and can ask
-questions about the material and their data and (3) a short
-presentation with questions from the audience (other students and
-instructors), followed by, the following week, the submission of a
-detailed report that takes into account the questions and discussion
-during the respective presentations. I am considering to let
-students choose whether they prefer to do the second project, or
-propose improvements and extension to the first project and, if they
-wish, implement these during the next practice sessions.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;I am also considering to ask students to comment on each others
-written reports, in addition to the question and answer sessions, to
-further emphasise peer assessment and promote
-peer/self-evaluation. This could also be a good source of
-inspiration for improvements and extension to their first project
-(see previous point).&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;During the master course’s oral exam, we focus primarily on the
-questions and discussions from the written reports. I systematically
-ask what students preferred in the course or felt they have mastered
-best, and what they struggled with. I would like to go a step
-further and ask them to propose and motivate their marks.&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;ideas-for-the-future&quot;&gt;Ideas for the future&lt;/h2&gt;
-
-&lt;p&gt;Depending on how the attempts above are received and how they
-influence the students’ learning, I might consider propose a more
-ambitious project to the 3rd bachelor students. This might only really
-apply to students that are re-taking the class and thus have already
-an overview of the whole material, and are in a position to anticipate
-the kind of data, analyses and interpretation that would be expected.&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;
-    &lt;p&gt;One or a group of students will be able to choose a project they
-want to work on throughout the year. Choosing a project would
-entail to identify a dataset and one or several questions they want
-to address with that data, confirm that the project would be
-written up as a (reproducible) report, and, if they work as a
-group, some sort of agreement that all members of the group will
-contribute.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;They have total freedom in the complexity of the data and questions
-they choose to work on. It could either be a rather ambitous
-project, that would account for all credits/marks of the course, or
-choose something smaller. There could be an option to make up for
-the rest of the marks with (parts of) the final exam (that those
-that didn’t choose a project would have to take anyway), although I
-haven’t figured out the details of this.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;The students and the education team (i.e. TAs and myself) would
-discuss their project (data and questions), the feasibility and the
-adequacy of their proposal, and the marks they would obtain upon
-successful completion. All these are open to discussion and
-amendments during the iterations in the next point.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Students and the education team would meet regularly to discuss the
-project’s advancement and provide guidance to help them to
-successfully reach their goals. These goals and the marks/credits
-could be revisited accordingly: an overly ambitous project could be
-reduced and, conversely, if the goals are attained earlier than
-expected, students could propose extensions if they wish so.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;I think students should have the freedom to back out whenever they
-want to, if at any point they prefer to take the exam. They should
-also have the freedom to propose a project that counts for, say 50%
-of the marks, and settle with that without taking the exam if they
-reach their goals.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;The completion of the project would be officialised by the final
-submission of the report. Importantly, the education team wouldn’t
-read/discover that report for the first time at that point, but
-would have followed its progress throughout the year so that, at
-the time of submission, little doubts persist as to the successful
-completion of the project.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;If students worked as a group, they would need to provide a section
-describing their respective contributions. Again, these would have
-been laid out early on, and possibly updated, throughout the
-project. Every student of the group would get the same final mark
-but individuals would get recognised for their specific
-contribution.&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h2 id=&quot;final-thoughts&quot;&gt;Final thoughts&lt;/h2&gt;
-
-&lt;p&gt;There is quite some excitement on my part with these new approaches,
-which has, I believe, a positive impact on my teaching. The lectures
-seem to have become more interactive: I try to make sure that all/most
-students get asked questions about the material we see and the
-exercises we do. Based on the sticky notes feedback that are collected
-at the end of each lecture, they seem to appreciate it because it
-improves their involvement and attention.  In previous years, sampling
-students at random for to answer my questions was reported as being
-stressful on the sticky notes. It feels like clarifying and
-verbalising the goals gives me more freedom to reach out to the
-students and them to take it as a genuine learning opportunity. The
-latest set of sticky notes goes along these lines and gives hope for
-the future.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Edit&lt;/strong&gt;:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Here’s a &lt;a href=&quot;https://lgatto.github.io/ungrading-assessment/&quot;&gt;first ungrading
-assessment&lt;/a&gt;, posted
-on 15 December 2022.&lt;/li&gt;
-  &lt;li&gt;A short interview, in French: &lt;a href=&quot;https://www.youtube.com/watch?v=i4KebCqSP8Q&quot;&gt;Evaluation dans l’enseignement
-supérieur : « UNgrading » ou évaluer et apprendre sans
-points&lt;/a&gt;.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;div class=&quot;footnotes&quot; role=&quot;doc-endnotes&quot;&gt;
-  &lt;ol&gt;
-    &lt;li id=&quot;fn:1&quot; role=&quot;doc-endnote&quot;&gt;
-      &lt;p&gt;In &lt;em&gt;UNgrading, why rating students undermines learning (and what to do instead)&lt;/em&gt;, Susan D. Blum (editor), 2020. &lt;a href=&quot;#fnref:1&quot; class=&quot;reversefootnote&quot; role=&quot;doc-backlink&quot;&gt;&amp;#8617;&lt;/a&gt; &lt;a href=&quot;#fnref:1:1&quot; class=&quot;reversefootnote&quot; role=&quot;doc-backlink&quot;&gt;&amp;#8617;&lt;sup&gt;2&lt;/sup&gt;&lt;/a&gt;&lt;/p&gt;
-    &lt;/li&gt;
-  &lt;/ol&gt;
-&lt;/div&gt;</content><author><name>Laurent Gatto</name></author><category term="education" /><category term="teaching" /><summary type="html">I have been extremely lucky to participate in a Carpentries instructor training as an early career researcher. By then, I had only taught a few workshops, and was very impressed by the content of the training, and by Greg Wilson, who delivered it with touching sincerity and dedication. A couple of years later, I managed to secure some funding from the R Consortium to organise an instructor course in Cambridge, where I worked at the time, and was delighted to be able to revisit the content. The Carpentries approach to lesson design and teaching has stuck with me since then. I have applied these principles and some of the material to my main university courses (WSBIM1207 and WSBIM1322 for the second and third bachelor courses respectively and WSBIM2122 for the master’s course), and am now, as part of the Bioconductor Teaching committee, developing new lessons.</summary></entry></feed>
+&lt;/div&gt;</content><author><name>Laurent Gatto</name></author><category term="education" /><category term="teaching" /><summary type="html">Here’s the initial assessment of the new ungrading and feedback pedagogy that the TAs and myself have implemented this academic year (2022-2023). In a nutshell, we decided to not mark any of the weekly test and maximise opportunities for feedback to favour student’s self-assessment and reflection on their own work (meta-cognition). Read the full post to read about the reasons and opportunities for dropping grading the weekly tests and maximise feedback with students.</summary></entry></feed>
