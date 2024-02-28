@@ -155,9 +155,10 @@ package benefited from - some of these indirectly initiated the
 collaborations that lead to the creation of the [R for Mass
 Spectrometry](https://www.rformassspectrometry.org/) initiative.
 
-But what matters the most, in my eyes, and what in the end leads to
-the most precious recognition, are the **values** that we carry with
-the research we do, and the **intrinsic motivation** that drive us.
+But what matters the most, in my eyes, and what in the end is the most
+meaningul recognition, are the (shared) **values** that we promote
+with the research we do, and the **intrinsic motivation** that drive
+us.
 
 ## Questions
 
