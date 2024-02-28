@@ -227,6 +227,11 @@ Please do get in touch if you are interested in running workshops.
 
 ### Research articles
 
+Ward B et al. *Deep plasma proteomics with data-independent
+acquisition: A fastlane towards biomarkers identification* (2024)
+bioRxiv
+doi:[10.1101/2024.02.23.581160](https://doi.org/10.1101/2024.02.23.581160)
+
 Hauchamps P, Bayat B, Delandre S, Hamrouni M, Toussaint M, Temmerman
 S, Lin D, Gatto L *CytoPipeline and CytoPipelineGUI: a Bioconductor R
 package suite for building and visualizing automated pre-processing
