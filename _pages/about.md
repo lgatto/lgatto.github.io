@@ -681,12 +681,14 @@ href="http://www.ncbi.nlm.nih.gov/pubmed/24727771">PubMed</a>)
 
 Gatto L., Breckels L.M, Burger T, Wieczorek S. and Lilley
 K.S. *Mass-spectrometry based spatial proteomics data analysis using
-pRoloc and pRolocdata*, Bioinformatics, 2014 (<a
-href="http://www.bioconductor.org/packages/release/bioc/html/pRoloc.html">software</a>,
-<a href="http://www.ncbi.nlm.nih.gov/pubmed/24413670">PubMed</a>,
-<a href="http://bioinformatics.oxfordjournals.org/content/30/9/1322">publisher</a>,
-<a href="http://www.bioconductor.org/packages/release/bioc/html/pRoloc.html">software</a>
-and <a href="http://www.bioconductor.org/packages/release/data/experiment/html/pRolocdata.html">data</a>).
+pRoloc and pRolocdata*, Bioinformatics, 2014 May
+1;30(9):1322-4. doi:10.1093/bioinformatics/btu013 (<a
+href="http://www.ncbi.nlm.nih.gov/pubmed/24413670">PubMed</a>, <a
+href="http://bioinformatics.oxfordjournals.org/content/30/9/1322">publisher</a>,
+<a
+href="http://www.bioconductor.org/packages/release/bioc/html/pRoloc.html">software</a>
+and <a
+href="http://www.bioconductor.org/packages/release/data/experiment/html/pRolocdata.html">data</a>).
 
 Groen A., Sancho-Andr&eacute;s G., Breckels LM., Gatto L., Aniento
 F. and Lilley K.S. *Identification of Trans Golgi Network proteins in
