@@ -136,10 +136,10 @@ paper.
 
 ![open software, pre-print and paper publication workflow](/images/2024-ecr-recognition-pubworkflow.png)
 
-I think I have gained some reputation as having acquired some
-expertise in my computational quantitative proteomics, including
-demonstrable *technical skills*, in addition to more standard
-*scientific/academic output*.
+I think I have gained some reputation as someome having expertise in
+computational quantitative proteomics, including demonstrable
+*technical skills*, in addition to more standard *scientific/academic
+output*.
 
 
 In terms of recognition, I suppose that invitations to give talks (for
