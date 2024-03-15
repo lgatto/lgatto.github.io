@@ -227,6 +227,13 @@ Please do get in touch if you are interested in running workshops.
 
 ### Research articles
 
+Pirenne S, Manzano-Núñez F, Loriot A, Cordi S, Desmet L, Aydin S,
+Hubert C, Toffoli S, Limaye N, Sempoux C, Komuta M, Gatto L, Lemaigre
+FP *Spatial transcriptomics profiling of gallbladder adenocarcinoma: a
+detailed two-case study of progression from precursor lesions to
+cancer*
+doi:[10.1101/2024.02.27.582232](https://doi.org/10.1101/2024.02.27.582232).
+
 Ward B et al. *Deep plasma proteomics with data-independent
 acquisition: A fastlane towards biomarkers identification* (2024)
 bioRxiv
