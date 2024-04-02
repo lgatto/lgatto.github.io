@@ -155,14 +155,26 @@ thanks to some pioneers' groundbreaking efforts, we can confidently
 claim that single-cell proteomics is here. The CBIO lab has
 contributed the [`scp`](https://bioconductor.org/packages/scp) package
 ([Vanderaa and Gatto,
-2021](https://www.tandfonline.com/doi/abs/10.1080/14789450.2021.1988571?journalCode=ieru20),
-or get to pre-print
-[here](https://www.biorxiv.org/content/10.1101/2021.04.12.439408v2) if
-you don't have access) to these efforts. `scp` relies of [R for Mass
+2021](https://www.tandfonline.com/doi/abs/10.1080/14789450.2021.1988571?journalCode=ieru20)
+and
+[pre-print](https://www.biorxiv.org/content/10.1101/2021.04.12.439408v2),
+[2023a](https://doi.org/10.1002/cpz1.658) and
+[pre-print](https://arxiv.org/abs/2210.01020),
+[2023b](https://pubs.acs.org/doi/10.1021/acs.jproteome.3c00227) and
+[pre-print](https://arxiv.org/abs/2304.06654)) to these efforts. `scp`
+relies of [R for Mass
 Spectrometry](https://www.rformassspectrometry.org/)'s
 [`QFeatures`](https://bioconductor.org/packages/QFeatures) package and
 dedicated functions to enable extensive single-cell proteomics data
-processing, analysis and interpretation.
+processing, analysis and interpretation. In 2023, we also contributed
+to initial recommendations for performing, benchmarking and reporting
+single-cell proteomics experiments ([Gatto et
+al. 2023](https://www.nature.com/articles/s41592-023-01785-3) and
+[pre-print](https://arxiv.org/abs/2210.01020)). Our latest
+[work](https://doi.org/10.1101/2023.12.14.571792) proposes the
+*scplainer* method, based linear models to understand mass
+spectrometry-based single-cell proteomics data, that tackles many of
+the issues described above.
 
 ### Spatial proteomics
 
