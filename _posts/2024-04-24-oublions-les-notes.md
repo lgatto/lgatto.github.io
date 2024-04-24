@@ -1,5 +1,5 @@
 ---
-title: "Podcasts du LLL: repensons l'évaluation"
+title: "Podcasts du LLL: Et si on oubliait les notes?"
 tags: ["teaching", "education", "UCLouvain"]
 comments: false
 ---
