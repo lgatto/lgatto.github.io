@@ -239,16 +239,21 @@ Please do get in touch if you are interested in running workshops.
 
 ### Research articles
 
+Lynch MP, Wang Y, Gatto L, Culhane AC. *demuxSNP: supervised
+demultiplexing scRNAseq using cell hashing and SNPs*. bioRxiv
+2024.04.22.590526;
+doi:[10.1101/2024.04.22.590526](https://doi.org/10.1101/2024.04.22.590526).
+
 Pirenne S, Manzano-Núñez F, Loriot A, Cordi S, Desmet L, Aydin S,
 Hubert C, Toffoli S, Limaye N, Sempoux C, Komuta M, Gatto L, Lemaigre
-FP *Spatial transcriptomics profiling of gallbladder adenocarcinoma: a
-detailed two-case study of progression from precursor lesions to
-cancer*
+FP. *Spatial transcriptomics profiling of gallbladder adenocarcinoma:
+a detailed two-case study of progression from precursor lesions to
+cancer*. bioRxiv 2024.02.27.582232;
 doi:[10.1101/2024.02.27.582232](https://doi.org/10.1101/2024.02.27.582232).
 
 Ward B et al. *Deep plasma proteomics with data-independent
-acquisition: A fastlane towards biomarkers identification* (2024)
-bioRxiv
+acquisition: A fastlane towards biomarkers identification*. bioRxiv
+2024.02.23.581160;
 doi:[10.1101/2024.02.23.581160](https://doi.org/10.1101/2024.02.23.581160)
 
 Hauchamps P, Bayat B, Delandre S, Hamrouni M, Toussaint M, Temmerman
