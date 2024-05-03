@@ -343,6 +343,8 @@ the future.
 - A short interview, in French: [Evaluation dans l'enseignement
   supérieur : « UNgrading » ou évaluer et apprendre sans
   points](https://www.youtube.com/watch?v=i4KebCqSP8Q).
+- A [podcast](https://lgatto.github.io/oublions-les-notes/) (in
+  French) on "Et si on oubliait les notes?"
 
 
 [^1]: In *UNgrading, why rating students undermines learning (and what to do instead)*, Susan D. Blum (editor), 2020.
