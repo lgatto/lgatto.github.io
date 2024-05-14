@@ -79,6 +79,12 @@ sidebar:
   ULiège and is funded by the European Regional Development Fund (ERDF)
   awarded to L. Gatto and S. Jodogne.
 
+- **Loïc Guille** (ORCID:
+  [0000-0002-8387-1092](https://orcid.org/0000-0002-8387-1092),
+  GitHub: [loguille](https://github.com/loguille)) joined the lab in May 2024 as a
+  bioinformatician for [e-OMIX](https://www.eomix.be) a CBIO-led project.
+  He has a master's degree in bioinformatic from Lyon 1 university.
+
 ## Undergraduates
 
 - **Guillaume Deflandre** is a final year student in
