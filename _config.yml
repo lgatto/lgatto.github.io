@@ -18,7 +18,7 @@ teaser                   : /assets/images/slide-code.png  # path of fallback tea
 # breadcrumbs            : false # true, false (default)
 words_per_minute         : 200
 comments:
-  provider               : disqus # false (default), "disqus", "discourse", "facebook", "google-plus", "staticman", "custom"
+  provider               : false # false (default), "disqus", "discourse", "facebook", "google-plus", "staticman", "custom"
   disqus:
     shortname            : laurentgatto
   discourse:
@@ -93,7 +93,7 @@ author:
   keybase          : lgatto
   instagram        :
   lastfm           :
-  linkedin         : lgatto
+  linkedin         : # lgatto
   pinterest        :
   soundcloud       :
   stackoverflow    : # "123456/username" (the last part of your profile url, e.g. http://stackoverflow.com/users/123456/username)
@@ -234,8 +234,8 @@ defaults:
       layout: single
       author_profile: true
       read_time: true
-      comments: true
-      share: true
+      comments: false ## was true
+      share: false ## was true
       related: true
   # _pages
   - scope:
@@ -245,4 +245,4 @@ defaults:
       layout: single
       author_profile: true
       comments: false
-      share: true
+      share: false
