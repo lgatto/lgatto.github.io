@@ -85,6 +85,12 @@ sidebar:
   bioinformatician for [e-OMIX](https://www.eomix.be) a CBIO-led project.
   He has a master's degree in bioinformatic from Lyon 1 university.
 
+- **Riya Dogra** (GitHub: [rdogra8](https://github.com/rdogra8), is a PhD student at
+  de duve institute since June 2024, working on analysing PTMs using spatial and
+  single cell proteomics approach. She did a Master's in Systems Biology and Bioinformatics
+  from Panjab University, and worked in Genomics Research lab at CSIR-CCMB.
+
+
 ## Undergraduates
 
 - **Guillaume Deflandre** is a final year student in
