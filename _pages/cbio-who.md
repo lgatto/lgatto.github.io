@@ -101,16 +101,16 @@ sidebar:
 - **Guillaume Deflandre** is a final year student in
   [bio-engineering](https://uclouvain.be/fr/facultes/agro) and is
   pursuing his master's project on single-cell proteomics with Laurent
-  Gatto, Samuel Grégoire and Christophe Vanderaa.
+  Gatto and Samuel Grégoire.
 
-![CBIO lab photo](/images/CBIO-20231206.jpg)
+![CBIO lab photo](/images/CBIO-20240703.jpg)
 
-From left to right: Jérôme, Julie, Andrea, Enes, Guillaume, Samuel,
-Axelle, Christophe, Laurent and Philippe. Picture taken at the de Duve
-Institute on 6 December 2023.
+From left to right: Samuel, Riya, Enes, Andrea, Guillaume, Philippe,
+Axelle, Jérôme, Laurent, Loïc and Lieven (from the
+[SMCS](https://uclouvain.be/en/technology-platforms/smcs.html)). Julie
+is missing. Picture taken at the de Duve Institute on 3 July 2024.
 
 <!-- ## Remote members -->
-
 
 ## [R for Mass Spectrometry](https://www.rformassspectrometry.org/) core team
 
