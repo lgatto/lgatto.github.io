@@ -287,12 +287,6 @@ pediatric patients with new-onset type 1 diabetes* (2023) PLOS ONE
 18(11): e0294982
 doi:[10.1371/journal.pone.0294982](https://doi.org/10.1371/journal.pone.0294982).
 
-Grégoire S, Vanderaa C, Pyr dit Ruys S, Mazzucchelli G, Kune C,
-Vertommen D and Gatto L *Standardised workflow for mass
-spectrometry-based single-cell proteomics data processing and analysis
-using the `scp` package* arXiv arXiv:2310.13598;
-doi:[10.48550/2310.13598](https://doi.org/10.48550/arXiv.2310.13598).
-
 Cloos AS, Pollet H, Stommen A, Maja M, Lingurski M, Brichard B,
 Lambert C, Henriet P, Pierreux C, Pyr Dit Ruys S, Van Der Smissen P,
 Vikkula M, Gatto L, Martin M, Brouillard P, Vertommen D, Tyteca
@@ -847,15 +841,26 @@ href="http://www.ncbi.nlm.nih.gov/pubmed/19455208">PubMed</a>,
 
 ### Book chapters
 
-Christoforou A., Mulvey C., Breckels LM., Gatto L. and Lilley
-KS. [*Spatial Proteomics: Practical Considerations for Data Acquisition and Analysis in Protein Subcellular Localisation Studies*](http://pubs.rsc.org/en/content/chapter/bk9781849738088-00185/978-1-84973-808-8#!divabstract)
-in *Quantitative Proteomics*, 185-210, The Royal Society of Chemistry,
-2014.
+Grégoire S, Vanderaa C, Pyr dit Ruys S, Mazzucchelli G, Kune C,
+Vertommen D and Gatto L [Standardised workflow for mass
+spectrometry-based single-cell proteomics data processing and analysis
+using the `scp` package](https://doi.org/10.1007/978-1-0716-3934-4_14)
+In: Vegvari, A., Teppo, J., Zubarev, R.A. (eds) Mass Spectrometry
+Based Single Cell Proteomics. Methods in Molecular Biology,
+vol 2817. Humana, New York, NY ([arXiv
+pre-print](https://arxiv.org/abs/2310.13598)), April 2024.
 
-Breckels LM, Gibb S, Petyuk V and Gatto L
-[*R for Proteomics*](http://pubs.rsc.org/en/content/chapter/bk9781782624288-00321/978-1-78262-428-8#!divabstract)
-in *Proteome Informatics*, The Royal Society of Chemistry, November
+Breckels LM, Gibb S, Petyuk V and Gatto L [R for
+Proteomics](http://pubs.rsc.org/en/content/chapter/bk9781782624288-00321/978-1-78262-428-8#!divabstract).
+In: *Proteome Informatics*, The Royal Society of Chemistry, November
 2016.
+
+Christoforou A., Mulvey C., Breckels LM., Gatto L. and Lilley
+KS. [Spatial Proteomics: Practical Considerations for Data Acquisition
+and Analysis in Protein Subcellular Localisation
+Studies](http://pubs.rsc.org/en/content/chapter/bk9781849738088-00185/978-1-84973-808-8#!divabstract).
+In *Quantitative Proteomics*, 185-210, The Royal Society of Chemistry,
+2014.
 
 ### Technical Notes
 
