@@ -1,6 +1,6 @@
 ---
 permalink: /cbio-lab/
-title: "The lab"
+title: "The CBIO lab"
 excerpt: "General information about the CBIO group"
 modified: 2017-01-04
 author_profile: false
@@ -82,4 +82,4 @@ to keep both live and asynchronous conversations organised.
 
 On the fediverse at <a rel="me"
 href="https://fosstodon.org/@lgatto">lgatto@fosstodon.org</a> or by
-email ![contact email](/images/contact-email.png)
+email.

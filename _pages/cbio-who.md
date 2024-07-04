@@ -72,18 +72,29 @@ sidebar:
   and engineering at the Koç University. He is funded by a FNRS
   'Projet de Recherche' (PDR) awarded to L. Gatto.
 
-- **Jérôme Linden** (GitHub: [jerlinden](https://github.com/jerlinden))
-  joined the lab in November 2023 as a Project Manager for [e-OMIX](https://www.eomix.be),
-  a CBIO-led project aiming at establishing a collaborative
-  platform for the sharing and analyses of multiomics data. He has a PhD from
-  ULiège and is funded by the European Regional Development Fund (ERDF)
-  awarded to L. Gatto and S. Jodogne.
+- **Jérôme Linden** (GitHub:
+  [jerlinden](https://github.com/jerlinden)) joined the lab in
+  November 2023 as a Project Manager for
+  [e-OMIX](https://www.eomix.be), a CBIO-led project aiming at
+  establishing a collaborative platform for the sharing and analyses
+  of multiomics data. He has a PhD from ULiège and is funded by the
+  European Regional Development Fund (ERDF) awarded to L. Gatto and
+  S. Jodogne.
 
 - **Loïc Guille** (ORCID:
   [0000-0002-8387-1092](https://orcid.org/0000-0002-8387-1092),
-  GitHub: [loguille](https://github.com/loguille)) joined the lab in May 2024 as a
-  bioinformatician for [e-OMIX](https://www.eomix.be) a CBIO-led project.
-  He has a master's degree in bioinformatic from Lyon 1 university.
+  GitHub: [loguille](https://github.com/loguille)) joined the lab in
+  May 2024 as a bioinformatician for [e-OMIX](https://www.eomix.be) a
+  CBIO-led project.  He has a master's degree in bioinformatic from
+  Lyon 1 university.
+
+- **Riya Dogra** (GitHub: [rdogra8](https://github.com/rdogra8)), is a
+  PhD student at the de Duve Institute since June 2024, working on
+  analysing PTMs using spatial and single cell proteomics
+  approaches. She has a Master's in Systems Biology and Bioinformatics
+  from Panjab University, and worked in the Genomics Research lab at
+  CSIR-CCMB.
+
 
 ## Undergraduates
 
