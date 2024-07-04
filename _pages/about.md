@@ -239,6 +239,12 @@ Please do get in touch if you are interested in running workshops.
 
 ### Research articles
 
+Hauchamps P, Delandre S, Temmerman ST, Lin D, Gatto L. *Visual quality
+control with CytoMDS, a Bioconductor package for low dimensional
+representation of cytometry sample distances* bioRxiv
+2024.07.01.601465; doi:
+[10.1101/2024.07.01.601465](https://doi.org/10.1101/2024.07.01.601465).
+
 Lynch MP, Wang Y, Gatto L, Culhane AC. *demuxSNP: supervised
 demultiplexing scRNAseq using cell hashing and SNPs*. bioRxiv
 2024.04.22.590526;
