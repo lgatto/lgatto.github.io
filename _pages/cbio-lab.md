@@ -43,7 +43,7 @@ licences to allow everybody to freely read, re-use and mine it.
 
 # Good practice
 
-Software engineering and programming are an important aspect of our
+Software engineering and programming are an important aspects of our
 work. We hence try to adopt common good practice and coding style.
 
 See the
@@ -53,9 +53,11 @@ for some useful links.
 # Code of Conduct
 
 The lab is dedicated to providing a welcoming and harassment-free
-experience for everyone, and we expect cooperation from all members to
-help ensuring a safe environment for everybody. See the [Code of
-conduct](https://lgatto.github.io/cbio-coc/) page for a longer version.
+experience for everyone, and we expect cooperation from all members
+and collaborators to help ensuring a safe environment for
+everybody. See the [Code of
+conduct](https://lgatto.github.io/cbio-coc/) page for a longer
+version.
 
 # Funding
 
