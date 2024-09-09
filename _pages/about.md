@@ -250,7 +250,7 @@ doi:[10.1186/s12885-024-12770-0](https://doi.org/10.1186/s12885-024-12770-0)
 
 Ward B et al. *Deep Plasma Proteomics with Data-Independent
 Acquisition: Clinical Study Protocol Optimization with a COVID-19
-Cohort*. J. Proteome Res. (2024)
+Cohort*. (2024) J. Proteome Res. 23, 9, 3806–3822
 doi:[10.1021/acs.jproteome.4c00104](https://pubs.acs.org/doi/10.1021/acs.jproteome.4c00104)
 (pre-print
 [10.1101/2024.02.23.581160](https://doi.org/10.1101/2024.02.23.581160)).
