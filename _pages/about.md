@@ -602,7 +602,7 @@ Breckels LM, Holden S, Wonjar D, Mulvey CM, Christoforou A, Groen AJ,
 Kohlbacher O, Lilley KS, Gatto L. *Learning from heterogeneous data
 sources: an application in spatial proteomics*. PLoS Comput Biol. 2016
 May 13;12(5):e1004920,
-doi:[10.1371/journal.pcbi.1004920](http://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1004920),
+doi:[10.1371/journal.pcbi.1004920](http://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1004920)
 ([Software](http://bioconductor.org/packages/release/bioc/html/pRoloc.html))
 
 Fabre B, Korona D, Groen A, Vowinckel J, Gatto L, Deery MJ, Ralser M,
