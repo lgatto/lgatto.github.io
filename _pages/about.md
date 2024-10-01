@@ -13,8 +13,10 @@ header:
 
 ## Short bio
 
-Since September 2018, I am an Associate Professor of Bioinformatics at
-the [UCLouvain](https://uclouvain.be/en/index.html), in Belgium, and
+Since September 2018,
+
+I am an Full Professor of Bioinformatics at the
+[UCLouvain](https://uclouvain.be/en/index.html), in Belgium, and
 director of the Computational Biology and Bioinformatics (CBIO)
 group. I am located in the [de Duve
 Institute](http://www.deduveinstitute.be/), on the medical campus in
@@ -67,7 +69,7 @@ professional achievements. In addition to delivering great science and
 software, Bioconductor is a [welcoming and supportive
 community](https://bioconductor.org/about/community-advisory-board/).
 
-Before my current position at the UCLouvain, I was a Senior Research
+Before joining UCLouvain in September 2018, I was a Senior Research
 Associate in the Department of Biochemistry at the University of
 Cambridge. It's at the [Cambridge Centre for
 Proteomics](http://proteomics.bio.cam.ac.uk/) and the Computational
