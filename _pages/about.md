@@ -13,8 +13,6 @@ header:
 
 ## Short bio
 
-Since September 2018,
-
 I am an Full Professor of Bioinformatics at the
 [UCLouvain](https://uclouvain.be/en/index.html), in Belgium, and
 director of the Computational Biology and Bioinformatics (CBIO)
