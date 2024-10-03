@@ -241,9 +241,9 @@ Please do get in touch if you are interested in running workshops.
 
 Jenny, Drnevich, J. Tan Frederick, Almeida-Silva Fabricio, Castelo
 Robert, C. Culhane Aedin, Davis Sean, A. Doyle Maria, et
-al. 2024. [Learning and Teaching Biological Data Science in the
-Bioconductor Community](http://arxiv.org/abs/2410.01351) arXiv
-[Cs.CY] http://arxiv.org/abs/2410.01351.
+al. . *Learning and Teaching Biological Data Science in the
+Bioconductor Community* (2024) arXiv [Cs.CY]
+doi:[arXiv:2410.01351](http://arxiv.org/abs/2410.01351).
 
 Pirenne S, Manzano-Núñez F, Loriot A, Cordi S, Desmet L, Aydin S,
 Hubert C, Toffoli S, Limaye N, Sempoux C, Komuta M, Gatto L, Lemaigre
