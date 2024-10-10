@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.3">Jekyll</generator><link href="https://lgatto.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://lgatto.github.io/" rel="alternate" type="text/html" /><updated>2024-10-03T13:58:37+02:00</updated><id>https://lgatto.github.io/feed.xml</id><title type="html">~/</title><subtitle>Laurent Gatto&apos;s online home</subtitle><author><name>Laurent Gatto</name></author><entry><title type="html">On cats, farts and parrots.</title><link href="https://lgatto.github.io/ia-irss/" rel="alternate" type="text/html" title="On cats, farts and parrots." /><published>2024-05-30T00:00:00+02:00</published><updated>2024-05-30T00:00:00+02:00</updated><id>https://lgatto.github.io/ia-irss</id><content type="html" xml:base="https://lgatto.github.io/ia-irss/">&lt;p&gt;I was invited to contribute to a
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.3">Jekyll</generator><link href="https://lgatto.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://lgatto.github.io/" rel="alternate" type="text/html" /><updated>2024-10-10T07:38:06+02:00</updated><id>https://lgatto.github.io/feed.xml</id><title type="html">~/</title><subtitle>Laurent Gatto&apos;s online home</subtitle><author><name>Laurent Gatto</name></author><entry><title type="html">On cats, farts and parrots.</title><link href="https://lgatto.github.io/ia-irss/" rel="alternate" type="text/html" title="On cats, farts and parrots." /><published>2024-05-30T00:00:00+02:00</published><updated>2024-05-30T00:00:00+02:00</updated><id>https://lgatto.github.io/ia-irss</id><content type="html" xml:base="https://lgatto.github.io/ia-irss/">&lt;p&gt;I was invited to contribute to a
 &lt;a href=&quot;https://www.linkedin.com/feed/update/urn:li:activity:7201099969779351552/&quot;&gt;seminar/discussion&lt;/a&gt;
 on AI, and using language models in research. These are the notes I
 prepared my short presentation. I am not presenting anything new, or
@@ -448,7 +448,27 @@ tool justifies the harm.&lt;/p&gt;
 &lt;/blockquote&gt;
 
 &lt;p&gt;&lt;a href=&quot;https://www.citationneeded.news/ai-isnt-useless/&quot;&gt;AI isn’t useless. But is it worth
-it?&lt;/a&gt;, Molly White&lt;/p&gt;</content><author><name>Laurent Gatto</name></author><category term="AI" /><category term="ChatGPT" /><category term="UCLouvain" /><summary type="html">I was invited to contribute to a seminar/discussion on AI, and using language models in research. These are the notes I prepared my short presentation. I am not presenting anything new, or original - I will merely be sharing what I consider being the main take home messages from information I have been collecting since April 2023. I also realised that these don’t seem to be widely known among my immediate peers.</summary></entry><entry><title type="html">Podcasts du LLL: Et si on oubliait les notes?</title><link href="https://lgatto.github.io/oublions-les-notes/" rel="alternate" type="text/html" title="Podcasts du LLL: Et si on oubliait les notes?" /><published>2024-04-24T00:00:00+02:00</published><updated>2024-04-24T00:00:00+02:00</updated><id>https://lgatto.github.io/oublions-les-notes</id><content type="html" xml:base="https://lgatto.github.io/oublions-les-notes/">&lt;p&gt;Deuxième billet en français référençant un podcast du &lt;a href=&quot;https://uclouvain.be/fr/etudier/lll/a-propos.html&quot;&gt;Louvain
+it?&lt;/a&gt;, Molly White&lt;/p&gt;
+
+&lt;h1 id=&quot;update-2024-10-10&quot;&gt;Update (2024-10-10)&lt;/h1&gt;
+
+&lt;p&gt;There are many more relevant articles that could be added and
+referenced here, too many for me to keep up with. But the following
+&lt;a href=&quot;https://aus.social/@crumbleneedy/113280973349444816&quot;&gt;Mastodon post&lt;/a&gt;
+by &lt;em&gt;sneedy maccreedy&lt;/em&gt; and article it links to seem particularly
+relevant:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;hinton getting the nobel is a good time to re-read @emilymbender ‘s
+excellent piece on so-called ‘AI safety’ and different take on
+hinton than you’re likely to see in the next few days&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;The article is &lt;a href=&quot;https://medium.com/@emilymenonbender/talking-about-a-schism-is-ahistorical-3c454a77220f&quot;&gt;Talking about a ‘schism’ is
+ahistorical&lt;/a&gt;
+by Emily M. Bender (also cited above), documenting the phony shism
+rhetoric of AI safety fantasy on one hand and very real AI ethics on
+the other.&lt;/p&gt;</content><author><name>Laurent Gatto</name></author><category term="AI" /><category term="ChatGPT" /><category term="UCLouvain" /><summary type="html">I was invited to contribute to a seminar/discussion on AI, and using language models in research. These are the notes I prepared my short presentation. I am not presenting anything new, or original - I will merely be sharing what I consider being the main take home messages from information I have been collecting since April 2023. I also realised that these don’t seem to be widely known among my immediate peers.</summary></entry><entry><title type="html">Podcasts du LLL: Et si on oubliait les notes?</title><link href="https://lgatto.github.io/oublions-les-notes/" rel="alternate" type="text/html" title="Podcasts du LLL: Et si on oubliait les notes?" /><published>2024-04-24T00:00:00+02:00</published><updated>2024-04-24T00:00:00+02:00</updated><id>https://lgatto.github.io/oublions-les-notes</id><content type="html" xml:base="https://lgatto.github.io/oublions-les-notes/">&lt;p&gt;Deuxième billet en français référençant un podcast du &lt;a href=&quot;https://uclouvain.be/fr/etudier/lll/a-propos.html&quot;&gt;Louvain
 Learning Lab&lt;/a&gt; (le
 premier est &lt;a href=&quot;https://lgatto.github.io/podcast-eval/&quot;&gt;ici&lt;/a&gt;). Cette
 fois, je fais un peu d’auto-promotion:&lt;/p&gt;
