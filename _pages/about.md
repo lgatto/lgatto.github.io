@@ -13,8 +13,6 @@ header:
 
 ## Short bio
 
-Since September 2018,
-
 I am an Full Professor of Bioinformatics at the
 [UCLouvain](https://uclouvain.be/en/index.html), in Belgium, and
 director of the Computational Biology and Bioinformatics (CBIO)
@@ -240,6 +238,12 @@ Please do get in touch if you are interested in running workshops.
 > [PubMed](https://www.ncbi.nlm.nih.gov/pubmed/?term=gatto+laurent).
 
 ### Research articles
+
+Jenny, Drnevich, J. Tan Frederick, Almeida-Silva Fabricio, Castelo
+Robert, C. Culhane Aedin, Davis Sean, A. Doyle Maria, et
+al. . *Learning and Teaching Biological Data Science in the
+Bioconductor Community* (2024) arXiv [Cs.CY]
+doi:[arXiv:2410.01351](http://arxiv.org/abs/2410.01351).
 
 Pirenne S, Manzano-Núñez F, Loriot A, Cordi S, Desmet L, Aydin S,
 Hubert C, Toffoli S, Limaye N, Sempoux C, Komuta M, Gatto L, Lemaigre
