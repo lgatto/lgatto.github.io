@@ -95,13 +95,12 @@ sidebar:
   from Panjab University, and worked in the Genomics Research lab at
   CSIR-CCMB.
 
-
-## Undergraduates
-
-- **Guillaume Deflandre** is a final year student in
-  [bio-engineering](https://uclouvain.be/fr/facultes/agro) and is
-  pursuing his master's project on single-cell proteomics with Laurent
-  Gatto and Samuel Grégoire.
+- **Guillaume Deflandre** (GitHub: [guideflandre](https://github.com/guideflandre)),
+  did his Master's thesis in the CBIO lab and is now pursuing a PhD in
+  biomedical sciences at the de Duve institute since October 2024. His
+  project is centered around the improvement of peptide identifications
+  in single-cell proteomics. He has a Master's degree in chemistry and
+  bio-industries from the UCLouvain.
 
 ![CBIO lab photo](/images/CBIO-20240703.jpg)
 
