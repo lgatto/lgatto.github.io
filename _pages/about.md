@@ -239,6 +239,12 @@ Please do get in touch if you are interested in running workshops.
 
 ### Research articles
 
+Kohrs FE, Kazezian V, Bagley R, Boisgontier MP, Brod S, Carneiro CFD,
+..., Weissgerber TL . *Collaborating with early career researchers to
+enhance the future of scholarly communication: A guide for
+publishers*. (2024)
+[https://doi.org/10.31219/osf.io/pbvfz](https://doi.org/10.31219/osf.io/pbvfz).
+
 Jenny, Drnevich, J. Tan Frederick, Almeida-Silva Fabricio, Castelo
 Robert, C. Culhane Aedin, Davis Sean, A. Doyle Maria, et
 al. . *Learning and Teaching Biological Data Science in the
