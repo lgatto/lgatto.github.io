@@ -95,17 +95,23 @@ sidebar:
   from Panjab University, and worked in the Genomics Research lab at
   CSIR-CCMB.
 
-- **Guillaume Deflandre** (GitHub: [guideflandre](https://github.com/guideflandre)),
-  did his Master's thesis in the CBIO lab and is now pursuing a PhD in
-  biomedical sciences at the de Duve institute since October 2024. His
-  project is centered around the improvement of peptide identifications
-  in single-cell proteomics. He has a Master's degree in chemistry and
+- **Guillaume Deflandre** (GitHub:
+  [guideflandre](https://github.com/guideflandre)), did his Master's
+  thesis in the CBIO lab and is now pursuing a PhD in biomedical
+  sciences at the de Duve institute since October 2024. His project is
+  centered around the improvement of peptide identifications in
+  single-cell proteomics. He has a Master's degree in chemistry and
   bio-industries from the UCLouvain.
 
 ## Undergraduates
 
-- **Léopold Guyot** (GitHub: [leopoldguyot](https://github.com/leopoldguyot)), is a final year Bioinformatics student at the "Université Libre de Bruxelles" (ULB).
-    He is currently working on his Master's thesis on single-cell proteomics in the CBIO lab under the supervision of Laurent Gatto and [Matthieu Defrance](https://www.ulb.be/fr/matthieu-defrance-1). 
+- **Léopold Guyot** (GitHub:
+    [leopoldguyot](https://github.com/leopoldguyot)), is a final year
+    Bioinformatics student at the "Université Libre de Bruxelles"
+    (ULB).  He is currently working on his Master's thesis on
+    single-cell proteomics in the CBIO lab under the supervision of
+    Laurent Gatto and [Matthieu
+    Defrance](https://www.ulb.be/fr/matthieu-defrance-1).
 
 
 ![CBIO lab photo](/images/CBIO-20240703.jpg)
