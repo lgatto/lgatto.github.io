@@ -102,6 +102,12 @@ sidebar:
   in single-cell proteomics. He has a Master's degree in chemistry and
   bio-industries from the UCLouvain.
 
+## Undergraduates
+
+- **Léopold Guyot** (GitHub: [leopoldguyot](https://github.com/leopoldguyot)), is a final year Bioinformatics student at the "Université Libre de Bruxelles" (ULB).
+    He is currently working on his Master's thesis on single-cell proteomics in the CBIO lab under the supervision of Laurent Gatto and [Matthieu Defrance](https://www.ulb.be/fr/matthieu-defrance-1). 
+
+
 ![CBIO lab photo](/images/CBIO-20240703.jpg)
 
 From left to right: Samuel, Riya, Enes, Andrea, Guillaume, Philippe,
