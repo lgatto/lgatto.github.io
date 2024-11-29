@@ -244,7 +244,7 @@ demultiplexing single-cell RNA sequencing using cell hashing and
 SNPs*, GigaScience, Volume 13, 2024, giae090
 doi:[10.1093/gigascience/giae090](https://doi.org/10.1093/gigascience/giae090)
 (pre-print
-[10.1101/2024.04.22.590526](https://doi.org/10.1101/2024.04.22.590526).
+[10.1101/2024.04.22.590526](https://doi.org/10.1101/2024.04.22.590526)).
 
 Kohrs FE, Kazezian V, Bagley R, Boisgontier MP, Brod S, Carneiro CFD,
 ..., Weissgerber TL . *Collaborating with early career researchers to
