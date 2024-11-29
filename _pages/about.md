@@ -239,6 +239,13 @@ Please do get in touch if you are interested in running workshops.
 
 ### Research articles
 
+Lynch MP, Wang Y, Ho Sui S, Gatto L, Culhane AC, *demuxSNP: supervised
+demultiplexing single-cell RNA sequencing using cell hashing and
+SNPs*, GigaScience, Volume 13, 2024, giae090
+doi:[10.1093/gigascience/giae090](https://doi.org/10.1093/gigascience/giae090)
+(pre-print
+[10.1101/2024.04.22.590526](https://doi.org/10.1101/2024.04.22.590526).
+
 Kohrs FE, Kazezian V, Bagley R, Boisgontier MP, Brod S, Carneiro CFD,
 ..., Weissgerber TL . *Collaborating with early career researchers to
 enhance the future of scholarly communication: A guide for
@@ -272,11 +279,6 @@ control with CytoMDS, a Bioconductor package for low dimensional
 representation of cytometry sample distances* bioRxiv
 2024.07.01.601465; doi:
 [10.1101/2024.07.01.601465](https://doi.org/10.1101/2024.07.01.601465).
-
-Lynch MP, Wang Y, Gatto L, Culhane AC. *demuxSNP: supervised
-demultiplexing scRNAseq using cell hashing and SNPs*. bioRxiv
-2024.04.22.590526;
-doi:[10.1101/2024.04.22.590526](https://doi.org/10.1101/2024.04.22.590526).
 
 Hauchamps P, Bayat B, Delandre S, Hamrouni M, Toussaint M, Temmerman
 S, Lin D, Gatto L *CytoPipeline and CytoPipelineGUI: a Bioconductor R
