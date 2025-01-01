@@ -239,6 +239,11 @@ Please do get in touch if you are interested in running workshops.
 
 ### Research articles
 
+Pollé OG, Pyr dit Ruys S, Lemmer J et al. *Plasma proteomics in
+children with new-onset type 1 diabetes identifies new potential
+biomarkers of partial remission*. Sci Rep 14, 20798 (2024)
+[10.1038/s41598-024-71717-4](https://doi.org/10.1038/s41598-024-71717-4).
+
 Lynch MP, Wang Y, Ho Sui S, Gatto L, Culhane AC, *demuxSNP: supervised
 demultiplexing single-cell RNA sequencing using cell hashing and
 SNPs*, GigaScience, Volume 13, 2024, giae090
@@ -248,14 +253,14 @@ doi:[10.1093/gigascience/giae090](https://doi.org/10.1093/gigascience/giae090)
 
 Kohrs FE, Kazezian V, Bagley R, Boisgontier MP, Brod S, Carneiro CFD,
 ..., Weissgerber TL . *Collaborating with early career researchers to
-enhance the future of scholarly communication: A guide for
-publishers*. (2024)
+enhance the future of scholarly communication: A guide for publishers*
+(2024)
 [https://doi.org/10.31219/osf.io/pbvfz](https://doi.org/10.31219/osf.io/pbvfz).
 
 Jenny, Drnevich, J. Tan Frederick, Almeida-Silva Fabricio, Castelo
-Robert, C. Culhane Aedin, Davis Sean, A. Doyle Maria, et
-al. . *Learning and Teaching Biological Data Science in the
-Bioconductor Community* (2024) arXiv [Cs.CY]
+Robert, C. Culhane Aedin, Davis Sean, A. Doyle Maria, et al. *Learning
+and Teaching Biological Data Science in the Bioconductor Community*
+(2024) arXiv [Cs.CY]
 doi:[arXiv:2410.01351](http://arxiv.org/abs/2410.01351).
 
 Pirenne S, Manzano-Núñez F, Loriot A, Cordi S, Desmet L, Aydin S,
@@ -298,7 +303,7 @@ mass spectrometry-based single-cell proteomics data* (2023) bioRxiv
 2023.12.14.571792;
 doi:[10.1101/2023.12.14.571792](https://doi.org/10.1101/2023.12.14.571792).
 
-Harvengt AA, Polle OG, Martin M, van Maanen A, Gatto L, et al.
+Harvengt AA, Pollé OG, Martin M, van Maanen A, Gatto L, et al.
 *Post-Hypoglycemic hyperglycemia are highly relevant markers for
 stratification of glycemic variability and partial remission status of
 pediatric patients with new-onset type 1 diabetes* (2023) PLOS ONE
