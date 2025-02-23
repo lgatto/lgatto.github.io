@@ -239,6 +239,10 @@ Please do get in touch if you are interested in running workshops.
 
 ### Research articles
 
+<!-- Morelle J *et al.* *Mass Spectrometry With Data-Independent -->
+<!-- Acquisition for the Identification of Target Antigens in Membranous -->
+<!-- Nephropathy* (2025) American Journal of Kidney Disease, in press. -->
+
 Pollé OG, Pyr dit Ruys S, Lemmer J et al. *Plasma proteomics in
 children with new-onset type 1 diabetes identifies new potential
 biomarkers of partial remission*. Sci Rep 14, 20798 (2024)
