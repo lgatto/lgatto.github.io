@@ -243,6 +243,13 @@ Please do get in touch if you are interested in running workshops.
 <!-- Acquisition for the Identification of Target Antigens in Membranous -->
 <!-- Nephropathy* (2025) American Journal of Kidney Disease, in press. -->
 
+Hauchamps P, Delandre S, Temmerman ST, Lin D, Gatto L. *Visual quality
+control with CytoMDS, a Bioconductor package for low dimensional
+representation of cytometry sample distances* Cytometry Part A, 2025;
+0:1–10 [10.1002/cyto.a.24921](https://doi.org/10.1002/cyto.a.24921)
+(pre-print
+[10.1101/2024.07.01.601465](https://doi.org/10.1101/2024.07.01.601465)).
+
 Pollé OG, Pyr dit Ruys S, Lemmer J et al. *Plasma proteomics in
 children with new-onset type 1 diabetes identifies new potential
 biomarkers of partial remission*. Sci Rep 14, 20798 (2024)
@@ -283,11 +290,6 @@ doi:[10.1021/acs.jproteome.4c00104](https://pubs.acs.org/doi/10.1021/acs.jproteo
 (pre-print
 [10.1101/2024.02.23.581160](https://doi.org/10.1101/2024.02.23.581160)).
 
-Hauchamps P, Delandre S, Temmerman ST, Lin D, Gatto L. *Visual quality
-control with CytoMDS, a Bioconductor package for low dimensional
-representation of cytometry sample distances* bioRxiv
-2024.07.01.601465; doi:
-[10.1101/2024.07.01.601465](https://doi.org/10.1101/2024.07.01.601465).
 
 Hauchamps P, Bayat B, Delandre S, Hamrouni M, Toussaint M, Temmerman
 S, Lin D, Gatto L *CytoPipeline and CytoPipelineGUI: a Bioconductor R
