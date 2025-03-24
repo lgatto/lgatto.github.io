@@ -103,6 +103,16 @@ sidebar:
   single-cell proteomics. He has a Master's degree in chemistry and
   bio-industries from the UCLouvain.
 
+- **Matthieu Hodeige** is a joint PhD student in biomedical sciences
+  between the CBIO Lab and the proteomics division of the [Mass
+  Spectrometry
+  Laboratory](https://www.mslab.uliege.be/cms/c_6417994/en/mass-spectrometry-laboratory)
+  at the University of Liège, led by Gabriel Mazzucchelli. His
+  research focuses on developing a cellular-scale spatial proteomics
+  method by combining single-cell proteomics and spatial proteomics,
+  enabling the study of tissue heterogeneity in complex biological
+  systems.
+
 ## Undergraduates
 
 - **Léopold Guyot** (GitHub:
