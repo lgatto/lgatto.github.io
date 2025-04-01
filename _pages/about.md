@@ -239,9 +239,10 @@ Please do get in touch if you are interested in running workshops.
 
 ### Research articles
 
-<!-- Morelle J *et al.* *Mass Spectrometry With Data-Independent -->
-<!-- Acquisition for the Identification of Target Antigens in Membranous -->
-<!-- Nephropathy* (2025) American Journal of Kidney Disease, in press. -->
+Morelle J *et al.* *Mass Spectrometry With Data-Independent
+Acquisition for the Identification of Target Antigens in Membranous
+Nephropathy* (2025) American Journal of Kidney Disease, [*in
+press*](https://www.ajkd.org/article/S0272-6386(25)00717-6/fulltext).
 
 Hauchamps P, Delandre S, Temmerman ST, Lin D, Gatto L. *Visual quality
 control with CytoMDS, a Bioconductor package for low dimensional
