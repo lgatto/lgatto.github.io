@@ -123,7 +123,13 @@ sidebar:
     Laurent Gatto and [Matthieu
     Defrance](https://www.ulb.be/fr/matthieu-defrance-1).
 
-
+- **Margot Refuge** (GitHub:
+  [margotrfge](https://github.com/margotrfge)), is a Master’s student
+  in biomedical sciences at UCLouvain. She is currently working on her 
+  thesis in the CBIO lab on the analysis of kinematic data to evaluate 
+  the therapeutic efficiency of cell therapy in a spinal cord injury model,
+  under the supervision of Pr. Laurent Gatto and Pr. Anne Des Rieux.
+  
 ![CBIO lab photo](/images/CBIO-20240703.jpg)
 
 From left to right: Samuel, Riya, Enes, Andrea, Guillaume, Philippe,
