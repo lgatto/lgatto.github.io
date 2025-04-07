@@ -120,3 +120,27 @@ The full script is available
 [here](https://gist.github.com/lgatto/4fa4b3a8a6668a6b755b47da40d8ca81). The
 fun part is of course to play with the parameters, which is left as an
 exercise for the reader :-).
+
+
+**Update 2025-04-07:**
+
+I can across this [mastodon
+post](https://mastodon.social/@safest_integer/114296256313964335) with
+this elegant code chunk to generate a similar figure:
+
+
+```r
+library(tidyverse)
+crossing(x = 0:10, y = x) |>
+    mutate(dx  =  rnorm(n(), 0, (y/20)^1.5),
+           dy  =  rnorm(n(), 0, (y/20)^1.5)) |>
+    ggplot() +
+    geom_tile(aes(x = x+dx, y = y+dy, fill = y),
+              colour = 'black', lwd = 2,
+              width = 1, height = 1,
+              alpha = 0.8, show.legend = FALSE) +
+    scale_fill_gradient(high = '#9f025e', low = '#f9c929') +
+    scale_y_reverse() + theme_void()
+```
+
+![Grid, by use sagest_integer, via mastodon](/images/grid-safest_integer.png)
