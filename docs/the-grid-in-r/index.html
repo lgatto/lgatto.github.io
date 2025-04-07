@@ -392,6 +392,27 @@ show here.</p>
 fun part is of course to play with the parameters, which is left as an
 exercise for the reader :-).</p>
 
+<p><strong>Update 2025-04-07:</strong></p>
+
+<p>I can across this <a href="https://mastodon.social/@safest_integer/114296256313964335">mastodon
+post</a> with
+this elegant code chunk to generate a similar figure:</p>
+
+<div class="language-r highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">library</span><span class="p">(</span><span class="n">tidyverse</span><span class="p">)</span><span class="w">
+</span><span class="n">crossing</span><span class="p">(</span><span class="n">x</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">0</span><span class="o">:</span><span class="m">10</span><span class="p">,</span><span class="w"> </span><span class="n">y</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">x</span><span class="p">)</span><span class="w"> </span><span class="o">|&gt;</span><span class="w">
+    </span><span class="n">mutate</span><span class="p">(</span><span class="n">dx</span><span class="w">  </span><span class="o">=</span><span class="w">  </span><span class="n">rnorm</span><span class="p">(</span><span class="n">n</span><span class="p">(),</span><span class="w"> </span><span class="m">0</span><span class="p">,</span><span class="w"> </span><span class="p">(</span><span class="n">y</span><span class="o">/</span><span class="m">20</span><span class="p">)</span><span class="o">^</span><span class="m">1.5</span><span class="p">),</span><span class="w">
+           </span><span class="n">dy</span><span class="w">  </span><span class="o">=</span><span class="w">  </span><span class="n">rnorm</span><span class="p">(</span><span class="n">n</span><span class="p">(),</span><span class="w"> </span><span class="m">0</span><span class="p">,</span><span class="w"> </span><span class="p">(</span><span class="n">y</span><span class="o">/</span><span class="m">20</span><span class="p">)</span><span class="o">^</span><span class="m">1.5</span><span class="p">))</span><span class="w"> </span><span class="o">|&gt;</span><span class="w">
+    </span><span class="n">ggplot</span><span class="p">()</span><span class="w"> </span><span class="o">+</span><span class="w">
+    </span><span class="n">geom_tile</span><span class="p">(</span><span class="n">aes</span><span class="p">(</span><span class="n">x</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">x</span><span class="o">+</span><span class="n">dx</span><span class="p">,</span><span class="w"> </span><span class="n">y</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">y</span><span class="o">+</span><span class="n">dy</span><span class="p">,</span><span class="w"> </span><span class="n">fill</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">y</span><span class="p">),</span><span class="w">
+              </span><span class="n">colour</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">'black'</span><span class="p">,</span><span class="w"> </span><span class="n">lwd</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">2</span><span class="p">,</span><span class="w">
+              </span><span class="n">width</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">1</span><span class="p">,</span><span class="w"> </span><span class="n">height</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">1</span><span class="p">,</span><span class="w">
+              </span><span class="n">alpha</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">0.8</span><span class="p">,</span><span class="w"> </span><span class="n">show.legend</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">FALSE</span><span class="p">)</span><span class="w"> </span><span class="o">+</span><span class="w">
+    </span><span class="n">scale_fill_gradient</span><span class="p">(</span><span class="n">high</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">'#9f025e'</span><span class="p">,</span><span class="w"> </span><span class="n">low</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">'#f9c929'</span><span class="p">)</span><span class="w"> </span><span class="o">+</span><span class="w">
+    </span><span class="n">scale_y_reverse</span><span class="p">()</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">theme_void</span><span class="p">()</span><span class="w">
+</span></code></pre></div></div>
+
+<p><img src="/images/grid-safest_integer.png" alt="Grid, by use sagest_integer, via mastodon" /></p>
+
         
       </section>
 
