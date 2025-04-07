@@ -113,6 +113,15 @@ sidebar:
   enabling the study of tissue heterogeneity in complex biological
   systems.
 
+- **Shabnam Zaman** (ORCID:
+  [0000-0001-5399-0130](https://orcid.org/0000-0001-5399-0130),
+  Github: [shabnamzaman](https://github.com/shabnamzaman)) joined the
+  lab in December 2024 as a researcher focusing on single-cell omics
+  technologies as part of the EPILUNG-CARE consortium. She has a PhD
+  in molecular evolutionary biology from Vrije Universiteit Brussel
+  and is funded by an Action de Recherche Concertée (ARC) project
+  awarded to L. Gatto, C. Pilette and C. De Smet.
+
 ## Undergraduates
 
 - **Léopold Guyot** (GitHub:
@@ -125,11 +134,11 @@ sidebar:
 
 - **Margot Refuge** (GitHub:
   [margotrfge](https://github.com/margotrfge)), is a Master’s student
-  in biomedical sciences at UCLouvain. She is currently working on her 
-  thesis in the CBIO lab on the analysis of kinematic data to evaluate 
+  in biomedical sciences at UCLouvain. She is currently working on her
+  thesis in the CBIO lab on the analysis of kinematic data to evaluate
   the therapeutic efficiency of cell therapy in a spinal cord injury model,
   under the supervision of Pr. Laurent Gatto and Pr. Anne Des Rieux.
-  
+
 ![CBIO lab photo](/images/CBIO-20240703.jpg)
 
 From left to right: Samuel, Riya, Enes, Andrea, Guillaume, Philippe,
