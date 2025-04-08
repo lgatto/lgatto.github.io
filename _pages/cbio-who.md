@@ -88,6 +88,13 @@ sidebar:
   CBIO-led project.  He has a master's degree in bioinformatic from
   Lyon 1 university.
 
+- **Molka Anaghim Ftouhi** (Github:
+  [molkaanaghimftouhi](https://github.com/molkaanaghimftouhi))
+  joined the lab in September 2024 as a software engineer for e-OMIX a
+  CBIO-led project.  She has an engineering degree from National School
+  of Electronics and Telecommunications of Sfax. She is responsible for
+  developing the web application of the project.
+  
 - **Riya Dogra** (GitHub: [rdogra8](https://github.com/rdogra8)), is a
   PhD student at the de Duve Institute since June 2024, working on
   analysing PTMs using spatial and single cell proteomics
