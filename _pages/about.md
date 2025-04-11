@@ -247,7 +247,8 @@ press*](https://www.ajkd.org/article/S0272-6386(25)00717-6/fulltext).
 Hauchamps P, Delandre S, Temmerman ST, Lin D, Gatto L. *Visual quality
 control with CytoMDS, a Bioconductor package for low dimensional
 representation of cytometry sample distances* Cytometry Part A, 2025;
-0:1–10 [10.1002/cyto.a.24921](https://doi.org/10.1002/cyto.a.24921)
+107: 177-186
+[10.1002/cyto.a.24921](https://doi.org/10.1002/cyto.a.24921)
 (pre-print
 [10.1101/2024.07.01.601465](https://doi.org/10.1101/2024.07.01.601465)).
 
