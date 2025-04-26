@@ -1059,7 +1059,7 @@ European Bioinformatics Institute, Hinxton, UK, 8 March 2016.
 
 ## Get in touch
 
-On the fediverse at <a rel="me" href="https://fosstodon.org/@lgatto">lgatto@fosstodon.org</a>,
+On the fediverse at <a rel="me" href="https://fediscience.org/@lgatto">lgatto@fediscience.org</a>,
 by email at `name.surname<at>institution.be`, via a
 [Github](https://github.com/lgatto) issue on a relevant repo or on the
 [Bioconductor community slack](https://bioc-community.herokuapp.com/).
