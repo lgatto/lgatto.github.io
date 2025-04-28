@@ -239,6 +239,13 @@ Please do get in touch if you are interested in running workshops.
 
 ### Research articles
 
+Jenny, Drnevich, J. Tan Frederick, Almeida-Silva Fabricio, Castelo
+Robert, C. Culhane Aedin, Davis Sean, A. Doyle Maria, et al. *Learning
+and Teaching Biological Data Science in the Bioconductor Community*
+PLoS Computational Biology (2025) 21(4): e1012925 doi:10.1371/
+[https://doi.org/10.1371/journal.pcbi.1012925](journal.pcbi.1012925)
+(pre-print doi:[arXiv:2410.01351](http://arxiv.org/abs/2410.01351)).
+
 Morelle J *et al.* *Mass Spectrometry With Data-Independent
 Acquisition for the Identification of Target Antigens in Membranous
 Nephropathy* (2025) American Journal of Kidney Disease, [*in
@@ -270,12 +277,6 @@ enhance the future of scholarly communication: A guide for publishers*
 (2024)
 [https://doi.org/10.31219/osf.io/pbvfz](https://doi.org/10.31219/osf.io/pbvfz).
 
-Jenny, Drnevich, J. Tan Frederick, Almeida-Silva Fabricio, Castelo
-Robert, C. Culhane Aedin, Davis Sean, A. Doyle Maria, et al. *Learning
-and Teaching Biological Data Science in the Bioconductor Community*
-(2024) arXiv [Cs.CY]
-doi:[arXiv:2410.01351](http://arxiv.org/abs/2410.01351).
-
 Pirenne S, Manzano-Núñez F, Loriot A, Cordi S, Desmet L, Aydin S,
 Hubert C, Toffoli S, Limaye N, Sempoux C, Komuta M, Gatto L, Lemaigre
 FP. *Spatial transcriptomics profiling of gallbladder adenocarcinoma:
@@ -291,7 +292,6 @@ Cohort*. (2024) J. Proteome Res. 23, 9, 3806–3822
 doi:[10.1021/acs.jproteome.4c00104](https://pubs.acs.org/doi/10.1021/acs.jproteome.4c00104)
 (pre-print
 [10.1101/2024.02.23.581160](https://doi.org/10.1101/2024.02.23.581160)).
-
 
 Hauchamps P, Bayat B, Delandre S, Hamrouni M, Toussaint M, Temmerman
 S, Lin D, Gatto L *CytoPipeline and CytoPipelineGUI: a Bioconductor R
