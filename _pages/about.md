@@ -242,8 +242,8 @@ Please do get in touch if you are interested in running workshops.
 Jenny, Drnevich, J. Tan Frederick, Almeida-Silva Fabricio, Castelo
 Robert, C. Culhane Aedin, Davis Sean, A. Doyle Maria, et al. *Learning
 and Teaching Biological Data Science in the Bioconductor Community*
-PLoS Computational Biology (2025) 21(4): e1012925 doi:10.1371/
-[https://doi.org/10.1371/journal.pcbi.1012925](journal.pcbi.1012925)
+PLoS Computational Biology (2025) 21(4): e1012925
+doi:[10.1371/journal.pcbi.1012925](https://doi.org/10.1371/journal.pcbi.1012925)
 (pre-print doi:[arXiv:2410.01351](http://arxiv.org/abs/2410.01351)).
 
 Morelle J *et al.* *Mass Spectrometry With Data-Independent
