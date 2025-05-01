@@ -58,13 +58,6 @@ sidebar:
   Didier Vertommen, who runs the institute's mass spectrometry core
   facility.
 
-- **Andrea Vicini** (Github:
-  [andreavicini](https://github.com/andreavicini)) joined the lab in
-  October 2022 as a research assistant in bioinformatics. He focuses
-  on integrative multi-omics approach to study infectious diseases as
-  part of the large, inter-institute
-  [HYGIEIA](https://www.saintluc.be/fr/hygieia) project.
-
 - **Enes Sefa Ayar** (Github:
   [EnesSefaAyar](https://github.com/EnesSefaAyar)) joined the lab in
   November 2023 as a PhD student working on quantitative analysis of
@@ -94,7 +87,7 @@ sidebar:
   CBIO-led project.  She has an engineering degree from National School
   of Electronics and Telecommunications of Sfax. She is responsible for
   developing the web application of the project.
-  
+
 - **Riya Dogra** (GitHub: [rdogra8](https://github.com/rdogra8)), is a
   PhD student at the de Duve Institute since June 2024, working on
   analysing PTMs using spatial and single cell proteomics
@@ -232,6 +225,15 @@ is missing. Picture taken at the de Duve Institute on 3 July 2024.
   data.
 
 ## Alumni
+
+- **Andrea Vicini** (Github:
+  [andreavicini](https://github.com/andreavicini)) joined the lab from
+  October 2022 to May 2025 as a research assistant in
+  bioinformatics. He focuses on integrative multi-omics approach to
+  study infectious diseases as part of the large, inter-institute
+  [HYGIEIA](https://www.saintluc.be/fr/hygieia) project and developed
+  the [MDSvis](https://github.com/UCLouvain-CBIO/MDSvis) shiny
+  application.
 
 - **Christophe Vanderaa** (ORCID:
   [0000-0001-7443-5427](https://orcid.org/0000-0001-7443-5427),
