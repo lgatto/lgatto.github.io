@@ -83,5 +83,5 @@ to keep both live and asynchronous conversations organised.
 # Contact
 
 On the fediverse at <a rel="me"
-href="https://fosstodon.org/@lgatto">lgatto@fosstodon.org</a> or by
+href="https://fediscience.org/@lgatto">lgatto@fediscience.org</a> or by
 email.
