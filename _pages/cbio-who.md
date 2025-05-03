@@ -256,7 +256,7 @@ is missing. Picture taken at the de Duve Institute on 3 July 2024.
   flow cytometry data.
 
 - **Kristína Gömöryová**
-  (Github:[KristinaGomoryova](https://github.com/KristinaGomoryova))
+  (Github: [KristinaGomoryova](https://github.com/KristinaGomoryova))
   joined the lab in September 2022 as an OpenMS intern. She is doing
   her PhD in Animal Physiology and Immunology in the lab of
   [prof. Bryja](https://www.sci.muni.cz/ofiz/en/bryja/) at Masaryk
