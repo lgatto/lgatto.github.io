@@ -1,4 +1,51 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.3">Jekyll</generator><link href="https://lgatto.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://lgatto.github.io/" rel="alternate" type="text/html" /><updated>2025-05-03T15:55:27+02:00</updated><id>https://lgatto.github.io/feed.xml</id><title type="html">~/</title><subtitle>Laurent Gatto&apos;s online home</subtitle><author><name>Laurent Gatto</name></author><entry><title type="html">On cats, farts and parrots.</title><link href="https://lgatto.github.io/ia-irss/" rel="alternate" type="text/html" title="On cats, farts and parrots." /><published>2024-05-30T00:00:00+02:00</published><updated>2024-05-30T00:00:00+02:00</updated><id>https://lgatto.github.io/ia-irss</id><content type="html" xml:base="https://lgatto.github.io/ia-irss/">&lt;p&gt;I was invited to contribute to a
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.3">Jekyll</generator><link href="https://lgatto.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://lgatto.github.io/" rel="alternate" type="text/html" /><updated>2025-05-18T14:59:49+02:00</updated><id>https://lgatto.github.io/feed.xml</id><title type="html">~/</title><subtitle>Laurent Gatto&apos;s online home</subtitle><author><name>Laurent Gatto</name></author><entry><title type="html">6 Questions We Should Ask Before Adopting a New Technology</title><link href="https://lgatto.github.io/neil-postman-six-question-technology/" rel="alternate" type="text/html" title="6 Questions We Should Ask Before Adopting a New Technology" /><published>2025-05-18T00:00:00+02:00</published><updated>2025-05-18T00:00:00+02:00</updated><id>https://lgatto.github.io/neil-postman-six-question-technology</id><content type="html" xml:base="https://lgatto.github.io/neil-postman-six-question-technology/">&lt;p&gt;I stumbled across &lt;a href=&quot;https://tldr.nettime.org/@_elena@mastodon.social/114522680510446087&quot;&gt;this
+post&lt;/a&gt;
+on mastodon, that directed me to 6 questions what one should ask
+before adopting a new technology. These questions where posed by &lt;a href=&quot;https://en.wikipedia.org/wiki/Neil_Postman&quot;&gt;Neil
+Postman&lt;/a&gt;, a writer and
+academic quite some time ago. A reply in that same thread add a link
+to a 1988 &lt;a href=&quot;https://youtu.be/dBlfPhsrvtw?si=RcaLON8mKESvh_hI&quot;&gt;talk&lt;/a&gt;
+where he expands one them.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;What is the problem that this new technology addresses?&lt;/li&gt;
+  &lt;li&gt;Who’s problem is it?&lt;/li&gt;
+  &lt;li&gt;What problems do we create by solving this problem?&lt;/li&gt;
+  &lt;li&gt;Which people and which institutions might be harmed by a
+technological solution?&lt;/li&gt;
+  &lt;li&gt;What changes in language occur as the result of technological
+change?&lt;/li&gt;
+  &lt;li&gt;Which people and which institutions will acquire economic and
+political power when this technology is adopted?&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;These questions and the whole talk are acutely relevant today, in the
+light of generative artificial intelligence, and how it is imposed on
+everyone.&lt;/p&gt;
+
+&lt;p&gt;Whenever I hear about about advantages or usages of generative AI, I
+always think about the problem they supposedly address, and whether
+they actually really solve itm rather than the symptoms, and what
+would be needed to actually solve the problem. And unsurprisingly,
+generative AI hardly ever solves any real problem when it comes to
+research or education. The latter is also addressed in Neil Postman’s
+talk above.&lt;/p&gt;
+
+&lt;p&gt;Here are two books that are on my reading list, that are relevant to
+the talk and topic:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;https://thecon.ai/&quot;&gt;The AI Con&lt;/a&gt; - How to Fight Big Tech’s Hype and
+Create the Future We Want, by Alex Hanna and Emily M. Bender&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;https://bookshop.org/p/books/the-mechanic-and-the-luddite-a-ruthless-criticism-of-technology-and-capitalism-jathan-sadowski/21312179&quot;&gt;The Mechanic and the
+Luddite&lt;/a&gt; -
+A Ruthless Criticism of Technology and Capitalism, by Jathan
+Sadowski.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;</content><author><name>Laurent Gatto</name></author><category term="AI" /><category term="education" /><category term="technology" /><summary type="html">I stumbled across this post on mastodon, that directed me to 6 questions what one should ask before adopting a new technology. These questions where posed by Neil Postman, a writer and academic quite some time ago. A reply in that same thread add a link to a 1988 talk where he expands one them.</summary></entry><entry><title type="html">On cats, farts and parrots.</title><link href="https://lgatto.github.io/ia-irss/" rel="alternate" type="text/html" title="On cats, farts and parrots." /><published>2024-05-30T00:00:00+02:00</published><updated>2024-05-30T00:00:00+02:00</updated><id>https://lgatto.github.io/ia-irss</id><content type="html" xml:base="https://lgatto.github.io/ia-irss/">&lt;p&gt;I was invited to contribute to a
 &lt;a href=&quot;https://www.linkedin.com/feed/update/urn:li:activity:7201099969779351552/&quot;&gt;seminar/discussion&lt;/a&gt;
 on AI, and using language models in research. These are the notes I
 prepared my short presentation. I am not presenting anything new, or
@@ -1516,118 +1563,4 @@ Gatto at &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;laur
 position&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p&gt;Please do share this position with your students and colleagues
-(&lt;a href=&quot;/images/2023-job-scp.pdf&quot;&gt;pdf&lt;/a&gt;).&lt;/p&gt;</content><author><name>Laurent Gatto</name></author><category term="job" /><summary type="html">A fully-funded position for a PhD student (4 years) or a post-doctoral researcher (2 - 3 years, depending on experience) is open in the Computational Biology and Bioinformatics lab (CBIO) at the de Duve Institute, UCLouvain in Brussels, Belgium.</summary></entry><entry><title type="html">Open position in the CBIO lab: spatial proteomics and PTMs</title><link href="https://lgatto.github.io/spatprot-job-2023/" rel="alternate" type="text/html" title="Open position in the CBIO lab: spatial proteomics and PTMs" /><published>2023-02-27T00:00:00+01:00</published><updated>2023-02-27T00:00:00+01:00</updated><id>https://lgatto.github.io/spatprot-job-2023</id><content type="html" xml:base="https://lgatto.github.io/spatprot-job-2023/">&lt;p&gt;A position for a PhD student (4 years) or a research assistant (1 year
-contracts, renewable) is open in the CBIO lab focusing on protein
-sub-cellular localisation (spatial) proteomics, post-translational
-modification and machine learning.&lt;/p&gt;
-
-&lt;p&gt;The goal of the project is to apply and extend existing spatial
-proteomics methods [&lt;a href=&quot;https://pubmed.ncbi.nlm.nih.gov/24413670/&quot;&gt;1&lt;/a&gt;,
-&lt;a href=&quot;https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1006516&quot;&gt;2&lt;/a&gt;,
-&lt;a href=&quot;https://www.nature.com/articles/s41467-022-33570-9&quot;&gt;3&lt;/a&gt;] and software
-infrastructure (such as the
-&lt;a href=&quot;https://bioconductor.org/packages/pRoloc&quot;&gt;pRoloc&lt;/a&gt; package) to focus
-more specifically on the detection and the effect of
-post-translational modifications in protein and proteoform
-sub-cellular localisation.&lt;/p&gt;
-
-&lt;p&gt;This position is part of the &lt;a href=&quot;https://www.fwo.be/en/&quot;&gt;FWO&lt;/a&gt;-funded
-Protein Contours project, in collaboration with &lt;a href=&quot;https://we.vub.ac.be/en/wim-vranken&quot;&gt;Win
-Vranken&lt;/a&gt; from the VUB and
-&lt;a href=&quot;https://www.compomics.com/people/lennart-martens/&quot;&gt;Lennart Martens&lt;/a&gt;
-from the VIB and Ghent University.&lt;/p&gt;
-
-&lt;p&gt;The successful candidate will have a degree in bioinformatics,
-statistics, computer sciences, biomedical sciences, or equivalent and
-be able to demonstrate experience and/or keen interest in at least
-several of the following:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;experience in one or multiple omics experimental technologies, data
-processing, analysis and/or interpretation - experience in mass
-spectrometry and proteomics is an advantage;&lt;/li&gt;
-  &lt;li&gt;a keen interest in understanding and tackling biomedically relevant
-questions;&lt;/li&gt;
-  &lt;li&gt;interest in robust method development;&lt;/li&gt;
-  &lt;li&gt;background/expertise in statistics, machine learning and/or
-artificial intelligence;&lt;/li&gt;
-  &lt;li&gt;open and reproducible research (e.g. Rmarkdown, Jupyter notebooks,
-Github, version control, …);&lt;/li&gt;
-  &lt;li&gt;experience in R/Bioconductor data structures, in particular those
-used for omics data analysis (e.g. SummarizedExperiment,
-SingleCellExeriment, QFeatures, …);&lt;/li&gt;
-  &lt;li&gt;contribution to an open and inclusive research environment;&lt;/li&gt;
-  &lt;li&gt;good written and oral communication skills.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;about-the-cbio-lab&quot;&gt;About the CBIO lab&lt;/h2&gt;
-
-&lt;p&gt;The Computational Biology and Bioinformatics lab is headed by Prof
-&lt;a href=&quot;https://lgatto.github.io/about&quot;&gt;Laurent Gatto&lt;/a&gt; and is composed of
-students and researchers with expertise in biomedical sciences,
-statistics, omics data analysis and bioinformatics. Details about our
-work and the members can be found at
-&lt;a href=&quot;https://lgatto.github.io/cbio-lab/&quot;&gt;https://lgatto.github.io/cbio-lab/&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;The lab supports a friendly and supportive work environment through
-flexible working hours and the possibility to work remotely. The lab
-meetings are typically scheduled in-person (or mixed remote/in-person)
-to favour interactions among lab members. While joining the lab and
-contribution to our research, you will also have the opportunity to get
-involved in the international Bioconductor community. The lab members
-have opportunities to join courses and conferences in Belgium and
-abroad to present their work.&lt;/p&gt;
-
-&lt;h2 id=&quot;academic-environment&quot;&gt;Academic environment&lt;/h2&gt;
-
-&lt;p&gt;The &lt;a href=&quot;https://www.deduveinstitute.be/&quot;&gt;de Duve Institute&lt;/a&gt; is a
-multidisciplinary biomedical research institute (250-300 scientists)
-hosting several laboratories the UCLouvain, as well as the Brussels
-branch of the Ludwig Institute for Cancer Research. The focus is on
-basic research in the fields of tumour immunology and signal
-transduction in cancer, genetics and development, including human
-genetics, stem cells and organ development, infection and inflammation
-and metabolism and hormones. The de Duve Institute also features
-several core facilities, including imaging, transgenesis, mass
-spectrometry, flow cytometry and cell sorting, as well as
-genomics. The de Duve Institute provides access to a high-performance
-computing cluster and storage, managed by a dedicated IT team.&lt;/p&gt;
-
-&lt;h2 id=&quot;application&quot;&gt;Application&lt;/h2&gt;
-
-&lt;p&gt;To apply for the position, please send the following documents to
-Laurent Gatto:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;A cover letter describing why you would like to join the lab and how
-you match the requirement;&lt;/li&gt;
-  &lt;li&gt;A detailed CV including some or all of the following: a list of
-publications, pre-prints, posters and/or software contributions; a
-link to publicly available code/data analysis you have contributed
-to; education and professional experience; awards; teaching
-experience; any additional information you deem relevant.&lt;/li&gt;
-  &lt;li&gt;If no code is publicly available, please include code chunks that
-illustrate best your programming experience and interests.&lt;/li&gt;
-  &lt;li&gt;Among your projects, select 1 and provide a short narrative
-describing why these are important in your career, your specific
-contributions and/or the unique skills you have gained through
-these.&lt;/li&gt;
-  &lt;li&gt;A list of at least 2 academic references.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;salary&quot;&gt;Salary&lt;/h2&gt;
-
-&lt;p&gt;A PhD-student salary is around 2000 euros in Belgium. Other positions,
-such as research assistants (assumes a MS degree) or post-doctoral
-associates (assumes a PhD degree), the gross salary will depend on
-seniority (year after acquiring the degree) and the net salary will
-depend on family circumstances.&lt;/p&gt;
-
-&lt;p&gt;For more details about this position, feel free to contact Laurent
-Gatto at &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;laurent&amp;lt;DOT&amp;gt;gatto&amp;lt;AT&amp;gt;uclouvain.be&lt;/code&gt;.&lt;/p&gt;
-
-&lt;p&gt;You might also be interested in &lt;a href=&quot;https://lgatto.github.io/scp-job-2023/&quot;&gt;this
-position&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;Please do share this position with your students and colleagues
-(&lt;a href=&quot;/images/2023-job-spatprot.pdf&quot;&gt;pdf&lt;/a&gt;).&lt;/p&gt;</content><author><name>Laurent Gatto</name></author><category term="job" /><summary type="html">A position for a PhD student (4 years) or a research assistant (1 year contracts, renewable) is open in the CBIO lab focusing on protein sub-cellular localisation (spatial) proteomics, post-translational modification and machine learning.</summary></entry></feed>
+(&lt;a href=&quot;/images/2023-job-scp.pdf&quot;&gt;pdf&lt;/a&gt;).&lt;/p&gt;</content><author><name>Laurent Gatto</name></author><category term="job" /><summary type="html">A fully-funded position for a PhD student (4 years) or a post-doctoral researcher (2 - 3 years, depending on experience) is open in the Computational Biology and Bioinformatics lab (CBIO) at the de Duve Institute, UCLouvain in Brussels, Belgium.</summary></entry></feed>
