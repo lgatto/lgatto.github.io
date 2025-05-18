@@ -29,7 +29,7 @@ everyone.
 
 Whenever I hear about about advantages or usages of generative AI, I
 always think about the problem they supposedly address, and whether
-they actually really solve itm rather than the symptoms, and what
+they actually really solve it rather than the symptoms, and what
 would be needed to actually solve the problem. And unsurprisingly,
 generative AI hardly ever solves any real problem when it comes to
 research or education. The latter is also addressed in Neil Postman's
