@@ -239,6 +239,18 @@ Please do get in touch if you are interested in running workshops.
 
 ### Research articles
 
+
+
+Axelle Loriot, Julie Devis, Laurent Gatto, Charles De Smet. *A survey
+of human cancer-germline genes: linking X chromosome localization, DNA
+methylation and sex-biased expression in early embryos* bioRxiv
+2025.05.19.654804; doi:
+[10.1101/2025.05.19.654804](https://doi.org/10.1101/2025.05.19.654804)
+(packages:
+[CTexploreR](https://bioconductor.org/packages/release/bioc/html/CTexploreR.html)
+and
+[CTdata](https://bioconductor.org/packages/release/bioc/html/CTdata.html)).
+
 Jenny, Drnevich, J. Tan Frederick, Almeida-Silva Fabricio, Castelo
 Robert, C. Culhane Aedin, Davis Sean, A. Doyle Maria, et al. *Learning
 and Teaching Biological Data Science in the Bioconductor Community*
