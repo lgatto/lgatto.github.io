@@ -1,0 +1,1027 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+  <head>
+    <title>Reduce those dimensions!</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="Laurent Gatto - CBIO" />
+    <script src="slides_files/header-attrs-2.29/header-attrs.js"></script>
+    <script src="slides_files/xaringanExtra-webcam-0.0.1/webcam.js"></script>
+    <script id="xaringanExtra-webcam-options" type="application/json">{"width":"200","height":"200","margin":"1em"}</script>
+    <link href="slides_files/tile-view-0.2.6/tile-view.css" rel="stylesheet" />
+    <script src="slides_files/tile-view-0.2.6/tile-view.js"></script>
+    <script src="slides_files/xaringanExtra_fit-screen-0.2.6/fit-screen.js"></script>
+    <link href="slides_files/xaringanExtra-extra-styles-0.2.6/xaringanExtra-extra-styles.css" rel="stylesheet" />
+    <link href="slides_files/panelset-0.3.0/panelset.css" rel="stylesheet" />
+    <script src="slides_files/panelset-0.3.0/panelset.js"></script>
+    <link rel="stylesheet" href="xaringan-themer.css" type="text/css" />
+    <link rel="stylesheet" href="my.css" type="text/css" />
+  </head>
+  <body>
+    <textarea id="source">
+class: center, middle, inverse, title-slide
+
+.title[
+# Reduce those dimensions!
+]
+.subtitle[
+## Using PCA, t-SNE and MDS to explore and analyse high-dimensional omics data
+]
+.author[
+### Laurent Gatto - CBIO
+]
+.date[
+### DDUV seminar, 5 June 2025
+]
+
+---
+
+class:
+
+
+
+
+
+&lt;!-- # Introduction --&gt;
+
+
+&lt;!-- --- --&gt;
+&lt;!-- class: --&gt;
+
+### What is DR?
+
+- **Dimentionality reduction** (also called ordination) is part of
+  unsupervised machine learning.
+- Map high-dimensional (HD) data in a low-dimensional space (LD)
+  (latent space, embedding) while **preserving structure**
+  (i.e. signal, could be biological and/or technical) as much as
+  possible.
+
+--
+
+#### Applications
+
+- Used for data **exploration** (you understand data) and data
+  **communication** (others understand you insights).
+- Use cases: visualisation and feature selection/transformation.
+
+
+.left-col-50[
+
+
+&lt;img src="./figs/dr-vis.jpg" width="65%" style="display: block; margin: auto;" /&gt;
+
+
+]
+
+.right-col-50[
+
+&lt;img src="./figs/dr-fsel.jpg" width="60%" style="display: block; margin: auto;" /&gt;
+]
+
+
+---
+class:
+
+.left-col-75[
+
+&lt;img src="./figs/dimred-timeline.png" width="90%" style="display: block; margin: auto;" /&gt;
+
+]
+
+.right-col-25[
+
+#### On the menu:
+
+- **PCA** (Karl Pearson, 1901)
+
+- **t-SNE** (van der Maaten and Hinton, 2008)
+
+- **MS-t-SNE** (Lee, Peluffo-Ordóñez and Verleysen, 2015)
+
+- (non-metric) **MDS** (Shepard, 1962; Hauchamps et al, 2025)
+
+]
+
+???
+
+Vast domain of research in statistics and computer science. We will be
+discussing
+- PCA (Karl Pearson, 1901),
+- t-SNE (Hinton and Roweis, SNE, 2002; van der Maaten and Hinton,
+  t-SNE, 2008)
+- MS-t-SNE (Lee JA, Peluffo-Ordóñez DH &amp; Verleysen M, 2015).
+- nonmetric MDS (Young and Householder, 1938; Torgerson, 1952;
+  Shepard, 1962)
+
+---
+class:
+
+### Motivating examples
+
+--
+
+[Biologists, stop putting UMAP plots in your
+papers](https://simplystatistics.org/posts/2024-12-23-biologists-stop-including-umap-plots-in-your-papers/)
+post by Rafael Irizarry, Dec. 23, 2024.
+
+&gt; UMAP is a powerful tool for exploratory data analysis, but without a
+&gt; clear understanding of how it works, it can easily lead to confusion
+&gt; and misinterpretation.
+
+
+Use and abuse of UMAPs:
+
+&gt; [...] with thousands of cells being analyzed they produce visually
+&gt; striking figures, especially when color is added.
+
+...
+
+&gt; But we should not include plots in scientific papers just to make
+&gt; them aesthetically pleasing. Plots should communicate findings, not
+&gt; decorate.
+
+
+---
+class:
+
+### Motivating examples (1)
+
+.pull-left[
+
+&lt;img src="./figs/mvnorm-3d.png" width="100%" style="display: block; margin: auto;" /&gt;
+
+]
+
+.pull-right[
+
+&lt;img src="./figs/mvnorm-umap.png" width="85%" style="display: block; margin: auto;" /&gt;
+
+]
+
+---
+class:
+
+
+.pull-left[
+
+### Motivating examples (2)
+
+[Genomic data in the All of Us Research
+Program](https://www.nature.com/articles/s41586-023-06957-x) Nature
+627, 340–346 (2024) DOI:10.1038/s41586-023-06957-x.
+
+]
+
+.pull-right[
+![](figs/allofus-umap.jpg)
+]
+
+
+&lt;!-- section -----------------------------------------------------  --&gt;
+---
+class: center, middle, inverse
+
+# Principal Component Analysis
+
+---
+class:
+
+- PCA is a **linear** technique: LD variables are linear
+  functions/combinations of the orignal HD variables.
+- New dimensions are **orthogonal** linear combinations of original
+  variables/dimensions that maximise the variablity of the data along
+  them.
+
+--
+
+&lt;img src="./figs/pxaex-1.png" width="75%" style="display: block; margin: auto;" /&gt;
+
+???
+
+- PC is the line that minimises the sum of squares of orthogonal
+  projections.
+
+---
+class:
+
+- The **distances** between observations in high and low dimensions
+  don't change.
+- Distance in *n* PCs is &lt;= that in *n+1* PCs (obviously); but for
+  PCs, the additionnal distance is always smaller than what we already
+  have.
+- **Interpretability**: relative distances between points and meaning
+  of PCs.
+
+--
+
+&lt;img src="./figs/wine-pca.png" width="75%" style="display: block; margin: auto;" /&gt;
+
+???
+- Mention **bi-plot**
+
+---
+class:
+
+.left-col-70[
+
+&lt;img src="./figs/pca-ex-1.png" width="80%" style="display: block; margin: auto;" /&gt;&lt;img src="./figs/pca-ex-2.png" width="80%" style="display: block; margin: auto;" /&gt;&lt;img src="./figs/pca-ex-3.png" width="80%" style="display: block; margin: auto;" /&gt;
+
+]
+
+.right-col-25[
+
+### PCA example
+
+1. Caco-2 cells exposed to fecal water in presence or not of antibiotics.
+2. Focus on water + antibiotics.
+3. Identify genes that drive that PC1 (RNA-related genes, due du poor
+   RNA-depletion)
+4. Repeat PCA with protein-coding genes only.
+
+]
+
+&lt;!-- section -----------------------------------------------------  --&gt;
+---
+class: center, middle, inverse
+
+# Why/when is PCA (sometimes) not enough?
+
+---
+class:
+
+.pull-left[
+## Curse of dimensionality
+
+&lt;img src="./figs/curse-ex-1.png" width="80%" style="display: block; margin: auto;" /&gt;
+
+&lt;img src="./figs/curse-ex-2.png" width="80%" style="display: block; margin: auto;" /&gt;
+
+]
+
+.pull-right[
+![curse](figs/curse.png)
+
+Code: https://lgatto.github.io/curse-dimensionality/
+
+]
+
+---
+class:
+
+## Weird shapes
+
+.pull-left[
+![sphere-pca](figs/sphere-pca.png)
+]
+
+.pull-right[
+![sphere-jse](figs/sphere-jse.png)
+]
+
+---
+class:
+
+## Complex data
+
+#### Visualisation
+
+- PCA is linear, and often captures one pattern per PC, and 2 or 3
+  dimensions don't capture the complexity of some (many?) scRNA-Seq
+  datasets.
+- It isn't useful to keep 10+ PCs for visualistion.
+- Hence the need for **non-linear** approaches, that capture more
+  (possibly non-linear) relationships between variables.
+
+--
+
+#### Downstream analyses
+- It isn't convenient to keep 10+ PCs for visualistion. It is OK for
+  other applications though (feature selection/transformation).
+- PCA and distance-based approach in general are appropriate for
+  downstream analyses (trajectory analysis, velocity) and
+  visualisation.
+- Non-linear approaches should be reserved for visualisation only. But
+  beware of the risk when interpreting plots.
+
+---
+class:
+
+## Data shape
+
+- The data isn't a matrix (for example in cytometry)
+- See MDS later.
+
+&lt;!-- section -----------------------------------------------------  --&gt;
+---
+class: center, middle, inverse
+
+#  t-distributed stochastic neighbour embedding
+
+---
+class: middle
+
+.pull-left[
+
+Nothing to do with biology. First published in 2008 ([van der Maaten
+and Hinton, JMLR
+9(86):2579−2605](https://www.jmlr.org/papers/v9/vandermaaten08a.html)).
+
+First use in cytometry data in
+[2013](https://www.nature.com/articles/nbt.2594), then adopted in
+scRNA-Seq.
+
+]
+
+.pull-right[
+![](./figs/viSNE.png)
+]
+
+---
+class: middle
+
+.pull-left[
+    ![video](figs/neighour-embedding.gif)
+]
+
+
+.pull-right[
+
+- t-SNE (and UMAP) are based on neighbourhood/local relationships: the
+  algorithm encourages points that are close in the high-dimensional
+  space to stay close in the low-dimensional space.
+- But we can't make any statements about distant points.
+- There is not relationship with the distances in HD.
+
+]
+
+???
+
+- Points in high (xhi) and low (x) dimensional space. Neighbourhood
+  *K*. Divergence between two neighbours in high (sigma) and low (s)
+  dimensions.
+
+---
+class: middle
+
+.pull-left[
+    ![video](figs/neighour-embedding.gif)
+]
+
+
+.pull-right[
+
+&gt; The fact that it is hard, or impossible, to summarize the data into
+&gt; two dimensions using linear approaches and obtain this level of
+&gt; separation make [UMAP|t-SNE] a useful exploratory tool.
+
+
+- Especially for atlas-scale data.
+- Some (many?) scRNA-Seq data still "look" OK on a PCA.
+
+]
+
+
+---
+class: middle
+
+## In practice
+
+- t-SNE includes PCA to limit the number of input variables (typically 50).
+- PCA is typically run on a limited number of most variables features
+  (typically 500).
+- The **perplexity** parameter (*K* above) controls locality.
+
+
+```r
+&gt; ?runTSNE
+## By default, the function will set a “reasonable” perplexity that
+## scales with the number of cells in ‘x’.  (Specifically, it is the
+## number of cells divided by 5, capped at a maximum of 50.) However,
+## it is often worthwhile to manually try multiple values to ensure
+## that the conclusions are robust.
+```
+
+---
+class: middle
+
+.left-col-30[
+
+&lt;img src="./figs/hyperlopit-pca.png" width="100%" style="display: block; margin: auto;" /&gt;
+]
+
+.right-col-70[
+
+&lt;img src="./figs/hyperlopit-tsne-param.png" width="100%" style="display: block; margin: auto;" /&gt;
+
+]
+
+---
+class: middle, center
+
+# (Fast) Multi-scale t-SNE
+
+
+---
+class:
+
+.left-col-75[
+
+&lt;img src="./figs/ms-ne.png" width="80%" style="display: block; margin: auto;" /&gt;
+
+]
+
+.right-col-25[
+
+- Lee JA, Peluffo-Ordóñez DH &amp; Verleysen M (2015), *Multi-scale
+  similarities in stochastic neighbour embedding: Reducing
+  dimensionality while preserving both local and global
+  structure*. [Neurocomputing, 169,
+  246-261](https://www.sciencedirect.com/science/article/abs/pii/S0925231215003641).
+
+- de Bodt C, Mulders D, Verleysen M &amp; Lee JA (2020), *Fast Multiscale
+  Neighbor Embedding*, in IEEE Transactions on Neural Networks and
+  Learning Systems, doi:
+  [10.1109/TNNLS.2020.3042807](https://ieeexplore.ieee.org/document/9308987).
+
+- [`fmsne` package](https://lgatto.github.io/fmsne/) (2023).
+]
+
+---
+class:
+
+### PCA vs. t-SNE vs. MS-t-SNE: which one 'looks' best?
+
+&lt;img src="./figs/snrna-seq-dimred-3.png" width="100%" style="display: block; margin: auto;" /&gt;
+
+Marsh B, Blelloch R. *Single nuclei RNA-seq of mouse placental
+labyrinth development*. 2020, eLife Nov
+3;9:e60266. doi:[10.7554/eLife.60266](https://elifesciences.org/articles/60266). Blood
+cells (blue), decidual cells (orange), endothelial cells (green),
+fetal mesenchymal cells (red) and trophoblasts (purple).
+
+---
+class: middle, center
+
+# DR quality assessment
+
+
+---
+class: center
+
+
+.left-col-50[
+
+###  Shepard's diagram
+
+
+&lt;img src="./figs/cytoex-2.png" width="80%" style="display: block; margin: auto;" /&gt;
+
+From `CytoMDS`.
+
+]
+
+.right-col-50[
+
+&lt;img src="./figs/dreval-ex-1.png" width="60%" style="display: block; margin: auto;" /&gt;&lt;img src="./figs/dreval-ex-2.png" width="60%" style="display: block; margin: auto;" /&gt;
+
+From `dreval`.
+]
+
+???
+
+- Compares all pairwise distances in LD and HD. Or two LDs, as on the
+  bottom right, that compares t-SNE (with perplexity 100) and PCA.
+- The closer to the diagonal, the better.
+
+---
+class:
+
+Rank-based criteria measuring the HD **neighbourhood preservation** in
+the LD embedding
+
+.left-col-70[
+
+&lt;img src="./figs/dr-quality.png" width="100%" style="display: block; margin: auto;" /&gt;
+
+]
+
+.right-col-30[
+
+- Lee, J. A., &amp; Verleysen, M. (2009). *Quality assessment of
+  dimensionality reduction: Rank-based criteria*. Neurocomputing,
+  72(7-9), 1431-1443.
+
+- Lee, J. A., &amp; Verleysen, M. (2010). *Scale-independent quality
+  criteria for dimensionality reduction*. Pattern Recognition Letters,
+  31(14), 2248-2257.
+
+- [`fmsne` package](https://lgatto.github.io/fmsne/) (2023).
+
+]
+
+???
+
+&lt;!-- section -----------------------------------------------------  --&gt;
+---
+class: center, middle, inverse
+
+# Multidimensional scaling
+
+
+---
+class: middle
+
+In cytometry, we have one matrix per sample/acquisition (often 100s),
+rather than a single matrix per acquisition (with one column per
+sample/cell).
+
+&lt;img src="./figs/cyto-data.png" width="75%" style="display: block; margin: auto;" /&gt;
+
+
+---
+class:
+
+We would like to have a PCA-like representation of our data to
+visualise all samples as single points on a low dimensional projection
+...
+
+--
+
+... as opposed to representing all single cells.
+
+
+&lt;img src="./figs/cyto-mds-vs-tsne.png" width="75%" style="display: block; margin: auto;" /&gt;
+
+(Right: Van Gassen et al. *CytoNorm: A Normalization Algorithm for
+Cytometry Data* (2019) https://doi.org/10.1002/cyto.a.23904)
+
+
+---
+class:
+
+We would like to have a PCA-like representation of our data to
+visualise all samples as single points on a low dimensional projection
+...
+
+--
+
+... to evaluate
+- distances between samples
+- outliers
+- batch effects
+- QC
+- agreement with the experimental design
+- ...
+
+---
+class: center, middle
+
+# PCA = data + DR
+
+# MDS = distances + DR
+
+# CytoMDS = EMD + DR
+
+
+???
+
+- PCA needs a matrix of high dimensional coordinates (i.e. a data
+  matrix) as input, which we don't have, but we can compute distances
+  (see EMD).
+- Multidimenasional scaling is a dimenionsality reduction on a
+  distance matrix (as opposed to a data matrix).
+- If the distance matrix is Euclidean, *classical metric MDS* gives
+  the same result as PCA.
+- Here, the distance is not metric, we will use EMD and Stress Based
+  MDS.
+
+---
+class:
+
+## CytoMDS = EMD + MDS
+
+&gt; [Cyto]MDS = (non-linear) projection of pairwise sample distance
+&gt; using the Earch Movers Distance (EMD).
+
+1. Compute **Earth Movers Distance (EMD)** between marker
+   distributions to get a square sample distance matrix.
+2. Apply (Stress Based) **MDS** (Scaling by Majorizing a Complicated
+   Function; de Leeuw, 1977).
+
+and
+
+1. **Shepard's diagram**, to assess how close the projected LD
+   euclidean distances are to their HD EMD, for each sample pair.
+2. **Pseudo R2**: to assess to what extend the pairwise sample EMD can be
+   explained by the low dimensional euclidean distances on the
+   projection.
+3. Correlation of characteristics of the original HD variables and LD
+   dimensions to help the interpretation with **bi-plots**.
+
+&lt;p&gt;&lt;/p&gt;
+
+Hauchamps P, Delandre S, Temmerman ST, Lin D, Gatto L. (2025). *Visual
+Quality Control with CytoMDS, a Bioconductor Package for Low
+Dimensional Representation of Cytometry Sample Distances.*
+Cytometry. Part A
+[10.1002/cyto.a.24921](https://doi.org/10.1002/cyto.a.24921).
+
+???
+
+- When computing low dimensional projections for QC purposes, we are
+  interested in distance preservation (as opposed to neighbourhood
+  preservation in t-SNE).
+- We thus favour PCA-like method rather than t-SNE or UMAP.
+
+
+Two mathematical ingredients:
+- EMD to compare marker distributions
+- MDS for low dimensional projection of pairwise sample distances
+
+---
+class:
+
+## Marker distributions
+
+&lt;img src="./figs/cyto-emd.png" width="75%" style="display: block; margin: auto;" /&gt;
+
+---
+class:
+
+## Distances between distributions
+
+.pull-left[
+
+#### Probability binning distance
+
+![](./figs/dist-prob-bidning.png)
+
+]
+
+
+.pull-right[
+
+#### Earth movers distance
+
+![](./figs/dist-em.png)
+
+]
+
+???
+
+- Distribution discretisation by histograms
+- Probability binning distance: sum bin-to-bin differences
+- EMD (aka Wasserstein of order 1 metric): computes the effort/cost (=
+  mass x distance) needed to transport the mass of one distribution to
+  obtain de other.
+
+---
+class:
+
+## Distances between distributions
+
+
+&lt;img src="./figs/dist-comp.png" width="55%" style="display: block; margin: auto;" /&gt;
+
+Darya YO, *et al.* (2016). *Earth Mover’s Distance (EMD): A True
+Metric for Comparing Biomarker Expression Levels in Cell Populations.*
+PLOS ONE
+[10.1371/journal.pone.0151859](https://doi.org/10.1371/journal.pone.0151859).
+
+
+---
+class:
+
+### CytoMDS example
+
+.pull-left[
+
+&lt;img src="./figs/cytoex-1.png" width="100%" style="display: block; margin: auto;" /&gt;
+
+]
+
+.pull-right[
+
+- Mouse liver lymphocyte samples
+- 55 samples split into 5 groups, 2 days of data acquisition (D91&amp;
+  D93)
+- Earth Mover’s distances calculated with 4 channels used for
+  pre-processing and QC (FSC-A, FSC-H, SSC-A, LD)
+
+]
+
+???
+
+- forward scatter height (FSC-H), forward and side scatter area
+  (FSC-A)
+---
+class:
+
+### CytoMDS example
+
+.pull-left[
+
+&lt;img src="./figs/cytoex-1.png" width="100%" style="display: block; margin: auto;" /&gt;
+
+]
+
+.pull-right[
+
+&lt;img src="./figs/cytoex-2.png" width="80%" style="display: block; margin: auto;" /&gt;
+
+]
+
+???
+
+- The Shepard's diagram illustrates the projection quality. It shows
+  that most pairwise EMD are close to the 45° identity line.
+- The pseudo R2 is 0.9679, hence above the 0.95 threshold (chosen by
+  default), with only two projected dimensions.
+
+
+- The projection highlights two major clusters of samples. One on the
+  right composed most of the samples acquired on day D93 (blue
+  squares). The other cluster of samples, on the left, includes mostly
+  the samples from day D91 (red triangles), but also a minority of day
+  D93 samples.
+- Clusters cannot be attributed solely to a batch effect of
+  acquisition time point.
+
+---
+class:
+
+### CytoMDS example
+
+.pull-left[
+
+&lt;img src="./figs/cytoex-1.png" width="100%" style="display: block; margin: auto;" /&gt;
+
+]
+
+.pull-right[
+
+&lt;img src="./figs/cytoex-3.png" width="83%" style="display: block; margin: auto;" /&gt;
+
+]
+
+
+???
+
+- We see a strong coordination of the first coordinate, that separates
+  the clusters with both the FSC-A channel median (and FSC-A standard
+  deviation, not shown).
+- Let looks at FSC-A.
+
+
+---
+class:
+
+### CytoMDS example
+
+
+&lt;img src="./figs/cytoex-4.png" width="83%" style="display: block; margin: auto;" /&gt;
+
+
+
+---
+class:
+
+### CytoMDS example
+
+
+&lt;img src="./figs/cytoex-5.png" width="70%" style="display: block; margin: auto;" /&gt;
+
+???
+
+- 2D plots for two representative samples, selected for their extreme
+  opposite position on the first coordinate.
+- Comparing these two plots reveals that sample D93/A05 is a
+  low-quality sample where the cell population of interest - *liver
+  lymphocytes* - is extremely small, and where most events seem to
+  correspond to debris or dead/dying cells, whereas sample D93/G03 is
+  a good-quality sample.
+
+&lt;!-- section ----------------------------------------------------- --&gt;
+---
+class: center, middle, inverse
+
+# Conclusions
+
+---
+class:
+
+### Trustworthiness
+
+- is key for practitioners of machine learning and visual data analytic tools;
+- is currently impeded by 3 pitfalls of neighbour embedding (NE):
+  1. generally poor preservation of global data structures;
+  2. high variability in the results depending on the initialization
+     and optimization scheme;
+  3. lack of interpretable tools for NE, relating LD proximities with
+     HD features.
+
+### Interpretability
+
+- of linear approaches (PCA) or additional step to support
+  interpretation of the data (CytoMDS) are important.
+- Risks of overinterpretation (rely on distances) when using
+  neighourhood embeddings
+
+---
+class:
+
+.pull-left[
+
+#### Software
+
+`fmsne`: https://lgatto.github.io/fmsne/
+
+```r
+BiocManager::install("lgatto/fmsne")
+```
+
+```python
+pip install fmsne
+```
+
+
+`dreval`: https://csoneson.github.io/dreval/
+
+```r
+BiocManager::install("csoneson/dreval")
+```
+
+
+`CytoMDS`: https://uclouvain-cbio.github.io/CytoMDS/
+
+```r
+BiocManager::install("CytoMDS")
+```
+
+`MDSvis`: https://uclouvain-cbio.github.io/MDSvis/
+
+```r
+BiocManager::install("UCLouvain-CBIO/MDSvis")
+```
+
+]
+
+.pull-right[
+
+#### Suggested reading
+
+- Kobak, D., Berens, P. *The art of using t-SNE for single-cell
+  transcriptomics*. Nat Commun 10, 5416
+  (2019). [10.1038/s41467-019-13056-x](https://doi.org/10.1038/s41467-019-13056-x).
+- Hauchamps, P. *et al.* (2025). “Visual Quality Control with CytoMDS,
+  a Bioconductor Package for Low Dimensional Representation of
+  Cytometry Sample Distances.” Cytometry. Part A
+  [10.1002/cyto.a.24921](https://doi.org/10.1002/cyto.a.24921).
+
+
+#### Acknowledgements
+- Philippe Hauchamps (DDUV/CBIO) - `CytoMDS` and slides/figures
+- Cyril de Bodt (EPL/ICTEAM) - `fmsne` and slides/figures
+- Axelle Loriot (DDUV/CBIO) - PCA examples
+- Charlotte Soneson (FMI, Basel) - discussions
+
+**Funding**: GSK, FNRS, FEDER, FWO, DDI.
+
+]
+    </textarea>
+<style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script>var slideshow = remark.create({
+  "highlightStyle": "github",
+  "highlightLines": true,
+  "ratio": "16:9",
+  "countIncrementalSlides": true
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function(d) {
+  var s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})(document);
+
+(function(d) {
+  var el = d.getElementsByClassName("remark-slides-area");
+  if (!el) return;
+  var slide, slides = slideshow.getSlides(), els = el[0].children;
+  for (var i = 1; i < slides.length; i++) {
+    slide = slides[i];
+    if (slide.properties.continued === "true" || slide.properties.count === "false") {
+      els[i - 1].className += ' has-continuation';
+    }
+  }
+  var s = d.createElement("style");
+  s.type = "text/css"; s.innerHTML = "@media print { .has-continuation { display: none; } }";
+  d.head.appendChild(s);
+})(document);
+// delete the temporary CSS (for displaying all slides initially) when the user
+// starts to view slides
+(function() {
+  var deleted = false;
+  slideshow.on('beforeShowSlide', function(slide) {
+    if (deleted) return;
+    var sheets = document.styleSheets, node;
+    for (var i = 0; i < sheets.length; i++) {
+      node = sheets[i].ownerNode;
+      if (node.dataset["target"] !== "print-only") continue;
+      node.parentNode.removeChild(node);
+    }
+    deleted = true;
+  });
+})();
+// add `data-at-shortcutkeys` attribute to <body> to resolve conflicts with JAWS
+// screen reader (see PR #262)
+(function(d) {
+  let res = {};
+  d.querySelectorAll('.remark-help-content table tr').forEach(tr => {
+    const t = tr.querySelector('td:nth-child(2)').innerText;
+    tr.querySelectorAll('td:first-child .key').forEach(key => {
+      const k = key.innerText;
+      if (/^[a-z]$/.test(k)) res[k] = t;  // must be a single letter (key)
+    });
+  });
+  d.body.setAttribute('data-at-shortcutkeys', JSON.stringify(res));
+})(document);
+(function() {
+  "use strict"
+  // Replace <script> tags in slides area to make them executable
+  var scripts = document.querySelectorAll(
+    '.remark-slides-area .remark-slide-container script'
+  );
+  if (!scripts.length) return;
+  for (var i = 0; i < scripts.length; i++) {
+    var s = document.createElement('script');
+    var code = document.createTextNode(scripts[i].textContent);
+    s.appendChild(code);
+    var scriptAttrs = scripts[i].attributes;
+    for (var j = 0; j < scriptAttrs.length; j++) {
+      s.setAttribute(scriptAttrs[j].name, scriptAttrs[j].value);
+    }
+    scripts[i].parentElement.replaceChild(s, scripts[i]);
+  }
+})();
+(function() {
+  var links = document.getElementsByTagName('a');
+  for (var i = 0; i < links.length; i++) {
+    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
+      links[i].target = '_blank';
+    }
+  }
+})();
+// adds .remark-code-has-line-highlighted class to <pre> parent elements
+// of code chunks containing highlighted lines with class .remark-code-line-highlighted
+(function(d) {
+  const hlines = d.querySelectorAll('.remark-code-line-highlighted');
+  const preParents = [];
+  const findPreParent = function(line, p = 0) {
+    if (p > 1) return null; // traverse up no further than grandparent
+    const el = line.parentElement;
+    return el.tagName === "PRE" ? el : findPreParent(el, ++p);
+  };
+
+  for (let line of hlines) {
+    let pre = findPreParent(line);
+    if (pre && !preParents.includes(pre)) preParents.push(pre);
+  }
+  preParents.forEach(p => p.classList.add("remark-code-has-line-highlighted"));
+})(document);</script>
+
+<script>
+slideshow._releaseMath = function(el) {
+  var i, text, code, codes = el.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
+  }
+};
+slideshow._releaseMath(document);
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>
