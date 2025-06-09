@@ -1,5 +1,5 @@
 ---
-title: "CBIO's EuroBioc2023 posters and talks"
+title: "CBIO's EuroBioc2024 posters and talks"
 tags: ["conference", "software", "talks", "CBIO"]
 comments: false
 ---
