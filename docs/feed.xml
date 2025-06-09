@@ -1,4 +1,327 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.3">Jekyll</generator><link href="https://lgatto.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://lgatto.github.io/" rel="alternate" type="text/html" /><updated>2025-05-24T07:55:03+02:00</updated><id>https://lgatto.github.io/feed.xml</id><title type="html">~/</title><subtitle>Laurent Gatto&apos;s online home</subtitle><author><name>Laurent Gatto</name></author><entry><title type="html">6 Questions We Should Ask Before Adopting a New Technology</title><link href="https://lgatto.github.io/neil-postman-six-question-technology/" rel="alternate" type="text/html" title="6 Questions We Should Ask Before Adopting a New Technology" /><published>2025-05-18T00:00:00+02:00</published><updated>2025-05-18T00:00:00+02:00</updated><id>https://lgatto.github.io/neil-postman-six-question-technology</id><content type="html" xml:base="https://lgatto.github.io/neil-postman-six-question-technology/">&lt;p&gt;I stumbled across &lt;a href=&quot;https://tldr.nettime.org/@_elena@mastodon.social/114522680510446087&quot;&gt;this
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.3">Jekyll</generator><link href="https://lgatto.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://lgatto.github.io/" rel="alternate" type="text/html" /><updated>2025-06-09T15:35:37+02:00</updated><id>https://lgatto.github.io/feed.xml</id><title type="html">~/</title><subtitle>Laurent Gatto&apos;s online home</subtitle><author><name>Laurent Gatto</name></author><entry><title type="html">CBIO’s EuroBioc2024 posters and talks</title><link href="https://lgatto.github.io/EuroBioc-Oxford/" rel="alternate" type="text/html" title="CBIO’s EuroBioc2024 posters and talks" /><published>2025-06-09T00:00:00+02:00</published><updated>2025-06-09T00:00:00+02:00</updated><id>https://lgatto.github.io/EuroBioc-Oxford</id><content type="html" xml:base="https://lgatto.github.io/EuroBioc-Oxford/">&lt;p&gt;The lab is preparing for &lt;a href=&quot;https://eurobioc2025.bioconductor.org/&quot;&gt;EuroBioc2025 in
+Barcelona&lt;/a&gt;, and I realise that
+I forgot to post our contributions to &lt;a href=&quot;https://eurobioc2024.bioconductor.org/&quot;&gt;EuroBioc2024 in
+Oxford&lt;/a&gt;. So here they are
+(with papers that were published in the meantime).&lt;/p&gt;
+
+&lt;h2 id=&quot;differential-correlation-analysis-and-biological-function-inference-on-single-cell-proteomics&quot;&gt;Differential Correlation Analysis and Biological Function Inference on Single Cell Proteomics&lt;/h2&gt;
+
+&lt;p&gt;Author(s): Enes Sefa Ayar, Laurent Gatto&lt;/p&gt;
+
+&lt;p&gt;Proteins are the key molecules in executing biological functions
+within cells. They operate in cooperation with other proteins to carry
+out these functions as part of protein complexes, or biological
+pathways. Thus, the correlation among these proteins implies a
+functional interdependence, offering insights into both biological
+functions and mechanisms. Differential correlation analysis promises
+to infer these biological functions and even underlying mechanisms by
+identifying similar or different correlation patterns in groups of
+proteins across conditions (ex. cell types, treatments). However,
+current approaches, particularly those developed for bulk
+measurements, may not be suitable for single-cell proteomics (SCP)
+datasets as they may overlook false positives and false negatives
+emerging due to batch effects or missing values.&lt;/p&gt;
+
+&lt;p&gt;We aim to investigate the most suitable approach for uncovering
+functional correlation in SCP datasets. We compared two approaches
+used in SCP [1, 2] and two other network-based methods [3, 4],
+commonly used in RNAseq studies. This benchmark involves comparing
+these methods across various SCP datasets from scpdata package, each
+with different properties including sample size, protein coverage, and
+missing values. Thus far, our observations indicate the importance of
+addressing batch effect-driven correlations. Our benchmark assesses
+the methods based on biological relevance, statistical significance,
+and data simulations.&lt;/p&gt;
+
+&lt;h4 id=&quot;references&quot;&gt;References&lt;/h4&gt;
+
+&lt;p&gt;[1] Hu, M., Zhang, Y., Yuan, Y., Ma, W., Zheng, Y., Gu, Q., &amp;amp; Xie,
+X. S. (2023). Correlated protein modules revealing functional
+coordination of interacting proteins are detected by single-cell
+proteomics. The Journal of Physical Chemistry B, 127(27), 6006–6014.&lt;/p&gt;
+
+&lt;p&gt;[2] Khan, S., Conover, R., Asthagiri, A. R., &amp;amp; Slavov,
+N. (2023). Dynamics of Single-Cell Protein Covariation during
+Epithelial–Mesenchymal Transition.&lt;/p&gt;
+
+&lt;p&gt;[3] Langfelder, P., &amp;amp; Horvath, S. (2008). WGCNA: An R package for
+weighted correlation network analysis. BMC Bioinformatics, 9(1).&lt;/p&gt;
+
+&lt;p&gt;[4] Song, W.-M., &amp;amp; Zhang, B. (2015). Multiscale embedded gene
+co-expression network analysis. PLOS Computational Biology, 11(11).&lt;/p&gt;
+
+&lt;h2 id=&quot;bulk-vs-single-cell-proteomics-is-there-a-need-for-identification-optimization&quot;&gt;Bulk vs single-cell proteomics: is there a need for identification optimization?&lt;/h2&gt;
+
+&lt;p&gt;Author(s): Guillaume Deflandre, Samuel Grégoire, Laurent Gatto&lt;/p&gt;
+
+&lt;p&gt;Single-cell proteomics (SCP) has emerged as a powerful tool for
+elucidating cellular heterogeneity, offering opportunities beyond
+traditional bulk sample analysis. However, the application of current
+peptide identifications crafted for bulk samples may lead to false
+discoveries in SCP. Challenges such as reduced peak counts, lower peak
+intensities, and degraded signal-to-noise ratios (as identified by
+Boekweg et al. [1]) raise the question: do current peptide scoring
+methods in search engines adequately perform in the context of SCP? To
+address these limitations, we explore the effectiveness of search
+engines and rescoring tools with the use of Bioconductor packages
+PSMatch and Spectra. Rescoring tools take profit of as many mass
+spectrometry-based features as possible, such as spectral
+characteristics and retention time models, which can be particularly
+relevant to mitigate the poor quality of SCP spectra. We used
+MS²Rescore to generate new features, Mokapot to rescore the SCP
+peptides as well as the above-mentioned packages to assess the
+efficiency of rescoring tools and potentially improve current scoring
+methods in the context of SCP. Our findings demonstrate a significant
+increase in confidently identified peptides upon rescoring. In
+addition, we suggest a 4-step methodology to evaluate the usefulness
+of current and new potential features. Finally, our results shed light
+on the differences between bulk and single-cell samples whilst
+providing insights that can inform more accurate and reliable data
+interpretation in the context of SCP.&lt;/p&gt;
+
+&lt;h4 id=&quot;references-1&quot;&gt;References&lt;/h4&gt;
+
+&lt;p&gt;[1] Hannah Boekweg and Samuel H. Payne. Challenges and Opportunities
+for Single-cell Computational Proteomics. Molecular &amp;amp; Cellular
+Proteomics, 22(4):100518, April 2023. ISSN 15359476. doi:
+10.1016/j.mcpro.2023.100518. URL
+https://linkinghub.elsevier.com/retrieve/pii/S1535947623000282.&lt;/p&gt;
+
+&lt;h2 id=&quot;from-cancer-testis-genes-to-cancer-testis-enhancers&quot;&gt;From Cancer-Testis genes to Cancer-Testis enhancers&lt;/h2&gt;
+
+&lt;p&gt;Author(s): Julie Devis, Axelle Loriot, Charles De Smet and Laurent Gatto&lt;/p&gt;
+
+&lt;p&gt;Cancer-Testis (CT) genes are normally expressed only in germ cells and
+not in healthy somatic tissues. However, they are aberrantly activated
+in many tumours. Many CT genes are regulated by methylation. Their
+promoters are highly methylated in all healthy somatic tissues and
+demethylated in germ cells. They are also demethylated in tumours in
+which they are activated. This is a consequence of the global
+demethylation process often observed in cancer. These characteristics
+give them clinical potential, as they produce cancer-specific antigens
+and can thus be used as target for cancer immunotherapy. We have
+recently developed the CTexploreR Bioconductor package, an updated
+database for CT genes.&lt;/p&gt;
+
+&lt;p&gt;Promoters are not the only regulatory regions that can be affected by
+DNA methylation. It has been shown that many enhancers, that are
+activating distal regulatory regions, can be methylated. Their
+methylation can be altered in tumours, affecting the expression of
+their target genes. We hence wondered if we could find CT enhancers
+that would behave like CT genes promoters. We compared ENCODE
+cis-regulatory elements and whole genome bisulfite-seq data in somatic
+and germinal healthy tissues and in cancer to find enhancers that are
+active and demethylated exclusively in germ cells and tumours. We
+identified CT-like enhancer candidates that will be further defined.&lt;/p&gt;
+
+&lt;h2 id=&quot;an-open-software-development-based-ecosystem-of-r-packages-for-proteomics-data-analysis&quot;&gt;An Open Software Development-based Ecosystem of R Packages for Proteomics Data Analysis&lt;/h2&gt;
+
+&lt;p&gt;Author(s): Laurent Gatto and RforMassSpectrometry contributors&lt;/p&gt;
+
+&lt;p&gt;A frequent problem with scientific research software is the lack of
+support, maintenance and further development. In particular,
+development by a single researcher can easily result in orphaned and
+dysfunctional software packages, especially if combined with poor
+documentation, missing unit tests or lack of adherence to open
+software development standards.&lt;/p&gt;
+
+&lt;p&gt;The RforMassSpectrometry (https://www.rformassspectrometry.org/)
+initiative aims to develop an efficient, scalable, and stable
+infrastructure for mass spectrometry (MS) based proteomics (Gatto et
+al. poster) and metabolomics (Rainer et al. poster) data analysis. As
+part of this initiative, a growing ecosystem of R software packages is
+being developed covering different aspects of metabolomics and
+proteomics data analysis. To avoid the aforementioned problems,
+community contributions are fostered, and open development,
+documentation and long-term support emphasised.&lt;/p&gt;
+
+&lt;p&gt;At the heart of the package ecosystem lies the Spectra package that
+provides the core infrastructure to handle, process and visualise MS
+data. Its design allows easy expansion to support existing and new
+file or data formats, including data representations with minimal
+memory footprint or remote data access. For proteomics data analysis,
+two packages in particular are dedicated to the analysis or
+quantitative and identification data. The PSMatch package handles and
+manages peptide identification data. It also provides functions to
+model and visualise peptide-protein relations to make informed
+decision about shared peptide filtering. The package also provides
+functions to calculate and visualise MS2 fragment ions, in conjunction
+with the Spectra package. The QFeatures package is the working horse
+for quantitative proteomics data. It builds on the familiar
+SummarizedExperiment and MultiAssayExperiment infrastructure and
+provides a familiar Bioconductor user experience to manage bulk and
+single-cell quantitative data across different assay levels (such as
+peptide spectrum matches, peptides and proteins) in a coherent and
+tractable way. These three packages rely on MsCoreUtils for efficient
+implementations of commonly used algorithms, designed to be re-used by
+other R packages.&lt;/p&gt;
+
+&lt;p&gt;In contrast to a monolithic software design, the RforMassSpectrometry
+ecosystem enables to build customised, modular, and reproducible
+analysis workflows. Future proteomics-related development will focus
+on improved data structures and analysis methods, better support for
+third-party data import, and better interoperability with other open
+source software including a direct integration with Python MS
+libraries.&lt;/p&gt;
+
+&lt;h4 id=&quot;publication&quot;&gt;Publication&lt;/h4&gt;
+
+&lt;p&gt;Loriot, Axelle, Julie Devis, Laurent Gatto, and Charles De
+Smet. 2025. “A Survey of Human Cancer-Germline Genes: Linking X
+Chromosome Localization, DNA Methylation and Sex-Biased Expression in
+Early Embryos.” bioRxiv. https://doi.org/10.1101/2025.05.19.654804.&lt;/p&gt;
+
+&lt;h2 id=&quot;mass-spectrometry-based-proteomicsmetabolomics-and-bioconductor-from-the-early-days-to-2024&quot;&gt;Mass spectrometry-based proteomics/metabolomics and Bioconductor: from the early days to 2024&lt;/h2&gt;
+
+&lt;p&gt;Author(s): Laurent Gatto, Sebastien Gibb, Johannes Rainer&lt;/p&gt;
+
+&lt;p&gt;The Bioconductor project has always been best known for its
+state-of-the-art infrastructure for genomics data analysis and
+comprehension. Starting with packages for microarrays, and later RNA
+Sequencing, transcriptomics has been the most visible part of the
+Bioconductor iceberg. Proteomics has been part of the early days of
+the project, with the PROcess package to process SELDI-TO-MS data,
+that was cited/documented in the very first Bioconductor paper (2004)
+and monograph (2005). Proteomics and metabolomics have grown
+substantially since these early days, both in terms of packages,
+community contributions, and user base, culminating in the R for Mass
+Spectrometry initiative. In this short talk, I will provide an
+overview of how the mass spectrometry-based proteomics and
+metabolomics infrastructure has evolved since the early days, and what
+the goals for the future are.&lt;/p&gt;
+
+&lt;h2 id=&quot;comprehensive-and-standardised-workflow-for-single-cell-proteomics-data-analysis-using-scp-and-scplainer&quot;&gt;Comprehensive and standardised workflow for single-cell proteomics data analysis using scp and scplainer.&lt;/h2&gt;
+
+&lt;p&gt;Author(s): Samuel Grégoire, Christophe Vanderaa and Laurent Gatto&lt;/p&gt;
+
+&lt;p&gt;Single cell proteomics (SCP) via mass spectrometry has become
+achievable thanks to technological advancements innovated by various
+research teams, resulting in a broad landscape of cutting-edge
+methodologies [1]. While this progress has enabled the measurement of
+thousands of proteins at the single cell resolution, it has also
+resulted in various complex and divergent analysis workflows. To
+efficiently tackle biologically relevant questions, the field of SCP
+must confront the challenges inherent in SCP data. SCP data are
+particularly prone to technical variations, batch effects, and missing
+values [2].&lt;/p&gt;
+
+&lt;p&gt;To address these challenges, our team has developed several tools
+packaged within the scp R/Bioconductor package. The latest addition is
+the scplainer approach, which offers a standardised approach grounded
+in linear modeling. scplainer provides key tools to extracts
+meaningful insights from SCP data through variance analysis,
+differential abundance analysis and component analysis, while
+streamlining the visualisation of the results. Integrated into the scp
+package, scplainer leverages QFeatures and SingleCellExperiment
+infrastructures, providing a comprehensive interface with numerous
+data processing functions. In addition, we also developed scpdata, a
+package containing standardised and annotated single-cell proteomics
+data, which we are still actively extending.&lt;/p&gt;
+
+&lt;p&gt;In this work, we provide a comprehensive overview of SCP data
+processing using the scp package, starting from the output table
+generated by the search engine software through data processing,
+modeling and downstream analyses.&lt;/p&gt;
+
+&lt;h4 id=&quot;references-2&quot;&gt;References&lt;/h4&gt;
+
+&lt;p&gt;[1] Petrosius et Schoof (2023), &lt;em&gt;Recent advances in the field of
+single-cell proteomics&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;[2] Vanderaa et Gatto (2021), &lt;em&gt;Replication of single-cell proteomics
+data reveals important computational challenges&lt;/em&gt;.&lt;/p&gt;
+
+&lt;h4 id=&quot;publication-1&quot;&gt;Publication&lt;/h4&gt;
+
+&lt;p&gt;Grégoire, Samuel, Christophe Vanderaa, Sébastien Pyr dit Ruys,
+Christopher Kune, Gabriel Mazzucchelli, Didier Vertommen, and Laurent
+Gatto. 2024. “Standardized Workflow for Mass-Spectrometry-Based
+Single-Cell Proteomics Data Processing and Analysis Using the Scp
+Package.” In Methods in Molecular Biology, 177–220. Methods in
+Molecular Biology (Clifton, N.J.). New York, NY: Springer US
+(&lt;a href=&quot;https://arxiv.org/abs/2310.13598&quot;&gt;pre-print&lt;/a&gt;).&lt;/p&gt;
+
+&lt;h2 id=&quot;scpgui-and-qfeaturesgui-graphical-interfaces-for-single-cell-and-bulk-proteomics&quot;&gt;scpGUI and QFeaturesGUI: Graphical Interfaces for Single-Cell and Bulk Proteomics&lt;/h2&gt;
+
+&lt;p&gt;Author(s): Léopold Guyot, Christophe Vanderaa, Laurent Gatto&lt;/p&gt;
+
+&lt;p&gt;In recent years, significant advancements have been made in the field
+of proteomics data analysis. However, the complexity of workflows
+involving programming languages such as R and Python can pose
+challenges for practitioners without any coding backgrounds. To
+address this issue, we introduce two user-friendly packages: &lt;em&gt;scpGUI&lt;/em&gt;
+and &lt;em&gt;QFeaturesGUI&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;scpGUI&lt;/em&gt; is tailored for downstream visual analysis in single-cell
+proteomics, using the outcomes of the popular package &lt;em&gt;scp&lt;/em&gt;. Developed
+using &lt;em&gt;Shiny&lt;/em&gt; and built upon the elegant and efficient &lt;em&gt;iSEE&lt;/em&gt; suite,
+&lt;em&gt;scpGUI&lt;/em&gt; offers interactive data visualisations specifically crafted
+for single-cell proteomics downstream analysis. The app’s
+interactivity helps users in comprehending their results through
+various visualisations.&lt;/p&gt;
+
+&lt;p&gt;Similarly, &lt;em&gt;QFeaturesGUI&lt;/em&gt; is designed for single-cell and bulk
+proteomics analysis, capitalising on the strengths of the &lt;em&gt;QFeatures&lt;/em&gt;
+package. Providing a suite of &lt;em&gt;Shiny&lt;/em&gt; apps, &lt;em&gt;QFeaturesGUI&lt;/em&gt; offers
+comprehensive tools for data import and basic processing steps,
+simplifying pre-treatment of quantitative proteomics data. Its modular
+design ensures flexibility and adaptability to specific
+requirements. These apps also enhance transparency and facilitate
+replication by generating reproducible R code.&lt;/p&gt;
+
+&lt;p&gt;Together, &lt;em&gt;scpGUI&lt;/em&gt; and &lt;em&gt;QFeaturesGUI&lt;/em&gt; offer valuable support for
+proteomics data analysis. By combining user-friendly graphical
+interfaces with powerful back-end tools, they make advanced analysis
+techniques more accessible to the wider proteomics community.&lt;/p&gt;
+
+&lt;h2 id=&quot;batch-effect-detection-and-visual-quality-control-with-cytomds-a-bioconductor-package-for-low-dimensional-representation-of-distances-between-cytometry-samples&quot;&gt;Batch effect detection and visual quality control with &lt;em&gt;CytoMDS&lt;/em&gt;, a Bioconductor package for low dimensional representation of distances between cytometry samples&lt;/h2&gt;
+
+&lt;p&gt;Author(s): Philippe Hauchamps,Dan Lin,Laurent Gatto&lt;/p&gt;
+
+&lt;p&gt;Quality Control (QC) of samples is an essential preliminary step in
+cytometry data analysis. Notably, identification of potential batch
+effects and sample outliers is paramount, to avoid mistaking these
+effects for true biological signal in downstream analyses. However,
+this task can prove to be delicate and tedious, especially for
+datasets with many samples.&lt;/p&gt;
+
+&lt;p&gt;Here, we present &lt;em&gt;CytoMDS&lt;/em&gt;, a Bioconductor package implementing a
+dedicated method for low dimensional representation of cytometry
+samples composed of marker expressions for up to millions of single
+cells. This method combines Earth Mover’s Distance (EMD) [1] for
+assessing dissimilarities between multidimensional distributions, and
+Multi Dimensional Scaling (MDS) [2] for low dimensional projection of
+distances. Some additional visual tools, both for projection quality
+diagnosis and for user interpretation of the projection axes, are also
+provided in the package.&lt;/p&gt;
+
+&lt;p&gt;We demonstrate the strengths and advantages of CytoMDS for QC of
+cytometry data on real biological datasets, revealing the presence of
+low quality samples, batch effects and biological signal between
+sample groups.&lt;/p&gt;
+
+&lt;h4 id=&quot;references-3&quot;&gt;References&lt;/h4&gt;
+
+&lt;p&gt;[1] Haidong Yi and Natalie Stanley. 2022. “CytoEMD: Detecting and
+Visualizing between-Sample Variation in Relation to Phenotype with
+Earth Mover’s Distance.” In Proceedings of the 13th ACM International
+Conference on Bioinformatics, Computational Biology and Health
+Informatics, 1–14. BCB ’22 28. New York, NY, USA: Association for
+Computing Machinery.&lt;/p&gt;
+
+&lt;p&gt;[2] Jan de Leeuw and Patrick Mair. 2009. “Multidimensional Scaling
+Using Majorization: SMACOF in R.” Journal of Statistical Software 31
+(3): 1–30.&lt;/p&gt;
+
+&lt;h4 id=&quot;publication-2&quot;&gt;Publication&lt;/h4&gt;
+
+&lt;p&gt;Hauchamps, Philippe, Simon Delandre, Stéphane T. Temmerman, Dan Lin,
+and Laurent Gatto. 2025. “Visual Quality Control with CytoMDS, a
+Bioconductor Package for Low Dimensional Representation of Cytometry
+Sample Distances.” Cytometry. Part A: The Journal of the International
+Society for Analytical Cytology,
+March. https://doi.org/10.1002/cyto.a.24921
+(&lt;a href=&quot;https://www.biorxiv.org/content/10.1101/2024.07.01.601465v2&quot;&gt;pre-print&lt;/a&gt;).&lt;/p&gt;</content><author><name>Laurent Gatto</name></author><category term="conference" /><category term="software" /><category term="talks" /><category term="CBIO" /><summary type="html">The lab is preparing for EuroBioc2025 in Barcelona, and I realise that I forgot to post our contributions to EuroBioc2024 in Oxford. So here they are (with papers that were published in the meantime).</summary></entry><entry><title type="html">6 Questions We Should Ask Before Adopting a New Technology</title><link href="https://lgatto.github.io/neil-postman-six-question-technology/" rel="alternate" type="text/html" title="6 Questions We Should Ask Before Adopting a New Technology" /><published>2025-05-18T00:00:00+02:00</published><updated>2025-05-18T00:00:00+02:00</updated><id>https://lgatto.github.io/neil-postman-six-question-technology</id><content type="html" xml:base="https://lgatto.github.io/neil-postman-six-question-technology/">&lt;p&gt;I stumbled across &lt;a href=&quot;https://tldr.nettime.org/@_elena@mastodon.social/114522680510446087&quot;&gt;this
 message&lt;/a&gt;
 on mastodon, that directed me to 6 questions what one should ask
 before adopting a new technology. These questions where posed by &lt;a href=&quot;https://en.wikipedia.org/wiki/Neil_Postman&quot;&gt;Neil
@@ -1445,122 +1768,4 @@ committee&lt;/a&gt;, and
 co-organise the yearly European &lt;a href=&quot;https://eurobioc2023.bioconductor.org/&quot;&gt;EuroBioc
 conference&lt;/a&gt;.&lt;/p&gt;
   &lt;/li&gt;
-&lt;/ul&gt;</content><author><name>Laurent Gatto</name></author><category term="science" /><category term="open research" /><category term="software" /><summary type="html">Every now and then, there’s a situation where I need to briefly introduce myself, academically. This can be with or without any visual support (i.e a slide). Instead of doing so semi-randomly, I though I would prepare such a one-minute introduction, once an for all. So here I go, with a nice illustrative heck-sticker slide and plenty of links.</summary></entry><entry><title type="html">Open position in the CBIO lab: single-cell proteomics</title><link href="https://lgatto.github.io/scp-job-2023/" rel="alternate" type="text/html" title="Open position in the CBIO lab: single-cell proteomics" /><published>2023-02-27T00:00:00+01:00</published><updated>2023-02-27T00:00:00+01:00</updated><id>https://lgatto.github.io/scp-job-2023</id><content type="html" xml:base="https://lgatto.github.io/scp-job-2023/">&lt;p&gt;A fully-funded position for a PhD student (4 years) or a post-doctoral
-researcher (2 - 3 years, depending on experience) is open in the
-Computational Biology and Bioinformatics lab (CBIO) at the de Duve
-Institute, UCLouvain in Brussels, Belgium.&lt;/p&gt;
-
-&lt;p&gt;The &lt;a href=&quot;https://lgatto.github.io/cbio-lab&quot;&gt;CBIO lab&lt;/a&gt; has developed a
-leading expertise in mass spectrometry-based &lt;a href=&quot;https://paperpile.com/shared/paTK2y&quot;&gt;single-cell proteomics
-data processing, analysis and
-interpretation&lt;/a&gt; and is looking
-for a researcher to contribute to this research theme. The position
-will focus on computational and statistical approaches, including
-research software development, integration with other omics
-modalities, and could, depending on the candidate interests and
-experience, also include a small wet lab component.&lt;/p&gt;
-
-&lt;p&gt;The successful candidate will have a degree in bioinformatics,
-statistics, computer sciences, biomedical sciences, bio-engineering,
-or equivalent and be able to demonstrate experience and/or keen
-interest in one or several of the following:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;experience in one or multiple omics experimental technologies, data
-processing, analysis and/or interpretation - experience in mass
-spectrometry and proteomics is an advantage;&lt;/li&gt;
-  &lt;li&gt;a keen interest in understanding and tackling biomedically relevant
-questions;&lt;/li&gt;
-  &lt;li&gt;interest in robust method development;&lt;/li&gt;
-  &lt;li&gt;background/expertise in statistics, machine learning and/or
-artificial intelligence;&lt;/li&gt;
-  &lt;li&gt;open and reproducible research (e.g. Rmarkdown, Jupyter notebooks,
-Github, version control, …);&lt;/li&gt;
-  &lt;li&gt;research software development (e.g. unit testing, version control,
-continuous integration, …);&lt;/li&gt;
-  &lt;li&gt;experience in R/Bioconductor data structures, in particular those
-used for omics data analysis (e.g. SummarizedExperiment,
-SingleCellExeriment, QFeatures, …);&lt;/li&gt;
-  &lt;li&gt;contribution to an open and inclusive research environment;&lt;/li&gt;
-  &lt;li&gt;good written and oral communication skills.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;The project is funded by the Fonds National de la Recherche
-Scientifique (FNRS). The position is open immediately until filled.&lt;/p&gt;
-
-&lt;h2 id=&quot;about-the-cbio-lab&quot;&gt;About the CBIO lab&lt;/h2&gt;
-
-&lt;p&gt;The Computational Biology and Bioinformatics lab is headed by Prof
-&lt;a href=&quot;https://lgatto.github.io/about&quot;&gt;Laurent Gatto&lt;/a&gt; and is composed of
-students and researchers with expertise in biomedical sciences,
-statistics, omics data analysis and bioinformatics. Details about our
-work and the members can be found at
-&lt;a href=&quot;https://lgatto.github.io/cbio-lab/&quot;&gt;https://lgatto.github.io/cbio-lab/&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;The lab supports a friendly and supportive work environment through
-flexible working hours and the possibility to work remotely. The lab
-meetings are typically scheduled in-person (or mixed remote/in-person)
-to favour interactions among lab members. While joining the lab and
-contribution to our research, you will also have the opportunity to get
-involved in the international Bioconductor community. The lab members
-have opportunities to join courses and conferences in Belgium and
-abroad to present their work.&lt;/p&gt;
-
-&lt;h2 id=&quot;academic-environment&quot;&gt;Academic environment&lt;/h2&gt;
-
-&lt;p&gt;The &lt;a href=&quot;https://www.deduveinstitute.be/&quot;&gt;de Duve Institute&lt;/a&gt; is a
-multidisciplinary biomedical research institute (250-300 scientists)
-hosting several laboratories the UCLouvain, as well as the Brussels
-branch of the Ludwig Institute for Cancer Research. The focus is on
-basic research in the fields of tumour immunology and signal
-transduction in cancer, genetics and development, including human
-genetics, stem cells and organ development, infection and inflammation
-and metabolism and hormones. The de Duve Institute also features
-several core facilities, including imaging, transgenesis, mass
-spectrometry, flow cytometry and cell sorting, as well as
-genomics. The de Duve Institute provides access to a high-performance
-computing cluster and storage, managed by a dedicated IT team.&lt;/p&gt;
-
-&lt;h2 id=&quot;application&quot;&gt;Application&lt;/h2&gt;
-
-&lt;p&gt;To apply for the position, please send the following documents to
-Laurent Gatto:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;A cover letter describing why you would like to join the lab and how
-you match the requirement;&lt;/li&gt;
-  &lt;li&gt;A detailed CV including, depending on seniority, some or all of the
-following: a list of publications, pre-prints, posters and/or
-software contributions; a link to publicly available code/data
-analysis you have contributed to; education and professional
-experience; current and past positions; awards; obtained funding;
-teaching experience; any additional information you deem relevant.&lt;/li&gt;
-  &lt;li&gt;If no code is publicly available, please include code chunks that
-illustrate best your programming experience and interests.&lt;/li&gt;
-  &lt;li&gt;Among your publications/software/projects, select up to 3 and
-provide a short narrative describing why these are important in your
-career, your specific contributions and/or the unique skills you
-have gained through these.&lt;/li&gt;
-  &lt;li&gt;A list of at least 2 (for a PhD application) or 3 (for a
-post-doctoral researcher application) academic references.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Expectations are different for PhD or PDRA application and will be
-assessed accordingly.&lt;/p&gt;
-
-&lt;h2 id=&quot;salary&quot;&gt;Salary&lt;/h2&gt;
-
-&lt;p&gt;A PhD-student salary is around 2000 euros in Belgium. Other positions,
-such as research assistants (assumes a MS degree) or post-doctoral
-associates (assumes a PhD degree), the gross salary will depend on
-seniority (year after acquiring the degree) and the net salary will
-depend on family circumstances.&lt;/p&gt;
-
-&lt;p&gt;For more details about this position, feel free to contact Laurent
-Gatto at &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;laurent&amp;lt;DOT&amp;gt;gatto&amp;lt;AT&amp;gt;uclouvain.be&lt;/code&gt;.&lt;/p&gt;
-
-&lt;p&gt;You might also be interested in &lt;a href=&quot;https://lgatto.github.io/spatprot-job-2023/&quot;&gt;this
-position&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;Please do share this position with your students and colleagues
-(&lt;a href=&quot;/images/2023-job-scp.pdf&quot;&gt;pdf&lt;/a&gt;).&lt;/p&gt;</content><author><name>Laurent Gatto</name></author><category term="job" /><summary type="html">A fully-funded position for a PhD student (4 years) or a post-doctoral researcher (2 - 3 years, depending on experience) is open in the Computational Biology and Bioinformatics lab (CBIO) at the de Duve Institute, UCLouvain in Brussels, Belgium.</summary></entry></feed>
+&lt;/ul&gt;</content><author><name>Laurent Gatto</name></author><category term="science" /><category term="open research" /><category term="software" /><summary type="html">Every now and then, there’s a situation where I need to briefly introduce myself, academically. This can be with or without any visual support (i.e a slide). Instead of doing so semi-randomly, I though I would prepare such a one-minute introduction, once an for all. So here I go, with a nice illustrative heck-sticker slide and plenty of links.</summary></entry></feed>
