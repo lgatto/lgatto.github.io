@@ -1,0 +1,842 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+<meta charset="utf-8" />
+<meta name="generator" content="pandoc" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta property="og:title" content="Chapter 7 Joining tables | Introduction to bioinformatics" />
+<meta property="og:type" content="book" />
+
+<meta property="og:description" content="Course material for the Introduction to bioinformatics (WSBIM1207) course at UCLouvain." />
+
+
+<meta name="author" content="Laurent Gatto" />
+
+<meta name="date" content="2025-06-16" />
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  TeX: { equationNumbers: { autoNumber: "AMS" } }
+});
+</script>
+  <script src="/usr/share/javascript/mathjax/MathJax.js" type="text/javascript"></script>
+
+<meta name="description" content="Course material for the Introduction to bioinformatics (WSBIM1207) course at UCLouvain.">
+
+<title>Chapter 7 Joining tables | Introduction to bioinformatics</title>
+
+<link href="libs/tufte-css-2015.12.29/tufte.css" rel="stylesheet" />
+<link href="libs/tufte-css-2015.12.29/envisioned.css" rel="stylesheet" />
+<link href="libs/msmb-css-0/msmb.css" rel="stylesheet" />
+<script>
+function toggle_visibility(id1, id2) {
+var e = document.getElementById(id1);
+var f = document.getElementById(id2);
+
+e.style.display = ((e.style.display!='none') ? 'none' : 'block');
+
+if(f.classList.contains('fa-plus-square')) {
+    f.classList.add('fa-minus-square')
+    f.classList.remove('fa-plus-square')
+} else {
+    f.classList.add('fa-plus-square')
+    f.classList.remove('fa-minus-square')
+}
+
+}
+</script>
+<script>
+function copy_link(id) {
+  var dummy = document.createElement('input'),
+  text = window.location.href.split(/[?#]/)[0] + '#' + id;
+  document.body.appendChild(dummy);
+  dummy.value = text;
+  dummy.select();
+  document.execCommand('copy');
+  document.body.removeChild(dummy);
+  
+  var tooltip = document.getElementById(id + '-tooltip');
+  tooltip.innerHTML = 'Copied!';
+}
+
+function reset_tooltip(id) {
+  var tooltip = document.getElementById(id);
+  tooltip.innerHTML = 'Copy link';
+}
+</script>
+<link href="libs/htmltools-fill-0.5.8.1/fill.css" rel="stylesheet" />
+<script src="libs/htmlwidgets-1.6.4/htmlwidgets.js"></script>
+<link href="libs/datatables-css-0.0.0/datatables-crosstalk.css" rel="stylesheet" />
+<script src="libs/datatables-binding-0.33/datatables.js"></script>
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<link href="libs/dt-core-1.13.6/css/jquery.dataTables.min.css" rel="stylesheet" />
+<link href="libs/dt-core-1.13.6/css/jquery.dataTables.extra.css" rel="stylesheet" />
+<script src="libs/dt-core-1.13.6/js/jquery.dataTables.min.js"></script>
+<link href="libs/crosstalk-1.2.1/css/crosstalk.min.css" rel="stylesheet" />
+<script src="libs/crosstalk-1.2.1/js/crosstalk.min.js"></script>
+
+
+<style type="text/css">code{white-space: pre;}</style>
+<style type="text/css">
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { color: #008000; } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { color: #008000; font-weight: bold; } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+</style>
+
+
+<style type="text/css">
+/* Used with Pandoc 2.11+ new --citeproc when CSL is used */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}
+</style>
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+
+</head>
+
+<body>
+
+
+
+<div class="row">
+<div class="col-sm-12">
+<div id="TOC">
+<ul class="navbar">
+<li class="msmb"><p class="title">Introduction to bioinformatics<p><p class="author">Laurent Gatto</p>
+<li class="dropdown" style="float:right">
+<a href="javascript:void(0)" class="dropbtn">&#x25BE; Chapters</a>
+<div class="dropdown-content">
+<a href="index.html" id="toc-preamble">Preamble</a>
+<a href="sec-dataorg.html" id="toc-sec-dataorg"><span class="toc-section-number">1</span> Data organisation with Spreadsheets</a>
+<a href="sec-rrstudio.html" id="toc-sec-rrstudio"><span class="toc-section-number">2</span> R and RStudio</a>
+<a href="sec-startr.html" id="toc-sec-startr"><span class="toc-section-number">3</span> Introduction to R</a>
+<a href="sec-startdata.html" id="toc-sec-startdata"><span class="toc-section-number">4</span> Starting with data</a>
+<a href="sec-dplyr.html" id="toc-sec-dplyr"><span class="toc-section-number">5</span> Manipulating and analyzing data with dplyr</a>
+<a href="sec-vis.html" id="toc-sec-vis"><span class="toc-section-number">6</span> Data visualization</a>
+<a id="active-page" href="sec-join.html" id="toc-sec-join"><span class="toc-section-number">7</span> Joining tables</a><ul class="toc-sections">
+<li class="toc"><a href="#combining-tables"> Combining tables</a></li>
+<li class="toc"><a href="#different-types-of-joins"> Different types of joins</a></li>
+<li class="toc"><a href="#multiple-matches"> Multiple matches</a></li>
+<li class="toc"><a href="#matching-across-multiple-keys"> Matching across multiple keys</a></li>
+<li class="toc"><a href="#merge-in-base-r"> Merge in base R</a></li>
+<li class="toc"><a href="#row-and-column-binding"> Row and column binding</a></li>
+<li class="toc"><a href="#additional-exercises-5"> Additional exercises</a></li>
+</ul>
+<a href="sec-rr.html" id="toc-sec-rr"><span class="toc-section-number">8</span> Reproducible research</a>
+<a href="sec-bioinfo.html" id="toc-sec-bioinfo"><span class="toc-section-number">9</span> Bioinformatics</a>
+<a href="sec-prog.html" id="toc-sec-prog"><span class="toc-section-number">10</span> Additional programming concepts</a>
+<a href="sec-ccl.html" id="toc-sec-ccl"><span class="toc-section-number">11</span> Conclusions</a>
+<a href="sec-anx.html" id="toc-sec-anx"><span class="toc-section-number">12</span> Annex</a>
+<a href="session-information.html" id="toc-session-information"><span class="toc-section-number">13</span> Session information</a>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="row">
+<div class="col-sm-12">
+<div id="sec-join" class="section level1" number="7">
+<h1>
+<span class="header-section-number">Chapter 7</span> Joining tables</h1>
+<p><strong>Learning Objectives</strong></p>
+<p>At the end of this section, students should understand</p>
+<ul>
+<li>the need and concept of table joins,</li>
+<li>differences between the different types of joins,</li>
+<li>the importance of keys in joins,</li>
+<li>circumstances leading to the appearance of missing values,</li>
+<li>the implications of using non-unique keys.</li>
+</ul>
+<p>In many real life situations, data are spread across multiple tables
+or spreadsheets. Usually this occurs because different types of
+information about a subject, e.g. a patient, are collected from
+different sources. It may be desirable for some analyses to combine
+data from two or more tables into a single data frame based on a
+common column, for example, an attribute that uniquely identifies the
+subject.</p>
+<p>The <code>dplyr</code> package, that we have already used extensively, provides a
+set of join functions for combining two data frames based on matches
+within specified columns.</p>
+<p>For further reading, please refer to the chapter about <a href="https://r4ds.had.co.nz/relational-data.html#understanding-joins">table
+joins</a>
+in <span class="citation">Grolemund and Wickham (<label for="tufte-mn-22" class="margin-toggle">⊕</label><input type="checkbox" id="tufte-mn-22" class="margin-toggle">2017<span class="marginnote">Grolemund, Garrett, and Hadley Wickham. 2017. <em>R for Data Science</em>. O’Reilly Media. <a href="https://r4ds.had.co.nz/">https://r4ds.had.co.nz/</a>.</span>)</span>.</p>
+<p>The <a href="https://github.com/rstudio/cheatsheets/raw/main/data-transformation.pdf">Data Transformation Cheat
+Sheet</a>
+also provides a short overview on table joins.</p>
+<div id="combining-tables" class="section level2" number="7.1">
+<h2>
+<span class="header-section-number">7.1</span> Combining tables<div class="tooltip"><button class="internal-link-btn" onclick="copy_link('combining-tables')" onmouseout="reset_tooltip('combining-tables-tooltip')"><span class="tooltiptext" id="combining-tables-tooltip">Copy link</span><i class="fa fa-link"></i></button></div>
+</h2>
+<p>We are going to illustrate join using a common example from the
+bioinformatics world, where annotations about genes are scattered in
+different tables that have one or more shared columns. The data we are
+going to use are available in the course package and can be loaded as
+shown below.</p>
+<div class="sourceCode" id="cb524"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb524-1"><a href="sec-join.html#cb524-1" tabindex="-1"></a><span class="fu">library</span>(<span class="st">"rWSBIM1207"</span>)</span>
+<span id="cb524-2"><a href="sec-join.html#cb524-2" tabindex="-1"></a><span class="fu">data</span>(jdf)</span></code></pre></div>
+<p>The example data is composed of pairs of tables (we have tibbles here,
+but this would equally work with dataframes). The first member of the
+pair contains protein <a href="https://www.uniprot.org/">UniProt</a><label for="tufte-sn-11" class="margin-toggle sidenote-number">11</label><input type="checkbox" id="tufte-sn-11" class="margin-toggle"><span class="sidenote"><span class="sidenote-number">11</span> UniProt is the protein information database. Its mission is to <em>provide the scientific community with a comprehensive, high-quality and freely accessible resource of protein sequence and functional information</em>.</span> unique
+accession number (<code>uniprot</code> variable), the most likely sub-cellular
+localisation of these respective proteins (<code>organelle</code> variable) as
+well as the proteins identifier (<code>entry</code>).</p>
+<div class="sourceCode" id="cb525"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb525-1"><a href="sec-join.html#cb525-1" tabindex="-1"></a>jdf1</span></code></pre></div>
+<pre><code>## # A tibble: 25 × 3
+##    uniprot  organelle                             entry      
+##    &lt;chr&gt;    &lt;chr&gt;                                 &lt;chr&gt;      
+##  1 P26039   Actin cytoskeleton                    TLN1_MOUSE 
+##  2 Q99PL5   Endoplasmic reticulum/Golgi apparatus RRBP1_MOUSE
+##  3 Q6PB66   Mitochondrion                         LPPRC_MOUSE
+##  4 P11276   Extracellular matrix                  FINC_MOUSE 
+##  5 Q6PR54   Nucleus - Chromatin                   RIF1_MOUSE 
+##  6 Q05793   Extracellular matrix                  PGBM_MOUSE 
+##  7 P19096   Cytosol                               FAS_MOUSE  
+##  8 Q9JKF1   Plasma membrane                       IQGA1_MOUSE
+##  9 Q9QZQ1-2 Plasma membrane                       AFAD_MOUSE 
+## 10 Q6NS46   Nucleus - Non-chromatin               RRP5_MOUSE 
+## # ℹ 15 more rows</code></pre>
+<p>The second table contains the name of the gene that codes for the
+protein (<code>gene_name</code> variable), a description of the gene
+(<code>description</code> variable), the uniprot accession number (this is the
+common variable that can be used to join tables) and the species the
+protein information comes from (<code>organism</code> variable).</p>
+<div class="sourceCode" id="cb527"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb527-1"><a href="sec-join.html#cb527-1" tabindex="-1"></a>jdf2</span></code></pre></div>
+<pre><code>## # A tibble: 25 × 4
+##    gene_name description                                      uniprot organism
+##    &lt;chr&gt;     &lt;chr&gt;                                            &lt;chr&gt;   &lt;chr&gt;   
+##  1 Iqgap1    Ras GTPase-activating-like protein IQGAP1        Q9JKF1  Mmus    
+##  2 Hspa5     78 kDa glucose-regulated protein                 P20029  Mmus    
+##  3 Pdcd11    Protein RRP5 homolog                             Q6NS46  Mmus    
+##  4 Tfrc      Transferrin receptor protein 1                   Q62351  Mmus    
+##  5 Hspd1     60 kDa heat shock protein, mitochondrial         P63038  Mmus    
+##  6 Tln1      Talin-1                                          P26039  Mmus    
+##  7 Smc1a     Structural maintenance of chromosomes protein 1A Q9CU62  Mmus    
+##  8 Lamc1     Laminin subunit gamma-1                          P02468  Mmus    
+##  9 Hsp90b1   Endoplasmin                                      P08113  Mmus    
+## 10 Mia3      Melanoma inhibitory activity protein 3           Q8BI84  Mmus    
+## # ℹ 15 more rows</code></pre>
+<p>We now want to join these two tables into a single one containing all
+variables. We are going to use <code>dplyr</code>’s <code>full_join</code> function to do
+so, that finds the common variable (in this case <code>uniprot</code>) to match
+observations from the first and second table.</p>
+<div class="sourceCode" id="cb529"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb529-1"><a href="sec-join.html#cb529-1" tabindex="-1"></a><span class="fu">library</span>(<span class="st">"dplyr"</span>)</span>
+<span id="cb529-2"><a href="sec-join.html#cb529-2" tabindex="-1"></a><span class="fu">full_join</span>(jdf1, jdf2)</span></code></pre></div>
+<pre><code>## Joining with `by = join_by(uniprot)`</code></pre>
+<pre><code>## # A tibble: 25 × 6
+##    uniprot  organelle                       entry gene_name description organism
+##    &lt;chr&gt;    &lt;chr&gt;                           &lt;chr&gt; &lt;chr&gt;     &lt;chr&gt;       &lt;chr&gt;   
+##  1 P26039   Actin cytoskeleton              TLN1… Tln1      Talin-1     Mmus    
+##  2 Q99PL5   Endoplasmic reticulum/Golgi ap… RRBP… Rrbp1     Ribosome-b… Mmus    
+##  3 Q6PB66   Mitochondrion                   LPPR… Lrpprc    Leucine-ri… Mmus    
+##  4 P11276   Extracellular matrix            FINC… Fn1       Fibronectin Mmus    
+##  5 Q6PR54   Nucleus - Chromatin             RIF1… Rif1      Telomere-a… Mmus    
+##  6 Q05793   Extracellular matrix            PGBM… Hspg2     Basement m… Mmus    
+##  7 P19096   Cytosol                         FAS_… Fasn      Fatty acid… Mmus    
+##  8 Q9JKF1   Plasma membrane                 IQGA… Iqgap1    Ras GTPase… Mmus    
+##  9 Q9QZQ1-2 Plasma membrane                 AFAD… Mllt4     Isoform 1 … Mmus    
+## 10 Q6NS46   Nucleus - Non-chromatin         RRP5… Pdcd11    Protein RR… Mmus    
+## # ℹ 15 more rows</code></pre>
+<p>In the examples above, each observation of the <code>jdf1</code> and <code>jdf2</code>
+tables are uniquely identified by their UniProt accession number. Such
+variables are called <strong>keys</strong>. Keys are used to match observations
+across different tables.</p>
+<p>In case none of the variable names match, those to be used can be set
+manually using the <code>by</code> argument, as shown below with the <code>jdf1</code> (as
+above) and <code>jdf3</code> tables, where the UniProt accession number is
+encoded using a different capitalisation.</p>
+<div class="sourceCode" id="cb532"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb532-1"><a href="sec-join.html#cb532-1" tabindex="-1"></a><span class="fu">names</span>(jdf3)</span></code></pre></div>
+<pre><code>## [1] "gene_name"   "description" "UniProt"     "organism"</code></pre>
+<div class="sourceCode" id="cb534"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb534-1"><a href="sec-join.html#cb534-1" tabindex="-1"></a><span class="fu">full_join</span>(jdf1, jdf3, <span class="at">by =</span> <span class="fu">c</span>(<span class="st">"uniprot"</span> <span class="ot">=</span> <span class="st">"UniProt"</span>))</span></code></pre></div>
+<pre><code>## # A tibble: 25 × 6
+##    uniprot  organelle                       entry gene_name description organism
+##    &lt;chr&gt;    &lt;chr&gt;                           &lt;chr&gt; &lt;chr&gt;     &lt;chr&gt;       &lt;chr&gt;   
+##  1 P26039   Actin cytoskeleton              TLN1… Tln1      Talin-1     Mmus    
+##  2 Q99PL5   Endoplasmic reticulum/Golgi ap… RRBP… Rrbp1     Ribosome-b… Mmus    
+##  3 Q6PB66   Mitochondrion                   LPPR… Lrpprc    Leucine-ri… Mmus    
+##  4 P11276   Extracellular matrix            FINC… Fn1       Fibronectin Mmus    
+##  5 Q6PR54   Nucleus - Chromatin             RIF1… Rif1      Telomere-a… Mmus    
+##  6 Q05793   Extracellular matrix            PGBM… Hspg2     Basement m… Mmus    
+##  7 P19096   Cytosol                         FAS_… Fasn      Fatty acid… Mmus    
+##  8 Q9JKF1   Plasma membrane                 IQGA… Iqgap1    Ras GTPase… Mmus    
+##  9 Q9QZQ1-2 Plasma membrane                 AFAD… Mllt4     Isoform 1 … Mmus    
+## 10 Q6NS46   Nucleus - Non-chromatin         RRP5… Pdcd11    Protein RR… Mmus    
+## # ℹ 15 more rows</code></pre>
+<p>As can be seen above, the variable name of the first table is retained
+in the joined one.</p>
+<div class="question">
+<p class="question-begin">
+► Question
+</p>
+<div class="question-body">
+<p>Using the <code>full_join</code> function demonstrated above, join tables <code>jdf4</code>
+and <code>jdf5</code>. What has happened for observations <code>P26039</code> and <code>P02468</code>?</p>
+<p class="question-end">
+<span class="fa fa-square-o solution-icon"></span>
+</p>
+</div>
+</div>
+<div class="msmb-solution">
+<p class="solution-begin">
+► Solution<span id="sol-start-42" class="fa fa-plus-square solution-icon clickable" onclick="toggle_visibility('sol-body-42', 'sol-start-42')"></span>
+</p>
+<div id="sol-body-42" class="solution-body" style="display: none;">
+<div class="sourceCode" id="cb536"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb536-1"><a href="sec-join.html#cb536-1" tabindex="-1"></a><span class="fu">full_join</span>(jdf4, jdf5)</span></code></pre></div>
+<pre><code>## Joining with `by = join_by(uniprot)`</code></pre>
+<pre><code>## # A tibble: 14 × 6
+##    uniprot  organelle                       entry gene_name description organism
+##    &lt;chr&gt;    &lt;chr&gt;                           &lt;chr&gt; &lt;chr&gt;     &lt;chr&gt;       &lt;chr&gt;   
+##  1 P26039   Actin cytoskeleton              TLN1… &lt;NA&gt;      &lt;NA&gt;        &lt;NA&gt;    
+##  2 Q99PL5   Endoplasmic reticulum/Golgi ap… RRBP… &lt;NA&gt;      &lt;NA&gt;        &lt;NA&gt;    
+##  3 Q6PB66   Mitochondrion                   LPPR… &lt;NA&gt;      &lt;NA&gt;        &lt;NA&gt;    
+##  4 P11276   Extracellular matrix            FINC… &lt;NA&gt;      &lt;NA&gt;        &lt;NA&gt;    
+##  5 Q6PR54   Nucleus - Chromatin             RIF1… &lt;NA&gt;      &lt;NA&gt;        &lt;NA&gt;    
+##  6 Q05793   Extracellular matrix            PGBM… &lt;NA&gt;      &lt;NA&gt;        &lt;NA&gt;    
+##  7 P19096   Cytosol                         FAS_… Fasn      Fatty acid… Mmus    
+##  8 Q9JKF1   Plasma membrane                 IQGA… &lt;NA&gt;      &lt;NA&gt;        &lt;NA&gt;    
+##  9 Q9QZQ1-2 Plasma membrane                 AFAD… &lt;NA&gt;      &lt;NA&gt;        &lt;NA&gt;    
+## 10 Q6NS46   Nucleus - Non-chromatin         RRP5… &lt;NA&gt;      &lt;NA&gt;        &lt;NA&gt;    
+## 11 P02468   &lt;NA&gt;                            &lt;NA&gt;  Lamc1     Laminin su… Mmus    
+## 12 P08113   &lt;NA&gt;                            &lt;NA&gt;  Hsp90b1   Endoplasmin Mmus    
+## 13 Q8BI84   &lt;NA&gt;                            &lt;NA&gt;  Mia3      Melanoma i… Mmus    
+## 14 Q6P5D8   &lt;NA&gt;                            &lt;NA&gt;  Smchd1    Structural… Mmus</code></pre>
+<p><code>P26039</code> and <code>P02468</code> are only present in <code>jdf4</code> and <code>jdf5</code>
+respectively, and their respective values for the variables of the
+table have been encoded as missing.</p>
+<p class="solution-end">
+<span class="fa fa-square-o solution-icon"></span>
+</p>
+</div>
+</div>
+</div>
+<div id="different-types-of-joins" class="section level2" number="7.2">
+<h2>
+<span class="header-section-number">7.2</span> Different types of joins<div class="tooltip"><button class="internal-link-btn" onclick="copy_link('different-types-of-joins')" onmouseout="reset_tooltip('different-types-of-joins-tooltip')"><span class="tooltiptext" id="different-types-of-joins-tooltip">Copy link</span><i class="fa fa-link"></i></button></div>
+</h2>
+<p>Above, we have used the <code>full_join</code> function, that fully joins two
+tables and keeps all observations, adding missing values if
+necessary. Sometimes, we want to be selective, and keep observations
+that are present in only one or both tables.</p>
+<ul>
+<li>An <strong>inner join</strong> keeps observations that are present in both
+tables.</li>
+</ul>
+<div class="figure" style="text-align: center">
+<span style="display:block;" id="fig:unnamed-chunk-215"></span>
+<p class="caption marginnote shownote">
+Figure 7.1: An inner join matches pairs of observation matching in both tables, this dropping those that are unique to one table. Figure taken from <em>R for Data Science</em>.
+</p>
+<img src="figs/join-inner.png" alt="An inner join matches pairs of observation matching in both tables, this dropping those that are unique to one table. Figure taken from *R for Data Science*." width="70%">
+</div>
+<ul>
+<li>A <strong>left join</strong> keeps observations that are present in the left
+(first) table, dropping those that are only present in the other.</li>
+<li>A <strong>right join</strong> keeps observations that are present in the right
+(second) table, dropping those that are only present in the other.</li>
+<li>A <strong>full join</strong> keeps all observations.</li>
+</ul>
+<div class="figure" style="text-align: center">
+<span style="display:block;" id="fig:unnamed-chunk-216"></span>
+<p class="caption marginnote shownote">
+Figure 7.2: Outer joins match observations that appear in at least on table, filling up missing values with <code>NA</code> values. Figure taken from <em>R for Data Science</em>.
+</p>
+<img src="figs/join-outer.png" alt="Outer joins match observations that appear in at least on table, filling up missing values with `NA` values. Figure taken from *R for Data Science*." width="70%">
+</div>
+<div class="question">
+<p class="question-begin">
+► Question
+</p>
+<div class="question-body">
+<p>Join tables <code>jdf4</code> and <code>jdf5</code>, keeping only observations in <code>jdf4</code>.</p>
+<p class="question-end">
+<span class="fa fa-square-o solution-icon"></span>
+</p>
+</div>
+</div>
+<div class="msmb-solution">
+<p class="solution-begin">
+► Solution<span id="sol-start-43" class="fa fa-plus-square solution-icon clickable" onclick="toggle_visibility('sol-body-43', 'sol-start-43')"></span>
+</p>
+<div id="sol-body-43" class="solution-body" style="display: none;">
+<div class="sourceCode" id="cb539"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb539-1"><a href="sec-join.html#cb539-1" tabindex="-1"></a><span class="fu">left_join</span>(jdf4, jdf5)</span></code></pre></div>
+<pre><code>## Joining with `by = join_by(uniprot)`</code></pre>
+<pre><code>## # A tibble: 10 × 6
+##    uniprot  organelle                       entry gene_name description organism
+##    &lt;chr&gt;    &lt;chr&gt;                           &lt;chr&gt; &lt;chr&gt;     &lt;chr&gt;       &lt;chr&gt;   
+##  1 P26039   Actin cytoskeleton              TLN1… &lt;NA&gt;      &lt;NA&gt;        &lt;NA&gt;    
+##  2 Q99PL5   Endoplasmic reticulum/Golgi ap… RRBP… &lt;NA&gt;      &lt;NA&gt;        &lt;NA&gt;    
+##  3 Q6PB66   Mitochondrion                   LPPR… &lt;NA&gt;      &lt;NA&gt;        &lt;NA&gt;    
+##  4 P11276   Extracellular matrix            FINC… &lt;NA&gt;      &lt;NA&gt;        &lt;NA&gt;    
+##  5 Q6PR54   Nucleus - Chromatin             RIF1… &lt;NA&gt;      &lt;NA&gt;        &lt;NA&gt;    
+##  6 Q05793   Extracellular matrix            PGBM… &lt;NA&gt;      &lt;NA&gt;        &lt;NA&gt;    
+##  7 P19096   Cytosol                         FAS_… Fasn      Fatty acid… Mmus    
+##  8 Q9JKF1   Plasma membrane                 IQGA… &lt;NA&gt;      &lt;NA&gt;        &lt;NA&gt;    
+##  9 Q9QZQ1-2 Plasma membrane                 AFAD… &lt;NA&gt;      &lt;NA&gt;        &lt;NA&gt;    
+## 10 Q6NS46   Nucleus - Non-chromatin         RRP5… &lt;NA&gt;      &lt;NA&gt;        &lt;NA&gt;</code></pre>
+<p class="solution-end">
+<span class="fa fa-square-o solution-icon"></span>
+</p>
+</div>
+</div>
+<div class="question">
+<p class="question-begin">
+► Question
+</p>
+<div class="question-body">
+<p>Join tables <code>jdf4</code> and <code>jdf5</code>, keeping only observations in <code>jdf5</code>.</p>
+<p class="question-end">
+<span class="fa fa-square-o solution-icon"></span>
+</p>
+</div>
+</div>
+<div class="msmb-solution">
+<p class="solution-begin">
+► Solution<span id="sol-start-44" class="fa fa-plus-square solution-icon clickable" onclick="toggle_visibility('sol-body-44', 'sol-start-44')"></span>
+</p>
+<div id="sol-body-44" class="solution-body" style="display: none;">
+<div class="sourceCode" id="cb542"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb542-1"><a href="sec-join.html#cb542-1" tabindex="-1"></a><span class="fu">right_join</span>(jdf4, jdf5)</span></code></pre></div>
+<pre><code>## Joining with `by = join_by(uniprot)`</code></pre>
+<pre><code>## # A tibble: 5 × 6
+##   uniprot organelle entry     gene_name description                     organism
+##   &lt;chr&gt;   &lt;chr&gt;     &lt;chr&gt;     &lt;chr&gt;     &lt;chr&gt;                           &lt;chr&gt;   
+## 1 P19096  Cytosol   FAS_MOUSE Fasn      Fatty acid synthase             Mmus    
+## 2 P02468  &lt;NA&gt;      &lt;NA&gt;      Lamc1     Laminin subunit gamma-1         Mmus    
+## 3 P08113  &lt;NA&gt;      &lt;NA&gt;      Hsp90b1   Endoplasmin                     Mmus    
+## 4 Q8BI84  &lt;NA&gt;      &lt;NA&gt;      Mia3      Melanoma inhibitory activity p… Mmus    
+## 5 Q6P5D8  &lt;NA&gt;      &lt;NA&gt;      Smchd1    Structural maintenance of chro… Mmus</code></pre>
+<p class="solution-end">
+<span class="fa fa-square-o solution-icon"></span>
+</p>
+</div>
+</div>
+<div class="question">
+<p class="question-begin">
+► Question
+</p>
+<div class="question-body">
+<p>Join tables <code>jdf4</code> and <code>jdf5</code>, keeping observations observed in both tables.</p>
+<p class="question-end">
+<span class="fa fa-square-o solution-icon"></span>
+</p>
+</div>
+</div>
+<div class="msmb-solution">
+<p class="solution-begin">
+► Solution<span id="sol-start-45" class="fa fa-plus-square solution-icon clickable" onclick="toggle_visibility('sol-body-45', 'sol-start-45')"></span>
+</p>
+<div id="sol-body-45" class="solution-body" style="display: none;">
+<div class="sourceCode" id="cb545"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb545-1"><a href="sec-join.html#cb545-1" tabindex="-1"></a><span class="fu">inner_join</span>(jdf4, jdf5)</span></code></pre></div>
+<pre><code>## Joining with `by = join_by(uniprot)`</code></pre>
+<pre><code>## # A tibble: 1 × 6
+##   uniprot organelle entry     gene_name description         organism
+##   &lt;chr&gt;   &lt;chr&gt;     &lt;chr&gt;     &lt;chr&gt;     &lt;chr&gt;               &lt;chr&gt;   
+## 1 P19096  Cytosol   FAS_MOUSE Fasn      Fatty acid synthase Mmus</code></pre>
+<p class="solution-end">
+<span class="fa fa-square-o solution-icon"></span>
+</p>
+</div>
+</div>
+</div>
+<div id="multiple-matches" class="section level2" number="7.3">
+<h2>
+<span class="header-section-number">7.3</span> Multiple matches<div class="tooltip"><button class="internal-link-btn" onclick="copy_link('multiple-matches')" onmouseout="reset_tooltip('multiple-matches-tooltip')"><span class="tooltiptext" id="multiple-matches-tooltip">Copy link</span><i class="fa fa-link"></i></button></div>
+</h2>
+<p>Sometimes, keys aren’t unique. In the <code>jdf6</code> table below, we see that
+the accession number <code>Q99PL5</code> is repeated twice. According to this
+table, the ribosomial protein binding protein 1 localises in the
+<a href="https://en.wikipedia.org/wiki/Endoplasmic_reticulum">endoplasmic
+reticulum</a> (often
+abbreviated ER) and in the <a href="https://en.wikipedia.org/wiki/Golgi_apparatus">Golgi
+apparatus</a> (often
+abbreviated GA).</p>
+<div class="sourceCode" id="cb548"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb548-1"><a href="sec-join.html#cb548-1" tabindex="-1"></a>jdf6</span></code></pre></div>
+<pre><code>## # A tibble: 5 × 4
+##   uniprot organelle             entry       isoform
+##   &lt;chr&gt;   &lt;chr&gt;                 &lt;chr&gt;         &lt;dbl&gt;
+## 1 P26039  Actin cytoskeleton    TLN1_MOUSE        1
+## 2 Q99PL5  Endoplasmic reticulum RRBP1_MOUSE       1
+## 3 Q99PL5  Golgi apparatus       RRBP1_MOUSE       2
+## 4 Q6PB66  Mitochondrion         LPPRC_MOUSE       1
+## 5 P11276  Extracellular matrix  FINC_MOUSE        1</code></pre>
+<p>If we now want to join <code>jdf6</code> and <code>jdf2</code>, the variables of the latter
+will be duplicated.</p>
+<div class="sourceCode" id="cb550"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb550-1"><a href="sec-join.html#cb550-1" tabindex="-1"></a><span class="fu">inner_join</span>(jdf6, jdf2)</span></code></pre></div>
+<pre><code>## Joining with `by = join_by(uniprot)`</code></pre>
+<pre><code>## # A tibble: 5 × 7
+##   uniprot organelle             entry     isoform gene_name description organism
+##   &lt;chr&gt;   &lt;chr&gt;                 &lt;chr&gt;       &lt;dbl&gt; &lt;chr&gt;     &lt;chr&gt;       &lt;chr&gt;   
+## 1 P26039  Actin cytoskeleton    TLN1_MOU…       1 Tln1      Talin-1     Mmus    
+## 2 Q99PL5  Endoplasmic reticulum RRBP1_MO…       1 Rrbp1     Ribosome-b… Mmus    
+## 3 Q99PL5  Golgi apparatus       RRBP1_MO…       2 Rrbp1     Ribosome-b… Mmus    
+## 4 Q6PB66  Mitochondrion         LPPRC_MO…       1 Lrpprc    Leucine-ri… Mmus    
+## 5 P11276  Extracellular matrix  FINC_MOU…       1 Fn1       Fibronectin Mmus</code></pre>
+<p>In the case above, repeating is useful, as it completes <code>jdf6</code> with
+correct information from <code>jdf2</code>. One needs however to be careful when
+duplicated keys exist in both tables. Below, we create an inner join
+between <code>jdf6</code> and <code>jdf7</code>, both having duplicated <code>Q99PL5</code> entries.</p>
+<div class="sourceCode" id="cb553"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb553-1"><a href="sec-join.html#cb553-1" tabindex="-1"></a><span class="fu">inner_join</span>(jdf6, jdf7)</span></code></pre></div>
+<pre><code>## Joining with `by = join_by(uniprot)`</code></pre>
+<pre><code>## Warning in inner_join(jdf6, jdf7): Detected an unexpected many-to-many relationship between `x` and `y`.
+## ℹ Row 2 of `x` matches multiple rows in `y`.
+## ℹ Row 1 of `y` matches multiple rows in `x`.
+## ℹ If a many-to-many relationship is expected, set `relationship = "many-to-many"` to silence this warning.</code></pre>
+<pre><code>## # A tibble: 4 × 9
+##   uniprot organelle     entry isoform gene_name description organism isoform_num
+##   &lt;chr&gt;   &lt;chr&gt;         &lt;chr&gt;   &lt;dbl&gt; &lt;chr&gt;     &lt;chr&gt;       &lt;chr&gt;          &lt;dbl&gt;
+## 1 Q99PL5  Endoplasmic … RRBP…       1 Rrbp1     Ribosome-b… Mmus               1
+## 2 Q99PL5  Endoplasmic … RRBP…       1 Rrbp1     Ribosome-b… Mmus               2
+## 3 Q99PL5  Golgi appara… RRBP…       2 Rrbp1     Ribosome-b… Mmus               1
+## 4 Q99PL5  Golgi appara… RRBP…       2 Rrbp1     Ribosome-b… Mmus               2
+## # ℹ 1 more variable: measure &lt;dbl&gt;</code></pre>
+<div class="question">
+<p class="question-begin">
+► Question
+</p>
+<div class="question-body">
+<p>Interpret the result of the inner join above, where both tables have duplicated keys.</p>
+<p class="question-end">
+<span class="fa fa-square-o solution-icon"></span>
+</p>
+</div>
+</div>
+<div class="msmb-solution">
+<p class="solution-begin">
+► Solution<span id="sol-start-46" class="fa fa-plus-square solution-icon clickable" onclick="toggle_visibility('sol-body-46', 'sol-start-46')"></span>
+</p>
+<div id="sol-body-46" class="solution-body" style="display: none;">
+<p><code>jdf6</code> has two entries, one for each possible sub-cellular
+localisation of the protein. <code>jdf7</code> has also two entries, referring to
+two different quantitative measurements (variable <code>measure</code>). When
+joining the duplicated keys, you get all possible combinations.</p>
+<div class="figure" style="text-align: center">
+<span style="display:block;" id="fig:unnamed-chunk-217"></span>
+<p class="caption marginnote shownote">
+Figure 7.3: Joins with duplicated keys in both tables, producing all possible combinations. Figure taken from <em>R for Data Science</em>.
+</p>
+<img src="figs/join-many-to-many.png" alt="Joins with duplicated keys in both tables, producing all possible combinations. Figure taken from *R for Data Science*." width="70%">
+</div>
+<p>In this case, we obtain wrong information: both proteins in the ER and
+in the GA both have value 102 and 3.</p>
+<p class="solution-end">
+<span class="fa fa-square-o solution-icon"></span>
+</p>
+</div>
+</div>
+</div>
+<div id="matching-across-multiple-keys" class="section level2" number="7.4">
+<h2>
+<span class="header-section-number">7.4</span> Matching across multiple keys<div class="tooltip"><button class="internal-link-btn" onclick="copy_link('matching-across-multiple-keys')" onmouseout="reset_tooltip('matching-across-multiple-keys-tooltip')"><span class="tooltiptext" id="matching-across-multiple-keys-tooltip">Copy link</span><i class="fa fa-link"></i></button></div>
+</h2>
+<p>So far, we have matched tables using a single key (possibly with
+different names in the two tables). Sometimes, it is necessary to
+match tables using multiple keys. A typical example is when multiple
+variables are needed to discriminate different rows in a tables.</p>
+<p>Following up from the last example, we see that the duplicated UniProt
+accession numbers in the <code>jdf6</code> and <code>jdf7</code> tables refer to different
+<a href="https://en.wikipedia.org/wiki/Protein_isoform">isoforms</a> of the same
+RRBP1 gene. To uniquely identify isoforms, we need to consider two
+keys, namely the UniProt accession number (named <code>uniprot</code> in both
+tables) as well as the isoform number, called <code>isoform</code> and
+<code>isoform_num</code> respectively.</p>
+<p>Because the isoform status was encoded using different variable names
+(which is, of course a source of confusion), <code>jdf6</code> and <code>jdf7</code> are
+only automatically joined based on the shared <code>uniprot</code> key. Here, we
+need to join using both keys and need to explicitly name the variables
+used for the join.</p>
+<div class="sourceCode" id="cb557"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb557-1"><a href="sec-join.html#cb557-1" tabindex="-1"></a><span class="fu">inner_join</span>(jdf6, jdf7, <span class="at">by =</span> <span class="fu">c</span>(<span class="st">"uniprot"</span> <span class="ot">=</span> <span class="st">"uniprot"</span>, <span class="st">"isoform"</span> <span class="ot">=</span> <span class="st">"isoform_num"</span>))</span></code></pre></div>
+<pre><code>## # A tibble: 2 × 8
+##   uniprot organelle         entry isoform gene_name description organism measure
+##   &lt;chr&gt;   &lt;chr&gt;             &lt;chr&gt;   &lt;dbl&gt; &lt;chr&gt;     &lt;chr&gt;       &lt;chr&gt;      &lt;dbl&gt;
+## 1 Q99PL5  Endoplasmic reti… RRBP…       1 Rrbp1     Ribosome-b… Mmus         102
+## 2 Q99PL5  Golgi apparatus   RRBP…       2 Rrbp1     Ribosome-b… Mmus           3</code></pre>
+<p>We now see that isoform 1 localised to the ER and has a measured value
+of 102, while isoform 2, that localised to the GA, has a measured
+value of 3.</p>
+<div class="question">
+<p class="question-begin">
+► Question
+</p>
+<div class="question-body">
+<p>Can you think of another way to merge tables <code>jdf6</code> and <code>jdf7</code> using
+the two keys?</p>
+<p class="question-end">
+<span class="fa fa-square-o solution-icon"></span>
+</p>
+</div>
+</div>
+<div class="msmb-solution">
+<p class="solution-begin">
+► Solution<span id="sol-start-47" class="fa fa-plus-square solution-icon clickable" onclick="toggle_visibility('sol-body-47', 'sol-start-47')"></span>
+</p>
+<div id="sol-body-47" class="solution-body" style="display: none;">
+<p>Ideally, the isoform variables should be named identically in the two
+tables, which would enable and automatic join with the two
+keys. Below, we first fix the misnamed variable in <code>jdf7</code>. Instead of
+updating the variable name by checking its index manually, we grep it
+programmatically and store it in a new variable <code>i</code>. We can then join
+the two tables without having to specify the two keys explicitly.</p>
+<div class="sourceCode" id="cb559"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb559-1"><a href="sec-join.html#cb559-1" tabindex="-1"></a>i <span class="ot">&lt;-</span> <span class="fu">grep</span>(<span class="st">"isoform"</span>, <span class="fu">names</span>(jdf7))</span>
+<span id="cb559-2"><a href="sec-join.html#cb559-2" tabindex="-1"></a><span class="fu">names</span>(jdf7)[i] <span class="ot">&lt;-</span> <span class="st">"isoform"</span></span>
+<span id="cb559-3"><a href="sec-join.html#cb559-3" tabindex="-1"></a><span class="fu">inner_join</span>(jdf6, jdf7)</span></code></pre></div>
+<pre><code>## Joining with `by = join_by(uniprot, isoform)`</code></pre>
+<pre><code>## # A tibble: 2 × 8
+##   uniprot organelle         entry isoform gene_name description organism measure
+##   &lt;chr&gt;   &lt;chr&gt;             &lt;chr&gt;   &lt;dbl&gt; &lt;chr&gt;     &lt;chr&gt;       &lt;chr&gt;      &lt;dbl&gt;
+## 1 Q99PL5  Endoplasmic reti… RRBP…       1 Rrbp1     Ribosome-b… Mmus         102
+## 2 Q99PL5  Golgi apparatus   RRBP…       2 Rrbp1     Ribosome-b… Mmus           3</code></pre>
+<p class="solution-end">
+<span class="fa fa-square-o solution-icon"></span>
+</p>
+</div>
+</div>
+</div>
+<div id="merge-in-base-r" class="section level2" number="7.5">
+<h2>
+<span class="header-section-number">7.5</span> Merge in base R<div class="tooltip"><button class="internal-link-btn" onclick="copy_link('merge-in-base-r')" onmouseout="reset_tooltip('merge-in-base-r-tooltip')"><span class="tooltiptext" id="merge-in-base-r-tooltip">Copy link</span><i class="fa fa-link"></i></button></div>
+</h2>
+<p>Above, we have used several join functions from the <code>dplyr</code> package as
+they are convenient and easy to remember. The equivalent function in
+the <code>base</code> package, that is installed with R, is the <code>merge</code>
+function. The table below shows how these are related:</p>
+<table>
+<thead><tr class="header">
+<th>dplyr</th>
+<th>merge</th>
+</tr></thead>
+<tbody>
+<tr class="odd">
+<td><code>inner_join(x, y)</code></td>
+<td><code>merge(x, y)</code></td>
+</tr>
+<tr class="even">
+<td><code>left_join(x, y)</code></td>
+<td><code>merge(x, y, all.x = TRUE)</code></td>
+</tr>
+<tr class="odd">
+<td><code>right_join(x, y)</code></td>
+<td><code>merge(x, y, all.y = TRUE),</code></td>
+</tr>
+<tr class="even">
+<td><code>full_join(x, y)</code></td>
+<td><code>merge(x, y, all.x = TRUE, all.y = TRUE)</code></td>
+</tr>
+</tbody>
+</table>
+<p>Even if you decide to stick with one of these alternatives, it is
+important to be aware of the other one, especially given the
+widespread usage of <code>merge</code> in many packages and in R itself.</p>
+</div>
+<div id="row-and-column-binding" class="section level2" number="7.6">
+<h2>
+<span class="header-section-number">7.6</span> Row and column binding<div class="tooltip"><button class="internal-link-btn" onclick="copy_link('row-and-column-binding')" onmouseout="reset_tooltip('row-and-column-binding-tooltip')"><span class="tooltiptext" id="row-and-column-binding-tooltip">Copy link</span><i class="fa fa-link"></i></button></div>
+</h2>
+<p>There are other two important functions in R, that can be used to
+combine two dataframes, but assume that these already match
+beforehand, as summerised in figure <a href="sec-join.html#fig:bindfig">7.4</a> below.</p>
+<div class="figure">
+<span style="display:block;" id="fig:bindfig"></span>
+<p class="caption marginnote shownote">
+Figure 7.4: Matching dimension and names when binding by rows and columns.
+</p>
+<img src="WSBIM1207_files/figure-html/bindfig-1.png" alt="Matching dimension and names when binding by rows and columns." width="576">
+</div>
+<p>We are going to illustrate binding by columns with dataframes <code>d1</code> and
+<code>d2</code>, and then binding by rows using <code>d2</code> and <code>d3</code>. Lets start with
+<code>d1</code> and <code>d2</code> shown below; both have the same number of columns but,
+and this is crucial, do not have the same column names:</p>
+<div class="sourceCode" id="cb562"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb562-1"><a href="sec-join.html#cb562-1" tabindex="-1"></a>d1</span></code></pre></div>
+<pre><code>##    x y
+## r1 1 1
+## r2 2 2
+## r3 3 3</code></pre>
+<div class="sourceCode" id="cb564"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb564-1"><a href="sec-join.html#cb564-1" tabindex="-1"></a>d2</span></code></pre></div>
+<pre><code>##    a b
+## r4 4 4
+## r5 5 5</code></pre>
+<p>While the number of columns match, the names don’t, which results in an
+error<label for="tufte-sn-12" class="margin-toggle sidenote-number">12</label><input type="checkbox" id="tufte-sn-12" class="margin-toggle"><span class="sidenote"><span class="sidenote-number">12</span> The failing call to <code>rbind</code> is wrapped into a <code>try</code> call here
+to stop the error from aborting the document compilation.</span> when we use <code>rbind</code>:</p>
+<div class="sourceCode" id="cb566"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb566-1"><a href="sec-join.html#cb566-1" tabindex="-1"></a><span class="fu">try</span>(<span class="fu">rbind</span>(d1, d2))</span></code></pre></div>
+<pre><code>## Error in match.names(clabs, names(xi)) : 
+##   names do not match previous names</code></pre>
+<p>Before <code>rbind</code>ing two dataframes, we must assure that their number of
+columns and colnames match exactly:</p>
+<div class="sourceCode" id="cb568"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb568-1"><a href="sec-join.html#cb568-1" tabindex="-1"></a><span class="fu">names</span>(d2) <span class="ot">&lt;-</span> <span class="fu">names</span>(d1)</span>
+<span id="cb568-2"><a href="sec-join.html#cb568-2" tabindex="-1"></a><span class="fu">rbind</span>(d1, d2)</span></code></pre></div>
+<pre><code>##    x y
+## r1 1 1
+## r2 2 2
+## r3 3 3
+## r4 4 4
+## r5 5 5</code></pre>
+<p>If we want to bind to dataframes along their columns, we must make
+sure that their number of rows match; neither rownames nor colnames
+hinder here:</p>
+<div class="sourceCode" id="cb570"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb570-1"><a href="sec-join.html#cb570-1" tabindex="-1"></a>d2</span></code></pre></div>
+<pre><code>##    x y
+## r4 4 4
+## r5 5 5</code></pre>
+<div class="sourceCode" id="cb572"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb572-1"><a href="sec-join.html#cb572-1" tabindex="-1"></a>d3</span></code></pre></div>
+<pre><code>##   v1 v2 v3
+## A  1  3  5
+## B  2  4  6</code></pre>
+<div class="sourceCode" id="cb574"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb574-1"><a href="sec-join.html#cb574-1" tabindex="-1"></a><span class="fu">cbind</span>(d2, d3)</span></code></pre></div>
+<pre><code>##    x y v1 v2 v3
+## r4 4 4  1  3  5
+## r5 5 5  2  4  6</code></pre>
+<p>Note that beyond the dimensions and column names that are required to
+match, the real meaning of <code>rbind</code> is to bind dataframes that contain
+observations for the same set of variables - there is more than only
+the column names. Below, we <code>rbind</code> dataframes with identical column
+names but different variables, which end up all being coerced into
+characters.</p>
+<div class="sourceCode" id="cb576"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb576-1"><a href="sec-join.html#cb576-1" tabindex="-1"></a>d1</span></code></pre></div>
+<pre><code>##    x y
+## r1 1 1
+## r2 2 2
+## r3 3 3</code></pre>
+<div class="sourceCode" id="cb578"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb578-1"><a href="sec-join.html#cb578-1" tabindex="-1"></a>d4 <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(<span class="at">x =</span> letters[<span class="dv">1</span><span class="sc">:</span><span class="dv">2</span>], <span class="at">y =</span> letters[<span class="dv">1</span><span class="sc">:</span><span class="dv">2</span>])</span>
+<span id="cb578-2"><a href="sec-join.html#cb578-2" tabindex="-1"></a><span class="fu">str</span>(<span class="fu">rbind</span>(d1, d4))</span></code></pre></div>
+<pre><code>## 'data.frame':    5 obs. of  2 variables:
+##  $ x: chr  "1" "2" "3" "a" ...
+##  $ y: chr  "1" "2" "3" "a" ...</code></pre>
+<p><strong>Note</strong>: <code>rbind</code> and <code>cbind</code> are base R functions. The <em>tidyverse</em>
+alternatives from the <code>dplyr</code> package are <code>bind_rows</code> and <code>bind_cols</code>
+and work similarly.</p>
+</div>
+<div id="additional-exercises-5" class="section level2" number="7.7">
+<h2>
+<span class="header-section-number">7.7</span> Additional exercises<div class="tooltip"><button class="internal-link-btn" onclick="copy_link('additional-exercises-5')" onmouseout="reset_tooltip('additional-exercises-5-tooltip')"><span class="tooltiptext" id="additional-exercises-5-tooltip">Copy link</span><i class="fa fa-link"></i></button></div>
+</h2>
+<div class="question">
+<p class="question-begin">
+► Question
+</p>
+<div class="question-body">
+<p>Using the <code>jdf4</code> and <code>jdf5</code> tables, emulate the left, right and inner
+joins using a the full join and filter functions.</p>
+<p class="question-end">
+<span class="fa fa-square-o solution-icon"></span>
+</p>
+</div>
+</div>
+<div class="question">
+<p class="question-begin">
+► Question
+</p>
+<div class="question-body">
+<p>Load the <code>rWSBIM1207</code> package. Using the <code>data</code> function, directly
+load the <code>clinical2</code> and <code>expression</code> data into your global
+environment.</p>
+<ul>
+<li><p>Inspect the clinical data. What kind of information do we have and
+how many patients are recorded?</p></li>
+<li><p>Inspect the expression data. How many samples are recorded?</p></li>
+<li><p>Join the <code>expression</code> and <code>clinical2</code> tables by the patient
+reference, using the <code>left_join</code> and the <code>right_join</code> functions. Why
+are the results different?</p></li>
+<li><p>Join <code>expression</code> and <code>clinical2</code> tables in order to create a table
+containing merged data exclusively for normal samples.</p></li>
+</ul>
+<p class="question-end">
+<span class="fa fa-square-o solution-icon"></span>
+</p>
+</div>
+</div>
+
+</div>
+</div>
+<p style="text-align: center;">
+<a href="sec-vis.html"><button class="btn btn-default">Previous</button></a>
+<a href="sec-rr.html"><button class="btn btn-default">Next</button></a>
+</p>
+<p class="build-date">Page built: 
+2025-06-16
+ using 
+R version 4.5.0 (2025-04-11)
+</p>
+</div>
+</div>
+
+
+
+</body>
+</html>

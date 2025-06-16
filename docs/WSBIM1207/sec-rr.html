@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+<meta charset="utf-8" />
+<meta name="generator" content="pandoc" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta property="og:title" content="Chapter 8 Reproducible research | Introduction to bioinformatics" />
+<meta property="og:type" content="book" />
+
+<meta property="og:description" content="Course material for the Introduction to bioinformatics (WSBIM1207) course at UCLouvain." />
+
+
+<meta name="author" content="Laurent Gatto" />
+
+<meta name="date" content="2025-06-16" />
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  TeX: { equationNumbers: { autoNumber: "AMS" } }
+});
+</script>
+  <script src="/usr/share/javascript/mathjax/MathJax.js" type="text/javascript"></script>
+
+<meta name="description" content="Course material for the Introduction to bioinformatics (WSBIM1207) course at UCLouvain.">
+
+<title>Chapter 8 Reproducible research | Introduction to bioinformatics</title>
+
+<link href="libs/tufte-css-2015.12.29/tufte.css" rel="stylesheet" />
+<link href="libs/tufte-css-2015.12.29/envisioned.css" rel="stylesheet" />
+<link href="libs/msmb-css-0/msmb.css" rel="stylesheet" />
+<script>
+function toggle_visibility(id1, id2) {
+var e = document.getElementById(id1);
+var f = document.getElementById(id2);
+
+e.style.display = ((e.style.display!='none') ? 'none' : 'block');
+
+if(f.classList.contains('fa-plus-square')) {
+    f.classList.add('fa-minus-square')
+    f.classList.remove('fa-plus-square')
+} else {
+    f.classList.add('fa-plus-square')
+    f.classList.remove('fa-minus-square')
+}
+
+}
+</script>
+<script>
+function copy_link(id) {
+  var dummy = document.createElement('input'),
+  text = window.location.href.split(/[?#]/)[0] + '#' + id;
+  document.body.appendChild(dummy);
+  dummy.value = text;
+  dummy.select();
+  document.execCommand('copy');
+  document.body.removeChild(dummy);
+  
+  var tooltip = document.getElementById(id + '-tooltip');
+  tooltip.innerHTML = 'Copied!';
+}
+
+function reset_tooltip(id) {
+  var tooltip = document.getElementById(id);
+  tooltip.innerHTML = 'Copy link';
+}
+</script>
+<link href="libs/htmltools-fill-0.5.8.1/fill.css" rel="stylesheet" />
+<script src="libs/htmlwidgets-1.6.4/htmlwidgets.js"></script>
+<link href="libs/datatables-css-0.0.0/datatables-crosstalk.css" rel="stylesheet" />
+<script src="libs/datatables-binding-0.33/datatables.js"></script>
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<link href="libs/dt-core-1.13.6/css/jquery.dataTables.min.css" rel="stylesheet" />
+<link href="libs/dt-core-1.13.6/css/jquery.dataTables.extra.css" rel="stylesheet" />
+<script src="libs/dt-core-1.13.6/js/jquery.dataTables.min.js"></script>
+<link href="libs/crosstalk-1.2.1/css/crosstalk.min.css" rel="stylesheet" />
+<script src="libs/crosstalk-1.2.1/js/crosstalk.min.js"></script>
+
+
+<style type="text/css">code{white-space: pre;}</style>
+<style type="text/css">
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { color: #008000; } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { color: #008000; font-weight: bold; } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+</style>
+
+
+<style type="text/css">
+/* Used with Pandoc 2.11+ new --citeproc when CSL is used */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}
+</style>
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+
+</head>
+
+<body>
+
+
+
+<div class="row">
+<div class="col-sm-12">
+<div id="TOC">
+<ul class="navbar">
+<li class="msmb"><p class="title">Introduction to bioinformatics<p><p class="author">Laurent Gatto</p>
+<li class="dropdown" style="float:right">
+<a href="javascript:void(0)" class="dropbtn">&#x25BE; Chapters</a>
+<div class="dropdown-content">
+<a href="index.html" id="toc-preamble">Preamble</a>
+<a href="sec-dataorg.html" id="toc-sec-dataorg"><span class="toc-section-number">1</span> Data organisation with Spreadsheets</a>
+<a href="sec-rrstudio.html" id="toc-sec-rrstudio"><span class="toc-section-number">2</span> R and RStudio</a>
+<a href="sec-startr.html" id="toc-sec-startr"><span class="toc-section-number">3</span> Introduction to R</a>
+<a href="sec-startdata.html" id="toc-sec-startdata"><span class="toc-section-number">4</span> Starting with data</a>
+<a href="sec-dplyr.html" id="toc-sec-dplyr"><span class="toc-section-number">5</span> Manipulating and analyzing data with dplyr</a>
+<a href="sec-vis.html" id="toc-sec-vis"><span class="toc-section-number">6</span> Data visualization</a>
+<a href="sec-join.html" id="toc-sec-join"><span class="toc-section-number">7</span> Joining tables</a>
+<a id="active-page" href="sec-rr.html" id="toc-sec-rr"><span class="toc-section-number">8</span> Reproducible research</a><ul class="toc-sections">
+<li class="toc"><a href="#knitr-and-rmarkdown"> <code>knitr</code> and <code>rmarkdown</code></a></li>
+<li class="toc"><a href="#additional-features"> Additional features</a></li>
+<li class="toc"><a href="#docker-containers"> Docker containers</a></li>
+<li class="toc"><a href="#additional-exercises-6"> Additional exercises</a></li>
+</ul>
+<a href="sec-bioinfo.html" id="toc-sec-bioinfo"><span class="toc-section-number">9</span> Bioinformatics</a>
+<a href="sec-prog.html" id="toc-sec-prog"><span class="toc-section-number">10</span> Additional programming concepts</a>
+<a href="sec-ccl.html" id="toc-sec-ccl"><span class="toc-section-number">11</span> Conclusions</a>
+<a href="sec-anx.html" id="toc-sec-anx"><span class="toc-section-number">12</span> Annex</a>
+<a href="session-information.html" id="toc-session-information"><span class="toc-section-number">13</span> Session information</a>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="row">
+<div class="col-sm-12">
+<div id="sec-rr" class="section level1" number="8">
+<h1>
+<span class="header-section-number">Chapter 8</span> Reproducible research</h1>
+<p><strong>Learning Objectives</strong></p>
+<ul>
+<li>Understand the concept of reproducible research and reproducible
+documents.</li>
+<li>Understand the process by which a source document is compiled into a
+final report.</li>
+<li>Generate a reproducible report in html or pdf from an Rmarkdown
+document using RStudio.</li>
+</ul>
+<p>For a general introduction on the topic in French, see
+<span class="citation">Pouzat, Davison, and Hinsen (<label for="tufte-mn-23" class="margin-toggle">⊕</label><input type="checkbox" id="tufte-mn-23" class="margin-toggle">2015<span class="marginnote">Pouzat, Christophe, Andrew Davison, and Konrad Hinsen. 2015. <span>“La Recherche Reproductible : Une Communication Scientifique Explicite.”</span> <em>Statistique Et Société</em> 3 (1). <a href="http://www.publications-sfds.fr/index.php/stat_soc/article/view/448">http://www.publications-sfds.fr/index.php/stat_soc/article/view/448</a>.</span>)</span>. If you want to explore the topic of reproducible
+research in French, the <a href="https://www.fun-mooc.fr/courses/course-v1:inria+41016+session01bis/about">Recherche reproductible : principes
+méthodologiques pour une science
+transparente</a>
+MOOC is of interest.</p>
+<p>Reproducible research refers to research that can be reproduced under
+various conditions and by different people. It applies to every area
+of research, both experimental and computational, but is often (but
+not always) easier to implement for computational work. The different
+levels of reproducibility can formalised<label for="tufte-sn-13" class="margin-toggle sidenote-number">13</label><input type="checkbox" id="tufte-sn-13" class="margin-toggle"><span class="sidenote"><span class="sidenote-number">13</span> The nomenclature is taken from <a href="https://lgatto.github.io/rr-what-should-be-our-goals/">this blog
+post</a> that
+provides links and highlights that confusion that exists around
+the terms and concepts of reproducibility.</span> as follows:</p>
+<ul>
+<li><p><strong>Repeat</strong> my experiment, i.e. obtain the same tables/graphs/results
+using the same setup (data, software, …) in the same lab or on the
+same computer. That’s basically re-running one of my analysis some
+time after I original developed it.</p></li>
+<li><p><strong>Reproduce</strong> an experiment (not ones own), i.e. obtain the same
+tables/graphs/results in a different lab or on a different computer,
+using the same setup (the data would be downloaded from a public
+repository and the same software, but possibly using a different
+version, or a different operation system).</p></li>
+<li><p><strong>Replicate</strong> an experiment, i.e. obtain the same (similar enough)
+tables/graphs/results in a different set up. The data could still be
+downloaded from the public repository, or possibly
+re-generated/re-simulated, and the analysis would be re-implemented
+based on the original description.</p></li>
+<li><p>Finally, <strong>re-use</strong> the information/knowledge from one experiment to
+run a different experiment with the aim to <strong>confirm</strong> results from
+scratch.</p></li>
+</ul>
+<p>The table below summerised these concepts focusing on data and code in
+computational projects.</p>
+<table>
+<thead><tr class="header">
+<th></th>
+<th align="center">Same data</th>
+<th align="center">Different data</th>
+</tr></thead>
+<tbody>
+<tr class="odd">
+<td><strong>Same code</strong></td>
+<td align="center">Repeat</td>
+<td align="center">Reproduce</td>
+</tr>
+<tr class="even">
+<td><strong>Different code</strong></td>
+<td align="center">Reproduce</td>
+<td align="center">Replicate</td>
+</tr>
+</tbody>
+</table>
+<p>There are many reasons to work reproducibly, and <span class="citation">Markowetz (<label for="tufte-mn-24" class="margin-toggle">⊕</label><input type="checkbox" id="tufte-mn-24" class="margin-toggle">2015<span class="marginnote">Markowetz, Florian. 2015. <span>“Five Selfish Reasons to Work Reproducibly.”</span> <em>Genome Biology</em> 16 (1): 274. <a href="https://doi.org/10.1186/s13059-015-0850-7">https://doi.org/10.1186/s13059-015-0850-7</a>.</span>)</span>
+nicely summarises 5 good reasons. Importantly, he stressed out that
+the first beneficiary of reproducible work are the student/researcher
+that apply these principles:</p>
+<ol style="list-style-type: decimal">
+<li>Reproducibility helps to avoid disaster.</li>
+<li>Reproducibility makes it easier to write papers<label for="tufte-sn-14" class="margin-toggle sidenote-number">14</label><input type="checkbox" id="tufte-sn-14" class="margin-toggle"><span class="sidenote"><span class="sidenote-number">14</span> And course reports! The exam of this course will consist
+in a reproducible report using the tools described below.</span>.</li>
+<li>Reproducibility helps reviewers see it your way<label for="tufte-sn-15" class="margin-toggle sidenote-number">15</label><input type="checkbox" id="tufte-sn-15" class="margin-toggle"><span class="sidenote"><span class="sidenote-number">15</span> Not only reviewers, also professors that read exams. See
+previous footnote.</span>.</li>
+<li>Reproducibility enables continuity of your work.</li>
+<li>Reproducibility helps to build your reputation.</li>
+</ol>
+<div id="knitr-and-rmarkdown" class="section level2" number="8.1">
+<h2>
+<span class="header-section-number">8.1</span> <code>knitr</code> and <code>rmarkdown</code>
+<div class="tooltip"><button class="internal-link-btn" onclick="copy_link('knitr-and-rmarkdown')" onmouseout="reset_tooltip('knitr-and-rmarkdown-tooltip')"><span class="tooltiptext" id="knitr-and-rmarkdown-tooltip">Copy link</span><i class="fa fa-link"></i></button></div>
+</h2>
+<p>Reproducible research is an essential part of any data analysis. With
+the tools that are available, one can argue that it has become more
+difficult not to produce reproducible reports than to producing then.</p>
+<p>Reproducible documents have been a part of R since the very
+beginning. See for example <span class="citation">R. Gentleman and Temple Lang (<label for="tufte-mn-25" class="margin-toggle">⊕</label><input type="checkbox" id="tufte-mn-25" class="margin-toggle">2004<span class="marginnote">Gentleman, Robert, and Duncan Temple Lang. 2004. <span>“Statistical Analyses and Reproducible Research.”</span> <em>Bioconductor Project Working Papers. Working Paper 2</em>. <a href="https://biostats.bepress.com/bioconductor/paper2">https://biostats.bepress.com/bioconductor/paper2</a>.</span>)</span>, to see how such <em>compendia</em> play a
+central role within the <a href="https://bioconductor.org/">Bioconductor</a>
+project (more about Bioconductor in it’s dedicated
+chapter). Originally, these were written in LaTeX, interleaved with R
+code chunks, forming so called Sweave documents (with extension
+<code>.Rnw</code>).</p>
+<p>
+<span class="marginnote shownote">
+<!--
+<div class="figure">--><span style="display:block;" id="fig:rmarkdownsticker"></span>
+<img src="figs/rmarkdown-200x232.png" alt="The rmarkdown sticker" width="100"><!--
+<p class="caption marginnote">-->Figure 8.1: The rmarkdown sticker<!--</p>-->
+<!--</div>--></span>
+</p>
+<p>More recently, it has become to use the
+<a href="https://daringfireball.net/projects/markdown/">markdown</a> syntax
+markup language, rather than LaTeX. Once interleaved with R code
+chunks, these documents become <strong>Rmarkdown</strong> files (<code>.Rmd</code>). The can be
+converted into markdown using <code>knitr::knit</code>, that executes the code
+chunk and incorporates their output in the resulting markdown
+documents, which itself is converted to one of many output formats,
+typically pdf of html using <a href="http://pandoc.org/">pandoc</a>. In R, this
+final conversion is done using <code>rmarkdown::render</code> (that relies on
+pandoc).</p>
+<ul>
+<li><p><code>knitr::knit</code> converts the <code>Rmd</code> into <code>md</code> by executing the code
+chunks and replacing the code by its output (text, tables, figures,
+…).</p></li>
+<li><p>The <code>md</code> file is then compiled into the desired <a href="https://rmarkdown.rstudio.com/lesson-9.html">output
+format</a> (typically html
+or pdf) using <code>pandoc</code>.</p></li>
+<li><p>In practice, in R, these two steps are automatically handled in one
+go by <code>rmarkdown::render()</code>.</p></li>
+</ul>
+<div class="figure">
+<span style="display:block;" id="fig:rmarkdownflow"></span>
+<p class="caption marginnote shownote">
+Figure 8.2: The rmarkdown workflow (image from RStudio)
+</p>
+<img src="figs/rmarkdownflow.png" alt="The rmarkdown workflow (image from RStudio)" width="100%">
+</div>
+<p>The <a href="http://rmarkdown.rstudio.com/">rmarkdown</a> package is developed
+and maintained by RStudio and benefits from excellent documentation,
+support and integrates into the RStudio editor.</p>
+<p>An Rmarkdown document is composed of</p>
+<ul>
+<li><p>An optional YAML <strong>header</strong>, delimited by <code>---</code>.</p></li>
+<li><p>Text in <a href="https://pandoc.org/MANUAL.html#pandocs-markdown">simple <strong>markdown</strong>
+format</a>.</p></li>
+<li><p>One or more R <strong>code chunks</strong> delimited by three backticks. Each
+code chunk can be uniquely named and parametrised with a set of code
+chunk <a href="http://yihui.name/knitr/options/">options</a>.</p></li>
+</ul>
+<p>These respective parts of an <code>Rmd</code> file are show below and will be
+demonstrated during the course.</p>
+<p><img src="figs/rmd.png"></p>
+<p>RStudio also supports
+<a href="https://bookdown.org/yihui/rmarkdown/notebook.html">Notebook</a>
+documents<label for="tufte-sn-16" class="margin-toggle sidenote-number">16</label><input type="checkbox" id="tufte-sn-16" class="margin-toggle"><span class="sidenote"><span class="sidenote-number">16</span> See also <a href="https://jupyter.org/">Jupyter notebooks</a>
+initially developed for Python, but that can run R code as well.</span> that execute individual code chunks independently
+and display directly in the source document.</p>
+<p><img src="figs/rnb.png"></p>
+<p>Here is an <a href="https://rmarkdown.rstudio.com/lesson-15.html">R markdown cheat
+sheet</a> provided by
+RStudio and an <a href="https://rmarkdown.rstudio.com/articles_intro.html">introduction
+article</a>.</p>
+<p>The following video, <a href="https://resources.rstudio.com/rstudio-conf-2019/r-markdown-the-bigger-picture"><em>R Markdown: The bigger
+picture</em></a>
+by Garrett Grolemund at a 2019 RStudio conference provides a very nice
+introduction on the many reasons why writing reproducible documents in
+essential in data science and biomedical research.</p>
+</div>
+<div id="additional-features" class="section level2" number="8.2">
+<h2>
+<span class="header-section-number">8.2</span> Additional features<div class="tooltip"><button class="internal-link-btn" onclick="copy_link('additional-features')" onmouseout="reset_tooltip('additional-features-tooltip')"><span class="tooltiptext" id="additional-features-tooltip">Copy link</span><i class="fa fa-link"></i></button></div>
+</h2>
+<ul>
+<li><p>Among the most options that can set for code chunks is
+<code>cache</code>. Setting <code>cache = TRUE</code> will avoid that specific code chunk to
+be cached and not recomputed every time the documented in <em>knitted</em>,
+unless the code chunk was modified. This is an important feature
+when long computations are necessary.</p></li>
+<li><p>The <code>DT::datatable</code> function allows to create dynamic tables
+directly from R, as show below.</p></li>
+</ul>
+<div class="sourceCode" id="cb580"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb580-1"><a href="sec-rr.html#cb580-1" tabindex="-1"></a>ip <span class="ot">&lt;-</span> <span class="fu">installed.packages</span>()</span>
+<span id="cb580-2"><a href="sec-rr.html#cb580-2" tabindex="-1"></a>DT<span class="sc">::</span><span class="fu">datatable</span>(ip[, <span class="fu">c</span>(<span class="dv">1</span>, <span class="dv">3</span>, <span class="dv">5</span>, <span class="dv">6</span>, <span class="dv">10</span>)], <span class="at">rownames =</span> <span class="cn">FALSE</span>)</span></code></pre></div>
+<div class="datatables html-widget html-fill-item" id="htmlwidget-b428eab7b75824fb86d4" style="width:100%;height:auto;"></div>
+<script type="application/json" data-for="htmlwidget-b428eab7b75824fb86d4">{"x":{"filter":"none","vertical":false,"data":[["abind","affy","affyio","annotate","AnnotationDbi","AnnotationFilter","AnnotationForge","AnnotationHub","AnnotationHubData","askpass","assertthat","assorthead","backports","base64enc","beachmat","beeswarm","BH","BiasedUrn","Biobase","BiocBaseUtils","BiocCheck","BiocFileCache","BiocGenerics","BiocHubsIngestR","BiocIO","BiocManager","BiocNeighbors","BiocParallel","BiocSingular","BiocStyle","BiocVersion","biocViews","biomaRt","Biostrings","bit","bit64","bitops","blob","bookdown","brew","brio","broom","bslib","cachem","Cairo","callr","camprotR","car","carData","caret","caTools","cellranger","ChemmineR","circlize","cleaver","cli","clipr","clisymbols","clock","clue","coda","colorspace","commonmark","ComplexHeatmap","conflicted","corrplot","covr","cowplot","cpp11","crancache","cranlike","crayon","credentials","crosstalk","curl","cutr","data.table","DBI","dbplyr","debugme","DelayedArray","dendextend","DEoptimR","Deriv","desc","devtools","diagram","diffobj","digest","diptest","doBy","doParallel","downlit","dplyr","dqrng","DT","dtplyr","e1071","edgeR","ellipse","ellipsis","emmeans","estimability","evaluate","exams","ExperimentHub","ExperimentHubData","factoextra","FactoMineR","fansi","farver","fastmap","fdrtool","filelock","flashClust","flexmix","FNN","fontawesome","forcats","foreach","formatR","Formula","fpc","fs","futile.logger","futile.options","future","future.apply","gargle","gbm","gdata","genefilter","geneLenDataBase","generics","GenomeInfoDb","GenomeInfoDbData","GenomicAlignments","GenomicFeatures","GenomicRanges","gert","GetoptLong","ggbeeswarm","ggplot2","ggpubr","ggrastr","ggrepel","ggsci","ggsignif","ggvis","gh","gitcreds","GlobalOptions","globals","glue","gmailr","gmm","GO.db","googledrive","googlesheets4","goseq","gower","gplots","graph","gridExtra","gtable","gtools","h5mread","hardhat","haven","HDF5Array","here","hexbin","highr","hms","htmltools","htmlwidgets","httpuv","httr","httr2","hwriter","ids","igraph","IHW","impute","imputeLCMD","ini","ipred","IRanges","irlba","isoband","iterators","janitor","jquerylib","jsonlite","KEGGREST","kernlab","knitr","labeling","lambda.r","LaplacesDemon","later","lava","lazyeval","leaps","lifecycle","limma","listenv","litedown","lme4","lobstr","locfit","lpSolve","lpsymphony","lubridate","magick","magrittr","MALDIquant","markdown","MatrixGenerics","MatrixModels","matrixStats","mclust","memoise","MetaboCoreUtils","metapod","microbenchmark","mime","miniUI","minqa","mixtools","mlbench","MLInterfaces","mockr","ModelMetrics","modelr","modeltools","MsBackendMgf","MsCoreUtils","msdata","MsDataHub","msentropy","msmbstyle","msmsEDA","msmsTests","MSnbase","MSnID","multcompView","MultiAssayExperiment","munsell","mvtnorm","mzID","mzR","ncdf4","nipals","nloptr","norm","numDeriv","openssl","OrganismDbi","parallelly","parsedate","patchwork","patrick","paws","paws.analytics","paws.application.integration","paws.common","paws.compute","paws.cost.management","paws.customer.engagement","paws.database","paws.developer.tools","paws.end.user.computing","paws.machine.learning","paws.management","paws.networking","paws.security.identity","paws.storage","pbkrtest","pcaMethods","pegboard","pheatmap","pillar","pkgbuild","pkgconfig","pkgdown","pkgload","plogr","plotly","pls","plyr","png","polynom","prabclus","praise","preprocessCore","prettyunits","pROC","processx","prodlim","profvis","progress","progressr","pRoloc","pRolocdata","promises","ProtGenerics","proxy","pryr","ps","PSMatch","purrr","QFeatures","quantreg","qvalue","R.cache","R.methodsS3","R.oo","R.utils","R6","ragg","randomForest","rappdirs","RBGL","rbibutils","rcmdcheck","RColorBrewer","Rcpp","RcppAnnoy","RcppArmadillo","RcppEigen","RcppML","RcppProgress","RCurl","Rdisop","Rdpack","readr","readxl","recipes","reformulas","rematch","rematch2","remotes","renv","reprex","reshape2","restfulr","revdepcheck","rex","rgl","rhdf5","rhdf5filters","Rhdf5lib","Rhtslib","rjson","rlang","rmarkdown","robustbase","rols","roxygen2","rprojroot","rpx","Rsamtools","RSpectra","RSQLite","rstatix","rstudioapi","rsvd","rsvg","rticles","rtracklayer","Rtsne","RUnit","rversions","rvest","rWSBIM1207","rWSBIM1322","S4Arrays","S4Vectors","sampling","sandpaper","sandwich","sass","ScaledMatrix","scales","scater","scatterplot3d","scp","scpdata","scuttle","segmented","selectr","servr","sessioninfo","sfsmisc","shape","shiny","shinydashboard","simMSnSet","SingleCellExperiment","sitmo","slam","snakecase","snow","sourcetools","SparseArray","SparseM","sparsevctrs","Spectra","SQUAREM","statmod","stringdist","stringi","stringr","SummarizedExperiment","sys","systemfonts","testthat","textshaping","threejs","tibble","tidyr","tidyselect","tidyverse","timechange","timeDate","tinkr","tinytex","tmvtnorm","tsne","tufte","txdbmaker","tzdb","UCSC.utils","urlchecker","usethis","utf8","uuid","uwot","varnish","vctrs","vdiffr","vipor","viridis","viridisLite","vroom","vsn","waldo","whisker","whoami","withr","wsbimtools","xfun","XML","xml2","xopen","xslt","xtable","XVector","yaml","zip","zlibbioc","zoo","base","boot","class","cluster","codetools","compiler","datasets","foreign","graphics","grDevices","grid","KernSmooth","lattice","MASS","Matrix","methods","mgcv","nlme","nnet","parallel","rpart","spatial","splines","stats","stats4","survival","tcltk","tools","utils"],["1.4-8","1.86.0","1.78.0","1.86.0","1.70.0","1.32.0","1.50.0","3.16.0","1.38.0","1.2.1","0.2.1","1.2.0","1.5.0","0.1-3","2.24.0","0.4.0","1.87.0-1","2.0.12","2.68.0","1.10.0","1.44.2","2.16.0","0.54.0","0.99.0","1.18.0","1.30.25","2.2.0","1.42.0","1.24.0","2.36.0","3.21.1","1.76.0","2.64.0","2.76.0","4.6.0","4.6.0-1","1.0-9","1.2.4","0.34.2","1.0-10","1.1.5","1.0.8","0.9.0","1.1.0","1.6-2","3.7.6","0.0.0.9000","3.1-3","3.0-5","7.0-1","1.18.3","1.1.0","3.60.0","0.4.16","1.46.0","3.6.5","0.8.0","1.2.0","0.7.3","0.3-66","0.19-4.1","2.1-1","1.9.5","2.24.0","1.2.0","0.95","3.6.4","1.1.3","0.5.2","0.0.0.9001","1.0.3","1.5.3","2.0.2","1.2.1","6.2.3","0.0.0.9000","1.17.4","1.2.3","2.5.0","1.2.0","0.34.1","1.19.0","1.1-3-1","4.1.6","1.4.3","2.4.5","1.6.5","0.3.6","0.6.37","0.77-1","4.6.27","1.0.17","0.4.4","1.1.4","0.4.1","0.33","1.3.1","1.7-16","4.6.2","0.5.0","0.3.2","1.11.1","1.5.1","1.0.3","2.4-2","2.16.0","1.34.0","1.0.7","2.11","1.0.6","2.1.2","1.2.0","1.2.18","1.0.3","1.01-2","2.3-20","1.1.4.1","0.5.3","1.0.0","1.5.2","1.14","1.2-5","2.2-13","1.6.6","1.4.3","1.0.1","1.49.0","1.11.3","1.5.2","2.2.2","3.0.1","1.90.0","1.44.0","0.1.4","1.44.0","1.2.14","1.44.0","1.60.0","1.60.0","2.1.5","1.0.5","0.7.2","3.5.2","0.6.0","1.0.2","0.9.6","3.2.0","0.6.4","0.4.9","1.5.0","0.1.2","0.1.2","0.18.0","1.8.0","2.0.0","1.8","3.21.0","2.1.1","1.1.1","1.60.0","1.0.2","3.2.0","1.86.0","2.3","0.3.6","3.9.5","1.0.1","1.4.1","2.5.4","1.36.0","1.0.1","1.28.5","0.11","1.1.3","0.5.8.1","1.6.4","1.6.16","1.4.7","1.1.2","1.3.2.1","1.0.1","2.1.4","1.36.0","1.82.0","2.1","0.3.1","0.9-15","2.42.0","2.3.5.1","0.2.7","1.0.14","2.2.1","0.1.4","2.0.0","1.48.0","0.9-33","1.50","0.4.3","1.2.4","16.1.6","1.4.2","1.8.1","0.2.2","3.2","1.0.4","3.64.1","0.9.1","0.7","1.1-37","1.1.2","1.5-9.12","5.6.23","1.36.0","1.9.4","2.8.6","2.0.3","1.22.3","2.0","1.20.0","0.5-4","1.5.0","6.1.1","2.0.1","1.16.1","1.16.0","1.5.0","0.13","0.1.2","1.2.8","2.0.0.1","2.1-6","1.88.1","0.2.2","1.2.2.2","0.1.11","0.2-24","1.16.0","1.20.0","0.48.0","1.8.0","0.1.4","0.0.22","1.46.0","1.46.0","2.34.1","1.42.0","0.1-10","1.34.0","0.5.1","1.3-3","1.46.0","2.42.0","1.24","1.0","2.2.1","1.0-11.1","2016.8-1.1","2.3.3","1.50.0","1.44.0","1.3.2","1.3.0","0.3.0","0.9.0","0.9.0","0.9.0","0.8.4","0.9.0","0.9.0","0.9.0","0.9.0","0.9.0","0.9.0","0.9.0","0.9.0","0.9.0","0.9.0","0.9.0","0.5.4","2.0.0","0.7.9","1.0.12","1.10.2","1.4.8","2.0.3","2.1.3","1.4.0","0.2.0","4.10.4","2.8-5","1.8.9","0.1-8","1.4-1","2.3-4","1.0.0","1.70.0","1.2.0","1.18.5","3.8.6","2025.04.28","0.4.0","1.2.3","0.15.1","1.48.0","1.46.0","1.3.3","1.40.0","0.4-27","0.1.6","1.9.1","1.13.2","1.0.4","1.19.1","6.1","2.40.0","0.17.0","1.8.2","1.27.1","2.13.0","2.6.1","1.4.0","4.7-1.2","0.3.3","1.84.0","2.3","1.4.0","1.1-3","1.0.14","0.0.22","14.4.3-1","0.3.4.0.2","0.3.7","0.4.2","1.98-1.17","1.68.0","2.6.4","2.1.5","1.4.5","1.3.1","0.4.1","2.0.0","2.1.2","2.5.0","1.1.4","2.1.1","1.4.4","0.0.15","1.0.0.9002","1.2.1","1.3.18","2.52.0","1.20.0","1.30.0","3.4.0","0.2.23","1.1.6","2.29","0.99-4-1","3.4.0","7.3.2","2.0.4","2.16.0","2.24.0","0.16-2","2.3.11","0.7.2","0.17.1","1.0.5","2.6.2","0.27","1.68.0","0.17","0.4.33","2.1.2","1.0.4","0.1.19","0.3.2","1.8.0","0.46.0","2.10","0.16.11","3.1-1","0.4.10","1.16.0","1.4.0","1.36.0","0.3-44","1.18.0","1.16.1","1.18.0","2.1-4","0.4-2","0.32","1.2.3","1.1-20","1.4.6.1","1.10.0","0.7.3","0.0.2","1.30.1","2.0.2","0.1-55","0.11.1","0.4-4","0.1.7-1","1.8.0","1.84-2","0.3.4","1.18.2","2021.1","1.5.0","0.9.15","1.8.7","1.5.1","1.38.1","3.4.3","1.2.3","3.2.3","1.0.1","0.3.4","3.2.1","1.3.1","1.2.1","2.0.0","0.3.0","4041.110","0.3.0","0.57","1.6","0.1-3.1","0.13","1.4.1","0.5.0","1.4.0","1.0.1","3.1.0","1.2.5","1.2-1","0.2.3","1.0.5","0.6.5","1.0.8","0.4.7","0.6.5","0.4.2","1.6.5","3.76.0","0.6.1","0.4.1","1.3.0","3.0.2","0.2.0","0.52","3.99-0.18","1.3.8","1.0.1","1.5.1","1.8-4","0.48.0","2.3.10","2.3.3","1.54.0","1.8-14","4.5.0","1.3-31","7.3-23","2.1.8.1","0.2-20","4.5.0","4.5.0","0.8-90","4.5.0","4.5.0","4.5.0","2.23-26","0.22-6","7.3-65","1.7-3","4.5.0","1.9-1","3.1-168","7.3-20","4.5.0","4.1.24","7.3-18","4.5.0","4.5.0","4.5.0","3.8-3","4.5.0","4.5.0","4.5.0"],["R (&gt;= 1.5.0)","R (&gt;= 2.8.0), BiocGenerics (&gt;= 0.1.12), Biobase (&gt;= 2.5.5)","R (&gt;= 2.6.0)","R (&gt;= 2.10), AnnotationDbi (&gt;= 1.27.5), XML","R (&gt;= 2.7.0), methods, stats4, BiocGenerics (&gt;= 0.29.2),\nBiobase (&gt;= 1.17.0), IRanges","R (&gt;= 3.4.0)","R (&gt;= 3.5.0), methods, utils, BiocGenerics (&gt;= 0.15.10),\nBiobase (&gt;= 1.17.0), AnnotationDbi (&gt;= 1.33.14)","BiocGenerics (&gt;= 0.15.10), BiocFileCache (&gt;= 1.5.1)","R (&gt;= 3.2.2), methods, utils, S4Vectors (&gt;= 0.7.21), IRanges\n(&gt;= 2.3.23), GenomicRanges, AnnotationHub (&gt;= 2.15.15)",null,null,null,"R (&gt;= 3.0.0)","R (&gt;= 2.9.0)",null,null,null,null,"R (&gt;= 2.10), BiocGenerics (&gt;= 0.27.1), utils","R (&gt;= 4.2.0)","R (&gt;= 4.4.0)","R (&gt;= 3.4.0), dbplyr (&gt;= 1.0.0)","R (&gt;= 4.0.0), methods, utils, graphics, stats, generics",null,"R (&gt;= 4.3.0)",null,null,"methods, R (&gt;= 4.1.0)",null,null,"R (&gt;= 4.5.0)","R (&gt;= 3.6.0)","R (&gt;= 4.1.0), methods","R (&gt;= 4.1.0), BiocGenerics (&gt;= 0.37.0), S4Vectors (&gt;=\n0.27.12), IRanges (&gt;= 2.31.2), XVector (&gt;= 0.37.1),\nGenomeInfoDb","R (&gt;= 3.4.0)","R (&gt;= 3.4.0), bit (&gt;= 4.0.0)",null,null,"R (&gt;= 3.5.0)",null,"R (&gt;= 3.6)","R (&gt;= 3.5)","R (&gt;= 2.10)",null,"R (&gt;= 2.4.0)","R (&gt;= 3.4)","R (&gt;= 3.5.0)","R (&gt;= 3.5.0), carData (&gt;= 3.0-0)","R (&gt;= 3.5.0)","ggplot2, lattice (&gt;= 0.20), R (&gt;= 3.2.0)","R (&gt;= 3.6.0)","R (&gt;= 3.0.0)","R (&gt;= 2.10.0), methods","R (&gt;= 4.0.0), graphics","R (&gt;= 3.0.0), methods, Biostrings (&gt;= 1.29.8)","R (&gt;= 3.4)",null,null,"R (&gt;= 4.0.0)","R (&gt;= 3.2.0)","R (&gt;= 2.14.0)","R (&gt;= 3.0.0), methods",null,"R (&gt;= 4.0.0), methods, grid, graphics, stats, grDevices","R (&gt;= 3.2)",null,"R (&gt;= 3.1.0), methods","R (&gt;= 3.5.0)","R (&gt;= 4.0.0)",null,null,null,null,null,"R (&gt;= 3.0.0)",null,"R (&gt;= 3.3.0)","methods, R (&gt;= 3.0.0)","R (&gt;= 3.6)","R (&gt;= 3.6)","R (&gt;= 4.0.0), methods, stats4, Matrix, BiocGenerics (&gt;=\n0.53.3), MatrixGenerics (&gt;= 1.1.3), S4Vectors (&gt;= 0.27.2),\nIRanges (&gt;= 2.17.3), S4Arrays (&gt;= 1.5.4), SparseArray (&gt;=\n1.7.5)","R (&gt;= 3.0.0)",null,null,"R (&gt;= 3.4)","R (&gt;= 3.0.2), usethis (&gt;= 2.1.6)","R (&gt;= 2.01), shape","R (&gt;= 3.1.0)","R (&gt;= 3.3.0)",null,"R (&gt;= 4.2.0), methods","R (&gt;= 2.14.0), foreach (&gt;= 1.2.0), iterators (&gt;= 1.0.0),\nparallel, utils","R (&gt;= 4.0.0)","R (&gt;= 3.5.0)","R (&gt;= 3.5.0)",null,"R (&gt;= 3.3)",null,"R (&gt;= 3.6.0), limma (&gt;= 3.63.6)","R (&gt;= 2.0.0),graphics,stats","R (&gt;= 3.2)","R (&gt;= 4.1.0)","stats, R(&gt;= 4.1.0)","R (&gt;= 3.6.0)","R (&gt;= 3.4.0)","methods, BiocGenerics (&gt;= 0.15.10), AnnotationHub (&gt;= 3.3.6),\nBiocFileCache (&gt;= 1.5.1)","utils, BiocGenerics (&gt;= 0.15.10), S4Vectors, AnnotationHubData\n(&gt;= 1.21.3)","R (&gt;= 3.1.2), ggplot2 (&gt;= 2.2.0)","R (&gt;= 4.0)","R (&gt;= 3.1.0)",null,null,"R (&gt;= 3.4.0)","R (&gt;= 3.4)","R (&gt;= 2.3.0)","R (&gt;= 2.15.0), lattice","R (&gt;= 4.0.0)","R (&gt;= 3.3.0)","R (&gt;= 3.4)","R (&gt;= 2.5.0)","R (&gt;= 3.2.3)","R (&gt;= 2.0.0), stats","R (&gt;= 2.0)","R (&gt;= 3.6)","R (&gt;= 3.0.0)","R (&gt;= 2.8.0)","R (&gt;= 3.2.0)","R (&gt;= 3.2.0), future (&gt;= 1.28.0)","R (&gt;= 3.6)","R (&gt;= 2.9.0)",null,null,"R (&gt;= 2.11.0)","R (&gt;= 3.6)","R (&gt;= 4.0.0), methods, BiocGenerics (&gt;= 0.53.2), S4Vectors (&gt;=\n0.45.2), IRanges (&gt;= 2.41.1)","R (&gt;= 3.5.0)","R (&gt;= 4.0.0), methods, BiocGenerics (&gt;= 0.37.0), S4Vectors (&gt;=\n0.27.12), IRanges (&gt;= 2.23.9), GenomeInfoDb (&gt;= 1.13.1),\nGenomicRanges (&gt;= 1.55.3), SummarizedExperiment (&gt;= 1.9.13),\nBiostrings (&gt;= 2.55.7), Rsamtools (&gt;= 1.31.2)","R (&gt;= 3.5.0), BiocGenerics (&gt;= 0.51.2), S4Vectors (&gt;=\n0.17.29), IRanges (&gt;= 2.37.1), GenomeInfoDb (&gt;= 1.35.8),\nGenomicRanges (&gt;= 1.55.2), AnnotationDbi (&gt;= 1.41.4)","R (&gt;= 4.0.0), methods, stats4, BiocGenerics (&gt;= 0.53.2),\nS4Vectors (&gt;= 0.45.2), IRanges (&gt;= 2.41.1), GenomeInfoDb (&gt;=\n1.43.1)",null,"R (&gt;= 3.3.0)","R (&gt;= 3.5.0), ggplot2 (&gt;= 3.3.0)","R (&gt;= 3.5)","R (&gt;= 3.1.0), ggplot2 (&gt;= 3.4.0)","R (&gt;= 3.2.2)","R (&gt;= 3.0.0), ggplot2 (&gt;= 2.2.0)","R (&gt;= 3.5.0)",null,"R (&gt;= 3.0)","R (&gt;= 4.1)","R (&gt;= 3.4)","R (&gt;= 3.3.0), methods","R (&gt;= 3.1.2)","R (&gt;= 3.6)","R (&gt;= 3.6)","R (&gt;= 2.10.0), sandwich","R (&gt;= 2.7.0), methods, AnnotationDbi (&gt;= 1.69.0)","R (&gt;= 3.6)","R (&gt;= 3.6)","R (&gt;= 2.11.0), BiasedUrn, geneLenDataBase (&gt;= 1.9.2)",null,"R (&gt;= 3.0)","R (&gt;= 2.10), methods, BiocGenerics (&gt;= 0.13.11)",null,"R (&gt;= 4.0)","methods, stats, utils","R (&gt;= 4.5), methods, rhdf5, BiocGenerics, SparseArray","R (&gt;= 3.5.0)","R (&gt;= 3.6)","R (&gt;= 3.4), methods, SparseArray (&gt;= 1.7.5), DelayedArray (&gt;=\n0.33.5), h5mread (&gt;= 0.99.4)",null,"R (&gt;= 2.0.1), methods","R (&gt;= 3.3.0)",null,"R (&gt;= 2.14.1)",null,"R (&gt;= 2.15.1)","R (&gt;= 3.5)","R (&gt;= 4.0)","R (&gt;= 2.6.0)",null,"methods, R (&gt;= 3.5.0)","R (&gt;= 3.3.0)","R (&gt;= 2.10)","R (&gt;= 2.10), tmvtnorm, norm, pcaMethods, impute",null,"R (&gt;= 2.10)","R (&gt;= 4.0.0), methods, utils, stats, BiocGenerics (&gt;= 0.53.2),\nS4Vectors (&gt;= 0.45.4)","R (&gt;= 3.6.2), Matrix",null,"R (&gt;= 2.5.0), utils","R (&gt;= 3.1.2)",null,"methods","R (&gt;= 3.5.0)","R (&gt;= 2.10)","R (&gt;= 3.6.0)",null,"R (&gt;= 3.0.0)","R (&gt;= 3.0.0)",null,"R (&gt;= 3.0)","R (&gt;= 3.1.0)","","R (&gt;= 3.6)","R (&gt;= 3.6.0)","R (&gt;= 3.1.2)","R (&gt;= 3.2.0)","R (&gt;= 3.6.0), Matrix, methods, stats","R (&gt;= 3.2)","R (&gt;= 4.1.0)",null,"R (&gt;= 3.0.0)","methods, R (&gt;= 3.2)","R (&gt;= 4.1.0)","R (&gt;= 3.4.0)","R (&gt;= 4.0.0), methods","R (&gt;= 2.11.1)","matrixStats (&gt;= 1.4.1)","R (&gt;= 3.6.0)","R (&gt;= 3.4.0)","R (&gt;= 3.0)",null,"R (&gt;= 4.0)",null,"R (&gt;= 3.2.0)",null,null,null,"R (&gt;= 4.0.0)","R (&gt;= 2.10)","R (&gt;= 3.5), Rcpp, methods, BiocGenerics (&gt;= 0.13.11), Biobase,\nannotate, cluster",null,"R (&gt;= 3.2.2)","R (&gt;= 3.2)","stats, stats4","R (&gt;= 4.0), Spectra (&gt;= 1.5.14)","R (&gt;= 3.6.0)","R (&gt;= 3.5.0)",null,"R (&gt;= 3.5.0), Rcpp (&gt;= 1.0.10)","R (&gt;= 4.1.0), bookdown (&gt;= 0.12)","R (&gt;= 3.0.1), MSnbase","R (&gt;= 3.0.1), MSnbase, msmsEDA","R (&gt;= 3.5), methods, BiocGenerics (&gt;= 0.7.1), Biobase (&gt;=\n2.15.2), mzR (&gt;= 2.29.3), S4Vectors, ProtGenerics (&gt;= 1.29.1)","R (&gt;= 2.10), Rcpp",null,"SummarizedExperiment (&gt;= 1.3.81), R (&gt;= 3.5.0)",null,"R(&gt;= 3.5.0)","methods","R (&gt;= 4.0.0), Rcpp (&gt;= 0.10.1), methods, utils",null,"R (&gt;= 3.4.0)",null,null,"R (&gt;= 2.11.1)",null,"R (&gt;= 2.14.0), BiocGenerics (&gt;= 0.15.10), AnnotationDbi (&gt;=\n1.33.15), GenomicFeatures (&gt;= 1.39.4)",null,null,null,"R (&gt;= 3.1)",null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,"R (&gt;= 4.2.0), lme4 (&gt;= 1.1.31)","Biobase, methods",null,"R (&gt;= 2.0)",null,"R (&gt;= 3.5)",null,"R (&gt;= 4.0.0)","R (&gt;= 3.4.0)",null,"R (&gt;= 3.2.0), ggplot2 (&gt;= 3.0.0)","R (&gt;= 3.5.0)","R (&gt;= 3.1.0)","R (&gt;= 2.9.0)",null,"R (&gt;= 2.10), MASS, mclust",null,null,"R(&gt;= 2.10)","R (&gt;= 2.14)","R (&gt;= 3.4.0)","R (&gt;= 4.1.0)","R (&gt;= 4.0)","R (&gt;= 3.6)","R (&gt;= 3.5.0)","R (&gt;= 3.5), MSnbase (&gt;= 1.19.20), MLInterfaces (&gt;= 1.67.10),\nmethods, Rcpp (&gt;= 0.10.3), BiocParallel","R (&gt;= 3.6.3), MSnbase",null,"methods","R (&gt;= 3.4.0)","R (&gt;= 3.1.0)","R (&gt;= 3.4)","S4Vectors,\nR (&gt;= 4.1.0)","R (&gt;= 4.0)","R (&gt;= 4.1), MultiAssayExperiment (&gt;= 1.33.6)","R (&gt;= 3.5), stats, SparseM","R(&gt;= 2.10)","R (&gt;= 2.14.0)","R (&gt;= 2.13.0)","R (&gt;= 2.13.0), R.methodsS3 (&gt;= 1.8.2)","R (&gt;= 2.14.0), R.oo","R (&gt;= 3.6)",null,"R (&gt;= 4.1.0), stats","R (&gt;= 3.2)","graph, methods","R (&gt;= 2.10)",null,"R (&gt;= 2.0.0)",null,"R (&gt;= 3.1)","R (&gt;= 3.3.0)","R (&gt;= 3.6.0)",null,null,"R (&gt;= 3.4.0), methods","R (&gt;= 2.10), Rcpp","R (&gt;= 2.15.0), methods","R (&gt;= 3.6)","R (&gt;= 3.6)","dplyr (&gt;= 1.1.0), R (&gt;= 4.1)",null,null,null,"R (&gt;= 3.0.0)",null,"R (&gt;= 3.6)","R (&gt;= 3.1)","R (&gt;= 3.4.0), methods",null,null,"R (&gt;= 3.6.0)","R (&gt;= 4.1.0), methods",null,"R (&gt;= 4.2.0)",null,"R (&gt;= 4.0.0)","R (&gt;= 3.5.0)","R (&gt;= 3.0)","R (&gt;= 3.5.0)","R (&gt;= 4.1.0), methods","R (&gt;= 3.6)","R (&gt;= 3.0.0)","R (&gt;= 3.5.0), methods","methods, GenomeInfoDb (&gt;= 1.1.3), GenomicRanges (&gt;= 1.31.8),\nBiostrings (&gt;= 2.47.6), R (&gt;= 3.5.0)","R (&gt;= 3.0.2)","R (&gt;= 3.1.0)","R (&gt;= 3.3.0)",null,"R (&gt;= 4.0.0)",null,null,"R (&gt;= 3.5), methods, GenomicRanges (&gt;= 1.37.2)",null,"R (&gt;= 2.5.0), utils (&gt;= 2.5.0), methods (&gt;= 2.5.0), graphics\n(&gt;= 2.5.0)",null,"R (&gt;= 3.6)","R (&gt;= 3.5.0)","R (&gt;= 3.5.0),","R (&gt;= 4.3.0), methods, Matrix, abind, BiocGenerics (&gt;=\n0.45.2), S4Vectors, IRanges","R (&gt;= 4.0.0), methods, utils, stats, stats4, BiocGenerics (&gt;=\n0.53.2)",null,null,"R (&gt;= 3.0.0)",null,null,"R (&gt;= 4.1)","SingleCellExperiment, scuttle, ggplot2","R (&gt;= 2.7.0)","R (&gt;= 4.3.0), QFeatures (&gt;= 1.13.5)","R (&gt;= 4.2.0), QFeatures, ExperimentHub","SingleCellExperiment","R (&gt;= 3.5.0), MASS, nlme","R (&gt;= 3.0)","R (&gt;= 3.0.0)","R (&gt;= 3.4)","R (&gt;= 3.3.0)","R (&gt;= 2.01)","R (&gt;= 3.0.2), methods","R (&gt;= 3.0)",null,"SummarizedExperiment","R (&gt;= 3.2.0)","R (&gt;= 3.4.0)","R (&gt;= 3.2)","R (&gt;= 2.13.1), utils","R (&gt;= 3.0.2)","R (&gt;= 4.3.0), methods, Matrix, BiocGenerics (&gt;= 0.43.1),\nMatrixGenerics (&gt;= 1.11.1), S4Vectors (&gt;= 0.43.2), S4Arrays (&gt;=\n1.5.11)","R (&gt;= 2.15), methods","R (&gt;= 4.1)","R (&gt;= 4.1.0), S4Vectors, BiocParallel","R (&gt;= 3.0)","R (&gt;= 3.0.0)","R (&gt;= 2.15.3)","R (&gt;= 3.4)","R (&gt;= 3.6)","R (&gt;= 4.0.0), methods, MatrixGenerics (&gt;= 1.1.3),\nGenomicRanges (&gt;= 1.55.2), Biobase",null,"R (&gt;= 3.2.0)","R (&gt;= 3.6.0)","R (&gt;= 3.2.0)","R (&gt;= 3.0.0), igraph (&gt;= 1.0.0)","R (&gt;= 3.4.0)","R (&gt;= 3.6)","R (&gt;= 3.4)","R (&gt;= 3.3)","R (&gt;= 3.3)","R (&gt;= 3.6.0), methods",null,null,"R (&gt;= 1.9.0), mvtnorm, utils, Matrix, stats4, gmm",null,null,"BiocGenerics, S4Vectors, GenomeInfoDb (&gt;= 1.39.9),\nGenomicRanges, GenomicFeatures","R (&gt;= 4.0.0)",null,"R (&gt;= 3.3)","R (&gt;= 3.6)","R (&gt;= 2.10)","R (&gt;= 2.9.0)","Matrix",null,"R (&gt;= 3.5.0)","R (&gt;= 4.0)","R (&gt;= 3.5.0)","R (&gt;= 2.10), viridisLite (&gt;= 0.4.0)","R (&gt;= 2.10)","R (&gt;= 3.6)","R (&gt;= 4.0.0), methods, Biobase","R (&gt;= 4.0)",null,null,"R (&gt;= 3.6.0)",null,"R (&gt;= 3.2.0)","R (&gt;= 4.0.0), methods, utils","R (&gt;= 3.6.0)","R (&gt;= 3.1)","xml2 (&gt;= 1.3.0)","R (&gt;= 2.10.0)","R (&gt;= 4.0.0), methods, BiocGenerics (&gt;= 0.37.0), S4Vectors (&gt;=\n0.27.12), IRanges (&gt;= 2.23.9)",null,null,null,"R (&gt;= 3.1.0), stats",null,"R (&gt;= 3.0.0), graphics, stats","R (&gt;= 3.0.0), stats, utils","R (&gt;= 3.5.0)","R (&gt;= 2.1)",null,null,"R (&gt;= 4.0.0)",null,null,null,"R (&gt;= 2.5.0), stats","R (&gt;= 4.0.0)","R (&gt;= 4.4.0), grDevices, graphics, stats, utils","R (&gt;= 4.4), methods",null,"R (&gt;= 3.6.0), nlme (&gt;= 3.1-64)","R (&gt;= 3.6.0)","R (&gt;= 3.0.0), stats, utils",null,"R (&gt;= 2.15.0), graphics, stats, grDevices","R (&gt;= 3.0.0), graphics, stats, utils",null,null,null,"R (&gt;= 3.5.0)",null,null,null],["methods, utils","affyio (&gt;= 1.13.3), BiocManager, graphics, grDevices, methods,\npreprocessCore, stats, utils","methods","Biobase, DBI, xtable, graphics, utils, stats, methods,\nBiocGenerics (&gt;= 0.13.8), httr","DBI, RSQLite, S4Vectors (&gt;= 0.9.25), stats, KEGGREST","utils, methods, GenomicRanges, lazyeval","DBI, RSQLite, XML, S4Vectors, RCurl","utils, methods, grDevices, RSQLite, BiocManager, BiocVersion,\ncurl, rappdirs, AnnotationDbi (&gt;= 1.31.19), S4Vectors, httr,\nyaml, dplyr","GenomicFeatures, Rsamtools, rtracklayer, BiocGenerics,\njsonlite, BiocManager, biocViews, BiocCheck, graph,\nAnnotationDbi, Biobase, Biostrings, DBI, GenomeInfoDb (&gt;=\n1.15.4), OrganismDbi, RSQLite, AnnotationForge, futile.logger\n(&gt;= 1.3.0), XML, RCurl","sys (&gt;= 2.1)","tools",null,null,null,"methods, DelayedArray (&gt;= 0.27.2), SparseArray, BiocGenerics,\nMatrix, Rcpp","stats, graphics, grDevices, utils",null,null,"methods","methods, utils","BiocBaseUtils, BiocFileCache, BiocManager, biocViews, callr,\ncli, codetools, graph, httr2, knitr, methods, rvest,\nstringdist, tools, utils","methods, stats, utils, dplyr, RSQLite, DBI, filelock, curl,\nhttr","methods, utils, graphics, stats","paws","BiocGenerics, S4Vectors, methods, tools","utils","Rcpp, methods","stats, utils, futile.logger, parallel, snow, codetools","BiocGenerics, S4Vectors, Matrix, methods, utils, DelayedArray,\nBiocParallel, ScaledMatrix, irlba, rsvd, Rcpp, beachmat (&gt;=\n2.21.1)","bookdown, knitr (&gt;= 1.30), rmarkdown (&gt;= 1.2), stats, utils,\nyaml, BiocManager",null,"Biobase, graph (&gt;= 1.9.26), methods, RBGL (&gt;= 1.13.5), tools,\nutils, XML, RCurl, RUnit, BiocManager","utils, AnnotationDbi, progress, stringr, httr2, digest,\nBiocFileCache, rappdirs, xml2, curl","methods, utils, grDevices, stats, crayon",null,"graphics, methods, stats, utils",null,"methods, rlang, vctrs (&gt;= 0.2.1)","htmltools (&gt;= 0.3.6),\nknitr (&gt;= 1.38),\nrmarkdown (&gt;= 2.14),\njquerylib,\nxfun (&gt;= 0.39),\ntinytex (&gt;= 0.12),\nyaml (&gt;= 2.1.19)",null,null,"backports, cli, dplyr (&gt;= 1.0.0), generics (&gt;= 0.0.2), glue,\nlifecycle, purrr, rlang (&gt;= 1.1.0), stringr, tibble (&gt;= 3.0.0),\ntidyr (&gt;= 1.0.0)","base64enc, cachem, fastmap (&gt;= 1.1.1), grDevices, htmltools\n(&gt;= 0.5.8), jquerylib (&gt;= 0.1.3), jsonlite, lifecycle, memoise\n(&gt;= 2.0.1), mime, rlang, sass (&gt;= 0.4.9)","rlang, fastmap (&gt;= 1.2.0)","grDevices, graphics","processx (&gt;= 3.6.1), R6, utils","AnnotationDbi, Biobase, Biostrings, cutr, dplyr, ggplot2,\ngoseq, GO.db, httr, MSnbase, purrr, rlang, robustbase, stats,\ntibble, tidyr, tidyselect, tools, utils","abind, Formula, MASS, mgcv, nnet, pbkrtest (&gt;= 0.4-4),\nquantreg, grDevices, utils, stats, graphics, lme4 (&gt;=\n1.1-27.1), nlme, scales",null,"e1071, foreach, grDevices, methods, ModelMetrics (&gt;= 1.2.2.2),\nnlme, plyr, pROC, recipes (&gt;= 0.1.10), reshape2, stats, stats4,\nutils, withr (&gt;= 2.0.0)","bitops","rematch, tibble","rjson, graphics, stats, RCurl, DBI, digest, BiocGenerics, Rcpp\n(&gt;= 0.11.0), ggplot2,grid,gridExtra,\npng,base64enc,DT,rsvg,jsonlite,stringi","GlobalOptions (&gt;= 0.1.2), shape, grDevices, utils, stats,\ncolorspace, methods, grid","S4Vectors, IRanges","utils","utils",null,"cli (&gt;= 3.6.4), lifecycle (&gt;= 1.0.4), rlang (&gt;= 1.1.5), tzdb\n(&gt;= 0.5.0), vctrs (&gt;= 0.6.5)","stats, cluster, graphics, methods","lattice","graphics, grDevices, stats",null,"circlize (&gt;= 0.4.14), GetoptLong, colorspace, clue,\nRColorBrewer, GlobalOptions (&gt;= 0.1.0), png, digest, IRanges,\nmatrixStats, foreach, doParallel, codetools","cli (&gt;= 3.4.0), memoise, rlang (&gt;= 1.0.0)",null,"digest, stats, utils, jsonlite, rex, httr, crayon, withr (&gt;=\n1.0.2), yaml","ggplot2 (&gt;= 3.4.0), grid, gtable, grDevices, methods, rlang,\nscales",null,"callr, cranlike (&gt;= 1.0.2), curl, desc (&gt;= 1.1.0), digest,\nparsedate, rappdirs, rematch2, tools, utils, withr","DBI, debugme, desc (&gt;= 1.1.0), RSQLite, tools, utils","grDevices, methods, utils","openssl (&gt;= 1.3), sys (&gt;= 2.1), curl, jsonlite, askpass","htmltools (&gt;= 0.3.6), jsonlite, lazyeval, R6",null,null,"methods",null,"blob (&gt;= 1.2.0), cli (&gt;= 3.6.1), DBI (&gt;= 1.1.3), dplyr (&gt;=\n1.1.2), glue (&gt;= 1.6.2), lifecycle (&gt;= 1.0.3), magrittr,\nmethods, pillar (&gt;= 1.9.0), purrr (&gt;= 1.0.1), R6 (&gt;= 2.2.2),\nrlang (&gt;= 1.1.1), tibble (&gt;= 3.2.1), tidyr (&gt;= 1.3.0),\ntidyselect (&gt;= 1.2.1), utils, vctrs (&gt;= 0.6.3), withr (&gt;=\n2.5.0)","crayon, grDevices","stats","utils, stats, datasets, magrittr (&gt;= 1.0.1), ggplot2, viridis","stats","methods","cli, R6, utils","cli (&gt;= 3.3.0), desc (&gt;= 1.4.1), ellipsis (&gt;= 0.3.2), fs (&gt;=\n1.5.2), lifecycle (&gt;= 1.0.1), memoise (&gt;= 2.0.1), miniUI (&gt;=\n0.1.1.1), pkgbuild (&gt;= 1.3.1), pkgdown (&gt;= 2.0.6), pkgload (&gt;=\n1.3.0), profvis (&gt;= 0.3.7), rcmdcheck (&gt;= 1.4.0), remotes (&gt;=\n2.4.2), rlang (&gt;= 1.0.4), roxygen2 (&gt;= 7.2.1), rversions (&gt;=\n2.1.1), sessioninfo (&gt;= 1.2.2), stats, testthat (&gt;= 3.1.5),\ntools, urlchecker (&gt;= 1.0.1), utils, withr (&gt;= 2.5.0)","stats, graphics","crayon (&gt;= 1.3.2), tools, methods, utils, stats","utils","graphics, stats","boot, broom, cowplot, Deriv, dplyr, ggplot2, MASS, Matrix,\nmodelr, microbenchmark, rlang, tibble, tidyr,",null,"brio, desc, digest, evaluate, fansi, memoise, rlang, vctrs,\nwithr, yaml","cli (&gt;= 3.4.0), generics, glue (&gt;= 1.3.2), lifecycle (&gt;=\n1.0.3), magrittr (&gt;= 1.5), methods, pillar (&gt;= 1.9.0), R6,\nrlang (&gt;= 1.1.0), tibble (&gt;= 3.2.0), tidyselect (&gt;= 1.2.0),\nutils, vctrs (&gt;= 0.6.4)","Rcpp (&gt;= 0.12.16)","htmltools (&gt;= 0.3.6), htmlwidgets (&gt;= 1.3), httpuv, jsonlite\n(&gt;= 0.9.16), magrittr, crosstalk, jquerylib, promises","cli (&gt;= 3.4.0), data.table (&gt;= 1.13.0), dplyr (&gt;= 1.1.0),\nglue, lifecycle, rlang (&gt;= 1.0.4), tibble, tidyselect (&gt;=\n1.2.0), vctrs (&gt;= 0.4.1)","graphics, grDevices, class, stats, methods, utils, proxy","methods, graphics, stats, utils, locfit",null,"rlang (&gt;= 0.3.0)","estimability (&gt;= 1.4.1), graphics, methods, mvtnorm, numDeriv,\nstats, utils",null,null,"graphics, grDevices, stats, tools, utils, base64enc, knitr,\nrmarkdown","utils, S4Vectors, BiocManager, rappdirs","methods, ExperimentHub, BiocManager, DBI, httr, curl","abind, cluster, dendextend, FactoMineR, ggpubr(&gt;= 0.1.5),\ngrid, stats, reshape2, ggrepel, tidyr","car,cluster,DT,ellipse,emmeans,flashClust,graphics,grDevices,lattice,leaps,MASS,multcompView,scatterplot3d,stats,utils,ggplot2,ggrepel","grDevices, utils",null,null,"graphics, grDevices, stats",null,null,"graphics, grid, grDevices, methods, modeltools (&gt;= 0.2-16),\nnnet, stats, stats4, utils",null,"rlang (&gt;= 1.0.6), htmltools (&gt;= 0.5.1.1)","cli (&gt;= 3.4.0), glue, lifecycle, magrittr, rlang (&gt;= 1.0.0),\ntibble","codetools, utils, iterators",null,null,"MASS, cluster, mclust, flexmix, prabclus, class, diptest,\nrobustbase, kernlab, grDevices, graphics, methods, stats,\nutils, parallel","methods","utils, lambda.r (&gt;= 1.1.0), futile.options",null,"digest, globals (&gt;= 0.18.0), listenv (&gt;= 0.8.0), parallel,\nparallelly (&gt;= 1.44.0), utils","globals (&gt;= 0.16.1), parallel, utils","cli (&gt;= 3.0.1), fs (&gt;= 1.3.1), glue (&gt;= 1.3.0), httr (&gt;=\n1.4.5), jsonlite, lifecycle, openssl, rappdirs, rlang (&gt;=\n1.1.0), stats, utils, withr","lattice, parallel, survival","gtools, methods, stats, utils","MatrixGenerics (&gt;= 1.11.1), AnnotationDbi, annotate, Biobase,\ngraphics, methods, stats, survival, grDevices","utils, rtracklayer, GenomicFeatures, txdbmaker","methods","stats, stats4, utils, UCSC.utils, GenomeInfoDbData",null,"methods, utils, stats, BiocGenerics, S4Vectors, IRanges,\nGenomicRanges, Biostrings, Rsamtools, BiocParallel","methods, utils, stats, DBI, XVector, Biostrings, rtracklayer","utils, stats, XVector (&gt;= 0.29.2)","askpass, credentials (&gt;= 1.2.1), openssl (&gt;= 2.0.3),\nrstudioapi (&gt;= 0.11), sys, zip (&gt;= 2.1.0)","rjson, GlobalOptions (&gt;= 0.1.0), methods, crayon","beeswarm, lifecycle, vipor, cli","cli, glue, grDevices, grid, gtable (&gt;= 0.1.1), isoband,\nlifecycle (&gt; 1.0.1), MASS, mgcv, rlang (&gt;= 1.1.0), scales (&gt;=\n1.3.0), stats, tibble, vctrs (&gt;= 0.6.0), withr (&gt;= 2.5.0)","ggrepel (&gt;= 0.9.2), grid, ggsci, stats, utils, tidyr (&gt;=\n1.3.0), purrr, dplyr (&gt;= 0.7.1), cowplot (&gt;= 1.1.1), ggsignif,\nscales, gridExtra, glue, polynom, rlang (&gt;= 0.4.6), rstatix (&gt;=\n0.7.2), tibble, magrittr","ggplot2 (&gt;= 2.1.0), Cairo (&gt;= 1.5.9), ggbeeswarm, grid, png,\nragg","grid, Rcpp, rlang (&gt;= 0.3.0), scales (&gt;= 0.5.0), withr (&gt;=\n2.5.0)","ggplot2 (&gt;= 2.0.0), grDevices, scales","ggplot2 (&gt;= 3.3.5)","assertthat, dplyr (&gt;= 0.5.0), htmltools (&gt;= 0.2.4), jsonlite\n(&gt;= 0.9.11), magrittr, methods, rlang, shiny (&gt;= 0.11.1)","cli (&gt;= 3.0.1), gitcreds, glue, httr2 (&gt;= 1.0.6), ini,\njsonlite, lifecycle, rlang (&gt;= 1.0.0)",null,"utils","codetools","methods","base64enc, cli, crayon, gargle (&gt;= 1.5.1), glue, httr,\njsonlite, lifecycle, mime, rappdirs, rematch2, rlang (&gt;= 1.1.0)","stats, methods, grDevices, graphics",null,"cli (&gt;= 3.0.0), gargle (&gt;= 1.5.0), glue (&gt;= 1.4.2), httr,\njsonlite, lifecycle, magrittr, pillar (&gt;= 1.9.0), purrr (&gt;=\n1.0.1), rlang (&gt;= 1.0.2), tibble (&gt;= 2.0.0), utils, uuid, vctrs\n(&gt;= 0.3.0), withr","cellranger, cli (&gt;= 3.0.0), curl, gargle (&gt;= 1.5.0), glue (&gt;=\n1.3.0), googledrive (&gt;= 2.1.0), httr, ids, lifecycle, magrittr,\nmethods, purrr, rematch2, rlang (&gt;= 1.0.2), tibble (&gt;= 2.1.1),\nutils, vctrs (&gt;= 0.2.3), withr","mgcv, graphics, stats, utils, AnnotationDbi, GO.db,\nBiocGenerics, methods, rtracklayer, GenomicFeatures,\nGenomeInfoDb",null,"gtools, stats, caTools, KernSmooth, methods","stats, stats4, utils","gtable, grid, grDevices, graphics, utils","cli, glue, grid, lifecycle, rlang (&gt;= 1.1.0), stats",null,"stats, tools, rhdf5filters, S4Vectors, IRanges, S4Arrays","cli (&gt;= 3.6.0), glue (&gt;= 1.6.2), rlang (&gt;= 1.1.0), sparsevctrs\n(&gt;= 0.2.0), tibble (&gt;= 3.2.1), vctrs (&gt;= 0.6.0)","cli (&gt;= 3.0.0), forcats (&gt;= 0.2.0), hms, lifecycle, methods,\nreadr (&gt;= 0.1.0), rlang (&gt;= 0.4.0), tibble, tidyselect, vctrs\n(&gt;= 0.3.0)","utils, stats, tools, Matrix, BiocGenerics (&gt;= 0.51.2),\nS4Vectors, IRanges, S4Arrays (&gt;= 1.1.1), rhdf5","rprojroot (&gt;= 2.0.2)","lattice, grid, graphics, grDevices, stats, utils","xfun (&gt;= 0.18)","lifecycle, methods, pkgconfig, rlang (&gt;= 1.0.2), vctrs (&gt;=\n0.3.8)","base64enc, digest, fastmap (&gt;= 1.1.0), grDevices, rlang (&gt;=\n1.0.0), utils","grDevices, htmltools (&gt;= 0.5.7), jsonlite (&gt;= 0.9.16), knitr\n(&gt;= 1.8), rmarkdown, yaml","later (&gt;= 0.8.0), promises, R6, Rcpp (&gt;= 1.0.7), utils","curl (&gt;= 5.0.2), jsonlite, mime, openssl (&gt;= 0.8), R6","cli (&gt;= 3.0.0), curl (&gt;= 6.2.1), glue, lifecycle, magrittr,\nopenssl, R6, rappdirs, rlang (&gt;= 1.1.0), vctrs (&gt;= 0.6.3),\nwithr",null,"openssl, uuid","cli, graphics, grDevices, lifecycle, magrittr, Matrix,\npkgconfig (&gt;= 2.0.0), rlang, stats, utils, vctrs","methods, slam, lpsymphony, fdrtool, BiocGenerics",null,null,null,"rpart (&gt;= 3.1-8), MASS, survival, nnet, class, prodlim","stats4","stats, methods","grid, utils",null,"dplyr (&gt;= 1.0.0), hms, lifecycle, lubridate, magrittr, purrr,\nrlang, stringi, stringr, snakecase (&gt;= 0.9.2), tidyselect (&gt;=\n1.0.0), tidyr (&gt;= 0.7.0)","htmltools",null,"methods, httr, png, Biostrings","methods, stats, grDevices, graphics","evaluate (&gt;= 0.15), highr (&gt;= 0.11), methods, tools, xfun (&gt;=\n0.51), yaml (&gt;= 2.1.19)","stats, graphics","formatR","parallel, grDevices, graphics, stats, utils","Rcpp (&gt;= 0.12.9), rlang","cli, future.apply, graphics, grDevices, methods, numDeriv,\nprogressr, stats, survival, SQUAREM, utils",null,null,"cli (&gt;= 3.4.0), glue, rlang (&gt;= 1.1.0)","grDevices, graphics, stats, utils, methods, statmod",null,"utils, commonmark (&gt;= 1.9.5), xfun (&gt;= 0.52)","graphics, grid, splines, utils, parallel, MASS, lattice, boot,\nnlme (&gt;= 3.1-123), minqa (&gt;= 1.1.15), nloptr (&gt;= 1.0.4),\nreformulas (&gt;= 0.3.0)","crayon, methods, prettyunits, rlang (&gt;= 1.0.0)","lattice",null,null,"generics, timechange (&gt;= 0.3.0)","Rcpp (&gt;= 0.12.12), magrittr, curl",null,"parallel","utils, xfun, litedown (&gt;= 0.6)","methods","stats, methods, Matrix (&gt;= 1.6-0), Matrix(&lt; 1.8-0)",null,"stats, utils, graphics, grDevices","rlang (&gt;= 0.4.10), cachem","utils, MsCoreUtils, BiocParallel, methods, stats","Rcpp","graphics, stats","tools","shiny (&gt;= 0.13), htmltools (&gt;= 0.3), utils","Rcpp (&gt;= 0.9.10)","kernlab, MASS, plotly, scales, segmented, stats, survival",null,"gdata, pls, sfsmisc, MASS, rpart, genefilter, fpc, ggvis,\nshiny, gbm, RColorBrewer, hwriter, threejs (&gt;= 0.2.2), mlbench,\nstats4, tools, grDevices, graphics, stats, magrittr,\nSummarizedExperiment","rlang, withr","Rcpp, data.table","broom, magrittr, purrr (&gt;= 0.2.2), rlang (&gt;= 1.0.6), tibble,\ntidyr (&gt;= 0.8.0), tidyselect, vctrs","methods","ProtGenerics (&gt;= 1.35.3), BiocParallel, S4Vectors, IRanges,\nMsCoreUtils, methods, stats","methods, S4Vectors, MASS, stats, clue",null,"ExperimentHub, utils",null,"tufte, htmltools, xfun, knitr (&gt;= 1.18), rmarkdown, stringr,\nmagrittr, xml2","MASS, gplots, RColorBrewer","edgeR, qvalue","MsCoreUtils, PSMatch, BiocParallel, IRanges (&gt;= 2.13.28),\nplyr, vsn, grid, stats4, affy, impute, pcaMethods, MALDIquant\n(&gt;= 1.16), mzID (&gt;= 1.5.2), digest, lattice, ggplot2, scales,\nMASS, Rcpp","MSnbase (&gt;= 1.12.1), mzID (&gt;= 1.3.5), R.cache, foreach,\ndoParallel, parallel, methods, iterators, data.table, Biobase,\nProtGenerics, reshape2, dplyr, mzR, BiocStyle, msmsTests,\nggplot2, RUnit, BiocGenerics, Biostrings, purrr, rlang,\nstringr, tibble, AnnotationHub, AnnotationDbi, xtable","grid","Biobase, BiocBaseUtils, BiocGenerics (&gt;= 0.53.4),\nDelayedArray, GenomicRanges, IRanges, methods, S4Vectors,\ntidyr, utils","colorspace, methods","stats","XML, plyr, parallel, doParallel, foreach, iterators,\nProtGenerics","Biobase, BiocGenerics (&gt;= 0.13.6), ProtGenerics (&gt;= 1.17.3),\nncdf4",null,null,null,"stats",null,"askpass","methods, utils, stats, DBI, BiocManager, Biobase, graph, RBGL,\nS4Vectors, IRanges, GenomicRanges (&gt;= 1.31.13), txdbmaker","parallel, tools, utils",null,"ggplot2 (&gt;= 3.0.0), gtable, grid, stats, grDevices, utils,\ngraphics, rlang (&gt;= 1.0.0), cli, farver","dplyr, glue, purrr, rlang, testthat (&gt;= 3.1.5), tibble","paws.analytics (&gt;= 0.9.0), paws.application.integration (&gt;=\n0.9.0), paws.common (&gt;= 0.8.0), paws.compute (&gt;= 0.9.0),\npaws.cost.management (&gt;= 0.9.0), paws.customer.engagement (&gt;=\n0.9.0), paws.database (&gt;= 0.9.0), paws.developer.tools (&gt;=\n0.9.0), paws.end.user.computing (&gt;= 0.9.0),\npaws.machine.learning (&gt;= 0.9.0), paws.management (&gt;= 0.9.0),\npaws.networking (&gt;= 0.9.0), paws.security.identity (&gt;= 0.9.0),\npaws.storage (&gt;= 0.9.0)","paws.common (&gt;= 0.8.0)","paws.common (&gt;= 0.8.0)","base64enc, curl, digest, httr2, jsonlite, methods, utils,\nstats, Rcpp, xml2","paws.common (&gt;= 0.8.0)","paws.common (&gt;= 0.8.0)","paws.common (&gt;= 0.8.0)","paws.common (&gt;= 0.8.0)","paws.common (&gt;= 0.8.0)","paws.common (&gt;= 0.8.0)","paws.common (&gt;= 0.8.0)","paws.common (&gt;= 0.8.0)","paws.common (&gt;= 0.8.0)","paws.common (&gt;= 0.8.0)","paws.common (&gt;= 0.8.0)","broom, dplyr, MASS, methods, numDeriv, Matrix (&gt;= 1.2.3), doBy\n(&gt;= 4.6.22)","BiocGenerics, Rcpp (&gt;= 0.11.3), MASS","commonmark, fs (&gt;= 1.5.0), glue, purrr, R6, tinkr (&gt;= 0.2.0),\nxml2, xslt, yaml","grid, RColorBrewer, scales, gtable, stats, grDevices, graphics","cli (&gt;= 2.3.0), glue, lifecycle, rlang (&gt;= 1.0.2), utf8 (&gt;=\n1.1.0), utils, vctrs (&gt;= 0.5.0)","callr (&gt;= 3.2.0), cli (&gt;= 3.4.0), desc, processx, R6","utils","bslib (&gt;= 0.5.1), callr (&gt;= 3.7.3), cli (&gt;= 3.6.1), desc (&gt;=\n1.4.0), downlit (&gt;= 0.4.4), fontawesome, fs (&gt;= 1.4.0), httr2\n(&gt;= 1.0.2), jsonlite, openssl, purrr (&gt;= 1.0.0), ragg (&gt;=\n1.4.0), rlang (&gt;= 1.1.4), rmarkdown (&gt;= 2.27), tibble, whisker,\nwithr (&gt;= 2.4.3), xml2 (&gt;= 1.3.1), yaml","cli (&gt;= 3.3.0), desc, fs, glue, lifecycle, methods, pkgbuild,\nprocessx, rlang (&gt;= 1.1.1), rprojroot, utils, withr (&gt;= 2.4.3)",null,"tools, scales, httr (&gt;= 1.3.0), jsonlite (&gt;= 1.6), magrittr,\ndigest, viridisLite, base64enc, htmltools (&gt;= 0.3.6),\nhtmlwidgets (&gt;= 1.5.2.9001), tidyr (&gt;= 1.0.0), RColorBrewer,\ndplyr, vctrs, tibble, lazyeval (&gt;= 0.2.0), rlang (&gt;= 0.4.10),\ncrosstalk, purrr, data.table, promises","grDevices, graphics, methods, stats","Rcpp (&gt;= 0.11.0)",null,"stats, graphics",null,null,"stats",null,"methods, plyr, Rcpp (&gt;= 0.11.1)","ps (&gt;= 1.2.0), R6, utils","Rcpp (&gt;= 0.11.5), stats, rlang, data.table, grDevices,\nggplot2, graphics, diagram, survival, KernSmooth, lava","htmlwidgets (&gt;= 0.3.2), rlang (&gt;= 1.1.0), vctrs","crayon, hms, prettyunits, R6","digest, utils","stats4, Biobase, mclust (&gt;= 4.3), caret, e1071, sampling,\nclass, kernlab, lattice, nnet, randomForest, proxy, FNN,\nhexbin, BiocGenerics, stats, dendextend, RColorBrewer, scales,\nMASS, knitr, mvtnorm, LaplacesDemon, coda, mixtools, gtools,\nplyr, ggplot2, biomaRt, utils, grDevices, graphics, colorspace","Biobase, utils","fastmap (&gt;= 1.1.0), later, magrittr (&gt;= 1.5), R6, Rcpp, rlang,\nstats",null,"stats, utils","codetools, lobstr, methods, Rcpp (&gt;= 0.11.0), stringr","utils","utils,\nstats,\nigraph,\nmethods,\nSpectra (&gt;= 1.17.10),\nMatrix,\nBiocParallel,\nBiocGenerics,\nProtGenerics (&gt;= 1.27.1),\nQFeatures,\nMsCoreUtils,\nIRanges","cli (&gt;= 3.6.1), lifecycle (&gt;= 1.0.3), magrittr (&gt;= 1.5.0),\nrlang (&gt;= 1.1.1), vctrs (&gt;= 0.6.3)","methods, stats, utils, S4Vectors, IRanges,\nSummarizedExperiment, BiocGenerics (&gt;= 0.53.4), ProtGenerics\n(&gt;= 1.35.1), AnnotationFilter, lazyeval, Biobase, MsCoreUtils\n(&gt;= 1.7.2), igraph, grDevices, plotly, tidyr, tidyselect,\nreshape2","methods, graphics, Matrix, MatrixModels, survival, MASS","splines, ggplot2, grid, reshape2","utils, R.methodsS3 (&gt;= 1.8.1), R.oo (&gt;= 1.24.0), R.utils (&gt;=\n2.10.1), digest (&gt;= 0.6.13)","utils","methods, utils","methods, utils, tools, R.methodsS3",null,"systemfonts (&gt;= 1.0.3), textshaping (&gt;= 0.3.0)",null,null,"methods","utils, tools","callr (&gt;= 3.1.1.9000), cli (&gt;= 3.0.0), curl, desc (&gt;= 1.2.0),\ndigest, pkgbuild, prettyunits, R6, rprojroot, sessioninfo (&gt;=\n1.1.1), utils, withr, xopen",null,"methods, utils","methods, Rcpp","Rcpp (&gt;= 1.0.12), stats, utils, methods","Rcpp (&gt;= 0.11.0), stats, utils","Rcpp, Matrix, methods, stats",null,"bitops",null,"tools, utils, rbibutils (&gt;= 1.3)","cli (&gt;= 3.2.0), clipr, crayon, hms (&gt;= 0.4.1), lifecycle (&gt;=\n0.2.0), methods, R6, rlang, tibble, utils, vroom (&gt;= 1.6.0)","cellranger, tibble (&gt;= 2.0.1), utils","cli, clock (&gt;= 0.6.1), generics (&gt;= 0.1.2), glue, gower,\nhardhat (&gt;= 1.4.1), ipred (&gt;= 0.9-12), lifecycle (&gt;= 1.0.3),\nlubridate (&gt;= 1.8.0), magrittr, Matrix, purrr (&gt;= 1.0.0), rlang\n(&gt;= 1.1.0), sparsevctrs (&gt;= 0.3.3), stats, tibble, tidyr (&gt;=\n1.0.0), tidyselect (&gt;= 1.2.0), timeDate, utils, vctrs (&gt;=\n0.5.0), withr","stats, methods, Matrix, Rdpack",null,"tibble","methods, stats, tools, utils","utils","callr (&gt;= 3.6.0), cli (&gt;= 3.2.0), clipr (&gt;= 0.4.0), fs, glue,\nknitr (&gt;= 1.23), lifecycle, rlang (&gt;= 1.0.0), rmarkdown,\nrstudioapi, utils, withr (&gt;= 2.3.0)","plyr (&gt;= 1.8.1), Rcpp, stringr","XML, RCurl, rjson, S4Vectors (&gt;= 0.13.15), yaml","assertthat, brio, callr, cli (&gt;= 3.1.0), clisymbols, crancache\n(&gt;= 0.0.0.9001), crayon (&gt;= 1.4.1), curl, DBI, desc (&gt;= 1.3.0),\nglue, gmailr, hms, httr, jsonlite, knitr, pkgbuild,\nprettyunits, processx (&gt;= 3.3.0), progress, rcmdcheck (&gt;=\n1.3.3), rematch2, remotes (&gt;= 2.2.0), rlang (&gt;= 0.3.0),\nRSQLite, sessioninfo, tibble, utils, whoami, withr, yaml","lazyeval","graphics, grDevices, stats, utils, htmlwidgets (&gt;= 1.6.0),\nhtmltools, knitr (&gt;= 1.33), jsonlite (&gt;= 0.9.20), magrittr, R6,\nbase64enc, mime","Rhdf5lib (&gt;= 1.13.4), rhdf5filters (&gt;= 1.15.5)",null,null,"tools",null,"utils","bslib (&gt;= 0.2.5.1), evaluate (&gt;= 0.13), fontawesome (&gt;=\n0.5.0), htmltools (&gt;= 0.5.1), jquerylib, jsonlite, knitr (&gt;=\n1.43), methods, tinytex (&gt;= 0.31), tools, utils, xfun (&gt;=\n0.36), yaml (&gt;= 2.1.19)","stats, graphics, utils, methods, DEoptimR","httr2, jsonlite, utils, Biobase, BiocGenerics (&gt;= 0.23.1)","brew, cli (&gt;= 3.3.0), commonmark, desc (&gt;= 1.2.0), knitr,\nmethods, pkgload (&gt;= 1.0.2), purrr (&gt;= 1.0.0), R6 (&gt;= 2.1.2),\nrlang (&gt;= 1.0.6), stringi, stringr (&gt;= 1.0.0), utils, withr,\nxml2",null,"BiocFileCache, jsonlite, xml2, RCurl, curl, utils","utils, BiocGenerics (&gt;= 0.25.1), S4Vectors (&gt;= 0.17.25),\nIRanges (&gt;= 2.13.12), XVector (&gt;= 0.19.7), bitops,\nBiocParallel, stats","Matrix (&gt;= 1.1-0), Rcpp (&gt;= 0.11.5)","bit64, blob (&gt;= 1.2.0), DBI (&gt;= 1.2.0), memoise, methods,\npkgconfig, rlang","stats, utils, tidyr (&gt;= 1.0.0), purrr, broom (&gt;= 0.7.4), rlang\n(&gt;= 0.3.1), tibble (&gt;= 2.1.3), dplyr (&gt;= 0.7.1), magrittr,\ncorrplot, tidyselect (&gt;= 1.2.0), car, generics (&gt;= 0.0.2)",null,"Matrix",null,"knitr (&gt;= 1.30), lifecycle, rmarkdown (&gt;= 2.14), tinytex (&gt;=\n0.30), utils, xfun, yaml","XML (&gt;= 1.98-0), BiocGenerics (&gt;= 0.35.3), S4Vectors (&gt;=\n0.23.18), IRanges (&gt;= 2.13.13), XVector (&gt;= 0.19.7),\nGenomeInfoDb (&gt;= 1.15.2), Biostrings (&gt;= 2.47.6), curl, httr,\nRsamtools (&gt;= 1.31.2), GenomicAlignments (&gt;= 1.15.6), BiocIO,\ntools, restfulr (&gt;= 0.0.13)","Rcpp (&gt;= 0.11.0), stats",null,"curl, utils, xml2 (&gt;= 1.0.0)","cli, glue, httr (&gt;= 0.5), lifecycle (&gt;= 1.0.3), magrittr,\nrlang (&gt;= 1.1.0), selectr, tibble, xml2 (&gt;= 1.3)","utils, tibble, dplyr","SummarizedExperiment, S4Vectors","stats, crayon",null,"MASS, lpSolve","pkgdown (&gt;= 1.6.0), pegboard (&gt;= 0.7.0), cli (&gt;= 3.4.0),\ncommonmark, fs (&gt;= 1.5.0), gh, gert (&gt;= 1.0.1), rstudioapi,\nrlang (&gt;= 0.4.3), glue, assertthat, yaml, desc, knitr (&gt;=\n1.33), rmarkdown (&gt;= 2.4), renv (&gt;= 0.14.0), rprojroot, usethis\n(&gt;= 2.0.0), withr, whisker, callr, servr, utils, tools","stats, utils, zoo","fs (&gt;= 1.2.4), rlang (&gt;= 0.4.10), htmltools (&gt;= 0.5.1), R6,\nrappdirs","methods, Matrix, S4Vectors, DelayedArray","cli, farver (&gt;= 2.0.3), glue, labeling, lifecycle, R6,\nRColorBrewer, rlang (&gt;= 1.1.0), viridisLite","stats, utils, methods, Matrix, BiocGenerics, S4Vectors,\nSummarizedExperiment, MatrixGenerics, SparseArray,\nDelayedArray, beachmat, BiocNeighbors, BiocSingular,\nBiocParallel, rlang, ggbeeswarm, viridis, Rtsne, RColorBrewer,\nRcppML, uwot, pheatmap, ggrepel, ggrastr","grDevices, graphics, stats","IHW, ggplot2, ggrepel, matrixStats, metapod, methods,\nMsCoreUtils, MultiAssayExperiment, nipals, RColorBrewer,\nS4Vectors, SingleCellExperiment, SummarizedExperiment, stats,\nutils","utils, AnnotationHub, SingleCellExperiment, S4Vectors","methods, utils, stats, Matrix, Rcpp, BiocGenerics, S4Vectors,\nBiocParallel, GenomicRanges, SummarizedExperiment, S4Arrays,\nMatrixGenerics, SparseArray, DelayedArray, beachmat",null,"methods, stringr, R6","mime (&gt;= 0.2), httpuv (&gt;= 1.5.2), xfun (&gt;= 0.48), jsonlite","cli (&gt;= 3.1.0), tools, utils","grDevices, utils, stats, tools","stats, graphics, grDevices","utils, grDevices, httpuv (&gt;= 1.5.2), mime (&gt;= 0.3), jsonlite\n(&gt;= 0.9.16), xtable, fontawesome (&gt;= 0.4.0), htmltools (&gt;=\n0.5.4), R6 (&gt;= 2.0), sourcetools, later (&gt;= 1.0.0), promises\n(&gt;= 1.3.2), tools, crayon, rlang (&gt;= 0.4.10), fastmap (&gt;=\n1.1.1), withr, commonmark (&gt;= 1.7), glue (&gt;= 1.3.2), bslib (&gt;=\n0.6.0), cachem (&gt;= 1.1.0), lifecycle (&gt;= 0.2.0)","htmltools (&gt;= 0.2.6), promises, shiny (&gt;= 1.0.0), utils","reshape2, ggplot2, MSnbase","methods, utils, stats, S4Vectors, BiocGenerics, GenomicRanges,\nDelayedArray","Rcpp (&gt;= 0.12.13)","stats","stringr, stringi",null,null,"utils, stats, matrixStats, IRanges, XVector","graphics, stats, utils","cli (&gt;= 3.4.0), rlang (&gt;= 1.1.0), vctrs","ProtGenerics (&gt;= 1.39.2), methods, IRanges, MsCoreUtils (&gt;=\n1.7.5), graphics, grDevices, stats, tools, utils, fs,\nBiocGenerics, MetaboCoreUtils",null,"stats, graphics","parallel","tools, utils, stats","cli, glue (&gt;= 1.6.1), lifecycle (&gt;= 1.0.3), magrittr, rlang\n(&gt;= 1.0.0), stringi (&gt;= 1.5.3), vctrs (&gt;= 0.4.0)","utils, stats, tools, Matrix, BiocGenerics (&gt;= 0.51.3),\nS4Vectors (&gt;= 0.33.7), IRanges (&gt;= 2.23.9), GenomeInfoDb (&gt;=\n1.13.1), S4Arrays (&gt;= 1.1.1), DelayedArray (&gt;= 0.31.12)",null,"base64enc, grid, jsonlite, lifecycle, tools, utils","brio (&gt;= 1.1.3), callr (&gt;= 3.7.3), cli (&gt;= 3.6.1), desc (&gt;=\n1.4.2), digest (&gt;= 0.6.33), evaluate (&gt;= 1.0.1), jsonlite (&gt;=\n1.8.7), lifecycle (&gt;= 1.0.3), magrittr (&gt;= 2.0.3), methods,\npkgload (&gt;= 1.3.2.1), praise (&gt;= 1.0.0), processx (&gt;= 3.8.2),\nps (&gt;= 1.7.5), R6 (&gt;= 2.5.1), rlang (&gt;= 1.1.1), utils, waldo\n(&gt;= 0.6.0), withr (&gt;= 3.0.2)","lifecycle, stats, stringi, systemfonts (&gt;= 1.1.0), utils","htmlwidgets (&gt;= 0.3.2), base64enc, crosstalk, methods, stats","fansi (&gt;= 0.4.0), lifecycle (&gt;= 1.0.0), magrittr, methods,\npillar (&gt;= 1.8.1), pkgconfig, rlang (&gt;= 1.0.2), utils, vctrs\n(&gt;= 0.4.2)","cli (&gt;= 3.4.1), dplyr (&gt;= 1.0.10), glue, lifecycle (&gt;= 1.0.3),\nmagrittr, purrr (&gt;= 1.0.1), rlang (&gt;= 1.1.1), stringr (&gt;=\n1.5.0), tibble (&gt;= 2.1.1), tidyselect (&gt;= 1.2.0), utils, vctrs\n(&gt;= 0.5.2)","cli (&gt;= 3.3.0), glue (&gt;= 1.3.0), lifecycle (&gt;= 1.0.3), rlang\n(&gt;= 1.0.4), vctrs (&gt;= 0.5.2), withr","broom (&gt;= 1.0.3), conflicted (&gt;= 1.2.0), cli (&gt;= 3.6.0),\ndbplyr (&gt;= 2.3.0), dplyr (&gt;= 1.1.0), dtplyr (&gt;= 1.2.2), forcats\n(&gt;= 1.0.0), ggplot2 (&gt;= 3.4.1), googledrive (&gt;= 2.0.0),\ngooglesheets4 (&gt;= 1.0.1), haven (&gt;= 2.5.1), hms (&gt;= 1.1.2),\nhttr (&gt;= 1.4.4), jsonlite (&gt;= 1.8.4), lubridate (&gt;= 1.9.2),\nmagrittr (&gt;= 2.0.3), modelr (&gt;= 0.1.10), pillar (&gt;= 1.8.1),\npurrr (&gt;= 1.0.1), ragg (&gt;= 1.2.5), readr (&gt;= 2.1.4), readxl (&gt;=\n1.4.2), reprex (&gt;= 2.0.2), rlang (&gt;= 1.0.6), rstudioapi (&gt;=\n0.14), rvest (&gt;= 1.0.3), stringr (&gt;= 1.5.0), tibble (&gt;= 3.1.8),\ntidyr (&gt;= 1.3.0), xml2 (&gt;= 1.3.3)",null,"graphics, utils, stats","commonmark (&gt;= 1.6), glue, lifecycle, magrittr, purrr, R6,\nrlang (&gt;= 0.4.5), xml2, xslt","xfun (&gt;= 0.48)","stats, methods",null,"htmltools, knitr (&gt;= 1.28), rmarkdown (&gt;= 2.11), xfun (&gt;=\n0.13)","methods, utils, stats, tools, httr, rjson, DBI, RSQLite (&gt;=\n2.0), IRanges, UCSC.utils, AnnotationDbi, Biobase, BiocIO,\nrtracklayer, biomaRt (&gt;= 2.59.1)",null,"methods, stats, httr, jsonlite, S4Vectors","cli, curl, tools, xml2","cli (&gt;= 3.0.1), clipr (&gt;= 0.3.0), crayon, curl (&gt;= 2.7), desc\n(&gt;= 1.4.2), fs (&gt;= 1.3.0), gert (&gt;= 1.4.1), gh (&gt;= 1.2.1), glue\n(&gt;= 1.3.0), jsonlite, lifecycle (&gt;= 1.0.0), purrr, rappdirs,\nrlang (&gt;= 1.1.0), rprojroot (&gt;= 1.2), rstudioapi, stats, tools,\nutils, whisker, withr (&gt;= 2.3.0), yaml",null,null,"FNN, irlba, methods, Rcpp, RcppAnnoy (&gt;= 0.0.17), RSpectra",null,"cli (&gt;= 3.4.0), glue, lifecycle (&gt;= 1.0.3), rlang (&gt;= 1.1.0)","diffobj, glue, grDevices, htmltools, lifecycle, rlang,\ntestthat (&gt;= 3.0.3), xml2 (&gt;= 1.0.0)","stats, graphics","ggplot2 (&gt;= 1.0.1), gridExtra",null,"bit64, cli (&gt;= 3.2.0), crayon, glue, hms, lifecycle (&gt;=\n1.0.3), methods, rlang (&gt;= 0.4.2), stats, tibble (&gt;= 2.0.0),\ntidyselect, tzdb (&gt;= 0.1.1), vctrs (&gt;= 0.2.0), withr","affy, limma, lattice, ggplot2","cli, diffobj (&gt;= 0.3.4), glue, methods, rlang (&gt;= 1.1.0)",null,"httr, jsonlite, utils","graphics, grDevices","stats,\nQFeatures,\nsimMSnSet,\nSummarizedExperiment","grDevices, stats, tools",null,"cli, methods, rlang (&gt;= 1.1.0)","processx","Rcpp","stats, utils","methods, utils, tools, BiocGenerics, S4Vectors, IRanges",null,null,null,"utils, graphics, grDevices, lattice (&gt;= 0.20-27)",null,null,"MASS","graphics, grDevices, stats, utils",null,null,null,"methods, utils, stats","grDevices",null,"grDevices, utils",null,"grid, grDevices, graphics, stats, utils","methods","grDevices, graphics, grid, lattice, stats, utils","utils, stats","methods, stats, graphics, Matrix, splines, utils","graphics, stats, utils, lattice",null,"tools, compiler",null,null,"graphics, stats","utils, grDevices, graphics","graphics, methods, stats","graphics, Matrix, methods, splines, stats, utils","utils",null,null],["MIT + file LICENSE","LGPL (&gt;= 2.0)","LGPL (&gt;= 2)","Artistic-2.0","Artistic-2.0","Artistic-2.0","Artistic-2.0","Artistic-2.0","Artistic-2.0","MIT + file LICENSE","GPL-3","MIT + file LICENSE","GPL-2 | GPL-3","GPL-2 | GPL-3","GPL-3","Artistic-2.0","BSL-1.0","GPL-3","Artistic-2.0","Artistic-2.0","Artistic-2.0","Artistic-2.0","Artistic-2.0","Artistic-2.0","Artistic-2.0","Artistic-2.0","GPL-3","GPL-2 | GPL-3 | BSL-1.0","GPL-3","Artistic-2.0","Artistic-2.0","Artistic-2.0","Artistic-2.0","Artistic-2.0","GPL-2 | GPL-3","GPL-2 | GPL-3","GPL (&gt;= 2)","MIT + file LICENSE","GPL-3","GPL (&gt;= 2)","MIT + file LICENSE","MIT + file LICENSE","MIT + file LICENSE","MIT + file LICENSE","GPL-2 | GPL-3","MIT + file LICENSE","MIT + file LICENSE","GPL (&gt;= 2)","GPL (&gt;= 2)","GPL (&gt;= 2)","GPL-3","MIT + file LICENSE","Artistic-2.0","MIT + file LICENSE","GPL (&gt;= 3)","MIT + file LICENSE","GPL-3","MIT + file LICENSE","MIT + file LICENSE","GPL-2","GPL (&gt;= 2)","BSD_3_clause + file LICENSE","BSD_2_clause + file LICENSE","MIT + file LICENSE","MIT + file LICENSE","MIT + file LICENSE","MIT + file LICENSE","GPL-2","MIT + file LICENSE","MIT + file LICENSE","GPL (&gt;= 2)","MIT + file LICENSE","MIT + file LICENSE","MIT + file LICENSE","MIT + file LICENSE","GPL-3","MPL-2.0 | file LICENSE","LGPL (&gt;= 2.1)","MIT + file LICENSE","MIT + file LICENSE","Artistic-2.0","GPL-2 | GPL-3","GPL (&gt;= 2)","GPL (&gt;= 3)","MIT + file LICENSE","MIT + file LICENSE","GPL (&gt;= 2)","GPL-2 | GPL-3","GPL (&gt;= 2)","GPL (&gt;= 2)","GPL (&gt;= 2)","GPL-2","MIT + file LICENSE","MIT + file LICENSE","AGPL-3","GPL-3 | file LICENSE","MIT + file LICENSE","GPL-2 | GPL-3","GPL (&gt;=2)","GPL (&gt;= 2)","MIT + file LICENSE","GPL-2 | GPL-3","GPL (&gt;= 3)","MIT + file LICENSE","GPL-2 | GPL-3","Artistic-2.0","Artistic-2.0","GPL-2","GPL (&gt;= 2)","GPL-2 | GPL-3","MIT + file LICENSE","MIT + file LICENSE","GPL (&gt;= 3)","MIT + file LICENSE","GPL (&gt;= 2)","GPL (&gt;= 2)","GPL (&gt;= 2)","MIT + file LICENSE","MIT + file LICENSE","Apache License (== 2.0)","GPL","GPL-2 | GPL-3","GPL","MIT + file LICENSE","LGPL-3","LGPL-3","LGPL (&gt;= 2.1)","GPL (&gt;= 2)","MIT + file LICENSE","GPL (&gt;= 2) | file LICENSE","GPL-3","Artistic-2.0","LGPL (&gt;= 2)","MIT + file LICENSE","Artistic-2.0","Artistic-2.0","Artistic-2.0","Artistic-2.0","Artistic-2.0","MIT + file LICENSE","MIT + file LICENSE","GPL (&gt;= 3)","MIT + file LICENSE","GPL (&gt;= 2)","MIT + file LICENSE","GPL-3 | file LICENSE","GPL (&gt;= 3)","GPL-3 | file LICENSE","GPL-2 | file LICENSE","MIT + file LICENSE","MIT + file LICENSE","MIT + file LICENSE","LGPL (&gt;= 2.1)","MIT + file LICENSE","MIT + file LICENSE","GPL (&gt;= 2)","Artistic-2.0","MIT + file LICENSE","MIT + file LICENSE","LGPL (&gt;= 2)","GPL-3","GPL-2","Artistic-2.0","GPL (&gt;= 2)","MIT + file LICENSE","GPL-2","Artistic-2.0","MIT + file LICENSE","MIT + file LICENSE","Artistic-2.0","MIT + file LICENSE","GPL-2","GPL","MIT + file LICENSE","GPL (&gt;= 2)","MIT + file LICENSE","GPL (&gt;= 2) | file LICENSE","MIT + file LICENSE","MIT + file LICENSE","LGPL-2.1","MIT + file LICENSE","GPL (&gt;= 2)","Artistic-2.0","GPL-2","GPL (&gt;= 2)","GPL-3","GPL (&gt;= 2)","Artistic-2.0","GPL-3","MIT + file LICENSE","Apache License (== 2.0)","MIT + file LICENSE","MIT + file LICENSE","MIT + file LICENSE","Artistic-2.0","GPL-2","GPL","MIT + file LICENSE | Unlimited","LGPL-3","MIT + file LICENSE","MIT + file LICENSE","GPL-3","GPL-3","GPL (&gt;= 2)","MIT + file LICENSE","GPL (&gt;=2)","LGPL (&gt;= 2.1)","MIT + file LICENSE","GPL (&gt;= 2)","MIT + file LICENSE","GPL (&gt;= 2)","LGPL-2","EPL","GPL (&gt;= 2)","MIT + file LICENSE","MIT + file LICENSE","GPL (&gt;= 3)","MIT + file LICENSE","Artistic-2.0","GPL (&gt;= 2)","Artistic-2.0","GPL (&gt;= 2)","MIT + file LICENSE","Artistic-2.0","GPL-3","BSD_2_clause + file LICENSE","GPL","GPL-3","GPL-2","GPL (&gt;= 2)","GPL-2","LGPL","MIT + file LICENSE","GPL (&gt;= 2)","GPL-3","GPL-2","Artistic-2.0","Artistic-2.0","GPL (&gt;= 2)","Artistic-2.0","Apache License (== 2.0)","GPL-3","GPL-2","GPL-2","Artistic-2.0","Artistic-2.0","GPL","Artistic-2.0","MIT + file LICENSE","GPL-2","GPL (&gt;= 2)","Artistic-2.0","GPL (&gt;= 3)","MIT + file LICENSE","LGPL (&gt;= 3)","GPL (&gt;= 2)","GPL-2","MIT + file LICENSE","Artistic-2.0","LGPL (&gt;= 2.1)","GPL-2","MIT + file LICENSE","Apache License 2.0","Apache License (&gt;= 2.0)","Apache License (&gt;= 2.0)","Apache License (&gt;= 2.0)","Apache License (&gt;= 2.0)","Apache License (&gt;= 2.0)","Apache License (&gt;= 2.0)","Apache License (&gt;= 2.0)","Apache License (&gt;= 2.0)","Apache License (&gt;= 2.0)","Apache License (&gt;= 2.0)","Apache License (&gt;= 2.0)","Apache License (&gt;= 2.0)","Apache License (&gt;= 2.0)","Apache License (&gt;= 2.0)","Apache License (&gt;= 2.0)","GPL (&gt;= 2)","GPL (&gt;= 3)","MIT + file LICENSE","GPL-2","MIT + file LICENSE","MIT + file LICENSE","MIT + file LICENSE","MIT + file LICENSE","GPL-3","MIT + file LICENSE","MIT + file LICENSE","GPL-2","MIT + file LICENSE","GPL-2 | GPL-3","GPL-2","GPL","MIT + file LICENSE","LGPL (&gt;= 2)","MIT + file LICENSE","GPL (&gt;= 3)","MIT + file LICENSE","GPL (&gt;= 2)","MIT + file LICENSE","MIT + file LICENSE","GPL (&gt;= 3)","GPL-2","GPL-2","MIT + file LICENSE","Artistic-2.0","GPL-2","GPL-2","MIT + file LICENSE","Artistic-2.0","MIT + file LICENSE","Artistic-2.0","GPL (&gt;= 2)","LGPL","LGPL (&gt;= 2.1)","LGPL (&gt;= 2.1)","LGPL (&gt;= 2.1)","LGPL (&gt;= 2.1)","MIT + file LICENSE","MIT + file LICENSE","GPL (&gt;= 2)","MIT + file LICENSE","Artistic-2.0","GPL-2","MIT + file LICENSE","Apache License 2.0","GPL (&gt;= 2)","GPL (&gt;= 2)","GPL (&gt;= 2)","GPL (&gt;= 2) | file LICENSE","GPL (&gt;= 2)","GPL (&gt;= 3)","BSD_3_clause + file LICENSE","GPL-2","GPL (&gt;= 2)","MIT + file LICENSE","MIT + file LICENSE","MIT + file LICENSE","GPL-3","MIT + file LICENSE","MIT + file LICENSE","MIT + file LICENSE","MIT + file LICENSE","MIT + file LICENSE","MIT + file LICENSE","Artistic-2.0","MIT + file LICENSE","MIT + file LICENSE","GPL","Artistic-2.0","BSD_2_clause + file LICENSE","Artistic-2.0","LGPL (&gt;= 2)","GPL-2","MIT + file LICENSE","GPL-3","GPL (&gt;= 2)","GPL-2","MIT + file LICENSE","MIT + file LICENSE","GPL-2","Artistic-2.0 | file LICENSE","MPL (&gt;= 2)","LGPL (&gt;= 2.1)","GPL-2","MIT + file LICENSE","GPL (&gt;= 3)","MIT + file LICENSE","GPL-3","Artistic-2.0 + file LICENSE","file LICENSE","GPL-2","MIT + file LICENSE","MIT + file LICENSE","GPL-2","GPL-2","Artistic-2.0","Artistic-2.0","GPL (&gt;= 2)","MIT + file LICENSE","GPL-2 | GPL-3","MIT + file LICENSE","GPL-3","MIT + file LICENSE","GPL-3","GPL-2","Artistic-2.0","GPL-2","GPL-3","GPL","BSD_3_clause + file LICENCE","GPL","GPL-2","GPL (&gt;= 2)","GPL (&gt;= 3)","GPL-3 | file LICENSE","MIT + file LICENSE","Artistic-2.0","GPL-3","MIT + file LICENSE","GPL-2","GPL-3","GPL","MIT + file LICENSE","Artistic-2.0","GPL (&gt;= 2)","MIT + file LICENSE","Artistic-2.0","GPL (&gt;= 2)","GPL-2 | GPL-3","GPL-3","file LICENSE","MIT + file LICENSE","Artistic-2.0","MIT + file LICENSE","MIT + file LICENSE","MIT + file LICENSE","MIT + file LICENSE","MIT + file LICENSE","MIT + file LICENSE","MIT + file LICENSE","MIT + file LICENSE","MIT + file LICENSE","GPL (&gt;= 3)","GPL (&gt;= 2)","GPL-3","MIT + file LICENSE","GPL (&gt;= 2)","GPL","GPL-3","Artistic-2.0","MIT + file LICENSE","Artistic-2.0","GPL-3","MIT + file LICENSE","Apache License (== 2.0) | file LICENSE","MIT + file LICENSE","GPL (&gt;= 3)","MIT + file LICENSE","MIT + file LICENSE","MIT + file LICENSE","GPL (&gt;= 2)","MIT + file LICENSE","MIT + file LICENSE","MIT + file LICENSE","Artistic-2.0","MIT + file LICENSE","GPL-3","MIT + file LICENSE","MIT + file LICENSE","GPL (&gt;= 3)","MIT + file LICENSE","BSD_3_clause + file LICENSE","MIT + file LICENSE","MIT + file LICENSE","GPL (&gt;= 2)","GPL (&gt;= 2)","Artistic-2.0","BSD_3_clause + file LICENSE","MIT + file LICENSE","Artistic-2.0 + file LICENSE","GPL-2 | GPL-3","Part of R 4.5.0","Unlimited","GPL-2 | GPL-3","GPL (&gt;= 2)","GPL","Part of R 4.5.0","Part of R 4.5.0","GPL (&gt;= 2)","Part of R 4.5.0","Part of R 4.5.0","Part of R 4.5.0","Unlimited","GPL (&gt;= 2)","GPL-2 | GPL-3","GPL (&gt;= 2) | file LICENCE","Part of R 4.5.0","GPL (&gt;= 2)","GPL (&gt;= 2)","GPL-2 | GPL-3","Part of R 4.5.0","GPL-2 | GPL-3","GPL-2 | GPL-3","Part of R 4.5.0","Part of R 4.5.0","Part of R 4.5.0","LGPL (&gt;= 2)","Part of R 4.5.0","Part of R 4.5.0","Part of R 4.5.0"]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th>Package<\/th>\n      <th>Version<\/th>\n      <th>Depends<\/th>\n      <th>Imports<\/th>\n      <th>License<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"columnDefs":[{"name":"Package","targets":0},{"name":"Version","targets":1},{"name":"Depends","targets":2},{"name":"Imports","targets":3},{"name":"License","targets":4}],"order":[],"autoWidth":false,"orderClasses":false}},"evals":[],"jsHooks":[]}</script><ul>
+<li>It is always useful to finish a Rmarkdown report with a section
+providing all the session information details with the
+<code>sessionInfo()</code> function, such at the end of this material. This
+allows readers to review the version of R itself and all the
+packages that were used to produce the report.</li>
+</ul>
+<p>Using Rmarkdown, it is also possible to produce
+<a href="https://rmarkdown.rstudio.com/lesson-11.html">slides</a>,
+<a href="https://rmarkdown.rstudio.com/lesson-13.html">websites</a>, and
+<a href="https://bookdown.org/">complete books</a>, <a href="https://rmarkdown.rstudio.com/lesson-14.html">interactive
+documents</a> and <a href="http://bioconductor.org/help/package-vignettes/">R
+package vignettes</a>.</p>
+<div class="question">
+<p class="question-begin">
+► Question
+</p>
+<div class="question-body">
+<p>Prepare an Rmarkdown report summarising the portal ecology data. The
+report should include a <em>Material and methods</em> section where the data
+is read in (ideally from the online file) and briefly described, a
+<em>Data preparation</em> section where rows with missing values are filtered
+out, and a <em>Visualisation</em> section where one or two plots are
+rendered. Finish your report with a <em>Session information</em> section.</p>
+<p class="question-end">
+<span class="fa fa-square-o solution-icon"></span>
+</p>
+</div>
+</div>
+<p>The <a href="https://raw.githubusercontent.com/rstudio/cheatsheets/main/rmarkdown.pdf">R Markdown Cheat
+Sheet</a>
+and <a href="https://www.dataquest.io/blog/r-markdown-guide-cheatsheet/">Reference
+Guide</a>
+will help you with the markdown synatax, R code chunk options, and
+RStudio utlisation.</p>
+<p><strong>Note</strong>: When you prepare an <code>Rmd</code> report, it is advised to start
+with a code chunk that load all packages, and update that code chunk
+as you proceed with your analysis and use new packages. This avoids
+the situation where some commands work in your R console (where you
+initially loaded the package) but fail when you compile your
+report. Indeed, an <code>Rmd</code> file is compiled in a new, clean R session,
+without access to your working session, the packages that were loaded,
+and the variables that were created.</p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/4OXyyMIM6A8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+</iframe>
+</div>
+<div id="docker-containers" class="section level2" number="8.3">
+<h2>
+<span class="header-section-number">8.3</span> Docker containers<div class="tooltip"><button class="internal-link-btn" onclick="copy_link('docker-containers')" onmouseout="reset_tooltip('docker-containers-tooltip')"><span class="tooltiptext" id="docker-containers-tooltip">Copy link</span><i class="fa fa-link"></i></button></div>
+</h2>
+<p>There are other tools for reproducible research, that aim to
+disseminate more than code and data. Docker containers for example
+enable to share the complete image of an operating system, including
+all system dependencies and software/data to repeat a complete
+analysis. These are useful tools, even though their aren’t necessarily
+ideal, and beyond the aim of this course. In the annex, (chapter
+<a href="sec-anx.html#sec-anx">12</a>), we show how to use a pre-build course-specific
+RStudio cloud instance based on the <a href="https://renkulab.io/">Renku</a>
+infrastructure.</p>
+</div>
+<div id="additional-exercises-6" class="section level2" number="8.4">
+<h2>
+<span class="header-section-number">8.4</span> Additional exercises<div class="tooltip"><button class="internal-link-btn" onclick="copy_link('additional-exercises-6')" onmouseout="reset_tooltip('additional-exercises-6-tooltip')"><span class="tooltiptext" id="additional-exercises-6-tooltip">Copy link</span><i class="fa fa-link"></i></button></div>
+</h2>
+<div class="question">
+<p class="question-begin">
+► Question
+</p>
+<div class="question-body">
+<p>Repeat the <em>Beer consumption</em> analysis using the that was done in
+chapters <a href="sec-dplyr.html#sec-dplyr">5</a> and <a href="sec-vis.html#sec-vis">6</a>.</p>
+<p>To test if your report is fully reproducible, uniquely name the <code>Rmd</code>
+file as <code>surname_surname_beers_report.Rmd</code>, post it on the course
+forum and ask your neighbour to download it, compile it into pdf and
+provide feedback on whether the document was reproducible and easy to
+follow<label for="tufte-sn-17" class="margin-toggle sidenote-number">17</label><input type="checkbox" id="tufte-sn-17" class="margin-toggle"><span class="sidenote"><span class="sidenote-number">17</span> This is an important exercise, as it will mimic the exam
+situation, where you will hand in your <code>Rmd</code> reports that will
+need to be compiled (to pdf) before marking. In addition, it
+demonstrates the challenges of writing and reproducing an
+understandable and reproducible document.</span>.</p>
+<p class="question-end">
+<span class="fa fa-square-o solution-icon"></span>
+</p>
+</div>
+</div>
+<div class="question">
+<p class="question-begin">
+► Question
+</p>
+<div class="question-body">
+<ol style="list-style-type: decimal">
+<li>Create a new R markdown file called <code>student_results.Rmd</code>, to be
+compiled in either pdf or html. Remove everything but the lines
+containing the header. In the example below, the header is composed
+of the 6 first lines, starting and ending with <code>---</code>.</li>
+</ol>
+<pre><code>---
+title: "Student results"
+author: "Laurent"
+date: "March 14, 2020"
+output: pdf_document
+---</code></pre>
+<ol start="2" style="list-style-type: decimal">
+<li>Add a first section called <em>Data input</em>, in which you will load the
+<code>rWSBIM1207</code> package, use the <code>interroA.csv()</code> function to get the
+name of a csv file containing test results for a set of students,
+and read these data into R using <code>read_csv</code>. <label for="tufte-sn-18" class="margin-toggle sidenote-number">18</label><input type="checkbox" id="tufte-sn-18" class="margin-toggle"><span class="sidenote"><span class="sidenote-number">18</span> It is important here <strong>not</strong> to copy/paste the filename
+returned by <code>interroA.csv()</code>. That file is distributed with the
+<code>rWSBIM1207</code> package, and has a computer-specific path. Because we
+want our reports to be reproducible, we want to use the filename
+as returned by the function on any computer, not the one of a
+specific computer. Make sure you either pass <code>interroA.csv()</code>
+directly to <code>read_csv()</code> or store its output into a variable that
+is passed to <code>read_csv()</code>.</span> Display the
+few first observations and write a short sentence explaining the
+data.</li>
+</ol>
+<ol start="3" style="list-style-type: decimal">
+<li><p>Make sure that you can compile you <code>Rmd</code> file into either pdf or html.</p></li>
+<li>
+<p>Create a new section called <em>Data visualisation</em>.</p>
+<p>Here, the goal is to visualise the score distributions for the four
+tests using <code>ggplot2</code>. These distributions will be visualised using
+boxplots. You will need to visualise these distribution for each
+test separately, and for male and female students.</p>
+</li>
+<li><p>As discussed during the course, we need data in a long format to be
+able to use <code>ggplot2</code>. Start by converting these data into a long
+format using <code>pivot_longer()</code>. Display the first rows of these new
+data and write a short sentence describing them and the
+transformation you just applied.</p></li>
+<li><p>Use <code>ggplot2</code> to visualise the score distributions along boxplots
+for each test and for female and male students.</p></li>
+</ol>
+<p class="question-end">
+<span class="fa fa-square-o solution-icon"></span>
+</p>
+</div>
+</div>
+
+</div>
+</div>
+<p style="text-align: center;">
+<a href="sec-join.html"><button class="btn btn-default">Previous</button></a>
+<a href="sec-bioinfo.html"><button class="btn btn-default">Next</button></a>
+</p>
+<p class="build-date">Page built: 
+2025-06-16
+ using 
+R version 4.5.0 (2025-04-11)
+</p>
+</div>
+</div>
+
+
+
+</body>
+</html>

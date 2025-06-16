@@ -1,0 +1,1110 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+<meta charset="utf-8" />
+<meta name="generator" content="pandoc" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta property="og:title" content="Chapter 10 Additional programming concepts | Introduction to bioinformatics" />
+<meta property="og:type" content="book" />
+
+<meta property="og:description" content="Course material for the Introduction to bioinformatics (WSBIM1207) course at UCLouvain." />
+
+
+<meta name="author" content="Laurent Gatto" />
+
+<meta name="date" content="2025-06-16" />
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  TeX: { equationNumbers: { autoNumber: "AMS" } }
+});
+</script>
+  <script src="/usr/share/javascript/mathjax/MathJax.js" type="text/javascript"></script>
+
+<meta name="description" content="Course material for the Introduction to bioinformatics (WSBIM1207) course at UCLouvain.">
+
+<title>Chapter 10 Additional programming concepts | Introduction to bioinformatics</title>
+
+<link href="libs/tufte-css-2015.12.29/tufte.css" rel="stylesheet" />
+<link href="libs/tufte-css-2015.12.29/envisioned.css" rel="stylesheet" />
+<link href="libs/msmb-css-0/msmb.css" rel="stylesheet" />
+<script>
+function toggle_visibility(id1, id2) {
+var e = document.getElementById(id1);
+var f = document.getElementById(id2);
+
+e.style.display = ((e.style.display!='none') ? 'none' : 'block');
+
+if(f.classList.contains('fa-plus-square')) {
+    f.classList.add('fa-minus-square')
+    f.classList.remove('fa-plus-square')
+} else {
+    f.classList.add('fa-plus-square')
+    f.classList.remove('fa-minus-square')
+}
+
+}
+</script>
+<script>
+function copy_link(id) {
+  var dummy = document.createElement('input'),
+  text = window.location.href.split(/[?#]/)[0] + '#' + id;
+  document.body.appendChild(dummy);
+  dummy.value = text;
+  dummy.select();
+  document.execCommand('copy');
+  document.body.removeChild(dummy);
+  
+  var tooltip = document.getElementById(id + '-tooltip');
+  tooltip.innerHTML = 'Copied!';
+}
+
+function reset_tooltip(id) {
+  var tooltip = document.getElementById(id);
+  tooltip.innerHTML = 'Copy link';
+}
+</script>
+<link href="libs/htmltools-fill-0.5.8.1/fill.css" rel="stylesheet" />
+<script src="libs/htmlwidgets-1.6.4/htmlwidgets.js"></script>
+<link href="libs/datatables-css-0.0.0/datatables-crosstalk.css" rel="stylesheet" />
+<script src="libs/datatables-binding-0.33/datatables.js"></script>
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<link href="libs/dt-core-1.13.6/css/jquery.dataTables.min.css" rel="stylesheet" />
+<link href="libs/dt-core-1.13.6/css/jquery.dataTables.extra.css" rel="stylesheet" />
+<script src="libs/dt-core-1.13.6/js/jquery.dataTables.min.js"></script>
+<link href="libs/crosstalk-1.2.1/css/crosstalk.min.css" rel="stylesheet" />
+<script src="libs/crosstalk-1.2.1/js/crosstalk.min.js"></script>
+
+
+<style type="text/css">code{white-space: pre;}</style>
+<style type="text/css">
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { color: #008000; } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { color: #008000; font-weight: bold; } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+</style>
+
+
+<style type="text/css">
+/* Used with Pandoc 2.11+ new --citeproc when CSL is used */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}
+</style>
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+
+</head>
+
+<body>
+
+
+
+<div class="row">
+<div class="col-sm-12">
+<div id="TOC">
+<ul class="navbar">
+<li class="msmb"><p class="title">Introduction to bioinformatics<p><p class="author">Laurent Gatto</p>
+<li class="dropdown" style="float:right">
+<a href="javascript:void(0)" class="dropbtn">&#x25BE; Chapters</a>
+<div class="dropdown-content">
+<a href="index.html" id="toc-preamble">Preamble</a>
+<a href="sec-dataorg.html" id="toc-sec-dataorg"><span class="toc-section-number">1</span> Data organisation with Spreadsheets</a>
+<a href="sec-rrstudio.html" id="toc-sec-rrstudio"><span class="toc-section-number">2</span> R and RStudio</a>
+<a href="sec-startr.html" id="toc-sec-startr"><span class="toc-section-number">3</span> Introduction to R</a>
+<a href="sec-startdata.html" id="toc-sec-startdata"><span class="toc-section-number">4</span> Starting with data</a>
+<a href="sec-dplyr.html" id="toc-sec-dplyr"><span class="toc-section-number">5</span> Manipulating and analyzing data with dplyr</a>
+<a href="sec-vis.html" id="toc-sec-vis"><span class="toc-section-number">6</span> Data visualization</a>
+<a href="sec-join.html" id="toc-sec-join"><span class="toc-section-number">7</span> Joining tables</a>
+<a href="sec-rr.html" id="toc-sec-rr"><span class="toc-section-number">8</span> Reproducible research</a>
+<a href="sec-bioinfo.html" id="toc-sec-bioinfo"><span class="toc-section-number">9</span> Bioinformatics</a>
+<a id="active-page" href="sec-prog.html" id="toc-sec-prog"><span class="toc-section-number">10</span> Additional programming concepts</a><ul class="toc-sections">
+<li class="toc"><a href="#writing-clean-code"> Writing clean code</a></li>
+<li class="toc"><a href="#iteration"> Iteration</a></li>
+<li class="toc"><a href="#conditionals"> Conditionals</a></li>
+<li class="toc"><a href="#writing-new-functions"> Writing new functions</a></li>
+<li class="toc"><a href="#pattern-matching"> Pattern matching</a></li>
+<li class="toc"><a href="#analysing-data-from-multiple-files"> Analysing data from multiple files</a></li>
+<li class="toc"><a href="#additional-exercises-7"> Additional exercises</a></li>
+</ul>
+<a href="sec-ccl.html" id="toc-sec-ccl"><span class="toc-section-number">11</span> Conclusions</a>
+<a href="sec-anx.html" id="toc-sec-anx"><span class="toc-section-number">12</span> Annex</a>
+<a href="session-information.html" id="toc-session-information"><span class="toc-section-number">13</span> Session information</a>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="row">
+<div class="col-sm-12">
+<div id="sec-prog" class="section level1" number="10">
+<h1>
+<span class="header-section-number">Chapter 10</span> Additional programming concepts</h1>
+<p><strong>Learning Objectives</strong></p>
+<p>Learn programming concepts, including</p>
+<ul>
+<li>how to handle conditions</li>
+<li>iteration of data structures</li>
+<li>good coding practice</li>
+<li>code re-use through functions</li>
+</ul>
+<p>When the size and the complexity of the data increases, or the data
+science question of interest becomes more complex, the data analysis
+techniques as we have seen them so far need to be complemented with
+programming techniques. From a data science point of view, there is no
+clear delimitation between data analysis and (data) programming, both
+morphing into each other<label for="tufte-sn-19" class="margin-toggle sidenote-number">19</label><input type="checkbox" id="tufte-sn-19" class="margin-toggle"><span class="sidenote"><span class="sidenote-number">19</span> A fundamental difference however is how data analysis and
+programming are taught. When it comes to researchers, and
+biomedical researchers in particular, teaching programming to
+analyse data isn’t successful. Teaching data analysis to
+eventually programme with data, however, has proven a successful
+strategy.</span>.</p>
+<p>This chapter will introduce some additional programming skills and
+demonstrate how to use them in the context of high troughput omics
+data.</p>
+<div id="writing-clean-code" class="section level2" number="10.1">
+<h2>
+<span class="header-section-number">10.1</span> Writing clean code<div class="tooltip"><button class="internal-link-btn" onclick="copy_link('writing-clean-code')" onmouseout="reset_tooltip('writing-clean-code-tooltip')"><span class="tooltiptext" id="writing-clean-code-tooltip">Copy link</span><i class="fa fa-link"></i></button></div>
+</h2>
+<p>Writing clean code means writing easily readable code, hence easily
+understandable code and, eventually code with less bugs. One easy way to
+achieve this is through consistency, i.e. stick to a <strong>style
+guide</strong>. The issue is that there are several style guides available,
+often with conflicting suggestions. Two widely used ones are the
+<a href="http://bioconductor.org/developers/how-to/coding-style/">Bioconductor style
+guide</a> and
+<a href="http://r-pkgs.had.co.nz/style.html">Hadley Wickhams’s R Style
+Guide</a>. The advice from for naming
+variables seen in the first and second chapters are also relevant.</p>
+<p>Here are a couple of suggestions:</p>
+<ul>
+<li>Use <code>&lt;-</code> to assign variables. Use <code>=</code> is also valid, but make sure
+that you stick with one.</li>
+<li>Use either camel case (<code>camelCaseNaming</code>) of snake case
+(<code>snake_case_naming</code>), and avoid using dots (don’t use
+<code>dot.variable.names</code>). These conventions apply to functions,
+variables and files (for the latter, a <code>-</code> instead of <code>_</code> is also
+acceptable).</li>
+<li>Always spell out <code>TRUE</code> and <code>FALSE</code>, and resist the temptation to
+use <code>T</code> and <code>F</code> instead<label for="tufte-sn-20" class="margin-toggle sidenote-number">20</label><input type="checkbox" id="tufte-sn-20" class="margin-toggle"><span class="sidenote"><span class="sidenote-number">20</span> <code>TRUE</code> and <code>FALSE</code> are reserved words; one can’t use them as
+variable names. This however doesn’t hold for <code>T</code> and <code>F</code>. One can use
+<code>T</code> and <code>F</code> as regular variable names such, as for example,
+<code>T &lt;- FALSE</code> and <code>F &lt;- TRUE</code>!</span>.</li>
+<li>Use 4 spaces for indenting. No tabs.</li>
+<li>No lines longer than 80 characters.</li>
+<li>Use spaces around binary operators.</li>
+<li>No spaces between a function name and the opening parenthesis.</li>
+</ul>
+<p>Another good advise is to avoid re-writing the same code many
+times. We will see below two strategies to do that, namely iteration
+and writing new functions. This firstly reduces the amount of code
+typed and hence the number of bugs, but more importantly enables
+consistency. If something in your code changes, there’s only one
+change and it applies everywhere, rather than doing that same change
+repeatedly (at the first of adding bugs and to miss some updates).</p>
+<p>When writing code, <strong>keep it simple and short</strong><label for="tufte-sn-21" class="margin-toggle sidenote-number">21</label><input type="checkbox" id="tufte-sn-21" class="margin-toggle"><span class="sidenote"><span class="sidenote-number">21</span> The official motto is
+<a href="https://en.wikipedia.org/wiki/KISS_principle">KISS</a>, <em>keep your
+functions simple, stupid</em>, widely used in programming.</span>. Ideally, the
+code should be evident. But when the questions tackled are not
+trivial, is becomes essential to add <strong>comments</strong> to clarify aspects
+of the script/program. Make sure to use them to describe why
+something is done, rather than explaining how things are done (which
+is tyically best done by the code itself).</p>
+<p>A general guideline to avoid bugs is to apply <strong>defensive
+programming</strong>:</p>
+<ul>
+<li>making the code work in a predicable manner</li>
+<li>writing code that fails in a well-defined manner</li>
+<li>if something weird happens, either properly deal with it, or it fail
+quickly and loudly</li>
+</ul>
+<p>Here are some examples of how to do this:</p>
+<ul>
+<li><p>use functions like <code>is.numeric(x)</code>, <code>is.character(x)</code>,
+<code>is.data.frame(x)</code>, … but make sure that the variable you are
+going to use is of the expected type.</p></li>
+<li><p>Make sure the length or dimensions of what you are going to use are
+what you expect:</p></li>
+</ul>
+<div class="sourceCode" id="cb624"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb624-1"><a href="sec-prog.html#cb624-1" tabindex="-1"></a><span class="fu">length</span>(x) <span class="sc">&gt;</span> <span class="dv">0</span></span>
+<span id="cb624-2"><a href="sec-prog.html#cb624-2" tabindex="-1"></a><span class="fu">nrow</span>(x) <span class="sc">&gt;</span> <span class="dv">0</span></span>
+<span id="cb624-3"><a href="sec-prog.html#cb624-3" tabindex="-1"></a><span class="fu">ncol</span>(x) <span class="sc">&gt;</span> <span class="dv">0</span></span></code></pre></div>
+<ul>
+<li>Failing fast and well! Wrap such test in <code>stopifnot()</code>, so that if
+they fail, you get immediately an error, rather than risking that
+you code fails later with obscure error messages or, worse, the code
+runs to completion but returns meaningless results.</li>
+</ul>
+<div class="sourceCode" id="cb625"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb625-1"><a href="sec-prog.html#cb625-1" tabindex="-1"></a><span class="fu">stopifnot</span>(<span class="fu">length</span>(x) <span class="sc">&gt;</span> <span class="dv">0</span>)</span>
+<span id="cb625-2"><a href="sec-prog.html#cb625-2" tabindex="-1"></a><span class="fu">stopifnot</span>(<span class="fu">dim</span>(x) <span class="sc">&gt;</span> <span class="dv">0</span>) <span class="do">## same as next one</span></span>
+<span id="cb625-3"><a href="sec-prog.html#cb625-3" tabindex="-1"></a><span class="fu">stopifnot</span>(<span class="fu">ncol</span>(x) <span class="sc">&gt;</span> <span class="dv">0</span>, <span class="fu">nrow</span>(x) <span class="sc">&gt;</span> <span class="dv">0</span>)</span></code></pre></div>
+</div>
+<div id="iteration" class="section level2" number="10.2">
+<h2>
+<span class="header-section-number">10.2</span> Iteration<div class="tooltip"><button class="internal-link-btn" onclick="copy_link('iteration')" onmouseout="reset_tooltip('iteration-tooltip')"><span class="tooltiptext" id="iteration-tooltip">Copy link</span><i class="fa fa-link"></i></button></div>
+</h2>
+<p>Iteration describes the situtation when a specific operation has to be
+repeated many times on different inputs of the same type. For example,
+if we have a vector of numeric <code>x</code> shown below,</p>
+<div class="sourceCode" id="cb626"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb626-1"><a href="sec-prog.html#cb626-1" tabindex="-1"></a>(x <span class="ot">&lt;-</span> <span class="dv">1</span><span class="sc">:</span><span class="dv">10</span>)</span></code></pre></div>
+<pre><code>##  [1]  1  2  3  4  5  6  7  8  9 10</code></pre>
+<p>and we wanted to apply the logarithm operation on each element of <code>x</code>,
+it wouldn’t be convenient to type</p>
+<pre><code>log(1)
+log(2)
+log(3)
+...
+log(10)</code></pre>
+<p>The concept of iteration allows us to program the following command:</p>
+<blockquote>
+<p>Repeat <code>log</code> for each value of my input <code>x</code>.</p>
+</blockquote>
+<p>or more formally</p>
+<blockquote>
+<p>Repeat <code>log(i)</code> where <code>i</code> takes in turn each value of my input <code>x</code>.</p>
+</blockquote>
+<p>We will see different ways of implementing such an iteration.</p>
+<div id="using-a-for-loop" class="section level3 unnumbered">
+<h3>Using a <code>for</code> loop<div class="tooltip"><button class="internal-link-btn" onclick="copy_link('using-a-for-loop')" onmouseout="reset_tooltip('using-a-for-loop-tooltip')"><span class="tooltiptext" id="using-a-for-loop-tooltip">Copy link</span><i class="fa fa-link"></i></button></div>
+</h3>
+<div class="sourceCode" id="cb629"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb629-1"><a href="sec-prog.html#cb629-1" tabindex="-1"></a><span class="cf">for</span> (i <span class="cf">in</span> x) {</span>
+<span id="cb629-2"><a href="sec-prog.html#cb629-2" tabindex="-1"></a>    <span class="fu">print</span>(<span class="fu">log</span>(i))</span>
+<span id="cb629-3"><a href="sec-prog.html#cb629-3" tabindex="-1"></a>}</span></code></pre></div>
+<pre><code>## [1] 0
+## [1] 0.6931472
+## [1] 1.098612
+## [1] 1.386294
+## [1] 1.609438
+## [1] 1.791759
+## [1] 1.94591
+## [1] 2.079442
+## [1] 2.197225
+## [1] 2.302585</code></pre>
+<p>The loop above only prints the results on screen. They aren’t stored
+and are lost for any further re-use, which would be very annoying if
+it took much more time to perform all the calculations. In the code
+chunk below, we are going to first inititalise a vector with the
+appropriate number of <code>NA</code> values and, at each iteration, we then
+store the result. We however now need to change our loop and iterate
+of the indices of the input vector, so that we can re-use these
+indices to save the results in the output vector.</p>
+<div class="sourceCode" id="cb631"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb631-1"><a href="sec-prog.html#cb631-1" tabindex="-1"></a>res_loop <span class="ot">&lt;-</span> <span class="fu">rep</span>(<span class="cn">NA</span>, <span class="fu">length</span>(x))</span>
+<span id="cb631-2"><a href="sec-prog.html#cb631-2" tabindex="-1"></a><span class="cf">for</span> (i <span class="cf">in</span> <span class="fu">seq_along</span>(x)) {</span>
+<span id="cb631-3"><a href="sec-prog.html#cb631-3" tabindex="-1"></a>    res_loop[i] <span class="ot">&lt;-</span> <span class="fu">log</span>(x[i])</span>
+<span id="cb631-4"><a href="sec-prog.html#cb631-4" tabindex="-1"></a>}</span>
+<span id="cb631-5"><a href="sec-prog.html#cb631-5" tabindex="-1"></a>res_loop</span></code></pre></div>
+<pre><code>##  [1] 0.0000000 0.6931472 1.0986123 1.3862944 1.6094379 1.7917595 1.9459101
+##  [8] 2.0794415 2.1972246 2.3025851</code></pre>
+</div>
+<div id="using-the-apply-function" class="section level3 unnumbered">
+<h3>Using the <code>apply</code> function<div class="tooltip"><button class="internal-link-btn" onclick="copy_link('using-the-apply-function')" onmouseout="reset_tooltip('using-the-apply-function-tooltip')"><span class="tooltiptext" id="using-the-apply-function-tooltip">Copy link</span><i class="fa fa-link"></i></button></div>
+</h3>
+<p>The apply family of functions implements our defintion of iteration
+quite literally</p>
+<blockquote>
+<p>Repeat <code>log</code> for each value of my input <code>x</code></p>
+</blockquote>
+<p>is reformulated as</p>
+<blockquote>
+<p>For each value of my input <code>x</code>, apply <code>log</code></p>
+</blockquote>
+<p>and coded as</p>
+<div class="sourceCode" id="cb633"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb633-1"><a href="sec-prog.html#cb633-1" tabindex="-1"></a>res_apply <span class="ot">&lt;-</span> <span class="fu">sapply</span>(x, log)</span>
+<span id="cb633-2"><a href="sec-prog.html#cb633-2" tabindex="-1"></a>res_apply</span></code></pre></div>
+<pre><code>##  [1] 0.0000000 0.6931472 1.0986123 1.3862944 1.6094379 1.7917595 1.9459101
+##  [8] 2.0794415 2.1972246 2.3025851</code></pre>
+<p>There are three such function that <em>apply</em> a function iteratively:</p>
+<ul>
+<li><p><code>sapply</code> iterates over a vector and returns a new vector of the same
+length as the input vector<label for="tufte-sn-22" class="margin-toggle sidenote-number">22</label><input type="checkbox" id="tufte-sn-22" class="margin-toggle"><span class="sidenote"><span class="sidenote-number">22</span> This is a simplification of how <code>sapply</code> works,
+that is partly defined by the the <code>simplify</code> argument and whether
+the result of applying the function on each element of the input
+can be returned as a vector. The alternative is to return a
+<code>list</code>, like <code>lapply</code>.</span>.</p></li>
+<li><p><code>lapply</code> iterates over a linear input (a vector of a list) and
+returns a list of the same length as the input.</p></li>
+<li><p><code>apply</code> iterates of the rows or the columns of a <code>data.frame</code> or
+<code>matrix</code> and returns a list or vector or approritate length (number
+of rows or columns). The dimension over which the iterations
+proceeds is defined by the second argument, where <code>1</code> defines rows
+and <code>2</code> defined columns<label for="tufte-sn-23" class="margin-toggle sidenote-number">23</label><input type="checkbox" id="tufte-sn-23" class="margin-toggle"><span class="sidenote"><span class="sidenote-number">23</span> This generalises to arrays with more than 2 dimensions.</span>.</p></li>
+</ul>
+<p>When performing the same operations in different ways (using different
+implementations), it is essential to verify that the results are
+identical or, if not, at least compatible. The most direct way to do
+the former is to use the <code>identical</code> function:</p>
+<div class="sourceCode" id="cb635"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb635-1"><a href="sec-prog.html#cb635-1" tabindex="-1"></a><span class="fu">identical</span>(res_loop, res_apply)</span></code></pre></div>
+<pre><code>## [1] TRUE</code></pre>
+<p>The <code>purrr</code> package a set of <code>map</code> functions similar to the <code>apply</code>
+set described above.</p>
+</div>
+<div id="vectorisation" class="section level3 unnumbered">
+<h3>Vectorisation<div class="tooltip"><button class="internal-link-btn" onclick="copy_link('vectorisation')" onmouseout="reset_tooltip('vectorisation-tooltip')"><span class="tooltiptext" id="vectorisation-tooltip">Copy link</span><i class="fa fa-link"></i></button></div>
+</h3>
+<p>We must not forget the obvious, which is vectorisation. Many R
+functions work by default iteratively on every element of a vectors,
+i.e. they work irrespectively whether the vector is of length
+1<label for="tufte-sn-24" class="margin-toggle sidenote-number">24</label><input type="checkbox" id="tufte-sn-24" class="margin-toggle"><span class="sidenote"><span class="sidenote-number">24</span> A vector of length 1 would be called a scalar in other
+programming languages.</span> or longer.</p>
+<div class="sourceCode" id="cb637"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb637-1"><a href="sec-prog.html#cb637-1" tabindex="-1"></a>res_vec <span class="ot">&lt;-</span> <span class="fu">log</span>(x)</span>
+<span id="cb637-2"><a href="sec-prog.html#cb637-2" tabindex="-1"></a>res_vec</span></code></pre></div>
+<pre><code>##  [1] 0.0000000 0.6931472 1.0986123 1.3862944 1.6094379 1.7917595 1.9459101
+##  [8] 2.0794415 2.1972246 2.3025851</code></pre>
+<p>And, as before, we check that we obtain identical results:</p>
+<div class="sourceCode" id="cb639"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb639-1"><a href="sec-prog.html#cb639-1" tabindex="-1"></a><span class="fu">identical</span>(res_loop, res_vec)</span></code></pre></div>
+<pre><code>## [1] TRUE</code></pre>
+</div>
+<div id="which-iteration-to-use" class="section level3 unnumbered">
+<h3>Which iteration to use?<div class="tooltip"><button class="internal-link-btn" onclick="copy_link('which-iteration-to-use')" onmouseout="reset_tooltip('which-iteration-to-use-tooltip')"><span class="tooltiptext" id="which-iteration-to-use-tooltip">Copy link</span><i class="fa fa-link"></i></button></div>
+</h3>
+<p>Even though they produce the same result, the iteration strategies
+above aren’t equal, and some should be preferred in different
+situations.</p>
+<ul>
+<li><p>When a vectorised solution exists, this is the one that should be
+chosen. It is by far the fastest solution, but only applicable to
+existing <em>vectorised</em> functions. If you were to write your own
+function to iterate over, it is advisable to write a vectorised
+function.</p></li>
+<li><p>The apply functions are extremely convenient and concise, and hence
+widely used. They have a couple of advantages, including that there
+is no need to explicitly initialise a result variable and that they
+can easily be parallelised.</p></li>
+<li><p>For loops are the most generic solution for iteration, and they
+require to initialise the result variable that will be populated
+during the loop. As opposed to popular belief, they aren’t slower
+than using apply functions. They are however the best solution if,
+during the iteration, one has the access another element than the
+one currently processed (typically, if <code>i</code> is the counter, accessing
+<code>i + 1</code> or <code>i - 1</code>).</p></li>
+</ul>
+<div class="question">
+<p class="question-begin">
+► Question
+</p>
+<div class="question-body">
+<p>Use the <code>expressions.csv()</code> function from the <code>rWSBIM1207</code> package to
+get the path to 5 csv files containing gene expression data
+for a single gene and hundreds of patience. Read all data in and
+combine them into a single dataframe.</p>
+<p>Before starting, open at least two of these files to familiarise
+yourself with their structure and identify how and with what function
+they need to be combined.</p>
+<p class="question-end">
+<span class="fa fa-square-o solution-icon"></span>
+</p>
+</div>
+</div>
+<div class="msmb-solution">
+<p class="solution-begin">
+► Solution<span id="sol-start-49" class="fa fa-plus-square solution-icon clickable" onclick="toggle_visibility('sol-body-49', 'sol-start-49')"></span>
+</p>
+<div id="sol-body-49" class="solution-body" style="display: none;">
+<p>Let’s start by loading the required packages and check two file. We
+will also use the <em>tidyverse</em> to work with the data.</p>
+<div class="sourceCode" id="cb641"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb641-1"><a href="sec-prog.html#cb641-1" tabindex="-1"></a><span class="fu">library</span>(<span class="st">"tidyverse"</span>)</span>
+<span id="cb641-2"><a href="sec-prog.html#cb641-2" tabindex="-1"></a><span class="fu">library</span>(<span class="st">"rWSBIM1207"</span>)</span>
+<span id="cb641-3"><a href="sec-prog.html#cb641-3" tabindex="-1"></a>fls <span class="ot">&lt;-</span> <span class="fu">expressions.csv</span>()</span>
+<span id="cb641-4"><a href="sec-prog.html#cb641-4" tabindex="-1"></a><span class="fu">read_csv</span>(fls[<span class="dv">1</span>])</span></code></pre></div>
+<pre><code>## Rows: 570 Columns: 4
+## ── Column specification ──────────────────────────────────────────────────────────────────────────────────────────────────────
+## Delimiter: ","
+## chr (3): sampleID, patient, type
+## dbl (1): A1BG
+## 
+## ℹ Use `spec()` to retrieve the full column specification for this data.
+## ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.</code></pre>
+<pre><code>## # A tibble: 570 × 4
+##    sampleID         patient      type   A1BG
+##    &lt;chr&gt;            &lt;chr&gt;        &lt;chr&gt; &lt;dbl&gt;
+##  1 TCGA-05-4244-01A TCGA-05-4244 tumor  26.0
+##  2 TCGA-05-4249-01A TCGA-05-4249 tumor 120. 
+##  3 TCGA-05-4250-01A TCGA-05-4250 tumor  50.9
+##  4 TCGA-05-4382-01A TCGA-05-4382 tumor 146. 
+##  5 TCGA-05-4384-01A TCGA-05-4384 tumor 127. 
+##  6 TCGA-05-4389-01A TCGA-05-4389 tumor  67.1
+##  7 TCGA-05-4390-01A TCGA-05-4390 tumor 165. 
+##  8 TCGA-05-4395-01A TCGA-05-4395 tumor  22.0
+##  9 TCGA-05-4396-01A TCGA-05-4396 tumor  17.4
+## 10 TCGA-05-4397-01A TCGA-05-4397 tumor 127. 
+## # ℹ 560 more rows</code></pre>
+<div class="sourceCode" id="cb644"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb644-1"><a href="sec-prog.html#cb644-1" tabindex="-1"></a><span class="fu">read_csv</span>(fls[<span class="dv">2</span>])</span></code></pre></div>
+<pre><code>## Rows: 570 Columns: 4
+## ── Column specification ──────────────────────────────────────────────────────────────────────────────────────────────────────
+## Delimiter: ","
+## chr (3): sampleID, patient, type
+## dbl (1): A1CF
+## 
+## ℹ Use `spec()` to retrieve the full column specification for this data.
+## ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.</code></pre>
+<pre><code>## # A tibble: 570 × 4
+##    sampleID         patient      type    A1CF
+##    &lt;chr&gt;            &lt;chr&gt;        &lt;chr&gt;  &lt;dbl&gt;
+##  1 TCGA-05-4244-01A TCGA-05-4244 tumor  0    
+##  2 TCGA-05-4249-01A TCGA-05-4249 tumor  0.322
+##  3 TCGA-05-4250-01A TCGA-05-4250 tumor  0    
+##  4 TCGA-05-4382-01A TCGA-05-4382 tumor  0    
+##  5 TCGA-05-4384-01A TCGA-05-4384 tumor  0    
+##  6 TCGA-05-4389-01A TCGA-05-4389 tumor 36.2  
+##  7 TCGA-05-4390-01A TCGA-05-4390 tumor  0    
+##  8 TCGA-05-4395-01A TCGA-05-4395 tumor  0    
+##  9 TCGA-05-4396-01A TCGA-05-4396 tumor 15.9  
+## 10 TCGA-05-4397-01A TCGA-05-4397 tumor  0    
+## # ℹ 560 more rows</code></pre>
+<p>We see that the data will have to be combined column-wise. We could do
+it manually, adding news columns one by on to the first data, but this
+would require to check that the observations are in the same
+order. Instead, we will use a <code>full_join</code>, as seen in chapter
+<a href="sec-join.html#sec-join">7</a>.</p>
+<div class="sourceCode" id="cb647"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb647-1"><a href="sec-prog.html#cb647-1" tabindex="-1"></a><span class="do">## read the first one</span></span>
+<span id="cb647-2"><a href="sec-prog.html#cb647-2" tabindex="-1"></a>res <span class="ot">&lt;-</span> <span class="fu">read_csv</span>(fls[<span class="dv">1</span>])</span>
+<span id="cb647-3"><a href="sec-prog.html#cb647-3" tabindex="-1"></a><span class="do">## iterate over the other data</span></span>
+<span id="cb647-4"><a href="sec-prog.html#cb647-4" tabindex="-1"></a><span class="cf">for</span> (i <span class="cf">in</span> <span class="dv">2</span><span class="sc">:</span><span class="fu">length</span>(fls)) {</span>
+<span id="cb647-5"><a href="sec-prog.html#cb647-5" tabindex="-1"></a>    data_i <span class="ot">&lt;-</span> <span class="fu">read_csv</span>(fls[i], <span class="at">progress =</span> <span class="cn">FALSE</span>)</span>
+<span id="cb647-6"><a href="sec-prog.html#cb647-6" tabindex="-1"></a>    res <span class="ot">&lt;-</span> <span class="fu">full_join</span>(res, data_i)</span>
+<span id="cb647-7"><a href="sec-prog.html#cb647-7" tabindex="-1"></a>}</span>
+<span id="cb647-8"><a href="sec-prog.html#cb647-8" tabindex="-1"></a>res</span></code></pre></div>
+<pre><code>## # A tibble: 570 × 8
+##    sampleID         patient      type   A1BG   A1CF A2BP1 A2LD1   A2ML1
+##    &lt;chr&gt;            &lt;chr&gt;        &lt;chr&gt; &lt;dbl&gt;  &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt;   &lt;dbl&gt;
+##  1 TCGA-05-4244-01A TCGA-05-4244 tumor  26.0  0      1.75 136.    0.349
+##  2 TCGA-05-4249-01A TCGA-05-4249 tumor 120.   0.322  1.61  89.1   1.61 
+##  3 TCGA-05-4250-01A TCGA-05-4250 tumor  50.9  0      0    151.    0    
+##  4 TCGA-05-4382-01A TCGA-05-4382 tumor 146.   0      0    112.    4.79 
+##  5 TCGA-05-4384-01A TCGA-05-4384 tumor 127.   0      0     87.6   0    
+##  6 TCGA-05-4389-01A TCGA-05-4389 tumor  67.1 36.2    0    112.   36.6  
+##  7 TCGA-05-4390-01A TCGA-05-4390 tumor 165.   0     97.7   64.9   0.639
+##  8 TCGA-05-4395-01A TCGA-05-4395 tumor  22.0  0      0    181.  391.   
+##  9 TCGA-05-4396-01A TCGA-05-4396 tumor  17.4 15.9    0    134.    0.758
+## 10 TCGA-05-4397-01A TCGA-05-4397 tumor 127.   0      0    229.   19.2  
+## # ℹ 560 more rows</code></pre>
+<p class="solution-end">
+<span class="fa fa-square-o solution-icon"></span>
+</p>
+</div>
+</div>
+<!-- Possibly also mention `while`. -->
+</div>
+</div>
+<div id="conditionals" class="section level2" number="10.3">
+<h2>
+<span class="header-section-number">10.3</span> Conditionals<div class="tooltip"><button class="internal-link-btn" onclick="copy_link('conditionals')" onmouseout="reset_tooltip('conditionals-tooltip')"><span class="tooltiptext" id="conditionals-tooltip">Copy link</span><i class="fa fa-link"></i></button></div>
+</h2>
+<p>When an operation has to be executed when a condition is met, one
+typically uses a <code>if</code> and <code>else</code> construct:</p>
+<pre><code>if (CONDITION) {
+   ## DO SOMETHING
+} else {
+  ## DO SOMETHING ELSE
+}</code></pre>
+<p>For examples</p>
+<div class="sourceCode" id="cb650"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb650-1"><a href="sec-prog.html#cb650-1" tabindex="-1"></a>(x <span class="ot">&lt;-</span> <span class="fu">rnorm</span>(<span class="dv">1</span>))</span></code></pre></div>
+<pre><code>## [1] -0.6264538</code></pre>
+<div class="sourceCode" id="cb652"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb652-1"><a href="sec-prog.html#cb652-1" tabindex="-1"></a><span class="cf">if</span> (x <span class="sc">&gt;</span> <span class="dv">0</span>) {</span>
+<span id="cb652-2"><a href="sec-prog.html#cb652-2" tabindex="-1"></a>   <span class="fu">print</span>(<span class="fu">log</span>(x))</span>
+<span id="cb652-3"><a href="sec-prog.html#cb652-3" tabindex="-1"></a>} <span class="cf">else</span> {</span>
+<span id="cb652-4"><a href="sec-prog.html#cb652-4" tabindex="-1"></a>   <span class="fu">print</span>(<span class="fu">log</span>(<span class="sc">-</span>x))</span>
+<span id="cb652-5"><a href="sec-prog.html#cb652-5" tabindex="-1"></a>}</span></code></pre></div>
+<pre><code>## [1] -0.4676802</code></pre>
+<p>But note that in the example above, it would be much better to
+simplify the code and use the absolute value of <code>x</code> before taking the
+log, which will generalise the calculation for positive and negative
+values …</p>
+<div class="sourceCode" id="cb654"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb654-1"><a href="sec-prog.html#cb654-1" tabindex="-1"></a><span class="fu">log</span>(<span class="fu">abs</span>(x))</span></code></pre></div>
+<pre><code>## [1] -0.4676802</code></pre>
+<p>… and works for vectors of any length thanks to vectorisation.</p>
+<div class="sourceCode" id="cb656"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb656-1"><a href="sec-prog.html#cb656-1" tabindex="-1"></a>x <span class="ot">&lt;-</span> <span class="fu">rnorm</span>(<span class="dv">10</span>)</span>
+<span id="cb656-2"><a href="sec-prog.html#cb656-2" tabindex="-1"></a><span class="fu">log</span>(<span class="fu">abs</span>(x))</span></code></pre></div>
+<pre><code>##  [1] -1.6947599 -0.1795710  0.4670498 -1.1101553 -0.1978799 -0.7186105
+##  [7] -0.3033716 -0.5520273 -1.1861709  0.4132885</code></pre>
+<p>There are also in-line, vectorised versions of the <code>if/else</code>
+statements seen above: the <code>ifelse</code> function that ships with the
+<code>base</code> package, and <code>if_else</code> from <code>dplyr</code>. Both work similarly (the
+differences are beyond the scope of this course) and have the form:</p>
+<pre><code>if_else(condition, true, false)</code></pre>
+<ul>
+<li>where <code>condition</code> is the condition to be tested, and will return
+either <code>TRUE</code> or <code>FALSE</code>;</li>
+<li>
+<code>true</code> is the expression that is executed if the condition is
+<code>TRUE</code>;</li>
+<li>
+<code>false</code> is the expression that is executed otherwise (i.e if the
+condition is <code>FALSE</code>).</li>
+</ul>
+<p>Here is an example, that will return 1 if <code>x</code> is strictly positive,
+and 0 otherwise:</p>
+<div class="sourceCode" id="cb659"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb659-1"><a href="sec-prog.html#cb659-1" tabindex="-1"></a>x <span class="ot">&lt;-</span> <span class="fl">0.5</span></span>
+<span id="cb659-2"><a href="sec-prog.html#cb659-2" tabindex="-1"></a><span class="fu">if_else</span>(x <span class="sc">&gt;</span> <span class="dv">0</span>, <span class="dv">1</span>, <span class="dv">0</span>)</span></code></pre></div>
+<pre><code>## [1] 1</code></pre>
+<p>The function being vectorised, the condition can be a vector of length
+greater than 1:</p>
+<div class="sourceCode" id="cb661"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb661-1"><a href="sec-prog.html#cb661-1" tabindex="-1"></a>x <span class="ot">&lt;-</span> <span class="fu">rnorm</span>(<span class="dv">10</span>)</span>
+<span id="cb661-2"><a href="sec-prog.html#cb661-2" tabindex="-1"></a>x</span></code></pre></div>
+<pre><code>##  [1]  0.38984324 -0.62124058 -2.21469989  1.12493092 -0.04493361 -0.01619026
+##  [7]  0.94383621  0.82122120  0.59390132  0.91897737</code></pre>
+<div class="sourceCode" id="cb663"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb663-1"><a href="sec-prog.html#cb663-1" tabindex="-1"></a><span class="fu">if_else</span>(x <span class="sc">&gt;</span> <span class="dv">0</span>, <span class="dv">1</span>, <span class="dv">0</span>)</span></code></pre></div>
+<pre><code>##  [1] 1 0 0 1 0 0 1 1 1 1</code></pre>
+<p>The vectorised conditional functions can directly be used in a
+standard data analysis pipeline:</p>
+<div class="sourceCode" id="cb665"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb665-1"><a href="sec-prog.html#cb665-1" tabindex="-1"></a>x <span class="ot">&lt;-</span> <span class="fu">tibble</span>(<span class="at">x =</span> letters[<span class="dv">1</span><span class="sc">:</span><span class="dv">5</span>],</span>
+<span id="cb665-2"><a href="sec-prog.html#cb665-2" tabindex="-1"></a>            <span class="at">y =</span> <span class="fu">rnorm</span>(<span class="dv">5</span>))</span>
+<span id="cb665-3"><a href="sec-prog.html#cb665-3" tabindex="-1"></a>x</span></code></pre></div>
+<pre><code>## # A tibble: 5 × 2
+##   x          y
+##   &lt;chr&gt;  &lt;dbl&gt;
+## 1 a     -0.626
+## 2 b      0.184
+## 3 c     -0.836
+## 4 d      1.60 
+## 5 e      0.330</code></pre>
+<div class="sourceCode" id="cb667"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb667-1"><a href="sec-prog.html#cb667-1" tabindex="-1"></a><span class="fu">mutate</span>(x, <span class="at">z =</span> <span class="fu">if_else</span>(y <span class="sc">&gt;</span> <span class="dv">0</span>, <span class="dv">1</span>, <span class="dv">0</span>))</span></code></pre></div>
+<pre><code>## # A tibble: 5 × 3
+##   x          y     z
+##   &lt;chr&gt;  &lt;dbl&gt; &lt;dbl&gt;
+## 1 a     -0.626     0
+## 2 b      0.184     1
+## 3 c     -0.836     0
+## 4 d      1.60      1
+## 5 e      0.330     1</code></pre>
+</div>
+<div id="writing-new-functions" class="section level2" number="10.4">
+<h2>
+<span class="header-section-number">10.4</span> Writing new functions<div class="tooltip"><button class="internal-link-btn" onclick="copy_link('writing-new-functions')" onmouseout="reset_tooltip('writing-new-functions-tooltip')"><span class="tooltiptext" id="writing-new-functions-tooltip">Copy link</span><i class="fa fa-link"></i></button></div>
+</h2>
+<p>A function is composed of a name, inputs (inside the parenthesis), a
+body (between curly brackets) and an ouput (last statement or variably
+inside the <code>return</code> statement).</p>
+<div class="sourceCode" id="cb669"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb669-1"><a href="sec-prog.html#cb669-1" tabindex="-1"></a>my_fun <span class="ot">&lt;-</span> <span class="cf">function</span>(x, y) {</span>
+<span id="cb669-2"><a href="sec-prog.html#cb669-2" tabindex="-1"></a>    <span class="fu">message</span>(<span class="st">"First input: "</span>, x)</span>
+<span id="cb669-3"><a href="sec-prog.html#cb669-3" tabindex="-1"></a>    <span class="fu">message</span>(<span class="st">"Second input: "</span>, y)</span>
+<span id="cb669-4"><a href="sec-prog.html#cb669-4" tabindex="-1"></a>    z <span class="ot">&lt;-</span> x <span class="sc">*</span> <span class="fu">abs</span>(y)</span>
+<span id="cb669-5"><a href="sec-prog.html#cb669-5" tabindex="-1"></a>    <span class="fu">return</span>(z)</span>
+<span id="cb669-6"><a href="sec-prog.html#cb669-6" tabindex="-1"></a>}</span>
+<span id="cb669-7"><a href="sec-prog.html#cb669-7" tabindex="-1"></a><span class="fu">my_fun</span>(<span class="dv">2</span>, <span class="sc">-</span><span class="dv">5</span>)</span></code></pre></div>
+<pre><code>## First input: 2</code></pre>
+<pre><code>## Second input: -5</code></pre>
+<pre><code>## [1] 10</code></pre>
+<div class="question">
+<p class="question-begin">
+► Question
+</p>
+<div class="question-body">
+<p>Complete the following function. It is supposed to take two inputs,
+<code>x</code> and <code>y</code> and, depending whether the <code>x &gt; y</code> or <code>x &lt;= y</code>, it generates
+the permutation <code>sample(x, y)</code> in the first case or draws a sample
+from <code>rnorm(1000, x, y)</code> in the second case. Finally, it returns the
+sum of all values.</p>
+<div class="sourceCode" id="cb673"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb673-1"><a href="sec-prog.html#cb673-1" tabindex="-1"></a>fun <span class="ot">&lt;-</span> <span class="cf">function</span>(x, y) {</span>
+<span id="cb673-2"><a href="sec-prog.html#cb673-2" tabindex="-1"></a>    res <span class="ot">&lt;-</span> <span class="cn">NA</span></span>
+<span id="cb673-3"><a href="sec-prog.html#cb673-3" tabindex="-1"></a>    <span class="cf">if</span> (   ) {</span>
+<span id="cb673-4"><a href="sec-prog.html#cb673-4" tabindex="-1"></a>        res <span class="ot">&lt;-</span> <span class="fu">sample</span>(, )</span>
+<span id="cb673-5"><a href="sec-prog.html#cb673-5" tabindex="-1"></a>    } <span class="cf">else</span> {</span>
+<span id="cb673-6"><a href="sec-prog.html#cb673-6" tabindex="-1"></a>        res <span class="ot">&lt;-</span> <span class="fu">rnorm</span>(, , )</span>
+<span id="cb673-7"><a href="sec-prog.html#cb673-7" tabindex="-1"></a>    }</span>
+<span id="cb673-8"><a href="sec-prog.html#cb673-8" tabindex="-1"></a>    <span class="fu">return</span>()</span>
+<span id="cb673-9"><a href="sec-prog.html#cb673-9" tabindex="-1"></a>}</span></code></pre></div>
+<p>To check your answer, run it with inputs 5, 15 and 15, 5, after
+setting the random number generator to 1 each time with <code>set.seed(1)</code>
+and you should get 4825.2778709 and 23.</p>
+<p class="question-end">
+<span class="fa fa-square-o solution-icon"></span>
+</p>
+</div>
+</div>
+<div class="msmb-solution">
+<p class="solution-begin">
+► Solution<span id="sol-start-50" class="fa fa-plus-square solution-icon clickable" onclick="toggle_visibility('sol-body-50', 'sol-start-50')"></span>
+</p>
+<div id="sol-body-50" class="solution-body" style="display: none;">
+<div class="sourceCode" id="cb674"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb674-1"><a href="sec-prog.html#cb674-1" tabindex="-1"></a>fun</span></code></pre></div>
+<pre><code>## function (x, y) 
+## {
+##     res &lt;- NA
+##     if (x &gt; y) {
+##         res &lt;- sample(x, y)
+##     }
+##     else {
+##         res &lt;- rnorm(1000, x, y)
+##     }
+##     return(sum(res))
+## }
+## &lt;bytecode: 0x5c8a539fe560&gt;</code></pre>
+<div class="sourceCode" id="cb676"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb676-1"><a href="sec-prog.html#cb676-1" tabindex="-1"></a><span class="fu">set.seed</span>(<span class="dv">1</span><span class="dt">L</span>)</span>
+<span id="cb676-2"><a href="sec-prog.html#cb676-2" tabindex="-1"></a><span class="fu">fun</span>(<span class="dv">5</span>, <span class="dv">15</span>)</span></code></pre></div>
+<pre><code>## [1] 4825.278</code></pre>
+<div class="sourceCode" id="cb678"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb678-1"><a href="sec-prog.html#cb678-1" tabindex="-1"></a><span class="fu">set.seed</span>(<span class="dv">1</span><span class="dt">L</span>)</span>
+<span id="cb678-2"><a href="sec-prog.html#cb678-2" tabindex="-1"></a><span class="fu">fun</span>(<span class="dv">15</span>, <span class="dv">5</span>)</span></code></pre></div>
+<pre><code>## [1] 23</code></pre>
+<p class="solution-end">
+<span class="fa fa-square-o solution-icon"></span>
+</p>
+</div>
+</div>
+</div>
+<div id="pattern-matching" class="section level2" number="10.5">
+<h2>
+<span class="header-section-number">10.5</span> Pattern matching<div class="tooltip"><button class="internal-link-btn" onclick="copy_link('pattern-matching')" onmouseout="reset_tooltip('pattern-matching-tooltip')"><span class="tooltiptext" id="pattern-matching-tooltip">Copy link</span><i class="fa fa-link"></i></button></div>
+</h2>
+<p>One skill that comes handy more often than not is the ability to find
+patterns in text and replace these. We are going to see two functions
+out of many to perform such tasks. As an illustration, we are going to
+mine a vector or peptides identified by mass spectrometry. The data
+can be loaded from the <code>rWSBIM1207</code> data:</p>
+<div class="sourceCode" id="cb680"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb680-1"><a href="sec-prog.html#cb680-1" tabindex="-1"></a><span class="fu">library</span>(<span class="st">"rWSBIM1207"</span>)</span>
+<span id="cb680-2"><a href="sec-prog.html#cb680-2" tabindex="-1"></a><span class="fu">data</span>(peptides)</span>
+<span id="cb680-3"><a href="sec-prog.html#cb680-3" tabindex="-1"></a><span class="fu">length</span>(peptides)</span></code></pre></div>
+<pre><code>## [1] 26796</code></pre>
+<div class="sourceCode" id="cb682"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb682-1"><a href="sec-prog.html#cb682-1" tabindex="-1"></a><span class="fu">head</span>(peptides)</span></code></pre></div>
+<pre><code>## [1] "aAAGEAk" "VTEEAk"  "aSGDPGk" "sAAAEAk" "aANAEGk" "aAAEEAR"</code></pre>
+<ol style="list-style-type: decimal">
+<li>Among the 26796 petides, which ones contain the pattern <code>"AAGE"</code>?</li>
+</ol>
+<div class="sourceCode" id="cb684"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb684-1"><a href="sec-prog.html#cb684-1" tabindex="-1"></a>pattern <span class="ot">&lt;-</span> <span class="st">"AAGE"</span></span>
+<span id="cb684-2"><a href="sec-prog.html#cb684-2" tabindex="-1"></a><span class="do">## indices of matching peptides</span></span>
+<span id="cb684-3"><a href="sec-prog.html#cb684-3" tabindex="-1"></a><span class="fu">grep</span>(pattern, peptides)</span></code></pre></div>
+<pre><code>## [1]     1  7026 17140 21912 23423 24947 25257 26658</code></pre>
+<div class="sourceCode" id="cb686"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb686-1"><a href="sec-prog.html#cb686-1" tabindex="-1"></a><span class="do">## matching peptides</span></span>
+<span id="cb686-2"><a href="sec-prog.html#cb686-2" tabindex="-1"></a><span class="fu">grep</span>(pattern, peptides, <span class="at">value =</span> <span class="cn">TRUE</span>)</span></code></pre></div>
+<pre><code>## [1] "aAAGEAk"              "aFHGAAGEAGAAFGNHGANR" "eAIDAAGEGGR"         
+## [4] "sAAGEFADDPcSSVkR"     "eAAGEGPVLYEDPPDQk"    "eIEAAGEk"            
+## [7] "dVQELYAAGENR"         "sAAGEFADDPcSSVk"</code></pre>
+<div class="sourceCode" id="cb688"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb688-1"><a href="sec-prog.html#cb688-1" tabindex="-1"></a><span class="do">## position of matching peptides</span></span>
+<span id="cb688-2"><a href="sec-prog.html#cb688-2" tabindex="-1"></a><span class="fu">head</span>(<span class="fu">grepl</span>(pattern, peptides))</span></code></pre></div>
+<pre><code>## [1]  TRUE FALSE FALSE FALSE FALSE FALSE</code></pre>
+<ol start="2" style="list-style-type: decimal">
+<li>Replace a pattern by another string.</li>
+</ol>
+<div class="sourceCode" id="cb690"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb690-1"><a href="sec-prog.html#cb690-1" tabindex="-1"></a><span class="fu">head</span>(peptides)</span></code></pre></div>
+<pre><code>## [1] "aAAGEAk" "VTEEAk"  "aSGDPGk" "sAAAEAk" "aANAEGk" "aAAEEAR"</code></pre>
+<div class="sourceCode" id="cb692"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb692-1"><a href="sec-prog.html#cb692-1" tabindex="-1"></a><span class="fu">head</span>(<span class="fu">sub</span>(<span class="st">"AE"</span>, <span class="st">"XX"</span>, peptides))</span></code></pre></div>
+<pre><code>## [1] "aAAGEAk" "VTEEAk"  "aSGDPGk" "sAAXXAk" "aANXXGk" "aAXXEAR"</code></pre>
+<p>But careful that <code>sub</code> only replaced the first occurrence in a string!</p>
+<div class="sourceCode" id="cb694"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb694-1"><a href="sec-prog.html#cb694-1" tabindex="-1"></a><span class="fu">head</span>(peptides)</span></code></pre></div>
+<pre><code>## [1] "aAAGEAk" "VTEEAk"  "aSGDPGk" "sAAAEAk" "aANAEGk" "aAAEEAR"</code></pre>
+<div class="sourceCode" id="cb696"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb696-1"><a href="sec-prog.html#cb696-1" tabindex="-1"></a><span class="fu">head</span>(<span class="fu">sub</span>(<span class="st">"A"</span>, <span class="st">"X"</span>, peptides))</span></code></pre></div>
+<pre><code>## [1] "aXAGEAk" "VTEEXk"  "aSGDPGk" "sXAAEAk" "aXNAEGk" "aXAEEAR"</code></pre>
+<div class="sourceCode" id="cb698"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb698-1"><a href="sec-prog.html#cb698-1" tabindex="-1"></a><span class="fu">head</span>(<span class="fu">gsub</span>(<span class="st">"A"</span>, <span class="st">"X"</span>, peptides))</span></code></pre></div>
+<pre><code>## [1] "aXXGEXk" "VTEEXk"  "aSGDPGk" "sXXXEXk" "aXNXEGk" "aXXEEXR"</code></pre>
+</div>
+<div id="analysing-data-from-multiple-files" class="section level2" number="10.6">
+<h2>
+<span class="header-section-number">10.6</span> Analysing data from multiple files<div class="tooltip"><button class="internal-link-btn" onclick="copy_link('analysing-data-from-multiple-files')" onmouseout="reset_tooltip('analysing-data-from-multiple-files-tooltip')"><span class="tooltiptext" id="analysing-data-from-multiple-files-tooltip">Copy link</span><i class="fa fa-link"></i></button></div>
+</h2>
+<p>This exercise recapitulates the most important material that we have
+seen in this course. We are going to analyse the student tests A and B
+results using functionality from the <code>dplyr</code> package (seen in chapter
+<a href="sec-dplyr.html#sec-dplyr">5</a>). The student test files are available in the
+<code>rWSBIM1207</code> package (the <code>interroA.csv</code> and <code>interroB.csv</code> functions
+return their respective paths). We want to compare how the male and
+female students in groups A and B have performed. To do this, we want
+to calculate the mean scores and visualise the score distributions in
+each groups.</p>
+<div class="question">
+<p class="question-begin">
+► Question
+</p>
+<div class="question-body">
+<p>Before writing any code to answer the questions above, take a couple
+of minutes to think about what packages are needed to answer the
+questions above and identify the individual steps needed to first
+prepare the data needed to find the answers and then to produce the
+answers.</p>
+<p class="question-end">
+<span class="fa fa-square-o solution-icon"></span>
+</p>
+</div>
+</div>
+<ol style="list-style-type: decimal">
+<li>Start by loading the <code>rWSBIM1207</code> and <code>tidyverse</code> package, to get
+all the functionality we will need.</li>
+</ol>
+<div class="msmb-solution">
+<p class="solution-begin">
+► Solution<span id="sol-start-51" class="fa fa-plus-square solution-icon clickable" onclick="toggle_visibility('sol-body-51', 'sol-start-51')"></span>
+</p>
+<div id="sol-body-51" class="solution-body" style="display: none;">
+<div class="sourceCode" id="cb700"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb700-1"><a href="sec-prog.html#cb700-1" tabindex="-1"></a><span class="fu">library</span>(<span class="st">"rWSBIM1207"</span>)</span>
+<span id="cb700-2"><a href="sec-prog.html#cb700-2" tabindex="-1"></a><span class="fu">library</span>(<span class="st">"tidyverse"</span>)</span></code></pre></div>
+<p class="solution-end">
+<span class="fa fa-square-o solution-icon"></span>
+</p>
+</div>
+</div>
+<ol start="2" style="list-style-type: decimal">
+<li>Using the <code>interroA.csv()</code> and <code>interroB.csv()</code> functions from the
+<code>rWSBIM1207</code> package, create a vector containing the two csv file
+names.</li>
+</ol>
+<div class="msmb-solution">
+<p class="solution-begin">
+► Solution<span id="sol-start-52" class="fa fa-plus-square solution-icon clickable" onclick="toggle_visibility('sol-body-52', 'sol-start-52')"></span>
+</p>
+<div id="sol-body-52" class="solution-body" style="display: none;">
+<div class="sourceCode" id="cb701"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb701-1"><a href="sec-prog.html#cb701-1" tabindex="-1"></a>fls <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="fu">interroA.csv</span>(),</span>
+<span id="cb701-2"><a href="sec-prog.html#cb701-2" tabindex="-1"></a>         <span class="fu">interroB.csv</span>())</span>
+<span id="cb701-3"><a href="sec-prog.html#cb701-3" tabindex="-1"></a>fls</span></code></pre></div>
+<pre><code>## [1] "/home/lgatto/R/x86_64-pc-linux-gnu-library/Bioc3.21/rWSBIM1207/extdata/interroA.csv"
+## [2] "/home/lgatto/R/x86_64-pc-linux-gnu-library/Bioc3.21/rWSBIM1207/extdata/interroB.csv"</code></pre>
+<p class="solution-end">
+<span class="fa fa-square-o solution-icon"></span>
+</p>
+</div>
+</div>
+<ol start="3" style="list-style-type: decimal">
+<li>Iterate over the files and read each into an element of a
+list. Then, bind the two elements of the list into a single
+dataframe containing all results.</li>
+</ol>
+<div class="msmb-solution">
+<p class="solution-begin">
+► Solution<span id="sol-start-53" class="fa fa-plus-square solution-icon clickable" onclick="toggle_visibility('sol-body-53', 'sol-start-53')"></span>
+</p>
+<div id="sol-body-53" class="solution-body" style="display: none;">
+<div class="sourceCode" id="cb703"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb703-1"><a href="sec-prog.html#cb703-1" tabindex="-1"></a>l <span class="ot">&lt;-</span> <span class="fu">as.list</span>(fls)</span>
+<span id="cb703-2"><a href="sec-prog.html#cb703-2" tabindex="-1"></a><span class="cf">for</span> (i <span class="cf">in</span> <span class="fu">seq_along</span>(fls))</span>
+<span id="cb703-3"><a href="sec-prog.html#cb703-3" tabindex="-1"></a>    l[[i]] <span class="ot">&lt;-</span> <span class="fu">read_csv</span>(fls[i])</span></code></pre></div>
+<pre><code>## Rows: 100 Columns: 8
+## ── Column specification ──────────────────────────────────────────────────────────────────────────────────────────────────────
+## Delimiter: ","
+## chr (2): id, gender
+## dbl (6): height, X, interro1, interro2, interro3, interro4
+## 
+## ℹ Use `spec()` to retrieve the full column specification for this data.
+## ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+## Rows: 105 Columns: 8
+## ── Column specification ──────────────────────────────────────────────────────────────────────────────────────────────────────
+## Delimiter: ","
+## chr (2): id, gender
+## dbl (6): height, X, interro1, interro2, interro3, interro4
+## 
+## ℹ Use `spec()` to retrieve the full column specification for this data.
+## ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.</code></pre>
+<div class="sourceCode" id="cb705"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb705-1"><a href="sec-prog.html#cb705-1" tabindex="-1"></a>interros <span class="ot">&lt;-</span> <span class="fu">rbind</span>(l[[<span class="dv">1</span>]], l[[<span class="dv">2</span>]])</span>
+<span id="cb705-2"><a href="sec-prog.html#cb705-2" tabindex="-1"></a>interros</span></code></pre></div>
+<pre><code>## # A tibble: 205 × 8
+##    id     height gender      X interro1 interro2 interro3 interro4
+##    &lt;chr&gt;   &lt;dbl&gt; &lt;chr&gt;   &lt;dbl&gt;    &lt;dbl&gt;    &lt;dbl&gt;    &lt;dbl&gt;    &lt;dbl&gt;
+##  1 A74890    168 M       1.43        16       18        7       10
+##  2 A85494    167 M       1.05        15       18       13       NA
+##  3 A51820    166 M       0.435        4       10       NA        7
+##  4 A98669    164 M       0.715       15       15       18       13
+##  5 A75521    171 M       0.917       18       10       17       NA
+##  6 A96704    178 F      -2.66        11       20       14       17
+##  7 A23214    155 M       1.11        12        2        8       14
+##  8 A31124    177 M      -0.485       19        4        8       20
+##  9 A80471    187 F       0.231       19       16       16        8
+## 10 A21783    195 F      -0.295       13       11        8       20
+## # ℹ 195 more rows</code></pre>
+<div class="sourceCode" id="cb707"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb707-1"><a href="sec-prog.html#cb707-1" tabindex="-1"></a><span class="fu">dim</span>(interros)</span></code></pre></div>
+<pre><code>## [1] 205   8</code></pre>
+<p>or</p>
+<div class="sourceCode" id="cb709"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb709-1"><a href="sec-prog.html#cb709-1" tabindex="-1"></a>l <span class="ot">&lt;-</span> <span class="fu">lapply</span>(fls, read_csv)</span></code></pre></div>
+<pre><code>## Rows: 100 Columns: 8
+## ── Column specification ──────────────────────────────────────────────────────────────────────────────────────────────────────
+## Delimiter: ","
+## chr (2): id, gender
+## dbl (6): height, X, interro1, interro2, interro3, interro4
+## 
+## ℹ Use `spec()` to retrieve the full column specification for this data.
+## ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+## Rows: 105 Columns: 8
+## ── Column specification ──────────────────────────────────────────────────────────────────────────────────────────────────────
+## Delimiter: ","
+## chr (2): id, gender
+## dbl (6): height, X, interro1, interro2, interro3, interro4
+## 
+## ℹ Use `spec()` to retrieve the full column specification for this data.
+## ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.</code></pre>
+<div class="sourceCode" id="cb711"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb711-1"><a href="sec-prog.html#cb711-1" tabindex="-1"></a>interros2 <span class="ot">&lt;-</span> <span class="fu">rbind</span>(l[[<span class="dv">1</span>]], l[[<span class="dv">2</span>]])</span>
+<span id="cb711-2"><a href="sec-prog.html#cb711-2" tabindex="-1"></a><span class="fu">identical</span>(interros, interros2)</span></code></pre></div>
+<pre><code>## [1] FALSE</code></pre>
+<p class="solution-end">
+<span class="fa fa-square-o solution-icon"></span>
+</p>
+</div>
+</div>
+<ol start="4" style="list-style-type: decimal">
+<li>What are the mean scores for male and female students in each test
+(<code>interro1</code> to <code>interro4</code>).</li>
+</ol>
+<div class="msmb-solution">
+<p class="solution-begin">
+► Solution<span id="sol-start-54" class="fa fa-plus-square solution-icon clickable" onclick="toggle_visibility('sol-body-54', 'sol-start-54')"></span>
+</p>
+<div id="sol-body-54" class="solution-body" style="display: none;">
+<div class="sourceCode" id="cb713"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb713-1"><a href="sec-prog.html#cb713-1" tabindex="-1"></a>interros <span class="sc">%&gt;%</span></span>
+<span id="cb713-2"><a href="sec-prog.html#cb713-2" tabindex="-1"></a>    <span class="fu">group_by</span>(gender) <span class="sc">%&gt;%</span></span>
+<span id="cb713-3"><a href="sec-prog.html#cb713-3" tabindex="-1"></a>    <span class="fu">summarise</span>(<span class="at">m1 =</span> <span class="fu">mean</span>(interro1, <span class="at">na.rm =</span> <span class="cn">TRUE</span>),</span>
+<span id="cb713-4"><a href="sec-prog.html#cb713-4" tabindex="-1"></a>              <span class="at">m2 =</span> <span class="fu">mean</span>(interro2, <span class="at">na.rm =</span> <span class="cn">TRUE</span>),</span>
+<span id="cb713-5"><a href="sec-prog.html#cb713-5" tabindex="-1"></a>              <span class="at">m3 =</span> <span class="fu">mean</span>(interro3, <span class="at">na.rm =</span> <span class="cn">TRUE</span>),</span>
+<span id="cb713-6"><a href="sec-prog.html#cb713-6" tabindex="-1"></a>              <span class="at">m4 =</span> <span class="fu">mean</span>(interro4, <span class="at">na.rm =</span> <span class="cn">TRUE</span>))</span></code></pre></div>
+<pre><code>## # A tibble: 2 × 5
+##   gender    m1    m2    m3    m4
+##   &lt;chr&gt;  &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt;
+## 1 F       10.2  11.2  13.8  13.9
+## 2 M       10.2  10.8  12.8  13.7</code></pre>
+<p class="solution-end">
+<span class="fa fa-square-o solution-icon"></span>
+</p>
+</div>
+</div>
+<ol start="5" style="list-style-type: decimal">
+<li>What are the mean scores for male and female students in each test
+(<code>interro1</code> to <code>interro4</code>) and in each group (A and B).</li>
+</ol>
+<div class="msmb-solution">
+<p class="solution-begin">
+► Solution<span id="sol-start-55" class="fa fa-plus-square solution-icon clickable" onclick="toggle_visibility('sol-body-55', 'sol-start-55')"></span>
+</p>
+<div id="sol-body-55" class="solution-body" style="display: none;">
+<p>To answer this question, we need to be able to tell the two groups
+apart. This information is however not available in the full
+dataset. We could analyse the two test individually to answer this
+particular question, but a preferred approach is the add this
+information, as it will be needed later anyway.</p>
+<p>One way would be to check the number of students that tool the two
+tests, and add a new column based on these values. We still have the
+two dataframes in the <code>l</code> list, which allows us to calculate the
+respective number of rows and use this information to create a group
+variables.</p>
+<div class="sourceCode" id="cb715"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb715-1"><a href="sec-prog.html#cb715-1" tabindex="-1"></a><span class="fu">sapply</span>(l, nrow)</span></code></pre></div>
+<pre><code>## [1] 100 105</code></pre>
+<div class="sourceCode" id="cb717"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb717-1"><a href="sec-prog.html#cb717-1" tabindex="-1"></a>interros<span class="sc">$</span>group <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="fu">rep</span>(<span class="st">"A"</span>, <span class="fu">nrow</span>(l[[<span class="dv">1</span>]])),</span>
+<span id="cb717-2"><a href="sec-prog.html#cb717-2" tabindex="-1"></a>                    <span class="fu">rep</span>(<span class="st">"B"</span>, <span class="fu">nrow</span>(l[[<span class="dv">2</span>]])))</span>
+<span id="cb717-3"><a href="sec-prog.html#cb717-3" tabindex="-1"></a>interros</span></code></pre></div>
+<pre><code>## # A tibble: 205 × 9
+##    id     height gender      X interro1 interro2 interro3 interro4 group
+##    &lt;chr&gt;   &lt;dbl&gt; &lt;chr&gt;   &lt;dbl&gt;    &lt;dbl&gt;    &lt;dbl&gt;    &lt;dbl&gt;    &lt;dbl&gt; &lt;chr&gt;
+##  1 A74890    168 M       1.43        16       18        7       10 A    
+##  2 A85494    167 M       1.05        15       18       13       NA A    
+##  3 A51820    166 M       0.435        4       10       NA        7 A    
+##  4 A98669    164 M       0.715       15       15       18       13 A    
+##  5 A75521    171 M       0.917       18       10       17       NA A    
+##  6 A96704    178 F      -2.66        11       20       14       17 A    
+##  7 A23214    155 M       1.11        12        2        8       14 A    
+##  8 A31124    177 M      -0.485       19        4        8       20 A    
+##  9 A80471    187 F       0.231       19       16       16        8 A    
+## 10 A21783    195 F      -0.295       13       11        8       20 A    
+## # ℹ 195 more rows</code></pre>
+<p>The assumption here is that the order of the observations in the large
+dataframe hasn’t changed!</p>
+<p>An alternative is to add the group information before combining the
+dataframes.</p>
+<div class="sourceCode" id="cb719"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb719-1"><a href="sec-prog.html#cb719-1" tabindex="-1"></a>l[[<span class="dv">1</span>]]<span class="sc">$</span>group <span class="ot">&lt;-</span> <span class="st">"A"</span></span>
+<span id="cb719-2"><a href="sec-prog.html#cb719-2" tabindex="-1"></a>l[[<span class="dv">2</span>]]<span class="sc">$</span>group <span class="ot">&lt;-</span> <span class="st">"B"</span></span>
+<span id="cb719-3"><a href="sec-prog.html#cb719-3" tabindex="-1"></a>interros2 <span class="ot">&lt;-</span> <span class="fu">rbind</span>(l[[<span class="dv">1</span>]], l[[<span class="dv">2</span>]])</span>
+<span id="cb719-4"><a href="sec-prog.html#cb719-4" tabindex="-1"></a><span class="fu">identical</span>(interros, interros2)</span></code></pre></div>
+<pre><code>## [1] FALSE</code></pre>
+<p>Now we can group by <code>gender</code> and <code>group</code> to perform our summary
+calculations:</p>
+<div class="sourceCode" id="cb721"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb721-1"><a href="sec-prog.html#cb721-1" tabindex="-1"></a>interros <span class="sc">%&gt;%</span></span>
+<span id="cb721-2"><a href="sec-prog.html#cb721-2" tabindex="-1"></a>    <span class="fu">group_by</span>(gender, group) <span class="sc">%&gt;%</span></span>
+<span id="cb721-3"><a href="sec-prog.html#cb721-3" tabindex="-1"></a>    <span class="fu">summarise</span>(<span class="at">m1 =</span> <span class="fu">mean</span>(interro1, <span class="at">na.rm =</span> <span class="cn">TRUE</span>),</span>
+<span id="cb721-4"><a href="sec-prog.html#cb721-4" tabindex="-1"></a>              <span class="at">m2 =</span> <span class="fu">mean</span>(interro2, <span class="at">na.rm =</span> <span class="cn">TRUE</span>),</span>
+<span id="cb721-5"><a href="sec-prog.html#cb721-5" tabindex="-1"></a>              <span class="at">m3 =</span> <span class="fu">mean</span>(interro3, <span class="at">na.rm =</span> <span class="cn">TRUE</span>),</span>
+<span id="cb721-6"><a href="sec-prog.html#cb721-6" tabindex="-1"></a>              <span class="at">m4 =</span> <span class="fu">mean</span>(interro4, <span class="at">na.rm =</span> <span class="cn">TRUE</span>))</span></code></pre></div>
+<pre><code>## `summarise()` has grouped output by 'gender'. You can override using the
+## `.groups` argument.</code></pre>
+<pre><code>## # A tibble: 4 × 6
+## # Groups:   gender [2]
+##   gender group    m1    m2    m3    m4
+##   &lt;chr&gt;  &lt;chr&gt; &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt;
+## 1 F      A      9.6   10.5  13.2  13.8
+## 2 F      B     10.9   12.0  14.4  14.0
+## 3 M      A     10.4   10.6  12.4  14.9
+## 4 M      B      9.98  10.9  13.1  12.6</code></pre>
+<p class="solution-end">
+<span class="fa fa-square-o solution-icon"></span>
+</p>
+</div>
+</div>
+<ol start="6" style="list-style-type: decimal">
+<li>Instead of comparing the means for the four tests in each group and
+gender, visualise their distributions using boxplots. In addition
+to the boxplots, overlay the actual score values (using the
+<em>jitter</em> geom) and colour the points based on the students height.</li>
+</ol>
+<div class="msmb-solution">
+<p class="solution-begin">
+► Solution<span id="sol-start-56" class="fa fa-plus-square solution-icon clickable" onclick="toggle_visibility('sol-body-56', 'sol-start-56')"></span>
+</p>
+<div id="sol-body-56" class="solution-body" style="display: none;">
+<p>The produce this visualisation, we first need to convert the data we
+have in a long format using <code>pivot_longer()</code>. Below, we create two new
+variables: <code>test</code>, that contains <code>interro1</code>, …, <code>interro4</code>, and
+<code>score</code>, that contains the students marks the actual test.</p>
+<p>We obtain a new tibble that contains 4 times more rows that initially,
+as the tests, that were in 4 different columns, have now been gathered
+as a single new variable.</p>
+<div class="sourceCode" id="cb724"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb724-1"><a href="sec-prog.html#cb724-1" tabindex="-1"></a>interros2 <span class="ot">&lt;-</span> <span class="fu">pivot_longer</span>(interros,</span>
+<span id="cb724-2"><a href="sec-prog.html#cb724-2" tabindex="-1"></a>                          <span class="at">names_to =</span> <span class="st">"test"</span>,</span>
+<span id="cb724-3"><a href="sec-prog.html#cb724-3" tabindex="-1"></a>                          <span class="at">values_to =</span> <span class="st">"score"</span>,</span>
+<span id="cb724-4"><a href="sec-prog.html#cb724-4" tabindex="-1"></a>                          <span class="fu">starts_with</span>(<span class="st">"interro"</span>))</span>
+<span id="cb724-5"><a href="sec-prog.html#cb724-5" tabindex="-1"></a>interros2</span></code></pre></div>
+<pre><code>## # A tibble: 820 × 7
+##    id     height gender     X group test     score
+##    &lt;chr&gt;   &lt;dbl&gt; &lt;chr&gt;  &lt;dbl&gt; &lt;chr&gt; &lt;chr&gt;    &lt;dbl&gt;
+##  1 A74890    168 M      1.43  A     interro1    16
+##  2 A74890    168 M      1.43  A     interro2    18
+##  3 A74890    168 M      1.43  A     interro3     7
+##  4 A74890    168 M      1.43  A     interro4    10
+##  5 A85494    167 M      1.05  A     interro1    15
+##  6 A85494    167 M      1.05  A     interro2    18
+##  7 A85494    167 M      1.05  A     interro3    13
+##  8 A85494    167 M      1.05  A     interro4    NA
+##  9 A51820    166 M      0.435 A     interro1     4
+## 10 A51820    166 M      0.435 A     interro2    10
+## # ℹ 810 more rows</code></pre>
+<p>We can now map the new <code>test</code> and <code>score</code> variables to the <em>x</em> and <em>y</em>
+axes and construct the visualisation.</p>
+<div class="sourceCode" id="cb726"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb726-1"><a href="sec-prog.html#cb726-1" tabindex="-1"></a><span class="fu">ggplot</span>(interros2, <span class="fu">aes</span>(<span class="at">y =</span> score, <span class="at">x =</span> test)) <span class="sc">+</span></span>
+<span id="cb726-2"><a href="sec-prog.html#cb726-2" tabindex="-1"></a>    <span class="fu">geom_boxplot</span>() <span class="sc">+</span></span>
+<span id="cb726-3"><a href="sec-prog.html#cb726-3" tabindex="-1"></a>    <span class="fu">geom_jitter</span>(<span class="fu">aes</span>(<span class="at">colour =</span> height)) <span class="sc">+</span></span>
+<span id="cb726-4"><a href="sec-prog.html#cb726-4" tabindex="-1"></a>    <span class="fu">facet_grid</span>(gender <span class="sc">~</span> group)</span></code></pre></div>
+<pre><code>## Warning: Removed 36 rows containing non-finite outside the scale range
+## (`stat_boxplot()`).</code></pre>
+<pre><code>## Warning: Removed 36 rows containing missing values or values outside the scale
+## range (`geom_point()`).</code></pre>
+<p><img src="WSBIM1207_files/figure-html/unnamed-chunk-284-1.png" width="672"></p>
+<p class="solution-end">
+<span class="fa fa-square-o solution-icon"></span>
+</p>
+</div>
+</div>
+</div>
+<div id="additional-exercises-7" class="section level2" number="10.7">
+<h2>
+<span class="header-section-number">10.7</span> Additional exercises<div class="tooltip"><button class="internal-link-btn" onclick="copy_link('additional-exercises-7')" onmouseout="reset_tooltip('additional-exercises-7-tooltip')"><span class="tooltiptext" id="additional-exercises-7-tooltip">Copy link</span><i class="fa fa-link"></i></button></div>
+</h2>
+<div class="question">
+<p class="question-begin">
+► Question
+</p>
+<div class="question-body">
+<p>Complete the following function that converts meters to yards, knowing
+that that 1 yard corresponds to 0.9144 meters</p>
+<div class="sourceCode" id="cb729"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb729-1"><a href="sec-prog.html#cb729-1" tabindex="-1"></a>meters_to_yards <span class="ot">&lt;-</span> <span class="cf">function</span>(argument goes here) {</span>
+<span id="cb729-2"><a href="sec-prog.html#cb729-2" tabindex="-1"></a>  yards <span class="ot">&lt;-</span> _code goes here<span class="sc">!</span>_</span>
+<span id="cb729-3"><a href="sec-prog.html#cb729-3" tabindex="-1"></a>  <span class="fu">return</span>(yards)</span>
+<span id="cb729-4"><a href="sec-prog.html#cb729-4" tabindex="-1"></a>}</span></code></pre></div>
+<p class="question-end">
+<span class="fa fa-square-o solution-icon"></span>
+</p>
+</div>
+</div>
+<div class="question">
+<p class="question-begin">
+► Question
+</p>
+<div class="question-body">
+<p>Write functions that convert temperatures:</p>
+<ul>
+<li>from Fahrenheit to Kelvin, where <span class="math inline">\(T_K = (T_F - 32) \times 5/9 + 273.15\)</span>
+</li>
+<li>fom Celsius to Kelvin, where <span class="math inline">\(T_K = T_C + 273.15\)</span>
+</li>
+<li>from Kelvin to Celsis</li>
+<li>from Fahrenheit to Celsius</li>
+</ul>
+<p class="question-end">
+<span class="fa fa-square-o solution-icon"></span>
+</p>
+</div>
+</div>
+
+</div>
+</div>
+<p style="text-align: center;">
+<a href="sec-bioinfo.html"><button class="btn btn-default">Previous</button></a>
+<a href="sec-ccl.html"><button class="btn btn-default">Next</button></a>
+</p>
+<p class="build-date">Page built: 
+2025-06-16
+ using 
+R version 4.5.0 (2025-04-11)
+</p>
+</div>
+</div>
+
+
+
+</body>
+</html>
