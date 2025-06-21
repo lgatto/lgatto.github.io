@@ -38,6 +38,12 @@ The following nomenclature is based on a talk by
 Software Sustainability Collaborative Workshop in 2014. Here is a list
 of things that researchers should consider being able to do
 
+**Update** (2025-06-21) The [US National Academies of Science,
+Engineering, and
+Medicine](https://nap.nationalacademies.org/read/25303/chapter/1) have
+a book *Reproducibility and Replicability in Science* where they
+define/confirm the terminology as below.
+
 * **Repeat** my experiment, i.e. obtain the same tables/graphs/results
   using the same setup (data, software, ...) in the same lab or on the
   same computer. That's basically re-running one of my analysis some
