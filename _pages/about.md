@@ -239,7 +239,11 @@ Please do get in touch if you are interested in running workshops.
 
 ### Research articles
 
-
+Philippe Hauchamps, Andrea Vicini and Laurent Gatto
+*[MDSvis](https://uclouvain-cbio.github.io/MDSvis/), a Shiny
+application for interactive visualisation of Multi Dimensional Scaling
+projections*, bioRxiv 2025.06.23.660991;
+doi:[10.1101/2025.06.23.660991](https://doi.org/10.1101/2025.06.23.660991).
 
 Axelle Loriot, Julie Devis, Laurent Gatto, Charles De Smet. *A survey
 of human cancer-germline genes: linking X chromosome localization, DNA
