@@ -239,6 +239,22 @@ Please do get in touch if you are interested in running workshops.
 
 ### Research articles
 
+Rainer Johannes, De Graeve Marylin, Louai Philippine, Gibb Sebastian,
+Gatto Laurnet (2025) *An Open Infrastructure for Mass Spectrometry
+Data in
+R*. doi:[osf.io/cwt2v_v2](https://osf.io/preprints/osf/cwt2v_v2).
+
+Deflandre Guillaume, Gibb Sebastian, Gatto Laurent (2025) *PSMatch: an
+R/Bioconductor package to explore proteomics identification
+data*. doi:
+[10.31219/osf.io/62v9p_v2](https://osf.io/preprints/osf/62v9p_v2).
+
+Charlotte Hutchings, Thomas Krueger, Oliver M Crook, Laurent Gatto,
+Kathryn S Lilley *An updated Bioconductor workflow for correlation
+profiling subcellular proteomics* [version 1; peer review: awaiting
+peer review]. F1000Research 2025, 14:714
+doi:[10.12688/f1000research.165543.1](https://doi.org/10.12688/f1000research.165543.1)
+
 Philippe Hauchamps, Andrea Vicini and Laurent Gatto
 *[MDSvis](https://uclouvain-cbio.github.io/MDSvis/), a Shiny
 application for interactive visualisation of Multi Dimensional Scaling
