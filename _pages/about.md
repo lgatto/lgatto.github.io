@@ -239,11 +239,17 @@ Please do get in touch if you are interested in running workshops.
 
 ### Research articles
 
-
 Lynch MP, Gatto L, Culhane AC (2025) *Enabling reproducible and
 reusable genetic demultiplexing benchmarking with Nextflow and
 Apptainer* bioRxiv 2025.08.06.668897; doi:
 [10.1101/2025.08.06.668897](https://doi.org/10.1101/2025.08.06.668897).
+
+Vanderaa C, Gatto L *scplainer: using linear models to understand mass
+spectrometry-based single-cell proteomics data*. Genome Biol 26, 237
+(2025). doi:
+[10.1186/s13059-025-03713-4](https://doi.org/10.1186/s13059-025-03713-4)
+(pre-print:
+[10.1101/2023.12.14.571792](https://doi.org/10.1101/2023.12.14.571792)).
 
 Rainer Johannes, De Graeve Marylin, Louai Philippine, Gibb Sebastian,
 Gatto Laurnet (2025) *An Open Infrastructure for Mass Spectrometry
@@ -343,11 +349,6 @@ Lizcano-Perret B, Vertommen Didier, Herinckx G, Calabrese V, Gatto L,
 Roux P and Michiels T *Identification of RSK substrates using an
 analog-sensitive kinase approach* (2024)
 J. Biol. Chem. doi:[10.1016/j.jbc.2024.105739](https://doi.org/10.1016/j.jbc.2024.105739).
-
-Vanderaa C and Gatto L *scplainer: using linear models to understand
-mass spectrometry-based single-cell proteomics data* (2023) bioRxiv
-2023.12.14.571792;
-doi:[10.1101/2023.12.14.571792](https://doi.org/10.1101/2023.12.14.571792).
 
 Harvengt AA, Pollé OG, Martin M, van Maanen A, Gatto L, et al.
 *Post-Hypoglycemic hyperglycemia are highly relevant markers for
