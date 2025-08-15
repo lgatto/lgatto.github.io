@@ -239,6 +239,12 @@ Please do get in touch if you are interested in running workshops.
 
 ### Research articles
 
+
+Lynch MP, Gatto L, Culhane AC (2025) *Enabling reproducible and
+reusable genetic demultiplexing benchmarking with Nextflow and
+Apptainer* bioRxiv 2025.08.06.668897; doi:
+[10.1101/2025.08.06.668897](https://doi.org/10.1101/2025.08.06.668897).
+
 Rainer Johannes, De Graeve Marylin, Louai Philippine, Gibb Sebastian,
 Gatto Laurnet (2025) *An Open Infrastructure for Mass Spectrometry
 Data in
