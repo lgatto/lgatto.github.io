@@ -122,15 +122,14 @@ sidebar:
   and is funded by an Action de Recherche Concertée (ARC) project
   awarded to L. Gatto, C. Pilette and C. De Smet.
 
-## Undergraduates
-
 - **Léopold Guyot** (GitHub:
-    [leopoldguyot](https://github.com/leopoldguyot)), is a final year
-    Bioinformatics student at the "Université Libre de Bruxelles"
-    (ULB).  He is currently working on his Master's thesis on
-    single-cell proteomics in the CBIO lab under the supervision of
-    Laurent Gatto and [Matthieu
-    Defrance](https://www.ulb.be/fr/matthieu-defrance-1).
+  [leopoldguyot](https://github.com/leopoldguyot)) has a masters in
+  Bioinformatics from the Université Libre de Bruxelles. After
+  completing his masters degree in the CBIO lab, he is now pursuing a
+  PhD, focusing on the development of software and statistical
+  modelling for single-cell proteomics data.
+
+## Undergraduates
 
 - **Margot Refuge** (GitHub:
   [margotrfge](https://github.com/margotrfge)), is a Master’s student
@@ -217,7 +216,6 @@ is missing. Picture taken at the de Duve Institute on 3 July 2024.
   2016](https://www.ncbi.nlm.nih.gov/pubmed/27605098)). Thomas
   contributed the *perTurbo* algorithms to
   [*pRoloc*](https://bioconductor.org/packages/pRoloc).
-
 
 - [**Christophe Vanderaa**](https://github.com/cvanderaa), statOmics group,
   UGent, Belgium. We pursue our collaboration on the development of
