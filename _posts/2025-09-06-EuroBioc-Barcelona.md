@@ -5,8 +5,8 @@ comments: false
 ---
 
 Before I forget posting this year's lab EuroBioc contribution, here
-are the abstract of the posters and talks we will present at the
-[EuroBioc2025 in Barcelona](https://eurobioc2025.bioconductor.org/)
+are the abstract of the work we will present at the [EuroBioc2025 in
+Barcelona](https://eurobioc2025.bioconductor.org/)
 
 # PSMatch: a Bioconductor Package for Handling Peptide-Spectrum Matches Data
 
