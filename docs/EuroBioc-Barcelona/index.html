@@ -382,46 +382,53 @@ metabolomics-related development will focus on improved data
 structures and analysis methods, better support for third-party data
 import, and better interoperability with other open source software.</p>
 
+<blockquote>
+  <p>Gatto, L., Gibb, S., &amp; Rainer, J. (2025). An Open Software
+Development-based Ecosystem of R Packages for Mass Spectrometry Data
+Analysis. European Bioconductor Conference (EuroBioc2025),
+Barcelona, Spain. Zenodo. https://doi.org/10.5281/zenodo.17105729</p>
+</blockquote>
+
 <h1 id="benchmark-of-module-detection-methods-for-single-cell-proteomics">Benchmark of Module Detection Methods for Single Cell Proteomics</h1>
 
 <p>Enes Sefa Ayar and Laurent Gatto</p>
 
-<p>Proteins are the key molecules in executing biological functions, and they 
-cooperate as part of protein complexes or biological pathways. Correlation 
-in their abundance suggests functional interdependence, offering insights 
-into biological functions. Thus, identifying biologically meaningful protein 
-groups (modules) is a critical step in understanding cellular processes. 
-While many module detection methods exist, they were developed for bulk or 
-transcriptomic data and rely on the assumption that gene expression levels 
+<p>Proteins are the key molecules in executing biological functions, and they
+cooperate as part of protein complexes or biological pathways. Correlation
+in their abundance suggests functional interdependence, offering insights
+into biological functions. Thus, identifying biologically meaningful protein
+groups (modules) is a critical step in understanding cellular processes.
+While many module detection methods exist, they were developed for bulk or
+transcriptomic data and rely on the assumption that gene expression levels
 can identify functionally related protein groups.</p>
 
-<p>Single-cell proteomics (SCP) quantifies protein levels at single-cell 
-resolution, eliminating this assumption and offering a more accurate view 
-of functional protein relationships. Moreover, SCP preserves cellular 
-heterogeneity, enabling the discovery of dynamic and context-specific 
-protein modules are often masked in bulk measurements. Despite these 
-advantages, existing module detection methods may not be well suited for 
-SCP data, which presents unique challenges such as batch effects and 
+<p>Single-cell proteomics (SCP) quantifies protein levels at single-cell
+resolution, eliminating this assumption and offering a more accurate view
+of functional protein relationships. Moreover, SCP preserves cellular
+heterogeneity, enabling the discovery of dynamic and context-specific
+protein modules are often masked in bulk measurements. Despite these
+advantages, existing module detection methods may not be well suited for
+SCP data, which presents unique challenges such as batch effects and
 missing values.</p>
 
-<p>Moreover, these methods also differ by various features, for instance, 
-whether they incorporate (or not) prior biological knowledge, whether they 
-allow (or not) overlapping modules, or to what extent they use differential 
-correlation analysis. Parameter choices further influence the identified 
-modules, often leading to arbitrary decisions. However, all share a more 
-critical limitation: they generate modules even when applied to random data. 
-It is therefore essential to distinguish biologically relevant modules from 
+<p>Moreover, these methods also differ by various features, for instance,
+whether they incorporate (or not) prior biological knowledge, whether they
+allow (or not) overlapping modules, or to what extent they use differential
+correlation analysis. Parameter choices further influence the identified
+modules, often leading to arbitrary decisions. However, all share a more
+critical limitation: they generate modules even when applied to random data.
+It is therefore essential to distinguish biologically relevant modules from
 artifacts.</p>
 
-<p>In this work, we systematically evaluate module detection methods on SCP 
-datasets. Our assessment framework integrates (1) internal clustering metrics 
-to evaluate compactness and separation, (2) external validation against known 
-biological annotations, and (3) network-based analyses incorporating 
-protein-protein interaction data to enhance biological interpretability. Our 
-findings reveal notable differences in the biological relevance of the 
-identified modules and offer practical recommendations for selecting and 
-validating module detection approaches for single-cell proteomics. Furthermore, 
-we propose strategies for addressing missing values and batch effects, thereby 
+<p>In this work, we systematically evaluate module detection methods on SCP
+datasets. Our assessment framework integrates (1) internal clustering metrics
+to evaluate compactness and separation, (2) external validation against known
+biological annotations, and (3) network-based analyses incorporating
+protein-protein interaction data to enhance biological interpretability. Our
+findings reveal notable differences in the biological relevance of the
+identified modules and offer practical recommendations for selecting and
+validating module detection approaches for single-cell proteomics. Furthermore,
+we propose strategies for addressing missing values and batch effects, thereby
 improving the accuracy and reliability of module detection.</p>
 
 <h1 id="e-omix-a-new-visual-interface-for-analyzing-and-managing-omics-data">e-OMIX, a new visual interface for analyzing and managing omics data</h1>

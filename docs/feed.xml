@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.3">Jekyll</generator><link href="https://lgatto.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://lgatto.github.io/" rel="alternate" type="text/html" /><updated>2025-09-10T13:55:42+02:00</updated><id>https://lgatto.github.io/feed.xml</id><title type="html">~/</title><subtitle>Laurent Gatto&apos;s online home</subtitle><author><name>Laurent Gatto</name></author><entry><title type="html">CBIO’s EuroBioc2025 posters and talks</title><link href="https://lgatto.github.io/EuroBioc-Barcelona/" rel="alternate" type="text/html" title="CBIO’s EuroBioc2025 posters and talks" /><published>2025-09-06T00:00:00+02:00</published><updated>2025-09-06T00:00:00+02:00</updated><id>https://lgatto.github.io/EuroBioc-Barcelona</id><content type="html" xml:base="https://lgatto.github.io/EuroBioc-Barcelona/">&lt;p&gt;Before I forget posting this year’s lab EuroBioc contribution, here
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.3">Jekyll</generator><link href="https://lgatto.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://lgatto.github.io/" rel="alternate" type="text/html" /><updated>2025-09-12T18:48:13+02:00</updated><id>https://lgatto.github.io/feed.xml</id><title type="html">~/</title><subtitle>Laurent Gatto&apos;s online home</subtitle><author><name>Laurent Gatto</name></author><entry><title type="html">CBIO’s EuroBioc2025 posters and talks</title><link href="https://lgatto.github.io/EuroBioc-Barcelona/" rel="alternate" type="text/html" title="CBIO’s EuroBioc2025 posters and talks" /><published>2025-09-06T00:00:00+02:00</published><updated>2025-09-06T00:00:00+02:00</updated><id>https://lgatto.github.io/EuroBioc-Barcelona</id><content type="html" xml:base="https://lgatto.github.io/EuroBioc-Barcelona/">&lt;p&gt;Before I forget posting this year’s lab EuroBioc contribution, here
 are the abstract of the work we will present at the &lt;a href=&quot;https://eurobioc2025.bioconductor.org/&quot;&gt;EuroBioc2025 in
 Barcelona&lt;/a&gt;&lt;/p&gt;
 
@@ -95,46 +95,53 @@ metabolomics-related development will focus on improved data
 structures and analysis methods, better support for third-party data
 import, and better interoperability with other open source software.&lt;/p&gt;
 
+&lt;blockquote&gt;
+  &lt;p&gt;Gatto, L., Gibb, S., &amp;amp; Rainer, J. (2025). An Open Software
+Development-based Ecosystem of R Packages for Mass Spectrometry Data
+Analysis. European Bioconductor Conference (EuroBioc2025),
+Barcelona, Spain. Zenodo. https://doi.org/10.5281/zenodo.17105729&lt;/p&gt;
+&lt;/blockquote&gt;
+
 &lt;h1 id=&quot;benchmark-of-module-detection-methods-for-single-cell-proteomics&quot;&gt;Benchmark of Module Detection Methods for Single Cell Proteomics&lt;/h1&gt;
 
 &lt;p&gt;Enes Sefa Ayar and Laurent Gatto&lt;/p&gt;
 
-&lt;p&gt;Proteins are the key molecules in executing biological functions, and they 
-cooperate as part of protein complexes or biological pathways. Correlation 
-in their abundance suggests functional interdependence, offering insights 
-into biological functions. Thus, identifying biologically meaningful protein 
-groups (modules) is a critical step in understanding cellular processes. 
-While many module detection methods exist, they were developed for bulk or 
-transcriptomic data and rely on the assumption that gene expression levels 
+&lt;p&gt;Proteins are the key molecules in executing biological functions, and they
+cooperate as part of protein complexes or biological pathways. Correlation
+in their abundance suggests functional interdependence, offering insights
+into biological functions. Thus, identifying biologically meaningful protein
+groups (modules) is a critical step in understanding cellular processes.
+While many module detection methods exist, they were developed for bulk or
+transcriptomic data and rely on the assumption that gene expression levels
 can identify functionally related protein groups.&lt;/p&gt;
 
-&lt;p&gt;Single-cell proteomics (SCP) quantifies protein levels at single-cell 
-resolution, eliminating this assumption and offering a more accurate view 
-of functional protein relationships. Moreover, SCP preserves cellular 
-heterogeneity, enabling the discovery of dynamic and context-specific 
-protein modules are often masked in bulk measurements. Despite these 
-advantages, existing module detection methods may not be well suited for 
-SCP data, which presents unique challenges such as batch effects and 
+&lt;p&gt;Single-cell proteomics (SCP) quantifies protein levels at single-cell
+resolution, eliminating this assumption and offering a more accurate view
+of functional protein relationships. Moreover, SCP preserves cellular
+heterogeneity, enabling the discovery of dynamic and context-specific
+protein modules are often masked in bulk measurements. Despite these
+advantages, existing module detection methods may not be well suited for
+SCP data, which presents unique challenges such as batch effects and
 missing values.&lt;/p&gt;
 
-&lt;p&gt;Moreover, these methods also differ by various features, for instance, 
-whether they incorporate (or not) prior biological knowledge, whether they 
-allow (or not) overlapping modules, or to what extent they use differential 
-correlation analysis. Parameter choices further influence the identified 
-modules, often leading to arbitrary decisions. However, all share a more 
-critical limitation: they generate modules even when applied to random data. 
-It is therefore essential to distinguish biologically relevant modules from 
+&lt;p&gt;Moreover, these methods also differ by various features, for instance,
+whether they incorporate (or not) prior biological knowledge, whether they
+allow (or not) overlapping modules, or to what extent they use differential
+correlation analysis. Parameter choices further influence the identified
+modules, often leading to arbitrary decisions. However, all share a more
+critical limitation: they generate modules even when applied to random data.
+It is therefore essential to distinguish biologically relevant modules from
 artifacts.&lt;/p&gt;
 
-&lt;p&gt;In this work, we systematically evaluate module detection methods on SCP 
-datasets. Our assessment framework integrates (1) internal clustering metrics 
-to evaluate compactness and separation, (2) external validation against known 
-biological annotations, and (3) network-based analyses incorporating 
-protein-protein interaction data to enhance biological interpretability. Our 
-findings reveal notable differences in the biological relevance of the 
-identified modules and offer practical recommendations for selecting and 
-validating module detection approaches for single-cell proteomics. Furthermore, 
-we propose strategies for addressing missing values and batch effects, thereby 
+&lt;p&gt;In this work, we systematically evaluate module detection methods on SCP
+datasets. Our assessment framework integrates (1) internal clustering metrics
+to evaluate compactness and separation, (2) external validation against known
+biological annotations, and (3) network-based analyses incorporating
+protein-protein interaction data to enhance biological interpretability. Our
+findings reveal notable differences in the biological relevance of the
+identified modules and offer practical recommendations for selecting and
+validating module detection approaches for single-cell proteomics. Furthermore,
+we propose strategies for addressing missing values and batch effects, thereby
 improving the accuracy and reliability of module detection.&lt;/p&gt;
 
 &lt;h1 id=&quot;e-omix-a-new-visual-interface-for-analyzing-and-managing-omics-data&quot;&gt;e-OMIX, a new visual interface for analyzing and managing omics data&lt;/h1&gt;
