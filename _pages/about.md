@@ -242,7 +242,7 @@ Please do get in touch if you are interested in running workshops.
 Lynch MP, Gatto L, Culhane AC (2025) *Enabling reproducible and
 reusable genetic demultiplexing benchmarking with Nextflow and
 Apptainer* bioRxiv 2025.08.06.668897; doi:
-[10.1101/2025.08.06.668897](https://doi.org/10.1101/2025.08.06.668897).
+[10.1101/2025.08.06.668897](https://www.biorxiv.org/content/10.1101/2025.08.06.668897v2).
 
 Vanderaa C, Gatto L *scplainer: using linear models to understand mass
 spectrometry-based single-cell proteomics data*. Genome Biol 26, 237
@@ -277,7 +277,7 @@ Axelle Loriot, Julie Devis, Laurent Gatto, Charles De Smet. *A survey
 of human cancer-germline genes: linking X chromosome localization, DNA
 methylation and sex-biased expression in early embryos* bioRxiv
 2025.05.19.654804; doi:
-[10.1101/2025.05.19.654804](https://doi.org/10.1101/2025.05.19.654804)
+[10.1101/2025.05.19.654804](https://www.biorxiv.org/content/10.1101/2025.05.19.654804v2)
 (packages:
 [CTexploreR](https://bioconductor.org/packages/release/bioc/html/CTexploreR.html)
 and
