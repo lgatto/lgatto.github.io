@@ -239,6 +239,18 @@ Please do get in touch if you are interested in running workshops.
 
 ### Research articles
 
+Axelle Loriot, Julie Devis, Laurent Gatto, Charles De Smet. *A survey
+of human cancer-germline genes: Linking X chromosome localization, DNA
+methylation and sex-biased expression in early embryos* PLOS Genetics
+21(10):
+e1011734. [10.1371/journal.pgen.1011734](https://doi.org/10.1371/journal.pgen.1011734)
+(preprint:
+[10.1101/2025.05.19.654804](https://www.biorxiv.org/content/10.1101/2025.05.19.654804v2),
+packages:
+[CTexploreR](https://bioconductor.org/packages/release/bioc/html/CTexploreR.html)
+and
+[CTdata](https://bioconductor.org/packages/release/bioc/html/CTdata.html)).
+
 Lynch MP, Gatto L, Culhane AC (2025) *Enabling reproducible and
 reusable genetic demultiplexing benchmarking with Nextflow and
 Apptainer* bioRxiv 2025.08.06.668897; doi:
@@ -272,16 +284,6 @@ Philippe Hauchamps, Andrea Vicini and Laurent Gatto
 application for interactive visualisation of Multi Dimensional Scaling
 projections*, bioRxiv 2025.06.23.660991;
 doi:[10.1101/2025.06.23.660991](https://doi.org/10.1101/2025.06.23.660991).
-
-Axelle Loriot, Julie Devis, Laurent Gatto, Charles De Smet. *A survey
-of human cancer-germline genes: linking X chromosome localization, DNA
-methylation and sex-biased expression in early embryos* bioRxiv
-2025.05.19.654804; doi:
-[10.1101/2025.05.19.654804](https://www.biorxiv.org/content/10.1101/2025.05.19.654804v2)
-(packages:
-[CTexploreR](https://bioconductor.org/packages/release/bioc/html/CTexploreR.html)
-and
-[CTdata](https://bioconductor.org/packages/release/bioc/html/CTdata.html)).
 
 Jenny, Drnevich, J. Tan Frederick, Almeida-Silva Fabricio, Castelo
 Robert, C. Culhane Aedin, Davis Sean, A. Doyle Maria, et al. *Learning
