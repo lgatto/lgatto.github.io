@@ -1,0 +1,433 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2025-10-20 Mon 15:33 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>The tragic death of open source research software</title>
+<meta name="author" content="Laurent Gatto" />
+<meta name="generator" content="Org Mode" />
+<style type="text/css">
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">The tragic death of open source research software</h1>
+<div id="outline-container-org553176a" class="outline-2">
+<h2 id="org553176a"><span class="section-number-2">1.</span> Introduction</h2>
+<div class="outline-text-2" id="text-1">
+<p>
+Imagine that 6 month ago, you defined the ideal experimental design to
+answer an important biological question in your domain, and that
+after several months and thousands of euros, you have acquired the
+precious data. You even identified a research paper that tackled a
+similar question using exactly the same technology and type of
+data. That paper described a data analysis method published a piece of
+software that are ideally suited to answer your question.
+</p>
+
+<p>
+Experimental design + data + software = results
+</p>
+
+<p>
+You have your data and found the right software. Your results are at
+arm's length, aren't they? What could go wrong?
+</p>
+</div>
+</div>
+<div id="outline-container-orgbde8b05" class="outline-2">
+<h2 id="orgbde8b05"><span class="section-number-2">2.</span> Possible causes of death</h2>
+<div class="outline-text-2" id="text-2">
+<p>
+Unfortunately,
+</p>
+
+<ul class="org-ul">
+<li>The software isn't available (anymore)</li>
+<li>The software is available but it can't be installed.</li>
+<li>The software is installed but doesn't work.</li>
+<li>The software <i>works</i>, but you can't get it to run on your data.</li>
+<li>The software <i>runs</i> with your data, but the results don't make any
+sense.</li>
+<li>&#x2026;</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgdcc07ac" class="outline-2">
+<h2 id="orgdcc07ac"><span class="section-number-2">3.</span> Software collapse</h2>
+<div class="outline-text-2" id="text-3">
+</div>
+<div id="outline-container-org9ae5ca5" class="outline-3">
+<h3 id="org9ae5ca5"><span class="section-number-3">3.1.</span> The software doesn't work</h3>
+<div class="outline-text-3" id="text-3-1">
+<ul class="org-ul">
+<li>Software collapse (software rot) is the fact that software stops
+working eventually if is not <b><b>actively maintained</b></b>. Collapse can
+be the results of bugs, accidental changes, breaking changes in the
+software itself, 'natural' changes in software (and service)
+depedendencies, of disappearance of the software (or more generally,
+the page where it was available, or available on request, &#x2026;)&#x2026;</li>
+<li>Or because the software was never meant to last beyond that one use
+case/paper (as in a protoype).</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org5f654cf" class="outline-3">
+<h3 id="org5f654cf"><span class="section-number-3">3.2.</span> Or the software <i>works</i> but</h3>
+<div class="outline-text-3" id="text-3-2">
+<ul class="org-ul">
+<li>Missing example data, and it's not clear what the input should look
+like.</li>
+<li>Missing documentation - the software works (with the example/test
+data or with yours), but the commands and/or output don't make any
+sense.</li>
+<li>Missing documentation - using the software (correctly) is too
+difficult.</li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-orgf0e3268" class="outline-2">
+<h2 id="orgf0e3268"><span class="section-number-2">4.</span> Making software survive longer</h2>
+<div class="outline-text-2" id="text-4">
+</div>
+<div id="outline-container-org2e2da15" class="outline-3">
+<h3 id="org2e2da15"><span class="section-number-3">4.1.</span> Administration</h3>
+<div class="outline-text-3" id="text-4-1">
+<ul class="org-ul">
+<li>Stay withing the law (legal constrains, intellectual property,
+author- and copyrights, funding obligations, licencing, academia vs
+industry, policies and regulations, &#x2026;)</li>
+<li>Make it widerly availabel under an open source licenses increase
+usage, contributions, and visibility. Often even required for
+publications.</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgc01451d" class="outline-3">
+<h3 id="orgc01451d"><span class="section-number-3">4.2.</span> Open source development</h3>
+<div class="outline-text-3" id="text-4-2">
+<ul class="org-ul">
+<li>Choose an <a href="https://opensource.org/licenses">open source</a> license, <b>publish</b> your software (as a piece
+of software and as a research paper) and <b>archive</b> (<a href="https://zenodo.org/">Zenodo</a>,
+<a href="https://www.softwareheritage.org/">Software Heritage</a>, &#x2026;) it.</li>
+<li>Collaboration and community (Code of conduct, onboarding,
+contribution guide, support forum, &#x2026;)</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org0027d25" class="outline-3">
+<h3 id="org0027d25"><span class="section-number-3">4.3.</span> Development</h3>
+<div class="outline-text-3" id="text-4-3">
+<ul class="org-ul">
+<li>Implement modularity (to deal for instance with software collapse).</li>
+<li>Implement best practice (automation, integration, testing, version
+control, versioning, &#x2026;)</li>
+<li>Don't reinvent the wheel, re-use existing and robust
+infrastructure. But beware of fragile dependencies.</li>
+<li>Document: manuals, tutorials, example data, installation, user and
+developer guides, slides, videos, webpage, &#x2026;</li>
+<li>Traceability and reproducibility when analysing data and developing
+software to do so.</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgefdb5f5" class="outline-3">
+<h3 id="orgefdb5f5"><span class="section-number-3">4.4.</span> Software life cycle</h3>
+<div class="outline-text-3" id="text-4-4">
+<ul class="org-ul">
+<li>Think of your software's life cycle: maintenance, new features (if
+possible), new developers, &#x2026;</li>
+<li>Plan for sunsetting you software. Consider ending, pausing, or
+handing off.</li>
+<li>Distaster planning: make a thread model considering social,
+financial and technical vulnerabilities.</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgec2e4de" class="outline-3">
+<h3 id="orgec2e4de"><span class="section-number-3">4.5.</span> Community</h3>
+<div class="outline-text-3" id="text-4-5">
+<p>
+User/developer communities:
+</p>
+
+<ul class="org-ul">
+<li>Maintain your software, answer questions, accept contribution,
+credit contributors, &#x2026; make you software findable, citable (DOI),
+and re-usable.</li>
+<li>Announce your software, promote it (on social media, mailing lists,
+forums, &#x2026;) and through more formal academic publications (think of
+the different audiences), conference presentations, posters and
+workshops.</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgccf2894" class="outline-3">
+<h3 id="orgccf2894"><span class="section-number-3">4.6.</span> Use(rs)</h3>
+<div class="outline-text-3" id="text-4-6">
+<ul class="org-ul">
+<li>Eat your own dog food - use the sofware you develop.</li>
+<li>Produce software that users can install and use (no root/admin
+priviledges)</li>
+<li>Make it (easy to) run on other's computer (no hard coded paths, &#x2026;)</li>
+<li>Be explicit on the code: one-off analysis scripts, scripts
+supporting results, or tool/software for wider consumption?</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgf7d0384" class="outline-3">
+<h3 id="orgf7d0384"><span class="section-number-3">4.7.</span> Training</h3>
+<div class="outline-text-3" id="text-4-7">
+<p>
+Appropriate training in data analysis, data management, and software
+developement/usage is absolutely essentiel. (Some of) these should be
+delivered early, and indeally as part of the university curriculum to
+students that train in a software-heavy field (all STEM).
+</p>
+
+<p>
+Here are some well-known examples:
+</p>
+
+<ul class="org-ul">
+<li><a href="https://carpentries.org/">The Carpentries</a></li>
+<li><a href="https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1012925">Learning and teaching in the Bioconductor community</a></li>
+<li><a href="https://training.galaxyproject.org/training-material/">Galaxy training</a></li>
+<li><a href="https://elixir-europe.org/platforms/training">ELIXIR training platform</a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgeb1ecc6" class="outline-3">
+<h3 id="orgeb1ecc6"><span class="section-number-3">4.8.</span> Incentives and funding</h3>
+<div class="outline-text-3" id="text-4-8">
+<ul class="org-ul">
+<li>Recognition of the role of research software engineers</li>
+<li>(Stable) career paths</li>
+<li>Decicated funding: <a href="https://www.software.ac.uk/programmes/research-software-maintenance-fund">Software Sustainability Institute Research
+Software Maintenance Fund</a> (UK), CZI <a href="https://chanzuckerberg.com/eoss/">Essential Open Source Software
+for Science</a>, &#x2026;</li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-orge35576a" class="outline-2">
+<h2 id="orge35576a"><span class="section-number-2">5.</span> Conclusions</h2>
+<div class="outline-text-2" id="text-5">
+<ul class="org-ul">
+<li>It is hard to imagine scientific research without software.</li>
+<li>Your results are only as good as the method and the software you
+use.</li>
+<li>We need to produce more sustainable software. We need to support
+people that do so.</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgd75779a" class="outline-2">
+<h2 id="orgd75779a"><span class="section-number-2">6.</span> References</h2>
+<div class="outline-text-2" id="text-6">
+<ul class="org-ul">
+<li><a href="https://ieeexplore.ieee.org/document/8701540">Dealing With Software Collapse</a>. Hinsen K. (2019)</li>
+<li><a href="https://arxiv.org/abs/2505.06484">10 quick tips for making your software outlive your job</a>. Littauer R
+et al. (2025).</li>
+<li><a href="https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1011920">For long-term sustainable software in bioinformatics</a>. Coelho
+LP. (2024).</li>
+<li><a href="https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1005412">Ten simple rules for making research software more robust</a>. Taschuk
+and Wilson (2017).</li>
+<li><a href="https://hal.science/hal-04930405v1">CODE beyond FAIR</a>. Di Cosmo et al. (2025).</li>
+</ul>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="author">Author: Laurent Gatto</p>
+<p class="date">Created: 2025-10-20 Mon 15:33</p>
+<p class="validation"><a href="https://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
+</body>
+</html>
