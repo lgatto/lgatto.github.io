@@ -263,9 +263,9 @@ software. Collectively, we can:
     implicit side effects of research projects.
 -   It is also crucial to maintain the infrastructure that supports
     software development and maintenant, such as proper archiving.
--   Many actors can and should support the collective effort and value
-    that is software and research: resaerchers, of course, but also
-    their institutions, funders, publishers and libraries.
+-   There are many actors that can and should support software:
+    researchers, of course, but also their institutions, funders,
+    publishers and libraries.
 
 
 # References
