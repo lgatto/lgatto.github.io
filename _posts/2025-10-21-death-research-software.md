@@ -1,3 +1,8 @@
+---
+title: The tragic death of open source research software
+tags: ["software", "open research"]
+---
+
 This post is a write up of my contribution to the [Fast forward Open
 Science](https://www.circle-u.eu/events/2025/fast-forward-open-science.html) event organised by Circle U. I'll be sharing some thoughts
 about research software maintenance and survival as part of the 'Open
@@ -273,4 +278,3 @@ software. Collectively, we can:
 -   [Ten simple rules for making research software more robust](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1005412). Taschuk
     and Wilson (2017).
 -   [CODE beyond FAIR](https://hal.science/hal-04930405v1). Di Cosmo et al. (2025).
-
