@@ -1,0 +1,799 @@
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8">
+
+<!-- begin SEO -->
+
+
+
+
+
+
+
+
+
+<title>            Death Research Software      ~/      </title>
+
+
+
+
+<meta name="description" content="This post is a write up of my contribution to the Fast forward OpenScience event organised by Circle U. I’ll be sharing some thoughtsabout research software maintenance and survival as part of the ‘OpenSource Codes and Software’ discussion.">
+
+
+
+
+<meta property="og:locale" content="en_GB">
+<meta property="og:site_name" content="~/">
+<meta property="og:title" content="Death Research Software">
+
+
+  <link rel="canonical" href="https://lgatto.github.io/death-research-software/">
+  <meta property="og:url" content="https://lgatto.github.io/death-research-software/">
+
+
+
+  <meta property="og:description" content="This post is a write up of my contribution to the Fast forward OpenScience event organised by Circle U. I’ll be sharing some thoughtsabout research software maintenance and survival as part of the ‘OpenSource Codes and Software’ discussion.">
+
+
+
+
+
+  
+
+  
+
+
+
+
+
+  <meta property="og:type" content="article">
+  <meta property="article:published_time" content="2025-10-21T00:00:00+02:00">
+
+
+
+
+
+
+
+
+  <script type="application/ld+json">
+    {
+      "@context" : "http://schema.org",
+      "@type" : "Person",
+      "name" : "Laurent Gatto",
+      "url" : "https://lgatto.github.io",
+      "sameAs" : null
+    }
+  </script>
+
+
+
+
+
+
+<!-- end SEO -->
+
+
+<link href="https://lgatto.github.io/feed.xml" type="application/atom+xml" rel="alternate" title="~/ Feed">
+
+<!-- http://t.co/dKP3o1e -->
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="https://lgatto.github.io/assets/css/main.css">
+
+<meta http-equiv="cleartype" content="on">
+    <!-- start custom head snippets -->
+
+<!-- insert favicons. use http://realfavicongenerator.net/ -->
+
+<!-- end custom head snippets -->
+  </head>
+
+  <body class="layout--single">
+
+    <!--[if lt IE 9]>
+<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
+<![endif]-->
+    <div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        <button><div class="navicon"></div></button>
+        <ul class="visible-links">
+          <li class="masthead__menu-item masthead__menu-item--lg"><a href="https://lgatto.github.io/">~/</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="https://lgatto.github.io/about/">About</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="https://lgatto.github.io/year-archive/">Posts</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="https://lgatto.github.io/cbio-lab/">Lab</a></li>
+          
+        </ul>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+    
+
+
+
+<div id="main" role="main">
+  
+  <div class="sidebar sticky">
+  
+
+<div itemscope itemtype="http://schema.org/Person">
+
+  
+    <div class="author__avatar">
+      
+        <img src="https://lgatto.github.io/images/lgatto2.jpg" class="author__avatar" alt="Laurent Gatto" itemprop="image">
+      
+    </div>
+  
+
+  <div class="author__content">
+    <h3 class="author__name" itemprop="name">Laurent Gatto</h3>
+    
+      <p class="author__bio" itemprop="description">
+        Open science, reproducible research, data champion, computational biology, proteomics, more omics, emacs, a lot of R, quite a bit of running, and parenting.
+      </p>
+    
+  </div>
+
+  <div class="author__urls-wrapper">
+    <button class="btn btn--inverse">Follow</button>
+    <ul class="author__urls social-icons">
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+        <li>
+          <a href="https://github.com/lgatto" itemprop="sameAs">
+            <i class="fa fa-fw fa-github" aria-hidden="true"></i> GitHub
+          </a>
+        </li>
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      <!--
+  <li>
+    <a href="http://link-to-whatever-social-network.com/user/" itemprop="sameAs">
+      <i class="fa fa-fw" aria-hidden="true"></i> Custom Social Profile Link
+    </a>
+  </li>
+-->
+
+
+  <!-- <li> -->
+  <!--   <a href="http://dissem.in/r/6231/laurent-gatto" itemprop="sameAs"> -->
+  <!--     <i class="fa fa-fw fa-pencil" aria-hidden="true"></i> dissem.in -->
+  <!--   </a> -->
+  <!-- </li> -->
+
+  <li>
+    <a href="https://codeberg.org/lgatto" itemprop="sameAs">
+      <i class="fa fa-code" aria-hidden="true"></i> codeberg
+    </a>
+  </li>
+
+
+  <li>
+    <a href="https://orcid.org/0000-0002-1520-2268" itemprop="sameAs">
+      <i class="fa fa-fw fa-pencil" aria-hidden="true"></i> ORCID
+    </a>
+  </li>
+
+  <li>
+    <a href="https://scholar.google.co.uk/citations?user=k5DrB74AAAAJ&hl=en" itemprop="sameAs">
+      <i class="fa fa-fw fa-google" aria-hidden="true"></i> scholar
+    </a>
+  </li>
+
+
+  <!-- <li> -->
+  <!--   <a href="https://impactstory.org/u/0000-0002-1520-2268" itemprop="sameAs"> -->
+  <!--     <i class="fa fa-fw fa-sun-o" aria-hidden="true"></i> Impactstory -->
+  <!--   </a> -->
+  <!-- </li> -->
+    </ul>
+  </div>
+</div>
+
+  
+  </div>
+
+
+  <article class="page" itemscope itemtype="http://schema.org/CreativeWork">
+    <meta itemprop="headline" content="Death Research Software">
+    <meta itemprop="description" content="This post is a write up of my contribution to the Fast forward OpenScience event organised by Circle U. I’ll be sharing some thoughtsabout research software maintenance and survival as part of the ‘OpenSource Codes and Software’ discussion.">
+    <meta itemprop="datePublished" content="October 21, 2025">
+    
+
+    <div class="page__inner-wrap">
+      
+        <header>
+          <h1 class="page__title" itemprop="headline">Death Research Software
+</h1>
+          
+            <p class="page__meta"><i class="fa fa-clock-o" aria-hidden="true"></i> 
+
+
+
+
+  8 minute read
+</p>
+          
+        </header>
+      
+
+      <section class="page__content" itemprop="text">
+        <p>This post is a write up of my contribution to the <a href="https://www.circle-u.eu/events/2025/fast-forward-open-science.html">Fast forward Open
+Science</a> event organised by Circle U. I’ll be sharing some thoughts
+about research software maintenance and survival as part of the ‘Open
+Source Codes and Software’ discussion.</p>
+
+<h1 id="introduction">Introduction</h1>
+
+<p>Reserach software has become an central player in scientific research,
+to the point that it is hard to imagine scientific research without
+software.</p>
+
+<p>But because of its nature and how it is funded/valued, it can also be
+a <a href="https://en.wikipedia.org/wiki/Single_point_of_failure">single point of failure</a>.</p>
+
+<h1 id="setting-the-stage">Setting the stage</h1>
+
+<p>Imagine that 6 months ago, you, a brilliant and motivated early career
+researcher in biomedical sciences, defined the ideal experiment to
+answer an important biological question in your domain. After several
+months of hard work and thousands of euros of consumables, you have
+acquired the precious data.</p>
+
+<p>You have even identified a research paper that tackles a similar
+question using exactly the same technology and type of data. That
+paper describes a data analysis method and published a piece of
+software that are ideally suited to answer your question with your
+data.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Experimental design + data + software = results
+</code></pre></div></div>
+
+<p>You have generated good quality data and found the right
+software.</p>
+
+<p>Your results are at arm’s length, aren’t they?</p>
+
+<p>What could go wrong?</p>
+
+<h1 id="possible-causes-of-death">Possible causes of death</h1>
+
+<p>Sadely, lots of unfortunate events stand in the way of your results:</p>
+
+<ul>
+  <li>The software isn’t available (anymore).</li>
+  <li>The software is available, but it can’t be installed.</li>
+  <li>The software can be installed, but it doesn’t work.</li>
+  <li>The software “works” on test data , but you can’t get it to run on
+your data.</li>
+  <li>The software “runs” with your data, but the results don’t make any
+sense.</li>
+  <li>…</li>
+</ul>
+
+<h1 id="software-collapse">Software collapse</h1>
+
+<h2 id="the-software-doesnt-work">The software doesn’t work</h2>
+
+<ul>
+  <li>
+    <p>Software collapse (or software rot) is the fact that software will
+stop working at some point if is not <strong>actively maintained</strong>. Collapse
+can be the results of bugs, accidental changes or voluntary breaking
+changes (i.e. that don’t guarantee backward compatibility) in the
+software itself, changes in software (and service) depedendencies,
+…</p>
+  </li>
+  <li>
+    <p>Or simply disappearance of the software (or more generally, the page
+where it was available), or the lack of responses when originally
+available on request only.</p>
+  </li>
+  <li>
+    <p>Or maybe that the “software” was never meant to last beyond that one
+use case/paper. In such cases, it should have clearly been labelled
+as a protoype, not a tool/software can other can reuse.</p>
+  </li>
+</ul>
+
+<h2 id="or-the-software-works-but">Or the software <em>works</em> but</h2>
+
+<ul>
+  <li>There is no example data, and it’s not clear what the input should
+look like.</li>
+  <li>There is no documentation - the software works (with the
+example/test data or with yours), but the commands and/or output
+don’t make any sense.</li>
+  <li>Even though the software (correctly?) runs, the lack of
+documentation or its inadequacy make it too difficult to use.</li>
+</ul>
+
+<h1 id="making-software-survive-longer">Making software survive longer</h1>
+
+<p>There exist many steps that one can take to minimise the risks
+described above. These steps are technical to write better, and more
+maintainable software, or non-technical, to grow and foster a
+community and support around the software. These opportunities aren’t
+presented in any order of importance. Different situations and
+constrains will define what is possible in terms of possibilities.</p>
+
+<p>If there’s one thing to take away, it is not to stay alone in the
+development and maintenance of a piece of software, especially for
+junior researchers/developers.</p>
+
+<h2 id="administration">Administration</h2>
+
+<p>Stay withing the law, which includes any legal constrains or
+limitations, intellectual property, author- and copyrights, funding
+obligations, licencing, academia vs industry, policies and
+regulations, … Stay informed and identify allies that have the
+required experience.</p>
+
+<p>If possible, make your software widerly available under an open source
+licenses increase usage, contributions, and visibility (see below).</p>
+
+<h2 id="open-source-development">Open source development</h2>
+
+<p>Choose an <a href="https://opensource.org/licenses">open source</a> license to <strong>publish</strong> your software (ideally as a
+piece of software and as a research paper) and <strong>archive</strong> (<a href="https://zenodo.org/">Zenodo</a>,
+<a href="https://www.softwareheritage.org/">Software Heritage</a>, …) it.</p>
+
+<p>Making your software known allows to foster a collaborative
+environment and a user and (co-)developer community around your
+software. To facilitate this, consider having a code of conduct,
+onboarding documents, contribution guides, and support forum for
+users, … This is particularly relevant if your software is itself
+part of a larger ecosystem, and it is possible to adopt or adapt what
+is already available in that software ecosystem.</p>
+
+<h2 id="development">Development</h2>
+
+<p>Good software development is paramount to minimse software
+collapse. But everybody starts at some point, and sharing code is a
+good way to move towards the next steps. Even if one feels that the
+code isn’t ready for prime time because of lack of ‘formal’ training
+(many lack it and still become respected developers and contributors),
+it is much better in the short and long run to share code.</p>
+
+<p>Here are some tips:</p>
+
+<ul>
+  <li>Implement modularity to deal for instance with software collapse. It
+is much easier to maintain and extend small independent components
+rather than a large monolithic code base.</li>
+  <li>Do learn and follow best practice when in comes to research software
+development. These include automation and manual tasks, unit and
+integration testing, version control, software versioning,
+… Finding a well meaning community will help with this.</li>
+  <li>Don’t reinvent the wheel, and try re-use existing and robust
+infrastructure when possible/available - stand on the shoulders of
+giants. But beware of fragile dependencies, even though this is
+difficult without the experience.</li>
+  <li>Document you code and you software. Forget the silly myth that real
+developers focus on writing code and not documenting it - that
+certainly holds for bad developers. Writing documentation forces to
+put oneself in the position of a user, which is very often
+enlightening on the usability of what is produced. There are many
+types of documentations: manuals, tutorials, example data,
+installation, user and developer guides, slides, videos, web page,
+… There’s no need to have all of them - focus on a few high
+quality ones.</li>
+  <li>Focus on traceability and reproducibility when analysing data and
+developing software to do so. Without traceability and
+reproducibility, there’s no science, only anectodal evidence, at
+best.</li>
+</ul>
+
+<h2 id="software-life-cycle">Software life cycle</h2>
+
+<p>This is a point of particular interest to more senior developers and
+PIs. There’s pressure to produce new features and software, but
+planning beyond is important.</p>
+
+<ul>
+  <li>Think of your software’s life cycle: maintenance, new features (if
+possible), new developers, …</li>
+  <li>Plan for sunsetting you software. Consider ending, pausing, or
+handing off.</li>
+  <li>Also consider distaster planning, when funding suddenly gets cut
+off: make a thread model considering social, financial and technical
+vulnerabilities.</li>
+</ul>
+
+<h2 id="community">Community</h2>
+
+<p>Consider user and developer communities:</p>
+
+<ul>
+  <li>Maintain your software, answer questions, accept contribution,
+credit contributors, … make you software findable, citable (DOI),
+and re-usable.</li>
+  <li>Announce your software, promote it (on social media, mailing lists,
+forums, …) and through more formal academic publications (think of
+the different audiences), conference presentations, posters and
+workshops.</li>
+</ul>
+
+<p>Building a community and addressing its needs is also time
+consuming. There is some responsability that comes with release a tool
+that is meant to be used by others. If one isn’t prepared (or able) to
+consider this investment, it might be better to release a prototype.</p>
+
+<h2 id="users">Use(rs)</h2>
+
+<ul>
+  <li>The best way to produce software that is used and useful is to ‘eat
+your own dog food’ - use the sofware you develop, to assess, in real
+time, the usability and relevant of software.</li>
+  <li>Produce software that users can install and use - avoid root/admin
+priviledges.</li>
+  <li>Make it (easy to) run on other’s computer (no hard coded paths,
+…). “It runs on my computer” is irrelevant.</li>
+  <li>Be explicit on the code: are you publishing one-off analysis scripts
+or prototpyes without any gurantees, scripts supporting results that
+come some some guarantees/efforts to be reproduces, or tool/software
+for wider consumption?</li>
+</ul>
+
+<h2 id="training">Training</h2>
+
+<p>Appropriate training in data analysis, data management, and software
+developement/usage is absolutely essentiel. (Some of) these should be
+delivered early, and indeally as part of the university curriculum to
+students that train in a software-heavy field (all STEM).</p>
+
+<p>Here are some well-known examples:</p>
+
+<ul>
+  <li><a href="https://carpentries.org/">The Carpentries</a></li>
+  <li><a href="https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1012925">Learning and teaching in the Bioconductor community</a></li>
+  <li><a href="https://training.galaxyproject.org/training-material/">Galaxy training</a></li>
+  <li><a href="https://elixir-europe.org/platforms/training">ELIXIR training platform</a></li>
+</ul>
+
+<h2 id="incentives-and-funding">Incentives and funding</h2>
+
+<p>It is important to recognise of the role of those that develope and
+maintain software, often called research software engineers, and offer
+them a (stable) career paths.</p>
+
+<p>Decicated funding for sofware are rare, but they do exist: <a href="https://www.software.ac.uk/programmes/research-software-maintenance-fund">Software
+Sustainability Institute Research Software Maintenance Fund</a> (UK),
+CZI’s <a href="https://chanzuckerberg.com/eoss/">Essential Open Source Software for Science</a>, …</p>
+
+<h1 id="conclusions">Conclusions</h1>
+
+<p>Your results are only as good as the method and the software you
+use. Without decent software, there’s hardly any trustworthy science.</p>
+
+<p>This means that we need to offer the opportunities and support for
+developers to develop, release and maintain “good enough”
+software. Collectively, we can:</p>
+
+<ul>
+  <li>Offer training to researchers who write code or develope software,
+but haven’t had any training. These can within an official
+curriculum, or workshops such as those cited above.</li>
+  <li>If researchers offer ways to cite their code/software, let’s give
+them credit for their work.</li>
+  <li>Ideally, there should be well defined career paths for researchers
+whose main tasks centre around software. In many countries, research
+software engineers are emerging or are already established.</li>
+  <li>Being able to fund software development and maintenance is
+essential. Currently, too much software is developed as explicit or
+implicit side effects of research projects.</li>
+  <li>It is also crucial to maintain the infrastructure that supports
+software development and maintenant, such as proper archiving.</li>
+  <li>Many actors can and should support the collective effort and value
+that is software and research: resaerchers, of course, but also
+their institutions, funders, publishers and libraries.</li>
+</ul>
+
+<h1 id="references">References</h1>
+
+<ul>
+  <li><a href="https://ieeexplore.ieee.org/document/8701540">Dealing With Software Collapse</a>. Hinsen K. (2019)</li>
+  <li><a href="https://arxiv.org/abs/2505.06484">10 quick tips for making your software outlive your job</a>. Littauer R
+et al. (2025).</li>
+  <li><a href="https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1011920">For long-term sustainable software in bioinformatics</a>. Coelho
+LP. (2024).</li>
+  <li><a href="https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1005412">Ten simple rules for making research software more robust</a>. Taschuk
+and Wilson (2017).</li>
+  <li><a href="https://hal.science/hal-04930405v1">CODE beyond FAIR</a>. Di Cosmo et al. (2025).</li>
+</ul>
+
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+
+
+        
+          <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> Updated:</strong> <time datetime="2025-10-21T00:00:00+02:00">October 21, 2025</time></p>
+        
+      </footer>
+
+      
+
+      
+  <nav class="pagination">
+    
+      <a href="https://lgatto.github.io/EuroBioc-Barcelona/" class="pagination--pager" title="CBIO’s EuroBioc2025 posters and talks
+">Previous</a>
+    
+    
+      <a href="#" class="pagination--pager disabled">Next</a>
+    
+  </nav>
+
+    </div>
+
+    
+  </article>
+
+  
+  
+    <div class="page__related">
+      
+        <h4 class="page__related-title">You May Also Enjoy</h4>
+      
+      <div class="grid__wrapper">
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+    
+      <div class="archive__item-teaser">
+        <img src=
+          
+            "https://lgatto.github.io/assets/images/slide-code.png"
+          
+          alt="">
+      </div>
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="https://lgatto.github.io/EuroBioc-Barcelona/" rel="permalink">CBIO’s EuroBioc2025 posters and talks
+</a>
+      
+    </h2>
+    
+      <p class="page__meta"><i class="fa fa-clock-o" aria-hidden="true"></i> 
+
+
+
+
+  7 minute read
+</p>
+    
+    <p class="archive__item-excerpt" itemprop="description">Before I forget posting this year’s lab EuroBioc contribution, here
+are the abstract of the work we will present at the EuroBioc2025 in
+Barcelona
+
+</p>
+  </article>
+</div>
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+    
+      <div class="archive__item-teaser">
+        <img src=
+          
+            "https://lgatto.github.io/assets/images/slide-code.png"
+          
+          alt="">
+      </div>
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="https://lgatto.github.io/EuroBioc-Oxford/" rel="permalink">CBIO’s EuroBioc2024 posters and talks
+</a>
+      
+    </h2>
+    
+      <p class="page__meta"><i class="fa fa-clock-o" aria-hidden="true"></i> 
+
+
+
+
+  11 minute read
+</p>
+    
+    <p class="archive__item-excerpt" itemprop="description">The lab is preparing for EuroBioc2025 in
+Barcelona, and I realise that
+I forgot to post our contributions to EuroBioc2024 in
+Oxford. So here they are
+(with p...</p>
+  </article>
+</div>
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+    
+      <div class="archive__item-teaser">
+        <img src=
+          
+            "https://lgatto.github.io/assets/images/slide-code.png"
+          
+          alt="">
+      </div>
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="https://lgatto.github.io/neil-postman-six-question-technology/" rel="permalink">6 Questions We Should Ask Before Adopting a New Technology
+</a>
+      
+    </h2>
+    
+      <p class="page__meta"><i class="fa fa-clock-o" aria-hidden="true"></i> 
+
+
+
+
+  1 minute read
+</p>
+    
+    <p class="archive__item-excerpt" itemprop="description">I stumbled across this
+message
+on mastodon, that directed me to 6 questions what one should ask
+before adopting a new technology. These questions where posed...</p>
+  </article>
+</div>
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+    
+      <div class="archive__item-teaser">
+        <img src=
+          
+            "https://lgatto.github.io/assets/images/slide-code.png"
+          
+          alt="">
+      </div>
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="https://lgatto.github.io/ia-irss/" rel="permalink">On cats, farts and parrots.
+</a>
+      
+    </h2>
+    
+      <p class="page__meta"><i class="fa fa-clock-o" aria-hidden="true"></i> 
+
+
+
+
+  11 minute read
+</p>
+    
+    <p class="archive__item-excerpt" itemprop="description">I was invited to contribute to a
+seminar/discussion
+on AI, and using language models in research. These are the notes I
+prepared my short presentation. I am ...</p>
+  </article>
+</div>
+        
+      </div>
+    </div>
+  
+</div>
+
+    <div class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+
+<!-- end custom footer snippets -->
+        <div class="page__footer-follow">
+  <ul class="social-icons">
+    
+      <li><strong>Follow:</strong></li>
+    
+    
+    
+    
+      <li><a href="http://github.com/lgatto"><i class="fa fa-fw fa-github" aria-hidden="true"></i> GitHub</a></li>
+    
+    
+    <li><a href="https://lgatto.github.io/feed.xml"><i class="fa fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
+  </ul>
+</div>
+
+<div class="page__footer-copyright">&copy; 2025 Laurent Gatto CC-BY. Powered by <a href="http://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+
+      </footer>
+    </div>
+
+    <script src="https://lgatto.github.io/assets/js/main.min.js"></script>
+
+
+
+
+
+  </body>
+</html>

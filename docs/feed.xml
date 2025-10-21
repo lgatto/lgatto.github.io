@@ -1,4 +1,286 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.3">Jekyll</generator><link href="https://lgatto.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://lgatto.github.io/" rel="alternate" type="text/html" /><updated>2025-10-21T08:05:06+02:00</updated><id>https://lgatto.github.io/feed.xml</id><title type="html">~/</title><subtitle>Laurent Gatto&apos;s online home</subtitle><author><name>Laurent Gatto</name></author><entry><title type="html">CBIO’s EuroBioc2025 posters and talks</title><link href="https://lgatto.github.io/EuroBioc-Barcelona/" rel="alternate" type="text/html" title="CBIO’s EuroBioc2025 posters and talks" /><published>2025-09-06T00:00:00+02:00</published><updated>2025-09-06T00:00:00+02:00</updated><id>https://lgatto.github.io/EuroBioc-Barcelona</id><content type="html" xml:base="https://lgatto.github.io/EuroBioc-Barcelona/">&lt;p&gt;Before I forget posting this year’s lab EuroBioc contribution, here
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.3">Jekyll</generator><link href="https://lgatto.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://lgatto.github.io/" rel="alternate" type="text/html" /><updated>2025-10-21T14:35:08+02:00</updated><id>https://lgatto.github.io/feed.xml</id><title type="html">~/</title><subtitle>Laurent Gatto&apos;s online home</subtitle><author><name>Laurent Gatto</name></author><entry><title type="html">Death Research Software</title><link href="https://lgatto.github.io/death-research-software/" rel="alternate" type="text/html" title="Death Research Software" /><published>2025-10-21T00:00:00+02:00</published><updated>2025-10-21T00:00:00+02:00</updated><id>https://lgatto.github.io/death-research-software</id><content type="html" xml:base="https://lgatto.github.io/death-research-software/">&lt;p&gt;This post is a write up of my contribution to the &lt;a href=&quot;https://www.circle-u.eu/events/2025/fast-forward-open-science.html&quot;&gt;Fast forward Open
+Science&lt;/a&gt; event organised by Circle U. I’ll be sharing some thoughts
+about research software maintenance and survival as part of the ‘Open
+Source Codes and Software’ discussion.&lt;/p&gt;
+
+&lt;h1 id=&quot;introduction&quot;&gt;Introduction&lt;/h1&gt;
+
+&lt;p&gt;Reserach software has become an central player in scientific research,
+to the point that it is hard to imagine scientific research without
+software.&lt;/p&gt;
+
+&lt;p&gt;But because of its nature and how it is funded/valued, it can also be
+a &lt;a href=&quot;https://en.wikipedia.org/wiki/Single_point_of_failure&quot;&gt;single point of failure&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h1 id=&quot;setting-the-stage&quot;&gt;Setting the stage&lt;/h1&gt;
+
+&lt;p&gt;Imagine that 6 months ago, you, a brilliant and motivated early career
+researcher in biomedical sciences, defined the ideal experiment to
+answer an important biological question in your domain. After several
+months of hard work and thousands of euros of consumables, you have
+acquired the precious data.&lt;/p&gt;
+
+&lt;p&gt;You have even identified a research paper that tackles a similar
+question using exactly the same technology and type of data. That
+paper describes a data analysis method and published a piece of
+software that are ideally suited to answer your question with your
+data.&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Experimental design + data + software = results
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;You have generated good quality data and found the right
+software.&lt;/p&gt;
+
+&lt;p&gt;Your results are at arm’s length, aren’t they?&lt;/p&gt;
+
+&lt;p&gt;What could go wrong?&lt;/p&gt;
+
+&lt;h1 id=&quot;possible-causes-of-death&quot;&gt;Possible causes of death&lt;/h1&gt;
+
+&lt;p&gt;Sadely, lots of unfortunate events stand in the way of your results:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;The software isn’t available (anymore).&lt;/li&gt;
+  &lt;li&gt;The software is available, but it can’t be installed.&lt;/li&gt;
+  &lt;li&gt;The software can be installed, but it doesn’t work.&lt;/li&gt;
+  &lt;li&gt;The software “works” on test data , but you can’t get it to run on
+your data.&lt;/li&gt;
+  &lt;li&gt;The software “runs” with your data, but the results don’t make any
+sense.&lt;/li&gt;
+  &lt;li&gt;…&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;software-collapse&quot;&gt;Software collapse&lt;/h1&gt;
+
+&lt;h2 id=&quot;the-software-doesnt-work&quot;&gt;The software doesn’t work&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;Software collapse (or software rot) is the fact that software will
+stop working at some point if is not &lt;strong&gt;actively maintained&lt;/strong&gt;. Collapse
+can be the results of bugs, accidental changes or voluntary breaking
+changes (i.e. that don’t guarantee backward compatibility) in the
+software itself, changes in software (and service) depedendencies,
+…&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Or simply disappearance of the software (or more generally, the page
+where it was available), or the lack of responses when originally
+available on request only.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Or maybe that the “software” was never meant to last beyond that one
+use case/paper. In such cases, it should have clearly been labelled
+as a protoype, not a tool/software can other can reuse.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;or-the-software-works-but&quot;&gt;Or the software &lt;em&gt;works&lt;/em&gt; but&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;There is no example data, and it’s not clear what the input should
+look like.&lt;/li&gt;
+  &lt;li&gt;There is no documentation - the software works (with the
+example/test data or with yours), but the commands and/or output
+don’t make any sense.&lt;/li&gt;
+  &lt;li&gt;Even though the software (correctly?) runs, the lack of
+documentation or its inadequacy make it too difficult to use.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;making-software-survive-longer&quot;&gt;Making software survive longer&lt;/h1&gt;
+
+&lt;p&gt;There exist many steps that one can take to minimise the risks
+described above. These steps are technical to write better, and more
+maintainable software, or non-technical, to grow and foster a
+community and support around the software. These opportunities aren’t
+presented in any order of importance. Different situations and
+constrains will define what is possible in terms of possibilities.&lt;/p&gt;
+
+&lt;p&gt;If there’s one thing to take away, it is not to stay alone in the
+development and maintenance of a piece of software, especially for
+junior researchers/developers.&lt;/p&gt;
+
+&lt;h2 id=&quot;administration&quot;&gt;Administration&lt;/h2&gt;
+
+&lt;p&gt;Stay withing the law, which includes any legal constrains or
+limitations, intellectual property, author- and copyrights, funding
+obligations, licencing, academia vs industry, policies and
+regulations, … Stay informed and identify allies that have the
+required experience.&lt;/p&gt;
+
+&lt;p&gt;If possible, make your software widerly available under an open source
+licenses increase usage, contributions, and visibility (see below).&lt;/p&gt;
+
+&lt;h2 id=&quot;open-source-development&quot;&gt;Open source development&lt;/h2&gt;
+
+&lt;p&gt;Choose an &lt;a href=&quot;https://opensource.org/licenses&quot;&gt;open source&lt;/a&gt; license to &lt;strong&gt;publish&lt;/strong&gt; your software (ideally as a
+piece of software and as a research paper) and &lt;strong&gt;archive&lt;/strong&gt; (&lt;a href=&quot;https://zenodo.org/&quot;&gt;Zenodo&lt;/a&gt;,
+&lt;a href=&quot;https://www.softwareheritage.org/&quot;&gt;Software Heritage&lt;/a&gt;, …) it.&lt;/p&gt;
+
+&lt;p&gt;Making your software known allows to foster a collaborative
+environment and a user and (co-)developer community around your
+software. To facilitate this, consider having a code of conduct,
+onboarding documents, contribution guides, and support forum for
+users, … This is particularly relevant if your software is itself
+part of a larger ecosystem, and it is possible to adopt or adapt what
+is already available in that software ecosystem.&lt;/p&gt;
+
+&lt;h2 id=&quot;development&quot;&gt;Development&lt;/h2&gt;
+
+&lt;p&gt;Good software development is paramount to minimse software
+collapse. But everybody starts at some point, and sharing code is a
+good way to move towards the next steps. Even if one feels that the
+code isn’t ready for prime time because of lack of ‘formal’ training
+(many lack it and still become respected developers and contributors),
+it is much better in the short and long run to share code.&lt;/p&gt;
+
+&lt;p&gt;Here are some tips:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Implement modularity to deal for instance with software collapse. It
+is much easier to maintain and extend small independent components
+rather than a large monolithic code base.&lt;/li&gt;
+  &lt;li&gt;Do learn and follow best practice when in comes to research software
+development. These include automation and manual tasks, unit and
+integration testing, version control, software versioning,
+… Finding a well meaning community will help with this.&lt;/li&gt;
+  &lt;li&gt;Don’t reinvent the wheel, and try re-use existing and robust
+infrastructure when possible/available - stand on the shoulders of
+giants. But beware of fragile dependencies, even though this is
+difficult without the experience.&lt;/li&gt;
+  &lt;li&gt;Document you code and you software. Forget the silly myth that real
+developers focus on writing code and not documenting it - that
+certainly holds for bad developers. Writing documentation forces to
+put oneself in the position of a user, which is very often
+enlightening on the usability of what is produced. There are many
+types of documentations: manuals, tutorials, example data,
+installation, user and developer guides, slides, videos, web page,
+… There’s no need to have all of them - focus on a few high
+quality ones.&lt;/li&gt;
+  &lt;li&gt;Focus on traceability and reproducibility when analysing data and
+developing software to do so. Without traceability and
+reproducibility, there’s no science, only anectodal evidence, at
+best.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;software-life-cycle&quot;&gt;Software life cycle&lt;/h2&gt;
+
+&lt;p&gt;This is a point of particular interest to more senior developers and
+PIs. There’s pressure to produce new features and software, but
+planning beyond is important.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Think of your software’s life cycle: maintenance, new features (if
+possible), new developers, …&lt;/li&gt;
+  &lt;li&gt;Plan for sunsetting you software. Consider ending, pausing, or
+handing off.&lt;/li&gt;
+  &lt;li&gt;Also consider distaster planning, when funding suddenly gets cut
+off: make a thread model considering social, financial and technical
+vulnerabilities.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;community&quot;&gt;Community&lt;/h2&gt;
+
+&lt;p&gt;Consider user and developer communities:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Maintain your software, answer questions, accept contribution,
+credit contributors, … make you software findable, citable (DOI),
+and re-usable.&lt;/li&gt;
+  &lt;li&gt;Announce your software, promote it (on social media, mailing lists,
+forums, …) and through more formal academic publications (think of
+the different audiences), conference presentations, posters and
+workshops.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Building a community and addressing its needs is also time
+consuming. There is some responsability that comes with release a tool
+that is meant to be used by others. If one isn’t prepared (or able) to
+consider this investment, it might be better to release a prototype.&lt;/p&gt;
+
+&lt;h2 id=&quot;users&quot;&gt;Use(rs)&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;The best way to produce software that is used and useful is to ‘eat
+your own dog food’ - use the sofware you develop, to assess, in real
+time, the usability and relevant of software.&lt;/li&gt;
+  &lt;li&gt;Produce software that users can install and use - avoid root/admin
+priviledges.&lt;/li&gt;
+  &lt;li&gt;Make it (easy to) run on other’s computer (no hard coded paths,
+…). “It runs on my computer” is irrelevant.&lt;/li&gt;
+  &lt;li&gt;Be explicit on the code: are you publishing one-off analysis scripts
+or prototpyes without any gurantees, scripts supporting results that
+come some some guarantees/efforts to be reproduces, or tool/software
+for wider consumption?&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;training&quot;&gt;Training&lt;/h2&gt;
+
+&lt;p&gt;Appropriate training in data analysis, data management, and software
+developement/usage is absolutely essentiel. (Some of) these should be
+delivered early, and indeally as part of the university curriculum to
+students that train in a software-heavy field (all STEM).&lt;/p&gt;
+
+&lt;p&gt;Here are some well-known examples:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://carpentries.org/&quot;&gt;The Carpentries&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1012925&quot;&gt;Learning and teaching in the Bioconductor community&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://training.galaxyproject.org/training-material/&quot;&gt;Galaxy training&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://elixir-europe.org/platforms/training&quot;&gt;ELIXIR training platform&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;incentives-and-funding&quot;&gt;Incentives and funding&lt;/h2&gt;
+
+&lt;p&gt;It is important to recognise of the role of those that develope and
+maintain software, often called research software engineers, and offer
+them a (stable) career paths.&lt;/p&gt;
+
+&lt;p&gt;Decicated funding for sofware are rare, but they do exist: &lt;a href=&quot;https://www.software.ac.uk/programmes/research-software-maintenance-fund&quot;&gt;Software
+Sustainability Institute Research Software Maintenance Fund&lt;/a&gt; (UK),
+CZI’s &lt;a href=&quot;https://chanzuckerberg.com/eoss/&quot;&gt;Essential Open Source Software for Science&lt;/a&gt;, …&lt;/p&gt;
+
+&lt;h1 id=&quot;conclusions&quot;&gt;Conclusions&lt;/h1&gt;
+
+&lt;p&gt;Your results are only as good as the method and the software you
+use. Without decent software, there’s hardly any trustworthy science.&lt;/p&gt;
+
+&lt;p&gt;This means that we need to offer the opportunities and support for
+developers to develop, release and maintain “good enough”
+software. Collectively, we can:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Offer training to researchers who write code or develope software,
+but haven’t had any training. These can within an official
+curriculum, or workshops such as those cited above.&lt;/li&gt;
+  &lt;li&gt;If researchers offer ways to cite their code/software, let’s give
+them credit for their work.&lt;/li&gt;
+  &lt;li&gt;Ideally, there should be well defined career paths for researchers
+whose main tasks centre around software. In many countries, research
+software engineers are emerging or are already established.&lt;/li&gt;
+  &lt;li&gt;Being able to fund software development and maintenance is
+essential. Currently, too much software is developed as explicit or
+implicit side effects of research projects.&lt;/li&gt;
+  &lt;li&gt;It is also crucial to maintain the infrastructure that supports
+software development and maintenant, such as proper archiving.&lt;/li&gt;
+  &lt;li&gt;Many actors can and should support the collective effort and value
+that is software and research: resaerchers, of course, but also
+their institutions, funders, publishers and libraries.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;references&quot;&gt;References&lt;/h1&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://ieeexplore.ieee.org/document/8701540&quot;&gt;Dealing With Software Collapse&lt;/a&gt;. Hinsen K. (2019)&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://arxiv.org/abs/2505.06484&quot;&gt;10 quick tips for making your software outlive your job&lt;/a&gt;. Littauer R
+et al. (2025).&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1011920&quot;&gt;For long-term sustainable software in bioinformatics&lt;/a&gt;. Coelho
+LP. (2024).&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1005412&quot;&gt;Ten simple rules for making research software more robust&lt;/a&gt;. Taschuk
+and Wilson (2017).&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://hal.science/hal-04930405v1&quot;&gt;CODE beyond FAIR&lt;/a&gt;. Di Cosmo et al. (2025).&lt;/li&gt;
+&lt;/ul&gt;</content><author><name>Laurent Gatto</name></author><summary type="html">This post is a write up of my contribution to the Fast forward Open Science event organised by Circle U. I’ll be sharing some thoughts about research software maintenance and survival as part of the ‘Open Source Codes and Software’ discussion.</summary></entry><entry><title type="html">CBIO’s EuroBioc2025 posters and talks</title><link href="https://lgatto.github.io/EuroBioc-Barcelona/" rel="alternate" type="text/html" title="CBIO’s EuroBioc2025 posters and talks" /><published>2025-09-06T00:00:00+02:00</published><updated>2025-09-06T00:00:00+02:00</updated><id>https://lgatto.github.io/EuroBioc-Barcelona</id><content type="html" xml:base="https://lgatto.github.io/EuroBioc-Barcelona/">&lt;p&gt;Before I forget posting this year’s lab EuroBioc contribution, here
 are the abstract of the work we will present at the &lt;a href=&quot;https://eurobioc2025.bioconductor.org/&quot;&gt;EuroBioc2025 in
 Barcelona&lt;/a&gt;&lt;/p&gt;
 
@@ -1516,389 +1798,4 @@ plan, all messages from public channels get exported. This, and a
 bot user OAuth token is all they need. &lt;a href=&quot;#fnref:fn&quot; class=&quot;reversefootnote&quot; role=&quot;doc-backlink&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
     &lt;/li&gt;
   &lt;/ol&gt;
-&lt;/div&gt;</content><author><name>Laurent Gatto</name></author><category term="CBIO" /><category term="communication" /><summary type="html">I have been using slack for a rather long time as a discussion platform for the lab, even before moving to Belgium. Based on the access log, I set up the lab slack workspace in June 2016. It has proven very useful, even with the more recent limitations that come with the free slack plan. I have been thinking for some time that I should move to an open source offering. Based on a little bit of reading (here and here) and asking on social media, there were a couple of contenders: Mattermost, element.io, rocket.chat and Zulip.</summary></entry><entry><title type="html">CBIO’s EuroBioc2023 posters and talks</title><link href="https://lgatto.github.io/EuroBioc-Ghent/" rel="alternate" type="text/html" title="CBIO’s EuroBioc2023 posters and talks" /><published>2023-10-20T00:00:00+02:00</published><updated>2023-10-20T00:00:00+02:00</updated><id>https://lgatto.github.io/EuroBioc-Ghent</id><content type="html" xml:base="https://lgatto.github.io/EuroBioc-Ghent/">&lt;p&gt;Long overdue now, but here are the &lt;a href=&quot;https://lgatto.github.io/cbio-lab/&quot;&gt;CBIO
-lab&lt;/a&gt;’s contributions to the
-&lt;a href=&quot;https://eurobioc2023.bioconductor.org/&quot;&gt;EuroBioc2023&lt;/a&gt; conference that
-was organised on Ghent, on the 20 - 22 September 2023.&lt;/p&gt;
-
-&lt;h2 id=&quot;poster-a-reliable-and-reproducible-resource-for-ct-genes&quot;&gt;Poster: A reliable and reproducible resource for CT genes&lt;/h2&gt;
-
-&lt;p&gt;Julie Devis, Axelle Loriot, Charles De Smet and Laurent Gatto&lt;/p&gt;
-
-&lt;p&gt;Cancer-Testis (CT) genes are tissue-specific genes whose expression is
-limited to the germline. They are normally repressed in somatic
-tissues, but can be aberrantly activated in tumors. For many CT genes,
-tumoral activation is enabled by loss of promoter DNA methylation. CT
-genes are of great interest. First, they have clinical potential as
-cancer-specific antigens, and can thus be used as target for cancer
-immunotherapy and as cancer biomarkers. Second, they are also a good
-model to study DNA demethylation in cancer, which is still poorly
-understood.&lt;/p&gt;
-
-&lt;p&gt;The definition of CT genes differs vastly according to the literature
-source. Some databases already exist [1,2,3] but they are neither
-up-to-date nor well annotated, and thus difficult to use. There is
-therefore a need for a reliable and reproducible resource when
-studying CT genes. We therefor created CTexploreR, a package that
-rigorously defines and explores CT genes. Our main objective was to
-propose a reliable and well-defined list of CT genes based on publicly
-available RNAseq databases.  We also determined their precise
-transcription start site in order to be able to realise an accurate
-promoter methylation analysis. Our list contains 307 CT genes that
-were carefully classified as regulated by DNA methylation or not. We
-also developed functions to visualise CT genes expression and promoter
-DNA methylation in normal and tumoral tissues.&lt;/p&gt;
-
-&lt;p&gt;We also performed a thorough comparison of CTexploreR with the
-available resources mentioned above. It allowed us to clearly
-establish and characterise the difference between CT lists and clarify
-the origins of the inconsistencies. These analyses demonstrate that
-CTexploreR is a clear, curated and rigorously established up-to-date
-reference. Our package can thus be used as the starting point for
-further investigations.&lt;/p&gt;
-
-&lt;p&gt;[1] Almeida, L. G., Sakabe, N. J., deOliveira, A. R., Silva, M. C. C.,
-    Mundstein, A. S., Cohen, T., Chen, Y.-T., Chua, R., Gurung, S.,
-    Gnjatic, S., Jungbluth, A. A., Caballero, O. L., Bairoch, A.,
-    Kiesler, E., White, S. L., Simpson, A. J. G., Old, L. J., Camargo,
-    A. A., &amp;amp; Vasconcelos, A. T. R. (2009). CTdatabase: a
-    knowledge-base of high-throughput and curated data on
-    cancer-testis antigens. Nucleic Acids Research, 37(Database
-    issue), D816-9.&lt;/p&gt;
-
-&lt;p&gt;[2] Jamin, S. P., Hikmet, F., Mathieu, R., Jégou, B., Lindskog, C.,
-    Chalmel, F., &amp;amp; Primig, M. (2021). Combined RNA/tissue profiling
-    identifies novel Cancer/testis genes. Molecular Oncology, 15(11),
-    3003–3023.&lt;/p&gt;
-
-&lt;p&gt;[3] Wang, C., Gu, Y., Zhang, K., Xie, K., Zhu, M., Dai, N., Jiang, Y.,
-    Guo, X., Liu, M., Dai, J., Wu, L., Jin, G., Ma, H., Jiang, T.,
-    Yin, R., Xia, Y., Liu, L., Wang, S., Shen, B., … Hu,
-    Z. (2016). Systematic identification of genes with a cancer-testis
-    expression pattern in 19 cancer types. Nature Communications, 7,
-    10499.&lt;/p&gt;
-
-&lt;h2 id=&quot;workshop-cytopipeline-building-and-visualizing-automated-pre-processing-and-quality-control-pipelines-for-flow-cytometry-data&quot;&gt;Workshop: CytoPipeline: Building and visualizing automated pre-processing and quality control pipelines for flow cytometry data&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://github.com/phauchamps/CytoPipeline_BiocWS&quot;&gt;Workshop repo&lt;/a&gt; and
-&lt;a href=&quot;https://www.biorxiv.org/content/10.1101/2023.10.10.561699v1&quot;&gt;pre-print&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;Philippe Hauchamps, Dan Lin and Laurent Gatto&lt;/p&gt;
-
-&lt;p&gt;With the increase of the dimensionality in conventional flow cytometry
-data over the past years, there is a growing need to replace or
-complement traditional manual analysis (i.e. iterative 2D gating) with
-automated data analysis pipelines. Examples of such pipelines have
-been documented in the recent literature (e.g. [1],[2],[3]). A crucial
-part of these pipelines consists of pre-processing and applying
-quality control filtering to the raw data, in order to use high
-quality events in the downstream statistical analysis. This part can
-in turn be split into a number of elementary steps : margin events
-removal, signal compensation, scale transformations, debris and dead
-cells removal, batch effect correction,… etc.&lt;/p&gt;
-
-&lt;p&gt;However, when designing automated flow cytometry data analysis
-pipelines, assembling and assessing the pre-processing part can be
-challenging for a number of reasons. First, each of the involved
-elementary steps can be implemented using various methods and R
-packages. Second, the order of the steps can have an impact on the
-downstream analysis results. Finally, each method typically comes with
-its specific, unstandardized diagnostic and visualizations, making
-objective comparison difficult for the end user.&lt;/p&gt;
-
-&lt;p&gt;Here, we present CytoPipeline, an R package suite for building,
-assessing and comparing pre-processing pipelines for flow cytometry
-data. To exemplify our tool, we present the steps involved in
-designing a pre-processing pipeline on a real life dataset and
-demonstrate the visualization utilities. We also show how CytoPipeline
-can nicely complement benchmarking tools, like e.g. PipeComp [4], by
-providing user intuitive insight into benchmarking results.&lt;/p&gt;
-
-&lt;p&gt;[1] Quintelier, Katrien, Artuur Couckuyt, Annelies Emmaneel, Joachim
-    Aerts, Yvan Saeys, and Sofie Van Gassen. 2021. “Analyzing
-    High-Dimensional Cytometry Data Using FlowSOM.” Nature Protocols
-    16 (8): 3775–3801.&lt;/p&gt;
-
-&lt;p&gt;[2] Ashhurst, Thomas Myles, Felix Marsh-Wakefield, Givanna Haryono
-    Putri, Alanna Gabrielle Spiteri, Diana Shinko, Mark Norman Read,
-    Adrian Lloyd Smith, and Nicholas Jonathan Cole
-    King. 2021. “Integration, Exploration, and Analysis of
-    High-Dimensional Single-Cell Cytometry Data Using Spectre.”
-    Cytometry. Part A: The Journal of the International Society for
-    Analytical Cytology, no. cyto.a.24350
-    (April). https://doi.org/10.1002/cyto.a.24350.&lt;/p&gt;
-
-&lt;p&gt;[3] Nowicka, Malgorzata, Carsten Krieg, Helena L. Crowell, Lukas
-    M. Weber, Felix J. Hartmann, Silvia Guglietta, Burkhard Becher,
-    Mitchell P. Levesque, and Mark D. Robinson. 2017. “CyTOF Workflow:
-    Differential Discovery in High-Throughput High-Dimensional
-    Cytometry Datasets.” F1000Research 6 (May): 748.&lt;/p&gt;
-
-&lt;p&gt;[4] Germain, Pierre-Luc, Anthony Sonrel, and Mark
-    D. Robinson. 2020. “pipeComp, a General Framework for the
-    Evaluation of Computational Pipelines, Reveals Performant Single
-    Cell RNA-Seq Preprocessing Tools.” Genome Biology 21 (1): 227.&lt;/p&gt;
-
-&lt;h2 id=&quot;poster-fmsne---fast-multi-scale-neighbour-embedding-in-r&quot;&gt;Poster: &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;fmsne&lt;/code&gt; - fast multi-scale neighbour embedding in R&lt;/h2&gt;
-
-&lt;p&gt;Laurent Gatto and Cyril de Bodt&lt;/p&gt;
-
-&lt;p&gt;Dimensionality reduction (DR) has been a workhorse of large scale,
-multivariate omics data analysis from the early days. Since the advent
-of single-cell RNA sequencing, non-linear approaches have taken the
-front stage, with t-distributed stochastic neighbour embedding (t-SNE)
-[1,2] being one of, if not the main player. Packages such as &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Rtsne&lt;/code&gt;
-[3] and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;scater&lt;/code&gt; [4] have made it easy to apply t-SNE in
-R/Bioconductor workflows.&lt;/p&gt;
-
-&lt;p&gt;One sticking point with t-SNE is the single perplexity parameter, that
-controls the number of nearest high-dimensional (HD) neighbours that
-are taken into account when constructing the low-dimensional (LD)
-embedding: small (resp. large) values only enable preserving small
-(resp. large) neighbourhoods from HD to LD during DR, impairing the
-reproduction of large (resp. small) neighbourhoods. It is thus a key
-parameter, especially if the LD embedding is used for interpretation,
-which is often the case in omics-based applications.&lt;/p&gt;
-
-&lt;p&gt;Multi-scale neighbour embedding [5] is an extension to single-scale
-approaches such as t-SNE, that exempt users from having to set a
-single perplexity (scale) arbitrarily. Multi-scale approaches maximise
-the LD embedding quality at all scales, preserving both local and
-global HD neighbourhoods [6]. They have been shown to better capture
-the structure of data and to significantly improve DR quality [7].&lt;/p&gt;
-
-&lt;p&gt;Here, we present &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;fmsne&lt;/code&gt; (https://github.com/lgatto/fmsne), an R
-package that relies on the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;basiliks&lt;/code&gt; package [8] to provide
-Bioconductor-friendly interface to fast multi-scale methods
-implemented in python. &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;fmsne&lt;/code&gt; implements fast multi-scale functions
-such as &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;runFMSTSNE()&lt;/code&gt; and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;plotFMSTSNE()&lt;/code&gt;, based on scater’s
-&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;scater::run*()&lt;/code&gt; and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;scater::plot*()&lt;/code&gt; interface [4]. It also exposes
-the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;drQuality()&lt;/code&gt; function to assess DR quality using rank-based
-criteria [7]. Finally, we illustrate fast multi-scale methods on
-various single-cell datasets.&lt;/p&gt;
-
-&lt;p&gt;[1] van der Maaten, L., &amp;amp; Hinton, G. (2008). Visualizing data using
-    t-SNE. &lt;em&gt;Journal of Machine Learning Research&lt;/em&gt;, 9(Nov), 2579-2605.&lt;/p&gt;
-
-&lt;p&gt;[2] van der Maaten, L. (2014). Accelerating t-SNE using tree-based
-    algorithms. &lt;em&gt;Journal of Machine Learning Research&lt;/em&gt;, 15(1),
-    3221-3245.&lt;/p&gt;
-
-&lt;p&gt;[3] Jesse H. Krijthe (2015). Rtsne: T-Distributed Stochastic Neighbor
-    Embedding using a Barnes-Hut Implementation, URL:
-    https://github.com/jkrijthe/Rtsne&lt;/p&gt;
-
-&lt;p&gt;[4] McCarthy DJ, Campbell KR, Lun ATL, Willis QF (2017). Scater:
-    pre-processing, quality control, normalisation and visualisation
-    of single-cell RNA-seq data in R. &lt;em&gt;Bioinformatics&lt;/em&gt;, 33,
-    1179-1186. doi:10.1093/bioinformatics/btw777&lt;/p&gt;
-
-&lt;p&gt;[5] C. de Bodt, D. Mulders, M. Verleysen and J. A. Lee, “Fast
-    Multiscale Neighbor Embedding,” in &lt;em&gt;IEEE Transactions on Neural
-    Networks and Learning Systems&lt;/em&gt;, 2020, doi:
-    10.1109/TNNLS.2020.3042807.&lt;/p&gt;
-
-&lt;p&gt;[6] Lee, J. A., Peluffo-Ordóñez, D. H., &amp;amp; Verleysen,
-    M. (2015). Multi-scale similarities in stochastic neighbour
-    embedding: Reducing dimensionality while preserving both local and
-    global structure. &lt;em&gt;Neurocomputing&lt;/em&gt;, 169, 246-261.&lt;/p&gt;
-
-&lt;p&gt;[7] Lee, J. A., &amp;amp; Verleysen, M. (2009). Quality assessment of
-    dimensionality reduction: Rank-based criteria. &lt;em&gt;Neurocomputing&lt;/em&gt;,
-    72(7-9), 1431-1443.&lt;/p&gt;
-
-&lt;p&gt;[8] Lun ATL (2022). basilisk: a Bioconductor package for managing
-    Python environments. &lt;em&gt;Journal of Open Source Software&lt;/em&gt;,
-    7, 4742. doi:10.21105/joss.04742.&lt;/p&gt;
-
-&lt;h2 id=&quot;talk-linear-models-for-single-cell-proteomics&quot;&gt;Talk: Linear models for single-cell proteomics&lt;/h2&gt;
-
-&lt;p&gt;Christophe Vanderaa and Laurent Gatto&lt;/p&gt;
-
-&lt;p&gt;Mass spectrometry (MS)-based single-cell proteomics (SCP) has become a
-credible player in the single-cell biology arena [1,2]. Continuous
-technical improvements have pushed the boundaries of sensitivity and
-throughput. However, the computational efforts to support the analysis
-of these complex data have been missing. Strong batch effects coupled
-to high proportions of missing values complicate the analysis, causing
-strong entanglement between biological and technical variability
-[3,4].&lt;/p&gt;
-
-&lt;p&gt;We propose a simple, yet powerful approach to address this need:
-linear models. We use linear regression to model and remove undesired
-technical factors while retaining the biological variability, even in
-the presence of high proportions of missing values. The key advantage
-of linear models lies in the interpretability of the results they
-generate. Inspired by previous research [5], we streamlined modelling
-and exploration of the patterns induced by known technical and
-biological factors. The exploration enables a thorough assessment of
-the model coefficients, and highlights key factors influencing
-SCP experiments. Further exploration of the unmodelled variance
-recovers unknown but biologically relevant patterns in the data,
-leveraging the power of single-cell proteomics technologies. We
-successfully applied our approach to a diverse collection of SCP
-datasets [6], and could demonstrate that it is also amenable for
-integrating datasets acquired using different technologies.&lt;/p&gt;
-
-&lt;p&gt;We implemented and documented this approach in our Bioconductor
-package scp [7]. In summary, our approach represents a turning point
-for principled SCP data analysis, moving the tension point from how to
-perform the analysis to result generation and interpretation.&lt;/p&gt;
-
-&lt;p&gt;[1] “Single-Cell Proteomics: Challenges and Prospects.” 2023. Nature
-    Methods 20 (3): 317–18.&lt;/p&gt;
-
-&lt;p&gt;[2] Bennett HM, Stephenson W, Rose CM, and Darmanis S. 2023.
-    “Single-Cell Proteomics Enabled by next-Generation Sequencing or
-    Mass Spectrometry.” Nature Methods, March.&lt;/p&gt;
-
-&lt;p&gt;[3] Vanderaa C, and Gatto L. 2021. “Replication of Single-Cell
-    Proteomics Data Reveals Important Computational Challenges.”
-    Expert Review of Proteomics, October, 1–9.&lt;/p&gt;
-
-&lt;p&gt;[4] Vanderaa C, and Gatto L. 2023. “The Current State of Single-Cell
-    Proteomics Data Analysis.” Current Protocols 3 (1): e658.&lt;/p&gt;
-
-&lt;p&gt;[5] Thiel M, Féraud B, Govaerts B. 2017. “ASCA+ and APCA+: Extensions
-    of ASCA and APCA in the Analysis of Unbalanced Multifactorial
-    Designs.” Journal of Chemometrics 31 (6): e2895.&lt;/p&gt;
-
-&lt;p&gt;[6] Vanderaa C, and Gatto L.. scpdata: Single-Cell Proteomics Data
-    Package. R package verison 1.6.0,
-    &lt;a href=&quot;https://bioconductor.org/packages/release/data/experiment/html/scpdata.html&quot;&gt;https://bioconductor.org/packages/release/data/experiment/html/scpdata.html&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;[7] Vanderaa C, and Gatto L.. scp: Mass Spectrometry-Based Single-Cell
-    Proteomics Data Analysis. R package version 1.8.0,
-    &lt;a href=&quot;https://bioconductor.org/packages/release/bioc/html/scp.html&quot;&gt;https://bioconductor.org/packages/release/bioc/html/scp.html&lt;/a&gt;.&lt;/p&gt;
-
-&lt;h2 id=&quot;workshop-spectra----an-expandable-infrastructure-to-handle-mass-spectrometry-data&quot;&gt;Workshop: &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Spectra&lt;/code&gt; -  an expandable infrastructure to handle mass spectrometry data&lt;/h2&gt;
-
-&lt;p&gt;Johannes Rainer, Sebastian Gibb, Laurent Gatto&lt;/p&gt;
-
-&lt;p&gt;Mass spectrometry (MS) data is a key technology in modern metabolomics and
-proteomics experiments. Continuous improvements in MS instrumentation, larger
-experiments and new technological developments lead to ever growing data sizes
-and increased number of available variables making &lt;em&gt;standard&lt;/em&gt; in-memory data
-handling and processing difficult.&lt;/p&gt;
-
-&lt;p&gt;The &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Spectra&lt;/code&gt; package provides a modern infrastructure for MS data handling
-specifically designed to enable extension to additional data resources or
-alternative data representations. These can be realized by extending the virtual
-&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;MsBackend&lt;/code&gt; class and its related methods. Implementations of such &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;MsBackend&lt;/code&gt;
-classes can be tailored for specific needs, such as low memory footprint, fast
-processing, remote data access, or also support for specific additional data
-types or variables. Importantly, data processing of &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Spectra&lt;/code&gt; objects is
-independent of the backend in use due to a &lt;em&gt;lazy evaluation&lt;/em&gt; mechanism that
-caches data manipulations internally.&lt;/p&gt;
-
-&lt;p&gt;This workshop discusses different available data representations for MS data
-along with their properties, advantages and performances. In addition,
-&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Spectra&lt;/code&gt;’s concept of lazy evaluation for data manipulations is presented, as
-well as a simple caching mechanism for data modifications. Finally, it explains
-how new &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;MsBackend&lt;/code&gt; instances can be implemented and tested to ensure
-compliance.&lt;/p&gt;
-
-&lt;h2 id=&quot;workshop-the-r-for-mass-spectrometry-initiative---from-raw-data-to-identifications-and-quantitative-proteomics-data-analysis&quot;&gt;Workshop: The R for Mass Spectrometry initiative - from raw data to identifications and quantitative proteomics data analysis&lt;/h2&gt;
-
-&lt;p&gt;Laurent Gatto, Sebastien Gibb and Johannes Rainer&lt;/p&gt;
-
-&lt;p&gt;The aim of the RforMassSpectrometry initiative
-(https://www.rformassspectrometry.org/) is to provide efficient,
-thoroughly documented, tested and flexible R software for the analysis
-and interpretation of high throughput mass spectrometry assays. In
-this software demo, we will demonstrate three software packages that
-are central for proteomics data analysis.&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;The Spectra package [1], that defines an efficient infrastructure
-for storing and handling mass spectrometry spectra and functionality
-to subset, process, visualise and compare spectra data.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;The PSMatch package [2] allows to load, process and analyse
-peptide-spectrum matches, and can, among others, explore and
-deconvolute the peptide-protein (group) relations using adjacency
-matrices and connected components.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;The QFeatures package [3] provides infrastructure to management and
-process quantitative features for high-throughput mass spectrometry
-assay, in particular so across assay levels (such as precursors,
-peptide spectrum matches, peptides and proteins or protein groups)
-in a coherent and tractable format.&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;We will conclude by illustrating how the MsExperiment package [5] can
-be used to bundle these three types of data together.&lt;/p&gt;
-
-&lt;p&gt;[1] Gatto L et al. (2023). &lt;em&gt;Spectra Infrastructure for Mass
-    Spectrometry Data&lt;/em&gt;, R package version
-    1.9.15. &lt;a href=&quot;https://rformassspectrometry.github.io/Spectra/&quot;&gt;https://rformassspectrometry.github.io/Spectra/&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;[2] Gatto L, Rainer J, Gibb S (2023). &lt;em&gt;PSMatch: Handling and Managing
-    Peptide Spectrum Matches&lt;/em&gt;. R package version 1.3.3,
-    &lt;a href=&quot;https://github.com/RforMassSpectrometry/PSM&quot;&gt;https://github.com/RforMassSpectrometry/PSM&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;[3] Gatto L, Vanderaa C (2023). &lt;em&gt;QFeatures: Quantitative features for
-    mass spectrometry data&lt;/em&gt;. R package version 1.9.3,
-    &lt;a href=&quot;https://github.com/RforMassSpectrometry/QFeatures&quot;&gt;https://github.com/RforMassSpectrometry/QFeatures&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;[4] Gatto L, Rainer J, Gibb S (2022). &lt;em&gt;MsExperiment: Infrastructure
-    for Mass Spectrometry Experiments&lt;/em&gt;. R package version 1.0.0,
-    &lt;a href=&quot;https://github.com/RforMassSpectrometry/MsExperiment&quot;&gt;https://github.com/RforMassSpectrometry/MsExperiment&lt;/a&gt;.&lt;/p&gt;
-
-&lt;h2 id=&quot;poster-a-mixed-cell-control-design-to-assess-data-processing-in-single-cell-proteomics&quot;&gt;Poster: A mixed-cell control design to assess data processing in single-cell proteomics&lt;/h2&gt;
-
-&lt;p&gt;Samuel Grégoire, Sébastien Pyr dit Ruys, Christophe Vanderaa, Didier Vertommen and Laurent Gatto&lt;/p&gt;
-
-&lt;p&gt;Single-cell proteomics (SCP) aims at studying cellular heterogeneity
-by focusing on the functional effectors of the cells, proteins. While
-this is essential to identify cells undergoing subtle processes and
-point out underlying relevant protein and proteoform abundance
-patterns, assessing protein content inside a single cell is
-challenging.&lt;/p&gt;
-
-&lt;p&gt;Thanks to recent breakthroughs in mass spectrometry and sample
-processing, it has become possible to increase the depth of proteome
-covered, reduce the time needed to analyse a cell and make this
-technology more accessible [1].&lt;/p&gt;
-
-&lt;p&gt;However, extracting meaningful biological information from this type
-of data requires robust and suitable data analysis methods. Progress
-in this field is tempered by the lack of standardised
-workflows. Currently, data analysis workflows are custom made and
-substantially different from one research team to another
-[2]. Moreover, it is difficult to evaluate specific steps or entire
-pipelines as ground truths are missing. In an effort to bridge the gap
-towards the standardisation of SCP data analysis, our team has
-developed the scp package [3] relying on the QFeatures and
-SingleCellExperiment infrastructures to provide a standardised
-framework for SCP data analysis. In addition, we produced our own SCP
-datasets to constitute a basis for data analysis benchmarking. To this
-end, we used a design containing cell lines mixed in known proportions
-to generate controlled variability [4].&lt;/p&gt;
-
-&lt;p&gt;In this work, we used the scp package to test different combinations
-of data processing steps and evaluated them using our ground truth
-data. We illustrate how we benefited from this modular, standardised
-framework and highlight some crucial steps.&lt;/p&gt;
-
-&lt;p&gt;[1] Slavov, Nikolai. Scaling Up Single-Cell Proteomics. Molecular &amp;amp;
-    Cellular Proteomics 21, no 1 (2022): 100179.
-    https://doi.org/10.1016/j.mcpro.2021.100179.&lt;/p&gt;
-
-&lt;p&gt;[2] Vanderaa, Christophe, and Laurent Gatto. 2023. The Current State
-    of Single-Cell Proteomics Data Analysis. Current Protocols 3 (1):
-    e658. https://doi.org/10.1002/cpz1.658&lt;/p&gt;
-
-&lt;p&gt;[3] Vanderaa Christophe and Laurent Gatto. Replication of Single-Cell
-    Proteomics Data Reveals Important Computational Challenges.
-    Expert Review of Proteomics, 1–9
-    (2021). https://doi.org/10.1080/14789450.2021.1988571&lt;/p&gt;
-
-&lt;p&gt;[4] Tian, L., Dong, X., Freytag, S. et al. Benchmarking single cell
-    RNA-sequencing analysis pipelines using mixture control
-    experiments.  Nat Methods 16, 479–487
-    (2019). https://doi.org/10.1038/s41592-019-0425&lt;/p&gt;</content><author><name>Laurent Gatto</name></author><category term="conference" /><category term="software" /><category term="talks" /><category term="CBIO" /><summary type="html">Long overdue now, but here are the CBIO lab’s contributions to the EuroBioc2023 conference that was organised on Ghent, on the 20 - 22 September 2023.</summary></entry></feed>
+&lt;/div&gt;</content><author><name>Laurent Gatto</name></author><category term="CBIO" /><category term="communication" /><summary type="html">I have been using slack for a rather long time as a discussion platform for the lab, even before moving to Belgium. Based on the access log, I set up the lab slack workspace in June 2016. It has proven very useful, even with the more recent limitations that come with the free slack plan. I have been thinking for some time that I should move to an open source offering. Based on a little bit of reading (here and here) and asking on social media, there were a couple of contenders: Mattermost, element.io, rocket.chat and Zulip.</summary></entry></feed>
