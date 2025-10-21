@@ -1,0 +1,84 @@
+@import url(https://use.fontawesome.com/releases/v5.0.2/css/all.css);
+
+a, a > code {
+  color: rgb(70, 130, 180);
+  text-decoration: none;
+}
+
+/* Two-column layout */
+.left-col-50 {
+  width: 50%;
+  float: left;
+}
+
+.right-col-50 {
+  width: 50%;
+  float: right;
+}
+
+.left-col-25 {
+  width:25%;
+  float: left;
+}
+
+.right-col-25 {
+  width: 25%;
+  float: right;
+}
+
+.left-col-75 {
+  width:75%;
+  float: left;
+}
+
+.right-col-75 {
+  width: 75%;
+  float: right;
+}
+
+.left-col-30 {
+  width: 30%;
+  float: left;
+}
+
+.right-col-30 {
+  width: 30%;
+  float: right;
+}
+
+.left-col-70 {
+  width: 70%;
+  float: left;
+}
+
+.right-col-70 {
+  width: 70%;
+  float: right;
+}
+
+.left-col-40 {
+  width: 40%;
+  float: left;
+}
+
+.right-col-40 {
+  width: 40%;
+  float: right;
+}
+
+.left-col-60 {
+  width: 60%;
+  float: left;
+}
+
+.right-col-60 {
+  width: 60%;
+  float: right;
+}
+
+
+/* One-column layout */
+.left-col-100 {
+  width: 100%;
+  float: left;
+}
