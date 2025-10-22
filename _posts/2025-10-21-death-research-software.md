@@ -94,9 +94,10 @@ Sadely, lots of unfortunate events stand in the way of your results:
 There exist many steps that one can take to minimise the risks
 described above. These steps are technical to write better, and more
 maintainable software, or non-technical, to grow and foster a
-community and support around the software. These opportunities aren't
-presented in any order of importance. Different situations and
-constrains will define what is possible in terms of possibilities.
+community and support around the software and their developers. These
+opportunities aren't presented in any order of importance. Different
+situations and constrains will define what is possible in terms of
+possibilities.
 
 If there's one thing to take away, it is not to stay alone in the
 development and maintenance of a piece of software, especially for
