@@ -233,9 +233,10 @@ Here are some well-known examples:
 
 ## Incentives and funding
 
-It is important to recognise of the role of those that develope and
-maintain software, often called research software engineers, and offer
-them a (stable) career paths.
+It is important to
+[recognise](https://www.ouvrirlascience.fr/presentation-of-the-2024-open-science-free-research-software-awards/)
+of the role of those that develope and maintain software, often called
+research software engineers, and offer them a (stable) career paths.
 
 Decicated funding for sofware are rare, but they do exist: [Software
 Sustainability Institute Research Software Maintenance Fund](https://www.software.ac.uk/programmes/research-software-maintenance-fund) (UK),
