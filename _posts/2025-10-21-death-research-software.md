@@ -174,8 +174,9 @@ This is a point of particular interest to more senior developers and
 PIs. There's pressure to produce new features and software, but
 planning beyond is important.
 
--   Think of your software's life cycle: maintenance, new features (if
-    possible), new developers, &#x2026;
+-   Think of your [software's life
+    cycle](https://osf.io/preprints/biohackrxiv/k8znb_v1):
+    maintenance, new features (if possible), new developers, &#x2026;
 -   Plan for sunsetting you software. Consider ending, pausing, or
     handing off.
 -   Also consider distaster planning, when funding suddenly gets cut
