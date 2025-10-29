@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.3">Jekyll</generator><link href="https://lgatto.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://lgatto.github.io/" rel="alternate" type="text/html" /><updated>2025-10-27T13:34:44+01:00</updated><id>https://lgatto.github.io/feed.xml</id><title type="html">~/</title><subtitle>Laurent Gatto&apos;s online home</subtitle><author><name>Laurent Gatto</name></author><entry><title type="html">The tragic death of open source research software</title><link href="https://lgatto.github.io/death-research-software/" rel="alternate" type="text/html" title="The tragic death of open source research software" /><published>2025-10-21T00:00:00+02:00</published><updated>2025-10-21T00:00:00+02:00</updated><id>https://lgatto.github.io/death-research-software</id><content type="html" xml:base="https://lgatto.github.io/death-research-software/">&lt;p&gt;This post is a write up of my contribution to the &lt;a href=&quot;https://www.circle-u.eu/events/2025/fast-forward-open-science.html&quot;&gt;Fast forward Open
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.3">Jekyll</generator><link href="https://lgatto.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://lgatto.github.io/" rel="alternate" type="text/html" /><updated>2025-10-29T14:00:14+01:00</updated><id>https://lgatto.github.io/feed.xml</id><title type="html">~/</title><subtitle>Laurent Gatto&apos;s online home</subtitle><author><name>Laurent Gatto</name></author><entry><title type="html">The tragic death of open source research software</title><link href="https://lgatto.github.io/death-research-software/" rel="alternate" type="text/html" title="The tragic death of open source research software" /><published>2025-10-21T00:00:00+02:00</published><updated>2025-10-21T00:00:00+02:00</updated><id>https://lgatto.github.io/death-research-software</id><content type="html" xml:base="https://lgatto.github.io/death-research-software/">&lt;p&gt;This post is a write up of my contribution to the &lt;a href=&quot;https://www.circle-u.eu/events/2025/fast-forward-open-science.html&quot;&gt;Fast forward Open
 Science&lt;/a&gt; event organised by Circle U. I’ll be sharing some thoughts
 about research software maintenance and survival as part of the ‘Open
 Source Codes and Software’ discussion.&lt;/p&gt;
@@ -172,8 +172,9 @@ PIs. There’s pressure to produce new features and software, but
 planning beyond is important.&lt;/p&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;Think of your software’s life cycle: maintenance, new features (if
-possible), new developers, …&lt;/li&gt;
+  &lt;li&gt;Think of your &lt;a href=&quot;https://osf.io/preprints/biohackrxiv/k8znb_v1&quot;&gt;software’s life
+cycle&lt;/a&gt;:
+maintenance, new features (if possible), new developers, …&lt;/li&gt;
   &lt;li&gt;Plan for sunsetting you software. Consider ending, pausing, or
 handing off.&lt;/li&gt;
   &lt;li&gt;Also consider distaster planning, when funding suddenly gets cut
