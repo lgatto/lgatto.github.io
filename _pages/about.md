@@ -1001,8 +1001,36 @@ spectrometry and proteomics.
 
 This is an incomplete list of talks I have given in the past.
 
-Principled and Reproducible Mass Spectrometry-based Single Cell
-Proteomics Data Analysis, USHUPO, 08 March 2020.
+[*The tragic death of open source research
+software*](https://lgatto.github.io/death-research-software/). Fast
+forward Open Science. 22 October 2025.
+
+*A principled approach to process, analyse and single-cell proteomics
+data*. [Computational Systems Biology of
+Cancer](https://training.institut-curie.org/courses/csbc2025),
+Paris. 25 September 2025.
+
+*How to analyse single-cell proteomics data and focus on the
+underlying biology?* European Single-Cell Proteomics conference,
+Vienna. 26 August 2025.
+
+*Reduce those dimensions! Using PCA, t-SNE and MDS to explore and
+analyse high-dimensional omics data.* de Duve Institute seminar. 5
+June 2025.
+
+*A principled approach to analyse and understand single-cell
+proteomics data* IB(2) Research Day. 9 May 2025.
+
+*How to analyse single-cell proteomics data and focus on the
+underlying biology*. Belgian Proteomics Association conference. 5
+December 2024.
+
+*Principled and Reproducible Mass Spectrometry-based Single Cell
+Proteomics Data Analysis*, USHUPO, 08 March 2020.
+
+[*Becoming a better scientist with open and reproducible
+research*](https://lgatto.github.io/open-and-rr-2/). Virtual
+Bioinformatics Student Symposium. 4 December 2020.
 
 [Standardised and reproducible analysis of mass spectrometry-based
 single-cell proteomics data](http://bit.ly/2020SCP), [Single Cell
