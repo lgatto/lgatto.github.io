@@ -317,11 +317,11 @@ doi:[10.1093/gigascience/giae090](https://doi.org/10.1093/gigascience/giae090)
 (pre-print
 [10.1101/2024.04.22.590526](https://doi.org/10.1101/2024.04.22.590526)).
 
-Kohrs FE, Kazezian V, Bagley R, Boisgontier MP, Brod S, Carneiro CFD,
-..., Weissgerber TL . *Collaborating with early career researchers to
-enhance the future of scholarly communication: A guide for publishers*
-(2024)
-[https://doi.org/10.31219/osf.io/pbvfz](https://doi.org/10.31219/osf.io/pbvfz).
+Kohrs, F. E., V. Kazezian, R. K. Bagley, et al. 2026. *Collaborating
+With Early Career Researchers to Enhance the Future of Scholarly
+Publication: A Guide for Publishers*. Learned Publishing 39, no. 1:
+e2028 doi:[10.1002/leap.2028](https://doi.org/10.1002/leap.2028)
+([pre-print](https://doi.org/10.31219/osf.io/pbvfz)).
 
 Pirenne S, Manzano-Núñez F, Loriot A, Cordi S, Desmet L, Aydin S,
 Hubert C, Toffoli S, Limaye N, Sempoux C, Komuta M, Gatto L, Lemaigre
