@@ -32,13 +32,14 @@ sidebar:
   bioinformatics core facility.
 
 - **Philippe Hauchamps** (Github:
-  [phauchamps](https://github.com/phauchamps)) is, since September
-  2021, a PhD student working on flow cytometry data analyis. He
-  joined the CBIO group in October 2019 as an intern and carried on
-  with a Master's project in computational proteomics, developing
-  Bayesian models to analyse quantitative proteomics data. He has a
-  Master degree in Computer Science Engineering and one in
-  Biostatistics.
+  [phauchamps](https://github.com/phauchamps)) defended his PhD in
+  December 2025. His thesis focused on flow cytometry data analyis. He
+  first joined the CBIO group in October 2019 as an intern and carried
+  on with a Master's project in [computational
+  proteomics](https://thesis.dial.uclouvain.be/entities/masterthesis/1d1a78d4-a680-4ef2-90ed-d8fb42303be6),
+  developing Bayesian models to analyse quantitative proteomics
+  data. He has a Master degree in Computer Science Engineering and one
+  in Biostatistics.
 
 - **Julie Devis** (Github:
   [JulieDevis](https://github.com/JulieDevis)) did her master's
@@ -236,13 +237,14 @@ is missing. Picture taken at the de Duve Institute on 3 July 2024.
 - **Christophe Vanderaa** (ORCID:
   [0000-0001-7443-5427](https://orcid.org/0000-0001-7443-5427),
   Github: [cvanderaa](https://github.com/cvanderaa)) is a former PhD
-  student working on single-cell assay bioinformatics. He did a
-  masters in biomedical sciences at the UCLouvain and followed up with
-  a masters in bioinformatics at the KULeuven before conducting his
-  PhD training in the lab funded by an FNRS fellowship. Chris then
-  enrolled as a postdoc at the UGent in the statOmics group (headed by
-  Lieven Clement) to develop statistical frameworks for the analysis
-  of single-cell proteomics data.
+  student working on [computational single-cell
+  proteomics](https://dial.uclouvain.be/pr/boreal/object/boreal:284721). He
+  did a masters in biomedical sciences at the UCLouvain and followed
+  up with a masters in bioinformatics at the KULeuven before
+  conducting his PhD training in the lab funded by an FNRS
+  fellowship. Chris then enrolled as a postdoc at the UGent in the
+  statOmics group (headed by Lieven Clement) to develop statistical
+  frameworks for the analysis of single-cell proteomics data.
 
 - **Badr-Ali Mouaden** finished his engineering degree in 2023 and did
   his master's project under the co-supervision of Laurent Gatto,
