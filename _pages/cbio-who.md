@@ -130,10 +130,11 @@ sidebar:
   PhD, focusing on the development of software and statistical
   modelling for single-cell proteomics data.
 
-- **Abirami Soundiramourtty** [AbiramiSnD](https://github.com/AbiramiSnd) has a
-  PhD in Bioinoformatics and Genomics from the University Via Domitia of Perpignan.
-  She joined the CBIO team in December 2025 to work on the project e-omix
-  as a Bioinformatician to work on transcriptomic and genomic data.
+- **Abirami Soundiramourtty**
+  [AbiramiSnD](https://github.com/AbiramiSnd) has a PhD in
+  Bioinoformatics and Genomics from the University Via Domitia of
+  Perpignan.  She joined the e-OMIX team in the CBIO lab in December
+  2025 to work on transcriptomic and genomic data.
 
 ## Undergraduates
 
