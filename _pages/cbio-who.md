@@ -33,7 +33,8 @@ sidebar:
 
 - **Philippe Hauchamps** (Github:
   [phauchamps](https://github.com/phauchamps)) defended his PhD in
-  December 2025. His thesis focused on flow cytometry data analyis. He
+  December 2025. His thesis focused on [flow cytometry data
+  analyis](https://dial.uclouvain.be/pr/boreal/object/boreal:308092). He
   first joined the CBIO group in October 2019 as an intern and carried
   on with a Master's project in [computational
   proteomics](https://thesis.dial.uclouvain.be/entities/masterthesis/1d1a78d4-a680-4ef2-90ed-d8fb42303be6),
