@@ -1,4 +1,44 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.3">Jekyll</generator><link href="https://lgatto.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://lgatto.github.io/" rel="alternate" type="text/html" /><updated>2025-12-11T20:00:10+01:00</updated><id>https://lgatto.github.io/feed.xml</id><title type="html">~/</title><subtitle>Laurent Gatto&apos;s online home</subtitle><author><name>Laurent Gatto</name></author><entry><title type="html">The tragic death of open source research software</title><link href="https://lgatto.github.io/death-research-software/" rel="alternate" type="text/html" title="The tragic death of open source research software" /><published>2025-10-21T00:00:00+02:00</published><updated>2025-10-21T00:00:00+02:00</updated><id>https://lgatto.github.io/death-research-software</id><content type="html" xml:base="https://lgatto.github.io/death-research-software/">&lt;p&gt;This post is a write up of my contribution to the &lt;a href=&quot;https://www.circle-u.eu/events/2025/fast-forward-open-science.html&quot;&gt;Fast forward Open
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.3">Jekyll</generator><link href="https://lgatto.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://lgatto.github.io/" rel="alternate" type="text/html" /><updated>2025-12-25T19:04:32+01:00</updated><id>https://lgatto.github.io/feed.xml</id><title type="html">~/</title><subtitle>Laurent Gatto&apos;s online home</subtitle><author><name>Laurent Gatto</name></author><entry><title type="html">Rethinking how I use git and reduce my dependency on Github</title><link href="https://lgatto.github.io/rethinking-git-github-usage/" rel="alternate" type="text/html" title="Rethinking how I use git and reduce my dependency on Github" /><published>2025-12-25T00:00:00+01:00</published><updated>2025-12-25T00:00:00+01:00</updated><id>https://lgatto.github.io/rethinking-git-github-usage</id><content type="html" xml:base="https://lgatto.github.io/rethinking-git-github-usage/">&lt;p&gt;I have been wanting to reduce my usage and dependency on Github for
+quite some time now.&lt;/p&gt;
+
+&lt;p&gt;My first initiative was to join
+[codeberg.org]](https://codeberg.org/lgatto), on 9 June 2024. I am
+really happy I did so, but Codeberg is a non-profit association and
+has &lt;a href=&quot;https://blog.codeberg.org/new-storage-limits-on-codeberg-what-you-need-to-know.html&quot;&gt;storage
+limits&lt;/a&gt;,
+and rightly so. But my usage of Github exceeds what they can offer, so
+I had to (1) carefully choose what to migrate and (2) adapt what/how I
+store files in my repos (by switching to
+&lt;a href=&quot;https://git-annex.branchable.com/&quot;&gt;git-annex&lt;/a&gt; for larger blobs, for
+example).&lt;/p&gt;
+
+&lt;p&gt;My university has a &lt;a href=&quot;https://forge.uclouvain.be/&quot;&gt;Gitlab&lt;/a&gt; server but
+with a limited number of private projects. Ignoring this limitation,
+it is the right place for (a limited number of) projects related to my
+teaching activities, for example.&lt;/p&gt;
+
+&lt;p&gt;I concluded that my best solution was to self-host private
+repositories that are not meant to become public. Yesterday, I
+experimented a bit with &lt;a href=&quot;https://gitolite.com/gitolite/&quot;&gt;gitolite&lt;/a&gt;,
+but today I realised how trivial it is to self-host git repositories
+once you have a server with &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ssh&lt;/code&gt; access: this
+&lt;a href=&quot;https://www.youtube.com/watch?v=iuIdBfjL62s&amp;amp;si=JVVT_w-f7pgwntuy&quot;&gt;video&lt;/a&gt;
+and the &lt;a href=&quot;https://git-scm.com/book/en/v2/Git-on-the-Server-Getting-Git-on-a-Server&quot;&gt;git
+book&lt;/a&gt;
+show how.&lt;/p&gt;
+
+&lt;p&gt;Github is still inevitable: I have many projects/software that have
+been there for a long time, and that are expected to remain
+there. Githun is still the &lt;em&gt;de facto&lt;/em&gt; infrastructure for many
+collaborative projects, and that is unlikely to change.&lt;/p&gt;
+
+&lt;p&gt;Ironically, you (still) read this page served on Github. I will
+eventually migrate my personal page and other websites to
+codeberg. It’s still a work in progress, but since I started cleaning
+up in October 2025, I have &lt;a href=&quot;https://fediscience.org/@lgatto/115321983514080309&quot;&gt;deleted hundreds of
+repositories&lt;/a&gt; and
+even two inactive organisation - I have now less than 100 (mostly
+public) repos.&lt;/p&gt;</content><author><name>Laurent Gatto</name></author><category term="conference" /><category term="software" /><category term="talks" /><category term="CBIO" /><summary type="html">I have been wanting to reduce my usage and dependency on Github for quite some time now.</summary></entry><entry><title type="html">The tragic death of open source research software</title><link href="https://lgatto.github.io/death-research-software/" rel="alternate" type="text/html" title="The tragic death of open source research software" /><published>2025-10-21T00:00:00+02:00</published><updated>2025-10-21T00:00:00+02:00</updated><id>https://lgatto.github.io/death-research-software</id><content type="html" xml:base="https://lgatto.github.io/death-research-software/">&lt;p&gt;This post is a write up of my contribution to the &lt;a href=&quot;https://www.circle-u.eu/events/2025/fast-forward-open-science.html&quot;&gt;Fast forward Open
 Science&lt;/a&gt; event organised by Circle U. I’ll be sharing some thoughts
 about research software maintenance and survival as part of the ‘Open
 Source Codes and Software’ discussion.&lt;/p&gt;
@@ -1747,58 +1787,4 @@ mini-language used to generate the figure, and these special characters
 &lt;a href=&quot;https://github.com/stathissideris/ditaa/issues/9&quot;&gt;can’t easily be
 escaped&lt;/a&gt;. But I just
 learnt that I was 1 character away of calling students a
-&lt;a href=&quot;https://pc.net/emoticons/categories/characters&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;8-E&lt;/code&gt;&lt;/a&gt;.&lt;/p&gt;</content><author><name>Laurent Gatto</name></author><category term="teaching" /><category term="education" /><category term="UCLouvain" /><summary type="html">Une fois n’est pas coutume, un billet en français, pour attirer votre attention sur les podcasts du LLL. Le LLL, ou Louvain Learning Lab accompagne tous les acteurs et actrices de la formation de l’UCLouvain dans leurs activités d’enseignement. En plus, c’est une équipe super chouette!</summary></entry><entry><title type="html">CBIO’s internal communication goes open source</title><link href="https://lgatto.github.io/zulip/" rel="alternate" type="text/html" title="CBIO’s internal communication goes open source" /><published>2024-02-04T00:00:00+01:00</published><updated>2024-02-04T00:00:00+01:00</updated><id>https://lgatto.github.io/zulip</id><content type="html" xml:base="https://lgatto.github.io/zulip/">&lt;p&gt;I have been using slack for a rather long time as a discussion
-platform for the lab, even before moving to Belgium. Based on the
-access log, I set up the lab slack workspace in June 2016. It has
-proven very useful, even with the more recent limitations that come
-with the free slack plan. I have been thinking for some time that I
-should move to an open source offering. Based on a little bit of
-reading
-(&lt;a href=&quot;https://blog.ossph.org/best-open-source-alternatives-to-slack/&quot;&gt;here&lt;/a&gt;
-and &lt;a href=&quot;https://opensource.com/alternatives/slack&quot;&gt;here&lt;/a&gt;) and asking on
-&lt;a href=&quot;https://fosstodon.org/@lgatto/111840609295851868&quot;&gt;social media&lt;/a&gt;,
-there were a couple of contenders:
-&lt;a href=&quot;https://mattermost.com/&quot;&gt;Mattermost&lt;/a&gt;,
-&lt;a href=&quot;https://element.io/&quot;&gt;element.io&lt;/a&gt;,
-&lt;a href=&quot;https://www.rocket.chat/&quot;&gt;rocket.chat&lt;/a&gt; and
-&lt;a href=&quot;https://zulip.com/&quot;&gt;Zulip&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;My needs are pretty simple: I would like to have access to all
-messages, and apps for various desktop and mobile OSes. Cost is also
-an issue - with say 15 users at around 7$ per month, it would cost the
-lab over 1200$ per year. While not a big amount per se for an academic
-lab, given the restrictions of what can be paid for from academic
-funding (salary only or consumable, for example), that money is money
-that couldn’t be used to support students with their travelling to
-conferences. I thus considered self-hosting, but it wasn’t clear I
-could get the support from IT, a public facing IP, with the necessary
-port accessible to the world.&lt;/p&gt;
-
-&lt;p&gt;Then I discovered that Zulip offers their Cloud Standard plan for
-&lt;a href=&quot;https://zulip.com/for/research/&quot;&gt;free for academic research&lt;/a&gt;, which
-is what I finally went for with &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;cbio.zulipchat.com&lt;/code&gt;. They ask to
-acknowledge their support on the &lt;a href=&quot;https://lgatto.github.io/cbio-lab/&quot;&gt;lab
-webpage&lt;/a&gt; (see at the bottom),
-which is a fair request. The sponsorship was accepted on the day, and
-a couple of days later, their support
-&lt;a href=&quot;https://zulip.com/help/import-from-slack&quot;&gt;imported&lt;/a&gt;&lt;sup id=&quot;fnref:fn&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:fn&quot; class=&quot;footnote&quot; rel=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt; all the
-slack messages from our non-private channels.&lt;/p&gt;
-
-&lt;p&gt;So far, all works very smoothly, and I’m quite happy. The web
-interface and the GNU/Linux and Android apps work very well. I think
-I’m also liking the possibility to provide a title to posts/threads -
-future will tell if all members make use of this. Another useful
-difference with slack (at least the free plan) is there are &lt;a href=&quot;https://zulip.com/help/roles-and-permissions&quot;&gt;guest
-accounts&lt;/a&gt; (that are
-given access to specific streams/channels when joining), in addition
-to regular members (who can join all public streams).&lt;/p&gt;
-
-&lt;div class=&quot;footnotes&quot; role=&quot;doc-endnotes&quot;&gt;
-  &lt;ol&gt;
-    &lt;li id=&quot;fn:fn&quot; role=&quot;doc-endnote&quot;&gt;
-      &lt;p&gt;Even if one can only see the last messages with a free slack
-plan, all messages from public channels get exported. This, and a
-bot user OAuth token is all they need. &lt;a href=&quot;#fnref:fn&quot; class=&quot;reversefootnote&quot; role=&quot;doc-backlink&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
-    &lt;/li&gt;
-  &lt;/ol&gt;
-&lt;/div&gt;</content><author><name>Laurent Gatto</name></author><category term="CBIO" /><category term="communication" /><summary type="html">I have been using slack for a rather long time as a discussion platform for the lab, even before moving to Belgium. Based on the access log, I set up the lab slack workspace in June 2016. It has proven very useful, even with the more recent limitations that come with the free slack plan. I have been thinking for some time that I should move to an open source offering. Based on a little bit of reading (here and here) and asking on social media, there were a couple of contenders: Mattermost, element.io, rocket.chat and Zulip.</summary></entry></feed>
+&lt;a href=&quot;https://pc.net/emoticons/categories/characters&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;8-E&lt;/code&gt;&lt;/a&gt;.&lt;/p&gt;</content><author><name>Laurent Gatto</name></author><category term="teaching" /><category term="education" /><category term="UCLouvain" /><summary type="html">Une fois n’est pas coutume, un billet en français, pour attirer votre attention sur les podcasts du LLL. Le LLL, ou Louvain Learning Lab accompagne tous les acteurs et actrices de la formation de l’UCLouvain dans leurs activités d’enseignement. En plus, c’est une équipe super chouette!</summary></entry></feed>
