@@ -4,7 +4,6 @@ tags: ["conference", "software", "talks", "CBIO"]
 comments: false
 ---
 
-
 I have been wanting to reduce my usage and dependency on Github for
 quite some time now.
 
@@ -23,10 +22,25 @@ with a limited number of private projects. Ignoring this limitation,
 it is the right place for projects related to some of my teaching
 activities, for example.
 
+I concluded that my best solution was to self-host private
+repositories that are not meant to become public. Yesterday, I
+experimented a bit with [gitolite](https://gitolite.com/gitolite/),
+but today I realised how trivial it is to self-host git repositories
+once you have a server with `ssh` access: this
+[video](https://www.youtube.com/watch?v=iuIdBfjL62s&si=JVVT_w-f7pgwntuy)
+and the [git
+book](https://git-scm.com/book/en/v2/Git-on-the-Server-Getting-Git-on-a-Server)
+show how.
 
+Github is still inevitable: I have many projects/package that have
+been there for a long time, and that are expected to remain there and
+It is still the *de facto* infrastructure for many collaborative
+projects, and that is unlikely to change;
 
-Github is still inevitable
-- I have many projects/package that have been there for a long time,
-  and that are expected to remain there;
-- It is still the de facto infrastructure for many collaborative
-  projects, and that is unlikely to change.
+Ironically, you (still) read this page served on Github. I will
+eventually migrate my personal page and other websites to
+codeberg. It's still a work in progress, but since I started cleaning
+up in October 2025, I have
+[deleted](https://fediscience.org/@lgatto/115321983514080309) hundreds
+of repositories and even two inactive organisation, and I have now
+less than 100 (mostly public) repos.
