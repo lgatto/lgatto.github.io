@@ -45,3 +45,7 @@ up in October 2025, I have [deleted hundreds of
 repositories](https://fediscience.org/@lgatto/115321983514080309) and
 even two inactive organisation - I have now less than 100 (mostly
 public) repos.
+
+**EDIT** (2025-12-26): here's a related article by members of
+rOpenSci: [Code Hosting Options Beyond
+GitHub](https://ropensci.org/blog/2025/12/17/beyond-github/).
