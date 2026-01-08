@@ -8,7 +8,7 @@ I have been wanting to reduce my usage and dependency on Github for
 quite some time now.
 
 My first initiative was to join
-[codeberg.org]](https://codeberg.org/lgatto), on 9 June 2024. I am
+[codeberg.org](https://codeberg.org/lgatto), on 9 June 2024. I am
 really happy I did so, but Codeberg is a non-profit association and
 has [storage
 limits](https://blog.codeberg.org/new-storage-limits-on-codeberg-what-you-need-to-know.html),
